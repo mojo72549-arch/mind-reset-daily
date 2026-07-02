@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TikTok OAuth Callback · Mind Reset Daily</title>
+  <meta name="description" content="TikTok OAuth callback page for Mind Reset Daily Uploader.">
+  <link rel="icon" href="../../assets/mr-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="Mind Reset Daily home">
+      <img src="../../assets/mr-logo.svg" alt="Mind Reset Daily MR logo">
+      <span><strong>Mind Reset Daily</strong><span>TikTok OAuth Callback</span></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="../../index.html">Home</a>
+      <a href="../../privacy.html">Privacy Policy</a>
+      <a href="../../terms.html">Terms</a>
+    </nav>
+  </header>
+  <main>
+    <article class="content-page">
+      <div class="eyebrow">Authorization</div>
+      <h1>TikTok authorization callback</h1>
+      <p>This page receives the OAuth authorization response for Mind Reset Daily Uploader.</p>
+      <p id="status" class="notice">Waiting for authorization response...</p>
+      <h2>Authorization code</h2>
+      <p id="codeBox" class="notice">No authorization code found in the URL.</p>
+      <h2>State</h2>
+      <p id="stateBox" class="notice">No state parameter found in the URL.</p>
+      <p>After authorization, the account owner uses the returned code in the private local Agent Short workflow to finish token setup.</p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <span>© 2026 Mind Reset Daily</span>
+    <span><a href="../../privacy.html">Privacy Policy</a> · <a href="../../terms.html">Terms of Service</a></span>
+  </footer>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+    const state = params.get('state');
+    const error = params.get('error');
+    const status = document.getElementById('status');
+    document.getElementById('codeBox').textContent = code || 'No authorization code found in the URL.';
+    document.getElementById('stateBox').textContent = state || 'No state parameter found in the URL.';
+    status.textContent = error ? ('Authorization returned an error: ' + error) : (code ? 'Authorization response received.' : 'No authorization response was found.');
+  </script>
+</body>
+</html>
