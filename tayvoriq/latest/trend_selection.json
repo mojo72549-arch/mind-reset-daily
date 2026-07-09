@@ -1,0 +1,244 @@
+{
+  "mode": "auto_trend",
+  "selected_topic": "KI-Agenten übernehmen Büro-Routinen: vom Chatbot zum Arbeitsablauf",
+  "selection_reason": "highest scored current trend candidate from public free sources",
+  "scope": "ai_office",
+  "language": "Deutsch",
+  "generated_at": "2026-07-09T22:34:53+00:00",
+  "selected_candidate": {
+    "title": "MacOS Tahoe: Office 2024 friert ein – Apple und Drittanbieter reagieren",
+    "source": "it boltwise",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNaXZNNjJ0bWdxVWlLdWhqVVp4QUh4QllMZ0xFcllpNndyNWwtVEcwbk1JTnlDTHUxWVM4TDZyM3ZTNVJVZERzakFpNmtRNUdiUHI5RnNsMDVGSDQwckQxRElYSlREOUMzUmRNVUJOejVIQ2kwMXF1aS1JS28zZXVjUjNkcnF6MjdWdjN1Y2stYVctV0xRU09IVEdYNFBhZkgwMVE?oc=5",
+    "published_at": "Tue, 07 Jul 2026 06:51:26 GMT",
+    "query": "AI agents office workflows Microsoft Copilot Google Gemini ChatGPT",
+    "score": 84.0,
+    "reasons": [
+      "ai agent",
+      "ai agents",
+      "copilot",
+      "gemini",
+      "chatgpt",
+      "office",
+      "workflow",
+      "office-fit"
+    ]
+  },
+  "candidates": [
+    {
+      "title": "MacOS Tahoe: Office 2024 friert ein – Apple und Drittanbieter reagieren",
+      "source": "it boltwise",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNaXZNNjJ0bWdxVWlLdWhqVVp4QUh4QllMZ0xFcllpNndyNWwtVEcwbk1JTnlDTHUxWVM4TDZyM3ZTNVJVZERzakFpNmtRNUdiUHI5RnNsMDVGSDQwckQxRElYSlREOUMzUmRNVUJOejVIQ2kwMXF1aS1JS28zZXVjUjNkcnF6MjdWdjN1Y2stYVctV0xRU09IVEdYNFBhZkgwMVE?oc=5",
+      "published_at": "Tue, 07 Jul 2026 06:51:26 GMT",
+      "query": "AI agents office workflows Microsoft Copilot Google Gemini ChatGPT",
+      "score": 84.0,
+      "reasons": [
+        "ai agent",
+        "ai agents",
+        "copilot",
+        "gemini",
+        "chatgpt",
+        "office",
+        "workflow",
+        "office-fit"
+      ]
+    },
+    {
+      "title": "KI-Assistenten im Vergleich 2026 - it-daily",
+      "source": "it-daily",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9DSEFQWXpzeEwwVmo3Uk84S0FIM2tfSGdHckp5ZW1adlQ5SlI0Y01fbmVUdnJuQm5XelFBekV3TFpuZk5CWWU0R09WT1B5R0hGRXk5UlRDU0JjUWI0U25ZRk01aDJuRnNFX0p4QUl0ZE40R2d2aE9SZW1OSWpTd0U?oc=5",
+      "published_at": "Fri, 01 May 2026 07:00:00 GMT",
+      "query": "AI agents office workflows Microsoft Copilot Google Gemini ChatGPT",
+      "score": 73.0,
+      "reasons": [
+        "ai agent",
+        "ai agents",
+        "copilot",
+        "gemini",
+        "chatgpt",
+        "office",
+        "workflow",
+        "office-fit"
+      ]
+    },
+    {
+      "title": "Smartsheet: MCP-Server unterstützt nun ChatGPT und Google Gemini - Ad-hoc-news.de",
+      "source": "Ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORncwZVRuaDgteV81UGkyMjFXS0s3NXUyMlhmbUlXUGdRY0FiUG0ycGpwV1k2d0ljQ2pwbEdEX0xBWjdHNkdJZnhjRnZOdlNmQVlLRVlYWEVHcjdNY2s3cjB6YXBWbXRweTdDMlloaHdzN1dUeTFVUEIyazkwMk0wYkdDX3J6ODVjZGhjakZFcEhYd1lEUnEtS0JPeHhhOGlBM1I0TUlRRkU2R2cxczFmS28xdw?oc=5",
+      "published_at": "Thu, 11 Jun 2026 07:00:00 GMT",
+      "query": "AI agents office workflows Microsoft Copilot Google Gemini ChatGPT",
+      "score": 73.0,
+      "reasons": [
+        "ai agent",
+        "ai agents",
+        "copilot",
+        "gemini",
+        "chatgpt",
+        "office",
+        "workflow",
+        "office-fit"
+      ]
+    },
+    {
+      "title": "Die besten KI-Kurse für Nicht-Techies – Einsteiger und Profis",
+      "source": "FAZ",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNSkhPWWNKdmpfakdaNlV3SEJ2Qk12OHFJTDdVZXRFX2lnVDVMSjhTYlRMQ084eDVOVUNBWFlYTHhuNXNEaVkyMHBaMktuRDFFUnk1akJNU0hzT1hMZ3c4Z0VlTlVQemVRMHhYRy1Sb0JkOVVDRE5fSU82SUlpeDdWN1hRN0Z5SVNjSEM0UXJLR19RcFJSUE5idk9xZHdpN3dkN0JPSTVkaFBYV0VUek13a3VQS3JGSmNnaDF0bFFGNGt2ZWtMMEw4eEhCRVdJenFzb0FZelRMQXZfT2lId3c?oc=5",
+      "published_at": "Wed, 29 Apr 2026 07:00:00 GMT",
+      "query": "AI agents office workflows Microsoft Copilot Google Gemini ChatGPT",
+      "score": 73.0,
+      "reasons": [
+        "ai agent",
+        "ai agents",
+        "copilot",
+        "gemini",
+        "chatgpt",
+        "office",
+        "workflow",
+        "office-fit"
+      ]
+    },
+    {
+      "title": "Agent Attack 2025: Wie OpenAI, Notion & Co. die Arbeitswelt mit virtuellen Mitarbeitern fluten",
+      "source": "trendingtopics.eu",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9PbmZhdjExY1RGODRLSk1NYWF0SXcwWEZPYVFRTUFtclVmSDZfaExqQmh1SnNUT1lZUTZYQ3ZOV3EyMWxIMVBPajNfV04xS2c4ckkwZ2Z6ZVFudG9E?oc=5",
+      "published_at": "Fri, 10 Oct 2025 07:00:00 GMT",
+      "query": "AI agents office workflows Microsoft Copilot Google Gemini ChatGPT",
+      "score": 73.0,
+      "reasons": [
+        "ai agent",
+        "ai agents",
+        "copilot",
+        "gemini",
+        "chatgpt",
+        "office",
+        "workflow",
+        "office-fit"
+      ]
+    },
+    {
+      "title": "KI-Marktanteile | ChatGPTs Dominanz bröckelt: Warum der KI-Marktführer plötzlich fast 20% Marktanteil verliert",
+      "source": "Xpert.Digital - Konrad Wolfenstein",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9ueWF4RE5jM3pMY2RHYjY4dXMwNjkzd3dPMzhDLVVEUzZFNnVudlhyZHlJY0hOZGo0RTdWQ1RXSDM4a2VDeWZta2x0R29XODjSAVdBVV95cUxNQzF2MXpwTWVIRV9oM3c5ampEMkNWY3dBV21hR2pMaWlQbXY1SDFqWjRwNXgzR0NpQi1oWHpUYXdIY2h2ZFpud1FpZnZVenI4V203N292ck0?oc=5",
+      "published_at": "Sun, 28 Dec 2025 08:00:00 GMT",
+      "query": "AI agents office workflows Microsoft Copilot Google Gemini ChatGPT",
+      "score": 73.0,
+      "reasons": [
+        "ai agent",
+        "ai agents",
+        "copilot",
+        "gemini",
+        "chatgpt",
+        "office",
+        "workflow",
+        "office-fit"
+      ]
+    },
+    {
+      "title": "Smartsheet integriert Copilot, ChatGPT und Gemini direkt in KI-Workflows",
+      "source": "it boltwise",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTzdyekM0TDBHb1J1SlNKR0JKWmpHb3hNQ01Qa3J4RVhwVjh3ZzUzR1BhampzTHRMZkRNbldSeWR3TjdsRTM2M2VKWW1fcUxCaGdzUTRqcVY0NDlwYW03RFROWVRESnloVFpEVmV3WDZFZU1fX1VsQW43ODBQa2pBcHh4cUIwaWlLNWZRdzhzOE8xajRFMWUyUFp0YWdtdThMOWVxcURR?oc=5",
+      "published_at": "Fri, 12 Jun 2026 07:00:00 GMT",
+      "query": "AI agents office workflows Microsoft Copilot Google Gemini ChatGPT",
+      "score": 73.0,
+      "reasons": [
+        "ai agent",
+        "ai agents",
+        "copilot",
+        "gemini",
+        "chatgpt",
+        "office",
+        "workflow",
+        "office-fit"
+      ]
+    },
+    {
+      "title": "Manus AI Review: Der $2-Milliarden-AI-Agent, den Meta gerade erworben hat",
+      "source": "Unite.AI",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBKNnZqMmxKY3NRNEY3RjQxN054YVhhRzNOeGR5Uk5mbmVnTGR4V1JrYUQxeWlhWXl6VWVzR2lwVFZfVkJGZE9Ud1p3SHBRbEEzakE?oc=5",
+      "published_at": "Sat, 17 Jan 2026 08:00:00 GMT",
+      "query": "AI agents office workflows Microsoft Copilot Google Gemini ChatGPT",
+      "score": 73.0,
+      "reasons": [
+        "ai agent",
+        "ai agents",
+        "copilot",
+        "gemini",
+        "chatgpt",
+        "office",
+        "workflow",
+        "office-fit"
+      ]
+    },
+    {
+      "title": "JAX in Microsoft 365: KI-Agent liefert Live-Finanzdaten ab Juli",
+      "source": "BornCity",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPLU94dXNjSFRMeEZnQi1tOGhBRXRqNTlPeFU0a2lFR1RYclBSVThxUENnX0NWNmRmR3hSTDEzNlpPbUFueHh1R0k5Y2FZMi00ckdjWTEzV2VtcElVcEpFTUlibTBTd2FMZGdZeGFIWHM5Zl9BeE9QT19zX0FlaVAzZ3F2VVRiaVJKdGxQZWxFa0hvUW8?oc=5",
+      "published_at": "Fri, 03 Jul 2026 07:49:08 GMT",
+      "query": "Microsoft Copilot agents office workflow",
+      "score": 62.0,
+      "reasons": [
+        "ki-agent",
+        "copilot",
+        "office",
+        "workflow",
+        "microsoft 365",
+        "office-fit",
+        "named-ai",
+        "last-week"
+      ]
+    },
+    {
+      "title": "\"Poor AI integration costs money\": Notion's Mick Hodgins talks AI Agents, Competition & Winning in EMEA",
+      "source": "trendingtopics.eu",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5KZnFPeHJsVWtDSlhENmxEa1RqOTZCN3BkWHd4VVVaM3R2MUtLTUM5OFJIWGo0c29SNVF5YU8zazhxRUJIdGZNc09IMXBxTnU2eUdBcWluYVZ3LWVRQXJiNVhPeTV4V2poVndCTw?oc=5",
+      "published_at": "Thu, 18 Sep 2025 07:00:00 GMT",
+      "query": "ChatGPT agent office workflow automation",
+      "score": 62.0,
+      "reasons": [
+        "ai agent",
+        "ai agents",
+        "chatgpt",
+        "office",
+        "workflow",
+        "automation",
+        "office-fit",
+        "named-ai"
+      ]
+    },
+    {
+      "title": "Microsoft stattet Word, Excel und Powerpoint mit KI-Agenten Copilot aus",
+      "source": "Der Standard",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOM2pyT1JHUVNwUDU1X09rSU5LYVZYV2xwclQ1SHVaOHBsYUhKLV9BOGVxNDVSenlmZ2R1eW5JcFhtSkFtZ3Fad1M3VVpkcTF0VVdtOUlQUlZ1U0pJNFRlandxN0dQUkQzTWY1Und3ZVQ3QTBpZnp1Y0lMVGNYeF9UV2w1b3BZdE4wNnNabE9Mejk1b2NtSDItU2t5YWV2OGkzX0Rrb1doM1FhYzZ5VU1oNW14ZTJ0bER0?oc=5",
+      "published_at": "Fri, 24 Apr 2026 07:00:00 GMT",
+      "query": "KI Agenten Büroalltag Copilot Gemini ChatGPT",
+      "score": 59.0,
+      "reasons": [
+        "ki-agent",
+        "copilot",
+        "gemini",
+        "chatgpt",
+        "büro",
+        "office-fit",
+        "named-ai",
+        "older"
+      ]
+    },
+    {
+      "title": "Zoom: KI-Agent schließt ab, was Meetings beginnen",
+      "source": "heise online",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUnZFQklabHF0SldIS2NEamliRnVvSGlqQVFFb1BqNkdsclo0WXJjb0JrX2kzOE1CYXlqY3NZbGREVF9tZUxfNW13eHNISDc4Q3ZZSHBmT3ktdXdtM3l1T1dMSV80U0FERHVXSzJrdlkwX2VRVDNwRW5qSmZhTFM3LUNIbmNNeWd4aXVlc3ZTaExxTmZVYTZMOV9Kaw?oc=5",
+      "published_at": "Tue, 02 Jun 2026 07:00:00 GMT",
+      "query": "AI agents enterprise productivity workflow",
+      "score": 58.0,
+      "reasons": [
+        "ai agent",
+        "ai agents",
+        "ki-agent",
+        "productivity",
+        "workflow",
+        "enterprise",
+        "meeting",
+        "office-fit"
+      ]
+    }
+  ]
+}
