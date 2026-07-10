@@ -1,0 +1,48 @@
+{
+  "requested_platform": "youtube_tiktok",
+  "targets": [
+    "youtube_shorts",
+    "tiktok"
+  ],
+  "packages": [
+    {
+      "platform": "youtube_shorts",
+      "status": "PENDING_APPROVAL",
+      "video_file": "short_youtube.mp4",
+      "metadata": {
+        "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
+        "description": "Aktuelle Meldungen richten Aufmerksamkeit auf 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert. Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden. Darauf achten: Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge. #TAYVORIQ #Shorts #Trendjagd",
+        "hashtags": [
+          "#TAYVORIQ",
+          "#Shorts",
+          "#Trendjagd"
+        ],
+        "tags": [
+          "business_economy",
+          "TAYVORIQ",
+          "Trendjagd",
+          "Shorts"
+        ]
+      },
+      "cta": "Abonniere TAYVORIQ für verständliche Trendchecks.",
+      "viewer_payoff": "Das Video liefert Erklärung und Handlung vollständig."
+    },
+    {
+      "platform": "tiktok",
+      "status": "PENDING_APPROVAL",
+      "video_file": "short_tiktok.mp4",
+      "metadata": {
+        "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
+        "caption": "Aktuelle Meldungen richten Aufmerksamkeit auf 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert. #TAYVORIQ #Shorts #Trendjagd",
+        "hashtags": [
+          "#TAYVORIQ",
+          "#Shorts",
+          "#Trendjagd"
+        ],
+        "privacy_default": "SELF_ONLY"
+      },
+      "cta": "Folge TAYVORIQ für verständliche Trendchecks.",
+      "viewer_payoff": "Das Video liefert Erklärung und Handlung vollständig."
+    }
+  ]
+}
