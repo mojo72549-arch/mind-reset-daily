@@ -1,8 +1,8 @@
 {
-  "job_id": "20260710_144507_4996-firmeninsolvenzen-in-drei-monaten-deutschlands-wirtschaft-wird-durchsortier",
+  "job_id": "20260710_154443_4996-firmeninsolvenzen-in-drei-monaten-deutschlands-wirtschaft-wird-durchsortier",
   "mode": "tayvoriq_context_first_dual_platform_v2",
-  "created_at": "2026-07-10T14:55:55+00:00",
-  "github_run_id": "29100900374",
+  "created_at": "2026-07-10T15:54:17+00:00",
+  "github_run_id": "29104750053",
   "topic": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
   "language": "Deutsch",
   "requested_platform": "youtube_tiktok",
@@ -12,20 +12,12 @@
   "upload_status": "NOT_STARTED_PENDING_APPROVAL",
   "llm_report": {
     "source": {
-      "provider": "template:fallback",
-      "fallback": true,
+      "provider": "groq:llama-3.1-8b-instant",
+      "fallback": false,
       "errors": [
         {
           "provider": "gemini",
-          "error": "Gemini circuit already open for this workflow"
-        },
-        {
-          "provider": "groq",
-          "error": "400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions"
-        },
-        {
-          "provider": "huggingface",
-          "error": "HF_TOKEN fehlt"
+          "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota ex"
         }
       ]
     },
@@ -33,28 +25,59 @@
       "youtube_shorts": {
         "attempts": [
           {
-            "provider": "local:source-grounded-context-template",
+            "provider": "groq:llama-3.1-8b-instant",
             "fallback": true,
             "errors": [],
             "router_version": "v10",
             "attempt": 1
           }
         ],
+        "initial_issues": [
+          "editorial_answer_too_short:action_now",
+          "why_has_no_causal_explanation",
+          "action_now_must_start_with_concrete_verb",
+          "editorial_body_too_short:30:min=38",
+          "script_too_short:35:min=51"
+        ],
         "final_issues": [],
-        "rewrite_version": "v11-editorial-five-answers"
+        "local_editorial_repair_used": true,
+        "repair_strategy": "full-source-fallback-after-aggregate-gate",
+        "repaired_fields": [
+          "what_happened",
+          "why_happening",
+          "who_is_affected",
+          "personal_impact",
+          "action_now"
+        ],
+        "rewrite_version": "v16-aggregate-source-fallback"
       },
       "tiktok": {
         "attempts": [
           {
-            "provider": "local:source-grounded-context-template",
+            "provider": "groq:llama-3.1-8b-instant",
             "fallback": true,
             "errors": [],
             "router_version": "v10",
             "attempt": 1
           }
         ],
+        "initial_issues": [
+          "why_has_no_causal_explanation",
+          "action_now_must_start_with_concrete_verb",
+          "editorial_body_too_short:36:min=38",
+          "script_too_short:41:min=51"
+        ],
         "final_issues": [],
-        "rewrite_version": "v11-editorial-five-answers"
+        "local_editorial_repair_used": true,
+        "repair_strategy": "full-source-fallback-after-aggregate-gate",
+        "repaired_fields": [
+          "what_happened",
+          "why_happening",
+          "who_is_affected",
+          "personal_impact",
+          "action_now"
+        ],
+        "rewrite_version": "v16-aggregate-source-fallback"
       }
     }
   },
@@ -70,8 +93,8 @@
         "cta_start_ratio": 0.904,
         "self_contained": true,
         "native_language_voice_configured": true,
-        "quality_version": "v11-editorial-five-answers",
-        "checked_at": "2026-07-10T14:45:09+00:00",
+        "quality_version": "v16-aggregate-source-fallback",
+        "checked_at": "2026-07-10T15:44:52+00:00",
         "editorial_five_answers": {
           "passed": true,
           "answers": {
@@ -81,7 +104,8 @@
             "personal_impact": "Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden.",
             "action_now": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh."
           }
-        }
+        },
+        "editorial_repair_strategy": "full-source-fallback-after-aggregate-gate"
       },
       "tiktok": {
         "passed": true,
@@ -92,8 +116,8 @@
         "cta_start_ratio": 0.904,
         "self_contained": true,
         "native_language_voice_configured": true,
-        "quality_version": "v11-editorial-five-answers",
-        "checked_at": "2026-07-10T14:50:38+00:00",
+        "quality_version": "v16-aggregate-source-fallback",
+        "checked_at": "2026-07-10T15:49:53+00:00",
         "editorial_five_answers": {
           "passed": true,
           "answers": {
@@ -103,14 +127,15 @@
             "personal_impact": "Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden.",
             "action_now": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh."
           }
-        }
+        },
+        "editorial_repair_strategy": "full-source-fallback-after-aggregate-gate"
       }
     }
   },
   "text_package": {
     "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
     "category": "business_economy",
-    "trend_angle": "Welche konkrete Veränderung hinter 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert wirklich steckt.",
+    "trend_angle": "Wirtschaftskrise",
     "trend_signal": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt.",
     "named_entities": [],
     "why_now": "Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung.",
@@ -119,31 +144,31 @@
     ],
     "viewer_test": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh.",
     "series_next": "",
-    "hook": "Bei 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert ist nicht die Überschrift der entscheidende Punkt.",
+    "hook": "4996 Firmen in drei Monaten insolvent - Was ist los in Deutschland?",
     "script": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt. Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung. Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen. Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden. Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh. Abonniere TAYVORIQ für verständliche Trendchecks.",
     "cta": "Abonniere TAYVORIQ für verständliche Trendchecks.",
     "scenes": [
       {
         "duration_seconds": 5.0,
-        "visual_query": "business team market analysis vertical video",
+        "visual_query": "a graph showing the increase in company insolvencies in Germany",
         "overlay_text": "",
         "spoken_chunk": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt."
       },
       {
         "duration_seconds": 5.0,
-        "visual_query": "consumer price shopping decision vertical video",
+        "visual_query": "a chart showing the reasons for company insolvencies in Germany",
         "overlay_text": "",
         "spoken_chunk": "Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung."
       },
       {
         "duration_seconds": 5.0,
-        "visual_query": "company office strategy meeting vertical video",
+        "visual_query": "a graph showing the impact of company insolvencies on employment",
         "overlay_text": "",
         "spoken_chunk": "Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen."
       },
       {
         "duration_seconds": 5.0,
-        "visual_query": "factory industry production vertical video",
+        "visual_query": "a chart showing the long-term effects of the economic crisis on the economy and society",
         "overlay_text": "",
         "spoken_chunk": "Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden."
       },
@@ -162,11 +187,12 @@
     ],
     "youtube_metadata": {
       "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
-      "description": "Aktuelle Meldungen richten Aufmerksamkeit auf 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert. Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden. Darauf achten: Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge. #TAYVORIQ #Shorts #Trendjagd",
+      "description": "Anstieg der Firmeninsolvenzen. In den letzten drei Monaten sind 4996 Firmen in Deutschland insolvent geworden. Das ist ein Rekordwert, der die Wirtschaftskrise in Deutschland verdeutlicht. Darauf achten: Was sind die Gründe für diese Wirtschaftskrise und wie wird sie die Zukunft der deutschen Wirtschaft beeinflussen? #Trendjagd #TAYVORIQ #Wirtschaftskrise #Deutschland",
       "hashtags": [
+        "#Trendjagd",
         "#TAYVORIQ",
-        "#Shorts",
-        "#Trendjagd"
+        "#Wirtschaftskrise",
+        "#Deutschland"
       ],
       "tags": [
         "business_economy",
@@ -175,18 +201,17 @@
         "Shorts"
       ]
     },
-    "fallback_used": true,
+    "llm_provider": "groq:llama-3.1-8b-instant",
     "language": "Deutsch",
     "platform": "youtube_shorts",
     "target_duration": 35,
-    "llm_provider": "template:fallback",
     "viewer_questions": {
-      "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert.",
-      "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
-      "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
+      "what_happened": "Anstieg der Firmeninsolvenzen.",
+      "why_should_i_care": "In den letzten drei Monaten sind 4996 Firmen in Deutschland insolvent geworden. Das ist ein Rekordwert, der die Wirtschaftskrise in Deutschland verdeutlicht.",
+      "what_changes_for_me": "Was sind die Gründe für diese Wirtschaftskrise und wie wird sie die Zukunft der deutschen Wirtschaft beeinflussen?",
       "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
       "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
-      "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
+      "what_should_i_watch": "Was sind die Gründe für diese Wirtschaftskrise und wie wird sie die Zukunft der deutschen Wirtschaft beeinflussen?"
     },
     "editorial_answers": {
       "what_happened": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt.",
@@ -195,6 +220,7 @@
       "personal_impact": "Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden.",
       "action_now": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh."
     },
+    "editorial_repair_strategy": "full-source-fallback-after-aggregate-gate",
     "source_context": {
       "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
       "scope": "business_economy",
@@ -219,7 +245,7 @@
       "editorial_context_score": 4,
       "context_has_cause": true
     },
-    "viewer_payoff": "Das Video liefert Erklärung und Handlung vollständig.",
+    "viewer_payoff": "Das Video erklärt den Trend vollständig.",
     "script_body": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt. Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung. Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen. Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden. Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh.",
     "pronunciation_map": {},
     "context_metrics": {
@@ -230,11 +256,12 @@
     },
     "tiktok_metadata": {
       "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
-      "caption": "Aktuelle Meldungen richten Aufmerksamkeit auf 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert. #TAYVORIQ #Shorts #Trendjagd",
+      "caption": "Anstieg der Firmeninsolvenzen. #Trendjagd #TAYVORIQ #Wirtschaftskrise #Deutschland",
       "hashtags": [
+        "#Trendjagd",
         "#TAYVORIQ",
-        "#Shorts",
-        "#Trendjagd"
+        "#Wirtschaftskrise",
+        "#Deutschland"
       ],
       "privacy_default": "SELF_ONLY"
     }
@@ -244,7 +271,7 @@
       "text_package": {
         "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
         "category": "business_economy",
-        "trend_angle": "Welche konkrete Veränderung hinter 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert wirklich steckt.",
+        "trend_angle": "Wirtschaftskrise",
         "trend_signal": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt.",
         "named_entities": [],
         "why_now": "Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung.",
@@ -253,31 +280,31 @@
         ],
         "viewer_test": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh.",
         "series_next": "",
-        "hook": "Bei 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert ist nicht die Überschrift der entscheidende Punkt.",
+        "hook": "4996 Firmen in drei Monaten insolvent - Was ist los in Deutschland?",
         "script": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt. Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung. Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen. Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden. Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh. Abonniere TAYVORIQ für verständliche Trendchecks.",
         "cta": "Abonniere TAYVORIQ für verständliche Trendchecks.",
         "scenes": [
           {
             "duration_seconds": 5.0,
-            "visual_query": "business team market analysis vertical video",
+            "visual_query": "a graph showing the increase in company insolvencies in Germany",
             "overlay_text": "",
             "spoken_chunk": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt."
           },
           {
             "duration_seconds": 5.0,
-            "visual_query": "consumer price shopping decision vertical video",
+            "visual_query": "a chart showing the reasons for company insolvencies in Germany",
             "overlay_text": "",
             "spoken_chunk": "Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung."
           },
           {
             "duration_seconds": 5.0,
-            "visual_query": "company office strategy meeting vertical video",
+            "visual_query": "a graph showing the impact of company insolvencies on employment",
             "overlay_text": "",
             "spoken_chunk": "Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen."
           },
           {
             "duration_seconds": 5.0,
-            "visual_query": "factory industry production vertical video",
+            "visual_query": "a chart showing the long-term effects of the economic crisis on the economy and society",
             "overlay_text": "",
             "spoken_chunk": "Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden."
           },
@@ -296,11 +323,12 @@
         ],
         "youtube_metadata": {
           "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
-          "description": "Aktuelle Meldungen richten Aufmerksamkeit auf 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert. Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden. Darauf achten: Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge. #TAYVORIQ #Shorts #Trendjagd",
+          "description": "Anstieg der Firmeninsolvenzen. In den letzten drei Monaten sind 4996 Firmen in Deutschland insolvent geworden. Das ist ein Rekordwert, der die Wirtschaftskrise in Deutschland verdeutlicht. Darauf achten: Was sind die Gründe für diese Wirtschaftskrise und wie wird sie die Zukunft der deutschen Wirtschaft beeinflussen? #Trendjagd #TAYVORIQ #Wirtschaftskrise #Deutschland",
           "hashtags": [
+            "#Trendjagd",
             "#TAYVORIQ",
-            "#Shorts",
-            "#Trendjagd"
+            "#Wirtschaftskrise",
+            "#Deutschland"
           ],
           "tags": [
             "business_economy",
@@ -309,18 +337,17 @@
             "Shorts"
           ]
         },
-        "fallback_used": true,
+        "llm_provider": "groq:llama-3.1-8b-instant",
         "language": "Deutsch",
         "platform": "youtube_shorts",
         "target_duration": 35,
-        "llm_provider": "template:fallback",
         "viewer_questions": {
-          "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert.",
-          "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
-          "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
+          "what_happened": "Anstieg der Firmeninsolvenzen.",
+          "why_should_i_care": "In den letzten drei Monaten sind 4996 Firmen in Deutschland insolvent geworden. Das ist ein Rekordwert, der die Wirtschaftskrise in Deutschland verdeutlicht.",
+          "what_changes_for_me": "Was sind die Gründe für diese Wirtschaftskrise und wie wird sie die Zukunft der deutschen Wirtschaft beeinflussen?",
           "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
           "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
-          "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
+          "what_should_i_watch": "Was sind die Gründe für diese Wirtschaftskrise und wie wird sie die Zukunft der deutschen Wirtschaft beeinflussen?"
         },
         "editorial_answers": {
           "what_happened": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt.",
@@ -329,6 +356,7 @@
           "personal_impact": "Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden.",
           "action_now": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh."
         },
+        "editorial_repair_strategy": "full-source-fallback-after-aggregate-gate",
         "source_context": {
           "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
           "scope": "business_economy",
@@ -353,7 +381,7 @@
           "editorial_context_score": 4,
           "context_has_cause": true
         },
-        "viewer_payoff": "Das Video liefert Erklärung und Handlung vollständig.",
+        "viewer_payoff": "Das Video erklärt den Trend vollständig.",
         "script_body": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt. Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung. Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen. Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden. Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh.",
         "pronunciation_map": {},
         "context_metrics": {
@@ -364,11 +392,12 @@
         },
         "tiktok_metadata": {
           "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
-          "caption": "Aktuelle Meldungen richten Aufmerksamkeit auf 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert. #TAYVORIQ #Shorts #Trendjagd",
+          "caption": "Anstieg der Firmeninsolvenzen. #Trendjagd #TAYVORIQ #Wirtschaftskrise #Deutschland",
           "hashtags": [
+            "#Trendjagd",
             "#TAYVORIQ",
-            "#Shorts",
-            "#Trendjagd"
+            "#Wirtschaftskrise",
+            "#Deutschland"
           ],
           "privacy_default": "SELF_ONLY"
         }
@@ -382,8 +411,8 @@
         "cta_start_ratio": 0.904,
         "self_contained": true,
         "native_language_voice_configured": true,
-        "quality_version": "v11-editorial-five-answers",
-        "checked_at": "2026-07-10T14:45:09+00:00",
+        "quality_version": "v16-aggregate-source-fallback",
+        "checked_at": "2026-07-10T15:44:52+00:00",
         "editorial_five_answers": {
           "passed": true,
           "answers": {
@@ -393,241 +422,8 @@
             "personal_impact": "Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden.",
             "action_now": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh."
           }
-        }
-      },
-      "audio": {
-        "voice_path": "voice.mp3",
-        "voice_duration_seconds": 34.09,
-        "provider": "elevenlabs",
-        "model_id": "eleven_multilingual_v2",
-        "voice_settings": {
-          "stability": 0.48,
-          "similarity_boost": 0.78,
-          "style": 0.3,
-          "use_speaker_boost": true
         },
-        "fallback": false,
-        "pronunciation_replacements": {},
-        "native_language_voice_configured": true
-      },
-      "render": {
-        "video_path": "short.mp4",
-        "asset_report": [
-          {
-            "scene": 1,
-            "source": "pexels_video",
-            "query": "business team market analysis vertical video",
-            "duration": 7.211,
-            "subtitle_present": true,
-            "asset": "scene_01.mp4"
-          },
-          {
-            "scene": 2,
-            "source": "pexels_video",
-            "query": "consumer price shopping decision vertical video",
-            "duration": 5.9,
-            "subtitle_present": true,
-            "asset": "scene_02.mp4"
-          },
-          {
-            "scene": 3,
-            "source": "pexels_video",
-            "query": "company office strategy meeting vertical video",
-            "duration": 5.245,
-            "subtitle_present": true,
-            "asset": "scene_03.mp4"
-          },
-          {
-            "scene": 4,
-            "source": "pexels_video",
-            "query": "factory industry production vertical video",
-            "duration": 5.9,
-            "subtitle_present": true,
-            "asset": "scene_04.mp4"
-          },
-          {
-            "scene": 5,
-            "source": "pexels_video",
-            "query": "financial market dashboard vertical video",
-            "duration": 6.556,
-            "subtitle_present": true,
-            "asset": "scene_05.mp4"
-          },
-          {
-            "scene": 6,
-            "source": "pexels_video",
-            "query": "business news explainer vertical video",
-            "duration": 4.528,
-            "subtitle_present": true,
-            "asset": "scene_06.mp4"
-          }
-        ],
-        "render_size": "1080x1920",
-        "bytes": 26289089,
-        "voice_duration_seconds": 34.09,
-        "final_duration_seconds": 35.34,
-        "end_padding_seconds": 1.25,
-        "requested_duration_seconds": 35.0,
-        "duration_delta_seconds": 0.34,
-        "duration_status": "OK"
-      },
-      "video_path": "short_youtube.mp4",
-      "upload_status": "PENDING_APPROVAL"
-    },
-    "tiktok": {
-      "text_package": {
-        "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
-        "category": "business_economy",
-        "trend_angle": "Welche konkrete Veränderung hinter 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert wirklich steckt.",
-        "trend_signal": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt.",
-        "named_entities": [],
-        "why_now": "Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung.",
-        "affected_groups": [
-          "Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen."
-        ],
-        "viewer_test": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh.",
-        "series_next": "",
-        "hook": "Bei 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert ist nicht die Überschrift der entscheidende Punkt.",
-        "script": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt. Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung. Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen. Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden. Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh. Folge TAYVORIQ für verständliche Trendchecks.",
-        "cta": "Folge TAYVORIQ für verständliche Trendchecks.",
-        "scenes": [
-          {
-            "duration_seconds": 5.0,
-            "visual_query": "business team market analysis vertical video",
-            "overlay_text": "",
-            "spoken_chunk": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt."
-          },
-          {
-            "duration_seconds": 5.0,
-            "visual_query": "consumer price shopping decision vertical video",
-            "overlay_text": "",
-            "spoken_chunk": "Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung."
-          },
-          {
-            "duration_seconds": 5.0,
-            "visual_query": "company office strategy meeting vertical video",
-            "overlay_text": "",
-            "spoken_chunk": "Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen."
-          },
-          {
-            "duration_seconds": 5.0,
-            "visual_query": "factory industry production vertical video",
-            "overlay_text": "",
-            "spoken_chunk": "Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden."
-          },
-          {
-            "duration_seconds": 5.0,
-            "visual_query": "financial market dashboard vertical video",
-            "overlay_text": "",
-            "spoken_chunk": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh."
-          },
-          {
-            "duration_seconds": 5.0,
-            "visual_query": "business news explainer vertical video",
-            "overlay_text": "",
-            "spoken_chunk": "Folge TAYVORIQ für verständliche Trendchecks."
-          }
-        ],
-        "youtube_metadata": {
-          "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
-          "description": "Aktuelle Meldungen richten Aufmerksamkeit auf 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert. Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden. Darauf achten: Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge. #TAYVORIQ #Shorts #Trendjagd",
-          "hashtags": [
-            "#TAYVORIQ",
-            "#Shorts",
-            "#Trendjagd"
-          ],
-          "tags": [
-            "business_economy",
-            "TAYVORIQ",
-            "Trendjagd",
-            "Shorts"
-          ]
-        },
-        "fallback_used": true,
-        "language": "Deutsch",
-        "platform": "tiktok",
-        "target_duration": 35,
-        "llm_provider": "template:fallback",
-        "viewer_questions": {
-          "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert.",
-          "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
-          "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
-          "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
-          "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
-          "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
-        },
-        "editorial_answers": {
-          "what_happened": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt.",
-          "why_happening": "Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung.",
-          "who_is_affected": "Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen.",
-          "personal_impact": "Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden.",
-          "action_now": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh."
-        },
-        "source_context": {
-          "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
-          "scope": "business_economy",
-          "scope_label": "Wirtschaft & Unternehmen",
-          "source": "Business Punk",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPX3c5NTY1TmM2S01tNVlmdTNiWk1IOHpVUUlQQ2JNTy1VMzZjYmtNZUQ4cC1HSEJPVzlGVk1Zc2NlUGVlaTNvS25IamxKZE56R1lPcVNjY0pndEpEcUMxdTNjVXJEY1N5dWJ2MXhWNFMyVWg3S1RYRHFMOW1xc05xbXpiUGhBeC1scHVYRF9MY0txdXJKRmZwVnJIRmtKbVJKdkZqTkFEWm9Ua25QSlFvSGhPSHozWl90M1p2anFB?oc=5",
-          "published_at": "Fri, 10 Jul 2026 06:01:35 GMT",
-          "query": "Wirtschaft Unternehmen Trend heute when:1d",
-          "score": 39.0,
-          "confirmation_count": 0,
-          "reasons": [
-            "last-12h",
-            "scope:business_economy",
-            "short-form-title-fit",
-            "concrete-number",
-            "named-news-source"
-          ],
-          "rss_summary": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert Business Punk",
-          "article_summary": "",
-          "evidence_headlines": [],
-          "editorial_context": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert Business Punk",
-          "editorial_context_score": 4,
-          "context_has_cause": true
-        },
-        "viewer_payoff": "Das Video liefert Erklärung und Handlung vollständig.",
-        "script_body": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt. Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung. Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen. Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden. Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh.",
-        "pronunciation_map": {},
-        "context_metrics": {
-          "cta_start_ratio": 0.904,
-          "body_words": 47,
-          "cta_words": 5,
-          "editorial_body_words": 47
-        },
-        "tiktok_metadata": {
-          "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
-          "caption": "Aktuelle Meldungen richten Aufmerksamkeit auf 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert. #TAYVORIQ #Shorts #Trendjagd",
-          "hashtags": [
-            "#TAYVORIQ",
-            "#Shorts",
-            "#Trendjagd"
-          ],
-          "privacy_default": "SELF_ONLY"
-        }
-      },
-      "quality_report": {
-        "passed": true,
-        "issues": [],
-        "word_count": 52,
-        "body_words": 47,
-        "cta_words": 5,
-        "cta_start_ratio": 0.904,
-        "self_contained": true,
-        "native_language_voice_configured": true,
-        "quality_version": "v11-editorial-five-answers",
-        "checked_at": "2026-07-10T14:50:38+00:00",
-        "editorial_five_answers": {
-          "passed": true,
-          "answers": {
-            "what_happened": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt.",
-            "why_happening": "Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung.",
-            "who_is_affected": "Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen.",
-            "personal_impact": "Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden.",
-            "action_now": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh."
-          }
-        }
+        "editorial_repair_strategy": "full-source-fallback-after-aggregate-gate"
       },
       "audio": {
         "voice_path": "voice.mp3",
@@ -650,7 +446,7 @@
           {
             "scene": 1,
             "source": "pexels_video",
-            "query": "business team market analysis vertical video",
+            "query": "a graph showing the increase in company insolvencies in Germany",
             "duration": 7.249,
             "subtitle_present": true,
             "asset": "scene_01.mp4"
@@ -658,7 +454,7 @@
           {
             "scene": 2,
             "source": "pexels_video",
-            "query": "consumer price shopping decision vertical video",
+            "query": "a chart showing the reasons for company insolvencies in Germany",
             "duration": 5.931,
             "subtitle_present": true,
             "asset": "scene_02.mp4"
@@ -666,7 +462,7 @@
           {
             "scene": 3,
             "source": "pexels_video",
-            "query": "company office strategy meeting vertical video",
+            "query": "a graph showing the impact of company insolvencies on employment",
             "duration": 5.272,
             "subtitle_present": true,
             "asset": "scene_03.mp4"
@@ -674,7 +470,7 @@
           {
             "scene": 4,
             "source": "pexels_video",
-            "query": "factory industry production vertical video",
+            "query": "a chart showing the long-term effects of the economic crisis on the economy and society",
             "duration": 5.931,
             "subtitle_present": true,
             "asset": "scene_04.mp4"
@@ -697,12 +493,249 @@
           }
         ],
         "render_size": "1080x1920",
-        "bytes": 26414530,
+        "bytes": 29010447,
         "voice_duration_seconds": 34.27,
         "final_duration_seconds": 35.52,
         "end_padding_seconds": 1.25,
         "requested_duration_seconds": 35.0,
         "duration_delta_seconds": 0.52,
+        "duration_status": "OK"
+      },
+      "video_path": "short_youtube.mp4",
+      "upload_status": "PENDING_APPROVAL"
+    },
+    "tiktok": {
+      "text_package": {
+        "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
+        "category": "business_economy",
+        "trend_angle": "Wirtschaftskrise",
+        "trend_signal": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt.",
+        "named_entities": [],
+        "why_now": "Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung.",
+        "affected_groups": [
+          "Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen."
+        ],
+        "viewer_test": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh.",
+        "series_next": "",
+        "hook": "4996 Firmen in drei Monaten insolvent - Was ist los in Deutschland?",
+        "script": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt. Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung. Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen. Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden. Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh. Folge TAYVORIQ für verständliche Trendchecks.",
+        "cta": "Folge TAYVORIQ für verständliche Trendchecks.",
+        "scenes": [
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "a graph showing the increase in company insolvencies in Germany",
+            "overlay_text": "",
+            "spoken_chunk": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "a chart showing the reasons for company insolvencies in Germany",
+            "overlay_text": "",
+            "spoken_chunk": "Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "a graph showing the impact of company insolvencies on employment",
+            "overlay_text": "",
+            "spoken_chunk": "Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "a chart showing the long-term effects of the economic crisis on the economy and society",
+            "overlay_text": "",
+            "spoken_chunk": "Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "financial market dashboard vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "business news explainer vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Folge TAYVORIQ für verständliche Trendchecks."
+          }
+        ],
+        "youtube_metadata": {
+          "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
+          "description": "Anstieg der Firmeninsolvenzen. In den letzten drei Monaten sind 4996 Firmen in Deutschland insolvent geworden. Das ist ein Rekordwert, der die Wirtschaftskrise in Deutschland verdeutlicht. Darauf achten: Was sind die Gründe für diese Wirtschaftskrise und wie wird sie die Zukunft der deutschen Wirtschaft beeinflussen? #Trendjagd #TAYVORIQ #Wirtschaftskrise #Deutschland",
+          "hashtags": [
+            "#Trendjagd",
+            "#TAYVORIQ",
+            "#Wirtschaftskrise",
+            "#Deutschland"
+          ],
+          "tags": [
+            "business_economy",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "llm_provider": "groq:llama-3.1-8b-instant",
+        "language": "Deutsch",
+        "platform": "tiktok",
+        "target_duration": 35,
+        "viewer_questions": {
+          "what_happened": "Anstieg der Firmeninsolvenzen.",
+          "why_should_i_care": "In den letzten drei Monaten sind 4996 Firmen in Deutschland insolvent geworden. Das ist ein Rekordwert, der die Wirtschaftskrise in Deutschland verdeutlicht.",
+          "what_changes_for_me": "Was sind die Gründe für diese Wirtschaftskrise und wie wird sie die Zukunft der deutschen Wirtschaft beeinflussen?",
+          "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
+          "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
+          "what_should_i_watch": "Was sind die Gründe für diese Wirtschaftskrise und wie wird sie die Zukunft der deutschen Wirtschaft beeinflussen?"
+        },
+        "editorial_answers": {
+          "what_happened": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt.",
+          "why_happening": "Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung.",
+          "who_is_affected": "Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen.",
+          "personal_impact": "Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden.",
+          "action_now": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh."
+        },
+        "editorial_repair_strategy": "full-source-fallback-after-aggregate-gate",
+        "source_context": {
+          "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
+          "scope": "business_economy",
+          "scope_label": "Wirtschaft & Unternehmen",
+          "source": "Business Punk",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPX3c5NTY1TmM2S01tNVlmdTNiWk1IOHpVUUlQQ2JNTy1VMzZjYmtNZUQ4cC1HSEJPVzlGVk1Zc2NlUGVlaTNvS25IamxKZE56R1lPcVNjY0pndEpEcUMxdTNjVXJEY1N5dWJ2MXhWNFMyVWg3S1RYRHFMOW1xc05xbXpiUGhBeC1scHVYRF9MY0txdXJKRmZwVnJIRmtKbVJKdkZqTkFEWm9Ua25QSlFvSGhPSHozWl90M1p2anFB?oc=5",
+          "published_at": "Fri, 10 Jul 2026 06:01:35 GMT",
+          "query": "Wirtschaft Unternehmen Trend heute when:1d",
+          "score": 39.0,
+          "confirmation_count": 0,
+          "reasons": [
+            "last-12h",
+            "scope:business_economy",
+            "short-form-title-fit",
+            "concrete-number",
+            "named-news-source"
+          ],
+          "rss_summary": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert Business Punk",
+          "article_summary": "",
+          "evidence_headlines": [],
+          "editorial_context": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert Business Punk",
+          "editorial_context_score": 4,
+          "context_has_cause": true
+        },
+        "viewer_payoff": "Das Video erklärt den Trend vollständig.",
+        "script_body": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt. Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung. Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen. Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden. Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh.",
+        "pronunciation_map": {},
+        "context_metrics": {
+          "cta_start_ratio": 0.904,
+          "body_words": 47,
+          "cta_words": 5,
+          "editorial_body_words": 47
+        },
+        "tiktok_metadata": {
+          "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
+          "caption": "Anstieg der Firmeninsolvenzen. #Trendjagd #TAYVORIQ #Wirtschaftskrise #Deutschland",
+          "hashtags": [
+            "#Trendjagd",
+            "#TAYVORIQ",
+            "#Wirtschaftskrise",
+            "#Deutschland"
+          ],
+          "privacy_default": "SELF_ONLY"
+        }
+      },
+      "quality_report": {
+        "passed": true,
+        "issues": [],
+        "word_count": 52,
+        "body_words": 47,
+        "cta_words": 5,
+        "cta_start_ratio": 0.904,
+        "self_contained": true,
+        "native_language_voice_configured": true,
+        "quality_version": "v16-aggregate-source-fallback",
+        "checked_at": "2026-07-10T15:49:53+00:00",
+        "editorial_five_answers": {
+          "passed": true,
+          "answers": {
+            "what_happened": "In drei Monaten wurden 4996 Firmeninsolvenzen registriert, deutlich mehr als zuletzt.",
+            "why_happening": "Treiber sind schwache Nachfrage, hohe Kosten und teure Finanzierung.",
+            "who_is_affected": "Betroffen sind Beschäftigte, Zulieferer und Kunden angeschlagener Unternehmen.",
+            "personal_impact": "Für dich können Jobs, Rechnungen oder Leistungen unsicherer werden.",
+            "action_now": "Achte auf Kurzarbeit, Zahlungsverzug und Lieferprobleme und sichere Alternativen früh."
+          }
+        },
+        "editorial_repair_strategy": "full-source-fallback-after-aggregate-gate"
+      },
+      "audio": {
+        "voice_path": "voice.mp3",
+        "voice_duration_seconds": 32.37,
+        "provider": "elevenlabs",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.48,
+          "similarity_boost": 0.78,
+          "style": 0.3,
+          "use_speaker_boost": true
+        },
+        "fallback": false,
+        "pronunciation_replacements": {},
+        "native_language_voice_configured": true
+      },
+      "render": {
+        "video_path": "short.mp4",
+        "asset_report": [
+          {
+            "scene": 1,
+            "source": "pexels_video",
+            "query": "a graph showing the increase in company insolvencies in Germany",
+            "duration": 6.848,
+            "subtitle_present": true,
+            "asset": "scene_01.mp4"
+          },
+          {
+            "scene": 2,
+            "source": "pexels_video",
+            "query": "a chart showing the reasons for company insolvencies in Germany",
+            "duration": 5.603,
+            "subtitle_present": true,
+            "asset": "scene_02.mp4"
+          },
+          {
+            "scene": 3,
+            "source": "pexels_video",
+            "query": "a graph showing the impact of company insolvencies on employment",
+            "duration": 4.98,
+            "subtitle_present": true,
+            "asset": "scene_03.mp4"
+          },
+          {
+            "scene": 4,
+            "source": "pexels_video",
+            "query": "a chart showing the long-term effects of the economic crisis on the economy and society",
+            "duration": 5.603,
+            "subtitle_present": true,
+            "asset": "scene_04.mp4"
+          },
+          {
+            "scene": 5,
+            "source": "pexels_video",
+            "query": "financial market dashboard vertical video",
+            "duration": 6.225,
+            "subtitle_present": true,
+            "asset": "scene_05.mp4"
+          },
+          {
+            "scene": 6,
+            "source": "pexels_video",
+            "query": "business news explainer vertical video",
+            "duration": 4.362,
+            "subtitle_present": true,
+            "asset": "scene_06.mp4"
+          }
+        ],
+        "render_size": "1080x1920",
+        "bytes": 27463841,
+        "voice_duration_seconds": 32.37,
+        "final_duration_seconds": 33.62,
+        "end_padding_seconds": 1.25,
+        "requested_duration_seconds": 35.0,
+        "duration_delta_seconds": -1.38,
         "duration_status": "OK"
       },
       "video_path": "short_tiktok.mp4",
@@ -722,11 +755,12 @@
         "video_file": "short_youtube.mp4",
         "metadata": {
           "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
-          "description": "Aktuelle Meldungen richten Aufmerksamkeit auf 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert. Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden. Darauf achten: Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge. #TAYVORIQ #Shorts #Trendjagd",
+          "description": "Anstieg der Firmeninsolvenzen. In den letzten drei Monaten sind 4996 Firmen in Deutschland insolvent geworden. Das ist ein Rekordwert, der die Wirtschaftskrise in Deutschland verdeutlicht. Darauf achten: Was sind die Gründe für diese Wirtschaftskrise und wie wird sie die Zukunft der deutschen Wirtschaft beeinflussen? #Trendjagd #TAYVORIQ #Wirtschaftskrise #Deutschland",
           "hashtags": [
+            "#Trendjagd",
             "#TAYVORIQ",
-            "#Shorts",
-            "#Trendjagd"
+            "#Wirtschaftskrise",
+            "#Deutschland"
           ],
           "tags": [
             "business_economy",
@@ -736,7 +770,7 @@
           ]
         },
         "cta": "Abonniere TAYVORIQ für verständliche Trendchecks.",
-        "viewer_payoff": "Das Video liefert Erklärung und Handlung vollständig."
+        "viewer_payoff": "Das Video erklärt den Trend vollständig."
       },
       {
         "platform": "tiktok",
@@ -744,16 +778,17 @@
         "video_file": "short_tiktok.mp4",
         "metadata": {
           "title": "4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert",
-          "caption": "Aktuelle Meldungen richten Aufmerksamkeit auf 4996 Firmeninsolvenzen in drei Monaten: Deutschlands Wirtschaft wird durchsortiert. #TAYVORIQ #Shorts #Trendjagd",
+          "caption": "Anstieg der Firmeninsolvenzen. #Trendjagd #TAYVORIQ #Wirtschaftskrise #Deutschland",
           "hashtags": [
+            "#Trendjagd",
             "#TAYVORIQ",
-            "#Shorts",
-            "#Trendjagd"
+            "#Wirtschaftskrise",
+            "#Deutschland"
           ],
           "privacy_default": "SELF_ONLY"
         },
         "cta": "Folge TAYVORIQ für verständliche Trendchecks.",
-        "viewer_payoff": "Das Video liefert Erklärung und Handlung vollständig."
+        "viewer_payoff": "Das Video erklärt den Trend vollständig."
       }
     ]
   }
