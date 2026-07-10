@@ -1,53 +1,53 @@
 {
-  "requested_platform": "all_platforms",
+  "requested_platform": "youtube_tiktok",
   "targets": [
     "youtube_shorts",
-    "tiktok",
-    "instagram_reels"
+    "tiktok"
   ],
-  "master_video": "short.mp4",
-  "latest_preview_url": "https://mojo72549-arch.github.io/mind-reset-daily/tayvoriq/latest/",
-  "latest_video_url": "https://mojo72549-arch.github.io/mind-reset-daily/tayvoriq/latest/short.mp4",
-  "selected_topic": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf",
   "packages": [
     {
       "platform": "youtube_shorts",
-      "status": "ready_for_delivery",
-      "video_file": "short.mp4",
-      "caption": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf #Shorts #Trendjagd",
-      "title": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf",
-      "description": "Apple arbeitet an einem revolutionären Update für seine Messages-App. Mit der Einführung von KI-basierten Funktionen will das Unternehmen die Kommunikation auf neuen Ebenen revolutionieren.",
-      "hashtags": [
-        "#Shorts",
-        "#Trendjagd"
-      ],
-      "note": "Ready for YouTube Shorts. private_upload kann YouTube privat hochladen, wenn OAuth-Secrets gesetzt sind."
+      "status": "PENDING_APPROVAL",
+      "video_file": "short_youtube.mp4",
+      "metadata": {
+        "title": "Ball Corp. Aktie stabilisiert",
+        "description": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil.\n\nWarum relevant: Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten.\nFür dich: Als Anleger erkennst du krisenfeste Branchen; als Konsument siehst du den Trend zu Aluminiumverpackungen.\nBestätigt: Die weltweite Nachfrage nach Aludosen ist aktuell hoch und stützt die Aktie.\nNoch offen: Ob steigende Rohstoff- und Energiepreise die künftigen Margen schmälern werden.\nDarauf achten: Auf die Entwicklung der Rohstoffpreise für Aluminium und die Margenentwicklung im nächsten Quartal.\n\n#TAYVORIQ #Shorts #Trendjagd #Aktien #Finanzen #BallCorp",
+        "hashtags": [
+          "#TAYVORIQ",
+          "#Shorts",
+          "#Trendjagd",
+          "#Aktien",
+          "#Finanzen",
+          "#BallCorp"
+        ],
+        "tags": [
+          "business_economy",
+          "TAYVORIQ",
+          "Trendjagd",
+          "Shorts"
+        ]
+      },
+      "cta": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst. Like da lassen, abonnieren und Glocke aktivieren.",
+      "viewer_payoff": "Damit du Gewinner und Risiko früh erkennst."
     },
     {
       "platform": "tiktok",
-      "status": "ready_for_delivery",
-      "video_file": "short.mp4",
-      "caption": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf #Shorts #Trendjagd",
-      "title": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf",
-      "description": "Apple arbeitet an einem revolutionären Update für seine Messages-App. Mit der Einführung von KI-basierten Funktionen will das Unternehmen die Kommunikation auf neuen Ebenen revolutionieren.",
-      "hashtags": [
-        "#Shorts",
-        "#Trendjagd"
-      ],
-      "note": "Export-ready. Direkter TikTok-Upload benötigt audited TikTok Content Posting API Client und Tokens."
-    },
-    {
-      "platform": "instagram_reels",
-      "status": "ready_for_delivery",
-      "video_file": "short.mp4",
-      "caption": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf #Shorts #Trendjagd",
-      "title": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf",
-      "description": "Apple arbeitet an einem revolutionären Update für seine Messages-App. Mit der Einführung von KI-basierten Funktionen will das Unternehmen die Kommunikation auf neuen Ebenen revolutionieren.",
-      "hashtags": [
-        "#Shorts",
-        "#Trendjagd"
-      ],
-      "note": "Export-ready. Direkter Instagram-Reels-Upload benötigt IG Professional Account, Graph Token und öffentliche Media-URL."
+      "status": "PENDING_APPROVAL",
+      "video_file": "short_tiktok.mp4",
+      "metadata": {
+        "caption": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil. Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten. Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. #TAYVORIQ #Shorts #Trendjagd #Aktien #Finanzen",
+        "hashtags": [
+          "#TAYVORIQ",
+          "#Shorts",
+          "#Trendjagd",
+          "#Aktien",
+          "#Finanzen"
+        ],
+        "privacy_default": "SELF_ONLY",
+        "title": "Ball Corp. Aktie stabilisiert"
+      },
+      "cta": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst. TAYVORIQ folgen und das Video speichern.",
+      "viewer_payoff": "Damit du Gewinner und Risiko früh erkennst."
     }
   ]
 }

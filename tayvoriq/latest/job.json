@@ -1,164 +1,605 @@
 {
-  "job_id": "20260710_071933_ios-27-apple-ruestet-messages-mit-ki-und-rcs-neuerungen-auf",
-  "mode": "tayvoriq_cloud_render_v1",
-  "created_at": "2026-07-10T07:27:07+00:00",
-  "github_run_id": "29076275006",
-  "topic": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf",
+  "job_id": "20260710_103554_ball-corp-stock-stays-supported-by-beverage-can-demand",
+  "mode": "tayvoriq_audience_first_dual_platform_v1",
+  "created_at": "2026-07-10T10:48:18+00:00",
+  "github_run_id": "29086786836",
+  "topic": "Ball Corp. stock stays supported by beverage can demand",
   "language": "Deutsch",
-  "platform": "youtube_shorts",
+  "requested_platform": "youtube_tiktok",
   "target_duration": 35,
   "approval_status": "PENDING_REVIEW",
   "render_status": "DONE",
-  "upload_status": "SKIPPED",
+  "upload_status": "NOT_STARTED_PENDING_APPROVAL",
   "llm_report": {
-    "provider": "groq:llama-3.1-8b-instant",
+    "provider": "gemini:gemini-3.5-flash",
     "fallback": false,
-    "errors": [
-      {
-        "provider": "gemini",
-        "error": "404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=***"
-      }
-    ]
+    "errors": []
   },
   "quality_report": {
     "passed": true,
-    "issues": [],
-    "word_count": 88,
-    "checked_at": "2026-07-10T07:19:34+00:00"
+    "variants": {
+      "youtube_shorts": {
+        "passed": true,
+        "issues": [],
+        "word_count": 65,
+        "target_word_range": [
+          51,
+          65
+        ],
+        "checked_at": "2026-07-10T10:36:44+00:00",
+        "viewer_questions_answered": true
+      },
+      "tiktok": {
+        "passed": true,
+        "issues": [],
+        "word_count": 65,
+        "target_word_range": [
+          51,
+          65
+        ],
+        "checked_at": "2026-07-10T10:42:42+00:00",
+        "viewer_questions_answered": true
+      }
+    }
   },
   "text_package": {
-    "title": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf",
-    "category": "technology_ai",
-    "trend_angle": "Einblick in die zukünftige Kommunikation",
-    "trend_signal": "Apple arbeitet an einem revolutionären Update für seine Messages-App",
+    "title": "Ball Corp. Aktie stabilisiert",
+    "category": "business_economy",
+    "trend_angle": "Krisenresistenter Konsum stützt Verpackungsindustrie",
+    "trend_signal": "Anhaltend hohe Nachfrage nach Aluminium-Getränkedosen trotz Inflation",
     "named_entities": [
-      "Apple",
-      "iOS 27"
+      "Ball Corporation"
     ],
-    "why_now": "Nachdem Microsoft bereits seine Azure-Plattform für KI-basierte Kommunikation erweitert hat, folgt nun Apple mit seinem eigenen Update",
+    "why_now": "Die jüngsten Marktdaten zeigen, dass die Aktie von Ball Corp. durch die robuste Nachfrage nach Getränkedosen widerstandsfähig bleibt.",
     "affected_groups": [
-      "Nutzer der Messages-App",
-      "Apple-Entwickler"
+      "Anleger",
+      "Getränkehersteller",
+      "Verpackungsindustrie"
     ],
-    "viewer_test": "Wie wird sich die KI-basierte Kommunikation auf mein tägliches Leben auswirken?",
-    "series_next": "In Teil 2 untersuchen wir die möglichen Risiken der KI-basierten Kommunikation",
-    "hook": "Apple rüstet seine Messages-App mit KI auf - was bedeutet das für dich?",
-    "script": "Apple arbeitet an einem revolutionären Update für seine Messages-App. Mit der Einführung von KI-basierten Funktionen will das Unternehmen die Kommunikation auf neuen Ebenen revolutionieren. Nachdem Microsoft bereits seine Azure-Plattform für KI-basierte Kommunikation erweitert hat, folgt nun Apple mit seinem eigenen Update. Was bedeutet das für dich? Wie wird sich die KI-basierte Kommunikation auf dein tägliches Leben auswirken? In Teil 2 untersuchen wir die möglichen Risiken der KI-basierten Kommunikation. Lass uns gemeinsam in die Zukunft blicken und die neuesten Entwicklungen in der Technologie verfolgen. Like, Abonnieren und Glocke aktivieren!",
-    "cta": "Lass uns gemeinsam in die Zukunft blicken und die neuesten Entwicklungen in der Technologie verfolgen. Like, Abonnieren und Glocke aktivieren!",
+    "viewer_test": "Verstehen, warum Alltagsgüter wie Aludosen ein stabiler Hafen für Investments sein können.",
+    "series_next": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet.",
+    "hook": "Die Aktie von Ball Corporation bleibt trotz Krise überraschend stabil.",
+    "script": "Die Aktie von Ball Corporation. Die Ball Corporation Aktie bleibt dank der starken. Wichtig ist: Es zeigt, dass. Für dich heißt das: Als Anleger erkennst. Bestätigt ist: Die weltweite Nachfrage. Offen bleibt: Ob steigende Rohstoff. Achte jetzt auf Auf die Entwicklung der. Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst. Like da lassen, abonnieren und Glocke aktivieren.",
+    "cta": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst. Like da lassen, abonnieren und Glocke aktivieren.",
+    "viewer_questions": {
+      "what_happened": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil.",
+      "why_should_i_care": "Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten.",
+      "what_changes_for_me": "Als Anleger erkennst du krisenfeste Branchen; als Konsument siehst du den Trend zu Aluminiumverpackungen.",
+      "what_is_certain": "Die weltweite Nachfrage nach Aludosen ist aktuell hoch und stützt die Aktie.",
+      "what_is_uncertain": "Ob steigende Rohstoff- und Energiepreise die künftigen Margen schmälern werden.",
+      "what_should_i_watch": "Auf die Entwicklung der Rohstoffpreise für Aluminium und die Margenentwicklung im nächsten Quartal."
+    },
     "scenes": [
       {
         "duration_seconds": 5.0,
-        "visual_query": "apple iphone messages app screenshot",
+        "visual_query": "aluminum beverage cans production line",
         "overlay_text": "",
-        "spoken_chunk": "Apple arbeitet an einem revolutionären Update für seine Messages-App"
+        "spoken_chunk": "Die Aktie von Ball Corporation. Die Ball Corporation Aktie bleibt dank der starken."
       },
       {
-        "duration_seconds": 10.0,
-        "visual_query": "microsoft azure kubernetes screenshot",
+        "duration_seconds": 5.0,
+        "visual_query": "opening soda can condensation",
         "overlay_text": "",
-        "spoken_chunk": "Nachdem Microsoft bereits seine Azure-Plattform für KI-basierte Kommunikation erweitert hat"
+        "spoken_chunk": "Wichtig ist: Es zeigt, dass. Für dich heißt das: Als Anleger erkennst."
       },
       {
-        "duration_seconds": 10.0,
-        "visual_query": "apple ios 27 screenshot",
+        "duration_seconds": 5.0,
+        "visual_query": "stock market chart green line",
         "overlay_text": "",
-        "spoken_chunk": "Folgt nun Apple mit seinem eigenen Update"
+        "spoken_chunk": "Bestätigt ist: Die weltweite Nachfrage."
       },
       {
-        "duration_seconds": 10.0,
-        "visual_query": "ki-basierte kommunikation illustration",
+        "duration_seconds": 5.0,
+        "visual_query": "aluminum recycling factory raw metal",
         "overlay_text": "",
-        "spoken_chunk": "Was bedeutet das für dich?"
+        "spoken_chunk": "Offen bleibt: Ob steigende Rohstoff. Achte jetzt auf Auf die Entwicklung der."
       },
       {
-        "duration_seconds": 10.0,
-        "visual_query": "trends graph",
+        "duration_seconds": 5.0,
+        "visual_query": "financial market dashboard vertical video",
         "overlay_text": "",
-        "spoken_chunk": "In Teil 2 untersuchen wir die möglichen Risiken der KI-basierten Kommunikation"
+        "spoken_chunk": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "business news explainer vertical video",
+        "overlay_text": "",
+        "spoken_chunk": "Like da lassen, abonnieren und Glocke aktivieren."
       }
     ],
     "youtube_metadata": {
-      "title": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf",
-      "description": "Apple arbeitet an einem revolutionären Update für seine Messages-App. Mit der Einführung von KI-basierten Funktionen will das Unternehmen die Kommunikation auf neuen Ebenen revolutionieren.",
+      "title": "Ball Corp. Aktie stabilisiert",
+      "description": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil.\n\nWarum relevant: Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten.\nFür dich: Als Anleger erkennst du krisenfeste Branchen; als Konsument siehst du den Trend zu Aluminiumverpackungen.\nBestätigt: Die weltweite Nachfrage nach Aludosen ist aktuell hoch und stützt die Aktie.\nNoch offen: Ob steigende Rohstoff- und Energiepreise die künftigen Margen schmälern werden.\nDarauf achten: Auf die Entwicklung der Rohstoffpreise für Aluminium und die Margenentwicklung im nächsten Quartal.\n\n#TAYVORIQ #Shorts #Trendjagd #Aktien #Finanzen #BallCorp",
       "hashtags": [
+        "#TAYVORIQ",
         "#Shorts",
-        "#Trendjagd"
+        "#Trendjagd",
+        "#Aktien",
+        "#Finanzen",
+        "#BallCorp"
       ],
       "tags": [
-        "Trendjagd"
+        "business_economy",
+        "TAYVORIQ",
+        "Trendjagd",
+        "Shorts"
       ]
     },
-    "llm_provider": "groq:llama-3.1-8b-instant",
+    "llm_provider": "gemini:gemini-3.5-flash",
     "language": "Deutsch",
     "platform": "youtube_shorts",
-    "target_duration": 35
+    "target_duration": 35,
+    "spoken_question_answers": {
+      "what_happened": "Die Ball Corporation Aktie bleibt dank der starken.",
+      "why_should_i_care": "Wichtig ist: Es zeigt, dass. Für dich heißt das: Als Anleger erkennst.",
+      "what_changes_for_me": "Wichtig ist: Es zeigt, dass. Für dich heißt das: Als Anleger erkennst.",
+      "what_is_certain": "Bestätigt ist: Die weltweite Nachfrage. Offen bleibt: Ob steigende Rohstoff.",
+      "what_is_uncertain": "Bestätigt ist: Die weltweite Nachfrage. Offen bleibt: Ob steigende Rohstoff.",
+      "what_should_i_watch": "Achte jetzt auf Auf die Entwicklung der."
+    },
+    "viewer_payoff": "Damit du Gewinner und Risiko früh erkennst.",
+    "tiktok_metadata": {
+      "caption": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil. Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten. Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. #TAYVORIQ #Shorts #Trendjagd #Aktien #Finanzen",
+      "hashtags": [
+        "#TAYVORIQ",
+        "#Shorts",
+        "#Trendjagd",
+        "#Aktien",
+        "#Finanzen"
+      ],
+      "privacy_default": "SELF_ONLY",
+      "title": "Ball Corp. Aktie stabilisiert"
+    }
   },
-  "youtube_metadata": {
-    "title": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf",
-    "description": "Apple arbeitet an einem revolutionären Update für seine Messages-App. Mit der Einführung von KI-basierten Funktionen will das Unternehmen die Kommunikation auf neuen Ebenen revolutionieren.",
-    "hashtags": [
-      "#Shorts",
-      "#Trendjagd"
+  "variants": {
+    "youtube_shorts": {
+      "text_package": {
+        "title": "Ball Corp. Aktie stabilisiert",
+        "category": "business_economy",
+        "trend_angle": "Krisenresistenter Konsum stützt Verpackungsindustrie",
+        "trend_signal": "Anhaltend hohe Nachfrage nach Aluminium-Getränkedosen trotz Inflation",
+        "named_entities": [
+          "Ball Corporation"
+        ],
+        "why_now": "Die jüngsten Marktdaten zeigen, dass die Aktie von Ball Corp. durch die robuste Nachfrage nach Getränkedosen widerstandsfähig bleibt.",
+        "affected_groups": [
+          "Anleger",
+          "Getränkehersteller",
+          "Verpackungsindustrie"
+        ],
+        "viewer_test": "Verstehen, warum Alltagsgüter wie Aludosen ein stabiler Hafen für Investments sein können.",
+        "series_next": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet.",
+        "hook": "Die Aktie von Ball Corporation bleibt trotz Krise überraschend stabil.",
+        "script": "Die Aktie von Ball Corporation. Die Ball Corporation Aktie bleibt dank der starken. Wichtig ist: Es zeigt, dass. Für dich heißt das: Als Anleger erkennst. Bestätigt ist: Die weltweite Nachfrage. Offen bleibt: Ob steigende Rohstoff. Achte jetzt auf Auf die Entwicklung der. Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst. Like da lassen, abonnieren und Glocke aktivieren.",
+        "cta": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst. Like da lassen, abonnieren und Glocke aktivieren.",
+        "viewer_questions": {
+          "what_happened": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil.",
+          "why_should_i_care": "Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten.",
+          "what_changes_for_me": "Als Anleger erkennst du krisenfeste Branchen; als Konsument siehst du den Trend zu Aluminiumverpackungen.",
+          "what_is_certain": "Die weltweite Nachfrage nach Aludosen ist aktuell hoch und stützt die Aktie.",
+          "what_is_uncertain": "Ob steigende Rohstoff- und Energiepreise die künftigen Margen schmälern werden.",
+          "what_should_i_watch": "Auf die Entwicklung der Rohstoffpreise für Aluminium und die Margenentwicklung im nächsten Quartal."
+        },
+        "scenes": [
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "aluminum beverage cans production line",
+            "overlay_text": "",
+            "spoken_chunk": "Die Aktie von Ball Corporation. Die Ball Corporation Aktie bleibt dank der starken."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "opening soda can condensation",
+            "overlay_text": "",
+            "spoken_chunk": "Wichtig ist: Es zeigt, dass. Für dich heißt das: Als Anleger erkennst."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "stock market chart green line",
+            "overlay_text": "",
+            "spoken_chunk": "Bestätigt ist: Die weltweite Nachfrage."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "aluminum recycling factory raw metal",
+            "overlay_text": "",
+            "spoken_chunk": "Offen bleibt: Ob steigende Rohstoff. Achte jetzt auf Auf die Entwicklung der."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "financial market dashboard vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "business news explainer vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Like da lassen, abonnieren und Glocke aktivieren."
+          }
+        ],
+        "youtube_metadata": {
+          "title": "Ball Corp. Aktie stabilisiert",
+          "description": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil.\n\nWarum relevant: Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten.\nFür dich: Als Anleger erkennst du krisenfeste Branchen; als Konsument siehst du den Trend zu Aluminiumverpackungen.\nBestätigt: Die weltweite Nachfrage nach Aludosen ist aktuell hoch und stützt die Aktie.\nNoch offen: Ob steigende Rohstoff- und Energiepreise die künftigen Margen schmälern werden.\nDarauf achten: Auf die Entwicklung der Rohstoffpreise für Aluminium und die Margenentwicklung im nächsten Quartal.\n\n#TAYVORIQ #Shorts #Trendjagd #Aktien #Finanzen #BallCorp",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Shorts",
+            "#Trendjagd",
+            "#Aktien",
+            "#Finanzen",
+            "#BallCorp"
+          ],
+          "tags": [
+            "business_economy",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "llm_provider": "gemini:gemini-3.5-flash",
+        "language": "Deutsch",
+        "platform": "youtube_shorts",
+        "target_duration": 35,
+        "spoken_question_answers": {
+          "what_happened": "Die Ball Corporation Aktie bleibt dank der starken.",
+          "why_should_i_care": "Wichtig ist: Es zeigt, dass. Für dich heißt das: Als Anleger erkennst.",
+          "what_changes_for_me": "Wichtig ist: Es zeigt, dass. Für dich heißt das: Als Anleger erkennst.",
+          "what_is_certain": "Bestätigt ist: Die weltweite Nachfrage. Offen bleibt: Ob steigende Rohstoff.",
+          "what_is_uncertain": "Bestätigt ist: Die weltweite Nachfrage. Offen bleibt: Ob steigende Rohstoff.",
+          "what_should_i_watch": "Achte jetzt auf Auf die Entwicklung der."
+        },
+        "viewer_payoff": "Damit du Gewinner und Risiko früh erkennst.",
+        "tiktok_metadata": {
+          "caption": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil. Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten. Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. #TAYVORIQ #Shorts #Trendjagd #Aktien #Finanzen",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Shorts",
+            "#Trendjagd",
+            "#Aktien",
+            "#Finanzen"
+          ],
+          "privacy_default": "SELF_ONLY",
+          "title": "Ball Corp. Aktie stabilisiert"
+        }
+      },
+      "quality_report": {
+        "passed": true,
+        "issues": [],
+        "word_count": 65,
+        "target_word_range": [
+          51,
+          65
+        ],
+        "checked_at": "2026-07-10T10:36:44+00:00",
+        "viewer_questions_answered": true
+      },
+      "audio": {
+        "voice_path": "voice.mp3",
+        "voice_duration_seconds": 34.72,
+        "provider": "elevenlabs",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.48,
+          "similarity_boost": 0.78,
+          "style": 0.3,
+          "use_speaker_boost": true
+        },
+        "fallback": false
+      },
+      "render": {
+        "video_path": "short.mp4",
+        "asset_report": [
+          {
+            "scene": 1,
+            "source": "pexels_video",
+            "query": "aluminum beverage cans production line",
+            "duration": 6.944,
+            "subtitle_present": true,
+            "asset": "scene_01.mp4"
+          },
+          {
+            "scene": 2,
+            "source": "pexels_video",
+            "query": "opening soda can condensation",
+            "duration": 6.41,
+            "subtitle_present": true,
+            "asset": "scene_02.mp4"
+          },
+          {
+            "scene": 3,
+            "source": "pexels_video",
+            "query": "stock market chart green line",
+            "duration": 2.671,
+            "subtitle_present": true,
+            "asset": "scene_03.mp4"
+          },
+          {
+            "scene": 4,
+            "source": "pexels_video",
+            "query": "aluminum recycling factory raw metal",
+            "duration": 6.41,
+            "subtitle_present": true,
+            "asset": "scene_04.mp4"
+          },
+          {
+            "scene": 5,
+            "source": "pexels_video",
+            "query": "financial market dashboard vertical video",
+            "duration": 8.546,
+            "subtitle_present": true,
+            "asset": "scene_05.mp4"
+          },
+          {
+            "scene": 6,
+            "source": "pexels_video",
+            "query": "business news explainer vertical video",
+            "duration": 4.989,
+            "subtitle_present": true,
+            "asset": "scene_06.mp4"
+          }
+        ],
+        "render_size": "1080x1920",
+        "bytes": 26360347,
+        "voice_duration_seconds": 34.72,
+        "final_duration_seconds": 35.97,
+        "end_padding_seconds": 1.25,
+        "requested_duration_seconds": 35.0,
+        "duration_delta_seconds": 0.97,
+        "duration_status": "OK"
+      },
+      "video_path": "short_youtube.mp4",
+      "upload_status": "PENDING_APPROVAL"
+    },
+    "tiktok": {
+      "text_package": {
+        "title": "Ball Corp. Aktie stabilisiert",
+        "category": "business_economy",
+        "trend_angle": "Krisenresistenter Konsum stützt Verpackungsindustrie",
+        "trend_signal": "Anhaltend hohe Nachfrage nach Aluminium-Getränkedosen trotz Inflation",
+        "named_entities": [
+          "Ball Corporation"
+        ],
+        "why_now": "Die jüngsten Marktdaten zeigen, dass die Aktie von Ball Corp. durch die robuste Nachfrage nach Getränkedosen widerstandsfähig bleibt.",
+        "affected_groups": [
+          "Anleger",
+          "Getränkehersteller",
+          "Verpackungsindustrie"
+        ],
+        "viewer_test": "Verstehen, warum Alltagsgüter wie Aludosen ein stabiler Hafen für Investments sein können.",
+        "series_next": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet.",
+        "hook": "Die Aktie von Ball Corporation bleibt trotz Krise überraschend stabil.",
+        "script": "Die Aktie von Ball Corporation. Die Ball Corporation Aktie bleibt dank der starken. Wichtig ist: Es zeigt, dass. Für dich heißt das: Als Anleger erkennst. Bestätigt ist: Die weltweite Nachfrage. Offen bleibt: Ob steigende Rohstoff- und. Achte jetzt auf Auf die Entwicklung der. Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst. TAYVORIQ folgen und das Video speichern.",
+        "cta": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst. TAYVORIQ folgen und das Video speichern.",
+        "viewer_questions": {
+          "what_happened": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil.",
+          "why_should_i_care": "Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten.",
+          "what_changes_for_me": "Als Anleger erkennst du krisenfeste Branchen; als Konsument siehst du den Trend zu Aluminiumverpackungen.",
+          "what_is_certain": "Die weltweite Nachfrage nach Aludosen ist aktuell hoch und stützt die Aktie.",
+          "what_is_uncertain": "Ob steigende Rohstoff- und Energiepreise die künftigen Margen schmälern werden.",
+          "what_should_i_watch": "Auf die Entwicklung der Rohstoffpreise für Aluminium und die Margenentwicklung im nächsten Quartal."
+        },
+        "scenes": [
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "aluminum beverage cans production line",
+            "overlay_text": "",
+            "spoken_chunk": "Die Aktie von Ball Corporation. Die Ball Corporation Aktie bleibt dank der starken."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "opening soda can condensation",
+            "overlay_text": "",
+            "spoken_chunk": "Wichtig ist: Es zeigt, dass. Für dich heißt das: Als Anleger erkennst."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "stock market chart green line",
+            "overlay_text": "",
+            "spoken_chunk": "Bestätigt ist: Die weltweite Nachfrage."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "aluminum recycling factory raw metal",
+            "overlay_text": "",
+            "spoken_chunk": "Offen bleibt: Ob steigende Rohstoff- und. Achte jetzt auf Auf die Entwicklung der."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "financial market dashboard vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "business news explainer vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "TAYVORIQ folgen und das Video speichern."
+          }
+        ],
+        "youtube_metadata": {
+          "title": "Ball Corp. Aktie stabilisiert",
+          "description": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil.\n\nWarum relevant: Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten.\nFür dich: Als Anleger erkennst du krisenfeste Branchen; als Konsument siehst du den Trend zu Aluminiumverpackungen.\nBestätigt: Die weltweite Nachfrage nach Aludosen ist aktuell hoch und stützt die Aktie.\nNoch offen: Ob steigende Rohstoff- und Energiepreise die künftigen Margen schmälern werden.\nDarauf achten: Auf die Entwicklung der Rohstoffpreise für Aluminium und die Margenentwicklung im nächsten Quartal.\n\n#TAYVORIQ #Shorts #Trendjagd #Aktien #Finanzen #BallCorp",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Shorts",
+            "#Trendjagd",
+            "#Aktien",
+            "#Finanzen",
+            "#BallCorp"
+          ],
+          "tags": [
+            "business_economy",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "llm_provider": "gemini:gemini-3.5-flash",
+        "language": "Deutsch",
+        "platform": "tiktok",
+        "target_duration": 35,
+        "spoken_question_answers": {
+          "what_happened": "Die Ball Corporation Aktie bleibt dank der starken.",
+          "why_should_i_care": "Wichtig ist: Es zeigt, dass. Für dich heißt das: Als Anleger erkennst.",
+          "what_changes_for_me": "Wichtig ist: Es zeigt, dass. Für dich heißt das: Als Anleger erkennst.",
+          "what_is_certain": "Bestätigt ist: Die weltweite Nachfrage. Offen bleibt: Ob steigende Rohstoff- und.",
+          "what_is_uncertain": "Bestätigt ist: Die weltweite Nachfrage. Offen bleibt: Ob steigende Rohstoff- und.",
+          "what_should_i_watch": "Achte jetzt auf Auf die Entwicklung der."
+        },
+        "viewer_payoff": "Damit du Gewinner und Risiko früh erkennst.",
+        "tiktok_metadata": {
+          "caption": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil. Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten. Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. #TAYVORIQ #Shorts #Trendjagd #Aktien #Finanzen",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Shorts",
+            "#Trendjagd",
+            "#Aktien",
+            "#Finanzen"
+          ],
+          "privacy_default": "SELF_ONLY",
+          "title": "Ball Corp. Aktie stabilisiert"
+        }
+      },
+      "quality_report": {
+        "passed": true,
+        "issues": [],
+        "word_count": 65,
+        "target_word_range": [
+          51,
+          65
+        ],
+        "checked_at": "2026-07-10T10:42:42+00:00",
+        "viewer_questions_answered": true
+      },
+      "audio": {
+        "voice_path": "voice.mp3",
+        "voice_duration_seconds": 33.02,
+        "provider": "elevenlabs",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.48,
+          "similarity_boost": 0.78,
+          "style": 0.3,
+          "use_speaker_boost": true
+        },
+        "fallback": false
+      },
+      "render": {
+        "video_path": "short.mp4",
+        "asset_report": [
+          {
+            "scene": 1,
+            "source": "pexels_video",
+            "query": "aluminum beverage cans production line",
+            "duration": 6.604,
+            "subtitle_present": true,
+            "asset": "scene_01.mp4"
+          },
+          {
+            "scene": 2,
+            "source": "pexels_video",
+            "query": "opening soda can condensation",
+            "duration": 6.096,
+            "subtitle_present": true,
+            "asset": "scene_02.mp4"
+          },
+          {
+            "scene": 3,
+            "source": "pexels_video",
+            "query": "stock market chart green line",
+            "duration": 2.54,
+            "subtitle_present": true,
+            "asset": "scene_03.mp4"
+          },
+          {
+            "scene": 4,
+            "source": "pexels_video",
+            "query": "aluminum recycling factory raw metal",
+            "duration": 6.604,
+            "subtitle_present": true,
+            "asset": "scene_04.mp4"
+          },
+          {
+            "scene": 5,
+            "source": "pexels_video",
+            "query": "financial market dashboard vertical video",
+            "duration": 8.128,
+            "subtitle_present": true,
+            "asset": "scene_05.mp4"
+          },
+          {
+            "scene": 6,
+            "source": "pexels_video",
+            "query": "business news explainer vertical video",
+            "duration": 4.298,
+            "subtitle_present": true,
+            "asset": "scene_06.mp4"
+          }
+        ],
+        "render_size": "1080x1920",
+        "bytes": 24855738,
+        "voice_duration_seconds": 33.02,
+        "final_duration_seconds": 34.27,
+        "end_padding_seconds": 1.25,
+        "requested_duration_seconds": 35.0,
+        "duration_delta_seconds": -0.73,
+        "duration_status": "OK"
+      },
+      "video_path": "short_tiktok.mp4",
+      "upload_status": "PENDING_APPROVAL"
+    }
+  },
+  "platform_package": {
+    "requested_platform": "youtube_tiktok",
+    "targets": [
+      "youtube_shorts",
+      "tiktok"
     ],
-    "tags": [
-      "Trendjagd"
-    ]
-  },
-  "audio": {
-    "voice_path": "voice.mp3",
-    "voice_duration_seconds": 45.82,
-    "provider": "elevenlabs",
-    "fallback": false
-  },
-  "render": {
-    "video_path": "short.mp4",
-    "asset_report": [
+    "packages": [
       {
-        "scene": 1,
-        "source": "pexels_video",
-        "query": "apple iphone messages app screenshot",
-        "duration": 5.0,
-        "subtitle_present": true,
-        "asset": "scene_01.mp4"
+        "platform": "youtube_shorts",
+        "status": "PENDING_APPROVAL",
+        "video_file": "short_youtube.mp4",
+        "metadata": {
+          "title": "Ball Corp. Aktie stabilisiert",
+          "description": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil.\n\nWarum relevant: Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten.\nFür dich: Als Anleger erkennst du krisenfeste Branchen; als Konsument siehst du den Trend zu Aluminiumverpackungen.\nBestätigt: Die weltweite Nachfrage nach Aludosen ist aktuell hoch und stützt die Aktie.\nNoch offen: Ob steigende Rohstoff- und Energiepreise die künftigen Margen schmälern werden.\nDarauf achten: Auf die Entwicklung der Rohstoffpreise für Aluminium und die Margenentwicklung im nächsten Quartal.\n\n#TAYVORIQ #Shorts #Trendjagd #Aktien #Finanzen #BallCorp",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Shorts",
+            "#Trendjagd",
+            "#Aktien",
+            "#Finanzen",
+            "#BallCorp"
+          ],
+          "tags": [
+            "business_economy",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "cta": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst. Like da lassen, abonnieren und Glocke aktivieren.",
+        "viewer_payoff": "Damit du Gewinner und Risiko früh erkennst."
       },
       {
-        "scene": 2,
-        "source": "pexels_video",
-        "query": "microsoft azure kubernetes screenshot",
-        "duration": 10.0,
-        "subtitle_present": true,
-        "asset": "scene_02.mp4"
-      },
-      {
-        "scene": 3,
-        "source": "pexels_video",
-        "query": "apple ios 27 screenshot",
-        "duration": 10.0,
-        "subtitle_present": true,
-        "asset": "scene_03.mp4"
-      },
-      {
-        "scene": 4,
-        "source": "pexels_video",
-        "query": "ki-basierte kommunikation illustration",
-        "duration": 10.0,
-        "subtitle_present": true,
-        "asset": "scene_04.mp4"
-      },
-      {
-        "scene": 5,
-        "source": "pexels_video",
-        "query": "trends graph",
-        "duration": 10.0,
-        "subtitle_present": true,
-        "asset": "scene_05.mp4"
+        "platform": "tiktok",
+        "status": "PENDING_APPROVAL",
+        "video_file": "short_tiktok.mp4",
+        "metadata": {
+          "caption": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil. Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten. Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. #TAYVORIQ #Shorts #Trendjagd #Aktien #Finanzen",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Shorts",
+            "#Trendjagd",
+            "#Aktien",
+            "#Finanzen"
+          ],
+          "privacy_default": "SELF_ONLY",
+          "title": "Ball Corp. Aktie stabilisiert"
+        },
+        "cta": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst. TAYVORIQ folgen und das Video speichern.",
+        "viewer_payoff": "Damit du Gewinner und Risiko früh erkennst."
       }
-    ],
-    "render_size": "1080x1920",
-    "bytes": 28604048
-  },
-  "upload_result": {
-    "status": "skipped",
-    "reason": "artifact_only"
+    ]
   }
 }

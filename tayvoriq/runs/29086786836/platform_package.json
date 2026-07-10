@@ -1,0 +1,53 @@
+{
+  "requested_platform": "youtube_tiktok",
+  "targets": [
+    "youtube_shorts",
+    "tiktok"
+  ],
+  "packages": [
+    {
+      "platform": "youtube_shorts",
+      "status": "PENDING_APPROVAL",
+      "video_file": "short_youtube.mp4",
+      "metadata": {
+        "title": "Ball Corp. Aktie stabilisiert",
+        "description": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil.\n\nWarum relevant: Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten.\nFür dich: Als Anleger erkennst du krisenfeste Branchen; als Konsument siehst du den Trend zu Aluminiumverpackungen.\nBestätigt: Die weltweite Nachfrage nach Aludosen ist aktuell hoch und stützt die Aktie.\nNoch offen: Ob steigende Rohstoff- und Energiepreise die künftigen Margen schmälern werden.\nDarauf achten: Auf die Entwicklung der Rohstoffpreise für Aluminium und die Margenentwicklung im nächsten Quartal.\n\n#TAYVORIQ #Shorts #Trendjagd #Aktien #Finanzen #BallCorp",
+        "hashtags": [
+          "#TAYVORIQ",
+          "#Shorts",
+          "#Trendjagd",
+          "#Aktien",
+          "#Finanzen",
+          "#BallCorp"
+        ],
+        "tags": [
+          "business_economy",
+          "TAYVORIQ",
+          "Trendjagd",
+          "Shorts"
+        ]
+      },
+      "cta": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst. Like da lassen, abonnieren und Glocke aktivieren.",
+      "viewer_payoff": "Damit du Gewinner und Risiko früh erkennst."
+    },
+    {
+      "platform": "tiktok",
+      "status": "PENDING_APPROVAL",
+      "video_file": "short_tiktok.mp4",
+      "metadata": {
+        "caption": "Die Ball Corporation Aktie bleibt dank der starken Nachfrage nach Getränkedosen stabil. Es zeigt, dass defensive Konsumgüter-Aktien auch in volatilen Zeiten Stabilität bieten. Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. #TAYVORIQ #Shorts #Trendjagd #Aktien #Finanzen",
+        "hashtags": [
+          "#TAYVORIQ",
+          "#Shorts",
+          "#Trendjagd",
+          "#Aktien",
+          "#Finanzen"
+        ],
+        "privacy_default": "SELF_ONLY",
+        "title": "Ball Corp. Aktie stabilisiert"
+      },
+      "cta": "Im nächsten Teil zeige ich, welche Zahl wirklich entscheidet. Damit du Gewinner und Risiko früh erkennst. TAYVORIQ folgen und das Video speichern.",
+      "viewer_payoff": "Damit du Gewinner und Risiko früh erkennst."
+    }
+  ]
+}
