@@ -1,0 +1,53 @@
+{
+  "requested_platform": "all_platforms",
+  "targets": [
+    "youtube_shorts",
+    "tiktok",
+    "instagram_reels"
+  ],
+  "master_video": "short.mp4",
+  "latest_preview_url": "https://mojo72549-arch.github.io/mind-reset-daily/tayvoriq/latest/",
+  "latest_video_url": "https://mojo72549-arch.github.io/mind-reset-daily/tayvoriq/latest/short.mp4",
+  "selected_topic": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf",
+  "packages": [
+    {
+      "platform": "youtube_shorts",
+      "status": "ready_for_delivery",
+      "video_file": "short.mp4",
+      "caption": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf #Shorts #Trendjagd",
+      "title": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf",
+      "description": "Apple arbeitet an einem revolutionären Update für seine Messages-App. Mit der Einführung von KI-basierten Funktionen will das Unternehmen die Kommunikation auf neuen Ebenen revolutionieren.",
+      "hashtags": [
+        "#Shorts",
+        "#Trendjagd"
+      ],
+      "note": "Ready for YouTube Shorts. private_upload kann YouTube privat hochladen, wenn OAuth-Secrets gesetzt sind."
+    },
+    {
+      "platform": "tiktok",
+      "status": "ready_for_delivery",
+      "video_file": "short.mp4",
+      "caption": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf #Shorts #Trendjagd",
+      "title": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf",
+      "description": "Apple arbeitet an einem revolutionären Update für seine Messages-App. Mit der Einführung von KI-basierten Funktionen will das Unternehmen die Kommunikation auf neuen Ebenen revolutionieren.",
+      "hashtags": [
+        "#Shorts",
+        "#Trendjagd"
+      ],
+      "note": "Export-ready. Direkter TikTok-Upload benötigt audited TikTok Content Posting API Client und Tokens."
+    },
+    {
+      "platform": "instagram_reels",
+      "status": "ready_for_delivery",
+      "video_file": "short.mp4",
+      "caption": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf #Shorts #Trendjagd",
+      "title": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf",
+      "description": "Apple arbeitet an einem revolutionären Update für seine Messages-App. Mit der Einführung von KI-basierten Funktionen will das Unternehmen die Kommunikation auf neuen Ebenen revolutionieren.",
+      "hashtags": [
+        "#Shorts",
+        "#Trendjagd"
+      ],
+      "note": "Export-ready. Direkter Instagram-Reels-Upload benötigt IG Professional Account, Graph Token und öffentliche Media-URL."
+    }
+  ]
+}
