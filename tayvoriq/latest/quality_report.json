@@ -1,8 +1,8 @@
 {
   "passed": false,
   "issues": [
-    "cta_without_tayvoriq_follow_reason"
+    "script_too_short"
   ],
-  "word_count": 92,
-  "checked_at": "2026-07-09T22:34:55+00:00"
+  "word_count": 52,
+  "checked_at": "2026-07-10T06:56:54+00:00"
 }

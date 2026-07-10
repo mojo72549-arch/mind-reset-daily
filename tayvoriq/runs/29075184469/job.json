@@ -1,0 +1,159 @@
+{
+  "job_id": "20260710_065653_ios-27-apple-ruestet-messages-mit-ki-und-rcs-neuerungen-auf",
+  "mode": "tayvoriq_cloud_render_v1",
+  "created_at": "2026-07-10T07:02:29+00:00",
+  "github_run_id": "29075184469",
+  "topic": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf",
+  "language": "Deutsch",
+  "platform": "youtube_shorts",
+  "target_duration": 35,
+  "approval_status": "PENDING_REVIEW",
+  "render_status": "DONE",
+  "upload_status": "SKIPPED",
+  "llm_report": {
+    "provider": "groq:llama-3.1-8b-instant",
+    "fallback": false,
+    "errors": [
+      {
+        "provider": "gemini",
+        "error": "404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=***"
+      }
+    ]
+  },
+  "quality_report": {
+    "passed": false,
+    "issues": [
+      "script_too_short"
+    ],
+    "word_count": 52,
+    "checked_at": "2026-07-10T06:56:54+00:00"
+  },
+  "text_package": {
+    "title": "iOS 27: Apple rüstet Messages mit KI auf",
+    "category": "technology_ai",
+    "trend_angle": "Zugriff auf private Nachrichten",
+    "trend_signal": "Apple gibt RCS-Neuerungen bekannt",
+    "named_entities": [
+      "Apple"
+    ],
+    "why_now": "Apple möchte Messages mit KI-Technologie erweitern",
+    "affected_groups": [
+      "Nutzer von Apple-Geräten"
+    ],
+    "viewer_test": "Wie gefährlich ist es, wenn Apple KI in Messages einsetzt?",
+    "series_next": "Zukünftige Auswirkungen von KI in der Nachrichten-App",
+    "hook": "Apple will in Zukunft auch private Nachrichten scannen",
+    "script": "Wir erhalten ein Update von Apple: Die neue Version von Messages soll mit KI-Technologie ausgestattet werden. Aber was bedeutet das für unsere privaten Nachrichten? Apple gibt RCS-Neuerungen bekannt, aber was genau sind das? Wir gehen auf die Auswirkungen ein und klären, ob unsere Privatsphäre gefährdet ist. Like, Abonnieren und die Glocke aktivieren!",
+    "cta": "Like, Abonnieren und die Glocke aktivieren!",
+    "scenes": [
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "A person looking concerned at their phone",
+        "overlay_text": "",
+        "spoken_chunk": "Wir erhalten ein Update von Apple"
+      },
+      {
+        "duration_seconds": 10.0,
+        "visual_query": "A close-up of a phone with the Messages app open",
+        "overlay_text": "",
+        "spoken_chunk": "Die neue Version von Messages soll mit KI-Technologie ausgestattet werden"
+      },
+      {
+        "duration_seconds": 10.0,
+        "visual_query": "A person talking to someone else, with a concerned expression",
+        "overlay_text": "",
+        "spoken_chunk": "Aber was bedeutet das für unsere privaten Nachrichten?"
+      },
+      {
+        "duration_seconds": 10.0,
+        "visual_query": "A screenshot of the Apple website with RCS-Neuerungen",
+        "overlay_text": "",
+        "spoken_chunk": "Apple gibt RCS-Neuerungen bekannt, aber was genau sind das?"
+      },
+      {
+        "duration_seconds": 10.0,
+        "visual_query": "A person thinking, with a concerned expression",
+        "overlay_text": "",
+        "spoken_chunk": "Wir gehen auf die Auswirkungen ein und klären, ob unsere Privatsphäre gefährdet ist"
+      }
+    ],
+    "youtube_metadata": {
+      "title": "iOS 27: Apple rüstet Messages mit KI auf",
+      "description": "Apple gibt RCS-Neuerungen bekannt und erweitert Messages mit KI-Technologie. Wir klären, was das bedeutet für unsere privaten Nachrichten.",
+      "hashtags": [
+        "#Shorts",
+        "#Trendjagd"
+      ],
+      "tags": [
+        "Trendjagd"
+      ]
+    },
+    "llm_provider": "groq:llama-3.1-8b-instant",
+    "language": "Deutsch",
+    "platform": "youtube_shorts",
+    "target_duration": 35
+  },
+  "youtube_metadata": {
+    "title": "iOS 27: Apple rüstet Messages mit KI auf",
+    "description": "Apple gibt RCS-Neuerungen bekannt und erweitert Messages mit KI-Technologie. Wir klären, was das bedeutet für unsere privaten Nachrichten.",
+    "hashtags": [
+      "#Shorts",
+      "#Trendjagd"
+    ],
+    "tags": [
+      "Trendjagd"
+    ]
+  },
+  "audio": {
+    "voice_path": "voice.mp3",
+    "voice_duration_seconds": 25.57,
+    "provider": "elevenlabs",
+    "fallback": false
+  },
+  "render": {
+    "video_path": "short.mp4",
+    "asset_report": [
+      {
+        "scene": 1,
+        "source": "pexels_video",
+        "query": "A person looking concerned at their phone",
+        "duration": 5.0,
+        "asset": "scene_01.mp4"
+      },
+      {
+        "scene": 2,
+        "source": "pexels_video",
+        "query": "A close-up of a phone with the Messages app open",
+        "duration": 10.0,
+        "asset": "scene_02.mp4"
+      },
+      {
+        "scene": 3,
+        "source": "pexels_video",
+        "query": "A person talking to someone else, with a concerned expression",
+        "duration": 10.0,
+        "asset": "scene_03.mp4"
+      },
+      {
+        "scene": 4,
+        "source": "pexels_video",
+        "query": "A screenshot of the Apple website with RCS-Neuerungen",
+        "duration": 10.0,
+        "asset": "scene_04.mp4"
+      },
+      {
+        "scene": 5,
+        "source": "pexels_video",
+        "query": "A person thinking, with a concerned expression",
+        "duration": 10.0,
+        "asset": "scene_05.mp4"
+      }
+    ],
+    "render_size": "1080x1920",
+    "bytes": 18003250
+  },
+  "upload_result": {
+    "status": "skipped",
+    "reason": "artifact_only"
+  }
+}

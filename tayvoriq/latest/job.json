@@ -1,9 +1,9 @@
 {
-  "job_id": "20260709_223454_ki-agenten-uebernehmen-buero-routinen-vom-chatbot-zum-arbeitsablauf",
+  "job_id": "20260710_065653_ios-27-apple-ruestet-messages-mit-ki-und-rcs-neuerungen-auf",
   "mode": "tayvoriq_cloud_render_v1",
-  "created_at": "2026-07-09T22:41:48+00:00",
-  "github_run_id": "29054904782",
-  "topic": "KI-Agenten übernehmen Büro-Routinen: vom Chatbot zum Arbeitsablauf",
+  "created_at": "2026-07-10T07:02:29+00:00",
+  "github_run_id": "29075184469",
+  "topic": "iOS 27: Apple rüstet Messages mit KI und RCS-Neuerungen auf",
   "language": "Deutsch",
   "platform": "youtube_shorts",
   "target_duration": 35,
@@ -16,88 +16,75 @@
     "errors": [
       {
         "provider": "gemini",
-        "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=***"
+        "error": "404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=***"
       }
     ]
   },
   "quality_report": {
     "passed": false,
     "issues": [
-      "cta_without_tayvoriq_follow_reason"
+      "script_too_short"
     ],
-    "word_count": 92,
-    "checked_at": "2026-07-09T22:34:55+00:00"
+    "word_count": 52,
+    "checked_at": "2026-07-10T06:56:54+00:00"
   },
   "text_package": {
-    "title": "KI-Agenten übernehmen Büro-Routinen",
-    "trend_angle": "Der Büroalltag wird von KI-Systemen revolutioniert",
-    "trend_signal": "Wir erleben eine massive Zunahme von Chatbots und KI-gestützten Tools",
-    "named_ai_examples": [
-      "Microsoft Copilot",
-      "Google Gemini",
-      "ChatGPT",
-      "Notion AI"
+    "title": "iOS 27: Apple rüstet Messages mit KI auf",
+    "category": "technology_ai",
+    "trend_angle": "Zugriff auf private Nachrichten",
+    "trend_signal": "Apple gibt RCS-Neuerungen bekannt",
+    "named_entities": [
+      "Apple"
     ],
-    "why_now": "Die pandemische Krise hat die Nachfrage nach digitalen Lösungen enorm gesteigert",
-    "office_tasks": [
-      "Meeting-Zusammenfassung",
-      "E-Mail-Entwurf",
-      "Recherche",
-      "Aufgabenliste"
+    "why_now": "Apple möchte Messages mit KI-Technologie erweitern",
+    "affected_groups": [
+      "Nutzer von Apple-Geräten"
     ],
-    "viewer_test": "Versuchen Sie heute, einen Chatbot für Ihre Meeting-Zusammenfassung zu verwenden",
-    "series_next": "In Teil 2 werden wir das Potenzial von Notion AI für unsere Büroabläufe untersuchen",
-    "hook": "Ich habe gerade einen Chatbot für meine Meeting-Zusammenfassung verwendet und bin überrascht, wie gut es funktioniert hat!",
-    "script": "Wir erleben eine massive Zunahme von Chatbots und KI-gestützten Tools. Microsoft Copilot und Google Gemini sind nur zwei Beispiele dafür. Sie können unsere Büroabläufe revolutionieren. Aber warum ist das gerade jetzt relevant? Die pandemische Krise hat die Nachfrage nach digitalen Lösungen enorm gesteigert. Wir müssen unsere Arbeitsabläufe anpassen, um effizienter zu arbeiten. Ein wichtiger Schritt ist die Verwendung von KI-Systemen für unsere Büroabläufe. Versuchen Sie heute, einen Chatbot für Ihre Meeting-Zusammenfassung zu verwenden. In Teil 2 werden wir das Potenzial von Notion AI für unsere Büroabläufe untersuchen. Testen Sie es heute aus!",
-    "cta": "Testen Sie es heute aus!",
+    "viewer_test": "Wie gefährlich ist es, wenn Apple KI in Messages einsetzt?",
+    "series_next": "Zukünftige Auswirkungen von KI in der Nachrichten-App",
+    "hook": "Apple will in Zukunft auch private Nachrichten scannen",
+    "script": "Wir erhalten ein Update von Apple: Die neue Version von Messages soll mit KI-Technologie ausgestattet werden. Aber was bedeutet das für unsere privaten Nachrichten? Apple gibt RCS-Neuerungen bekannt, aber was genau sind das? Wir gehen auf die Auswirkungen ein und klären, ob unsere Privatsphäre gefährdet ist. Like, Abonnieren und die Glocke aktivieren!",
+    "cta": "Like, Abonnieren und die Glocke aktivieren!",
     "scenes": [
       {
         "duration_seconds": 5.0,
-        "visual_query": "pexels:chatbot-screen",
-        "overlay_text": "Copilot · Gemini · ChatGPT",
-        "spoken_chunk": "Wir erleben eine massive Zunahme von Chatbots und KI-gestützten Tools."
+        "visual_query": "A person looking concerned at their phone",
+        "overlay_text": "",
+        "spoken_chunk": "Wir erhalten ein Update von Apple"
       },
       {
         "duration_seconds": 10.0,
-        "visual_query": "pexels:meeting-screen",
-        "overlay_text": "Von Antwort zu Ablauf",
-        "spoken_chunk": "Sie können unsere Büroabläufe revolutionieren."
+        "visual_query": "A close-up of a phone with the Messages app open",
+        "overlay_text": "",
+        "spoken_chunk": "Die neue Version von Messages soll mit KI-Technologie ausgestattet werden"
       },
       {
-        "duration_seconds": 15.0,
-        "visual_query": "pexels:office-screen",
-        "overlay_text": "Warum jetzt?",
-        "spoken_chunk": "Die pandemische Krise hat die Nachfrage nach digitalen Lösungen enorm gesteigert."
+        "duration_seconds": 10.0,
+        "visual_query": "A person talking to someone else, with a concerned expression",
+        "overlay_text": "",
+        "spoken_chunk": "Aber was bedeutet das für unsere privaten Nachrichten?"
       },
       {
-        "duration_seconds": 20.0,
-        "visual_query": "pexels:research-screen",
-        "overlay_text": "KI-Systeme für Büroabläufe",
-        "spoken_chunk": "Wir müssen unsere Arbeitsabläufe anpassen, um effizienter zu arbeiten."
+        "duration_seconds": 10.0,
+        "visual_query": "A screenshot of the Apple website with RCS-Neuerungen",
+        "overlay_text": "",
+        "spoken_chunk": "Apple gibt RCS-Neuerungen bekannt, aber was genau sind das?"
       },
       {
-        "duration_seconds": 25.0,
-        "visual_query": "pexels:task-list-screen",
-        "overlay_text": "Testen Sie es heute aus!",
-        "spoken_chunk": "Versuchen Sie heute, einen Chatbot für Ihre Meeting-Zusammenfassung zu verwenden."
-      },
-      {
-        "duration_seconds": 30.0,
-        "visual_query": "pexels:notion-screen",
-        "overlay_text": "Teil 2: Notion AI",
-        "spoken_chunk": "In Teil 2 werden wir das Potenzial von Notion AI für unsere Büroabläufe untersuchen."
+        "duration_seconds": 10.0,
+        "visual_query": "A person thinking, with a concerned expression",
+        "overlay_text": "",
+        "spoken_chunk": "Wir gehen auf die Auswirkungen ein und klären, ob unsere Privatsphäre gefährdet ist"
       }
     ],
     "youtube_metadata": {
-      "title": "KI-Agenten übernehmen Büro-Routinen",
-      "description": "Wir erleben eine massive Zunahme von Chatbots und KI-gestützten Tools, die unsere Büroabläufe revolutionieren.",
+      "title": "iOS 27: Apple rüstet Messages mit KI auf",
+      "description": "Apple gibt RCS-Neuerungen bekannt und erweitert Messages mit KI-Technologie. Wir klären, was das bedeutet für unsere privaten Nachrichten.",
       "hashtags": [
         "#Shorts",
-        "#TAYVORIQ",
         "#Trendjagd"
       ],
       "tags": [
-        "TAYVORIQ",
         "Trendjagd"
       ]
     },
@@ -107,21 +94,19 @@
     "target_duration": 35
   },
   "youtube_metadata": {
-    "title": "KI-Agenten übernehmen Büro-Routinen",
-    "description": "Wir erleben eine massive Zunahme von Chatbots und KI-gestützten Tools, die unsere Büroabläufe revolutionieren.",
+    "title": "iOS 27: Apple rüstet Messages mit KI auf",
+    "description": "Apple gibt RCS-Neuerungen bekannt und erweitert Messages mit KI-Technologie. Wir klären, was das bedeutet für unsere privaten Nachrichten.",
     "hashtags": [
       "#Shorts",
-      "#TAYVORIQ",
       "#Trendjagd"
     ],
     "tags": [
-      "TAYVORIQ",
       "Trendjagd"
     ]
   },
   "audio": {
     "voice_path": "voice.mp3",
-    "voice_duration_seconds": 45.69,
+    "voice_duration_seconds": 25.57,
     "provider": "elevenlabs",
     "fallback": false
   },
@@ -131,48 +116,41 @@
       {
         "scene": 1,
         "source": "pexels_video",
-        "query": "pexels:chatbot-screen",
+        "query": "A person looking concerned at their phone",
         "duration": 5.0,
         "asset": "scene_01.mp4"
       },
       {
         "scene": 2,
         "source": "pexels_video",
-        "query": "pexels:meeting-screen",
+        "query": "A close-up of a phone with the Messages app open",
         "duration": 10.0,
         "asset": "scene_02.mp4"
       },
       {
         "scene": 3,
         "source": "pexels_video",
-        "query": "pexels:office-screen",
-        "duration": 15.0,
+        "query": "A person talking to someone else, with a concerned expression",
+        "duration": 10.0,
         "asset": "scene_03.mp4"
       },
       {
         "scene": 4,
         "source": "pexels_video",
-        "query": "pexels:research-screen",
-        "duration": 20.0,
+        "query": "A screenshot of the Apple website with RCS-Neuerungen",
+        "duration": 10.0,
         "asset": "scene_04.mp4"
       },
       {
         "scene": 5,
         "source": "pexels_video",
-        "query": "pexels:task-list-screen",
-        "duration": 25.0,
+        "query": "A person thinking, with a concerned expression",
+        "duration": 10.0,
         "asset": "scene_05.mp4"
-      },
-      {
-        "scene": 6,
-        "source": "pexels_video",
-        "query": "pexels:notion-screen",
-        "duration": 30.0,
-        "asset": "scene_06.mp4"
       }
     ],
     "render_size": "1080x1920",
-    "bytes": 31971355
+    "bytes": 18003250
   },
   "upload_result": {
     "status": "skipped",
