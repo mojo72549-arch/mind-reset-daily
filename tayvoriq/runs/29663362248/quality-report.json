@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scene_count": 5,
+  "visual_source": "pexels",
+  "on_screen_text": false,
+  "speech": "edge_tts_katja_neural",
+  "music": "none",
+  "spoken_cta": true,
+  "editorial_gate": "passed",
+  "visual_gate": "passed",
+  "technical_gate": "passed",
+  "publication_gate": "passed"
+}

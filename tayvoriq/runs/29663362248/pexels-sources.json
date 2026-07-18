@@ -1,0 +1,42 @@
+[
+  {
+    "scene": 1,
+    "query": "morning smartphone routine vertical",
+    "pexels_video_id": 9782520,
+    "source_url": "https://www.pexels.com/video/a-woman-using-a-smartphone-9782520/",
+    "width": 2160,
+    "height": 3840
+  },
+  {
+    "scene": 2,
+    "query": "calendar productivity smartphone vertical",
+    "pexels_video_id": 19798262,
+    "source_url": "https://www.pexels.com/video/2024-digital-planner-on-a-smartphone-19798262/",
+    "width": 2160,
+    "height": 3840
+  },
+  {
+    "scene": 3,
+    "query": "artificial intelligence office technology vertical",
+    "pexels_video_id": 8328148,
+    "source_url": "https://www.pexels.com/video/a-robot-giving-a-flower-to-a-woman-8328148/",
+    "width": 2160,
+    "height": 3840
+  },
+  {
+    "scene": 4,
+    "query": "data privacy cyber security vertical",
+    "pexels_video_id": 5474272,
+    "source_url": "https://www.pexels.com/video/cyber-security-light-on-the-face-of-a-man-5474272/",
+    "width": 2160,
+    "height": 4096
+  },
+  {
+    "scene": 5,
+    "query": "confident person working technology vertical",
+    "pexels_video_id": 8344346,
+    "source_url": "https://www.pexels.com/video/woman-holding-a-laptop-looking-at-the-camera-8344346/",
+    "width": 2160,
+    "height": 3840
+  }
+]
