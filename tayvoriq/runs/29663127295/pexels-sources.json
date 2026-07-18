@@ -1,0 +1,42 @@
+[
+  {
+    "scene": 1,
+    "query": "artificial intelligence technology portrait",
+    "pexels_video_id": 35280159,
+    "source_url": "https://www.pexels.com/video/advanced-humanoid-robot-in-technology-showcase-35280159/",
+    "width": 2160,
+    "height": 3840
+  },
+  {
+    "scene": 2,
+    "query": "person using smartphone calendar portrait",
+    "pexels_video_id": 7196316,
+    "source_url": "https://www.pexels.com/video/woman-sitting-on-bed-using-cellphone-7196316/",
+    "width": 2160,
+    "height": 3840
+  },
+  {
+    "scene": 3,
+    "query": "student learning laptop portrait",
+    "pexels_video_id": 20508331,
+    "source_url": "https://www.pexels.com/video/a-woman-reading-a-book-in-front-of-a-computer-20508331/",
+    "width": 2160,
+    "height": 3840
+  },
+  {
+    "scene": 4,
+    "query": "cyber security data privacy portrait",
+    "pexels_video_id": 5474272,
+    "source_url": "https://www.pexels.com/video/cyber-security-light-on-the-face-of-a-man-5474272/",
+    "width": 2160,
+    "height": 4096
+  },
+  {
+    "scene": 5,
+    "query": "human working with artificial intelligence portrait",
+    "pexels_video_id": 8328148,
+    "source_url": "https://www.pexels.com/video/a-robot-giving-a-flower-to-a-woman-8328148/",
+    "width": 2160,
+    "height": 3840
+  }
+]
