@@ -1,0 +1,47 @@
+[
+  {
+    "scene": 1,
+    "query": "artificial intelligence technology",
+    "pexels_video_id": 8328148,
+    "source_url": "https://www.pexels.com/video/a-robot-giving-a-flower-to-a-woman-8328148/",
+    "download_url": "https://videos.pexels.com/video-files/8328148/8328148-uhd_2160_3840_25fps.mp4",
+    "width": 2160,
+    "height": 3840
+  },
+  {
+    "scene": 2,
+    "query": "person using smartphone calendar",
+    "pexels_video_id": 5077072,
+    "source_url": "https://www.pexels.com/video/a-woman-holding-up-her-phone-with-a-photo-of-a-house-5077072/",
+    "download_url": "https://videos.pexels.com/video-files/5077072/5077072-uhd_2160_4096_25fps.mp4",
+    "width": 2160,
+    "height": 4096
+  },
+  {
+    "scene": 3,
+    "query": "student learning with laptop",
+    "pexels_video_id": 9198833,
+    "source_url": "https://www.pexels.com/video/a-woman-sitting-on-the-chair-9198833/",
+    "download_url": "https://videos.pexels.com/video-files/9198833/9198833-hd_1080_1920_25fps.mp4",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "scene": 4,
+    "query": "data privacy cyber security",
+    "pexels_video_id": 5474272,
+    "source_url": "https://www.pexels.com/video/cyber-security-light-on-the-face-of-a-man-5474272/",
+    "download_url": "https://videos.pexels.com/video-files/5474272/5474272-uhd_2160_4096_25fps.mp4",
+    "width": 2160,
+    "height": 4096
+  },
+  {
+    "scene": 5,
+    "query": "human working with artificial intelligence",
+    "pexels_video_id": 8328148,
+    "source_url": "https://www.pexels.com/video/a-robot-giving-a-flower-to-a-woman-8328148/",
+    "download_url": "https://videos.pexels.com/video-files/8328148/8328148-uhd_2160_3840_25fps.mp4",
+    "width": 2160,
+    "height": 3840
+  }
+]
