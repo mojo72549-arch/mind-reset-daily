@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "source_deterministic_quality_passed": true,
+  "voice_gate_passed": true,
+  "provider": "chatterbox_multilingual_v3",
+  "fallback": false,
+  "probe": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 27.4
+  },
+  "external_marketing_audit_required_for_human_review": false,
+  "platform_upload_performed": false,
+  "contract_version": "voice-revision-v1-existing-assets-local-evidence"
+}

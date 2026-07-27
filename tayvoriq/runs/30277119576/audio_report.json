@@ -1,0 +1,61 @@
+{
+  "voice_path": "voice.mp3",
+  "voice_duration_seconds": 26.14,
+  "provider": "chatterbox_multilingual_v3",
+  "voice_provider_requested": "chatterbox_multilingual_v3",
+  "voice_provider_used": "chatterbox_multilingual_v3",
+  "model_id": "v3",
+  "voice_settings": {
+    "language_id": "de",
+    "exaggeration": 0.42,
+    "cfg_weight": 0.36,
+    "reference_audio_used": false,
+    "chunk_count": 2,
+    "loudness_target_lufs": -16
+  },
+  "target_voice_duration_seconds": 26.141,
+  "raw_voice_duration_seconds": 21.08,
+  "duration_delta_seconds": -0.001,
+  "generation_elapsed_seconds": 145.03,
+  "fallback": false,
+  "quality_profile": "tayvoriq-natural-chatterbox-review-v28",
+  "worker_report": {
+    "provider": "chatterbox_multilingual",
+    "requested_model_version": "v3",
+    "model_version": "v3",
+    "installed_package_version": "0.1.7",
+    "language_id": "de",
+    "device": "cpu",
+    "passed": true,
+    "compatibility_mode": "native-version-selection",
+    "model_version_fallback": false,
+    "sample_rate": 24000,
+    "duration_seconds": 21.08,
+    "chunks": [
+      "Waldbrände sorgen in betroffenen Gebieten weiter für große Probleme. Dürre und Hitze trocknen Boden und Vegetation aus, weil Feuchtigkeit fehlt. Betroffen sind Bewohner, Reisende, Einsatzkräfte und Gemeinden. Für dich sind lokale Warnungen und Sperrungen besonders wichtig. Prüfe bestätigte Hinweise vor deiner Fahrt regelmäßig vor Entscheidungen besonders sorgfältig.",
+      "Folge diesem Kanal und abonniere ihn."
+    ],
+    "chunk_count": 2,
+    "model_load_seconds": 10.706,
+    "generation_seconds": [
+      104.742,
+      17.276
+    ],
+    "total_seconds": 142.613,
+    "reference_audio_used": false,
+    "exaggeration": 0.42,
+    "cfg_weight": 0.36,
+    "output": "/home/runner/work/tayvoriq-control-plane/tayvoriq-control-plane/implementation/out/natural-voice-revision/voice_chatterbox_raw.wav",
+    "output_bytes": 1011884,
+    "audio_container": "wav-pcm16-standard-library"
+  },
+  "review_voice_eligible": true,
+  "review_voice_gate": {
+    "passed": true,
+    "provider": "chatterbox_multilingual_v3",
+    "fallback_allowed": false,
+    "natural_duration_target_seconds": 26.141,
+    "natural_wpm_target": 132.0,
+    "contract_version": "v28-natural-chatterbox-review-only"
+  }
+}
