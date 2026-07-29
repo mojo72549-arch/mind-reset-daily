@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "source_run_id": "30461580223",
+  "quality_passed": true,
+  "voice_passed": true,
+  "speech_passed": true,
+  "subtitles_complete": true,
+  "pexels_scene_count": 8,
+  "approval_status": "PENDING_REVIEW",
+  "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+  "instagram_status": "NOT_CONFIGURED_EXCLUDED",
+  "platform_upload_performed": false,
+  "video_path": "short.mp4",
+  "video_bytes": 45580215,
+  "duration_seconds": 64.27,
+  "voice_measurements": {
+    "median_f0_hz": 97.56,
+    "p10_f0_hz": 79.21,
+    "p90_f0_hz": 139.25,
+    "pitch_span_hz": 60.04,
+    "silence_ratio": 0.225
+  },
+  "speaking_rate_wpm": 135.4,
+  "speech_similarity": 0.95,
+  "repaired_scenes": [
+    4,
+    6
+  ],
+  "contract_version": "fire-safety-documentary-segment-repair-v1"
+}
