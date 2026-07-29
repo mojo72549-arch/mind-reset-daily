@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "issues": [],
+  "similarity": 0.965,
+  "length_ratio": 0.972,
+  "reference_word_count": 143,
+  "transcript_word_count": 139,
+  "required_concepts": {
+    "emergency_112": true,
+    "prevention_no_smoking": true,
+    "rescue_routes": true,
+    "move_away": true,
+    "warn_others": true,
+    "exact_location": true,
+    "access_route": true,
+    "landmarks": true,
+    "people_at_risk": true,
+    "wait_for_questions": true,
+    "no_unsafe_firefighting": true,
+    "safety_first": true,
+    "small_fire_call": true,
+    "wind_smoke_limit": true
+  },
+  "reference_normalized": "ein funke kann trockenen wald in minuten in eine feuerwand verwandeln haeufige ausloeser weggeworfene zigaretten offenes feuer oder ein heisses auto auf trockenem gras darum gilt im wald nicht rauchen feuer nur an erlaubten stellen entzuenden rettungswege frei halten siehst du rauch oder flammen geh sofort auf abstand geh vom feuer und dichten rauch weg warne sofort andere hilf kindern und menschen die unterstuetzung brauchen rufe sofort den notruf 112 auch bei kleinen flammen sag der leitstelle deinen genauen standort nenne zufahrt und erkennbare orte in der naehe erklaere was brennt wie gross die flaeche ist und ob menschen in gefahr sind bleib am telefon und beantworte die fragen der leitstelle loesche ein wachsendes feuer niemals selbst bei wind oder dichtem rauch geh weg kehre nicht fuer gegenstaende zurueck bring dich zuerst in sicherheit teile dieses video damit andere im ernstfall richtig reagieren",
+  "transcript_normalized": "ein funke kann trockenen wald in minuten in eine feuerwand verwandeln haeufige ausloeser weggeworfene zigaretten offenes feuer oder ein heisses auto auf trockenem gras darum gilt im wald nicht rauchen feuer nur an erlaubten stellen entzuenden rettungswege frei halten siehst du rauch oder flammen geh sofort auf abstand geh vom feuer und dichten rauch weg warne sofort andere menschen die unterstuetzung brauchen rufe sofort den notruf 112 auf bei kleinen flammen sagt sagt der leitstelle deinen genauen standort nenne zufahrt und erkennbare orte in der naehe erklaere was brennt wie gross die flaeche ist und ob menschen in gefahr sind telefon und beantworte die fragen der leitstelle loesche ein wachsendes feuer niemals selbst bei wind oder dichtem rauch geh weg kehre nicht fuer gegenstaende zurueck bring dich zuerst in sicherheit teile dieses video damit andere im ernstfall richtig reagieren",
+  "contract_version": "local-german-speech-intelligibility-v3-isolated-clear-diction",
+  "transcription": {
+    "text": "Ein Funke kann trockenen Wald in Minuten in eine Feuerwand verwandeln, häufige Auslöser weggeworfene Zigaretten, offenes Feuer oder ein heißes Auto auf trockenem Gras. Darum gilt im Wald nicht rauchen, Feuer nur an erlaubten Stellen entzünden, Rettungswege frei halten, siehst du Rauch oder Flammen, geh sofort auf Abstand. Geh vom Feuer und dichten Rauch weg, warne sofort andere, Menschen, die Unterstützung brauchen, rufe sofort den Notruf 112 auf bei kleinen Flammen, sagt, sagt der Leitstelle deinen genauen Standort. Nenne Zufahrt und erkennbare Orte in der Nähe. Erkläre, was brennt, wie groß die Fläche ist und ob Menschen in Gefahr sind. Telefon und beantworte die Fragen der Leitstelle, lösche ein wachsendes Feuer niemals selbst, bei Wind oder dichtem Rauch geh weg, kehre nicht für Gegenstände zurück, bring dich zuerst in Sicherheit. Teile dieses Video, damit andere im Ernstfall richtig reagieren.",
+    "language": "de",
+    "language_probability": 1.0,
+    "segment_count": 4
+  },
+  "audio": "/home/runner/work/tayvoriq-control-plane/tayvoriq-control-plane/implementation/out/fire-safety-segment-repair/voice.mp3"
+}

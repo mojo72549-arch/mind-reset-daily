@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "content_gate": {
+    "passed": true,
+    "issues": [],
+    "script_words": 143,
+    "scene_count": 8,
+    "official_source_count": 3,
+    "requirements": {
+      "strong_emotional_hook": true,
+      "typical_trigger_cigarette": true,
+      "typical_trigger_open_fire": true,
+      "typical_trigger_hot_vehicle": true,
+      "prevention_no_smoking": true,
+      "prevention_fire_places": true,
+      "prevention_rescue_routes": true,
+      "move_to_safety": true,
+      "move_away_from_smoke": true,
+      "warn_others": true,
+      "help_vulnerable_people": true,
+      "emergency_number": true,
+      "call_even_small_fire": true,
+      "location_information": true,
+      "access_information": true,
+      "landmark_information": true,
+      "fire_information": true,
+      "fire_extent_information": true,
+      "people_at_risk_information": true,
+      "wait_for_questions": true,
+      "no_unsafe_firefighting": true,
+      "wind_and_smoke_limit": true,
+      "do_not_return": true,
+      "safety_first": true,
+      "safety_cta": true
+    },
+    "speech_design": {
+      "short_complete_sentences": true,
+      "compound_word_risk_reduced": true,
+      "emergency_call_sequence_explicit": true,
+      "known_word_merges_removed": true,
+      "unsafe_firefighting_split_into_short_sentences": true,
+      "pacing_budget_matched_to_voice_gate": true,
+      "exact_location_instruction_isolated": true
+    },
+    "contract_version": "wildfire-safety-story-v4.3-exact-location"
+  },
+  "voice_gate": {
+    "passed": true,
+    "profile": "deep-warm-calm-german-documentary",
+    "provider": "chatterbox_multilingual_v3",
+    "reference_audio_used": true,
+    "reference_audio_source": "de-DE-KillianNeural.mp3",
+    "edge_fallback_allowed": false,
+    "before_master": {
+      "median_f0_hz": 98.77,
+      "p10_f0_hz": 80.4,
+      "p90_f0_hz": 137.93,
+      "pitch_span_hz": 57.53,
+      "silence_ratio": 0.205
+    },
+    "after_tone_master": {
+      "median_f0_hz": 98.16,
+      "p10_f0_hz": 80.4,
+      "p90_f0_hz": 141.59,
+      "pitch_span_hz": 61.19,
+      "silence_ratio": 0.173
+    },
+    "after_master": {
+      "median_f0_hz": 98.16,
+      "p10_f0_hz": 80.4,
+      "p90_f0_hz": 141.59,
+      "pitch_span_hz": 61.19,
+      "silence_ratio": 0.173
+    },
+    "pitch_factor": 0.98,
+    "speaking_rate_before_pacing_wpm": 138.1,
+    "speaking_rate_wpm": 138.1,
+    "pacing_correction": {
+      "correction_required": false,
+      "eligible": true,
+      "current_wpm": 138.051,
+      "target_wpm": 144.5,
+      "tempo_factor": 1.0,
+      "projected_duration_seconds": 63.02,
+      "projected_wpm": 138.051,
+      "maximum_duration_seconds": 64.0,
+      "contract_version": "v29.2-bounded-pitch-neutral-pacing"
+    },
+    "duration_seconds": 63.02,
+    "duration_target_seconds": 63.0,
+    "contract_version": "v29.2-deep-documentary-bounded-pacing"
+  },
+  "subtitles_complete": true,
+  "pexels_scene_count": 8,
+  "probe": {
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 64.3
+  },
+  "official_source_count": 3,
+  "external_marketing_audit_required_for_human_review": false,
+  "platform_upload_performed": false,
+  "approval_status": "PENDING_REVIEW",
+  "contract_version": "fire-safety-documentary-review-v2.1"
+}
