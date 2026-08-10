@@ -6,66 +6,32 @@
   <meta name="theme-color" content="#020713" />
   <title>TAYVORIQ Review 31438680757</title>
   <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      background: #020713;
-      color: #f8fafc;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
-    }
-    main {
-      width: min(100%, 560px);
-      padding: 20px 14px 32px;
-      text-align: center;
-    }
-    video {
-      display: block;
-      width: 100%;
-      max-height: 78vh;
-      margin: 0 auto;
-      border-radius: 22px;
-      background: #000;
-      box-shadow: 0 20px 60px rgba(0,0,0,.45);
-    }
-    .approval { margin-top: 18px; }
-    .decisions {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-    .decision {
-      display: block;
-      padding: 15px 12px;
-      border-radius: 15px;
-      font-size: 17px;
-      font-weight: 900;
-    }
-    .approve { background: #22c55e; color: #03130a; }
-    .reject { background: #ef4444; color: #fff; }
-    .disabled { background: #334155; color: #cbd5e1; }
-    .note {
-      margin: 12px 6px 0;
-      color: #cbd5e1;
-      font-size: 14px;
-      line-height: 1.45;
-    }
-    @media (max-width: 440px) {
-      .decisions { grid-template-columns: 1fr; }
-    }
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:#020713;color:#f8fafc;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}main{width:min(100%,760px);margin:0 auto;padding:20px 14px 38px}h1{margin:0 0 6px;font-size:23px}.sub{margin:0 0 18px;color:#94a3b8;font-size:14px}.card{background:#0b1220;border:1px solid #1e293b;border-radius:22px;padding:14px;margin:0 0 18px}.card h2{margin:0 0 10px;font-size:18px}video{display:block;width:100%;max-height:76vh;border-radius:16px;background:#000}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:800;background:#e2e8f0;color:#0f172a}.caption-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0 8px}.caption-head button{border:0;border-radius:10px;padding:9px 12px;font-weight:800}textarea{width:100%;min-height:150px;border-radius:12px;border:1px solid #334155;background:#020617;color:#e2e8f0;padding:12px;font:14px/1.45 system-ui,sans-serif}.approval{margin-top:18px}.decisions{display:grid;grid-template-columns:1fr 1fr;gap:12px}.decision{display:block;padding:15px 12px;border-radius:15px;font-size:17px;font-weight:900;text-align:center}.approve{background:#22c55e;color:#03130a}.reject{background:#ef4444}.note{margin:12px 6px 0;color:#cbd5e1;font-size:14px;line-height:1.45;text-align:center}@media(max-width:440px){.decisions{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <main>
-    <video src="./short.mp4" controls playsinline preload="metadata"></video>
-    
-    <section class="approval" aria-label="Review-Status">
-      <div class="decisions"><span class="decision approve">✅ FREIGEBEN</span><span class="decision reject">❌ ABLEHNEN</span></div>
-      <p class="note">Die verbindliche Entscheidung erfolgt ausschließlich über die Telegram-Buttons.</p>
-    </section>
-    
-  </main>
+<main>
+  <h1>🟢 TAYVORIQ Review</h1>
+  <p class="sub">Run 31438680757 · YouTube und TikTok getrennt geprüft</p>
+  <section class="card">
+    <h2>▶️ YouTube Shorts</h2>
+    <video src="./short_youtube.mp4" controls playsinline preload="metadata"></video>
+  </section>
+  <section class="card">
+    <h2>📱 TikTok</h2>
+    <video src="./short_tiktok.mp4" controls playsinline preload="metadata"></video>
+    <div class="actions">
+      <a class="button" href="./short_tiktok.mp4" download>⬇️ TikTok-MP4 herunterladen</a>
+      <a class="button" href="./tiktok_caption.txt" download>📝 Caption herunterladen</a>
+    </div>
+    <div class="caption-head"><strong>📋 TikTok Caption</strong><button type="button" onclick="copyCaption()">Kopieren</button></div>
+    <textarea id="tiktok-caption" readonly>Sandisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. #TAYVORIQ #Trendjagd #Technologie #KI</textarea>
+  </section>
+  <section class="approval">
+    <div class="decisions"><span class="decision approve">✅ FREIGEBEN</span><span class="decision reject">❌ ABLEHNEN</span></div>
+    <p class="note">Die verbindliche Entscheidung erfolgt über die Telegram-Buttons. Freigeben startet ausschließlich den YouTube-Upload; TikTok bleibt manuell und steht hier als MP4 + Caption bereit.</p>
+  </section>
+</main>
+<script>async function copyCaption(){const f=document.getElementById('tiktok-caption');try{await navigator.clipboard.writeText(f.value)}catch(e){f.focus();f.select();document.execCommand('copy')}}</script>
 </body>
 </html>
