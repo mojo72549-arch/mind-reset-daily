@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#020713" />
+  <title>TAYVORIQ Review 31438680757</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #020713;
+      color: #f8fafc;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
+    }
+    main {
+      width: min(100%, 560px);
+      padding: 20px 14px 32px;
+      text-align: center;
+    }
+    video {
+      display: block;
+      width: 100%;
+      max-height: 78vh;
+      margin: 0 auto;
+      border-radius: 22px;
+      background: #000;
+      box-shadow: 0 20px 60px rgba(0,0,0,.45);
+    }
+    .approval { margin-top: 18px; }
+    .decisions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .decision {
+      display: block;
+      padding: 15px 12px;
+      border-radius: 15px;
+      font-size: 17px;
+      font-weight: 900;
+    }
+    .approve { background: #22c55e; color: #03130a; }
+    .reject { background: #ef4444; color: #fff; }
+    .disabled { background: #334155; color: #cbd5e1; }
+    .note {
+      margin: 12px 6px 0;
+      color: #cbd5e1;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+    @media (max-width: 440px) {
+      .decisions { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <video src="./short.mp4" controls playsinline preload="metadata"></video>
+    
+    <section class="approval" aria-label="Review-Status">
+      <div class="decisions"><span class="decision approve">✅ FREIGEBEN</span><span class="decision reject">❌ ABLEHNEN</span></div>
+      <p class="note">Die verbindliche Entscheidung erfolgt ausschließlich über die Telegram-Buttons.</p>
+    </section>
+    
+  </main>
+</body>
+</html>
