@@ -6,10 +6,10 @@
     "factual_accuracy": 100,
     "pronunciation": 100,
     "marketing": 90,
-    "sales": 90,
+    "sales": 92,
     "platform_fit": 95,
-    "visual": 95,
-    "overall": 95
+    "visual": 96,
+    "overall": 96
   },
   "thresholds": {
     "factual_accuracy": 90,
@@ -24,10 +24,10 @@
     "youtube_shorts": {
       "platform": "youtube_shorts",
       "passed": true,
-      "expected_spoken_text": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe K I-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im K I- und Chip Sektor. Für dich zeigt das, wie schnell K I Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "Sandisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "expected_spoken_text": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe K I-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im K I- und Chipsektor. Für dich zeigt das, wie schnell K I-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "SanDisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
       "similarity": 1.0,
-      "average_logprob": -0.1113,
+      "average_logprob": -0.0715,
       "critical_terms": [
         {
           "source": "TAYVORIQ",
@@ -43,16 +43,6 @@
           "source": "KI",
           "spoken": "K I",
           "kind": "pronunciation_map"
-        },
-        {
-          "source": "KI-Hype",
-          "spoken": "K I Hype",
-          "kind": "pronunciation_map"
-        },
-        {
-          "source": "Chipsektor",
-          "spoken": "Chip Sektor",
-          "kind": "pronunciation_map"
         }
       ],
       "missing_critical_terms": [],
@@ -61,15 +51,15 @@
       "strict_number_audit": {
         "required": false,
         "visible_script": "Sandisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip Sektor. Für dich zeigt das, wie schnell K I Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Sandisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
         "number_replacements": {},
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.876,
+      "raw_similarity_before_safe_normalization": 0.9,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip Sektor. Für dich zeigt das, wie schnell KI Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip Sektor. Für dich zeigt das, wie schnell KI Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_expected_spoken_text": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip Sektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip Sektor. Für dich zeigt das, wie schnell KI-Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
       "quality_gates_weakened": false,
       "asr_quorum": {
         "policy": "strict-postmux-plus-prompted-final-plus-unprompted-tiebreaker-2-of-3",
@@ -84,8 +74,8 @@
           {
             "source": "voice_postmux_unprompted",
             "strict_pass": true,
-            "similarity": 0.9748,
-            "transcript": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+            "similarity": 1.0,
+            "transcript": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
             "missing_critical_terms": [],
             "average_logprob": null,
             "quality_gates_weakened": false
@@ -94,9 +84,9 @@
             "source": "final_audit_prompted",
             "strict_pass": true,
             "similarity": 1.0,
-            "transcript": "Sandisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+            "transcript": "SanDisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
             "missing_critical_terms": [],
-            "average_logprob": -0.1113,
+            "average_logprob": -0.0715,
             "quality_gates_weakened": false
           }
         ],
@@ -107,22 +97,22 @@
       "passed": true,
       "similarity": 1.0,
       "missing_critical_terms": [],
-      "expected_tokens": 60,
+      "expected_tokens": 59,
       "actual_tokens": 59,
       "excessive_extra_words": false,
       "forbidden_tail": false,
-      "transcript": "SanDisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "contract_expected": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip Sektor. Für dich zeigt das, wie schnell KI Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "contract_actual": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "SanDisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "contract_expected": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "contract_actual": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
       "role": "final",
-      "raw_transcript": "SanDisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip Sektor. Für dich zeigt das, wie schnell KI Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_contract_expected": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe K I-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im K I- und Chip Sektor. Für dich zeigt das, wie schnell K I Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "raw_transcript": "SanDisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip Sektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_contract_expected": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe K I-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im K I- und Chipsektor. Für dich zeigt das, wie schnell K I-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
       "asr_orthographic_equivalence_applied": true,
       "hallucinated_tail": false,
       "terminal_token_match": true,
-      "expected_spoken_text": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe K I-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im K I- und Chip Sektor. Für dich zeigt das, wie schnell K I Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_expected_spoken_text": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip Sektor. Für dich zeigt das, wie schnell KI Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "expected_spoken_text": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe K I-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im K I- und Chipsektor. Für dich zeigt das, wie schnell K I-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_expected_spoken_text": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip Sektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
       "average_logprob": null,
       "asr_mode": "independent-unprompted-audio-only",
       "blockers": [],
@@ -140,8 +130,8 @@
           {
             "source": "voice_postmux_unprompted",
             "strict_pass": true,
-            "similarity": 0.9748,
-            "transcript": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+            "similarity": 1.0,
+            "transcript": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
             "missing_critical_terms": [],
             "average_logprob": null,
             "quality_gates_weakened": false
@@ -150,7 +140,7 @@
             "source": "final_audit_prompted",
             "strict_pass": false,
             "similarity": 0.9748,
-            "transcript": "Sandys und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip-Sektor. Für dich zeigt das, wie schnell KI Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+            "transcript": "Zendesk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
             "missing_critical_terms": [
               {
                 "source": "Sandisk",
@@ -158,14 +148,14 @@
                 "kind": "pronunciation_map"
               }
             ],
-            "average_logprob": -0.1115,
+            "average_logprob": -0.0979,
             "quality_gates_weakened": false
           },
           {
             "source": "final_audit_unprompted_tiebreaker",
             "strict_pass": true,
             "similarity": 1.0,
-            "transcript": "SanDisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+            "transcript": "SanDisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
             "missing_critical_terms": [],
             "average_logprob": null,
             "quality_gates_weakened": false
@@ -180,76 +170,73 @@
       "score": 100.0,
       "blockers": [],
       "findings": [
-        "Alle Aussagen im Skript bezüglich Sandisk, Western Digital und der Reaktion der Märkte auf KI-Erwartungen sind durch die gelieferte Quellenbasis vollständig abgedeckt."
+        "Alle Tatsachenbehauptungen über SanDisk und Western Digital sind vollständig durch die bereitgestellten Quellen (Reuters, Investors.com) gedeckt."
       ]
     },
     "pronunciation_interpretation": {
       "score": 95.0,
       "blockers": [],
       "findings": [
-        "Das Audio-Transkript stimmt inhaltlich mit dem Skript überein. Die feinen Abweichungen im Audio ('den Kanal' / 'dem Kanal') sind zulässige semantische Marken-Fallbacks und stellen keinen Fehler dar."
+        "Die Abweichungen im Audio-Transkript ('den Kanal' / 'dem Kanal' statt 'TAYVORIQ') sind zulässige semantische Fallbacks und beeinträchtigen das Verständnis nicht."
       ]
     },
     "marketing_effectiveness": {
       "score": 90.0,
       "blockers": [],
       "findings": [
-        "Starker Hook im Einstieg (Kombination aus bekannten Firmen und unerwartetem Kursverfall trotz guter Zahlen). Klar herausgearbeiteter Mehrwert für den Zuschauer."
+        "Der Hook ist direkt und relevant. Der Nutzen für den Zuschauer (Erwartungen vs. Quartalszahlen) wird klar herausgearbeitet."
       ]
     },
     "sales_effectiveness": {
-      "score": 90.0,
+      "score": 92.0,
       "blockers": [],
       "findings": [
-        "Der CTA ist unaufdringlich, begründet und bietet durch verifizierte Einordnung einen echten Mehrwert für ein Abo bzw. Follow."
+        "Die CTA bietet einen echten Mehrwert ('verifizierte Einordnung') und baut Vertrauen auf, ohne künstlichen Druck zu erzeugen."
       ]
     },
     "platform_fit": {
       "score": 95.0,
       "blockers": [],
       "findings": [
-        "Plattformspezifische CTAs ('Abonniere' für YouTube Shorts, 'Folge' für TikTok) wurden korrekt eingesetzt und die Beschreibungen/Metadaten passen zum jeweiligen Kanal."
+        "Hervorragende Differenzierung zwischen YouTube ('Abonniere') und TikTok ('Folge'). Die Metadaten und Hashtags sind plattformgerecht optimiert."
       ]
     },
     "overall_score": 94.0,
     "approval_recommendation": "PASS",
     "blockers": [],
     "strengths": [
-      "Lückenlose faktenbasierte Verifizierung ohne Halluzinationen.",
-      "Praxisnaher Anlegernutzen sofort verständlich auf den Punkt gebracht.",
-      "Korrekte plattformgerechte Differenzierung von CTA und Metadaten."
+      "Exzellente faktische Fundierung basierend auf den Reuters- und Investors.com-Quellen.",
+      "Klare Strukturierung der 30-sekündigen Videos mit logischem Aufbau (Problem -> Ursache -> Auswirkung -> Learning -> CTA).",
+      "Saubere plattformspezifische Anpassung der Call-to-Action."
     ],
     "repair_instructions": [],
     "score_scale_normalized": true,
     "provider_model_fallback": {
-      "selected_model": "gemini-3.6-flash",
+      "selected_model": "gemini-3.5-flash",
       "attempted_models": [
-        "gemini-3.5-flash",
-        "gemini-3.6-flash"
+        "gemini-3.5-flash"
       ],
-      "provider_failures_before_success": [
-        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 52.443973816s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.Help\", \"links\": [ { \"description\": \"Learn more about Gemini API quotas\", \"url\": \"https://"
-      ],
+      "provider_failures_before_success": [],
       "same_prompt": true,
       "quality_gate_weakened": false
     }
   },
   "visual_review": {
-    "score": "95",
+    "score": "96",
     "passed": true,
     "blockers": [],
     "findings": [
-      "Klare, hochauflösende B-Roll-Aufnahmen zum Thema Finanzen und Trading.",
-      "Die Text-Overlays sind gut lesbar und kontrastreich platziert.",
-      "Thematische Relevanz ist durchgehend gegeben (Aktienmarkt, Charts, Hype-Erklärung).",
-      "Professioneller Markenauftritt ohne sichtbare Renderfehler oder Artefakte."
+      "Hervorragende plattformspezifische Anpassung des Call-to-Action: 'Abonniere TAYVORIQ' auf YouTube Shorts und 'Folge TAYVORIQ' auf TikTok.",
+      "Die Textboxen sind durch den dunklen, halbtransparenten Hintergrund auf allen Frames exzellent lesbar und kontrastreich.",
+      "Die Bildmotive (Aktiencharts, Finanzdaten, Laptop) passen perfekt zum Thema des KI-Aktienabsturzes und wirken hochgradig professionell.",
+      "Keine Renderfehler, Bildfehler oder unnatürlichen KI-Generierungsartefakte erkennbar."
     ],
     "marketing_visual_strengths": [
-      "Hervorragende mobile Lesbarkeit der Untertitel und Call-to-Action-Elemente.",
-      "Hohe visuelle Glaubwürdigkeit durch realistische Trading- und Analyse-Szenen.",
-      "Starke Retention-Wirkung dank schneller Sequenzwechsel und direkter Ansprache."
+      "Starke Markenwirkung durch konsistente Typografie und professionelles Color Grading im Finanz-Look.",
+      "Hohe visuelle Glaubwürdigkeit durch realistische Darstellungen von Trading-Szenarien.",
+      "Optimale Platzierung der Untertitel im mobilen Sichtbereich (Safe Zone)."
     ],
-    "provider": "gemini:gemini-3.5-flash-lite",
+    "provider": "gemini:gemini-3.5-flash",
     "reviewed_frames": [
       "youtube_shorts-1.jpg",
       "youtube_shorts-2.jpg",
@@ -259,16 +246,11 @@
       "tiktok-3.jpg"
     ],
     "provider_model_fallback": {
-      "selected_model": "gemini-3.5-flash-lite",
+      "selected_model": "gemini-3.5-flash",
       "attempted_models": [
-        "gemini-3.5-flash",
-        "gemini-3.6-flash",
-        "gemini-3.5-flash-lite"
+        "gemini-3.5-flash"
       ],
-      "provider_failures_before_success": [
-        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 41.92137996s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"d",
-        "gemini-3.6-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 40.23400815s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"d"
-      ],
+      "provider_failures_before_success": [],
       "same_frames_and_prompt": true,
       "quality_gate_weakened": false,
       "fail_closed": true
@@ -308,14 +290,14 @@
   },
   "blockers": [],
   "strengths": [
-    "Lückenlose faktenbasierte Verifizierung ohne Halluzinationen.",
-    "Praxisnaher Anlegernutzen sofort verständlich auf den Punkt gebracht.",
-    "Korrekte plattformgerechte Differenzierung von CTA und Metadaten."
+    "Exzellente faktische Fundierung basierend auf den Reuters- und Investors.com-Quellen.",
+    "Klare Strukturierung der 30-sekündigen Videos mit logischem Aufbau (Problem -> Ursache -> Auswirkung -> Learning -> CTA).",
+    "Saubere plattformspezifische Anpassung der Call-to-Action."
   ],
   "repair_instructions": [],
   "providers": {
-    "marketing": "gemini:gemini-3.6-flash",
-    "visual": "gemini:gemini-3.5-flash-lite",
+    "marketing": "gemini:gemini-3.5-flash",
+    "visual": "gemini:gemini-3.5-flash",
     "audio": "groq:whisper-large-v3-objective-score",
     "conversion": "deterministic-cta-benefit-gate-v1"
   },
