@@ -1,0 +1,2712 @@
+{
+  "job_id": "20260812_081922_nvidia-und-wall-street-ueber-500-milliarden-dollar-fuer-die-ki-infrastruktur",
+  "mode": "tayvoriq_context_first_dual_platform_v2",
+  "created_at": "2026-08-12T08:39:21+00:00",
+  "github_run_id": "31577596411",
+  "topic": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur",
+  "language": "Deutsch",
+  "requested_platform": "youtube_tiktok",
+  "target_duration": 35,
+  "approval_status": "PENDING_HUMAN_REVIEW",
+  "render_status": "DONE",
+  "upload_status": "NOT_STARTED_PENDING_HUMAN_APPROVAL",
+  "llm_report": {
+    "source": {
+      "provider": "template:fallback",
+      "fallback": true,
+      "errors": [
+        {
+          "provider": "gemini",
+          "error": "Gemini lieferte kein valides JSON"
+        },
+        {
+          "provider": "groq",
+          "error": "invalid_json_or_missing_fields"
+        },
+        {
+          "provider": "huggingface",
+          "error": "400 Client Error: Bad Request for url: https://router.huggingface.co/v1/chat/completions"
+        }
+      ]
+    },
+    "rewrite": {
+      "youtube_shorts": {
+        "attempts": [
+          {
+            "provider": "groq:llama-3.1-8b-instant",
+            "fallback": true,
+            "errors": [],
+            "router_version": "v10",
+            "attempt": 1
+          }
+        ],
+        "provider_editorial_attempts": 1,
+        "provider_repair_attempted": false,
+        "provider_repair_issues_before": [
+          "script_too_short:46:min=51"
+        ],
+        "provider_repair_issues_after": [
+          "script_too_short:46:min=51"
+        ],
+        "selected_provider_issues": [
+          "script_too_short:46:min=51"
+        ],
+        "selected_payload_issues": [
+          "script_too_short:46:min=51"
+        ],
+        "initial_issues": [
+          "script_too_short:46:min=51"
+        ],
+        "final_issues": [],
+        "source_gate_issues": [],
+        "local_fallback_generated": true,
+        "local_editorial_repair_used": true,
+        "repair_strategy": "full-source-fallback-after-aggregate-gate",
+        "repaired_fields": [
+          "what_happened",
+          "why_happening",
+          "who_is_affected",
+          "personal_impact",
+          "action_now"
+        ],
+        "rewrite_version": "v27-topic-safe-cta-runtime",
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "spoken_brand_removed": false,
+        "spoken_brand_normalized": "TAYVORIQ=>Tai wo rik",
+        "care_cost_grounding_guard": "standard",
+        "brand_pronunciation": "Tayvorik",
+        "topic_specificity_repaired": false,
+        "topic_specificity_issues_before_repair": [],
+        "topic_specificity_issues_after_repair": [],
+        "topic_specificity_verified_locally": false,
+        "universal_platform_cta": "Folge und abonniere TAYVORIQ für verifizierte Tech-Trends, klare Einordnungen und konkrete Schritte.",
+        "platform_gate_validation": {
+          "youtube_shorts": {
+            "passed": true,
+            "required_action": "subscribe"
+          },
+          "tiktok": {
+            "passed": true,
+            "required_action": "follow",
+            "distribution": "manual_after_user_approval"
+          }
+        },
+        "generic_contract_repair": {
+          "version": "v39-idempotent-semantic-source-field-repair-before-render",
+          "script_words": 60,
+          "repair_target_words": 53,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "platform_cta_contract": {
+          "version": "v2-deterministic-platform-action-through-final-render-boundary",
+          "platform": "youtube_shorts",
+          "cta": "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "visible_script_audio_overlay_same_source": true,
+          "quality_gates_weakened": false
+        }
+      },
+      "tiktok": {
+        "attempts": [
+          {
+            "provider": "groq:llama-3.1-8b-instant",
+            "fallback": true,
+            "errors": [],
+            "router_version": "v10",
+            "attempt": 1
+          }
+        ],
+        "provider_editorial_attempts": 1,
+        "provider_repair_attempted": false,
+        "provider_repair_issues_before": [
+          "script_too_short:46:min=51"
+        ],
+        "provider_repair_issues_after": [
+          "script_too_short:46:min=51"
+        ],
+        "selected_provider_issues": [
+          "script_too_short:46:min=51"
+        ],
+        "selected_payload_issues": [
+          "script_too_short:46:min=51"
+        ],
+        "initial_issues": [
+          "script_too_short:46:min=51"
+        ],
+        "final_issues": [],
+        "source_gate_issues": [],
+        "local_fallback_generated": true,
+        "local_editorial_repair_used": true,
+        "repair_strategy": "full-source-fallback-after-aggregate-gate",
+        "repaired_fields": [
+          "what_happened",
+          "why_happening",
+          "who_is_affected",
+          "personal_impact",
+          "action_now"
+        ],
+        "rewrite_version": "v27-topic-safe-cta-runtime",
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "spoken_brand_removed": false,
+        "spoken_brand_normalized": "TAYVORIQ=>Tai wo rik",
+        "care_cost_grounding_guard": "standard",
+        "brand_pronunciation": "Tayvorik",
+        "topic_specificity_repaired": false,
+        "topic_specificity_issues_before_repair": [],
+        "topic_specificity_issues_after_repair": [],
+        "topic_specificity_verified_locally": false,
+        "universal_platform_cta": "Folge und abonniere TAYVORIQ für verifizierte Tech-Trends, klare Einordnungen und konkrete Schritte.",
+        "platform_gate_validation": {
+          "youtube_shorts": {
+            "passed": true,
+            "required_action": "subscribe"
+          },
+          "tiktok": {
+            "passed": true,
+            "required_action": "follow",
+            "distribution": "manual_after_user_approval"
+          }
+        },
+        "generic_contract_repair": {
+          "version": "v39-idempotent-semantic-source-field-repair-before-render",
+          "script_words": 60,
+          "repair_target_words": 53,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "platform_cta_contract": {
+          "version": "v2-deterministic-platform-action-through-final-render-boundary",
+          "platform": "tiktok",
+          "cta": "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "visible_script_audio_overlay_same_source": true,
+          "quality_gates_weakened": false
+        }
+      }
+    }
+  },
+  "quality_report": {
+    "passed": true,
+    "variants": {
+      "youtube_shorts": {
+        "passed": true,
+        "issues": [],
+        "word_count": 53,
+        "body_words": 48,
+        "cta_words": 5,
+        "cta_start_ratio": 0.906,
+        "self_contained": true,
+        "native_language_voice_configured": true,
+        "quality_version": "v20.1-provider-aware-german-narration",
+        "checked_at": "2026-08-12T08:19:32+00:00",
+        "editorial_five_answers": {
+          "passed": true,
+          "answers": {
+            "what_happened": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+            "why_happening": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+            "who_is_affected": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen.",
+            "personal_impact": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen.",
+            "action_now": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind."
+          }
+        },
+        "editorial_repair_strategy": "full-source-fallback-after-aggregate-gate",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "factual_cause_guard": "standard",
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere Tai wo rik für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "500": "fünfhundert"
+          },
+          "brand_spoken": true,
+          "brand_pronunciation": "TAYVORIQ=>Tai wo rik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          }
+        },
+        "tts_preview": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere Tai wo rik für verifizierte Einordnung und konkrete Schritte.",
+        "policy_grounding_guard": "standard",
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "tiktok": {
+        "passed": true,
+        "issues": [],
+        "word_count": 53,
+        "body_words": 48,
+        "cta_words": 5,
+        "cta_start_ratio": 0.906,
+        "self_contained": true,
+        "native_language_voice_configured": true,
+        "quality_version": "v20.1-provider-aware-german-narration",
+        "checked_at": "2026-08-12T08:29:54+00:00",
+        "editorial_five_answers": {
+          "passed": true,
+          "answers": {
+            "what_happened": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+            "why_happening": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+            "who_is_affected": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen.",
+            "personal_impact": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen.",
+            "action_now": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind."
+          }
+        },
+        "editorial_repair_strategy": "full-source-fallback-after-aggregate-gate",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "factual_cause_guard": "standard",
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge Tai wo rik für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "500": "fünfhundert"
+          },
+          "brand_spoken": true,
+          "brand_pronunciation": "TAYVORIQ=>Tai wo rik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          }
+        },
+        "tts_preview": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge Tai wo rik für verifizierte Einordnung und konkrete Schritte.",
+        "policy_grounding_guard": "standard",
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      }
+    },
+    "deterministic_passed": true,
+    "preapproval_ai_audit": {
+      "passed": true,
+      "scores": {
+        "factual_accuracy": 100,
+        "pronunciation": 98,
+        "marketing": 95,
+        "sales": 95,
+        "platform_fit": 100,
+        "visual": 85,
+        "overall": 96
+      },
+      "blockers": []
+    },
+    "audit_persistence_version": "v2-repeatable-existing-render"
+  },
+  "text_package": {
+    "title": "Nvidia und Wall Street mobilisieren über 500 Milliarden Dollar für KI-Infrastruktur",
+    "category": "technology_ai",
+    "trend_angle": "Welche konkrete Veränderung hinter Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur wirklich steckt.",
+    "trend_signal": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+    "named_entities": [],
+    "why_now": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+    "affected_groups": [
+      "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen."
+    ],
+    "viewer_test": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind.",
+    "series_next": "",
+    "hook": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+    "script": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+    "cta": "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+    "scenes": [
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur news documentary vertical video",
+        "overlay_text": "",
+        "spoken_chunk": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur real location vertical video",
+        "overlay_text": "",
+        "spoken_chunk": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur investigation documentary vertical video",
+        "overlay_text": "",
+        "spoken_chunk": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur relevant people workplace vertical video",
+        "overlay_text": "",
+        "spoken_chunk": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur German news context vertical video",
+        "overlay_text": "",
+        "spoken_chunk": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur close up evidence context vertical video",
+        "overlay_text": "",
+        "spoken_chunk": "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte."
+      }
+    ],
+    "youtube_metadata": {
+      "title": "Nvidia und Wall Street mobilisieren über 500 Milliarden Dollar für KI-Infrastruktur",
+      "description": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. #TAYVORIQ #Trendjagd #Technologie #KI",
+      "hashtags": [
+        "#TAYVORIQ",
+        "#Trendjagd",
+        "#Technologie",
+        "#KI"
+      ],
+      "tags": [
+        "technology_ai",
+        "TAYVORIQ",
+        "Trendjagd",
+        "Shorts"
+      ]
+    },
+    "fallback_used": true,
+    "language": "Deutsch",
+    "platform": "youtube_shorts",
+    "target_duration": 35,
+    "llm_provider": "template:fallback",
+    "viewer_questions": {
+      "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur.",
+      "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
+      "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
+      "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
+      "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
+      "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
+    },
+    "editorial_answers": {
+      "what_happened": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+      "why_happening": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+      "who_is_affected": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen.",
+      "personal_impact": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen.",
+      "action_now": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind."
+    },
+    "editorial_repair_strategy": "full-source-fallback-after-aggregate-gate",
+    "source_context": {
+      "title": "Nvidia und Wall Street mobilisieren über 500 Milliarden Dollar für KI-Infrastruktur",
+      "category": "technology_ai",
+      "article_summary": "Nvidia hat sich mit sechs großen Finanzhäusern zusammengeschlossen, um Finanzierungsplattformen aufzubauen, die mehr als 500 Milliarden US-Dollar an Drittmitteln für KI-Infrastruktur mobilisieren sollen.",
+      "rss_summary": "Mehr als 500 Milliarden Dollar sollen über neue Finanzierungsplattformen in KI-Rechenzentren, Rechenleistung und die dazugehörige Infrastruktur fließen.",
+      "editorial_context": "Der Kern der Story ist nicht, dass Nvidia selbst 500 Milliarden Dollar ausgibt. Nvidia arbeitet mit Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs und KKR an Finanzierungsplattformen, die mehr als 500 Milliarden Dollar Drittmittel für KI-Infrastruktur mobilisieren sollen. Die Story erklärt zuerst die Größenordnung, dann warum KI reale Rechenzentren, Chips, Strom, Kühlung und Cloud-Infrastruktur braucht. Der persönliche Nutzen wird nicht als Anlageversprechen formuliert: Für normale Menschen und kleine Unternehmen liegt die anschlussfähige Chance eher darin, KI praktisch einzusetzen, Prozesse zu automatisieren oder Fähigkeiten rund um Cloud, Rechenzentren und digitale Infrastruktur aufzubauen.",
+      "factual_source_context": "Nvidia und Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs sowie KKR wollen Finanzierungsplattformen schaffen, die mehr als 500 Milliarden US-Dollar Drittmittel für KI-Infrastruktur mobilisieren. Die Finanzierung soll unter anderem den Ausbau von KI-Rechenleistung, Rechenzentren und zugehöriger Infrastruktur ermöglichen. Konkrete endgültige Konditionen und Zeitpläne sind noch nicht vollständig festgelegt.",
+      "factual_context_has_cause": true,
+      "independent_news_count": 2,
+      "verified_public_interest_source": true,
+      "fallback_editorial_answers": {
+        "what_happened": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+        "why_happening": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+        "who_is_affected": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen.",
+        "personal_impact": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen.",
+        "action_now": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind."
+      },
+      "fallback_visual_queries": [
+        "NVIDIA GPU data center server racks vertical video",
+        "Wall Street finance skyscrapers trading screens vertical video",
+        "AI data center power cooling infrastructure vertical video",
+        "artificial intelligence server hall cinematic vertical video",
+        "small business owner using AI automation laptop vertical video",
+        "cloud engineer data center server room vertical video",
+        "500 billion dollars digital counter technology vertical video"
+      ],
+      "sources": [
+        {
+          "publisher": "Reuters",
+          "url": "https://www.reuters.com/technology/wall-street-giants-partner-with-nvidia-500-billion-ai-financing-deal-ft-reports-2026-08-10/",
+          "supports": "Nvidia partnered with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR on compute-financing platforms expected to raise more than 500 billion dollars of third-party capital for AI infrastructure."
+        },
+        {
+          "publisher": "Financial Times",
+          "url": "https://www.ft.com/content/98a8fd17-15b6-4f67-9cb4-825722b11348",
+          "supports": "The coalition targets more than 500 billion dollars for AI infrastructure including chips, data centres and power systems; the arrangements were reported as memoranda rather than fully finalised terms."
+        },
+        {
+          "publisher": "NVIDIA",
+          "url": "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/",
+          "supports": "Nvidia describes the need to finance capital-intensive AI factories and expanded compute infrastructure for startups and enterprises."
+        }
+      ]
+    },
+    "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt.",
+    "script_body": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind.",
+    "pronunciation_map": {
+      "TAYVORIQ": "Tayvorik"
+    },
+    "context_metrics": {
+      "cta_start_ratio": 0.828,
+      "body_words": 48,
+      "cta_words": 10,
+      "editorial_body_words": 48,
+      "script_words": 58,
+      "minimum_script_words": 51,
+      "maximum_script_words": 63,
+      "validator_minimum_words": 51,
+      "semantic_pre_render_gate": true
+    },
+    "trend_origin": "manual-or-provider-only",
+    "fallback_policy": "cloud-primary-local-last-resort",
+    "visual_topic_guard": "strict-topic-bound-v23",
+    "what_happened": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+    "why_happening": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+    "who_is_affected": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen.",
+    "personal_impact": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen.",
+    "action_now": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind.",
+    "universal_platform_cta": true,
+    "shared_master_render_requested": true,
+    "approval_status": "PENDING_REVIEW",
+    "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+    "instagram_status": "NOT_CONFIGURED_EXCLUDED",
+    "content_editor_version": "v27-topic-safe-cta-runtime",
+    "final_package_contract": {
+      "version": "v27-topic-safe-cta-runtime",
+      "word_count": 60,
+      "minimum_words": 51,
+      "maximum_words": 63,
+      "quality_gates_weakened": false
+    },
+    "platform_gate_validation": {
+      "youtube_shorts": {
+        "passed": true,
+        "required_action": "subscribe"
+      },
+      "tiktok": {
+        "passed": true,
+        "required_action": "follow",
+        "distribution": "manual_after_user_approval"
+      }
+    },
+    "generic_contract_repair": {
+      "version": "v39-idempotent-semantic-source-field-repair-before-render",
+      "script_words": 58,
+      "repair_target_words": 53,
+      "repair_target_met": true,
+      "validator_minimum_words": 51,
+      "quality_gates_weakened": false,
+      "semantic_pre_render_gate": true,
+      "legacy_validator_passed": true,
+      "placeholder_language_blocked": true,
+      "boundary": "captured-v25-to-v20-render-call"
+    },
+    "pronunciation_contract": {
+      "version": "v3-human-natural-hidden-synthesis-input",
+      "visible_script_preserved": true,
+      "terms": {},
+      "voice_router": "chatterbox-v3-human-narrator-v28",
+      "artificial_compound_splitting": false,
+      "narrator_pitch_shift_applied": false,
+      "quality_gates_weakened": false
+    },
+    "platform_cta_contract": {
+      "version": "v2-deterministic-platform-action-through-final-render-boundary",
+      "platform": "youtube_shorts",
+      "cta": "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+      "youtube_uses_subscribe_only": true,
+      "tiktok_uses_follow_only": true,
+      "llm_action_allowed": false,
+      "visible_script_audio_overlay_same_source": true,
+      "quality_gates_weakened": false
+    },
+    "tiktok_metadata": {
+      "title": "Nvidia und Wall Street mobilisieren über 500 Milliarden Dollar für KI-Infrastruktur",
+      "caption": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. #TAYVORIQ #Trendjagd #Technologie #KI",
+      "hashtags": [
+        "#TAYVORIQ",
+        "#Trendjagd",
+        "#Technologie",
+        "#KI"
+      ],
+      "privacy_default": "PUBLIC_TO_EVERYONE",
+      "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+    },
+    "speech_preflight": {
+      "passed": true,
+      "visible_script_preserved": true,
+      "tts_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere Tai wo rik für verifizierte Einordnung und konkrete Schritte.",
+      "number_replacements": {
+        "500": "fünfhundert"
+      },
+      "brand_spoken": true,
+      "brand_pronunciation": "TAYVORIQ=>Tai wo rik",
+      "version": "v24-visible-to-tts-number-and-brand-proof",
+      "brand_replacements": {
+        "TAYVORIQ": "Tayvorik"
+      }
+    }
+  },
+  "variants": {
+    "youtube_shorts": {
+      "text_package": {
+        "title": "Nvidia und Wall Street mobilisieren über 500 Milliarden Dollar für KI-Infrastruktur",
+        "category": "technology_ai",
+        "trend_angle": "Welche konkrete Veränderung hinter Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur wirklich steckt.",
+        "trend_signal": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+        "named_entities": [],
+        "why_now": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+        "affected_groups": [
+          "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen."
+        ],
+        "viewer_test": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind.",
+        "series_next": "",
+        "hook": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+        "script": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "cta": "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "scenes": [
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur news documentary vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur real location vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur investigation documentary vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur relevant people workplace vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur German news context vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur close up evidence context vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte."
+          }
+        ],
+        "youtube_metadata": {
+          "title": "Nvidia und Wall Street mobilisieren über 500 Milliarden Dollar für KI-Infrastruktur",
+          "description": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. #TAYVORIQ #Trendjagd #Technologie #KI",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Technologie",
+            "#KI"
+          ],
+          "tags": [
+            "technology_ai",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "fallback_used": true,
+        "language": "Deutsch",
+        "platform": "youtube_shorts",
+        "target_duration": 35,
+        "llm_provider": "template:fallback",
+        "viewer_questions": {
+          "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur.",
+          "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
+          "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
+          "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
+          "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
+          "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
+        },
+        "editorial_answers": {
+          "what_happened": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+          "why_happening": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+          "who_is_affected": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen.",
+          "personal_impact": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen.",
+          "action_now": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind."
+        },
+        "editorial_repair_strategy": "full-source-fallback-after-aggregate-gate",
+        "source_context": {
+          "title": "Nvidia und Wall Street mobilisieren über 500 Milliarden Dollar für KI-Infrastruktur",
+          "category": "technology_ai",
+          "article_summary": "Nvidia hat sich mit sechs großen Finanzhäusern zusammengeschlossen, um Finanzierungsplattformen aufzubauen, die mehr als 500 Milliarden US-Dollar an Drittmitteln für KI-Infrastruktur mobilisieren sollen.",
+          "rss_summary": "Mehr als 500 Milliarden Dollar sollen über neue Finanzierungsplattformen in KI-Rechenzentren, Rechenleistung und die dazugehörige Infrastruktur fließen.",
+          "editorial_context": "Der Kern der Story ist nicht, dass Nvidia selbst 500 Milliarden Dollar ausgibt. Nvidia arbeitet mit Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs und KKR an Finanzierungsplattformen, die mehr als 500 Milliarden Dollar Drittmittel für KI-Infrastruktur mobilisieren sollen. Die Story erklärt zuerst die Größenordnung, dann warum KI reale Rechenzentren, Chips, Strom, Kühlung und Cloud-Infrastruktur braucht. Der persönliche Nutzen wird nicht als Anlageversprechen formuliert: Für normale Menschen und kleine Unternehmen liegt die anschlussfähige Chance eher darin, KI praktisch einzusetzen, Prozesse zu automatisieren oder Fähigkeiten rund um Cloud, Rechenzentren und digitale Infrastruktur aufzubauen.",
+          "factual_source_context": "Nvidia und Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs sowie KKR wollen Finanzierungsplattformen schaffen, die mehr als 500 Milliarden US-Dollar Drittmittel für KI-Infrastruktur mobilisieren. Die Finanzierung soll unter anderem den Ausbau von KI-Rechenleistung, Rechenzentren und zugehöriger Infrastruktur ermöglichen. Konkrete endgültige Konditionen und Zeitpläne sind noch nicht vollständig festgelegt.",
+          "factual_context_has_cause": true,
+          "independent_news_count": 2,
+          "verified_public_interest_source": true,
+          "fallback_editorial_answers": {
+            "what_happened": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+            "why_happening": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+            "who_is_affected": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen.",
+            "personal_impact": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen.",
+            "action_now": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind."
+          },
+          "fallback_visual_queries": [
+            "NVIDIA GPU data center server racks vertical video",
+            "Wall Street finance skyscrapers trading screens vertical video",
+            "AI data center power cooling infrastructure vertical video",
+            "artificial intelligence server hall cinematic vertical video",
+            "small business owner using AI automation laptop vertical video",
+            "cloud engineer data center server room vertical video",
+            "500 billion dollars digital counter technology vertical video"
+          ],
+          "sources": [
+            {
+              "publisher": "Reuters",
+              "url": "https://www.reuters.com/technology/wall-street-giants-partner-with-nvidia-500-billion-ai-financing-deal-ft-reports-2026-08-10/",
+              "supports": "Nvidia partnered with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR on compute-financing platforms expected to raise more than 500 billion dollars of third-party capital for AI infrastructure."
+            },
+            {
+              "publisher": "Financial Times",
+              "url": "https://www.ft.com/content/98a8fd17-15b6-4f67-9cb4-825722b11348",
+              "supports": "The coalition targets more than 500 billion dollars for AI infrastructure including chips, data centres and power systems; the arrangements were reported as memoranda rather than fully finalised terms."
+            },
+            {
+              "publisher": "NVIDIA",
+              "url": "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/",
+              "supports": "Nvidia describes the need to finance capital-intensive AI factories and expanded compute infrastructure for startups and enterprises."
+            }
+          ]
+        },
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt.",
+        "script_body": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind.",
+        "pronunciation_map": {
+          "TAYVORIQ": "Tayvorik"
+        },
+        "context_metrics": {
+          "cta_start_ratio": 0.828,
+          "body_words": 48,
+          "cta_words": 10,
+          "editorial_body_words": 48,
+          "script_words": 58,
+          "minimum_script_words": 51,
+          "maximum_script_words": 63,
+          "validator_minimum_words": 51,
+          "semantic_pre_render_gate": true
+        },
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "what_happened": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+        "why_happening": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+        "who_is_affected": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen.",
+        "personal_impact": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen.",
+        "action_now": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind.",
+        "universal_platform_cta": true,
+        "shared_master_render_requested": true,
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "instagram_status": "NOT_CONFIGURED_EXCLUDED",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "final_package_contract": {
+          "version": "v27-topic-safe-cta-runtime",
+          "word_count": 60,
+          "minimum_words": 51,
+          "maximum_words": 63,
+          "quality_gates_weakened": false
+        },
+        "platform_gate_validation": {
+          "youtube_shorts": {
+            "passed": true,
+            "required_action": "subscribe"
+          },
+          "tiktok": {
+            "passed": true,
+            "required_action": "follow",
+            "distribution": "manual_after_user_approval"
+          }
+        },
+        "generic_contract_repair": {
+          "version": "v39-idempotent-semantic-source-field-repair-before-render",
+          "script_words": 58,
+          "repair_target_words": 53,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "pronunciation_contract": {
+          "version": "v3-human-natural-hidden-synthesis-input",
+          "visible_script_preserved": true,
+          "terms": {},
+          "voice_router": "chatterbox-v3-human-narrator-v28",
+          "artificial_compound_splitting": false,
+          "narrator_pitch_shift_applied": false,
+          "quality_gates_weakened": false
+        },
+        "platform_cta_contract": {
+          "version": "v2-deterministic-platform-action-through-final-render-boundary",
+          "platform": "youtube_shorts",
+          "cta": "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "visible_script_audio_overlay_same_source": true,
+          "quality_gates_weakened": false
+        },
+        "tiktok_metadata": {
+          "title": "Nvidia und Wall Street mobilisieren über 500 Milliarden Dollar für KI-Infrastruktur",
+          "caption": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. #TAYVORIQ #Trendjagd #Technologie #KI",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Technologie",
+            "#KI"
+          ],
+          "privacy_default": "PUBLIC_TO_EVERYONE",
+          "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+        },
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere Tai wo rik für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "500": "fünfhundert"
+          },
+          "brand_spoken": true,
+          "brand_pronunciation": "TAYVORIQ=>Tai wo rik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          }
+        }
+      },
+      "quality_report": {
+        "passed": true,
+        "issues": [],
+        "word_count": 53,
+        "body_words": 48,
+        "cta_words": 5,
+        "cta_start_ratio": 0.906,
+        "self_contained": true,
+        "native_language_voice_configured": true,
+        "quality_version": "v20.1-provider-aware-german-narration",
+        "checked_at": "2026-08-12T08:19:32+00:00",
+        "editorial_five_answers": {
+          "passed": true,
+          "answers": {
+            "what_happened": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+            "why_happening": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+            "who_is_affected": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen.",
+            "personal_impact": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen.",
+            "action_now": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind."
+          }
+        },
+        "editorial_repair_strategy": "full-source-fallback-after-aggregate-gate",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "factual_cause_guard": "standard",
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere Tai wo rik für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "500": "fünfhundert"
+          },
+          "brand_spoken": true,
+          "brand_pronunciation": "TAYVORIQ=>Tai wo rik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          }
+        },
+        "tts_preview": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere Tai wo rik für verifizierte Einordnung und konkrete Schritte.",
+        "policy_grounding_guard": "standard",
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "audio": {
+        "voice_path": "voice.mp3",
+        "voice_duration_seconds": 26.016,
+        "provider": "chatterbox_multilingual_v3",
+        "voice_provider_requested": "chatterbox_multilingual_v3",
+        "voice_provider_used": "chatterbox_multilingual_v3",
+        "model_id": "de-DE-ConradNeural",
+        "voice_settings": {
+          "voice": "de-DE-ConradNeural",
+          "rate": "chatterbox_multilingual_v3",
+          "volume": "+0%",
+          "pitch": "-3Hz",
+          "loudness_target_lufs": -16
+        },
+        "target_voice_duration_seconds": 26.364,
+        "raw_voice_duration_seconds": 22.4,
+        "duration_delta_seconds": 0.016,
+        "generation_elapsed_seconds": 238.173,
+        "fallback": false,
+        "quality_profile": "tayvoriq-human-reviewed-continuous-natural-chatterbox-v36",
+        "worker_report": {
+          "provider": "chatterbox_multilingual",
+          "requested_model_version": "v3",
+          "model_version": "v3",
+          "installed_package_version": "0.1.7",
+          "language_id": "de",
+          "device": "cpu",
+          "passed": true,
+          "compatibility_mode": "native-version-selection",
+          "model_version_fallback": false,
+          "sample_rate": 24000,
+          "duration_seconds": 22.4,
+          "chunks": [
+            "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere Tai wo rik für verifizierte Einordnung und konkrete Schritte."
+          ],
+          "chunk_count": 1,
+          "model_load_seconds": 20.84,
+          "generation_seconds": [
+            208.012
+          ],
+          "total_seconds": 234.23,
+          "reference_audio_used": false,
+          "exaggeration": 0.42,
+          "cfg_weight": 0.36,
+          "output": "out/tayvoriq-youtube-tiktok/candidate-01/20260812_081922_nvidia-und-wall-street-ueber-500-milliarden-dollar-fuer-die-ki-infrastruktur/youtube_shorts/voice_chatterbox_raw.wav",
+          "output_bytes": 1075244,
+          "audio_container": "wav-pcm16-standard-library"
+        },
+        "natural_voice_target_seconds": 26.364,
+        "natural_voice_wpm": 132.0,
+        "full_short_target_seconds": 35.0,
+        "coherent_chunk_limit": 1,
+        "configured_max_chars": 520,
+        "premium_voice_timeout_budget_seconds": 780,
+        "pronunciation_prepared": false,
+        "pronunciation_profile": "de-critical-terms-v1",
+        "narrator_tone_applied": false,
+        "narrator_pitch_shift_applied": false,
+        "human_narrator_quality_profile": true,
+        "natural_pacing_contract_passed": true,
+        "premium_voice_required": true,
+        "premium_voice_contract_passed": true,
+        "continuous_narrator_take": true,
+        "artificial_compound_splitting": false,
+        "internal_hyphen_preserved": true,
+        "human_pronunciation_profile": "canonical-natural",
+        "targeted_acronym_pronunciation_aid": false,
+        "sandisk_spoken_form": "San Disk",
+        "canonical_review_contract_unchanged": true,
+        "exact_chatterbox_model_required": "v3",
+        "exact_chatterbox_model_passed": true,
+        "quality_gates_weakened": false,
+        "pronunciation_replacements": {
+          "TAYVORIQ": "den Kanal"
+        },
+        "number_pronunciation_replacements": {
+          "500": "fünfhundert"
+        },
+        "tts_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "spoken_number_normalization_required": true,
+        "spoken_number_normalization_passed": true,
+        "speech_preflight_version": "v20-german-number-verbalization",
+        "native_language_voice_configured": true,
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        },
+        "checkpoint_repair": {
+          "scope": "VOICE",
+          "visual_master_reused": true,
+          "master_duration_preserved": true,
+          "script_reused": true,
+          "sources_reused": true,
+          "full_pipeline_restarted": false
+        },
+        "synthesis_strategy": "continuous-full-script-human-narrator-v5",
+        "segmented_voice_repair": false,
+        "artificial_pronunciation_replacements": false,
+        "native_german_compounds_preserved": true,
+        "narrator_pitch_factor": 1.0,
+        "human_pronunciation_repair": true,
+        "human_review_reason": "pronunciation_not_natural",
+        "spoken_contract_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "visible_script_unchanged": true,
+        "tayvoriq_spoken_replacement": "den Kanal",
+        "pre_mux_transcript_validation": {
+          "passed": true,
+          "similarity": 1.0,
+          "missing_critical_terms": [],
+          "expected_tokens": 61,
+          "actual_tokens": 61,
+          "excessive_extra_words": false,
+          "forbidden_tail": false,
+          "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "role": "final",
+          "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "asr_orthographic_equivalence_applied": false,
+          "hallucinated_tail": false,
+          "terminal_token_match": true,
+          "transcription_attempt": 1,
+          "postmux_min_similarity": 0.95,
+          "base_gate_passed": true,
+          "attempts": [
+            {
+              "passed": true,
+              "similarity": 1.0,
+              "missing_critical_terms": [],
+              "expected_tokens": 61,
+              "actual_tokens": 61,
+              "excessive_extra_words": false,
+              "forbidden_tail": false,
+              "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "role": "final",
+              "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "asr_orthographic_equivalence_applied": false,
+              "hallucinated_tail": false,
+              "terminal_token_match": true,
+              "transcription_attempt": 1,
+              "postmux_min_similarity": 0.95,
+              "base_gate_passed": true
+            }
+          ]
+        },
+        "postmux_transcript_validation": {
+          "passed": true,
+          "similarity": 1.0,
+          "missing_critical_terms": [],
+          "expected_tokens": 61,
+          "actual_tokens": 61,
+          "excessive_extra_words": false,
+          "forbidden_tail": false,
+          "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_expected": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "role": "final",
+          "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "asr_orthographic_equivalence_applied": false,
+          "hallucinated_tail": false,
+          "terminal_token_match": true,
+          "transcription_attempt": 1,
+          "postmux_min_similarity": 0.95,
+          "base_gate_passed": true,
+          "attempts": [
+            {
+              "passed": true,
+              "similarity": 1.0,
+              "missing_critical_terms": [],
+              "expected_tokens": 61,
+              "actual_tokens": 61,
+              "excessive_extra_words": false,
+              "forbidden_tail": false,
+              "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_expected": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "role": "final",
+              "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "asr_orthographic_equivalence_applied": false,
+              "hallucinated_tail": false,
+              "terminal_token_match": true,
+              "transcription_attempt": 1,
+              "postmux_min_similarity": 0.95,
+              "base_gate_passed": true
+            }
+          ],
+          "postmux_checked": true,
+          "master": "/home/runner/work/tayvoriq-control-plane/tayvoriq-control-plane/implementation/out/tayvoriq-youtube-tiktok/candidate-01/20260812_081922_nvidia-und-wall-street-ueber-500-milliarden-dollar-fuer-die-ki-infrastruktur/short_youtube.mp4"
+        },
+        "postmux_min_similarity": 0.95,
+        "natural_wpm": 140.68,
+        "full_take_attempts": [
+          {
+            "attempt": 1,
+            "passed": true,
+            "voice_duration_seconds": 26.016,
+            "provider": "chatterbox_multilingual_v3",
+            "strict_validation": {
+              "passed": true,
+              "similarity": 1.0,
+              "missing_critical_terms": [],
+              "expected_tokens": 61,
+              "actual_tokens": 61,
+              "excessive_extra_words": false,
+              "forbidden_tail": false,
+              "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "role": "final",
+              "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "asr_orthographic_equivalence_applied": false,
+              "hallucinated_tail": false,
+              "terminal_token_match": true,
+              "transcription_attempt": 1,
+              "postmux_min_similarity": 0.95,
+              "base_gate_passed": true,
+              "attempts": [
+                {
+                  "passed": true,
+                  "similarity": 1.0,
+                  "missing_critical_terms": [],
+                  "expected_tokens": 61,
+                  "actual_tokens": 61,
+                  "excessive_extra_words": false,
+                  "forbidden_tail": false,
+                  "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "role": "final",
+                  "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "asr_orthographic_equivalence_applied": false,
+                  "hallucinated_tail": false,
+                  "terminal_token_match": true,
+                  "transcription_attempt": 1,
+                  "postmux_min_similarity": 0.95,
+                  "base_gate_passed": true
+                }
+              ]
+            },
+            "natural_wpm": 140.68,
+            "natural_wpm_min": 108.0,
+            "natural_wpm_max": 150.0,
+            "duration_fit": {
+              "required": false,
+              "target_duration": 26.016,
+              "speed_factor": 1.0,
+              "overrun_seconds": 0.0
+            },
+            "router_result": {
+              "voice_path": "voice.mp3",
+              "voice_duration_seconds": 26.02,
+              "provider": "chatterbox_multilingual_v3",
+              "voice_provider_requested": "chatterbox_multilingual_v3",
+              "voice_provider_used": "chatterbox_multilingual_v3",
+              "model_id": "v3",
+              "voice_settings": {
+                "language_id": "de",
+                "exaggeration": 0.42,
+                "cfg_weight": 0.36,
+                "reference_audio_used": false,
+                "chunk_count": 1,
+                "loudness_target_lufs": -16,
+                "narrator_pitch_factor": 1.0,
+                "narrator_pitch_shift_applied": false,
+                "narrator_articulation_preserved": true,
+                "narrator_loudness_target_lufs": -16,
+                "narrator_mastering_profile": "neutral-native-v2"
+              },
+              "target_voice_duration_seconds": 26.0,
+              "raw_voice_duration_seconds": 22.04,
+              "duration_delta_seconds": 0.02,
+              "generation_elapsed_seconds": 210.915,
+              "fallback": false,
+              "quality_profile": "tayvoriq-native-natural-narrator-chatterbox-v37",
+              "worker_report": {
+                "provider": "chatterbox_multilingual",
+                "requested_model_version": "v3",
+                "model_version": "v3",
+                "installed_package_version": "0.1.7",
+                "language_id": "de",
+                "device": "cpu",
+                "passed": true,
+                "compatibility_mode": "native-version-selection",
+                "model_version_fallback": false,
+                "sample_rate": 24000,
+                "duration_seconds": 22.04,
+                "chunks": [
+                  "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für Ka I Infrastruktur mobilisieren. Weil Ka I Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch Ka I Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche Ka I Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte."
+                ],
+                "chunk_count": 1,
+                "model_load_seconds": 22.53,
+                "generation_seconds": [
+                  179.687
+                ],
+                "total_seconds": 207.538,
+                "reference_audio_used": false,
+                "exaggeration": 0.42,
+                "cfg_weight": 0.36,
+                "output": "/tmp/tayvoriq-human-narrator-v5-du49a7lp/youtube_shorts/full-take-01/voice_chatterbox_raw.wav",
+                "output_bytes": 1057964,
+                "audio_container": "wav-pcm16-standard-library"
+              },
+              "natural_voice_target_seconds": 26.0,
+              "natural_voice_wpm": 132.0,
+              "full_short_target_seconds": 28.0,
+              "coherent_chunk_limit": 1,
+              "configured_max_chars": 520,
+              "premium_voice_timeout_budget_seconds": 780,
+              "pronunciation_prepared": true,
+              "pronunciation_profile": "de-critical-terms-v1",
+              "narrator_tone_applied": false,
+              "narrator_pitch_shift_applied": false,
+              "human_narrator_quality_profile": true,
+              "natural_pacing_contract_passed": true,
+              "premium_voice_required": true,
+              "premium_voice_contract_passed": true,
+              "continuous_narrator_take": true,
+              "artificial_compound_splitting": false,
+              "internal_hyphen_preserved": true,
+              "human_pronunciation_profile": "de-critical-san-disk-ka-i-v1",
+              "targeted_acronym_pronunciation_aid": true,
+              "sandisk_spoken_form": "San Disk",
+              "canonical_review_contract_unchanged": true,
+              "exact_chatterbox_model_required": "v3",
+              "exact_chatterbox_model_passed": true,
+              "quality_gates_weakened": false
+            },
+            "quality_gates_weakened": false
+          },
+          {
+            "attempt": 2,
+            "passed": true,
+            "voice_duration_seconds": 26.016,
+            "provider": "chatterbox_multilingual_v3",
+            "strict_validation": {
+              "passed": true,
+              "similarity": 1.0,
+              "missing_critical_terms": [],
+              "expected_tokens": 61,
+              "actual_tokens": 61,
+              "excessive_extra_words": false,
+              "forbidden_tail": false,
+              "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "role": "final",
+              "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "asr_orthographic_equivalence_applied": false,
+              "hallucinated_tail": false,
+              "terminal_token_match": true,
+              "transcription_attempt": 1,
+              "postmux_min_similarity": 0.95,
+              "base_gate_passed": true,
+              "attempts": [
+                {
+                  "passed": true,
+                  "similarity": 1.0,
+                  "missing_critical_terms": [],
+                  "expected_tokens": 61,
+                  "actual_tokens": 61,
+                  "excessive_extra_words": false,
+                  "forbidden_tail": false,
+                  "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "role": "final",
+                  "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "asr_orthographic_equivalence_applied": false,
+                  "hallucinated_tail": false,
+                  "terminal_token_match": true,
+                  "transcription_attempt": 1,
+                  "postmux_min_similarity": 0.95,
+                  "base_gate_passed": true
+                }
+              ]
+            },
+            "natural_wpm": 140.68,
+            "natural_wpm_min": 108.0,
+            "natural_wpm_max": 150.0,
+            "duration_fit": {
+              "required": false,
+              "target_duration": 26.016,
+              "speed_factor": 1.0,
+              "overrun_seconds": 0.0
+            },
+            "router_result": {
+              "voice_path": "voice.mp3",
+              "voice_duration_seconds": 26.02,
+              "provider": "chatterbox_multilingual_v3",
+              "voice_provider_requested": "chatterbox_multilingual_v3",
+              "voice_provider_used": "chatterbox_multilingual_v3",
+              "model_id": "v3",
+              "voice_settings": {
+                "language_id": "de",
+                "exaggeration": 0.42,
+                "cfg_weight": 0.36,
+                "reference_audio_used": false,
+                "chunk_count": 1,
+                "loudness_target_lufs": -16,
+                "narrator_pitch_factor": 1.0,
+                "narrator_pitch_shift_applied": false,
+                "narrator_articulation_preserved": true,
+                "narrator_loudness_target_lufs": -16,
+                "narrator_mastering_profile": "neutral-native-v2"
+              },
+              "target_voice_duration_seconds": 26.0,
+              "raw_voice_duration_seconds": 22.04,
+              "duration_delta_seconds": 0.02,
+              "generation_elapsed_seconds": 183.225,
+              "fallback": false,
+              "quality_profile": "tayvoriq-native-natural-narrator-chatterbox-v37",
+              "worker_report": {
+                "provider": "chatterbox_multilingual",
+                "requested_model_version": "v3",
+                "model_version": "v3",
+                "installed_package_version": "0.1.7",
+                "language_id": "de",
+                "device": "cpu",
+                "passed": true,
+                "compatibility_mode": "native-version-selection",
+                "model_version_fallback": false,
+                "sample_rate": 24000,
+                "duration_seconds": 22.04,
+                "chunks": [
+                  "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für Ka I Infrastruktur mobilisieren. Weil Ka I Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch Ka I Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche Ka I Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte."
+                ],
+                "chunk_count": 1,
+                "model_load_seconds": 9.658,
+                "generation_seconds": [
+                  165.021
+                ],
+                "total_seconds": 180.309,
+                "reference_audio_used": false,
+                "exaggeration": 0.42,
+                "cfg_weight": 0.36,
+                "output": "/tmp/tayvoriq-human-narrator-v5-du49a7lp/youtube_shorts/full-take-02/voice_chatterbox_raw.wav",
+                "output_bytes": 1057964,
+                "audio_container": "wav-pcm16-standard-library"
+              },
+              "natural_voice_target_seconds": 26.0,
+              "natural_voice_wpm": 132.0,
+              "full_short_target_seconds": 28.0,
+              "coherent_chunk_limit": 1,
+              "configured_max_chars": 520,
+              "premium_voice_timeout_budget_seconds": 780,
+              "pronunciation_prepared": true,
+              "pronunciation_profile": "de-critical-terms-v1",
+              "narrator_tone_applied": false,
+              "narrator_pitch_shift_applied": false,
+              "human_narrator_quality_profile": true,
+              "natural_pacing_contract_passed": true,
+              "premium_voice_required": true,
+              "premium_voice_contract_passed": true,
+              "continuous_narrator_take": true,
+              "artificial_compound_splitting": false,
+              "internal_hyphen_preserved": true,
+              "human_pronunciation_profile": "de-critical-saen-disk-ka-i-v1",
+              "targeted_acronym_pronunciation_aid": true,
+              "sandisk_spoken_form": "Sän Disk",
+              "canonical_review_contract_unchanged": true,
+              "exact_chatterbox_model_required": "v3",
+              "exact_chatterbox_model_passed": true,
+              "quality_gates_weakened": false
+            },
+            "quality_gates_weakened": false
+          }
+        ],
+        "selected_full_take_attempt": 1,
+        "duration_fit": {
+          "required": false,
+          "target_duration": 26.016,
+          "speed_factor": 1.0,
+          "overrun_seconds": 0.0
+        },
+        "postmux_validation_required": true,
+        "existing_human_narrator_take_reused": true
+      },
+      "render": {
+        "video_path": "short.mp4",
+        "asset_report": [
+          {
+            "scene": 1,
+            "source": "pexels_video",
+            "query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur news documentary vertical video",
+            "duration": 5.653,
+            "subtitle_present": true,
+            "asset": "scene_01.mp4"
+          },
+          {
+            "scene": 2,
+            "source": "pexels_video",
+            "query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur real location vertical video",
+            "duration": 5.182,
+            "subtitle_present": true,
+            "asset": "scene_02.mp4"
+          },
+          {
+            "scene": 3,
+            "source": "pexels_video",
+            "query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur investigation documentary vertical video",
+            "duration": 3.297,
+            "subtitle_present": true,
+            "asset": "scene_03.mp4"
+          },
+          {
+            "scene": 4,
+            "source": "pexels_video",
+            "query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur relevant people workplace vertical video",
+            "duration": 4.24,
+            "subtitle_present": true,
+            "asset": "scene_04.mp4"
+          },
+          {
+            "scene": 5,
+            "source": "pexels_video",
+            "query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur German news context vertical video",
+            "duration": 4.24,
+            "subtitle_present": true,
+            "asset": "scene_05.mp4"
+          },
+          {
+            "scene": 6,
+            "source": "pexels_video",
+            "query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur close up evidence context vertical video",
+            "duration": 5.019,
+            "subtitle_present": true,
+            "asset": "scene_06.mp4"
+          }
+        ],
+        "render_size": "1080x1920",
+        "bytes": 19700943,
+        "voice_duration_seconds": 26.016,
+        "final_duration_seconds": 27.633,
+        "end_padding_seconds": 1.25,
+        "requested_duration_seconds": 35.0,
+        "duration_delta_seconds": -7.37,
+        "duration_status": "OK",
+        "checkpoint_repair": "voice_only_audio_remux",
+        "master_duration_preserved": true
+      },
+      "video_path": "short_youtube.mp4",
+      "upload_status": "PENDING_APPROVAL"
+    },
+    "tiktok": {
+      "text_package": {
+        "title": "Nvidia und Wall Street mobilisieren über 500 Milliarden Dollar für KI-Infrastruktur",
+        "category": "technology_ai",
+        "trend_angle": "Welche konkrete Veränderung hinter Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur wirklich steckt.",
+        "trend_signal": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+        "named_entities": [],
+        "why_now": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+        "affected_groups": [
+          "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen."
+        ],
+        "viewer_test": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind.",
+        "series_next": "",
+        "hook": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+        "script": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "cta": "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "scenes": [
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur news documentary vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur real location vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur investigation documentary vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur relevant people workplace vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur German news context vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur close up evidence context vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte."
+          }
+        ],
+        "youtube_metadata": {
+          "title": "Nvidia und Wall Street mobilisieren über 500 Milliarden Dollar für KI-Infrastruktur",
+          "description": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. #TAYVORIQ #Trendjagd #Technologie #KI",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Technologie",
+            "#KI"
+          ],
+          "tags": [
+            "technology_ai",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "fallback_used": true,
+        "language": "Deutsch",
+        "platform": "tiktok",
+        "target_duration": 35,
+        "llm_provider": "template:fallback",
+        "viewer_questions": {
+          "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur.",
+          "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
+          "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
+          "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
+          "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
+          "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
+        },
+        "editorial_answers": {
+          "what_happened": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+          "why_happening": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+          "who_is_affected": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen.",
+          "personal_impact": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen.",
+          "action_now": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind."
+        },
+        "editorial_repair_strategy": "full-source-fallback-after-aggregate-gate",
+        "source_context": {
+          "title": "Nvidia und Wall Street mobilisieren über 500 Milliarden Dollar für KI-Infrastruktur",
+          "category": "technology_ai",
+          "article_summary": "Nvidia hat sich mit sechs großen Finanzhäusern zusammengeschlossen, um Finanzierungsplattformen aufzubauen, die mehr als 500 Milliarden US-Dollar an Drittmitteln für KI-Infrastruktur mobilisieren sollen.",
+          "rss_summary": "Mehr als 500 Milliarden Dollar sollen über neue Finanzierungsplattformen in KI-Rechenzentren, Rechenleistung und die dazugehörige Infrastruktur fließen.",
+          "editorial_context": "Der Kern der Story ist nicht, dass Nvidia selbst 500 Milliarden Dollar ausgibt. Nvidia arbeitet mit Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs und KKR an Finanzierungsplattformen, die mehr als 500 Milliarden Dollar Drittmittel für KI-Infrastruktur mobilisieren sollen. Die Story erklärt zuerst die Größenordnung, dann warum KI reale Rechenzentren, Chips, Strom, Kühlung und Cloud-Infrastruktur braucht. Der persönliche Nutzen wird nicht als Anlageversprechen formuliert: Für normale Menschen und kleine Unternehmen liegt die anschlussfähige Chance eher darin, KI praktisch einzusetzen, Prozesse zu automatisieren oder Fähigkeiten rund um Cloud, Rechenzentren und digitale Infrastruktur aufzubauen.",
+          "factual_source_context": "Nvidia und Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs sowie KKR wollen Finanzierungsplattformen schaffen, die mehr als 500 Milliarden US-Dollar Drittmittel für KI-Infrastruktur mobilisieren. Die Finanzierung soll unter anderem den Ausbau von KI-Rechenleistung, Rechenzentren und zugehöriger Infrastruktur ermöglichen. Konkrete endgültige Konditionen und Zeitpläne sind noch nicht vollständig festgelegt.",
+          "factual_context_has_cause": true,
+          "independent_news_count": 2,
+          "verified_public_interest_source": true,
+          "fallback_editorial_answers": {
+            "what_happened": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+            "why_happening": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+            "who_is_affected": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen.",
+            "personal_impact": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen.",
+            "action_now": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind."
+          },
+          "fallback_visual_queries": [
+            "NVIDIA GPU data center server racks vertical video",
+            "Wall Street finance skyscrapers trading screens vertical video",
+            "AI data center power cooling infrastructure vertical video",
+            "artificial intelligence server hall cinematic vertical video",
+            "small business owner using AI automation laptop vertical video",
+            "cloud engineer data center server room vertical video",
+            "500 billion dollars digital counter technology vertical video"
+          ],
+          "sources": [
+            {
+              "publisher": "Reuters",
+              "url": "https://www.reuters.com/technology/wall-street-giants-partner-with-nvidia-500-billion-ai-financing-deal-ft-reports-2026-08-10/",
+              "supports": "Nvidia partnered with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR on compute-financing platforms expected to raise more than 500 billion dollars of third-party capital for AI infrastructure."
+            },
+            {
+              "publisher": "Financial Times",
+              "url": "https://www.ft.com/content/98a8fd17-15b6-4f67-9cb4-825722b11348",
+              "supports": "The coalition targets more than 500 billion dollars for AI infrastructure including chips, data centres and power systems; the arrangements were reported as memoranda rather than fully finalised terms."
+            },
+            {
+              "publisher": "NVIDIA",
+              "url": "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/",
+              "supports": "Nvidia describes the need to finance capital-intensive AI factories and expanded compute infrastructure for startups and enterprises."
+            }
+          ]
+        },
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt.",
+        "script_body": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind.",
+        "pronunciation_map": {
+          "TAYVORIQ": "Tayvorik"
+        },
+        "context_metrics": {
+          "cta_start_ratio": 0.828,
+          "body_words": 48,
+          "cta_words": 10,
+          "editorial_body_words": 48,
+          "script_words": 58,
+          "minimum_script_words": 51,
+          "maximum_script_words": 63,
+          "validator_minimum_words": 51,
+          "semantic_pre_render_gate": true
+        },
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "what_happened": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+        "why_happening": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+        "who_is_affected": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen.",
+        "personal_impact": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen.",
+        "action_now": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind.",
+        "universal_platform_cta": true,
+        "shared_master_render_requested": true,
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "instagram_status": "NOT_CONFIGURED_EXCLUDED",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "final_package_contract": {
+          "version": "v27-topic-safe-cta-runtime",
+          "word_count": 60,
+          "minimum_words": 51,
+          "maximum_words": 63,
+          "quality_gates_weakened": false
+        },
+        "platform_gate_validation": {
+          "youtube_shorts": {
+            "passed": true,
+            "required_action": "subscribe"
+          },
+          "tiktok": {
+            "passed": true,
+            "required_action": "follow",
+            "distribution": "manual_after_user_approval"
+          }
+        },
+        "generic_contract_repair": {
+          "version": "v39-idempotent-semantic-source-field-repair-before-render",
+          "script_words": 58,
+          "repair_target_words": 53,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "pronunciation_contract": {
+          "version": "v3-human-natural-hidden-synthesis-input",
+          "visible_script_preserved": true,
+          "terms": {},
+          "voice_router": "chatterbox-v3-human-narrator-v28",
+          "artificial_compound_splitting": false,
+          "narrator_pitch_shift_applied": false,
+          "quality_gates_weakened": false
+        },
+        "platform_cta_contract": {
+          "version": "v2-deterministic-platform-action-through-final-render-boundary",
+          "platform": "tiktok",
+          "cta": "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "visible_script_audio_overlay_same_source": true,
+          "quality_gates_weakened": false
+        },
+        "tiktok_metadata": {
+          "title": "Nvidia und Wall Street mobilisieren über 500 Milliarden Dollar für KI-Infrastruktur",
+          "caption": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. #TAYVORIQ #Trendjagd #Technologie #KI",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Technologie",
+            "#KI"
+          ],
+          "privacy_default": "PUBLIC_TO_EVERYONE",
+          "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+        },
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge Tai wo rik für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "500": "fünfhundert"
+          },
+          "brand_spoken": true,
+          "brand_pronunciation": "TAYVORIQ=>Tai wo rik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          }
+        }
+      },
+      "quality_report": {
+        "passed": true,
+        "issues": [],
+        "word_count": 53,
+        "body_words": 48,
+        "cta_words": 5,
+        "cta_start_ratio": 0.906,
+        "self_contained": true,
+        "native_language_voice_configured": true,
+        "quality_version": "v20.1-provider-aware-german-narration",
+        "checked_at": "2026-08-12T08:29:54+00:00",
+        "editorial_five_answers": {
+          "passed": true,
+          "answers": {
+            "what_happened": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren.",
+            "why_happening": "Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht.",
+            "who_is_affected": "Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen.",
+            "personal_impact": "Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen.",
+            "action_now": "Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind."
+          }
+        },
+        "editorial_repair_strategy": "full-source-fallback-after-aggregate-gate",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "factual_cause_guard": "standard",
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge Tai wo rik für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "500": "fünfhundert"
+          },
+          "brand_spoken": true,
+          "brand_pronunciation": "TAYVORIQ=>Tai wo rik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          }
+        },
+        "tts_preview": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge Tai wo rik für verifizierte Einordnung und konkrete Schritte.",
+        "policy_grounding_guard": "standard",
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "audio": {
+        "voice_path": "voice.mp3",
+        "voice_duration_seconds": 26.016,
+        "provider": "chatterbox_multilingual_v3",
+        "voice_provider_requested": "chatterbox_multilingual_v3",
+        "voice_provider_used": "chatterbox_multilingual_v3",
+        "model_id": "de-DE-ConradNeural",
+        "voice_settings": {
+          "voice": "de-DE-ConradNeural",
+          "rate": "chatterbox_multilingual_v3",
+          "volume": "+0%",
+          "pitch": "-3Hz",
+          "loudness_target_lufs": -16
+        },
+        "target_voice_duration_seconds": 26.364,
+        "raw_voice_duration_seconds": 23.8,
+        "duration_delta_seconds": 0.016,
+        "generation_elapsed_seconds": 231.718,
+        "fallback": false,
+        "quality_profile": "tayvoriq-human-reviewed-continuous-natural-chatterbox-v36",
+        "worker_report": {
+          "provider": "chatterbox_multilingual",
+          "requested_model_version": "v3",
+          "model_version": "v3",
+          "installed_package_version": "0.1.7",
+          "language_id": "de",
+          "device": "cpu",
+          "passed": true,
+          "compatibility_mode": "native-version-selection",
+          "model_version_fallback": false,
+          "sample_rate": 24000,
+          "duration_seconds": 23.8,
+          "chunks": [
+            "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge Tai wo rik für verifizierte Einordnung und konkrete Schritte."
+          ],
+          "chunk_count": 1,
+          "model_load_seconds": 10.251,
+          "generation_seconds": [
+            211.959
+          ],
+          "total_seconds": 228.4,
+          "reference_audio_used": false,
+          "exaggeration": 0.42,
+          "cfg_weight": 0.36,
+          "output": "out/tayvoriq-youtube-tiktok/candidate-01/20260812_081922_nvidia-und-wall-street-ueber-500-milliarden-dollar-fuer-die-ki-infrastruktur/tiktok/voice_chatterbox_raw.wav",
+          "output_bytes": 1142444,
+          "audio_container": "wav-pcm16-standard-library"
+        },
+        "natural_voice_target_seconds": 26.364,
+        "natural_voice_wpm": 132.0,
+        "full_short_target_seconds": 35.0,
+        "coherent_chunk_limit": 1,
+        "configured_max_chars": 520,
+        "premium_voice_timeout_budget_seconds": 780,
+        "pronunciation_prepared": false,
+        "pronunciation_profile": "de-critical-terms-v1",
+        "narrator_tone_applied": false,
+        "narrator_pitch_shift_applied": false,
+        "human_narrator_quality_profile": true,
+        "natural_pacing_contract_passed": true,
+        "premium_voice_required": true,
+        "premium_voice_contract_passed": true,
+        "continuous_narrator_take": true,
+        "artificial_compound_splitting": false,
+        "internal_hyphen_preserved": true,
+        "human_pronunciation_profile": "canonical-natural",
+        "targeted_acronym_pronunciation_aid": false,
+        "sandisk_spoken_form": "San Disk",
+        "canonical_review_contract_unchanged": true,
+        "exact_chatterbox_model_required": "v3",
+        "exact_chatterbox_model_passed": true,
+        "quality_gates_weakened": false,
+        "pronunciation_replacements": {
+          "TAYVORIQ": "dem Kanal"
+        },
+        "number_pronunciation_replacements": {
+          "500": "fünfhundert"
+        },
+        "tts_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "spoken_number_normalization_required": true,
+        "spoken_number_normalization_passed": true,
+        "speech_preflight_version": "v20-german-number-verbalization",
+        "native_language_voice_configured": true,
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        },
+        "checkpoint_repair": {
+          "scope": "VOICE",
+          "visual_master_reused": true,
+          "master_duration_preserved": true,
+          "script_reused": true,
+          "sources_reused": true,
+          "full_pipeline_restarted": false
+        },
+        "synthesis_strategy": "continuous-full-script-human-narrator-v5",
+        "segmented_voice_repair": false,
+        "artificial_pronunciation_replacements": false,
+        "native_german_compounds_preserved": true,
+        "narrator_pitch_factor": 1.0,
+        "human_pronunciation_repair": true,
+        "human_review_reason": "pronunciation_not_natural",
+        "spoken_contract_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "visible_script_unchanged": true,
+        "tayvoriq_spoken_replacement": "dem Kanal",
+        "pre_mux_transcript_validation": {
+          "passed": true,
+          "similarity": 1.0,
+          "missing_critical_terms": [],
+          "expected_tokens": 61,
+          "actual_tokens": 61,
+          "excessive_extra_words": false,
+          "forbidden_tail": false,
+          "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "role": "final",
+          "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "asr_orthographic_equivalence_applied": false,
+          "hallucinated_tail": false,
+          "terminal_token_match": true,
+          "transcription_attempt": 1,
+          "postmux_min_similarity": 0.95,
+          "base_gate_passed": true,
+          "attempts": [
+            {
+              "passed": true,
+              "similarity": 1.0,
+              "missing_critical_terms": [],
+              "expected_tokens": 61,
+              "actual_tokens": 61,
+              "excessive_extra_words": false,
+              "forbidden_tail": false,
+              "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "role": "final",
+              "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "asr_orthographic_equivalence_applied": false,
+              "hallucinated_tail": false,
+              "terminal_token_match": true,
+              "transcription_attempt": 1,
+              "postmux_min_similarity": 0.95,
+              "base_gate_passed": true
+            }
+          ]
+        },
+        "postmux_transcript_validation": {
+          "passed": true,
+          "similarity": 1.0,
+          "missing_critical_terms": [],
+          "expected_tokens": 61,
+          "actual_tokens": 61,
+          "excessive_extra_words": false,
+          "forbidden_tail": false,
+          "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_expected": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "role": "final",
+          "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "asr_orthographic_equivalence_applied": false,
+          "hallucinated_tail": false,
+          "terminal_token_match": true,
+          "transcription_attempt": 1,
+          "postmux_min_similarity": 0.95,
+          "base_gate_passed": true,
+          "attempts": [
+            {
+              "passed": true,
+              "similarity": 1.0,
+              "missing_critical_terms": [],
+              "expected_tokens": 61,
+              "actual_tokens": 61,
+              "excessive_extra_words": false,
+              "forbidden_tail": false,
+              "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_expected": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "role": "final",
+              "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "asr_orthographic_equivalence_applied": false,
+              "hallucinated_tail": false,
+              "terminal_token_match": true,
+              "transcription_attempt": 1,
+              "postmux_min_similarity": 0.95,
+              "base_gate_passed": true
+            }
+          ],
+          "postmux_checked": true,
+          "master": "/home/runner/work/tayvoriq-control-plane/tayvoriq-control-plane/implementation/out/tayvoriq-youtube-tiktok/candidate-01/20260812_081922_nvidia-und-wall-street-ueber-500-milliarden-dollar-fuer-die-ki-infrastruktur/short_tiktok.mp4"
+        },
+        "postmux_min_similarity": 0.95,
+        "natural_wpm": 140.68,
+        "full_take_attempts": [
+          {
+            "attempt": 1,
+            "passed": true,
+            "voice_duration_seconds": 26.016,
+            "provider": "chatterbox_multilingual_v3",
+            "strict_validation": {
+              "passed": true,
+              "similarity": 0.9836,
+              "missing_critical_terms": [],
+              "expected_tokens": 61,
+              "actual_tokens": 61,
+              "excessive_extra_words": false,
+              "forbidden_tail": false,
+              "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrensunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrensunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "role": "final",
+              "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrensunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrensunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "asr_orthographic_equivalence_applied": false,
+              "hallucinated_tail": false,
+              "terminal_token_match": true,
+              "transcription_attempt": 1,
+              "postmux_min_similarity": 0.95,
+              "base_gate_passed": true,
+              "attempts": [
+                {
+                  "passed": true,
+                  "similarity": 0.9836,
+                  "missing_critical_terms": [],
+                  "expected_tokens": 61,
+                  "actual_tokens": 61,
+                  "excessive_extra_words": false,
+                  "forbidden_tail": false,
+                  "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrensunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrensunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "role": "final",
+                  "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrensunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechenzentrensunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "asr_orthographic_equivalence_applied": false,
+                  "hallucinated_tail": false,
+                  "terminal_token_match": true,
+                  "transcription_attempt": 1,
+                  "postmux_min_similarity": 0.95,
+                  "base_gate_passed": true
+                }
+              ]
+            },
+            "natural_wpm": 140.68,
+            "natural_wpm_min": 108.0,
+            "natural_wpm_max": 150.0,
+            "duration_fit": {
+              "required": false,
+              "target_duration": 26.016,
+              "speed_factor": 1.0,
+              "overrun_seconds": 0.0
+            },
+            "router_result": {
+              "voice_path": "voice.mp3",
+              "voice_duration_seconds": 26.02,
+              "provider": "chatterbox_multilingual_v3",
+              "voice_provider_requested": "chatterbox_multilingual_v3",
+              "voice_provider_used": "chatterbox_multilingual_v3",
+              "model_id": "v3",
+              "voice_settings": {
+                "language_id": "de",
+                "exaggeration": 0.42,
+                "cfg_weight": 0.36,
+                "reference_audio_used": false,
+                "chunk_count": 1,
+                "loudness_target_lufs": -16,
+                "narrator_pitch_factor": 1.0,
+                "narrator_pitch_shift_applied": false,
+                "narrator_articulation_preserved": true,
+                "narrator_loudness_target_lufs": -16,
+                "narrator_mastering_profile": "neutral-native-v2"
+              },
+              "target_voice_duration_seconds": 26.0,
+              "raw_voice_duration_seconds": 22.28,
+              "duration_delta_seconds": 0.02,
+              "generation_elapsed_seconds": 184.603,
+              "fallback": false,
+              "quality_profile": "tayvoriq-native-natural-narrator-chatterbox-v37",
+              "worker_report": {
+                "provider": "chatterbox_multilingual",
+                "requested_model_version": "v3",
+                "model_version": "v3",
+                "installed_package_version": "0.1.7",
+                "language_id": "de",
+                "device": "cpu",
+                "passed": true,
+                "compatibility_mode": "native-version-selection",
+                "model_version_fallback": false,
+                "sample_rate": 24000,
+                "duration_seconds": 22.28,
+                "chunks": [
+                  "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für Ka I Infrastruktur mobilisieren. Weil Ka I Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch Ka I Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche Ka I Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte."
+                ],
+                "chunk_count": 1,
+                "model_load_seconds": 9.661,
+                "generation_seconds": [
+                  166.76
+                ],
+                "total_seconds": 181.692,
+                "reference_audio_used": false,
+                "exaggeration": 0.42,
+                "cfg_weight": 0.36,
+                "output": "/tmp/tayvoriq-human-narrator-v5-du49a7lp/tiktok/full-take-01/voice_chatterbox_raw.wav",
+                "output_bytes": 1069484,
+                "audio_container": "wav-pcm16-standard-library"
+              },
+              "natural_voice_target_seconds": 26.0,
+              "natural_voice_wpm": 132.0,
+              "full_short_target_seconds": 28.0,
+              "coherent_chunk_limit": 1,
+              "configured_max_chars": 520,
+              "premium_voice_timeout_budget_seconds": 780,
+              "pronunciation_prepared": true,
+              "pronunciation_profile": "de-critical-terms-v1",
+              "narrator_tone_applied": false,
+              "narrator_pitch_shift_applied": false,
+              "human_narrator_quality_profile": true,
+              "natural_pacing_contract_passed": true,
+              "premium_voice_required": true,
+              "premium_voice_contract_passed": true,
+              "continuous_narrator_take": true,
+              "artificial_compound_splitting": false,
+              "internal_hyphen_preserved": true,
+              "human_pronunciation_profile": "de-critical-san-disk-ka-i-v1",
+              "targeted_acronym_pronunciation_aid": true,
+              "sandisk_spoken_form": "San Disk",
+              "canonical_review_contract_unchanged": true,
+              "exact_chatterbox_model_required": "v3",
+              "exact_chatterbox_model_passed": true,
+              "quality_gates_weakened": false
+            },
+            "quality_gates_weakened": false
+          },
+          {
+            "attempt": 2,
+            "passed": true,
+            "voice_duration_seconds": 26.016,
+            "provider": "chatterbox_multilingual_v3",
+            "strict_validation": {
+              "passed": true,
+              "similarity": 1.0,
+              "missing_critical_terms": [],
+              "expected_tokens": 61,
+              "actual_tokens": 61,
+              "excessive_extra_words": false,
+              "forbidden_tail": false,
+              "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "role": "final",
+              "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "asr_orthographic_equivalence_applied": false,
+              "hallucinated_tail": false,
+              "terminal_token_match": true,
+              "transcription_attempt": 1,
+              "postmux_min_similarity": 0.95,
+              "base_gate_passed": true,
+              "attempts": [
+                {
+                  "passed": true,
+                  "similarity": 1.0,
+                  "missing_critical_terms": [],
+                  "expected_tokens": 61,
+                  "actual_tokens": 61,
+                  "excessive_extra_words": false,
+                  "forbidden_tail": false,
+                  "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "contract_actual": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "role": "final",
+                  "raw_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "normalized_contract_expected": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+                  "asr_orthographic_equivalence_applied": false,
+                  "hallucinated_tail": false,
+                  "terminal_token_match": true,
+                  "transcription_attempt": 1,
+                  "postmux_min_similarity": 0.95,
+                  "base_gate_passed": true
+                }
+              ]
+            },
+            "natural_wpm": 140.68,
+            "natural_wpm_min": 108.0,
+            "natural_wpm_max": 150.0,
+            "duration_fit": {
+              "required": false,
+              "target_duration": 26.016,
+              "speed_factor": 1.0,
+              "overrun_seconds": 0.0
+            },
+            "router_result": {
+              "voice_path": "voice.mp3",
+              "voice_duration_seconds": 26.02,
+              "provider": "chatterbox_multilingual_v3",
+              "voice_provider_requested": "chatterbox_multilingual_v3",
+              "voice_provider_used": "chatterbox_multilingual_v3",
+              "model_id": "v3",
+              "voice_settings": {
+                "language_id": "de",
+                "exaggeration": 0.42,
+                "cfg_weight": 0.36,
+                "reference_audio_used": false,
+                "chunk_count": 1,
+                "loudness_target_lufs": -16,
+                "narrator_pitch_factor": 1.0,
+                "narrator_pitch_shift_applied": false,
+                "narrator_articulation_preserved": true,
+                "narrator_loudness_target_lufs": -16,
+                "narrator_mastering_profile": "neutral-native-v2"
+              },
+              "target_voice_duration_seconds": 26.0,
+              "raw_voice_duration_seconds": 24.28,
+              "duration_delta_seconds": 0.02,
+              "generation_elapsed_seconds": 199.14,
+              "fallback": false,
+              "quality_profile": "tayvoriq-native-natural-narrator-chatterbox-v37",
+              "worker_report": {
+                "provider": "chatterbox_multilingual",
+                "requested_model_version": "v3",
+                "model_version": "v3",
+                "installed_package_version": "0.1.7",
+                "language_id": "de",
+                "device": "cpu",
+                "passed": true,
+                "compatibility_mode": "native-version-selection",
+                "model_version_fallback": false,
+                "sample_rate": 24000,
+                "duration_seconds": 24.28,
+                "chunks": [
+                  "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für Ka I Infrastruktur mobilisieren. Weil Ka I Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch Ka I Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche Ka I Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte."
+                ],
+                "chunk_count": 1,
+                "model_load_seconds": 9.646,
+                "generation_seconds": [
+                  181.269
+                ],
+                "total_seconds": 196.248,
+                "reference_audio_used": false,
+                "exaggeration": 0.42,
+                "cfg_weight": 0.36,
+                "output": "/tmp/tayvoriq-human-narrator-v5-du49a7lp/tiktok/full-take-02/voice_chatterbox_raw.wav",
+                "output_bytes": 1165484,
+                "audio_container": "wav-pcm16-standard-library"
+              },
+              "natural_voice_target_seconds": 26.0,
+              "natural_voice_wpm": 132.0,
+              "full_short_target_seconds": 28.0,
+              "coherent_chunk_limit": 1,
+              "configured_max_chars": 520,
+              "premium_voice_timeout_budget_seconds": 780,
+              "pronunciation_prepared": true,
+              "pronunciation_profile": "de-critical-terms-v1",
+              "narrator_tone_applied": false,
+              "narrator_pitch_shift_applied": false,
+              "human_narrator_quality_profile": true,
+              "natural_pacing_contract_passed": true,
+              "premium_voice_required": true,
+              "premium_voice_contract_passed": true,
+              "continuous_narrator_take": true,
+              "artificial_compound_splitting": false,
+              "internal_hyphen_preserved": true,
+              "human_pronunciation_profile": "de-critical-saen-disk-ka-i-v1",
+              "targeted_acronym_pronunciation_aid": true,
+              "sandisk_spoken_form": "Sän Disk",
+              "canonical_review_contract_unchanged": true,
+              "exact_chatterbox_model_required": "v3",
+              "exact_chatterbox_model_passed": true,
+              "quality_gates_weakened": false
+            },
+            "quality_gates_weakened": false
+          }
+        ],
+        "selected_full_take_attempt": 2,
+        "duration_fit": {
+          "required": false,
+          "target_duration": 26.016,
+          "speed_factor": 1.0,
+          "overrun_seconds": 0.0
+        },
+        "postmux_validation_required": true,
+        "existing_human_narrator_take_reused": true
+      },
+      "render": {
+        "video_path": "short.mp4",
+        "asset_report": [
+          {
+            "scene": 1,
+            "source": "pexels_video",
+            "query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur news documentary vertical video",
+            "duration": 5.653,
+            "subtitle_present": true,
+            "asset": "scene_01.mp4"
+          },
+          {
+            "scene": 2,
+            "source": "pexels_video",
+            "query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur real location vertical video",
+            "duration": 5.182,
+            "subtitle_present": true,
+            "asset": "scene_02.mp4"
+          },
+          {
+            "scene": 3,
+            "source": "pexels_video",
+            "query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur investigation documentary vertical video",
+            "duration": 3.297,
+            "subtitle_present": true,
+            "asset": "scene_03.mp4"
+          },
+          {
+            "scene": 4,
+            "source": "pexels_video",
+            "query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur relevant people workplace vertical video",
+            "duration": 4.24,
+            "subtitle_present": true,
+            "asset": "scene_04.mp4"
+          },
+          {
+            "scene": 5,
+            "source": "pexels_video",
+            "query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur German news context vertical video",
+            "duration": 4.24,
+            "subtitle_present": true,
+            "asset": "scene_05.mp4"
+          },
+          {
+            "scene": 6,
+            "source": "pexels_video",
+            "query": "Nvidia und Wall Street: über 500 Milliarden Dollar für die KI-Infrastruktur close up evidence context vertical video",
+            "duration": 5.019,
+            "subtitle_present": true,
+            "asset": "scene_06.mp4"
+          }
+        ],
+        "render_size": "1080x1920",
+        "bytes": 19694310,
+        "voice_duration_seconds": 26.016,
+        "final_duration_seconds": 27.633,
+        "end_padding_seconds": 1.25,
+        "requested_duration_seconds": 35.0,
+        "duration_delta_seconds": -7.37,
+        "duration_status": "OK",
+        "checkpoint_repair": "voice_only_audio_remux",
+        "master_duration_preserved": true
+      },
+      "video_path": "short_tiktok.mp4",
+      "upload_status": "PENDING_APPROVAL"
+    }
+  },
+  "platform_package": {
+    "requested_platform": "youtube_tiktok",
+    "targets": [
+      "youtube_shorts",
+      "tiktok"
+    ],
+    "packages": [
+      {
+        "platform": "youtube_shorts",
+        "status": "PENDING_APPROVAL",
+        "video_file": "short_youtube.mp4",
+        "metadata": {
+          "title": "Nvidia und Wall Street mobilisieren über 500 Milliarden Dollar für KI-Infrastruktur",
+          "description": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. #TAYVORIQ #Trendjagd #Technologie #KI",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Technologie",
+            "#KI"
+          ],
+          "tags": [
+            "technology_ai",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "cta": "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt."
+      },
+      {
+        "platform": "tiktok",
+        "status": "PENDING_APPROVAL",
+        "video_file": "short_tiktok.mp4",
+        "metadata": {
+          "title": "Nvidia und Wall Street mobilisieren über 500 Milliarden Dollar für KI-Infrastruktur",
+          "caption": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. #TAYVORIQ #Trendjagd #Technologie #KI",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Technologie",
+            "#KI"
+          ],
+          "privacy_default": "PUBLIC_TO_EVERYONE",
+          "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+        },
+        "cta": "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt."
+      }
+    ]
+  },
+  "preapproval_ai_audit": {
+    "schema_version": 3,
+    "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
+    "passed": true,
+    "scores": {
+      "factual_accuracy": 100,
+      "pronunciation": 98,
+      "marketing": 95,
+      "sales": 95,
+      "platform_fit": 100,
+      "visual": 85,
+      "overall": 96
+    },
+    "thresholds": {
+      "factual_accuracy": 90,
+      "pronunciation": 95,
+      "marketing": 80,
+      "sales": 75,
+      "platform_fit": 80,
+      "visual": 78,
+      "overall": 85
+    },
+    "audio_reports": {
+      "youtube_shorts": {
+        "platform": "youtube_shorts",
+        "passed": true,
+        "expected_spoken_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "similarity": 1.0,
+        "average_logprob": -0.054,
+        "critical_terms": [
+          {
+            "source": "500",
+            "spoken": "fünfhundert",
+            "kind": "number"
+          },
+          {
+            "source": "TAYVORIQ",
+            "spoken": "den Kanal",
+            "kind": "pronunciation_map"
+          }
+        ],
+        "missing_critical_terms": [],
+        "blockers": [],
+        "transcription_model": "whisper-large-v3",
+        "strict_number_audit": {
+          "required": true,
+          "visible_script": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+          "tts_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "500": "fünfhundert"
+          },
+          "transcription_prompt_used": false,
+          "version": "v2-unbiased-number-proof-compressed-audio"
+        },
+        "raw_similarity_before_safe_normalization": 1.0,
+        "safe_orthographic_contract_normalization": true,
+        "normalized_expected_spoken_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "quality_gates_weakened": false,
+        "asr_quorum": {
+          "policy": "strict-postmux-plus-prompted-final-plus-unprompted-tiebreaker-2-of-3",
+          "required_passes": 2,
+          "maximum_votes": 3,
+          "actual_votes": 2,
+          "strict_pass_votes": 2,
+          "tie_breaker_used": false,
+          "resolved_pass": true,
+          "minimum_similarity": 0.95,
+          "votes": [
+            {
+              "source": "voice_postmux_unprompted",
+              "strict_pass": true,
+              "similarity": 1.0,
+              "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "missing_critical_terms": [],
+              "average_logprob": null,
+              "quality_gates_weakened": false
+            },
+            {
+              "source": "final_audit_prompted",
+              "strict_pass": true,
+              "similarity": 1.0,
+              "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "missing_critical_terms": [],
+              "average_logprob": -0.054,
+              "quality_gates_weakened": false
+            }
+          ],
+          "quality_gates_weakened": false
+        }
+      },
+      "tiktok": {
+        "platform": "tiktok",
+        "passed": true,
+        "expected_spoken_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechensentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechensentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "similarity": 0.9672,
+        "average_logprob": -0.0484,
+        "critical_terms": [
+          {
+            "source": "500",
+            "spoken": "fünfhundert",
+            "kind": "number"
+          },
+          {
+            "source": "TAYVORIQ",
+            "spoken": "dem Kanal",
+            "kind": "pronunciation_map"
+          }
+        ],
+        "missing_critical_terms": [],
+        "blockers": [],
+        "transcription_model": "whisper-large-v3",
+        "strict_number_audit": {
+          "required": true,
+          "visible_script": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+          "tts_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "500": "fünfhundert"
+          },
+          "transcription_prompt_used": false,
+          "version": "v2-unbiased-number-proof-compressed-audio"
+        },
+        "raw_similarity_before_safe_normalization": 0.9672,
+        "safe_orthographic_contract_normalization": true,
+        "normalized_expected_spoken_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechensentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechensentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "quality_gates_weakened": false,
+        "asr_quorum": {
+          "policy": "strict-postmux-plus-prompted-final-plus-unprompted-tiebreaker-2-of-3",
+          "required_passes": 2,
+          "maximum_votes": 3,
+          "actual_votes": 2,
+          "strict_pass_votes": 2,
+          "tie_breaker_used": false,
+          "resolved_pass": true,
+          "minimum_similarity": 0.95,
+          "votes": [
+            {
+              "source": "voice_postmux_unprompted",
+              "strict_pass": true,
+              "similarity": 1.0,
+              "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "missing_critical_terms": [],
+              "average_logprob": null,
+              "quality_gates_weakened": false
+            },
+            {
+              "source": "final_audit_prompted",
+              "strict_pass": true,
+              "similarity": 0.9672,
+              "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechensentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechensentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "missing_critical_terms": [],
+              "average_logprob": -0.0484,
+              "quality_gates_weakened": false
+            }
+          ],
+          "quality_gates_weakened": false
+        }
+      }
+    },
+    "marketing_review": {
+      "factual_accuracy": {
+        "score": 100.0,
+        "blockers": [],
+        "findings": [
+          "Alle Tatsachenbehauptungen sind vollständig durch den bereitgestellten Quellenkontext (Reuters, Financial Times, NVIDIA) gedeckt.",
+          "Die Rolle von Nvidia und den sechs Finanzhäusern bei der Mobilisierung von Drittmitteln wird korrekt dargestellt.",
+          "Der persönliche Nutzen wird sachlich und ohne falsche Anlageversprechen formuliert."
+        ]
+      },
+      "pronunciation_interpretation": {
+        "score": 95.0,
+        "blockers": [],
+        "findings": [
+          "Die Audio-Transkripte stimmen inhaltlich hervorragend mit den Skripten überein.",
+          "Der Marken-Fallback ('den Kanal' / 'dem Kanal') ist zulässig und beeinträchtigt die Verständlichkeit nicht.",
+          "Geringfügige phonetische Abweichungen im TikTok-Transkript ('Rechensentren') sind für die Freigabe unkritisch."
+        ]
+      },
+      "marketing_effectiveness": {
+        "score": 95.0,
+        "blockers": [],
+        "findings": [
+          "Starker Hook mit konkreten Zahlen (500 Milliarden Dollar) und bekannten Akteuren (Nvidia, Wall Street).",
+          "Hohe Relevanz durch die Erklärung des realen Infrastrukturbedarfs (Strom, Kühlung, Chips).",
+          "Guter Transfer zum persönlichen Nutzen des Zuschauers (KI-Fähigkeiten im Beruf)."
+        ]
+      },
+      "sales_effectiveness": {
+        "score": 95.0,
+        "blockers": [],
+        "findings": [
+          "Vertrauenswürdiger Conversion-Pfad ohne künstlichen Druck.",
+          "Die CTA bietet einen echten Mehrwert an ('verifizierte Einordnung und konkrete Schritte')."
+        ]
+      },
+      "platform_fit": {
+        "score": 100.0,
+        "blockers": [],
+        "findings": [
+          "Plattformgerechte Differenzierung der CTAs ('Abonniere' für YouTube, 'Folge' für TikTok).",
+          "Metadaten, Beschreibungen und Hashtags sind präzise und plattformoptimiert."
+        ]
+      },
+      "overall_score": 97.0,
+      "approval_recommendation": "PASS",
+      "blockers": [],
+      "strengths": [
+        "Hervorragende sachliche Genauigkeit und strikte Einhaltung des redaktionellen Kontextes.",
+        "Sehr gute Übersetzung eines komplexen Finanzthemas in konkrete, alltagsrelevante Handlungsempfehlungen.",
+        "Plattformspezifische Optimierung ist konsequent umgesetzt."
+      ],
+      "repair_instructions": [],
+      "score_scale_normalized": true,
+      "provider_model_fallback": {
+        "selected_model": "gemini-3.5-flash",
+        "attempted_models": [
+          "gemini-3.5-flash"
+        ],
+        "provider_failures_before_success": [],
+        "same_prompt": true,
+        "quality_gate_weakened": false
+      }
+    },
+    "visual_review": {
+      "score": "85",
+      "passed": true,
+      "blockers": [],
+      "findings": [
+        "Das Hintergrundbild ist über alle Frames hinweg völlig statisch. Dies ist zwar kein technischer Renderfehler, mindert jedoch die visuelle Dynamik und die Retention-Wirkung im Short-Form-Bereich.",
+        "Die Textboxen sind durch den dunklen, halbtransparenten Hintergrund auf Mobilgeräten hervorragend lesbar.",
+        "Der Call-to-Action (CTA) wurde plattformspezifisch korrekt angepasst ('Abonniere' auf YouTube Shorts, 'Folge' auf TikTok)."
+      ],
+      "marketing_visual_strengths": [
+        "Hohe visuelle Glaubwürdigkeit durch das professionelle und thematisch passende Motiv (Finanzanalyst blickt auf Aktiencharts).",
+        "Sehr gute Bildqualität und fehlerfreie Darstellung ohne KI-Artefakte.",
+        "Klare Strukturierung des Textes, die die Kernaussagen schnell erfassbar macht."
+      ],
+      "provider": "gemini:gemini-3.5-flash",
+      "reviewed_frames": [
+        "youtube_shorts-1.jpg",
+        "youtube_shorts-2.jpg",
+        "youtube_shorts-3.jpg",
+        "tiktok-1.jpg",
+        "tiktok-2.jpg",
+        "tiktok-3.jpg"
+      ],
+      "provider_model_fallback": {
+        "selected_model": "gemini-3.5-flash",
+        "attempted_models": [
+          "gemini-3.5-flash"
+        ],
+        "provider_failures_before_success": [],
+        "same_frames_and_prompt": true,
+        "quality_gate_weakened": false,
+        "fail_closed": true
+      }
+    },
+    "objective_conversion_review": {
+      "passed": true,
+      "score": 83,
+      "action_ok": true,
+      "platform_specific_actions_ok": true,
+      "youtube_action_ok": true,
+      "tiktok_action_ok": true,
+      "required_platforms_present": true,
+      "benefit_hits": [
+        "verifiziert",
+        "konkrete schritte"
+      ],
+      "length_words": 8,
+      "length_ok": true,
+      "consistent_across_platforms": true,
+      "semantic_tail_consistent": true,
+      "platform_contracts_ok": true,
+      "manipulative_pressure": false,
+      "ctas": [
+        "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte."
+      ],
+      "ctas_by_platform": {
+        "youtube_shorts": "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tiktok": "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte."
+      },
+      "semantic_tails": [
+        "für verifizierte einordnung und konkrete schritte.",
+        "für verifizierte einordnung und konkrete schritte."
+      ],
+      "quality_gate_weakened": false
+    },
+    "blockers": [],
+    "strengths": [
+      "Hervorragende sachliche Genauigkeit und strikte Einhaltung des redaktionellen Kontextes.",
+      "Sehr gute Übersetzung eines komplexen Finanzthemas in konkrete, alltagsrelevante Handlungsempfehlungen.",
+      "Plattformspezifische Optimierung ist konsequent umgesetzt."
+    ],
+    "repair_instructions": [],
+    "providers": {
+      "marketing": "gemini:gemini-3.5-flash",
+      "visual": "gemini:gemini-3.5-flash",
+      "audio": "groq:whisper-large-v3-objective-score",
+      "conversion": "deterministic-cta-benefit-gate-v1"
+    },
+    "human_review_allowed": true,
+    "quality_gates_weakened": false,
+    "score_calibration": {
+      "provider_scales": "0-1-or-0-10-or-0-100-to-percent",
+      "pronunciation": "objective-transcript-similarity-and-confidence",
+      "sales": "max-independent-judge-and-objective-cta-benefit-score",
+      "overall": "fixed-weight-evidence-score",
+      "marketing_provider_order": "gemini-retry-first-groq-fallback",
+      "visual_provider_order": "configured-gemini-then-3.6-flash-then-3.5-flash-lite"
+    }
+  },
+  "single_master_reuse": false,
+  "checkpoint_repair": {
+    "stage": "VOICE_HUMAN_NARRATOR",
+    "status": "repaired-continuous-natural-full-take",
+    "human_review_rejection": true,
+    "human_review_reason": "pronunciation_not_natural",
+    "visual_master_reused": true,
+    "script_reused": true,
+    "sources_reused": true,
+    "full_pipeline_restarted": false,
+    "continuous_narrator_take": true,
+    "segmented_voice_repair": false,
+    "narrator_pitch_shift_applied": false,
+    "native_german_text_preserved": true,
+    "platforms": {
+      "youtube_shorts": {
+        "status": "existing-human-narrator-v5-revalidated-and-reused",
+        "provider": "chatterbox_multilingual_v3",
+        "voice_duration_seconds": 26.016,
+        "video_duration_seconds": 27.633,
+        "natural_wpm": 140.68,
+        "pre_mux_similarity": 1.0,
+        "postmux_similarity": 1.0,
+        "selected_full_take_attempt": 1,
+        "continuous_narrator_take": true,
+        "existing_human_narrator_take_reused": true,
+        "narrator_pitch_shift_applied": false,
+        "quality_gates_weakened": false
+      },
+      "tiktok": {
+        "status": "existing-human-narrator-v5-revalidated-and-reused",
+        "provider": "chatterbox_multilingual_v3",
+        "voice_duration_seconds": 26.016,
+        "video_duration_seconds": 27.633,
+        "natural_wpm": 140.68,
+        "pre_mux_similarity": 1.0,
+        "postmux_similarity": 1.0,
+        "selected_full_take_attempt": 2,
+        "continuous_narrator_take": true,
+        "existing_human_narrator_take_reused": true,
+        "narrator_pitch_shift_applied": false,
+        "quality_gates_weakened": false
+      }
+    },
+    "quality_gates_weakened": false
+  }
+}

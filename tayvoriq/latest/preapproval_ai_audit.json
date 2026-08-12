@@ -4,11 +4,11 @@
   "passed": true,
   "scores": {
     "factual_accuracy": 100,
-    "pronunciation": 100,
-    "marketing": 90,
-    "sales": 92,
-    "platform_fit": 95,
-    "visual": 96,
+    "pronunciation": 98,
+    "marketing": 95,
+    "sales": 95,
+    "platform_fit": 100,
+    "visual": 85,
     "overall": 96
   },
   "thresholds": {
@@ -24,24 +24,19 @@
     "youtube_shorts": {
       "platform": "youtube_shorts",
       "passed": true,
-      "expected_spoken_text": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe K I-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im K I- und Chipsektor. Für dich zeigt das, wie schnell K I-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "SanDisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "expected_spoken_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
       "similarity": 1.0,
-      "average_logprob": -0.0715,
+      "average_logprob": -0.054,
       "critical_terms": [
+        {
+          "source": "500",
+          "spoken": "fünfhundert",
+          "kind": "number"
+        },
         {
           "source": "TAYVORIQ",
           "spoken": "den Kanal",
-          "kind": "pronunciation_map"
-        },
-        {
-          "source": "Sandisk",
-          "spoken": "San Disk",
-          "kind": "pronunciation_map"
-        },
-        {
-          "source": "KI",
-          "spoken": "K I",
           "kind": "pronunciation_map"
         }
       ],
@@ -49,17 +44,19 @@
       "blockers": [],
       "transcription_model": "whisper-large-v3",
       "strict_number_audit": {
-        "required": false,
-        "visible_script": "Sandisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "Sandisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "number_replacements": {},
+        "required": true,
+        "visible_script": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {
+          "500": "fünfhundert"
+        },
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9,
+      "raw_similarity_before_safe_normalization": 1.0,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip Sektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip Sektor. Für dich zeigt das, wie schnell KI-Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_expected_spoken_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
       "quality_gates_weakened": false,
       "asr_quorum": {
         "policy": "strict-postmux-plus-prompted-final-plus-unprompted-tiebreaker-2-of-3",
@@ -75,7 +72,7 @@
             "source": "voice_postmux_unprompted",
             "strict_pass": true,
             "similarity": 1.0,
-            "transcript": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+            "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
             "missing_critical_terms": [],
             "average_logprob": null,
             "quality_gates_weakened": false
@@ -84,9 +81,9 @@
             "source": "final_audit_prompted",
             "strict_pass": true,
             "similarity": 1.0,
-            "transcript": "SanDisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype-Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+            "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
             "missing_critical_terms": [],
-            "average_logprob": -0.0715,
+            "average_logprob": -0.054,
             "quality_gates_weakened": false
           }
         ],
@@ -94,36 +91,49 @@
       }
     },
     "tiktok": {
+      "platform": "tiktok",
       "passed": true,
-      "similarity": 1.0,
+      "expected_spoken_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechensentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechensentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9672,
+      "average_logprob": -0.0484,
+      "critical_terms": [
+        {
+          "source": "500",
+          "spoken": "fünfhundert",
+          "kind": "number"
+        },
+        {
+          "source": "TAYVORIQ",
+          "spoken": "dem Kanal",
+          "kind": "pronunciation_map"
+        }
+      ],
       "missing_critical_terms": [],
-      "expected_tokens": 59,
-      "actual_tokens": 59,
-      "excessive_extra_words": false,
-      "forbidden_tail": false,
-      "transcript": "SanDisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "contract_expected": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "contract_actual": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "role": "final",
-      "raw_transcript": "SanDisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip Sektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_contract_expected": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe K I-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im K I- und Chipsektor. Für dich zeigt das, wie schnell K I-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "asr_orthographic_equivalence_applied": true,
-      "hallucinated_tail": false,
-      "terminal_token_match": true,
-      "expected_spoken_text": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe K I-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im K I- und Chipsektor. Für dich zeigt das, wie schnell K I-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_expected_spoken_text": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chip Sektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "average_logprob": null,
-      "asr_mode": "independent-unprompted-audio-only",
       "blockers": [],
+      "transcription_model": "whisper-large-v3",
+      "strict_number_audit": {
+        "required": true,
+        "visible_script": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {
+          "500": "fünfhundert"
+        },
+        "transcription_prompt_used": false,
+        "version": "v2-unbiased-number-proof-compressed-audio"
+      },
+      "raw_similarity_before_safe_normalization": 0.9672,
+      "safe_orthographic_contract_normalization": true,
+      "normalized_expected_spoken_text": "Nvidia und sechs Finanzhäuser wollen über fünfhundert Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechensentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechensentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
       "quality_gates_weakened": false,
       "asr_quorum": {
         "policy": "strict-postmux-plus-prompted-final-plus-unprompted-tiebreaker-2-of-3",
         "required_passes": 2,
         "maximum_votes": 3,
-        "actual_votes": 3,
+        "actual_votes": 2,
         "strict_pass_votes": 2,
-        "tie_breaker_used": true,
+        "tie_breaker_used": false,
         "resolved_pass": true,
         "minimum_similarity": 0.95,
         "votes": [
@@ -131,33 +141,18 @@
             "source": "voice_postmux_unprompted",
             "strict_pass": true,
             "similarity": 1.0,
-            "transcript": "San Disk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+            "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechenzentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-, Cloud-, Energie- und Rechenzentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
             "missing_critical_terms": [],
             "average_logprob": null,
             "quality_gates_weakened": false
           },
           {
             "source": "final_audit_prompted",
-            "strict_pass": false,
-            "similarity": 0.9748,
-            "transcript": "Zendesk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-            "missing_critical_terms": [
-              {
-                "source": "Sandisk",
-                "spoken": "San Disk",
-                "kind": "pronunciation_map"
-              }
-            ],
-            "average_logprob": -0.0979,
-            "quality_gates_weakened": false
-          },
-          {
-            "source": "final_audit_unprompted_tiebreaker",
             "strict_pass": true,
-            "similarity": 1.0,
-            "transcript": "SanDisk und Western Digital fielen trotz starker Zahlen deutlich. Die Aktien fielen, weil hohe KI-Erwartungen starke Zahlen überschatteten. Betroffen sind Anleger und Unternehmen im KI- und Chipsektor. Für dich zeigt das, wie schnell KI-Hype Aktienkurse verzerren kann. Achte auf Erwartungen, Prognosen und Nachfrage, nicht nur auf Quartalszahlen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+            "similarity": 0.9672,
+            "transcript": "Nvidia und sechs Finanzhäuser wollen über 500 Milliarden Dollar für KI-Infrastruktur mobilisieren. Weil KI-Chips, Rechensentren, Strom und Kühlung braucht, wird Ausbaukapital gesucht. Betroffen sind Chip-Cloud-Energie- und Rechensentrumsunternehmen. Für dich entstehen Chancen durch KI-Nutzung, Automatisierung und Cloud-Kompetenzen. Prüfe, welche KI-Fähigkeiten in deinem Beruf konkret gefragt sind. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
             "missing_critical_terms": [],
-            "average_logprob": null,
+            "average_logprob": -0.0484,
             "quality_gates_weakened": false
           }
         ],
@@ -170,44 +165,52 @@
       "score": 100.0,
       "blockers": [],
       "findings": [
-        "Alle Tatsachenbehauptungen über SanDisk und Western Digital sind vollständig durch die bereitgestellten Quellen (Reuters, Investors.com) gedeckt."
+        "Alle Tatsachenbehauptungen sind vollständig durch den bereitgestellten Quellenkontext (Reuters, Financial Times, NVIDIA) gedeckt.",
+        "Die Rolle von Nvidia und den sechs Finanzhäusern bei der Mobilisierung von Drittmitteln wird korrekt dargestellt.",
+        "Der persönliche Nutzen wird sachlich und ohne falsche Anlageversprechen formuliert."
       ]
     },
     "pronunciation_interpretation": {
       "score": 95.0,
       "blockers": [],
       "findings": [
-        "Die Abweichungen im Audio-Transkript ('den Kanal' / 'dem Kanal' statt 'TAYVORIQ') sind zulässige semantische Fallbacks und beeinträchtigen das Verständnis nicht."
+        "Die Audio-Transkripte stimmen inhaltlich hervorragend mit den Skripten überein.",
+        "Der Marken-Fallback ('den Kanal' / 'dem Kanal') ist zulässig und beeinträchtigt die Verständlichkeit nicht.",
+        "Geringfügige phonetische Abweichungen im TikTok-Transkript ('Rechensentren') sind für die Freigabe unkritisch."
       ]
     },
     "marketing_effectiveness": {
-      "score": 90.0,
-      "blockers": [],
-      "findings": [
-        "Der Hook ist direkt und relevant. Der Nutzen für den Zuschauer (Erwartungen vs. Quartalszahlen) wird klar herausgearbeitet."
-      ]
-    },
-    "sales_effectiveness": {
-      "score": 92.0,
-      "blockers": [],
-      "findings": [
-        "Die CTA bietet einen echten Mehrwert ('verifizierte Einordnung') und baut Vertrauen auf, ohne künstlichen Druck zu erzeugen."
-      ]
-    },
-    "platform_fit": {
       "score": 95.0,
       "blockers": [],
       "findings": [
-        "Hervorragende Differenzierung zwischen YouTube ('Abonniere') und TikTok ('Folge'). Die Metadaten und Hashtags sind plattformgerecht optimiert."
+        "Starker Hook mit konkreten Zahlen (500 Milliarden Dollar) und bekannten Akteuren (Nvidia, Wall Street).",
+        "Hohe Relevanz durch die Erklärung des realen Infrastrukturbedarfs (Strom, Kühlung, Chips).",
+        "Guter Transfer zum persönlichen Nutzen des Zuschauers (KI-Fähigkeiten im Beruf)."
       ]
     },
-    "overall_score": 94.0,
+    "sales_effectiveness": {
+      "score": 95.0,
+      "blockers": [],
+      "findings": [
+        "Vertrauenswürdiger Conversion-Pfad ohne künstlichen Druck.",
+        "Die CTA bietet einen echten Mehrwert an ('verifizierte Einordnung und konkrete Schritte')."
+      ]
+    },
+    "platform_fit": {
+      "score": 100.0,
+      "blockers": [],
+      "findings": [
+        "Plattformgerechte Differenzierung der CTAs ('Abonniere' für YouTube, 'Folge' für TikTok).",
+        "Metadaten, Beschreibungen und Hashtags sind präzise und plattformoptimiert."
+      ]
+    },
+    "overall_score": 97.0,
     "approval_recommendation": "PASS",
     "blockers": [],
     "strengths": [
-      "Exzellente faktische Fundierung basierend auf den Reuters- und Investors.com-Quellen.",
-      "Klare Strukturierung der 30-sekündigen Videos mit logischem Aufbau (Problem -> Ursache -> Auswirkung -> Learning -> CTA).",
-      "Saubere plattformspezifische Anpassung der Call-to-Action."
+      "Hervorragende sachliche Genauigkeit und strikte Einhaltung des redaktionellen Kontextes.",
+      "Sehr gute Übersetzung eines komplexen Finanzthemas in konkrete, alltagsrelevante Handlungsempfehlungen.",
+      "Plattformspezifische Optimierung ist konsequent umgesetzt."
     ],
     "repair_instructions": [],
     "score_scale_normalized": true,
@@ -222,19 +225,18 @@
     }
   },
   "visual_review": {
-    "score": "96",
+    "score": "85",
     "passed": true,
     "blockers": [],
     "findings": [
-      "Hervorragende plattformspezifische Anpassung des Call-to-Action: 'Abonniere TAYVORIQ' auf YouTube Shorts und 'Folge TAYVORIQ' auf TikTok.",
-      "Die Textboxen sind durch den dunklen, halbtransparenten Hintergrund auf allen Frames exzellent lesbar und kontrastreich.",
-      "Die Bildmotive (Aktiencharts, Finanzdaten, Laptop) passen perfekt zum Thema des KI-Aktienabsturzes und wirken hochgradig professionell.",
-      "Keine Renderfehler, Bildfehler oder unnatürlichen KI-Generierungsartefakte erkennbar."
+      "Das Hintergrundbild ist über alle Frames hinweg völlig statisch. Dies ist zwar kein technischer Renderfehler, mindert jedoch die visuelle Dynamik und die Retention-Wirkung im Short-Form-Bereich.",
+      "Die Textboxen sind durch den dunklen, halbtransparenten Hintergrund auf Mobilgeräten hervorragend lesbar.",
+      "Der Call-to-Action (CTA) wurde plattformspezifisch korrekt angepasst ('Abonniere' auf YouTube Shorts, 'Folge' auf TikTok)."
     ],
     "marketing_visual_strengths": [
-      "Starke Markenwirkung durch konsistente Typografie und professionelles Color Grading im Finanz-Look.",
-      "Hohe visuelle Glaubwürdigkeit durch realistische Darstellungen von Trading-Szenarien.",
-      "Optimale Platzierung der Untertitel im mobilen Sichtbereich (Safe Zone)."
+      "Hohe visuelle Glaubwürdigkeit durch das professionelle und thematisch passende Motiv (Finanzanalyst blickt auf Aktiencharts).",
+      "Sehr gute Bildqualität und fehlerfreie Darstellung ohne KI-Artefakte.",
+      "Klare Strukturierung des Textes, die die Kernaussagen schnell erfassbar macht."
     ],
     "provider": "gemini:gemini-3.5-flash",
     "reviewed_frames": [
@@ -290,9 +292,9 @@
   },
   "blockers": [],
   "strengths": [
-    "Exzellente faktische Fundierung basierend auf den Reuters- und Investors.com-Quellen.",
-    "Klare Strukturierung der 30-sekündigen Videos mit logischem Aufbau (Problem -> Ursache -> Auswirkung -> Learning -> CTA).",
-    "Saubere plattformspezifische Anpassung der Call-to-Action."
+    "Hervorragende sachliche Genauigkeit und strikte Einhaltung des redaktionellen Kontextes.",
+    "Sehr gute Übersetzung eines komplexen Finanzthemas in konkrete, alltagsrelevante Handlungsempfehlungen.",
+    "Plattformspezifische Optimierung ist konsequent umgesetzt."
   ],
   "repair_instructions": [],
   "providers": {
