@@ -7,9 +7,9 @@
     "pronunciation": 98,
     "marketing": 95,
     "sales": 95,
-    "platform_fit": 95,
-    "visual": 92,
-    "overall": 96
+    "platform_fit": 90,
+    "visual": 90,
+    "overall": 95
   },
   "thresholds": {
     "factual_accuracy": 90,
@@ -27,7 +27,42 @@
       "expected_spoken_text": "Die Sonnenfinsternis vom zwölften August ist vorbei – und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Korona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt: Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am zweiten August zweitausendsiebenundzwanzig gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika, weiter bis Saudi-Arabien und Jemen. An der besten Stelle kann die Totalität bis zu sechs Minuten und dreiundzwanzig Sekunden dauern – deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
       "transcript": "Die Sonnenfinsternis vom 12. August ist vorbei und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Corona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt, Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am 2. August 2027 gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika weiter bis Saudi, Arabien und Jemen. An der besten Stelle kann die Totalität bis zu 6 Minuten und 23 Sekunden dauern, deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis. Vielen Dank.",
       "similarity": 0.972,
-      "average_logprob": -0.0915,
+      "average_logprob": -0.0941,
+      "critical_terms": [],
+      "missing_critical_terms": [],
+      "blockers": [],
+      "transcription_model": "whisper-large-v3",
+      "strict_number_audit": {
+        "required": false,
+        "visible_script": "Die Sonnenfinsternis vom zwölften August ist vorbei – und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Korona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt: Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am zweiten August zweitausendsiebenundzwanzig gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika, weiter bis Saudi-Arabien und Jemen. An der besten Stelle kann die Totalität bis zu sechs Minuten und dreiundzwanzig Sekunden dauern – deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
+        "tts_text": "Die Sonnenfinsternis vom zwölften August ist vorbei – und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Korona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt: Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am zweiten August zweitausendsiebenundzwanzig gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika, weiter bis Saudi-Arabien und Jemen. An der besten Stelle kann die Totalität bis zu sechs Minuten und dreiundzwanzig Sekunden dauern – deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
+        "number_replacements": {
+          "2027": "zweitausendsiebenundzwanzig",
+          "6": "sechs",
+          "23": "dreiundzwanzig"
+        },
+        "transcription_prompt_used": false,
+        "version": "v2-unbiased-number-proof-compressed-audio"
+      },
+      "raw_similarity_before_safe_normalization": 0.972,
+      "safe_orthographic_contract_normalization": true,
+      "normalized_expected_spoken_text": "Die Sonnenfinsternis vom zwölften August ist vorbei – und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Korona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt: Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am zweiten August zweitausendsiebenundzwanzig gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika, weiter bis Saudi-Arabien und Jemen. An der besten Stelle kann die Totalität bis zu sechs Minuten und dreiundzwanzig Sekunden dauern – deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
+      "normalized_transcript": "Die Sonnenfinsternis vom 12. August ist vorbei und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Corona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt, Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am 2. August 2027 gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika weiter bis Saudi, Arabien und Jemen. An der besten Stelle kann die Totalität bis zu 6 Minuten und 23 Sekunden dauern, deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis. Vielen Dank.",
+      "quality_gates_weakened": false,
+      "asr_quorum": {
+        "policy": "strict-postmux-plus-prompted-final-plus-unprompted-tiebreaker-2-of-3",
+        "eligible": false,
+        "reason": "trusted_strict_postmux_evidence_missing",
+        "quality_gates_weakened": false
+      }
+    },
+    "tiktok": {
+      "platform": "tiktok",
+      "passed": true,
+      "expected_spoken_text": "Die Sonnenfinsternis vom zwölften August ist vorbei – und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Korona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt: Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am zweiten August zweitausendsiebenundzwanzig gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika, weiter bis Saudi-Arabien und Jemen. An der besten Stelle kann die Totalität bis zu sechs Minuten und dreiundzwanzig Sekunden dauern – deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
+      "transcript": "Die Sonnenfinsternis vom 12. August ist vorbei und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Corona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt, Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am 2. August 2027 gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika weiter bis Saudi, Arabien und Jemen. An der besten Stelle kann die Totalität bis zu 6 Minuten und 23 Sekunden dauern, deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis. Vielen Dank.",
+      "similarity": 0.972,
+      "average_logprob": -0.0941,
       "critical_terms": [],
       "missing_critical_terms": [],
       "blockers": [],
@@ -62,84 +97,83 @@
       "score": 100.0,
       "blockers": [],
       "findings": [
-        "Alle Aussagen bezüglich der Sonnenfinsternisse am 12. August 2026 und am 2. August 2027 sind vollständig durch die angegebenen NASA- und Nachrichtenquellen belegt.",
-        "Sicherheitsratschläge und maximale Dauer der Totalität (6 Minuten 23 Sekunden) stimmen exakt mit den wissenschaftlichen Vorhersagen überein."
+        "Alle Tatsachenbehauptungen zur Sonnenfinsternis 2026 und 2027 sind präzise durch die NASA- und Nachrichtenquellen gedeckt.",
+        "Die maximale Dauer von 6 Minuten und 23 Sekunden für 2027 stimmt exakt mit den NASA-Berechnungen überein."
       ]
     },
     "pronunciation_interpretation": {
-      "score": 98.0,
+      "score": 95.0,
       "blockers": [],
       "findings": [
-        "Das Audio-Transkript stimmt hervorragend mit dem Skript überein (Ähnlichkeit 97.2%).",
-        "Zahlen, Datumsangaben und geografische Bezeichnungen sind korrekt ausgesprochen und verständlich eingeordnet."
+        "Das gesprochene Audio stimmt hervorragend mit dem Skript überein (Ähnlichkeit von 97,2%).",
+        "Das im Audio angehängte 'Vielen Dank' ist eine freundliche, wenn auch nicht im Skript stehende Ergänzung, die den Fluss nicht stört."
       ]
     },
     "marketing_effectiveness": {
       "score": 95.0,
       "blockers": [],
       "findings": [
-        "Der Hook stellt sofort den Bezug zum aktuellen Event her und weckt Emotionen.",
-        "Der Übergang von den Erlebnissen 2026 zur noch spektakuläreren Sonnenfinsternis 2027 baut hohe Spannung und Informationsnutzen auf."
+        "Starker Hook, der die Aktualität des vergangenen Ereignisses nutzt, um sofort Spannung für das nächste Event aufzubauen.",
+        "Hoher Nutzwert durch konkrete Tipps (Schutzbrille, frühzeitige Planung)."
       ]
     },
     "sales_effectiveness": {
       "score": 95.0,
       "blockers": [],
       "findings": [
-        "Der Call to Action bietet einen konkreten Mehrwert (verifizierte Reisehinweise und Vorbereitungstipps).",
-        "Seriöser Vertrauensaufbau ohne künstlichen Druck oder manipulative Versprechungen."
+        "Die CTA bietet einen echten Mehrwert (verifizierte Reisehinweise) statt leerem Druck.",
+        "Vertrauensaufbau gelingt durch die sachliche und informative Tonalität."
       ]
     },
     "platform_fit": {
-      "score": 95.0,
+      "score": 90.0,
       "blockers": [],
       "findings": [
-        "Titel, Beschreibung und Hashtags sind ideal auf YouTube Shorts abgestimmt.",
-        "Das Timing der Text-Overlays und Sprecherabschnitte passt hervorragend zum vertikalen Kurzvideo-Format."
+        "Gute Nutzung von Hashtags und plattformgerechten Beschreibungen.",
+        "Auf TikTok wird im gesprochenen Text 'Abonniere den Kanal' statt 'Folge TAYVORIQ' verwendet, was für TikTok leicht suboptimal, aber im Rahmen der Toleranz ist."
       ]
     },
-    "overall_score": 97.0,
+    "overall_score": 95.0,
     "approval_recommendation": "PASS",
     "blockers": [],
     "strengths": [
-      "Lückenlose Faktenbasierung anhand von offiziellen NASA-Daten und unabhängigen Nachrichtenquellen.",
-      "Exzellenter redaktioneller Bogen vom Rückblick auf 2026 zur vorausschauenden Planung für 2027.",
-      "Nutzenorientierter, hochgradig vertrauenswürdiger CTA für eine langfristige Zuschauerbindung."
+      "Hervorragende Quellenabdeckung und wissenschaftliche Korrektheit.",
+      "Sehr gute Überleitung vom Rückblick 2026 zur Vorschau auf das Jahr 2027.",
+      "Wichtige Sicherheitsaspekte (Schutzbrille) wurden nahtlos integriert."
     ],
     "repair_instructions": [],
     "score_scale_normalized": true,
     "provider_model_fallback": {
-      "selected_model": "gemini-3.6-flash",
+      "selected_model": "gemini-3.5-flash",
       "attempted_models": [
-        "gemini-3.5-flash",
-        "gemini-3.6-flash"
+        "gemini-3.5-flash"
       ],
-      "provider_failures_before_success": [
-        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 58.634049609s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.Help\", \"links\": [ { \"description\": \"Learn more about Gemini API quotas\", \"url\": \"https://"
-      ],
+      "provider_failures_before_success": [],
       "same_prompt": true,
       "quality_gate_weakened": false
     }
   },
   "visual_review": {
-    "score": 92,
+    "score": 90,
     "passed": true,
     "blockers": [],
     "findings": [
-      "Hohe Bildqualität und konsistenter visueller Stil über alle Stichproben hinweg.",
-      "Perfektlesbare Text-Overlays mit dunklem Hintergrund-Container auf mobilen Endgeräten.",
-      "Exzellente Themenrelevanz: Authentische Emotionen beim Beobachten, spektakuläre Korona-Aufnahme und konkrete Vorbereitungstipps."
+      "Im zweiten Frame wird die Jahreszahl als ausgeschriebenes Wort ('zweitausendsiebenundzwanzig') dargestellt, was die mobile Lesegeschwindigkeit im Vergleich zur Zifferndarstellung ('2027') leicht verlangsamt.",
+      "Einheitliche und gut lesbare Textboxen mit dunklem, leicht transparentem Hintergrund gewährleisten optimale Kontraste auf unterschiedlichen Bildhintergründen."
     ],
     "marketing_visual_strengths": [
-      "Starke visuelle Glaubwürdigkeit durch echte Beobachtungsszenen mit Schutzbrillen.",
-      "Hoher Retention-Wert durch das kontrastreiche Highlight-Motiv der totalen Sonnenfinsternis.",
-      "Mühelos verständliche Handlungsaufforderung und strukturierte Informationseinblendung für das Event 2027."
+      "Hohe visuelle Relevanz durch authentische Aufnahmen von Beobachtern mit Schutzbrillen und einer klaren Aufnahme der Sonnenkorona.",
+      "Textplatzierung befindet sich innerhalb der Safe Zone für vertikale Kurzvideo-Formate (YouTube Shorts & TikTok).",
+      "Klarer strukturierter Aufbau von der Nachbereitung der vergangenen Sonnenfinsternis hin zum konkreten Call-to-Action für die Vorbereitung 2027."
     ],
     "provider": "gemini:gemini-3.6-flash",
     "reviewed_frames": [
       "youtube_shorts-1.jpg",
       "youtube_shorts-2.jpg",
-      "youtube_shorts-3.jpg"
+      "youtube_shorts-3.jpg",
+      "tiktok-1.jpg",
+      "tiktok-2.jpg",
+      "tiktok-3.jpg"
     ],
     "provider_model_fallback": {
       "selected_model": "gemini-3.6-flash",
@@ -148,7 +182,7 @@
         "gemini-3.6-flash"
       ],
       "provider_failures_before_success": [
-        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 49.217306805s.\", \"status\": \"RESOURCE_EXHAUSTED\", \""
+        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 20.771433826s.\", \"status\": \"RESOURCE_EXHAUSTED\", \""
       ],
       "same_frames_and_prompt": true,
       "quality_gate_weakened": false,
@@ -157,9 +191,10 @@
   },
   "objective_conversion_review": {
     "passed": true,
-    "score": 92,
+    "score": 82,
     "targets": [
-      "youtube_shorts"
+      "youtube_shorts",
+      "tiktok"
     ],
     "target_presence_ok": true,
     "platform_specific_actions_ok": true,
@@ -170,23 +205,24 @@
     ],
     "length_words": 13,
     "length_ok": true,
-    "semantic_tail_consistent": true,
+    "semantic_tail_consistent": false,
     "platform_contracts_ok": true,
     "manipulative_pressure": false,
     "ctas_by_platform": {
-      "youtube_shorts": "Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis."
+      "youtube_shorts": "Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
+      "tiktok": "Folge TAYVORIQ für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis."
     },
     "quality_gates_weakened": false
   },
   "blockers": [],
   "strengths": [
-    "Lückenlose Faktenbasierung anhand von offiziellen NASA-Daten und unabhängigen Nachrichtenquellen.",
-    "Exzellenter redaktioneller Bogen vom Rückblick auf 2026 zur vorausschauenden Planung für 2027.",
-    "Nutzenorientierter, hochgradig vertrauenswürdiger CTA für eine langfristige Zuschauerbindung."
+    "Hervorragende Quellenabdeckung und wissenschaftliche Korrektheit.",
+    "Sehr gute Überleitung vom Rückblick 2026 zur Vorschau auf das Jahr 2027.",
+    "Wichtige Sicherheitsaspekte (Schutzbrille) wurden nahtlos integriert."
   ],
   "repair_instructions": [],
   "providers": {
-    "marketing": "gemini:gemini-3.6-flash",
+    "marketing": "gemini:gemini-3.5-flash",
     "visual": "gemini:gemini-3.6-flash",
     "audio": "groq:whisper-large-v3-objective-score",
     "conversion": "deterministic-cta-benefit-gate-v1"
@@ -202,7 +238,8 @@
     "visual_provider_order": "configured-gemini-then-3.6-flash-then-3.5-flash-lite"
   },
   "targets": [
-    "youtube_shorts"
+    "youtube_shorts",
+    "tiktok"
   ],
   "scope_version": "v6-target-specific-strict"
 }
