@@ -4,12 +4,12 @@
   "passed": true,
   "scores": {
     "factual_accuracy": 100,
-    "pronunciation": 98,
+    "pronunciation": 100,
     "marketing": 95,
     "sales": 95,
-    "platform_fit": 90,
-    "visual": 90,
-    "overall": 95
+    "platform_fit": 98,
+    "visual": 95,
+    "overall": 97
   },
   "thresholds": {
     "factual_accuracy": 90,
@@ -24,72 +24,88 @@
     "youtube_shorts": {
       "platform": "youtube_shorts",
       "passed": true,
-      "expected_spoken_text": "Die Sonnenfinsternis vom zwölften August ist vorbei – und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Korona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt: Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am zweiten August zweitausendsiebenundzwanzig gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika, weiter bis Saudi-Arabien und Jemen. An der besten Stelle kann die Totalität bis zu sechs Minuten und dreiundzwanzig Sekunden dauern – deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
-      "transcript": "Die Sonnenfinsternis vom 12. August ist vorbei und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Corona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt, Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am 2. August 2027 gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika weiter bis Saudi, Arabien und Jemen. An der besten Stelle kann die Totalität bis zu 6 Minuten und 23 Sekunden dauern, deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis. Vielen Dank.",
-      "similarity": 0.972,
-      "average_logprob": -0.0941,
-      "critical_terms": [],
+      "expected_spoken_text": "In Deutschland drohen achtunddreißig Grad, Teile Europas nahe oder über vierzig Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "In Deutschland drohen 38 Grad, teile Europas nah oder über 40 Grad, weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9828,
+      "average_logprob": -0.0655,
+      "critical_terms": [
+        {
+          "source": "38",
+          "spoken": "achtunddreißig",
+          "kind": "number"
+        },
+        {
+          "source": "40",
+          "spoken": "vierzig",
+          "kind": "number"
+        },
+        {
+          "source": "TAYVORIQ",
+          "spoken": "den Kanal",
+          "kind": "pronunciation_map"
+        }
+      ],
       "missing_critical_terms": [],
       "blockers": [],
       "transcription_model": "whisper-large-v3",
       "strict_number_audit": {
-        "required": false,
-        "visible_script": "Die Sonnenfinsternis vom zwölften August ist vorbei – und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Korona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt: Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am zweiten August zweitausendsiebenundzwanzig gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika, weiter bis Saudi-Arabien und Jemen. An der besten Stelle kann die Totalität bis zu sechs Minuten und dreiundzwanzig Sekunden dauern – deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
-        "tts_text": "Die Sonnenfinsternis vom zwölften August ist vorbei – und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Korona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt: Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am zweiten August zweitausendsiebenundzwanzig gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika, weiter bis Saudi-Arabien und Jemen. An der besten Stelle kann die Totalität bis zu sechs Minuten und dreiundzwanzig Sekunden dauern – deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
+        "required": true,
+        "visible_script": "In Deutschland drohen 38 Grad, Teile Europas nahe oder über 40 Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "In Deutschland drohen achtunddreißig Grad, Teile Europas nahe oder über vierzig Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
         "number_replacements": {
-          "2027": "zweitausendsiebenundzwanzig",
-          "6": "sechs",
-          "23": "dreiundzwanzig"
+          "38": "achtunddreißig",
+          "40": "vierzig"
         },
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.972,
+      "raw_similarity_before_safe_normalization": 0.9828,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "Die Sonnenfinsternis vom zwölften August ist vorbei – und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Korona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt: Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am zweiten August zweitausendsiebenundzwanzig gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika, weiter bis Saudi-Arabien und Jemen. An der besten Stelle kann die Totalität bis zu sechs Minuten und dreiundzwanzig Sekunden dauern – deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
-      "normalized_transcript": "Die Sonnenfinsternis vom 12. August ist vorbei und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Corona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt, Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am 2. August 2027 gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika weiter bis Saudi, Arabien und Jemen. An der besten Stelle kann die Totalität bis zu 6 Minuten und 23 Sekunden dauern, deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis. Vielen Dank.",
-      "quality_gates_weakened": false,
-      "asr_quorum": {
-        "policy": "strict-postmux-plus-prompted-final-plus-unprompted-tiebreaker-2-of-3",
-        "eligible": false,
-        "reason": "trusted_strict_postmux_evidence_missing",
-        "quality_gates_weakened": false
-      }
+      "normalized_expected_spoken_text": "In Deutschland drohen achtunddreißig Grad, Teile Europas nahe oder über vierzig Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "In Deutschland drohen 38 Grad, teile Europas nah oder über 40 Grad, weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte."
     },
     "tiktok": {
       "platform": "tiktok",
       "passed": true,
-      "expected_spoken_text": "Die Sonnenfinsternis vom zwölften August ist vorbei – und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Korona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt: Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am zweiten August zweitausendsiebenundzwanzig gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika, weiter bis Saudi-Arabien und Jemen. An der besten Stelle kann die Totalität bis zu sechs Minuten und dreiundzwanzig Sekunden dauern – deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
-      "transcript": "Die Sonnenfinsternis vom 12. August ist vorbei und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Corona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt, Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am 2. August 2027 gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika weiter bis Saudi, Arabien und Jemen. An der besten Stelle kann die Totalität bis zu 6 Minuten und 23 Sekunden dauern, deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis. Vielen Dank.",
-      "similarity": 0.972,
-      "average_logprob": -0.0941,
-      "critical_terms": [],
+      "expected_spoken_text": "In Deutschland drohen achtunddreißig Grad, Teile Europas nahe oder über vierzig Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "In Deutschland drohen 38 Grad, Teile Europas nah oder über 40 Grad, weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9828,
+      "average_logprob": -0.071,
+      "critical_terms": [
+        {
+          "source": "38",
+          "spoken": "achtunddreißig",
+          "kind": "number"
+        },
+        {
+          "source": "40",
+          "spoken": "vierzig",
+          "kind": "number"
+        },
+        {
+          "source": "TAYVORIQ",
+          "spoken": "dem Kanal",
+          "kind": "pronunciation_map"
+        }
+      ],
       "missing_critical_terms": [],
       "blockers": [],
       "transcription_model": "whisper-large-v3",
       "strict_number_audit": {
-        "required": false,
-        "visible_script": "Die Sonnenfinsternis vom zwölften August ist vorbei – und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Korona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt: Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am zweiten August zweitausendsiebenundzwanzig gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika, weiter bis Saudi-Arabien und Jemen. An der besten Stelle kann die Totalität bis zu sechs Minuten und dreiundzwanzig Sekunden dauern – deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
-        "tts_text": "Die Sonnenfinsternis vom zwölften August ist vorbei – und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Korona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt: Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am zweiten August zweitausendsiebenundzwanzig gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika, weiter bis Saudi-Arabien und Jemen. An der besten Stelle kann die Totalität bis zu sechs Minuten und dreiundzwanzig Sekunden dauern – deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
+        "required": true,
+        "visible_script": "In Deutschland drohen 38 Grad, Teile Europas nahe oder über 40 Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "In Deutschland drohen achtunddreißig Grad, Teile Europas nahe oder über vierzig Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
         "number_replacements": {
-          "2027": "zweitausendsiebenundzwanzig",
-          "6": "sechs",
-          "23": "dreiundzwanzig"
+          "38": "achtunddreißig",
+          "40": "vierzig"
         },
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.972,
+      "raw_similarity_before_safe_normalization": 0.9828,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "Die Sonnenfinsternis vom zwölften August ist vorbei – und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Korona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt: Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am zweiten August zweitausendsiebenundzwanzig gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika, weiter bis Saudi-Arabien und Jemen. An der besten Stelle kann die Totalität bis zu sechs Minuten und dreiundzwanzig Sekunden dauern – deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
-      "normalized_transcript": "Die Sonnenfinsternis vom 12. August ist vorbei und diese Momente zeigen, warum Menschen dafür weit reisen. Zuschauer standen gemeinsam unter dem dunkler werdenden Himmel. In Spanien zog der Mondschatten kurz vor Sonnenuntergang über das Land. Für Sekunden blieb nur die leuchtende Corona um die schwarze Mondscheibe. Dann wurde der Himmel wieder hell. Für das nächste Mal gilt, Schutzbrille früh besorgen, auf Schäden prüfen und die partiellen Phasen nur sicher beobachten. Der nächste große Termin steht schon fest. Am 2. August 2027 gibt es die nächste totale Sonnenfinsternis. Der Mondschatten zieht über Südspanien und Nordafrika weiter bis Saudi, Arabien und Jemen. An der besten Stelle kann die Totalität bis zu 6 Minuten und 23 Sekunden dauern, deutlich länger als diesmal. Wenn du dabei sein willst, plane Ort und Unterkunft früh. Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis. Vielen Dank.",
-      "quality_gates_weakened": false,
-      "asr_quorum": {
-        "policy": "strict-postmux-plus-prompted-final-plus-unprompted-tiebreaker-2-of-3",
-        "eligible": false,
-        "reason": "trusted_strict_postmux_evidence_missing",
-        "quality_gates_weakened": false
-      }
+      "normalized_expected_spoken_text": "In Deutschland drohen achtunddreißig Grad, Teile Europas nahe oder über vierzig Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "In Deutschland drohen 38 Grad, Teile Europas nah oder über 40 Grad, weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte."
     }
   },
   "marketing_review": {
@@ -97,76 +113,81 @@
       "score": 100.0,
       "blockers": [],
       "findings": [
-        "Alle Tatsachenbehauptungen zur Sonnenfinsternis 2026 und 2027 sind präzise durch die NASA- und Nachrichtenquellen gedeckt.",
-        "Die maximale Dauer von 6 Minuten und 23 Sekunden für 2027 stimmt exakt mit den NASA-Berechnungen überein."
+        "Alle Tatsachenbehauptungen (38 Grad in Deutschland, über 40 Grad in Europa, Hochdrucklagen, betroffene Gruppen, Gesundheitsrisiken und Schutzmaßnahmen) sind vollständig durch die bereitgestellten Quellen (Reuters, AP, DWD, WHO) und den Editorial Context gestützt."
       ]
     },
     "pronunciation_interpretation": {
-      "score": 95.0,
+      "score": 98.0,
       "blockers": [],
       "findings": [
-        "Das gesprochene Audio stimmt hervorragend mit dem Skript überein (Ähnlichkeit von 97,2%).",
-        "Das im Audio angehängte 'Vielen Dank' ist eine freundliche, wenn auch nicht im Skript stehende Ergänzung, die den Fluss nicht stört."
+        "Whisper-Prüfung bestätigt eine hohe Ähnlichkeit (98.28%) zwischen Text und Audio-Transcript.",
+        "Der semantische Marken-Fallback ('den Kanal' bzw. 'dem Kanal' anstelle der direkten Nennung im Skript) ist laut Vorgabe kein Aussprachefehler."
       ]
     },
     "marketing_effectiveness": {
       "score": 95.0,
       "blockers": [],
       "findings": [
-        "Starker Hook, der die Aktualität des vergangenen Ereignisses nutzt, um sofort Spannung für das nächste Event aufzubauen.",
-        "Hoher Nutzwert durch konkrete Tipps (Schutzbrille, frühzeitige Planung)."
+        "Starker, relevanter Hook in den ersten Sekunden ('In Deutschland drohen 38 Grad...').",
+        "Klarer persönlicher Nutzen und verständliche Handlungsanweisungen ohne Clickbait."
       ]
     },
     "sales_effectiveness": {
       "score": 95.0,
       "blockers": [],
       "findings": [
-        "Die CTA bietet einen echten Mehrwert (verifizierte Reisehinweise) statt leerem Druck.",
-        "Vertrauensaufbau gelingt durch die sachliche und informative Tonalität."
+        "Konkreter und vertrauenswürdiger Conversion-Pfad (Abo/Follow für verifizierte Einordnung).",
+        "Kein manipulativer Druck, sondern echter Informationswert als Grund für die Handlung."
       ]
     },
     "platform_fit": {
-      "score": 90.0,
+      "score": 98.0,
       "blockers": [],
       "findings": [
-        "Gute Nutzung von Hashtags und plattformgerechten Beschreibungen.",
-        "Auf TikTok wird im gesprochenen Text 'Abonniere den Kanal' statt 'Folge TAYVORIQ' verwendet, was für TikTok leicht suboptimal, aber im Rahmen der Toleranz ist."
+        "Saubere Unterscheidung zwischen YouTube Shorts ('Abonniere TAYVORIQ') und TikTok ('Folge TAYVORIQ').",
+        "Plattformgerechte Metadaten, Captions und Hashtags vorhanden."
       ]
     },
-    "overall_score": 95.0,
+    "overall_score": 97.0,
     "approval_recommendation": "PASS",
     "blockers": [],
     "strengths": [
-      "Hervorragende Quellenabdeckung und wissenschaftliche Korrektheit.",
-      "Sehr gute Überleitung vom Rückblick 2026 zur Vorschau auf das Jahr 2027.",
-      "Wichtige Sicherheitsaspekte (Schutzbrille) wurden nahtlos integriert."
+      "Hervorragende quellengestützte Faktenbasis mit direktem Bezug zu DWD, WHO, AP und Reuters.",
+      "Klare, prägnante Struktur mit sofortigem Nutzwert für den Zuschauer.",
+      "Saubere plattformspezifische Anpassungen für YouTube und TikTok."
     ],
     "repair_instructions": [],
     "score_scale_normalized": true,
     "provider_model_fallback": {
-      "selected_model": "gemini-3.5-flash",
+      "selected_model": "gemini-3.5-flash-lite",
       "attempted_models": [
-        "gemini-3.5-flash"
+        "gemini-3.5-flash",
+        "gemini-3.6-flash",
+        "gemini-3.5-flash-lite"
       ],
-      "provider_failures_before_success": [],
+      "provider_failures_before_success": [
+        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 43.09046015s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.Help\", \"links\": [ { \"description\": \"Learn more about Gemini API quotas\", \"url\": \"https://a",
+        "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 42.877121158s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.Help\", \"links\": [ { \"description\": \"Learn more about Gemini API quotas\", \"url\": \"https://"
+      ],
       "same_prompt": true,
       "quality_gate_weakened": false
     }
   },
   "visual_review": {
-    "score": 90,
+    "score": 95,
     "passed": true,
     "blockers": [],
     "findings": [
-      "Im zweiten Frame wird die Jahreszahl als ausgeschriebenes Wort ('zweitausendsiebenundzwanzig') dargestellt, was die mobile Lesegeschwindigkeit im Vergleich zur Zifferndarstellung ('2027') leicht verlangsamt.",
-      "Einheitliche und gut lesbare Textboxen mit dunklem, leicht transparentem Hintergrund gewährleisten optimale Kontraste auf unterschiedlichen Bildhintergründen."
+      "Klare, gut lesbare Untertitel mit hohem Kontrast auf allen Plattformen.",
+      "Thematisch passende und glaubwürdige visuelle Untermalung (trockener Boden, Wasser, Zimmerpflanze im Schatten).",
+      "Plattformgerechte Call-to-Actions ('Abonniere' für YouTube Shorts, 'Folge' für TikTok)."
     ],
     "marketing_visual_strengths": [
-      "Hohe visuelle Relevanz durch authentische Aufnahmen von Beobachtern mit Schutzbrillen und einer klaren Aufnahme der Sonnenkorona.",
-      "Textplatzierung befindet sich innerhalb der Safe Zone für vertikale Kurzvideo-Formate (YouTube Shorts & TikTok).",
-      "Klarer strukturierter Aufbau von der Nachbereitung der vergangenen Sonnenfinsternis hin zum konkreten Call-to-Action für die Vorbereitung 2027."
+      "Hervorragende mobile Lesbarkeit durch abgerundete Textboxen mit dunklem Hintergrund.",
+      "Starke emotionale Relevanz zum Thema Hitze und Trockenheit im ersten und zweiten Frame.",
+      "Saubere visuelle Markenpräsenz ohne Renderfehler."
     ],
-    "provider": "gemini:gemini-3.6-flash",
+    "provider": "gemini:gemini-3.5-flash-lite",
     "reviewed_frames": [
       "youtube_shorts-1.jpg",
       "youtube_shorts-2.jpg",
@@ -176,13 +197,15 @@
       "tiktok-3.jpg"
     ],
     "provider_model_fallback": {
-      "selected_model": "gemini-3.6-flash",
+      "selected_model": "gemini-3.5-flash-lite",
       "attempted_models": [
         "gemini-3.5-flash",
-        "gemini-3.6-flash"
+        "gemini-3.6-flash",
+        "gemini-3.5-flash-lite"
       ],
       "provider_failures_before_success": [
-        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 20.771433826s.\", \"status\": \"RESOURCE_EXHAUSTED\", \""
+        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 38.298317771s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"",
+        "gemini-3.6-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 35.856772194s.\", \"status\": \"RESOURCE_EXHAUSTED\", \""
       ],
       "same_frames_and_prompt": true,
       "quality_gate_weakened": false,
@@ -191,39 +214,46 @@
   },
   "objective_conversion_review": {
     "passed": true,
-    "score": 82,
-    "targets": [
-      "youtube_shorts",
-      "tiktok"
-    ],
-    "target_presence_ok": true,
+    "score": 83,
+    "action_ok": true,
     "platform_specific_actions_ok": true,
+    "youtube_action_ok": true,
+    "tiktok_action_ok": true,
+    "required_platforms_present": true,
     "benefit_hits": [
       "verifiziert",
-      "reisehinweis",
       "konkrete schritte"
     ],
-    "length_words": 13,
+    "length_words": 8,
     "length_ok": true,
-    "semantic_tail_consistent": false,
+    "consistent_across_platforms": true,
+    "semantic_tail_consistent": true,
     "platform_contracts_ok": true,
     "manipulative_pressure": false,
+    "ctas": [
+      "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+      "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte."
+    ],
     "ctas_by_platform": {
-      "youtube_shorts": "Abonniere den Kanal für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis.",
-      "tiktok": "Folge TAYVORIQ für verifizierte Reisehinweise und konkrete Schritte zur nächsten totalen Sonnenfinsternis."
+      "youtube_shorts": "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+      "tiktok": "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte."
     },
-    "quality_gates_weakened": false
+    "semantic_tails": [
+      "für verifizierte einordnung und konkrete schritte.",
+      "für verifizierte einordnung und konkrete schritte."
+    ],
+    "quality_gate_weakened": false
   },
   "blockers": [],
   "strengths": [
-    "Hervorragende Quellenabdeckung und wissenschaftliche Korrektheit.",
-    "Sehr gute Überleitung vom Rückblick 2026 zur Vorschau auf das Jahr 2027.",
-    "Wichtige Sicherheitsaspekte (Schutzbrille) wurden nahtlos integriert."
+    "Hervorragende quellengestützte Faktenbasis mit direktem Bezug zu DWD, WHO, AP und Reuters.",
+    "Klare, prägnante Struktur mit sofortigem Nutzwert für den Zuschauer.",
+    "Saubere plattformspezifische Anpassungen für YouTube und TikTok."
   ],
   "repair_instructions": [],
   "providers": {
-    "marketing": "gemini:gemini-3.5-flash",
-    "visual": "gemini:gemini-3.6-flash",
+    "marketing": "gemini:gemini-3.5-flash-lite",
+    "visual": "gemini:gemini-3.5-flash-lite",
     "audio": "groq:whisper-large-v3-objective-score",
     "conversion": "deterministic-cta-benefit-gate-v1"
   },
@@ -236,10 +266,5 @@
     "overall": "fixed-weight-evidence-score",
     "marketing_provider_order": "gemini-retry-first-groq-fallback",
     "visual_provider_order": "configured-gemini-then-3.6-flash-then-3.5-flash-lite"
-  },
-  "targets": [
-    "youtube_shorts",
-    "tiktok"
-  ],
-  "scope_version": "v6-target-specific-strict"
+  }
 }
