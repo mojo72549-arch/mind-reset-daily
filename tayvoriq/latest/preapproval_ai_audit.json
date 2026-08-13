@@ -3,13 +3,13 @@
   "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
   "passed": true,
   "scores": {
-    "factual_accuracy": 100,
-    "pronunciation": 100,
-    "marketing": 95,
-    "sales": 95,
-    "platform_fit": 98,
+    "factual_accuracy": 98,
+    "pronunciation": 98,
+    "marketing": 92,
+    "sales": 94,
+    "platform_fit": 95,
     "visual": 95,
-    "overall": 97
+    "overall": 95
   },
   "thresholds": {
     "factual_accuracy": 90,
@@ -24,21 +24,11 @@
     "youtube_shorts": {
       "platform": "youtube_shorts",
       "passed": true,
-      "expected_spoken_text": "In Deutschland drohen achtunddreißig Grad, Teile Europas nahe oder über vierzig Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "In Deutschland drohen 38 Grad, teile Europas nah oder über 40 Grad, weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "similarity": 0.9828,
-      "average_logprob": -0.0655,
+      "expected_spoken_text": "Europas Hitzewelle belastet Gesundheit, Böden, Energieversorgung und Verkehr gleichzeitig. Weil Hitze und Trockenheit Menschen, Wasserreserven und technische Systeme belasten. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und mögliche Versorgungsprobleme. Prüfe Hitzewarnungen, meide Mittagshitze, trinke regelmäßig und beachte regionale Einschränkungen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "Europas Hitzewelle belastet Gesundheit, Böden, Energieversorgung und verkehrt gleichzeitig, weil Hitze und Trockenheit Menschen, Wasserreserven und technische Systeme belasten. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und mögliche Versorgungsprobleme. Prüfe Hitzewarnungen, meide Mittagshitze, trinke regelmäßig und beachte regionale Einschränkungen. Abonniere den Kanal für verifizierte Einordnungen und konkrete Schritte.",
+      "similarity": 0.9636,
+      "average_logprob": -0.0582,
       "critical_terms": [
-        {
-          "source": "38",
-          "spoken": "achtunddreißig",
-          "kind": "number"
-        },
-        {
-          "source": "40",
-          "spoken": "vierzig",
-          "kind": "number"
-        },
         {
           "source": "TAYVORIQ",
           "spoken": "den Kanal",
@@ -49,39 +39,26 @@
       "blockers": [],
       "transcription_model": "whisper-large-v3",
       "strict_number_audit": {
-        "required": true,
-        "visible_script": "In Deutschland drohen 38 Grad, Teile Europas nahe oder über 40 Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "In Deutschland drohen achtunddreißig Grad, Teile Europas nahe oder über vierzig Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "number_replacements": {
-          "38": "achtunddreißig",
-          "40": "vierzig"
-        },
+        "required": false,
+        "visible_script": "Europas Hitzewelle belastet Gesundheit, Böden, Energieversorgung und Verkehr gleichzeitig. Weil Hitze und Trockenheit Menschen, Wasserreserven und technische Systeme belasten. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und mögliche Versorgungsprobleme. Prüfe Hitzewarnungen, meide Mittagshitze, trinke regelmäßig und beachte regionale Einschränkungen. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Europas Hitzewelle belastet Gesundheit, Böden, Energieversorgung und Verkehr gleichzeitig. Weil Hitze und Trockenheit Menschen, Wasserreserven und technische Systeme belasten. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und mögliche Versorgungsprobleme. Prüfe Hitzewarnungen, meide Mittagshitze, trinke regelmäßig und beachte regionale Einschränkungen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {},
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9828,
+      "raw_similarity_before_safe_normalization": 0.9636,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "In Deutschland drohen achtunddreißig Grad, Teile Europas nahe oder über vierzig Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "In Deutschland drohen 38 Grad, teile Europas nah oder über 40 Grad, weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte."
+      "normalized_expected_spoken_text": "Europas Hitzewelle belastet Gesundheit, Böden, Energieversorgung und Verkehr gleichzeitig. Weil Hitze und Trockenheit Menschen, Wasserreserven und technische Systeme belasten. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und mögliche Versorgungsprobleme. Prüfe Hitzewarnungen, meide Mittagshitze, trinke regelmäßig und beachte regionale Einschränkungen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Europas Hitzewelle belastet Gesundheit, Böden, Energieversorgung und verkehrt gleichzeitig, weil Hitze und Trockenheit Menschen, Wasserreserven und technische Systeme belasten. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und mögliche Versorgungsprobleme. Prüfe Hitzewarnungen, meide Mittagshitze, trinke regelmäßig und beachte regionale Einschränkungen. Abonniere den Kanal für verifizierte Einordnungen und konkrete Schritte."
     },
     "tiktok": {
       "platform": "tiktok",
       "passed": true,
-      "expected_spoken_text": "In Deutschland drohen achtunddreißig Grad, Teile Europas nahe oder über vierzig Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "In Deutschland drohen 38 Grad, Teile Europas nah oder über 40 Grad, weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "similarity": 0.9828,
-      "average_logprob": -0.071,
+      "expected_spoken_text": "Europas Hitzewelle belastet Gesundheit, Böden, Energieversorgung und Verkehr gleichzeitig. Weil Hitze und Trockenheit Menschen, Wasserreserven und technische Systeme belasten. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und mögliche Versorgungsprobleme. Prüfe Hitzewarnungen, meide Mittagshitze, trinke regelmäßig und beachte regionale Einschränkungen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "Europas Hitzewelle belastet Gesundheit, Böden, Energieversorgung und Verkehr gleichzeitig. Weil Hitze und Trockenheit Menschen Wasserreserven und technische Systeme belasten. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und mögliche Versorgungsprobleme. Prüfe Hitzewarnungen, meide Mittagshitze, trinke regelmäßig und beachte regionale Einschränkungen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 1.0,
+      "average_logprob": -0.0735,
       "critical_terms": [
-        {
-          "source": "38",
-          "spoken": "achtunddreißig",
-          "kind": "number"
-        },
-        {
-          "source": "40",
-          "spoken": "vierzig",
-          "kind": "number"
-        },
         {
           "source": "TAYVORIQ",
           "spoken": "dem Kanal",
@@ -92,69 +69,62 @@
       "blockers": [],
       "transcription_model": "whisper-large-v3",
       "strict_number_audit": {
-        "required": true,
-        "visible_script": "In Deutschland drohen 38 Grad, Teile Europas nahe oder über 40 Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "In Deutschland drohen achtunddreißig Grad, Teile Europas nahe oder über vierzig Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "number_replacements": {
-          "38": "achtunddreißig",
-          "40": "vierzig"
-        },
+        "required": false,
+        "visible_script": "Europas Hitzewelle belastet Gesundheit, Böden, Energieversorgung und Verkehr gleichzeitig. Weil Hitze und Trockenheit Menschen, Wasserreserven und technische Systeme belasten. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und mögliche Versorgungsprobleme. Prüfe Hitzewarnungen, meide Mittagshitze, trinke regelmäßig und beachte regionale Einschränkungen. Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Europas Hitzewelle belastet Gesundheit, Böden, Energieversorgung und Verkehr gleichzeitig. Weil Hitze und Trockenheit Menschen, Wasserreserven und technische Systeme belasten. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und mögliche Versorgungsprobleme. Prüfe Hitzewarnungen, meide Mittagshitze, trinke regelmäßig und beachte regionale Einschränkungen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {},
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9828,
+      "raw_similarity_before_safe_normalization": 1.0,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "In Deutschland drohen achtunddreißig Grad, Teile Europas nahe oder über vierzig Grad. Weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "In Deutschland drohen 38 Grad, Teile Europas nah oder über 40 Grad, weil anhaltende Hochdrucklagen heiße Luft über Europa stauen. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und Risiken durch Trockenheit und Brände. Prüfe Hitzewarnungen, trinke regelmäßig, verschatte Räume und meide Mittagshitze. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte."
+      "normalized_expected_spoken_text": "Europas Hitzewelle belastet Gesundheit, Böden, Energieversorgung und Verkehr gleichzeitig. Weil Hitze und Trockenheit Menschen, Wasserreserven und technische Systeme belasten. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und mögliche Versorgungsprobleme. Prüfe Hitzewarnungen, meide Mittagshitze, trinke regelmäßig und beachte regionale Einschränkungen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Europas Hitzewelle belastet Gesundheit, Böden, Energieversorgung und Verkehr gleichzeitig. Weil Hitze und Trockenheit Menschen Wasserreserven und technische Systeme belasten. Besonders betroffen sind Ältere, Kinder, chronisch Kranke und Außenarbeiter. Für dich steigen Kreislaufstress, Schlafprobleme und mögliche Versorgungsprobleme. Prüfe Hitzewarnungen, meide Mittagshitze, trinke regelmäßig und beachte regionale Einschränkungen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte."
     }
   },
   "marketing_review": {
     "factual_accuracy": {
-      "score": 100.0,
+      "score": 98.0,
       "blockers": [],
       "findings": [
-        "Alle Tatsachenbehauptungen (38 Grad in Deutschland, über 40 Grad in Europa, Hochdrucklagen, betroffene Gruppen, Gesundheitsrisiken und Schutzmaßnahmen) sind vollständig durch die bereitgestellten Quellen (Reuters, AP, DWD, WHO) und den Editorial Context gestützt."
+        "Alle getroffenen Aussagen über Gesundheitsrisiken, Energiebelastung und Dürrefolgen sind durch Reuters, AP, DWD und WHO Europe direkt gestützt."
       ]
     },
     "pronunciation_interpretation": {
-      "score": 98.0,
+      "score": 95.0,
       "blockers": [],
       "findings": [
-        "Whisper-Prüfung bestätigt eine hohe Ähnlichkeit (98.28%) zwischen Text und Audio-Transcript.",
-        "Der semantische Marken-Fallback ('den Kanal' bzw. 'dem Kanal' anstelle der direkten Nennung im Skript) ist laut Vorgabe kein Aussprachefehler."
+        "Audio-Transkripte stimmen für YouTube Shorts und TikTok inhaltlich hochgradig mit dem Skript überein. Der minimale Abweichler bei YouTube ('verkehrt' statt 'Verkehr') ist laut Whisper-Prüfung (Similarity 0.9636) unkritisch und stört den Sinn kaum."
       ]
     },
     "marketing_effectiveness": {
-      "score": 95.0,
+      "score": 92.0,
       "blockers": [],
       "findings": [
-        "Starker, relevanter Hook in den ersten Sekunden ('In Deutschland drohen 38 Grad...').",
-        "Klarer persönlicher Nutzen und verständliche Handlungsanweisungen ohne Clickbait."
+        "Starker, sofortiger Einstieg (Hook) zur Hitzewelle in Europa, klarer Nutzwert für den Zuschauer und logischer Story-Aufbau ohne Clickbait."
       ]
     },
     "sales_effectiveness": {
-      "score": 95.0,
+      "score": 94.0,
       "blockers": [],
       "findings": [
-        "Konkreter und vertrauenswürdiger Conversion-Pfad (Abo/Follow für verifizierte Einordnung).",
-        "Kein manipulativer Druck, sondern echter Informationswert als Grund für die Handlung."
+        "Plattformgerechte Call-to-Actions ('Abonniere TAYVORIQ' für YouTube, 'Folge TAYVORIQ' für TikTok) begründen das Abo direkt mit verifizierter Einordnung und konkreten Handlungsschritten."
       ]
     },
     "platform_fit": {
-      "score": 98.0,
+      "score": 95.0,
       "blockers": [],
       "findings": [
-        "Saubere Unterscheidung zwischen YouTube Shorts ('Abonniere TAYVORIQ') und TikTok ('Folge TAYVORIQ').",
-        "Plattformgerechte Metadaten, Captions und Hashtags vorhanden."
+        "Formate sind exakt auf YouTube Shorts und TikTok zugeschnitten. Titel, Captions und Hashtags sind zweckmäßig und nicht generisch."
       ]
     },
-    "overall_score": 97.0,
+    "overall_score": 94.0,
     "approval_recommendation": "PASS",
     "blockers": [],
     "strengths": [
-      "Hervorragende quellengestützte Faktenbasis mit direktem Bezug zu DWD, WHO, AP und Reuters.",
-      "Klare, prägnante Struktur mit sofortigem Nutzwert für den Zuschauer.",
-      "Saubere plattformspezifische Anpassungen für YouTube und TikTok."
+      "Hervorragende faktenbasierte Untermauerung durch verifizierte Quellen (Reuters, AP, DWD, WHO).",
+      "Saubere Struktur mit klarem Nutzen und passgenauen Handlungsanweisungen für den Zuschauer.",
+      "Plattformgerechte Ausspielung für YouTube Shorts und TikTok."
     ],
     "repair_instructions": [],
     "score_scale_normalized": true,
@@ -166,26 +136,27 @@
         "gemini-3.5-flash-lite"
       ],
       "provider_failures_before_success": [
-        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 43.09046015s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.Help\", \"links\": [ { \"description\": \"Learn more about Gemini API quotas\", \"url\": \"https://a",
-        "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 42.877121158s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.Help\", \"links\": [ { \"description\": \"Learn more about Gemini API quotas\", \"url\": \"https://"
+        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 51.954085281s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.Help\", \"links\": [ { \"description\": \"Learn more about Gemini API quotas\", \"url\": \"https://",
+        "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 51.351985622s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.Help\", \"links\": [ { \"description\": \"Learn more about Gemini API quotas\", \"url\": \"https://"
       ],
       "same_prompt": true,
       "quality_gate_weakened": false
     }
   },
   "visual_review": {
-    "score": 95,
+    "score": "95",
     "passed": true,
     "blockers": [],
     "findings": [
-      "Klare, gut lesbare Untertitel mit hohem Kontrast auf allen Plattformen.",
-      "Thematisch passende und glaubwürdige visuelle Untermalung (trockener Boden, Wasser, Zimmerpflanze im Schatten).",
-      "Plattformgerechte Call-to-Actions ('Abonniere' für YouTube Shorts, 'Folge' für TikTok)."
+      "Klare, gut lesbare Untertitel auf allen Frames mit hohem Kontrast.",
+      "Thematisch hochrelevante Visuals zum Thema Hitze, Trockenheit und Wasserknappheit.",
+      "Plattformgerechte Call-to-Action ('Abonniere TAYVORIQ' bei YouTube Shorts, 'Folge TAYVORIQ' bei TikTok).",
+      "Hohe visuelle Glaubwürdigkeit und saubere Bildqualität ohne Renderfehler."
     ],
     "marketing_visual_strengths": [
-      "Hervorragende mobile Lesbarkeit durch abgerundete Textboxen mit dunklem Hintergrund.",
-      "Starke emotionale Relevanz zum Thema Hitze und Trockenheit im ersten und zweiten Frame.",
-      "Saubere visuelle Markenpräsenz ohne Renderfehler."
+      "Hervorragende mobile Lesbarkeit der Textboxen im unteren Drittel, ideal positioniert außerhalb kritischer UI-Bereiche.",
+      "Starke emotionale Ansprache durch konkrete Alltagsbeispiele (Trinkwasser, trockene Böden).",
+      "Professionelle Markeneinbindung mit klarem Nutzenversprechen am Ende."
     ],
     "provider": "gemini:gemini-3.5-flash-lite",
     "reviewed_frames": [
@@ -204,8 +175,8 @@
         "gemini-3.5-flash-lite"
       ],
       "provider_failures_before_success": [
-        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 38.298317771s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"",
-        "gemini-3.6-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 35.856772194s.\", \"status\": \"RESOURCE_EXHAUSTED\", \""
+        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 47.212208738s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"",
+        "gemini-3.6-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 45.371724822s.\", \"status\": \"RESOURCE_EXHAUSTED\", \""
       ],
       "same_frames_and_prompt": true,
       "quality_gate_weakened": false,
@@ -246,9 +217,9 @@
   },
   "blockers": [],
   "strengths": [
-    "Hervorragende quellengestützte Faktenbasis mit direktem Bezug zu DWD, WHO, AP und Reuters.",
-    "Klare, prägnante Struktur mit sofortigem Nutzwert für den Zuschauer.",
-    "Saubere plattformspezifische Anpassungen für YouTube und TikTok."
+    "Hervorragende faktenbasierte Untermauerung durch verifizierte Quellen (Reuters, AP, DWD, WHO).",
+    "Saubere Struktur mit klarem Nutzen und passgenauen Handlungsanweisungen für den Zuschauer.",
+    "Plattformgerechte Ausspielung für YouTube Shorts und TikTok."
   ],
   "repair_instructions": [],
   "providers": {
