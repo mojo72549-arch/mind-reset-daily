@@ -3,13 +3,13 @@
   "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
   "passed": true,
   "scores": {
-    "factual_accuracy": 95,
-    "pronunciation": 98,
+    "factual_accuracy": 100,
+    "pronunciation": 100,
     "marketing": 90,
-    "sales": 92,
-    "platform_fit": 90,
+    "sales": 90,
+    "platform_fit": 95,
     "visual": 95,
-    "overall": 94
+    "overall": 95
   },
   "thresholds": {
     "factual_accuracy": 90,
@@ -24,14 +24,19 @@
     "youtube_shorts": {
       "platform": "youtube_shorts",
       "passed": true,
-      "expected_spoken_text": "An Bruchzonen sitzen Gesteinsblöcke lange fest und rutschen dann plötzlich gegeneinander. Die Erdplatten drücken weiter. Spannung baut sich auf, bis der Widerstand plötzlich nachgibt. Besonders gefährdet sind Menschen in Regionen mit aktiven Bruchzonen. Für dich: Stärke und Schaden hängen auch von Tiefe, Untergrund und Bauweise ab. Nutze Warnungen und Vorsorgehinweise offizieller Erdbebendienste statt Vorhersagegerüchten. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "An Bruchzonen sitzen Gesteinsblöcke lange fest und rutschen dann plötzlich gegeneinander. Die Erdplatten drücken weiter. Spannung baut sich auf, bis der Widerstand plötzlich nachgibt. Besonders gefährdet sind Menschen in Regionen mit aktiven Bruchzonen. Für dich Stärke und Schaden hängen auch von Tiefe, Untergrund und Bauweise ab. Nutze Warnungen und Vorsorgehinweise offizieller Erdbebendienste statt Vorhersagegerüchten. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "similarity": 1.0,
-      "average_logprob": -0.0705,
+      "expected_spoken_text": "Deutschland beendet die EM mit einundzwanzig Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Abonniere Tayvorik für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "Deutschland beendet die EM mit 21 Medaillen, 6 Gold, Rang 3. Weil Großbritannien 9 Gold hatte und Deutschland 6, steht Deutschland auf Rang 3. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Abonniere Taivorik für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9825,
+      "average_logprob": -0.0827,
       "critical_terms": [
         {
+          "source": "21",
+          "spoken": "einundzwanzig",
+          "kind": "number"
+        },
+        {
           "source": "TAYVORIQ",
-          "spoken": "den Kanal",
+          "spoken": "Tayvorik",
           "kind": "pronunciation_map"
         }
       ],
@@ -39,29 +44,36 @@
       "blockers": [],
       "transcription_model": "whisper-large-v3",
       "strict_number_audit": {
-        "required": false,
-        "visible_script": "An Bruchzonen sitzen Gesteinsblöcke lange fest und rutschen dann plötzlich gegeneinander. Die Erdplatten drücken weiter. Spannung baut sich auf, bis der Widerstand plötzlich nachgibt. Besonders gefährdet sind Menschen in Regionen mit aktiven Bruchzonen. Für dich: Stärke und Schaden hängen auch von Tiefe, Untergrund und Bauweise ab. Nutze Warnungen und Vorsorgehinweise offizieller Erdbebendienste statt Vorhersagegerüchten. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "An Bruchzonen sitzen Gesteinsblöcke lange fest und rutschen dann plötzlich gegeneinander. Die Erdplatten drücken weiter. Spannung baut sich auf, bis der Widerstand plötzlich nachgibt. Besonders gefährdet sind Menschen in Regionen mit aktiven Bruchzonen. Für dich: Stärke und Schaden hängen auch von Tiefe, Untergrund und Bauweise ab. Nutze Warnungen und Vorsorgehinweise offizieller Erdbebendienste statt Vorhersagegerüchten. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "number_replacements": {},
+        "required": true,
+        "visible_script": "Deutschland beendet die EM mit 21 Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Deutschland beendet die EM mit einundzwanzig Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Abonniere Tayvorik für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {
+          "21": "einundzwanzig"
+        },
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 1.0,
+      "raw_similarity_before_safe_normalization": 0.9825,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "An Bruchzonen sitzen Gesteinsblöcke lange fest und rutschen dann plötzlich gegeneinander. Die Erdplatten drücken weiter. Spannung baut sich auf, bis der Widerstand plötzlich nachgibt. Besonders gefährdet sind Menschen in Regionen mit aktiven Bruchzonen. Für dich: Stärke und Schaden hängen auch von Tiefe, Untergrund und Bauweise ab. Nutze Warnungen und Vorsorgehinweise offizieller Erdbebendienste statt Vorhersagegerüchten. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "An Bruchzonen sitzen Gesteinsblöcke lange fest und rutschen dann plötzlich gegeneinander. Die Erdplatten drücken weiter. Spannung baut sich auf, bis der Widerstand plötzlich nachgibt. Besonders gefährdet sind Menschen in Regionen mit aktiven Bruchzonen. Für dich Stärke und Schaden hängen auch von Tiefe, Untergrund und Bauweise ab. Nutze Warnungen und Vorsorgehinweise offizieller Erdbebendienste statt Vorhersagegerüchten. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte."
+      "normalized_expected_spoken_text": "Deutschland beendet die EM mit einundzwanzig Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Abonniere Tayvorik für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Deutschland beendet die EM mit 21 Medaillen, 6 Gold, Rang 3. Weil Großbritannien 9 Gold hatte und Deutschland 6, steht Deutschland auf Rang 3. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Abonniere Taivorik für verifizierte Einordnung und konkrete Schritte."
     },
     "tiktok": {
       "platform": "tiktok",
       "passed": true,
-      "expected_spoken_text": "An Bruchzonen sitzen Gesteinsblöcke lange fest und rutschen dann plötzlich gegeneinander. Die Erdplatten drücken weiter. Spannung baut sich auf, bis der Widerstand plötzlich nachgibt. Besonders gefährdet sind Menschen in Regionen mit aktiven Bruchzonen. Für dich: Stärke und Schaden hängen auch von Tiefe, Untergrund und Bauweise ab. Nutze Warnungen und Vorsorgehinweise offizieller Erdbebendienste statt Vorhersagegerüchten. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "An Bruchzonen sitzen Gesteinsblöcke lange fest und rutschen dann plötzlich gegeneinander. Die Erdplatten drücken weiter. Spannung baut sich auf, bis der Widerstand plötzlich nachgibt. Besonders gefährdet sind Menschen in Regionen mit aktiven Bruchzonen. Für dich Stärke und Schaden hängen auch von Tiefe unter Grund und Bauweise ab. Nutze Warnungen und Vorsorgehinweise offizieller Erdbebendienste statt Vorhersagegerüchten. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "similarity": 0.9764,
-      "average_logprob": -0.0539,
+      "expected_spoken_text": "Deutschland beendet die EM mit einundzwanzig Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Folge Tayvorik für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "Deutschland beendet die EM mit 21 Medaillen, 6 Gold, Rang 3. Weil Großbritannien 9 Gold hatte und Deutschland 6, steht Deutschland auf Rang 3. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Folge Tauvorik für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9825,
+      "average_logprob": -0.1153,
       "critical_terms": [
         {
+          "source": "21",
+          "spoken": "einundzwanzig",
+          "kind": "number"
+        },
+        {
           "source": "TAYVORIQ",
-          "spoken": "dem Kanal",
+          "spoken": "Tayvorik",
           "kind": "pronunciation_map"
         }
       ],
@@ -69,98 +81,97 @@
       "blockers": [],
       "transcription_model": "whisper-large-v3",
       "strict_number_audit": {
-        "required": false,
-        "visible_script": "An Bruchzonen sitzen Gesteinsblöcke lange fest und rutschen dann plötzlich gegeneinander. Die Erdplatten drücken weiter. Spannung baut sich auf, bis der Widerstand plötzlich nachgibt. Besonders gefährdet sind Menschen in Regionen mit aktiven Bruchzonen. Für dich: Stärke und Schaden hängen auch von Tiefe, Untergrund und Bauweise ab. Nutze Warnungen und Vorsorgehinweise offizieller Erdbebendienste statt Vorhersagegerüchten. Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "An Bruchzonen sitzen Gesteinsblöcke lange fest und rutschen dann plötzlich gegeneinander. Die Erdplatten drücken weiter. Spannung baut sich auf, bis der Widerstand plötzlich nachgibt. Besonders gefährdet sind Menschen in Regionen mit aktiven Bruchzonen. Für dich: Stärke und Schaden hängen auch von Tiefe, Untergrund und Bauweise ab. Nutze Warnungen und Vorsorgehinweise offizieller Erdbebendienste statt Vorhersagegerüchten. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "number_replacements": {},
+        "required": true,
+        "visible_script": "Deutschland beendet die EM mit 21 Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Deutschland beendet die EM mit einundzwanzig Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Folge Tayvorik für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {
+          "21": "einundzwanzig"
+        },
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9764,
+      "raw_similarity_before_safe_normalization": 0.9825,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "An Bruchzonen sitzen Gesteinsblöcke lange fest und rutschen dann plötzlich gegeneinander. Die Erdplatten drücken weiter. Spannung baut sich auf, bis der Widerstand plötzlich nachgibt. Besonders gefährdet sind Menschen in Regionen mit aktiven Bruchzonen. Für dich: Stärke und Schaden hängen auch von Tiefe, Untergrund und Bauweise ab. Nutze Warnungen und Vorsorgehinweise offizieller Erdbebendienste statt Vorhersagegerüchten. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "An Bruchzonen sitzen Gesteinsblöcke lange fest und rutschen dann plötzlich gegeneinander. Die Erdplatten drücken weiter. Spannung baut sich auf, bis der Widerstand plötzlich nachgibt. Besonders gefährdet sind Menschen in Regionen mit aktiven Bruchzonen. Für dich Stärke und Schaden hängen auch von Tiefe unter Grund und Bauweise ab. Nutze Warnungen und Vorsorgehinweise offizieller Erdbebendienste statt Vorhersagegerüchten. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte."
+      "normalized_expected_spoken_text": "Deutschland beendet die EM mit einundzwanzig Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Folge Tayvorik für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Deutschland beendet die EM mit 21 Medaillen, 6 Gold, Rang 3. Weil Großbritannien 9 Gold hatte und Deutschland 6, steht Deutschland auf Rang 3. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Folge Tauvorik für verifizierte Einordnung und konkrete Schritte."
     }
   },
   "marketing_review": {
     "factual_accuracy": {
-      "score": 95.0,
+      "score": 100.0,
       "blockers": [],
       "findings": [
-        "Alle getroffenen Tatsachenbehauptungen (Plattenbewegung, verhakte Gesteinsblöcke, Spannung, Reibung, Einfluss von Tiefe/Untergrund/Bauweise) entsprechen exakt den bereitgestellten Quellen und dem editorial_context."
+        "Alle Aussagen zur Medaillenbilanz (21 Medaillen, 6 Gold, Rang 3) sowie dem Vergleich zu Großbritannien (9 Gold, Rang 2) sind vollständig durch die verifizierte Quellenbasis gedeckt."
       ]
     },
     "pronunciation_interpretation": {
-      "score": 92.0,
+      "score": 95.0,
       "blockers": [],
       "findings": [
-        "Die Whisper-Prüfung bestätigt eine hohe inhaltliche Übereinstimmung (Similarity über 0.97 für beide Plattformen).",
-        "Kleine Abweichungen wie 'unter Grund' statt 'Untergrund' im TikTok-Skript sind minimal und beeinträchtigen die Verständlichkeit nicht."
+        "Das Audio-Transkript stimmt mit einer Ähnlichkeit von 98,25 % hervorragend mit dem Skript überein.",
+        "Zahlen und Markennamen sind verständlich und ohne sinnentstellende Abweichungen umgesetzt."
       ]
     },
     "marketing_effectiveness": {
       "score": 90.0,
       "blockers": [],
       "findings": [
-        "Starker, faktenbasierter Hook in den ersten Sekunden, der sofort die Kernfrage klärt ('An Bruchzonen sitzen Gesteinsblöcke lange fest...').",
-        "Guter Zuschauer-Nutzen durch klare Einordnung und den Verweis auf offizielle Dienste statt Gerüchte."
+        "Der Hook stellt direkt die Kernfakten dar und weckt Neugier bezüglich des Medaillen-Rang-Widerspruchs.",
+        "Der Zuschauer-Nutzen ('Prüfe bei Medaillentabellen zuerst Gold...') ist konkret und sofort verständlich."
       ]
     },
     "sales_effectiveness": {
-      "score": 92.0,
-      "blockers": [],
-      "findings": [
-        "Plattformgerechte CTAs ('Abonniere TAYVORIQ' für YouTube, 'Folge TAYVORIQ' für TikTok).",
-        "Der Grund für das Abo ist klar an verifizierte Einordnung und konkrete Schritte gekoppelt, ohne manipulativen Druck."
-      ]
-    },
-    "platform_fit": {
       "score": 90.0,
       "blockers": [],
       "findings": [
-        "YouTube Shorts und TikTok-Varianten sind sauber differenziert (Titel vs. Caption, Abo vs. Folge).",
-        "Hashtags und Metadaten sind plattformgerecht und thematisch passend eingebunden."
+        "Die Handlungsaufforderung begründet den Abo-/Follow-Anreiz ehrlich mit verifizierter Einordnung ohne künstlichen Druck."
       ]
     },
-    "overall_score": 92.0,
+    "platform_fit": {
+      "score": 95.0,
+      "blockers": [],
+      "findings": [
+        "Korrekt plattformspezifische Unterscheidung zwischen YouTube Shorts ('Abonniere') und TikTok ('Folge').",
+        "Metadaten, Beschreibung und Hashtags sind zielgruppengerecht aufbereitet."
+      ]
+    },
+    "overall_score": 94.0,
     "approval_recommendation": "PASS",
     "blockers": [],
     "strengths": [
-      "Exakte Einhaltung der wissenschaftlichen Faktenbasis (USGS / GFZ).",
-      "Starke serielle Einbindung als Teil 2 ('world-forces-v1') mit sauberem Übergang zur nächsten Folge.",
-      "Hohe Audio- und Textkonsistenz laut Whisper-Prüfung."
+      "Faktenbasierte und leicht verständliche Aufklärung des Scheinwiderspruchs in der Medaillentabelle.",
+      "Vorbildliche plattformgerechte Differenzierung der Call-to-Action.",
+      "Hohe Audio-Übereinstimmung und saubere Skriptstruktur."
     ],
     "repair_instructions": [],
     "score_scale_normalized": true,
     "provider_model_fallback": {
-      "selected_model": "gemini-3.5-flash-lite",
+      "selected_model": "gemini-3.6-flash",
       "attempted_models": [
         "gemini-3.5-flash",
-        "gemini-3.6-flash",
-        "gemini-3.5-flash-lite"
+        "gemini-3.6-flash"
       ],
       "provider_failures_before_success": [
-        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 49.075016307s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.Help\", \"links\": [ { \"description\": \"Learn more about Gemini API quotas\", \"url\": \"https://",
-        "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 48.912392509s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.Help\", \"links\": [ { \"description\": \"Learn more about Gemini API quotas\", \"url\": \"https://"
+        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 47.487886148s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.Help\", \"links\": [ { \"description\": \"Learn more about Gemini API quotas\", \"url\": \"https://"
       ],
       "same_prompt": true,
       "quality_gate_weakened": false
     }
   },
   "visual_review": {
-    "score": 95,
+    "score": "95",
     "passed": true,
     "blockers": [],
     "findings": [
-      "Klare und verständliche visuelle Darstellung der plattentektonischen Prozesse und Bruchzonen.",
-      "Hervorragende mobile Lesbarkeit durch kontrastreiche, gut dimensionierte Textboxen im unteren Bereich.",
-      "Konsistentes Branding mit klarem Wiedererkennungswert über alle Frames hinweg.",
-      "Logische Abfolge von der Ursache (blockierte Bruchzone) über den Auslöser (plötzlicher Bruch) bis zur Auswirkung an der Oberfläche."
+      "Klares, hochauflösendes Ausgangsmaterial mit sportlichem Bezug passend zum Thema",
+      "Untertitel sind kontrastreich, gut lesbar und verdecken keine wichtigen Bildelemente",
+      "Gezielte Call-to-Actions (Abonniere/Folge TAYVORIQ) plattformgerecht angepasst",
+      "Keine visuellen Renderfehler oder störende Artefakte erkennbar"
     ],
     "marketing_visual_strengths": [
-      "Hohe visuelle Glaubwürdigkeit und präzise Informationsvermittlung ohne Ablenkung.",
-      "Starke Retention-Wirkung durch klare Kapitelüberschriften ('BLOCKIERTE BRUCHZONE', 'PLÖTZLICHER BRUCH', 'AUSWIRKUNG AN DER OBERFLÄCHE').",
-      "Professionelle Animationen mit Fokus auf das Wesentliche, ideal für mobile Plattformen wie YouTube Shorts und TikTok."
+      "Starke emotionale Einstiegsszene mit hoher Retention-Wirkung",
+      "Perfektes Seitenverhältnis (9:16) für Mobile-First-Nutzung",
+      "Klare Markenplatzierung im End-Card-Bereich"
     ],
     "provider": "gemini:gemini-3.5-flash-lite",
     "reviewed_frames": [
@@ -179,8 +190,8 @@
         "gemini-3.5-flash-lite"
       ],
       "provider_failures_before_success": [
-        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 44.381036913s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"",
-        "gemini-3.6-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 42.134005741s.\", \"status\": \"RESOURCE_EXHAUSTED\", \""
+        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 12.439701116s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"",
+        "gemini-3.6-flash:TRANSIENT_PROVIDER_FAILURE:provider-failed: Gemini Visual-Audit HTTP 503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } }"
       ],
       "same_frames_and_prompt": true,
       "quality_gate_weakened": false,
@@ -221,13 +232,13 @@
   },
   "blockers": [],
   "strengths": [
-    "Exakte Einhaltung der wissenschaftlichen Faktenbasis (USGS / GFZ).",
-    "Starke serielle Einbindung als Teil 2 ('world-forces-v1') mit sauberem Übergang zur nächsten Folge.",
-    "Hohe Audio- und Textkonsistenz laut Whisper-Prüfung."
+    "Faktenbasierte und leicht verständliche Aufklärung des Scheinwiderspruchs in der Medaillentabelle.",
+    "Vorbildliche plattformgerechte Differenzierung der Call-to-Action.",
+    "Hohe Audio-Übereinstimmung und saubere Skriptstruktur."
   ],
   "repair_instructions": [],
   "providers": {
-    "marketing": "gemini:gemini-3.5-flash-lite",
+    "marketing": "gemini:gemini-3.6-flash",
     "visual": "gemini:gemini-3.5-flash-lite",
     "audio": "groq:whisper-large-v3-objective-score",
     "conversion": "deterministic-cta-benefit-gate-v1"
