@@ -1,9 +1,11 @@
 {
   "source_run_id": "32122612482",
   "repair_run_id": "32181706680",
-  "state": "RUNNING",
+  "state": "FAILED",
   "repair": "voice_only_old_accepted_reference",
   "visual_master_reused": true,
   "script_reused": true,
-  "pitch_shift_forbidden": true
+  "old_accepted_reference_required": true,
+  "pitch_shift_forbidden": true,
+  "telegram_delivery_attempted": true
 }
