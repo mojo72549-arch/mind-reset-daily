@@ -1,0 +1,13 @@
+{
+  "state": "DELIVERED",
+  "delivered_at": "2026-08-19T19:33:15.022254+00:00",
+  "telegram_message_id": 1261,
+  "telegram_chat_id": "8719044323",
+  "source_master_run": "32122612482",
+  "source_repair_run": "32183234839",
+  "source_file": "tayvoriq/voice-repairs/32122612482-v3/repaired_youtube.mp4",
+  "delivery_workflow_run": "32293642986",
+  "delivery_path": "tayvoriq-control-plane -> Telegram Bot sendVideo",
+  "quality_revalidation_skipped": true,
+  "reason": "already validated repaired MP4 redelivery only"
+}
