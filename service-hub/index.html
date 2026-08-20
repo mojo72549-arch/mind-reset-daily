@@ -12,12 +12,12 @@
 <script>
 (async function(){
   try{
-    var version='20260820-v6';
+    var version='20260820-v6-1';
     var res=await fetch('./legacy.html?v='+version,{cache:'no-store'});
     if(!res.ok)throw new Error('HTTP '+res.status);
     var html=await res.text();
     html=html.replace('</head>','<link rel="stylesheet" href="./ux-v5.css?v='+version+'"><link rel="stylesheet" href="./ux-v6.css?v='+version+'"><link rel="stylesheet" href="./ux-v6-context.css?v='+version+'"></head>');
-    var patch='<scr'+'ipt src="./core.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v5.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-context.js?v='+version+'"></scr'+'ipt>';
+    var patch='<scr'+'ipt src="./core.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v5.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-context.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-admin-route.js?v='+version+'"></scr'+'ipt>';
     html=html.replace('</body>',patch+'</body>');
     document.open();document.write(html);document.close();
   }catch(e){
