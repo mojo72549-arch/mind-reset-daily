@@ -1,0 +1,13 @@
+{
+  "name": "service-hub-quality-tests",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "test:unit": "node --test unit.test.cjs",
+    "test:e2e": "playwright test",
+    "test": "npm run test:unit && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
