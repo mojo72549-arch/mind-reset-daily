@@ -1,0 +1,2 @@
+.ux-admin-mobile-link{display:none;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff;border-radius:11px;padding:9px 11px;font-weight:800;white-space:nowrap}
+@media(max-width:850px){.ux-admin-mobile-link{display:inline-flex;align-items:center;justify-content:center;margin-left:auto}.top>.nav.desktop{display:none!important}}

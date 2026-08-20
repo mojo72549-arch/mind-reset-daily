@@ -63,6 +63,40 @@ test('Admin has the administration area', async ({ page }) => {
   await expect(page.locator('.nav.desktop button').filter({ hasText: 'Administration' })).toHaveCount(1);
 });
 
+test('Admin area is system configuration, not an operational customer or invoice screen', async ({ page }) => {
+  await login(page, 'admin');
+  await page.evaluate(() => SH.go('admin'));
+  await expect(page.locator('.ux-admin-title h2')).toHaveText('Administration');
+  await expect(page.getByText('Hier werden ausschließlich globale Einstellungen des Service Hub verwaltet')).toBeVisible();
+  await expect(page.locator('#adm-companyName')).toHaveValue('Rohr- & Kanaltechnik Winser');
+  await expect(page.locator('#adm-iban')).toHaveValue('DE78 6009 0300 0424 6090 02');
+  await expect(page.locator('#adm-vat')).toHaveValue('19');
+  await expect(page.getByRole('heading', { name: 'Leistungskatalog' })).toBeVisible();
+  await expect(page.getByText('Kundenkonditionen')).toHaveCount(0);
+  await expect(page.getByText('Musterkunde Stuttgart GmbH')).toHaveCount(0);
+});
+
+test('Branded invoice uses logo and values from the admin configuration', async ({ page }) => {
+  await login(page, 'admin');
+  await page.evaluate(() => SH.go('admin'));
+  await expect(page.locator('#adm-companyName')).toBeVisible();
+  await page.locator('#adm-companyName').fill('Winser Test Branding');
+  await page.locator('#adm-paymentText').fill('Test-Zahlungshinweis aus Administration.');
+  await page.getByRole('button', { name: 'Einstellungen speichern' }).click();
+  await expect(page.locator('.ux-admin-saved')).toContainText('Einstellungen gespeichert');
+
+  await page.evaluate(() => SH.go('invoices'));
+  await page.getByRole('button', { name: '26175' }).first().click();
+  await page.evaluate(() => { window.print = () => {}; });
+  await page.getByRole('button', { name: 'PDF / Drucken' }).click();
+
+  await expect(page.locator('.invoice-doc-v6')).toBeVisible();
+  await expect(page.locator('.invoice-brand-name')).toHaveText('Winser Test Branding');
+  await expect(page.locator('.invoice-brand-v6 img')).toHaveAttribute('src', /rokatech-winser\.de/);
+  await expect(page.locator('.invoice-payment-v6')).toContainText('Test-Zahlungshinweis aus Administration.');
+  await expect(page.locator('.invoice-totals-v6')).toBeVisible();
+});
+
 test('Report service can be added, deleted and restored with Undo', async ({ page }) => {
   await login(page, 'dome');
   await openSeedReport(page);
