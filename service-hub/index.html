@@ -12,11 +12,12 @@
 <script>
 (async function(){
   try{
-    var res=await fetch('./legacy.html?v=20260820',{cache:'no-store'});
+    var version='20260820-v5';
+    var res=await fetch('./legacy.html?v='+version,{cache:'no-store'});
     if(!res.ok)throw new Error('HTTP '+res.status);
     var html=await res.text();
-    html=html.replace('</head>','<link rel="stylesheet" href="./ux-v4.css?v=20260820-2"></head>');
-    var patch='<scr'+'ipt src="./ux-v4.js?v=20260820-2"></scr'+'ipt>';
+    html=html.replace('</head>','<link rel="stylesheet" href="./ux-v5.css?v='+version+'"></head>');
+    var patch='<scr'+'ipt src="./core.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v5.js?v='+version+'"></scr'+'ipt>';
     html=html.replace('</body>',patch+'</body>');
     document.open();document.write(html);document.close();
   }catch(e){
