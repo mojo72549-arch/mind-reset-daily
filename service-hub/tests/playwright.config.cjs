@@ -2,7 +2,7 @@ const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
   testDir: '.',
-  testMatch: ['browser.spec.cjs'],
+  testMatch: ['00-admin-diagnostic.spec.cjs', 'browser.spec.cjs'],
   timeout: 30_000,
   expect: { timeout: 8_000 },
   fullyParallel: false,
