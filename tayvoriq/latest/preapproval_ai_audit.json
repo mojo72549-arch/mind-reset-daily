@@ -3,13 +3,13 @@
   "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
   "passed": true,
   "scores": {
-    "factual_accuracy": 100,
-    "pronunciation": 100,
+    "factual_accuracy": 95,
+    "pronunciation": 98,
     "marketing": 90,
-    "sales": 90,
+    "sales": 92,
     "platform_fit": 95,
     "visual": 95,
-    "overall": 95
+    "overall": 94
   },
   "thresholds": {
     "factual_accuracy": 90,
@@ -24,19 +24,24 @@
     "youtube_shorts": {
       "platform": "youtube_shorts",
       "passed": true,
-      "expected_spoken_text": "Deutschland beendet die EM mit einundzwanzig Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Abonniere Tayvorik für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "Deutschland beendet die EM mit 21 Medaillen, 6 Gold, Rang 3. Weil Großbritannien 9 Gold hatte und Deutschland 6, steht Deutschland auf Rang 3. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Abonniere Taivorik für verifizierte Einordnung und konkrete Schritte.",
-      "similarity": 0.9825,
-      "average_logprob": -0.0827,
+      "expected_spoken_text": "Brent schloss am neunzehn. August bei einundneunzig Komma sechs zwei US-Dollar je Barrel. Wegen möglicher Transportstörungen durch Hormus steigen die eingepreisten Versorgungsrisiken am Ölmarkt. Betroffen sind Transporteure, Unternehmen und Verbraucher in Deutschland. Für dich können Benzin und Diesel später teurer werden. Prüfe Rohölpreis, Eurokurs und Tankstellenpreise; Brent allein reicht nicht. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "Brent schloss am 19. August bei 91,62 US-Dollar je Barrel. Wegen möglicher Transportstörungen durch Hormus steigen die eingepreisten Versorgungsrisiken am Ölmarkt. Betroffen sind Transporteure, Unternehmen und Verbraucher in Deutschland. Für dich können Benzin und diese später teurer werden. Prüfe Rohölpreis, Eurokurs und Tankstellenpreise. Brent allein reicht nicht. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9833,
+      "average_logprob": -0.0987,
       "critical_terms": [
         {
-          "source": "21",
-          "spoken": "einundzwanzig",
+          "source": "19",
+          "spoken": "neunzehn",
+          "kind": "number"
+        },
+        {
+          "source": "91,62",
+          "spoken": "einundneunzig Komma sechs zwei",
           "kind": "number"
         },
         {
           "source": "TAYVORIQ",
-          "spoken": "Tayvorik",
+          "spoken": "den Kanal",
           "kind": "pronunciation_map"
         }
       ],
@@ -45,35 +50,41 @@
       "transcription_model": "whisper-large-v3",
       "strict_number_audit": {
         "required": true,
-        "visible_script": "Deutschland beendet die EM mit 21 Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "Deutschland beendet die EM mit einundzwanzig Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Abonniere Tayvorik für verifizierte Einordnung und konkrete Schritte.",
+        "visible_script": "Brent schloss am 19. August bei 91,62 US-Dollar je Barrel. Wegen möglicher Transportstörungen durch Hormus steigen die eingepreisten Versorgungsrisiken am Ölmarkt. Betroffen sind Transporteure, Unternehmen und Verbraucher in Deutschland. Für dich können Benzin und Diesel später teurer werden. Prüfe Rohölpreis, Eurokurs und Tankstellenpreise; Brent allein reicht nicht. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Brent schloss am neunzehn. August bei einundneunzig Komma sechs zwei US-Dollar je Barrel. Wegen möglicher Transportstörungen durch Hormus steigen die eingepreisten Versorgungsrisiken am Ölmarkt. Betroffen sind Transporteure, Unternehmen und Verbraucher in Deutschland. Für dich können Benzin und Diesel später teurer werden. Prüfe Rohölpreis, Eurokurs und Tankstellenpreise; Brent allein reicht nicht. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
         "number_replacements": {
-          "21": "einundzwanzig"
+          "19": "neunzehn",
+          "91,62": "einundneunzig Komma sechs zwei"
         },
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9825,
+      "raw_similarity_before_safe_normalization": 0.9833,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "Deutschland beendet die EM mit einundzwanzig Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Abonniere Tayvorik für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "Deutschland beendet die EM mit 21 Medaillen, 6 Gold, Rang 3. Weil Großbritannien 9 Gold hatte und Deutschland 6, steht Deutschland auf Rang 3. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Abonniere Taivorik für verifizierte Einordnung und konkrete Schritte."
+      "normalized_expected_spoken_text": "Brent schloss am neunzehn. August bei einundneunzig Komma sechs zwei US-Dollar je Barrel. Wegen möglicher Transportstörungen durch Hormus steigen die eingepreisten Versorgungsrisiken am Ölmarkt. Betroffen sind Transporteure, Unternehmen und Verbraucher in Deutschland. Für dich können Benzin und Diesel später teurer werden. Prüfe Rohölpreis, Eurokurs und Tankstellenpreise; Brent allein reicht nicht. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Brent schloss am 19. August bei 91,62 US-Dollar je Barrel. Wegen möglicher Transportstörungen durch Hormus steigen die eingepreisten Versorgungsrisiken am Ölmarkt. Betroffen sind Transporteure, Unternehmen und Verbraucher in Deutschland. Für dich können Benzin und diese später teurer werden. Prüfe Rohölpreis, Eurokurs und Tankstellenpreise. Brent allein reicht nicht. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte."
     },
     "tiktok": {
       "platform": "tiktok",
       "passed": true,
-      "expected_spoken_text": "Deutschland beendet die EM mit einundzwanzig Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Folge Tayvorik für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "Deutschland beendet die EM mit 21 Medaillen, 6 Gold, Rang 3. Weil Großbritannien 9 Gold hatte und Deutschland 6, steht Deutschland auf Rang 3. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Folge Tauvorik für verifizierte Einordnung und konkrete Schritte.",
-      "similarity": 0.9825,
-      "average_logprob": -0.1153,
+      "expected_spoken_text": "Brent schloss am neunzehn. August bei einundneunzig Komma sechs zwei US-Dollar je Barrel. Wegen möglicher Transportstörungen durch Hormus steigen die eingepreisten Versorgungsrisiken am Ölmarkt. Betroffen sind Transporteure, Unternehmen und Verbraucher in Deutschland. Für dich können Benzin und Diesel später teurer werden. Prüfe Rohölpreis, Eurokurs und Tankstellenpreise; Brent allein reicht nicht. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "Brennen schloss am 19. August bei 91,62 US-Dollar je Barrel. Wegen möglicher Transportstörungen durch Hormus steigen die eingepreisten Versorgungsrisiken am Ölmarkt. Betroffen sind transportteure Unternehmen und Verbraucher in Deutschland. Für dich können Benzin und Diesel später teurer werden. Prüfe Rohölpreis, Eurokurs und Tankstellenpreise. Brennen allein reicht nicht. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.95,
+      "average_logprob": -0.0776,
       "critical_terms": [
         {
-          "source": "21",
-          "spoken": "einundzwanzig",
+          "source": "19",
+          "spoken": "neunzehn",
+          "kind": "number"
+        },
+        {
+          "source": "91,62",
+          "spoken": "einundneunzig Komma sechs zwei",
           "kind": "number"
         },
         {
           "source": "TAYVORIQ",
-          "spoken": "Tayvorik",
+          "spoken": "dem Kanal",
           "kind": "pronunciation_map"
         }
       ],
@@ -82,66 +93,70 @@
       "transcription_model": "whisper-large-v3",
       "strict_number_audit": {
         "required": true,
-        "visible_script": "Deutschland beendet die EM mit 21 Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "Deutschland beendet die EM mit einundzwanzig Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Folge Tayvorik für verifizierte Einordnung und konkrete Schritte.",
+        "visible_script": "Brent schloss am 19. August bei 91,62 US-Dollar je Barrel. Wegen möglicher Transportstörungen durch Hormus steigen die eingepreisten Versorgungsrisiken am Ölmarkt. Betroffen sind Transporteure, Unternehmen und Verbraucher in Deutschland. Für dich können Benzin und Diesel später teurer werden. Prüfe Rohölpreis, Eurokurs und Tankstellenpreise; Brent allein reicht nicht. Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Brent schloss am neunzehn. August bei einundneunzig Komma sechs zwei US-Dollar je Barrel. Wegen möglicher Transportstörungen durch Hormus steigen die eingepreisten Versorgungsrisiken am Ölmarkt. Betroffen sind Transporteure, Unternehmen und Verbraucher in Deutschland. Für dich können Benzin und Diesel später teurer werden. Prüfe Rohölpreis, Eurokurs und Tankstellenpreise; Brent allein reicht nicht. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
         "number_replacements": {
-          "21": "einundzwanzig"
+          "19": "neunzehn",
+          "91,62": "einundneunzig Komma sechs zwei"
         },
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9825,
+      "raw_similarity_before_safe_normalization": 0.95,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "Deutschland beendet die EM mit einundzwanzig Medaillen, sechs Gold, Rang drei. Weil Großbritannien neun Gold hatte und Deutschland sechs, steht Deutschland auf Rang drei. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Folge Tayvorik für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "Deutschland beendet die EM mit 21 Medaillen, 6 Gold, Rang 3. Weil Großbritannien 9 Gold hatte und Deutschland 6, steht Deutschland auf Rang 3. Betroffen sind Deutschlands Leichtathleten und ihre Fans. Für dich erklärt das den Widerspruch zwischen Medaillen und Rang. Prüfe bei Medaillentabellen zuerst Gold, dann die Gesamtzahl. Folge Tauvorik für verifizierte Einordnung und konkrete Schritte."
+      "normalized_expected_spoken_text": "Brent schloss am neunzehn. August bei einundneunzig Komma sechs zwei US-Dollar je Barrel. Wegen möglicher Transportstörungen durch Hormus steigen die eingepreisten Versorgungsrisiken am Ölmarkt. Betroffen sind Transporteure, Unternehmen und Verbraucher in Deutschland. Für dich können Benzin und Diesel später teurer werden. Prüfe Rohölpreis, Eurokurs und Tankstellenpreise; Brent allein reicht nicht. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Brennen schloss am 19. August bei 91,62 US-Dollar je Barrel. Wegen möglicher Transportstörungen durch Hormus steigen die eingepreisten Versorgungsrisiken am Ölmarkt. Betroffen sind transportteure Unternehmen und Verbraucher in Deutschland. Für dich können Benzin und Diesel später teurer werden. Prüfe Rohölpreis, Eurokurs und Tankstellenpreise. Brennen allein reicht nicht. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte."
     }
   },
   "marketing_review": {
     "factual_accuracy": {
-      "score": 100.0,
-      "blockers": [],
-      "findings": [
-        "Alle Aussagen zur Medaillenbilanz (21 Medaillen, 6 Gold, Rang 3) sowie dem Vergleich zu Großbritannien (9 Gold, Rang 2) sind vollständig durch die verifizierte Quellenbasis gedeckt."
-      ]
-    },
-    "pronunciation_interpretation": {
       "score": 95.0,
       "blockers": [],
       "findings": [
-        "Das Audio-Transkript stimmt mit einer Ähnlichkeit von 98,25 % hervorragend mit dem Skript überein.",
-        "Zahlen und Markennamen sind verständlich und ohne sinnentstellende Abweichungen umgesetzt."
+        "Sämtliche Tatsachenbehauptungen (Stichtag 19. August 2026, Brent-Schlusskurs 91,62 USD) sind durch die gelieferten Reuters- und WSJ-Quellen belegt.",
+        "Die Factual Guardrails werden strikt eingehalten: Die Auswirkungen auf deutsche Tankstellenpreise werden korrekt konditional und ohne Eins-zu-eins-Versprechen formuliert."
+      ]
+    },
+    "pronunciation_interpretation": {
+      "score": 92.0,
+      "blockers": [],
+      "findings": [
+        "Die Whisper-Prüfung ist für beide Plattformen bestanden (YouTube Shorts: 98,33 %, TikTok: 95,00 %).",
+        "Leichte Transkriptionsabweichungen auf TikTok ('Brennen' statt 'Brent') beeinträchtigen das Gesamtverständnis im Kontext der auditierte Audio-Prüfung nicht kritisch.",
+        "Erlaubter Marken-Fallback ('den Kanal' / 'dem Kanal') ist konform."
       ]
     },
     "marketing_effectiveness": {
       "score": 90.0,
       "blockers": [],
       "findings": [
-        "Der Hook stellt direkt die Kernfakten dar und weckt Neugier bezüglich des Medaillen-Rang-Widerspruchs.",
-        "Der Zuschauer-Nutzen ('Prüfe bei Medaillentabellen zuerst Gold...') ist konkret und sofort verständlich."
+        "Direkter Hook mit konkreten Zahlen und hoher Alltagsspezifität (Spritpreise in Deutschland).",
+        "Klar verständlicher Zuschauer-Nutzen ('So ordnest du den Ölpreis ohne Panik ein') ohne Reißerischkeit."
       ]
     },
     "sales_effectiveness": {
-      "score": 90.0,
+      "score": 92.0,
       "blockers": [],
       "findings": [
-        "Die Handlungsaufforderung begründet den Abo-/Follow-Anreiz ehrlich mit verifizierter Einordnung ohne künstlichen Druck."
+        "Der Konvertierungspfad ist seriös und begründet den Kanal-Mehrwert klar über verifizierte Einordnung und konkrete Prüfkriterien (Eurokurs, Tankstellenpreise).",
+        "Kein künstlicher Verkaufsdruck."
       ]
     },
     "platform_fit": {
       "score": 95.0,
       "blockers": [],
       "findings": [
-        "Korrekt plattformspezifische Unterscheidung zwischen YouTube Shorts ('Abonniere') und TikTok ('Folge').",
-        "Metadaten, Beschreibung und Hashtags sind zielgruppengerecht aufbereitet."
+        "Plattformgerechte Differenzierung der CTAs ('Abonniere' für YouTube Shorts, 'Folge' für TikTok).",
+        "Vollständige, relevante Metadaten und Hashtags vorhanden."
       ]
     },
-    "overall_score": 94.0,
+    "overall_score": 93.0,
     "approval_recommendation": "PASS",
     "blockers": [],
     "strengths": [
-      "Faktenbasierte und leicht verständliche Aufklärung des Scheinwiderspruchs in der Medaillentabelle.",
-      "Vorbildliche plattformgerechte Differenzierung der Call-to-Action.",
-      "Hohe Audio-Übereinstimmung und saubere Skriptstruktur."
+      "Faktisch exakte und differenzierte Darstellung komplexer Marktmechanismen.",
+      "Plattformspezifisch optimierte Metadaten und Call-to-Actions.",
+      "Hohe Vertrauensbildung durch sachliche Einordnung statt Panikmache."
     ],
     "repair_instructions": [],
     "score_scale_normalized": true,
@@ -152,7 +167,7 @@
         "gemini-3.6-flash"
       ],
       "provider_failures_before_success": [
-        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 47.487886148s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.Help\", \"links\": [ { \"description\": \"Learn more about Gemini API quotas\", \"url\": \"https://"
+        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 53.295870909s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.Help\", \"links\": [ { \"description\": \"Learn more about Gemini API quotas\", \"url\": \"https://"
       ],
       "same_prompt": true,
       "quality_gate_weakened": false
@@ -163,17 +178,16 @@
     "passed": true,
     "blockers": [],
     "findings": [
-      "Klares, hochauflösendes Ausgangsmaterial mit sportlichem Bezug passend zum Thema",
-      "Untertitel sind kontrastreich, gut lesbar und verdecken keine wichtigen Bildelemente",
-      "Gezielte Call-to-Actions (Abonniere/Folge TAYVORIQ) plattformgerecht angepasst",
-      "Keine visuellen Renderfehler oder störende Artefakte erkennbar"
+      "Plattformspezifischer Call-to-Action wurde präzise angepasst ('Abonniere' für YouTube Shorts vs. 'Folge' für TikTok).",
+      "Die Text-Overlays sind durch schattierte Hintergrund-Boxen auf allen Frames optimal lesbar und halten die Safe-Zones ein.",
+      "Keine technischen Renderfehler, Artefakte oder irreführende Bildinhalte erkennbar."
     ],
     "marketing_visual_strengths": [
-      "Starke emotionale Einstiegsszene mit hoher Retention-Wirkung",
-      "Perfektes Seitenverhältnis (9:16) für Mobile-First-Nutzung",
-      "Klare Markenplatzierung im End-Card-Bereich"
+      "Starke visuelle Dramaturgie und narrative Relevanz: Wechsel von der maritimen Rohstoff-Logistik (Hormus-Bezug) über Industriestrukturen bis hin zur lokalen Tankstelle.",
+      "Seriöse, vertrauensbildende Farb- und Bildsprache, die zur Positionierung von TAYVORIQ als verifizierte Informationsquelle passt.",
+      "Hohe mobile Lesbarkeit und klare, unaufdringliche Textgestaltung für schnelle Informationserfassung."
     ],
-    "provider": "gemini:gemini-3.5-flash-lite",
+    "provider": "gemini:gemini-3.6-flash",
     "reviewed_frames": [
       "youtube_shorts-1.jpg",
       "youtube_shorts-2.jpg",
@@ -183,15 +197,13 @@
       "tiktok-3.jpg"
     ],
     "provider_model_fallback": {
-      "selected_model": "gemini-3.5-flash-lite",
+      "selected_model": "gemini-3.6-flash",
       "attempted_models": [
         "gemini-3.5-flash",
-        "gemini-3.6-flash",
-        "gemini-3.5-flash-lite"
+        "gemini-3.6-flash"
       ],
       "provider_failures_before_success": [
-        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 12.439701116s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"",
-        "gemini-3.6-flash:TRANSIENT_PROVIDER_FAILURE:provider-failed: Gemini Visual-Audit HTTP 503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } }"
+        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 3.454428184s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"d"
       ],
       "same_frames_and_prompt": true,
       "quality_gate_weakened": false,
@@ -232,14 +244,14 @@
   },
   "blockers": [],
   "strengths": [
-    "Faktenbasierte und leicht verständliche Aufklärung des Scheinwiderspruchs in der Medaillentabelle.",
-    "Vorbildliche plattformgerechte Differenzierung der Call-to-Action.",
-    "Hohe Audio-Übereinstimmung und saubere Skriptstruktur."
+    "Faktisch exakte und differenzierte Darstellung komplexer Marktmechanismen.",
+    "Plattformspezifisch optimierte Metadaten und Call-to-Actions.",
+    "Hohe Vertrauensbildung durch sachliche Einordnung statt Panikmache."
   ],
   "repair_instructions": [],
   "providers": {
     "marketing": "gemini:gemini-3.6-flash",
-    "visual": "gemini:gemini-3.5-flash-lite",
+    "visual": "gemini:gemini-3.6-flash",
     "audio": "groq:whisper-large-v3-objective-score",
     "conversion": "deterministic-cta-benefit-gate-v1"
   },

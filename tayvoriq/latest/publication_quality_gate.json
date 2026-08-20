@@ -1,8 +1,8 @@
 {
-  "schema_version": 4,
-  "gate_version": "v4-target-scoped-production-mix-plus-independent-chatterbox-proof",
+  "schema_version": 5,
+  "gate_version": "v5-golden-human-voice-plus-production-mix",
   "passed": true,
-  "job_id": "20260818_095613_deutschland-holt-21-em-medaillen-sechs-gold-und-platz-drei-in-europa",
+  "job_id": "20260820_144412_oelpreis-bei-91-62-dollar-was-bedeutet-die-hormus-krise-fuer-deutschlands-spritp",
   "top_level_issues": [],
   "variants": {
     "youtube_shorts": {
@@ -52,5 +52,6 @@
   "preapproval_ai_required": true,
   "spoken_number_proof_required": true,
   "final_media_mix_required": true,
+  "golden_human_voice_required": true,
   "quality_gates_weakened": false
 }
