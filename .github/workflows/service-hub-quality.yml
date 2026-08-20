@@ -1,4 +1,4 @@
-name: Service Hub Quality V6
+name: Service Hub Quality V7
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - main
       - service-hub-quality-v5-tests
       - service-hub-admin-invoice-v6
+      - service-hub-login-hardening-v7
     paths:
       - 'service-hub/**'
       - '.github/workflows/service-hub-quality.yml'
@@ -36,7 +37,9 @@ jobs:
           node --check ../ux-v6.js
           node --check ../ux-v6-context.js
           node --check ../ux-v6-admin-route.js
+          node --check ../auth-v7.js
           node --check browser.spec.cjs
+          node --check auth.spec.cjs
           node --check playwright.config.cjs
       - name: Unit tests
         run: node --test unit.test.cjs
