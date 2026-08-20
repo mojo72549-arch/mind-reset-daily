@@ -1,0 +1,65 @@
+name: Service Hub Quality V5
+
+on:
+  push:
+    branches:
+      - main
+      - service-hub-quality-v5-tests
+    paths:
+      - 'service-hub/**'
+      - '.github/workflows/service-hub-quality.yml'
+  pull_request:
+    paths:
+      - 'service-hub/**'
+      - '.github/workflows/service-hub-quality.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  unit:
+    name: Unit and syntax tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: service-hub/tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JavaScript syntax
+        run: |
+          node --check ../core.js
+          node --check ../ux-v5.js
+          node --check browser.spec.cjs
+          node --check playwright.config.cjs
+      - name: Unit tests
+        run: node --test unit.test.cjs
+
+  frontend:
+    name: Mobile frontend tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: service-hub/tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: service-hub/tests/package.json
+      - name: Install test dependencies
+        run: npm install --no-audit --no-fund
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Run mobile frontend tests
+        run: npx playwright test --config=playwright.config.cjs
+      - name: Upload Playwright report on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: service-hub-playwright-report
+          path: service-hub/tests/playwright-report
+          if-no-files-found: ignore
