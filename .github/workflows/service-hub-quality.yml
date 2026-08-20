@@ -34,6 +34,7 @@ jobs:
           node --check ../core.js
           node --check ../ux-v5.js
           node --check ../ux-v6.js
+          node --check ../ux-v6-context.js
           node --check browser.spec.cjs
           node --check playwright.config.cjs
       - name: Unit tests
