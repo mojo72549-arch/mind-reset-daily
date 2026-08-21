@@ -1,12 +1,10 @@
-name: Service Hub Quality V7
+name: Service Hub Quality V8
 
 on:
   push:
     branches:
       - main
-      - service-hub-quality-v5-tests
-      - service-hub-admin-invoice-v6
-      - service-hub-login-hardening-v7
+      - service-hub-rapport-robust-v8
     paths:
       - 'service-hub/**'
       - '.github/workflows/service-hub-quality.yml'
@@ -37,15 +35,17 @@ jobs:
           node --check ../ux-v6.js
           node --check ../ux-v6-context.js
           node --check ../ux-v6-admin-route.js
+          node --check ../ux-v8-rapport.js
           node --check ../auth-v7.js
           node --check browser.spec.cjs
+          node --check rapport-v8.spec.cjs
           node --check auth.spec.cjs
           node --check playwright.config.cjs
       - name: Unit tests
         run: node --test unit.test.cjs
 
   frontend:
-    name: Mobile frontend tests
+    name: Mobile and desktop frontend tests
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -61,7 +61,7 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
-      - name: Run mobile frontend tests
+      - name: Run mobile and desktop frontend tests
         run: npx playwright test --config=playwright.config.cjs
       - name: Upload Playwright report on failure
         if: failure()

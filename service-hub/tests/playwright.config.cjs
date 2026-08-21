@@ -2,7 +2,7 @@ const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
   testDir: '.',
-  testMatch: ['browser.spec.cjs', 'auth.spec.cjs'],
+  testMatch: ['browser.spec.cjs', 'rapport-v8.spec.cjs', 'auth.spec.cjs'],
   timeout: 30_000,
   expect: { timeout: 8_000 },
   fullyParallel: false,
@@ -10,7 +10,6 @@ module.exports = defineConfig({
   reporter: process.env.CI ? [['list'], ['html', { outputFolder: 'playwright-report', open: 'never' }]] : 'list',
   use: {
     baseURL: 'http://127.0.0.1:4173',
-    viewport: { width: 390, height: 844 },
     colorScheme: 'dark',
     locale: 'de-DE',
     trace: 'retain-on-failure',
@@ -23,6 +22,13 @@ module.exports = defineConfig({
     timeout: 20_000
   },
   projects: [
-    { name: 'mobile-chromium', use: { ...devices['Desktop Chrome'], viewport: { width: 390, height: 844 } } }
+    {
+      name: 'mobile-chromium',
+      use: { ...devices['Pixel 5'], viewport: { width: 390, height: 844 } }
+    },
+    {
+      name: 'desktop-chromium',
+      use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 } }
+    }
   ]
 });
