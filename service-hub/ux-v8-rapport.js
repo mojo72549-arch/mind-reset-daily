@@ -43,13 +43,10 @@
     var db=readDb();if(!db||!db.settings||!Array.isArray(db.settings.catalog))return false;
     var before=db.settings.catalog.length;
     db.settings.catalog=db.settings.catalog.filter(function(item){return !isMaterialCatalogItem(item)});
-    if(db.settings.catalog.length===before)return false;
-    (db.customers||[]).forEach(function(c){
-      if(!c.priceOverrides)return;
-      delete c.priceOverrides.svc10;
-    });
+    (db.customers||[]).forEach(function(c){if(c.priceOverrides)delete c.priceOverrides.svc10});
     db.settings.rapportModelVersion=8;
-    writeDb(db);return true;
+    if(db.settings.catalog.length!==before){writeDb(db);return true}
+    return false;
   }
   function cleanReportUi(){
     var heading=[].slice.call(document.querySelectorAll('.card h3')).find(function(h){return (h.textContent||'').trim()==='Material / Messwerte'});
@@ -62,54 +59,28 @@
       }
     }
     var select=document.getElementById('rsvc');
-    if(select){
-      [].slice.call(select.options).forEach(function(o){if(norm(o.textContent).indexOf('verbrauchsmaterial')>=0)o.remove()});
-    }
+    if(select){[].slice.call(select.options).forEach(function(o){if(norm(o.textContent).indexOf('verbrauchsmaterial')>=0)o.remove()})}
   }
-  function consolidateCurrentService(orderNo,catalogId){
-    var db=readDb(),r=reportForOrderNo(db,orderNo);if(!r||!Array.isArray(r.lines))return false;
-    var first=-1,total=0,matchCount=0,price=null,unit=null;
-    r.lines.forEach(function(line,idx){
-      if(String(line.catalogId||'')!==String(catalogId||''))return;
-      if(first<0){first=idx;price=+line.price||0;unit=line.unit||''}
-      if((+line.price||0)!==price||String(line.unit||'')!==String(unit))return;
-      total+=+line.qty||0;matchCount++;
-    });
-    if(matchCount<=1)return false;
-    var kept=false;
-    r.lines=r.lines.filter(function(line){
-      if(String(line.catalogId||'')!==String(catalogId||''))return true;
-      if((+line.price||0)!==price||String(line.unit||'')!==String(unit))return true;
-      if(!kept){line.qty=total;kept=true;return true}
-      return false;
-    });
-    writeDb(db);return true;
-  }
-  function verifyMutation(orderNo,beforeCount,expectedCount,label){
+  function verifyLineCount(orderNo,expected,label){
     var db=readDb(),r=reportForOrderNo(db,orderNo),count=r&&Array.isArray(r.lines)?r.lines.length:null;
-    if(count===expectedCount)return true;
-    console.error('[ServiceHub V8] Persistenzprüfung fehlgeschlagen',label,{before:beforeCount,expected:expectedCount,actual:count});
-    showToast('Änderung konnte nicht sicher gespeichert werden. Bitte nicht weiterarbeiten und Seite neu laden.','error');
+    if(count===expected)return true;
+    console.error('[ServiceHub V8] Persistenzprüfung fehlgeschlagen',label,{expected:expected,actual:count});
+    showToast('Änderung konnte nicht sicher gespeichert werden. Bitte Seite neu laden.','error');
     return false;
   }
   function wrapActions(){
     if(installed||!window.SH)return;installed=true;
+
     var add=window.SH.addReportLine;
     if(typeof add==='function')window.SH.addReportLine=function(){
-      var orderNo=currentOrderNo();
-      var select=document.getElementById('rsvc'),qtyEl=document.getElementById('rqty');
-      var id=select&&select.value,name=select&&select.options[select.selectedIndex]&&select.options[select.selectedIndex].textContent;
+      var orderNo=currentOrderNo(),select=document.getElementById('rsvc');
+      var name=select&&select.options[select.selectedIndex]&&select.options[select.selectedIndex].textContent;
       var db0=readDb(),r0=reportForOrderNo(db0,orderNo),before=r0&&r0.lines?r0.lines.length:0;
       var result=add.apply(window.SH,arguments);
-      var merged=consolidateCurrentService(orderNo,id);
-      var db1=readDb(),r1=reportForOrderNo(db1,orderNo),after=r1&&r1.lines?r1.lines.length:0;
-      if(after<before||after>before+1){verifyMutation(orderNo,before,merged?before:before+1,'Leistung hinzufügen')}
-      if(merged&&window.SH.openReport){
-        var order=(db1.orders||[]).find(function(o){return String(o.no)===String(orderNo)});if(order)setTimeout(function(){window.SH.openReport(order.id)},0);
+      if(verifyLineCount(orderNo,before+1,'Leistung hinzufügen')){
+        showToast((name?name.split(' · ')[0]+': ':'')+'Leistung dauerhaft gespeichert');
+        highlightLines();
       }
-      showToast((name?name.split(' · ')[0]+': ':'')+'Leistung gespeichert'+(merged?' · Menge zusammengeführt':''));
-      highlightLines();
-      if(qtyEl)qtyEl.value='1';
       return result;
     };
 
@@ -119,7 +90,7 @@
       var target=r0&&r0.lines&&r0.lines[index]?r0.lines[index].name:'';
       var result=remove.apply(window.SH,arguments);
       var db1=readDb(),r1=reportForOrderNo(db1,orderNo),after=r1&&r1.lines?r1.lines.length:before;
-      if(after===before-1){verifyMutation(orderNo,before,before-1,'Leistung löschen');showToast((target?target+': ':'')+'Leistung dauerhaft entfernt')}
+      if(after===before-1&&verifyLineCount(orderNo,before-1,'Leistung löschen'))showToast((target?target+': ':'')+'Leistung dauerhaft entfernt');
       return result;
     };
 
