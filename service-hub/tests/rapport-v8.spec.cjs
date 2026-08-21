@@ -4,7 +4,7 @@ async function login(page, role = 'dome') {
   await page.goto(`/?role=${role}`);
   await page.getByRole('button', { name: 'Anmelden' }).click();
   await expect(page.locator('header.top')).toBeVisible();
-  await expect(page.locator('html')).toHaveAttribute('data-sh-build', '20260821-v8');
+  await expect(page.locator('html')).toHaveAttribute('data-sh-build', '20260821-v9');
 }
 
 async function openSeedReport(page) {
@@ -22,7 +22,7 @@ async function addService(page, id, qty = '1') {
   await page.locator('#rsvc').selectOption(id);
   await page.locator('#rqty').fill(qty);
   await page.getByRole('button', { name: '+ Leistung' }).click();
-  await expect(page.locator('.ux-v8-toast')).toContainText('dauerhaft gespeichert');
+  await expect(page.locator('.ux-v9-toast')).toContainText('sofort gespeichert und angezeigt');
 }
 
 function reportRows(page) {
@@ -46,6 +46,56 @@ test('adding a service gives immediate confirmation', async ({ page }) => {
   await expect(page.locator('.report-lines-card')).toBeVisible();
 });
 
+test('service add and delete update the same rapport surface without navigation or reload', async ({ page }) => {
+  await login(page, 'dome');
+  await openSeedReport(page);
+  const initialUrl = page.url();
+  let navigations = 0;
+  page.on('framenavigated', frame => { if (frame === page.mainFrame()) navigations += 1; });
+
+  await page.locator('#rsvc').selectOption('svc9');
+  await page.locator('#rqty').fill('1');
+  await page.getByRole('button', { name: '+ Leistung' }).click();
+  await expect(page.locator('.report-lines-card tr').filter({ hasText: 'Anfahrt' })).toHaveCount(1, { timeout: 750 });
+  await expect(page.locator('main h2')).toContainText('Rapport A-2026-0101');
+  await expect(page.locator('html')).toHaveAttribute('data-sh-surface-reason', 'service-add');
+
+  const row = page.locator('.report-lines-card tr').filter({ hasText: 'Anfahrt' });
+  page.once('dialog', dialog => dialog.accept());
+  await row.getByRole('button', { name: 'Löschen' }).click();
+  await expect(page.locator('.report-lines-card tr').filter({ hasText: 'Anfahrt' })).toHaveCount(0, { timeout: 750 });
+  await expect(page.locator('main h2')).toContainText('Rapport A-2026-0101');
+  await expect(page.locator('html')).toHaveAttribute('data-sh-surface-reason', 'service-remove');
+
+  expect(page.url()).toBe(initialUrl);
+  expect(navigations).toBe(0);
+});
+
+test('material add and delete update the same rapport surface without navigation or reload', async ({ page }) => {
+  await login(page, 'dome');
+  await openSeedReport(page);
+  const initialUrl = page.url();
+  let navigations = 0;
+  page.on('framenavigated', frame => { if (frame === page.mainFrame()) navigations += 1; });
+
+  const answers = ['Sofort-Material', '2', '4.50'];
+  page.on('dialog', async dialog => {
+    if (dialog.type() === 'prompt') await dialog.accept(answers.shift() || '');
+    else await dialog.accept();
+  });
+  await page.getByRole('button', { name: '+ Material' }).click();
+  await expect(page.getByText(/Sofort-Material/)).toBeVisible({ timeout: 750 });
+  await expect(page.locator('html')).toHaveAttribute('data-sh-surface-reason', 'material-add');
+
+  const materialDelete = page.locator('.card').filter({ hasText: 'Sofort-Material' }).getByRole('button', { name: 'Löschen' }).first();
+  await materialDelete.click();
+  await expect(page.getByText(/Sofort-Material/)).toHaveCount(0, { timeout: 750 });
+  await expect(page.locator('html')).toHaveAttribute('data-sh-surface-reason', 'material-remove');
+
+  expect(page.url()).toBe(initialUrl);
+  expect(navigations).toBe(0);
+});
+
 test('deleted service stays deleted after navigation and full reload', async ({ page }) => {
   await login(page, 'dome');
   await openSeedReport(page);
@@ -58,7 +108,7 @@ test('deleted service stays deleted after navigation and full reload', async ({ 
   await expect(anfahrtRow).toHaveCount(1);
   page.once('dialog', dialog => dialog.accept());
   await anfahrtRow.getByRole('button', { name: 'Löschen' }).click();
-  await expect(page.locator('.ux-v8-toast')).toContainText('dauerhaft entfernt');
+  await expect(page.locator('.ux-v9-toast')).toContainText('sofort entfernt');
   await expect(anfahrtRow).toHaveCount(0);
   await expect(reportRows(page)).toHaveCount(2);
 

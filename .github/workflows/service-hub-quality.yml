@@ -1,10 +1,10 @@
-name: Service Hub Quality V8
+name: Service Hub Quality V9
 
 on:
   push:
     branches:
       - main
-      - service-hub-rapport-robust-v8
+      - service-hub-live-surface-v9
     paths:
       - 'service-hub/**'
       - '.github/workflows/service-hub-quality.yml'
@@ -36,6 +36,7 @@ jobs:
           node --check ../ux-v6-context.js
           node --check ../ux-v6-admin-route.js
           node --check ../ux-v8-rapport.js
+          node --check ../ux-v9-live-surface.js
           node --check ../auth-v7.js
           node --check browser.spec.cjs
           node --check rapport-v8.spec.cjs
