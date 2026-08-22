@@ -28,6 +28,8 @@ async function drawSignature(page, selector) {
   await page.mouse.move(box.x + 70, box.y + 65, { steps: 6 });
   await page.mouse.move(box.x + 130, box.y + 30, { steps: 6 });
   await page.mouse.up();
+  await expect(canvas).toHaveAttribute('data-signed', '1');
+  await expect(canvas.locator('xpath=..').locator('.ux-v10-signature-state')).toContainText('Unterschrift erfasst');
 }
 
 test('admin is settings only and persists cost-free communication settings', async ({ page }) => {
@@ -35,9 +37,11 @@ test('admin is settings only and persists cost-free communication settings', asy
   await go(page, 'admin');
   await expect(page.locator('.ux-admin-title h2')).toHaveText('Administration');
   await expect(page.getByText('Ausschließlich Systemeinstellungen')).toBeVisible();
+  await expect(page.locator('.ux-v10-delivery-settings')).toHaveCount(1);
   await expect(page.locator('#adm-waNumber')).toBeVisible();
   await expect(page.locator('#adm-emailReplyTo')).toBeVisible();
-  await expect(page.getByText('Geräte-App (kostenfrei)')).toBeVisible();
+  await expect(page.locator('#adm-waMode')).toHaveValue('Geräte-App (kostenfrei)');
+  await expect(page.locator('#adm-emailMode')).toHaveValue('Standard-Mail-App (kostenfrei)');
   await expect(page.getByText('Musterkunde Stuttgart GmbH')).toHaveCount(0);
   await expect(page.getByText('26175', { exact: true })).toHaveCount(0);
   await expect(page.getByRole('heading', { name: 'Kunden', exact: true })).toHaveCount(0);
@@ -49,6 +53,7 @@ test('admin is settings only and persists cost-free communication settings', asy
   await page.getByRole('button', { name: 'Einstellungen speichern' }).click();
   await expect.poll(async () => page.evaluate(() => JSON.parse(localStorage.getItem('shp_db')).settings.delivery.whatsappNumber)).toBe('0152 99988777');
   await expect.poll(async () => page.evaluate(() => JSON.parse(localStorage.getItem('shp_db')).settings.delivery.emailReplyTo)).toBe('service@example.de');
+  await expect(page.locator('.ux-v10-delivery-settings')).toHaveCount(1);
 });
 
 test('invoice delivery uses cost-free device handoff for WhatsApp, email and post', async ({ page }) => {
@@ -56,21 +61,26 @@ test('invoice delivery uses cost-free device handoff for WhatsApp, email and pos
   await openSeedInvoice(page);
 
   await page.getByRole('button', { name: 'WhatsApp', exact: true }).click();
+  await expect(page.locator('.ux-v10-pending')).toHaveCount(1);
   await expect(page.locator('.ux-v10-pending')).toContainText('WhatsApp vorbereitet');
   let last = await page.evaluate(() => window.SHP_LAST_DELIVERY);
   expect(last.channel).toBe('WhatsApp');
   expect(last.url).toMatch(/^https:\/\/wa\.me\//);
   expect(last.url).not.toMatch(/twilio/i);
   await page.getByRole('button', { name: 'Verwerfen' }).click();
+  await expect(page.locator('.ux-v10-pending')).toHaveCount(0);
 
   await page.getByRole('button', { name: 'E-Mail', exact: true }).click();
+  await expect(page.locator('.ux-v10-pending')).toHaveCount(1);
   await expect(page.locator('.ux-v10-pending')).toContainText('E-Mail vorbereitet');
   last = await page.evaluate(() => window.SHP_LAST_DELIVERY);
   expect(last.channel).toBe('E-Mail');
   expect(last.url).toMatch(/^mailto:/);
   await page.getByRole('button', { name: 'Verwerfen' }).click();
+  await expect(page.locator('.ux-v10-pending')).toHaveCount(0);
 
   await page.getByRole('button', { name: 'Post / Druck' }).click();
+  await expect(page.locator('.ux-v10-pending')).toHaveCount(1);
   await expect(page.locator('.ux-v10-pending')).toContainText('Post vorbereitet');
   last = await page.evaluate(() => window.SHP_LAST_DELIVERY);
   expect(last.channel).toBe('Post');
@@ -121,6 +131,7 @@ test('completed rapport creates one draft invoice, requires release, then confir
   await expect(page.getByRole('button', { name: 'WhatsApp', exact: true })).toBeEnabled();
 
   await page.getByRole('button', { name: 'Bevorzugten Kanal verwenden' }).click();
+  await expect(page.locator('.ux-v10-pending')).toHaveCount(1);
   await expect(page.locator('.ux-v10-pending')).toContainText('WhatsApp vorbereitet');
   await page.getByRole('button', { name: 'Versand bestätigen' }).click();
   await expect(page.locator('#ivstatus')).toHaveValue('Versendet');
