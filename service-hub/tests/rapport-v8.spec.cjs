@@ -4,7 +4,7 @@ async function login(page, role = 'dome') {
   await page.goto(`/?role=${role}`);
   await page.getByRole('button', { name: 'Anmelden' }).click();
   await expect(page.locator('header.top')).toBeVisible();
-  await expect(page.locator('html')).toHaveAttribute('data-sh-build', '20260821-v9');
+  await expect(page.locator('html')).toHaveAttribute('data-sh-build', '20260822-v10');
 }
 
 async function openSeedReport(page) {
