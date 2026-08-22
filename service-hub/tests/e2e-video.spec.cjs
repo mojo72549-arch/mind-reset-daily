@@ -13,6 +13,8 @@ async function drawSignature(page, selector) {
   await page.mouse.move(box.x + 135, box.y + 30, { steps: 8 });
   await page.mouse.move(box.x + 190, box.y + 60, { steps: 8 });
   await page.mouse.up();
+  await expect(canvas).toHaveAttribute('data-signed', '1');
+  await expect(canvas.locator('xpath=..').locator('.ux-v10-signature-state')).toContainText('Unterschrift erfasst');
 }
 
 async function login(page, role) {
@@ -30,8 +32,11 @@ test('VIDEO complete Service Hub flow from settings to confirmed WhatsApp invoic
   await login(page, 'admin');
   await page.evaluate(() => SH.go('admin'));
   await expect(page.locator('.ux-admin-title h2')).toHaveText('Administration');
+  await expect(page.locator('.ux-v10-delivery-settings')).toHaveCount(1);
   await expect(page.locator('#adm-waNumber')).toBeVisible();
+  await expect(page.locator('#adm-waMode')).toHaveValue('Geräte-App (kostenfrei)');
   await expect(page.getByText('Musterkunde Stuttgart GmbH')).toHaveCount(0);
+  await expect(page.getByText('26175', { exact: true })).toHaveCount(0);
   await page.locator('#adm-waNumber').fill('0152 23401628');
   await page.locator('#adm-emailReplyTo').fill('info@rokatech-winser.de');
   await page.getByRole('button', { name: 'Einstellungen speichern' }).click();
@@ -90,6 +95,7 @@ test('VIDEO complete Service Hub flow from settings to confirmed WhatsApp invoic
   await page.getByRole('button', { name: 'Rechnung erzeugen' }).click();
   await expect(page.locator('main h2')).toContainText('Rechnung ');
   await expect(page.locator('#ivstatus')).toHaveValue('Entwurf');
+  await expect(page.getByRole('button', { name: 'WhatsApp', exact: true })).toBeDisabled();
   await pause(page);
   await page.getByRole('button', { name: 'Rechnung freigeben' }).click();
   await expect(page.locator('#ivstatus')).toHaveValue('Offen');
@@ -97,6 +103,7 @@ test('VIDEO complete Service Hub flow from settings to confirmed WhatsApp invoic
 
   // 6) Cost-free WhatsApp handoff -> explicit confirmation.
   await page.getByRole('button', { name: 'Bevorzugten Kanal verwenden' }).click();
+  await expect(page.locator('.ux-v10-pending')).toHaveCount(1);
   await expect(page.locator('.ux-v10-pending')).toContainText('WhatsApp vorbereitet');
   const last = await page.evaluate(() => window.SHP_LAST_DELIVERY);
   expect(last.url).toMatch(/^https:\/\/wa\.me\//);
