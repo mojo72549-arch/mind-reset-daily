@@ -81,13 +81,16 @@ test('Admin area is system configuration, not an operational customer or invoice
   await login(page, 'admin');
   await page.evaluate(() => SH.go('admin'));
   await expect(page.locator('.ux-admin-title h2')).toHaveText('Administration');
-  await expect(page.getByText('Hier werden ausschließlich globale Einstellungen des Service Hub verwaltet')).toBeVisible();
+  await expect(page.getByText('Ausschließlich Systemeinstellungen')).toBeVisible();
   await expect(page.locator('#adm-companyName')).toHaveValue('Rohr- & Kanaltechnik Winser');
   await expect(page.locator('#adm-iban')).toHaveValue('DE78 6009 0300 0424 6090 02');
   await expect(page.locator('#adm-vat')).toHaveValue('19');
+  await expect(page.locator('#adm-waNumber')).toBeVisible();
+  await expect(page.locator('#adm-emailReplyTo')).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Leistungskatalog' })).toBeVisible();
   await expect(page.getByText('Kundenkonditionen')).toHaveCount(0);
   await expect(page.getByText('Musterkunde Stuttgart GmbH')).toHaveCount(0);
+  await expect(page.getByText('26175', { exact: true })).toHaveCount(0);
 });
 
 test('Branded invoice uses logo and values from the admin configuration', async ({ page }) => {
