@@ -21,13 +21,50 @@ async function openSeedInvoice(page) {
 async function drawSignature(page, selector) {
   const canvas = page.locator(selector);
   await canvas.scrollIntoViewIfNeeded();
-  const box = await canvas.boundingBox();
-  expect(box).toBeTruthy();
-  await page.mouse.move(box.x + 20, box.y + 35);
-  await page.mouse.down();
-  await page.mouse.move(box.x + 70, box.y + 65, { steps: 6 });
-  await page.mouse.move(box.x + 130, box.y + 30, { steps: 6 });
-  await page.mouse.up();
+  const isTouch = await page.evaluate(() => navigator.maxTouchPoints > 0);
+  if (isTouch) {
+    await page.evaluate(sel => {
+      const c = document.querySelector(sel);
+      if (!c) throw new Error(`Canvas ${sel} not found`);
+      const r = c.getBoundingClientRect();
+      const points = [[20,35],[55,58],[90,38],[125,66],[165,32]];
+      const touch = ([x,y]) => new Touch({
+        identifier: 42,
+        target: c,
+        clientX: r.left + x,
+        clientY: r.top + y,
+        pageX: window.scrollX + r.left + x,
+        pageY: window.scrollY + r.top + y,
+        screenX: r.left + x,
+        screenY: r.top + y,
+        radiusX: 2,
+        radiusY: 2,
+        force: 0.6
+      });
+      const dispatch = (type, point, active) => {
+        const t = touch(point);
+        c.dispatchEvent(new TouchEvent(type, {
+          bubbles: true,
+          cancelable: true,
+          composed: true,
+          touches: active ? [t] : [],
+          targetTouches: active ? [t] : [],
+          changedTouches: [t]
+        }));
+      };
+      dispatch('touchstart', points[0], true);
+      points.slice(1).forEach(p => dispatch('touchmove', p, true));
+      dispatch('touchend', points[points.length - 1], false);
+    }, selector);
+  } else {
+    const box = await canvas.boundingBox();
+    expect(box).toBeTruthy();
+    await page.mouse.move(box.x + 20, box.y + 35);
+    await page.mouse.down();
+    await page.mouse.move(box.x + 70, box.y + 65, { steps: 6 });
+    await page.mouse.move(box.x + 130, box.y + 30, { steps: 6 });
+    await page.mouse.up();
+  }
   await expect(canvas).toHaveAttribute('data-signed', '1');
   await expect(canvas.locator('xpath=..').locator('.ux-v10-signature-state')).toContainText('Unterschrift erfasst');
 }
