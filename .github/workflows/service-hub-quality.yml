@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - service-hub-e2e-v10
     paths:
       - 'service-hub/**'
       - '.github/workflows/service-hub-quality.yml'
