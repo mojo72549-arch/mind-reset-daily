@@ -1,9 +1,10 @@
 const { defineConfig, devices } = require('@playwright/test');
 
+const regressionSpecs = ['browser.spec.cjs', 'rapport-v8.spec.cjs', 'auth.spec.cjs', 'e2e-v10.spec.cjs'];
+
 module.exports = defineConfig({
   testDir: '.',
-  testMatch: ['browser.spec.cjs', 'rapport-v8.spec.cjs', 'auth.spec.cjs'],
-  timeout: 30_000,
+  timeout: 45_000,
   expect: { timeout: 8_000 },
   fullyParallel: false,
   retries: process.env.CI ? 1 : 0,
@@ -24,11 +25,25 @@ module.exports = defineConfig({
   projects: [
     {
       name: 'mobile-chromium',
+      testMatch: regressionSpecs,
       use: { ...devices['Pixel 5'], viewport: { width: 390, height: 844 } }
     },
     {
       name: 'desktop-chromium',
+      testMatch: regressionSpecs,
       use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 } }
+    },
+    {
+      name: 'evidence-mobile',
+      testMatch: ['e2e-video.spec.cjs'],
+      outputDir: 'test-results/evidence-mobile',
+      use: { ...devices['Pixel 5'], viewport: { width: 390, height: 844 }, video: 'on', screenshot: 'on' }
+    },
+    {
+      name: 'evidence-desktop',
+      testMatch: ['e2e-video.spec.cjs'],
+      outputDir: 'test-results/evidence-desktop',
+      use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 }, video: 'on', screenshot: 'on' }
     }
   ]
 });
