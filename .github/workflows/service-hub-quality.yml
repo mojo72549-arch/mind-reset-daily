@@ -74,8 +74,15 @@ jobs:
           DESKTOP="$(find test-results/evidence-desktop -name video.webm -print -quit 2>/dev/null || true)"
           test -n "$MOBILE"
           test -n "$DESKTOP"
-          ffmpeg -y -i "$MOBILE" -c:v libx264 -pix_fmt yuv420p -movflags +faststart -an e2e-videos/service-hub-e2e-mobile.mp4
-          ffmpeg -y -i "$DESKTOP" -c:v libx264 -pix_fmt yuv420p -movflags +faststart -an e2e-videos/service-hub-e2e-desktop.mp4
+          FFMPEG="$(command -v ffmpeg || true)"
+          if [ -z "$FFMPEG" ]; then
+            FFMPEG="$(find "$HOME/.cache/ms-playwright" -type f -name ffmpeg -perm -u+x -print -quit 2>/dev/null || true)"
+          fi
+          test -n "$FFMPEG"
+          "$FFMPEG" -y -i "$MOBILE" -c:v libx264 -pix_fmt yuv420p -movflags +faststart -an e2e-videos/service-hub-e2e-mobile.mp4
+          "$FFMPEG" -y -i "$DESKTOP" -c:v libx264 -pix_fmt yuv420p -movflags +faststart -an e2e-videos/service-hub-e2e-desktop.mp4
+          test -s e2e-videos/service-hub-e2e-mobile.mp4
+          test -s e2e-videos/service-hub-e2e-desktop.mp4
       - name: Upload E2E acceptance videos
         uses: actions/upload-artifact@v4
         with:
