@@ -1,6 +1,6 @@
 const { defineConfig, devices } = require('@playwright/test');
 
-const regressionSpecs = ['browser.spec.cjs', 'rapport-v8.spec.cjs', 'auth.spec.cjs', 'e2e-v10.spec.cjs'];
+const regressionSpecs = ['browser.spec.cjs', 'rapport-v8.spec.cjs', 'auth.spec.cjs', 'e2e-v10.spec.cjs', 'business-rules-v10.spec.cjs'];
 
 module.exports = defineConfig({
   testDir: '.',
@@ -34,16 +34,28 @@ module.exports = defineConfig({
       use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 } }
     },
     {
-      name: 'evidence-mobile',
-      testMatch: ['e2e-video.spec.cjs'],
-      outputDir: 'test-results/evidence-mobile',
-      use: { ...devices['Pixel 5'], viewport: { width: 390, height: 844 }, video: 'on', screenshot: 'on' }
+      name: 'review-positive-mobile',
+      testMatch: ['review-positive.spec.cjs'],
+      outputDir: 'test-results/review-positive-mobile',
+      use: { ...devices['Pixel 5'], viewport: { width: 390, height: 844 }, video: 'on', screenshot: 'on', launchOptions: { slowMo: 120 } }
     },
     {
-      name: 'evidence-desktop',
-      testMatch: ['e2e-video.spec.cjs'],
-      outputDir: 'test-results/evidence-desktop',
-      use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 }, video: 'on', screenshot: 'on' }
+      name: 'review-negative-mobile',
+      testMatch: ['review-negative.spec.cjs'],
+      outputDir: 'test-results/review-negative-mobile',
+      use: { ...devices['Pixel 5'], viewport: { width: 390, height: 844 }, video: 'on', screenshot: 'on', launchOptions: { slowMo: 120 } }
+    },
+    {
+      name: 'review-positive-desktop',
+      testMatch: ['review-positive.spec.cjs'],
+      outputDir: 'test-results/review-positive-desktop',
+      use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 }, video: 'on', screenshot: 'on', launchOptions: { slowMo: 120 } }
+    },
+    {
+      name: 'review-negative-desktop',
+      testMatch: ['review-negative.spec.cjs'],
+      outputDir: 'test-results/review-negative-desktop',
+      use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 }, video: 'on', screenshot: 'on', launchOptions: { slowMo: 120 } }
     }
   ]
 });
