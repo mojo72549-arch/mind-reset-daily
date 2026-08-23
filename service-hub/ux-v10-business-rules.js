@@ -1,7 +1,7 @@
 (function(){
   'use strict';
   var STORE='shp_db',UNDO='shp_undo_stack';
-  var wrapped=false,adminWrapped=false;
+  var wrapped=false,adminWrapped=false,finishWrapped=false;
 
   function readDb(){try{return JSON.parse(localStorage.getItem(STORE)||'null')}catch(e){return null}}
   function setDb(db){if(window.SHP_INTERNAL&&window.SHP_INTERNAL.setDb)window.SHP_INTERNAL.setDb(db);else localStorage.setItem(STORE,JSON.stringify(db))}
@@ -26,10 +26,7 @@
     if(trim(c.email)&&!validEmail(c.email))return'Die E-Mail-Adresse ist ungültig.';
     if(ch==='E-Mail'&&!validEmail(c.email))return'Für den bevorzugten Kanal E-Mail wird eine gültige E-Mail-Adresse benötigt.';
     if(ch==='WhatsApp'&&!validPhone(c.phone))return'Für den bevorzugten Kanal WhatsApp wird eine gültige Telefonnummer benötigt.';
-    var dup=(db.customers||[]).find(function(x){
-      if(String(x.id)===String(ignoreId||''))return false;
-      return norm(x.name)===norm(c.name)&&norm(x.address)===norm(c.address);
-    });
+    var dup=(db.customers||[]).find(function(x){if(String(x.id)===String(ignoreId||''))return false;return norm(x.name)===norm(c.name)&&norm(x.address)===norm(c.address)});
     if(dup)return'Dieser Kunde existiert bereits ('+dup.name+'). Bitte den vorhandenen Kunden öffnen.';
     return'';
   }
@@ -61,7 +58,7 @@
     Object.assign(c,input);pushAudit(db,'Stammdaten '+c.name+' geändert');setDb(db);remember(before,'Kundendaten geändert');render();
   }
   function chooseCustomer(db,cid){
-    if(cid!=null&&cid!==''){return (db.customers||[]).find(function(c){return String(c.id)===String(cid)})||null}
+    if(cid!=null&&cid!=='')return (db.customers||[]).find(function(c){return String(c.id)===String(cid)})||null;
     if(!(db.customers||[]).length)return null;
     var names=db.customers.map(function(c){return c.name}).join('\n');
     var answer=prompt('Kunde für Auftrag auswählen (Kundenname):\n\n'+names,db.customers[0].name);if(answer===null)return false;
@@ -89,26 +86,51 @@
       return original.apply(window.SHP_V6,arguments);
     };
   }
+  function realInk(canvas){
+    if(!canvas||!canvas.getContext)return false;
+    try{var d=canvas.getContext('2d').getImageData(0,0,canvas.width,canvas.height).data,count=0;for(var i=3;i<d.length;i+=4){if(d[i]>0&&++count>8)return true}}catch(e){}
+    return false;
+  }
+  function hardenReportFinish(){
+    if(finishWrapped||!window.SH||typeof window.SH.finishReport!=='function')return;finishWrapped=true;
+    var original=window.SH.finishReport;
+    window.SH.finishReport=function(){
+      var c=document.getElementById('sigC'),t=document.getElementById('sigT');
+      if(!realInk(c))return fail('Kundenunterschrift fehlt oder ist nicht vollständig erfasst.');
+      if(!realInk(t))return fail('Technikerunterschrift fehlt oder ist nicht vollständig erfasst.');
+      return original.apply(window.SH,arguments);
+    };
+  }
+  function guardedDelivery(ch){
+    var db=readDb(),id=window.SHP_INTERNAL&&window.SHP_INTERNAL.getSelectedInvoice?window.SHP_INTERNAL.getSelectedInvoice():null,iv=(db&&db.invoices||[]).find(function(x){return String(x.id)===String(id)});
+    if(!iv)return fail('Rechnung wurde nicht gefunden.');
+    if(iv.status==='Storniert')return fail('Stornierte Rechnungen können nicht versendet werden.');
+    if(['WhatsApp','E-Mail','Post'].indexOf(ch)<0)return fail('Unbekannter Versandkanal.');
+    return window.SHP_V10.prepareDelivery(ch);
+  }
   function hardenDelivery(){
-    if(!window.SHP_V10||window.SHP_V10.__businessWrapped)return;window.SHP_V10.__businessWrapped=true;
-    var original=window.SHP_V10.prepareDelivery;
-    window.SHP_V10.prepareDelivery=function(ch){
+    if(!window.SHP_V10)return;
+    if(!window.SHP_V10.__businessWrapped){window.SHP_V10.__businessWrapped=true;var original=window.SHP_V10.prepareDelivery;window.SHP_V10.prepareDelivery=function(ch){
       var db=readDb(),id=window.SHP_INTERNAL&&window.SHP_INTERNAL.getSelectedInvoice?window.SHP_INTERNAL.getSelectedInvoice():null,iv=(db&&db.invoices||[]).find(function(x){return String(x.id)===String(id)});
       if(iv&&iv.status==='Storniert')return fail('Stornierte Rechnungen können nicht versendet werden.');
       if(['WhatsApp','E-Mail','Post'].indexOf(ch)<0)return fail('Unbekannter Versandkanal.');
       return original.apply(window.SHP_V10,arguments);
-    };
+    }}
     if(window.SH){
-      window.SH.sendInvoice=function(ch){return window.SHP_V10.prepareDelivery(ch)};
-      window.SH.sendInvoicePreferred=function(){var db2=readDb(),id2=window.SHP_INTERNAL&&window.SHP_INTERNAL.getSelectedInvoice?window.SHP_INTERNAL.getSelectedInvoice():null,iv2=(db2&&db2.invoices||[]).find(function(x){return String(x.id)===String(id2)}),c=iv2&&(db2.customers||[]).find(function(x){return String(x.id)===String(iv2.customerId)});return window.SHP_V10.prepareDelivery(c&&c.preferredChannel||'E-Mail')};
+      window.SH.sendInvoice=function(ch){return guardedDelivery(ch)};
+      window.SH.sendInvoicePreferred=function(){var db2=readDb(),id2=window.SHP_INTERNAL&&window.SHP_INTERNAL.getSelectedInvoice?window.SHP_INTERNAL.getSelectedInvoice():null,iv2=(db2&&db2.invoices||[]).find(function(x){return String(x.id)===String(id2)}),c=iv2&&(db2.customers||[]).find(function(x){return String(x.id)===String(iv2.customerId)});return guardedDelivery(c&&c.preferredChannel||'E-Mail')};
     }
+    var main=document.querySelector('main.shell'),h=main&&main.querySelector('h2');if(!main||!h||!/^Rechnung\s/.test((h.textContent||'').trim()))return;
+    main.querySelectorAll('button').forEach(function(btn){var text=(btn.textContent||'').trim();
+      if(text==='WhatsApp')btn.onclick=function(){guardedDelivery('WhatsApp')};
+      else if(text==='E-Mail')btn.onclick=function(){guardedDelivery('E-Mail')};
+      else if(text==='Post / Druck')btn.onclick=function(){guardedDelivery('Post')};
+      else if(text==='Bevorzugten Kanal verwenden'||text.indexOf('Senden über ')===0)btn.onclick=function(){var db3=readDb(),id3=window.SHP_INTERNAL.getSelectedInvoice(),iv3=(db3.invoices||[]).find(function(x){return String(x.id)===String(id3)}),c=(db3.customers||[]).find(function(x){return iv3&&String(x.id)===String(iv3.customerId)});guardedDelivery(c&&c.preferredChannel||'E-Mail')};
+    });
   }
-  function wrap(){
-    if(wrapped||!window.SH)return;wrapped=true;
-    window.SH.newCustomer=newCustomer;window.SH.editCustomer=editCustomer;window.SH.newOrder=newOrder;
-  }
-  function enhance(){wrap();wrapAdmin();hardenDelivery()}
+  function wrap(){if(wrapped||!window.SH)return;wrapped=true;window.SH.newCustomer=newCustomer;window.SH.editCustomer=editCustomer;window.SH.newOrder=newOrder}
+  function enhance(){wrap();wrapAdmin();hardenReportFinish();hardenDelivery()}
   var scheduled=false;function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;enhance()})}
   new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});enhance();
-  window.SHP_BUSINESS_RULES={validateCustomer:validationCustomer,validEmail:validEmail,validPhone:validPhone,channel:channel,enhance:enhance};
+  window.SHP_BUSINESS_RULES={validateCustomer:validationCustomer,validEmail:validEmail,validPhone:validPhone,channel:channel,realInk:realInk,enhance:enhance};
 })();
