@@ -38,6 +38,7 @@ jobs:
           node --check ../ux-v9-live-surface.js
           node --check ../ux-v10-e2e.js
           node --check ../ux-v10-business-rules.js
+          node --check ../ux-v10-undo-feedback.js
           node --check ../auth-v7.js
           node --check browser.spec.cjs
           node --check rapport-v8.spec.cjs
