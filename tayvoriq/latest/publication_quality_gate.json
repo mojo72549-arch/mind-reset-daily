@@ -2,7 +2,7 @@
   "schema_version": 5,
   "gate_version": "v5-golden-human-voice-plus-production-mix",
   "passed": true,
-  "job_id": "20260823_085701_stuttgart-21-wird-zum-videospiel-schaffst-du-in-der-s21-demo-gleis-9-in-20-minut",
+  "job_id": "20260823_100827_humanoide-roboter-aus-baden-wuerttemberg-bosch-startet-2027-die-produktion-in-bu",
   "top_level_issues": [],
   "variants": {
     "youtube_shorts": {
@@ -43,7 +43,7 @@
       65.0
     ],
     "platform_specific_final_mix_required": true,
-    "s21_actual_game_media_provenance_required": true,
+    "s21_actual_game_media_provenance_required": false,
     "generic_stock_forbidden_for_s21_game": true,
     "generated_cards_forbidden_for_s21_game": true,
     "quality_gates_weakened": false
