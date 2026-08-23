@@ -44,6 +44,7 @@ jobs:
           node --check rapport-v8.spec.cjs
           node --check e2e-v10.spec.cjs
           node --check business-rules-v10.spec.cjs
+          node --check business-rules-extra-v10.spec.cjs
           node --check review-positive.spec.cjs
           node --check review-negative.spec.cjs
           node --check auth.spec.cjs
