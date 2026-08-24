@@ -3,13 +3,13 @@
   "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
   "passed": true,
   "scores": {
-    "factual_accuracy": 100,
+    "factual_accuracy": 96,
     "pronunciation": 98,
-    "marketing": 95,
-    "sales": 95,
-    "platform_fit": 100,
-    "visual": 82,
-    "overall": 95
+    "marketing": 92,
+    "sales": 90,
+    "platform_fit": 94,
+    "visual": 78,
+    "overall": 92
   },
   "thresholds": {
     "factual_accuracy": 90,
@@ -24,10 +24,10 @@
     "youtube_shorts": {
       "platform": "youtube_shorts",
       "passed": true,
-      "expected_spoken_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
-      "transcript": "Volkswagen schlägt Alarm, die Autoindustrie stecke in einer Megakrise, weitere Einschnitte bleiben offen, weil China Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind beschäftigte Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates, wir prüfen ihre konkreten Folgen für dich.",
-      "similarity": 0.9764,
-      "average_logprob": -0.0759,
+      "expected_spoken_text": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "ChatGP zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGP-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9661,
+      "average_logprob": -0.0687,
       "critical_terms": [
         {
           "source": "TAYVORIQ",
@@ -40,26 +40,26 @@
       "transcription_model": "whisper-large-v3",
       "strict_number_audit": {
         "required": false,
-        "visible_script": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
-        "tts_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+        "visible_script": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
         "number_replacements": {},
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9764,
+      "raw_similarity_before_safe_normalization": 0.9661,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
-      "normalized_transcript": "Volkswagen schlägt Alarm, die Autoindustrie stecke in einer Megakrise, weitere Einschnitte bleiben offen, weil China Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind beschäftigte Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates, wir prüfen ihre konkreten Folgen für dich.",
-      "minimum_transcript_similarity": 0.94,
-      "request_bound_voice_quality_contract": true
+      "normalized_expected_spoken_text": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "ChatGP zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGP-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "minimum_transcript_similarity": 0.82,
+      "request_bound_voice_quality_contract": false
     },
     "tiktok": {
       "platform": "tiktok",
       "passed": true,
-      "expected_spoken_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
-      "transcript": "Volkswagen schlägt Alarm, die Autoindustrie stecke in einer Megakrise, weitere Einschnitte bleiben offen. Weil China Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates. Wir prüfen ihre konkreten Folgen für dich.",
-      "similarity": 0.9764,
-      "average_logprob": -0.059,
+      "expected_spoken_text": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "ChatPS zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatPS-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9661,
+      "average_logprob": -0.0776,
       "critical_terms": [
         {
           "source": "TAYVORIQ",
@@ -72,97 +72,99 @@
       "transcription_model": "whisper-large-v3",
       "strict_number_audit": {
         "required": false,
-        "visible_script": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
-        "tts_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+        "visible_script": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
         "number_replacements": {},
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9764,
+      "raw_similarity_before_safe_normalization": 0.9661,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
-      "normalized_transcript": "Volkswagen schlägt Alarm, die Autoindustrie stecke in einer Megakrise, weitere Einschnitte bleiben offen. Weil China Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates. Wir prüfen ihre konkreten Folgen für dich.",
-      "minimum_transcript_similarity": 0.94,
-      "request_bound_voice_quality_contract": true
+      "normalized_expected_spoken_text": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "ChatPS zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatPS-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "minimum_transcript_similarity": 0.82,
+      "request_bound_voice_quality_contract": false
     }
   },
   "marketing_review": {
     "factual_accuracy": {
-      "score": 100.0,
+      "score": 96.0,
       "blockers": [],
       "findings": [
-        "Alle Tatsachenbehauptungen sind vollständig durch den bereitgestellten Quellenkontext (Tagesschau/NDR, Reuters, VW Group) gedeckt.",
-        "Die kritischen Leitplanken wurden exakt eingehalten: Keine Falschaussagen zu beschlossenen Werksschließungen oder der 50.000-Stellen-Zahl.",
-        "China-Druck, Zölle und Kosten werden korrekt als kombinierte Belastungsfaktoren dargestellt."
+        "Alle getroffenen Aussagen bezüglich der ChatGPT-Werbung auf Free- und Go-Konten in Europa sind durch die angegebenen Quellen (OpenAI, Euronews) vollständig gedeckt.",
+        "Die Factual Guardrails wurden beachtet: Keine Falschbehauptung bezüglich Beinflussung von KI-Antworten oder pauschaler Werbeschaltung für alle Tarife."
       ]
     },
     "pronunciation_interpretation": {
-      "score": 98.0,
+      "score": 95.0,
       "blockers": [],
       "findings": [
-        "Das Audio-Transkript stimmt inhaltlich hervorragend mit dem sichtbaren Skript überein (Whisper-Prüfung mit >97% Ähnlichkeit bestanden).",
-        "Die Abweichungen bei der CTA ('den Kanal' / 'dem Kanal' statt 'TAYVORIQ') sind als zulässige semantische Marken-Fallbacks zu werten und verfälschen den Sinn nicht."
+        "Die Audio-Transkripte stimmen inhaltlich und semantisch sehr gut mit dem sichtbaren Skript überein (Similarity 0.9661).",
+        "Erkannte Abweichungen in der Transkription ('ChatGP' / 'ChatPS') sind übliche ASR-Phonetiken für englische Akronyme und verfälschen den Sinn nicht. Die Verwendung von 'den Kanal' / 'dem Kanal' entspricht den zulässigen Marken-Fallbacks."
       ]
     },
     "marketing_effectiveness": {
-      "score": 95.0,
+      "score": 92.0,
       "blockers": [],
       "findings": [
-        "Starker, direkter Hook in den ersten Sekunden ('Volkswagen schlägt Alarm...').",
-        "Hohe Relevanz und klarer Nutzen für den Zuschauer ('Frühwarnsignal für Deutschlands Wirtschaft').",
-        "Spannungsaufbau verzichtet komplett auf Clickbait und bleibt sachlich-informativ."
+        "Starker, direkter Hook in den ersten Sekunden mit hoher Relevanz für ChatGPT-Nutzer in Deutschland/Europa.",
+        "Hoher Zuschauer-Nutzen durch klare Erläuterung, wer betroffen ist und welche Handlungsoptionen bestehen."
       ]
     },
     "sales_effectiveness": {
-      "score": 95.0,
+      "score": 90.0,
       "blockers": [],
       "findings": [
-        "Vertrauenswürdiger Conversion-Pfad ohne künstlichen oder manipulativen Druck.",
-        "Die CTA bietet einen echten Mehrwert an ('verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich')."
+        "Verbindlicher, nicht-aggressiver Conversion-Pfad mit klarem Nutzenversprechen ('verifizierte Einordnung und konkrete Schritte').",
+        "Gute Begründung für ein Abo bzw. Follow ohne unberechtigten Druck."
       ]
     },
     "platform_fit": {
-      "score": 100.0,
+      "score": 94.0,
       "blockers": [],
       "findings": [
-        "Hervorragende plattformspezifische Differenzierung: 'Abonniere' für YouTube Shorts und 'Folge' für TikTok.",
-        "Metadaten, Hashtags und Beschreibungen sind präzise auf die jeweiligen Plattformen abgestimmt."
+        "Perfekte Differenzierung zwischen YouTube ('Abonniere') und TikTok ('Folge').",
+        "Metadaten, Hashtags und Captions sind plattformgerecht aufbereitet."
       ]
     },
-    "overall_score": 97.0,
+    "overall_score": 93.0,
     "approval_recommendation": "PASS",
     "blockers": [],
     "strengths": [
-      "Exzellente Einhaltung aller sachlichen Leitplanken und Quellenvorgaben.",
-      "Starke, plattformgerechte Hooks und CTAs mit echtem Mehrwert für die Zielgruppe.",
-      "Sehr hohe Übereinstimmung zwischen Audio-Transkript und Skript."
+      "Faktisch exakt und konform mit allen Prüffeld-Vorgaben.",
+      "Direkter Hook und sofort erkennbarer Mehrwert für den Zuschauer.",
+      "Saubere plattformspezifische Anpassung der Calls-to-Action."
     ],
     "repair_instructions": [],
     "score_scale_normalized": true,
     "provider_model_fallback": {
-      "selected_model": "gemini-3.5-flash",
+      "selected_model": "gemini-3.6-flash",
       "attempted_models": [
-        "gemini-3.5-flash"
+        "gemini-3.5-flash",
+        "gemini-3.6-flash"
       ],
-      "provider_failures_before_success": [],
+      "provider_failures_before_success": [
+        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } }"
+      ],
       "same_prompt": true,
       "quality_gate_weakened": false
     }
   },
   "visual_review": {
-    "score": "82",
+    "score": 78,
     "passed": true,
     "blockers": [],
     "findings": [
-      "Die gezeigten Stock-Videos sind sehr generisch und passen visuell nicht optimal zur Marke Volkswagen: Frame 1 zeigt eine asiatisch anmutende Fertigungshalle, Frame 3 zeigt eine freie Werkstatt mit einem älteren Jeep im Hintergrund statt eines VW-Modells.",
-      "Frame 2 zeigt eine traditionelle Drehbank/Feinmechanik, was den modernen, hochautomatisierten industriellen Maßstab eines Automobilgiganten wie VW nicht optimal widerspiegelt."
+      "Die Bildauswahl verwendet deutsche Wahrzeichen (Reichstag und Kölner Dom), um den Bezug zu Deutschland herzustellen, bietet jedoch keine visuellen KI- oder Tech-Elemente zu ChatGPT.",
+      "Die Untertitel und Text-Overlays sind durch die dunkle Hintergrundbox hervorragend lesbar und auf mobilen Endgeräten optimal platziert.",
+      "Keine technischen Renderfehler, Bildverzerrungen oder Textüberschneidungen auf beiden Plattformen erkennbar."
     ],
     "marketing_visual_strengths": [
-      "Hervorragende mobile Lesbarkeit durch kontraststarke Textboxen (weiße serifenlose Schrift auf dunklem, semitransparentem Hintergrund).",
-      "Vorbildliche plattformspezifische Anpassung der Call-to-Actions ('Abonniere' für YouTube Shorts, 'Folge' für TikTok).",
-      "Gute Aufteilung des vertikalen Bildraums, wodurch die Kernmotive trotz der Textüberlagerung gut erkennbar bleiben."
+      "Hohe mobile Lesbarkeit durch klaren Textkontrast und gut gewählte Schriftgröße.",
+      "Regionaler Bezug zu Deutschland wird im ersten Frame durch die Bundesflagge und das Reichstagsgebäude unmittelbar verständlich kommuniziert.",
+      "Aufgeräumte Markenpräsenz mit klarem Call-to-Action im Schlussscreen."
     ],
-    "provider": "gemini:gemini-3.5-flash",
+    "provider": "gemini:gemini-3.6-flash",
     "reviewed_frames": [
       "youtube_shorts-1.jpg",
       "youtube_shorts-2.jpg",
@@ -172,11 +174,14 @@
       "tiktok-3.jpg"
     ],
     "provider_model_fallback": {
-      "selected_model": "gemini-3.5-flash",
+      "selected_model": "gemini-3.6-flash",
       "attempted_models": [
-        "gemini-3.5-flash"
+        "gemini-3.5-flash",
+        "gemini-3.6-flash"
       ],
-      "provider_failures_before_success": [],
+      "provider_failures_before_success": [
+        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 56.720833159s.\", \"status\": \"RESOURCE_EXHAUSTED\", \""
+      ],
       "same_frames_and_prompt": true,
       "quality_gate_weakened": false,
       "fail_closed": true
@@ -192,38 +197,38 @@
     "required_platforms_present": true,
     "benefit_hits": [
       "verifiziert",
-      "prüfen"
+      "konkrete schritte"
     ],
-    "length_words": 12,
+    "length_words": 8,
     "length_ok": true,
     "consistent_across_platforms": true,
     "semantic_tail_consistent": true,
     "platform_contracts_ok": true,
     "manipulative_pressure": false,
     "ctas": [
-      "Abonniere TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
-      "Folge TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich."
+      "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+      "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte."
     ],
     "ctas_by_platform": {
-      "youtube_shorts": "Abonniere TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
-      "tiktok": "Folge TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich."
+      "youtube_shorts": "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+      "tiktok": "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte."
     },
     "semantic_tails": [
-      "für verifizierte vw-updates: wir prüfen ihre konkreten folgen für dich.",
-      "für verifizierte vw-updates: wir prüfen ihre konkreten folgen für dich."
+      "für verifizierte einordnung und konkrete schritte.",
+      "für verifizierte einordnung und konkrete schritte."
     ],
     "quality_gate_weakened": false
   },
   "blockers": [],
   "strengths": [
-    "Exzellente Einhaltung aller sachlichen Leitplanken und Quellenvorgaben.",
-    "Starke, plattformgerechte Hooks und CTAs mit echtem Mehrwert für die Zielgruppe.",
-    "Sehr hohe Übereinstimmung zwischen Audio-Transkript und Skript."
+    "Faktisch exakt und konform mit allen Prüffeld-Vorgaben.",
+    "Direkter Hook und sofort erkennbarer Mehrwert für den Zuschauer.",
+    "Saubere plattformspezifische Anpassung der Calls-to-Action."
   ],
   "repair_instructions": [],
   "providers": {
-    "marketing": "gemini:gemini-3.5-flash",
-    "visual": "gemini:gemini-3.5-flash",
+    "marketing": "gemini:gemini-3.6-flash",
+    "visual": "gemini:gemini-3.6-flash",
     "audio": "groq:whisper-large-v3-objective-score",
     "conversion": "deterministic-cta-benefit-gate-v1"
   },

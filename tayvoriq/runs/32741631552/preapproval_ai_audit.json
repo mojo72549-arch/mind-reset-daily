@@ -1,0 +1,245 @@
+{
+  "schema_version": 3,
+  "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
+  "passed": true,
+  "scores": {
+    "factual_accuracy": 96,
+    "pronunciation": 98,
+    "marketing": 92,
+    "sales": 90,
+    "platform_fit": 94,
+    "visual": 78,
+    "overall": 92
+  },
+  "thresholds": {
+    "factual_accuracy": 90,
+    "pronunciation": 95,
+    "marketing": 80,
+    "sales": 75,
+    "platform_fit": 80,
+    "visual": 78,
+    "overall": 85
+  },
+  "audio_reports": {
+    "youtube_shorts": {
+      "platform": "youtube_shorts",
+      "passed": true,
+      "expected_spoken_text": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "ChatGP zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGP-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9661,
+      "average_logprob": -0.0687,
+      "critical_terms": [
+        {
+          "source": "TAYVORIQ",
+          "spoken": "den Kanal",
+          "kind": "pronunciation_map"
+        }
+      ],
+      "missing_critical_terms": [],
+      "blockers": [],
+      "transcription_model": "whisper-large-v3",
+      "strict_number_audit": {
+        "required": false,
+        "visible_script": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {},
+        "transcription_prompt_used": false,
+        "version": "v2-unbiased-number-proof-compressed-audio"
+      },
+      "raw_similarity_before_safe_normalization": 0.9661,
+      "safe_orthographic_contract_normalization": true,
+      "normalized_expected_spoken_text": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "ChatGP zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGP-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "minimum_transcript_similarity": 0.82,
+      "request_bound_voice_quality_contract": false
+    },
+    "tiktok": {
+      "platform": "tiktok",
+      "passed": true,
+      "expected_spoken_text": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "ChatPS zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatPS-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9661,
+      "average_logprob": -0.0776,
+      "critical_terms": [
+        {
+          "source": "TAYVORIQ",
+          "spoken": "dem Kanal",
+          "kind": "pronunciation_map"
+        }
+      ],
+      "missing_critical_terms": [],
+      "blockers": [],
+      "transcription_model": "whisper-large-v3",
+      "strict_number_audit": {
+        "required": false,
+        "visible_script": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {},
+        "transcription_prompt_used": false,
+        "version": "v2-unbiased-number-proof-compressed-audio"
+      },
+      "raw_similarity_before_safe_normalization": 0.9661,
+      "safe_orthographic_contract_normalization": true,
+      "normalized_expected_spoken_text": "ChatGPT zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatGPT-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "ChatPS zeigt Europa nun Werbung für Free- und Go-Konten. Das passiert, weil OpenAI Anzeigen auf weitere europäische Märkte ausweitet. Betroffen sind Nutzer kostenloser und günstiger ChatPS-Tarife in Europa. Für dich ändern sich Oberfläche und Auswahlmöglichkeiten je nach Tarif. Prüfe deinen Tarif und die neue werbefreie Option mit Limits. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "minimum_transcript_similarity": 0.82,
+      "request_bound_voice_quality_contract": false
+    }
+  },
+  "marketing_review": {
+    "factual_accuracy": {
+      "score": 96.0,
+      "blockers": [],
+      "findings": [
+        "Alle getroffenen Aussagen bezüglich der ChatGPT-Werbung auf Free- und Go-Konten in Europa sind durch die angegebenen Quellen (OpenAI, Euronews) vollständig gedeckt.",
+        "Die Factual Guardrails wurden beachtet: Keine Falschbehauptung bezüglich Beinflussung von KI-Antworten oder pauschaler Werbeschaltung für alle Tarife."
+      ]
+    },
+    "pronunciation_interpretation": {
+      "score": 95.0,
+      "blockers": [],
+      "findings": [
+        "Die Audio-Transkripte stimmen inhaltlich und semantisch sehr gut mit dem sichtbaren Skript überein (Similarity 0.9661).",
+        "Erkannte Abweichungen in der Transkription ('ChatGP' / 'ChatPS') sind übliche ASR-Phonetiken für englische Akronyme und verfälschen den Sinn nicht. Die Verwendung von 'den Kanal' / 'dem Kanal' entspricht den zulässigen Marken-Fallbacks."
+      ]
+    },
+    "marketing_effectiveness": {
+      "score": 92.0,
+      "blockers": [],
+      "findings": [
+        "Starker, direkter Hook in den ersten Sekunden mit hoher Relevanz für ChatGPT-Nutzer in Deutschland/Europa.",
+        "Hoher Zuschauer-Nutzen durch klare Erläuterung, wer betroffen ist und welche Handlungsoptionen bestehen."
+      ]
+    },
+    "sales_effectiveness": {
+      "score": 90.0,
+      "blockers": [],
+      "findings": [
+        "Verbindlicher, nicht-aggressiver Conversion-Pfad mit klarem Nutzenversprechen ('verifizierte Einordnung und konkrete Schritte').",
+        "Gute Begründung für ein Abo bzw. Follow ohne unberechtigten Druck."
+      ]
+    },
+    "platform_fit": {
+      "score": 94.0,
+      "blockers": [],
+      "findings": [
+        "Perfekte Differenzierung zwischen YouTube ('Abonniere') und TikTok ('Folge').",
+        "Metadaten, Hashtags und Captions sind plattformgerecht aufbereitet."
+      ]
+    },
+    "overall_score": 93.0,
+    "approval_recommendation": "PASS",
+    "blockers": [],
+    "strengths": [
+      "Faktisch exakt und konform mit allen Prüffeld-Vorgaben.",
+      "Direkter Hook und sofort erkennbarer Mehrwert für den Zuschauer.",
+      "Saubere plattformspezifische Anpassung der Calls-to-Action."
+    ],
+    "repair_instructions": [],
+    "score_scale_normalized": true,
+    "provider_model_fallback": {
+      "selected_model": "gemini-3.6-flash",
+      "attempted_models": [
+        "gemini-3.5-flash",
+        "gemini-3.6-flash"
+      ],
+      "provider_failures_before_success": [
+        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } }"
+      ],
+      "same_prompt": true,
+      "quality_gate_weakened": false
+    }
+  },
+  "visual_review": {
+    "score": 78,
+    "passed": true,
+    "blockers": [],
+    "findings": [
+      "Die Bildauswahl verwendet deutsche Wahrzeichen (Reichstag und Kölner Dom), um den Bezug zu Deutschland herzustellen, bietet jedoch keine visuellen KI- oder Tech-Elemente zu ChatGPT.",
+      "Die Untertitel und Text-Overlays sind durch die dunkle Hintergrundbox hervorragend lesbar und auf mobilen Endgeräten optimal platziert.",
+      "Keine technischen Renderfehler, Bildverzerrungen oder Textüberschneidungen auf beiden Plattformen erkennbar."
+    ],
+    "marketing_visual_strengths": [
+      "Hohe mobile Lesbarkeit durch klaren Textkontrast und gut gewählte Schriftgröße.",
+      "Regionaler Bezug zu Deutschland wird im ersten Frame durch die Bundesflagge und das Reichstagsgebäude unmittelbar verständlich kommuniziert.",
+      "Aufgeräumte Markenpräsenz mit klarem Call-to-Action im Schlussscreen."
+    ],
+    "provider": "gemini:gemini-3.6-flash",
+    "reviewed_frames": [
+      "youtube_shorts-1.jpg",
+      "youtube_shorts-2.jpg",
+      "youtube_shorts-3.jpg",
+      "tiktok-1.jpg",
+      "tiktok-2.jpg",
+      "tiktok-3.jpg"
+    ],
+    "provider_model_fallback": {
+      "selected_model": "gemini-3.6-flash",
+      "attempted_models": [
+        "gemini-3.5-flash",
+        "gemini-3.6-flash"
+      ],
+      "provider_failures_before_success": [
+        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\\nPlease retry in 56.720833159s.\", \"status\": \"RESOURCE_EXHAUSTED\", \""
+      ],
+      "same_frames_and_prompt": true,
+      "quality_gate_weakened": false,
+      "fail_closed": true
+    }
+  },
+  "objective_conversion_review": {
+    "passed": true,
+    "score": 83,
+    "action_ok": true,
+    "platform_specific_actions_ok": true,
+    "youtube_action_ok": true,
+    "tiktok_action_ok": true,
+    "required_platforms_present": true,
+    "benefit_hits": [
+      "verifiziert",
+      "konkrete schritte"
+    ],
+    "length_words": 8,
+    "length_ok": true,
+    "consistent_across_platforms": true,
+    "semantic_tail_consistent": true,
+    "platform_contracts_ok": true,
+    "manipulative_pressure": false,
+    "ctas": [
+      "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+      "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte."
+    ],
+    "ctas_by_platform": {
+      "youtube_shorts": "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
+      "tiktok": "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte."
+    },
+    "semantic_tails": [
+      "für verifizierte einordnung und konkrete schritte.",
+      "für verifizierte einordnung und konkrete schritte."
+    ],
+    "quality_gate_weakened": false
+  },
+  "blockers": [],
+  "strengths": [
+    "Faktisch exakt und konform mit allen Prüffeld-Vorgaben.",
+    "Direkter Hook und sofort erkennbarer Mehrwert für den Zuschauer.",
+    "Saubere plattformspezifische Anpassung der Calls-to-Action."
+  ],
+  "repair_instructions": [],
+  "providers": {
+    "marketing": "gemini:gemini-3.6-flash",
+    "visual": "gemini:gemini-3.6-flash",
+    "audio": "groq:whisper-large-v3-objective-score",
+    "conversion": "deterministic-cta-benefit-gate-v1"
+  },
+  "human_review_allowed": true,
+  "quality_gates_weakened": false,
+  "score_calibration": {
+    "provider_scales": "0-1-or-0-10-or-0-100-to-percent",
+    "pronunciation": "objective-transcript-similarity-and-confidence",
+    "sales": "max-independent-judge-and-objective-cta-benefit-score",
+    "overall": "fixed-weight-evidence-score",
+    "marketing_provider_order": "gemini-retry-first-groq-fallback",
+    "visual_provider_order": "configured-gemini-then-3.6-flash-then-3.5-flash-lite"
+  }
+}
