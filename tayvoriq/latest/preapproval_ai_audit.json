@@ -8,8 +8,8 @@
     "marketing": 95,
     "sales": 95,
     "platform_fit": 100,
-    "visual": 95,
-    "overall": 97
+    "visual": 82,
+    "overall": 95
   },
   "thresholds": {
     "factual_accuracy": 90,
@@ -24,10 +24,10 @@
     "youtube_shorts": {
       "platform": "youtube_shorts",
       "passed": true,
-      "expected_spoken_text": "KI-Schriftsätze verursachen an deutschen Sozial- und Verwaltungsgerichten zunehmend Mehrarbeit. Weil KI lange Texte und erfundene Fundstellen sehr schnell erzeugt. Betroffen sind Richter, Rechtssuchende und besonders Sozialgerichte ohne Anwaltszwang. Für dich zeigt das, wie KI öffentliche Systeme plötzlich belastet. Beobachte, ob Gerichte nun Seitenlimits oder eigene KI-Prüfwerkzeuge einführen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "A. KI-Schriftsätze verursachen an deutschen Sozial- und Verwaltungsgerichten zunehmend mehr Arbeit. Weil KI lange Texte und erfundene Fundstellen sehr schnell erzeugt. Betroffen sind Richter, Rechtssuchende und besonders Sozialgerichte ohne Anwaltszwang. Für dich zeigt das, wie KI öffentliche Systeme plötzlich belastet. Beobachte, ob Gerichte nun Seitenlimits oder eigene KI-Prüfwerkzeuge einführen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "similarity": 0.9661,
-      "average_logprob": -0.0672,
+      "expected_spoken_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+      "transcript": "Volkswagen schlägt Alarm, die Autoindustrie stecke in einer Megakrise, weitere Einschnitte bleiben offen, weil China Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind beschäftigte Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates, wir prüfen ihre konkreten Folgen für dich.",
+      "similarity": 0.9764,
+      "average_logprob": -0.0759,
       "critical_terms": [
         {
           "source": "TAYVORIQ",
@@ -40,24 +40,26 @@
       "transcription_model": "whisper-large-v3",
       "strict_number_audit": {
         "required": false,
-        "visible_script": "KI-Schriftsätze verursachen an deutschen Sozial- und Verwaltungsgerichten zunehmend Mehrarbeit. Weil KI lange Texte und erfundene Fundstellen sehr schnell erzeugt. Betroffen sind Richter, Rechtssuchende und besonders Sozialgerichte ohne Anwaltszwang. Für dich zeigt das, wie KI öffentliche Systeme plötzlich belastet. Beobachte, ob Gerichte nun Seitenlimits oder eigene KI-Prüfwerkzeuge einführen. Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "KI-Schriftsätze verursachen an deutschen Sozial- und Verwaltungsgerichten zunehmend Mehrarbeit. Weil KI lange Texte und erfundene Fundstellen sehr schnell erzeugt. Betroffen sind Richter, Rechtssuchende und besonders Sozialgerichte ohne Anwaltszwang. Für dich zeigt das, wie KI öffentliche Systeme plötzlich belastet. Beobachte, ob Gerichte nun Seitenlimits oder eigene KI-Prüfwerkzeuge einführen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "visible_script": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+        "tts_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
         "number_replacements": {},
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9661,
+      "raw_similarity_before_safe_normalization": 0.9764,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "KI-Schriftsätze verursachen an deutschen Sozial- und Verwaltungsgerichten zunehmend Mehrarbeit. Weil KI lange Texte und erfundene Fundstellen sehr schnell erzeugt. Betroffen sind Richter, Rechtssuchende und besonders Sozialgerichte ohne Anwaltszwang. Für dich zeigt das, wie KI öffentliche Systeme plötzlich belastet. Beobachte, ob Gerichte nun Seitenlimits oder eigene KI-Prüfwerkzeuge einführen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "A. KI-Schriftsätze verursachen an deutschen Sozial- und Verwaltungsgerichten zunehmend mehr Arbeit. Weil KI lange Texte und erfundene Fundstellen sehr schnell erzeugt. Betroffen sind Richter, Rechtssuchende und besonders Sozialgerichte ohne Anwaltszwang. Für dich zeigt das, wie KI öffentliche Systeme plötzlich belastet. Beobachte, ob Gerichte nun Seitenlimits oder eigene KI-Prüfwerkzeuge einführen. Abonniere den Kanal für verifizierte Einordnung und konkrete Schritte."
+      "normalized_expected_spoken_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+      "normalized_transcript": "Volkswagen schlägt Alarm, die Autoindustrie stecke in einer Megakrise, weitere Einschnitte bleiben offen, weil China Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind beschäftigte Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates, wir prüfen ihre konkreten Folgen für dich.",
+      "minimum_transcript_similarity": 0.94,
+      "request_bound_voice_quality_contract": true
     },
     "tiktok": {
       "platform": "tiktok",
       "passed": true,
-      "expected_spoken_text": "KI-Schriftsätze verursachen an deutschen Sozial- und Verwaltungsgerichten zunehmend Mehrarbeit. Weil KI lange Texte und erfundene Fundstellen sehr schnell erzeugt. Betroffen sind Richter, Rechtssuchende und besonders Sozialgerichte ohne Anwaltszwang. Für dich zeigt das, wie KI öffentliche Systeme plötzlich belastet. Beobachte, ob Gerichte nun Seitenlimits oder eigene KI-Prüfwerkzeuge einführen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "KI-Schriftsätze verursachen an deutschen Sozial- und Verwaltungsgerichten zunehmend mehr Arbeit, weil KI lange Texte und erfundene Fundstellen sehr schnell erzeugt. Betroffen sind Richter, Rechtssuchende und besonders Sozialgerichte ohne Anwaltszwang. Für dich zeigt das, wie KI öffentliche Systeme plötzlich belastet. Beobachte, ob Gerichte nun Seitenlimits oder eigene KI-Prüfwerkzeuge einführen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "similarity": 0.9744,
-      "average_logprob": -0.0662,
+      "expected_spoken_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+      "transcript": "Volkswagen schlägt Alarm, die Autoindustrie stecke in einer Megakrise, weitere Einschnitte bleiben offen. Weil China Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates. Wir prüfen ihre konkreten Folgen für dich.",
+      "similarity": 0.9764,
+      "average_logprob": -0.059,
       "critical_terms": [
         {
           "source": "TAYVORIQ",
@@ -70,16 +72,18 @@
       "transcription_model": "whisper-large-v3",
       "strict_number_audit": {
         "required": false,
-        "visible_script": "KI-Schriftsätze verursachen an deutschen Sozial- und Verwaltungsgerichten zunehmend Mehrarbeit. Weil KI lange Texte und erfundene Fundstellen sehr schnell erzeugt. Betroffen sind Richter, Rechtssuchende und besonders Sozialgerichte ohne Anwaltszwang. Für dich zeigt das, wie KI öffentliche Systeme plötzlich belastet. Beobachte, ob Gerichte nun Seitenlimits oder eigene KI-Prüfwerkzeuge einführen. Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "KI-Schriftsätze verursachen an deutschen Sozial- und Verwaltungsgerichten zunehmend Mehrarbeit. Weil KI lange Texte und erfundene Fundstellen sehr schnell erzeugt. Betroffen sind Richter, Rechtssuchende und besonders Sozialgerichte ohne Anwaltszwang. Für dich zeigt das, wie KI öffentliche Systeme plötzlich belastet. Beobachte, ob Gerichte nun Seitenlimits oder eigene KI-Prüfwerkzeuge einführen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "visible_script": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+        "tts_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
         "number_replacements": {},
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9744,
+      "raw_similarity_before_safe_normalization": 0.9764,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "KI-Schriftsätze verursachen an deutschen Sozial- und Verwaltungsgerichten zunehmend Mehrarbeit. Weil KI lange Texte und erfundene Fundstellen sehr schnell erzeugt. Betroffen sind Richter, Rechtssuchende und besonders Sozialgerichte ohne Anwaltszwang. Für dich zeigt das, wie KI öffentliche Systeme plötzlich belastet. Beobachte, ob Gerichte nun Seitenlimits oder eigene KI-Prüfwerkzeuge einführen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "KI-Schriftsätze verursachen an deutschen Sozial- und Verwaltungsgerichten zunehmend mehr Arbeit, weil KI lange Texte und erfundene Fundstellen sehr schnell erzeugt. Betroffen sind Richter, Rechtssuchende und besonders Sozialgerichte ohne Anwaltszwang. Für dich zeigt das, wie KI öffentliche Systeme plötzlich belastet. Beobachte, ob Gerichte nun Seitenlimits oder eigene KI-Prüfwerkzeuge einführen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte."
+      "normalized_expected_spoken_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+      "normalized_transcript": "Volkswagen schlägt Alarm, die Autoindustrie stecke in einer Megakrise, weitere Einschnitte bleiben offen. Weil China Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates. Wir prüfen ihre konkreten Folgen für dich.",
+      "minimum_transcript_similarity": 0.94,
+      "request_bound_voice_quality_contract": true
     }
   },
   "marketing_review": {
@@ -87,50 +91,51 @@
       "score": 100.0,
       "blockers": [],
       "findings": [
-        "Alle Tatsachenbehauptungen sind vollständig durch die bereitgestellten Quellen (SWR Aktuell, taz, Netzwerk Sozialrecht) gedeckt.",
-        "Die Factual Guardrails wurden exakt eingehalten: Seitenlimits werden nur als Option zur Beobachtung genannt, der 4.500-Seiten-Fall wird nicht fälschlicherweise als Standard verallgemeinert und es werden keine fiktiven Aktenzeichen verwendet."
+        "Alle Tatsachenbehauptungen sind vollständig durch den bereitgestellten Quellenkontext (Tagesschau/NDR, Reuters, VW Group) gedeckt.",
+        "Die kritischen Leitplanken wurden exakt eingehalten: Keine Falschaussagen zu beschlossenen Werksschließungen oder der 50.000-Stellen-Zahl.",
+        "China-Druck, Zölle und Kosten werden korrekt als kombinierte Belastungsfaktoren dargestellt."
       ]
     },
     "pronunciation_interpretation": {
-      "score": 95.0,
+      "score": 98.0,
       "blockers": [],
       "findings": [
-        "Die Audio-Transkripte stimmen hervorragend mit den Skripten überein (Whisper-Similarity von über 96% bzw. 97%).",
-        "Die Abweichungen bei den CTAs ('den Kanal' / 'dem Kanal' statt 'TAYVORIQ') sind als zulässige semantische Marken-Fallbacks gewertet.",
-        "Das führende 'A.' im YouTube-Shorts-Transkript ist ein vernachlässigbarer Artefakt und beeinträchtigt das Verständnis nicht."
+        "Das Audio-Transkript stimmt inhaltlich hervorragend mit dem sichtbaren Skript überein (Whisper-Prüfung mit >97% Ähnlichkeit bestanden).",
+        "Die Abweichungen bei der CTA ('den Kanal' / 'dem Kanal' statt 'TAYVORIQ') sind als zulässige semantische Marken-Fallbacks zu werten und verfälschen den Sinn nicht."
       ]
     },
     "marketing_effectiveness": {
       "score": 95.0,
       "blockers": [],
       "findings": [
-        "Starker, aktueller Hook, der das Paradoxon von KI als Arbeitserleichterung vs. Mehrarbeit sofort auf den Punkt bringt.",
-        "Hohe Relevanz und verständlicher Nutzen für den Zuschauer ohne reißerischen Clickbait."
+        "Starker, direkter Hook in den ersten Sekunden ('Volkswagen schlägt Alarm...').",
+        "Hohe Relevanz und klarer Nutzen für den Zuschauer ('Frühwarnsignal für Deutschlands Wirtschaft').",
+        "Spannungsaufbau verzichtet komplett auf Clickbait und bleibt sachlich-informativ."
       ]
     },
     "sales_effectiveness": {
       "score": 95.0,
       "blockers": [],
       "findings": [
-        "Sehr sauberer, vertrauenswürdiger Conversion-Pfad.",
-        "Die CTA bietet einen echten Mehrwert (verifizierte Einordnung und konkrete Schritte) und verzichtet auf künstliche Verknappung oder Druck."
+        "Vertrauenswürdiger Conversion-Pfad ohne künstlichen oder manipulativen Druck.",
+        "Die CTA bietet einen echten Mehrwert an ('verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich')."
       ]
     },
     "platform_fit": {
       "score": 100.0,
       "blockers": [],
       "findings": [
-        "Hervorragende plattformspezifische Anpassung: YouTube Shorts nutzt 'Abonniere', während TikTok 'Folge' verwendet.",
-        "Die Metadaten, Beschreibungen und Hashtags sind präzise auf die jeweiligen Plattformen abgestimmt."
+        "Hervorragende plattformspezifische Differenzierung: 'Abonniere' für YouTube Shorts und 'Folge' für TikTok.",
+        "Metadaten, Hashtags und Beschreibungen sind präzise auf die jeweiligen Plattformen abgestimmt."
       ]
     },
     "overall_score": 97.0,
     "approval_recommendation": "PASS",
     "blockers": [],
     "strengths": [
-      "Perfekte Einhaltung aller redaktionellen und faktischen Vorgaben.",
-      "Sehr hohe Übereinstimmung zwischen Audio-Transkript und Skript.",
-      "Plattformgerechte Differenzierung der Call-to-Actions."
+      "Exzellente Einhaltung aller sachlichen Leitplanken und Quellenvorgaben.",
+      "Starke, plattformgerechte Hooks und CTAs mit echtem Mehrwert für die Zielgruppe.",
+      "Sehr hohe Übereinstimmung zwischen Audio-Transkript und Skript."
     ],
     "repair_instructions": [],
     "score_scale_normalized": true,
@@ -145,20 +150,17 @@
     }
   },
   "visual_review": {
-    "score": "95",
+    "score": "82",
     "passed": true,
     "blockers": [],
     "findings": [
-      "Hervorragende plattformspezifische Anpassung des Call-to-Action: 'Abonniere' für YouTube Shorts und 'Folge' für TikTok.",
-      "Die visuelle Metapher im ersten Frame (Binärcode auf dem Gesicht) stellt den Bezug zu KI sofort und modern her.",
-      "Die Lesbarkeit der Untertitel ist durch den kontrastreichen, abgerundeten Hintergrund-Kasten auf allen Mobilgeräten optimal gewährleistet.",
-      "Die Bildmotive (Dokumentenbearbeitung und Richtergavel) passen perfekt zum juristischen Kontext des Themas.",
-      "Keine Renderfehler oder anatomischen Anomalien bei den Händen oder Gesichtern erkennbar."
+      "Die gezeigten Stock-Videos sind sehr generisch und passen visuell nicht optimal zur Marke Volkswagen: Frame 1 zeigt eine asiatisch anmutende Fertigungshalle, Frame 3 zeigt eine freie Werkstatt mit einem älteren Jeep im Hintergrund statt eines VW-Modells.",
+      "Frame 2 zeigt eine traditionelle Drehbank/Feinmechanik, was den modernen, hochautomatisierten industriellen Maßstab eines Automobilgiganten wie VW nicht optimal widerspiegelt."
     ],
     "marketing_visual_strengths": [
-      "Hohe visuelle Glaubwürdigkeit durch kinoreife Tiefenschärfe und stimmungsvolles Color Grading.",
-      "Starke Markenwirkung durch die nahtlose Integration des Markennamens TAYVORIQ im abschließenden Call-to-Action.",
-      "Hohes Retention-Potenzial durch abwechslungsreiche, farblich harmonierende Bildwechsel, die den Text perfekt unterstützen."
+      "Hervorragende mobile Lesbarkeit durch kontraststarke Textboxen (weiße serifenlose Schrift auf dunklem, semitransparentem Hintergrund).",
+      "Vorbildliche plattformspezifische Anpassung der Call-to-Actions ('Abonniere' für YouTube Shorts, 'Folge' für TikTok).",
+      "Gute Aufteilung des vertikalen Bildraums, wodurch die Kernmotive trotz der Textüberlagerung gut erkennbar bleiben."
     ],
     "provider": "gemini:gemini-3.5-flash",
     "reviewed_frames": [
@@ -190,33 +192,33 @@
     "required_platforms_present": true,
     "benefit_hits": [
       "verifiziert",
-      "konkrete schritte"
+      "prüfen"
     ],
-    "length_words": 8,
+    "length_words": 12,
     "length_ok": true,
     "consistent_across_platforms": true,
     "semantic_tail_consistent": true,
     "platform_contracts_ok": true,
     "manipulative_pressure": false,
     "ctas": [
-      "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
-      "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte."
+      "Abonniere TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+      "Folge TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich."
     ],
     "ctas_by_platform": {
-      "youtube_shorts": "Abonniere TAYVORIQ für verifizierte Einordnung und konkrete Schritte.",
-      "tiktok": "Folge TAYVORIQ für verifizierte Einordnung und konkrete Schritte."
+      "youtube_shorts": "Abonniere TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+      "tiktok": "Folge TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich."
     },
     "semantic_tails": [
-      "für verifizierte einordnung und konkrete schritte.",
-      "für verifizierte einordnung und konkrete schritte."
+      "für verifizierte vw-updates: wir prüfen ihre konkreten folgen für dich.",
+      "für verifizierte vw-updates: wir prüfen ihre konkreten folgen für dich."
     ],
     "quality_gate_weakened": false
   },
   "blockers": [],
   "strengths": [
-    "Perfekte Einhaltung aller redaktionellen und faktischen Vorgaben.",
-    "Sehr hohe Übereinstimmung zwischen Audio-Transkript und Skript.",
-    "Plattformgerechte Differenzierung der Call-to-Actions."
+    "Exzellente Einhaltung aller sachlichen Leitplanken und Quellenvorgaben.",
+    "Starke, plattformgerechte Hooks und CTAs mit echtem Mehrwert für die Zielgruppe.",
+    "Sehr hohe Übereinstimmung zwischen Audio-Transkript und Skript."
   ],
   "repair_instructions": [],
   "providers": {

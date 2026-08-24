@@ -1,0 +1,240 @@
+{
+  "schema_version": 3,
+  "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
+  "passed": true,
+  "scores": {
+    "factual_accuracy": 100,
+    "pronunciation": 98,
+    "marketing": 95,
+    "sales": 95,
+    "platform_fit": 100,
+    "visual": 82,
+    "overall": 95
+  },
+  "thresholds": {
+    "factual_accuracy": 90,
+    "pronunciation": 95,
+    "marketing": 80,
+    "sales": 75,
+    "platform_fit": 80,
+    "visual": 78,
+    "overall": 85
+  },
+  "audio_reports": {
+    "youtube_shorts": {
+      "platform": "youtube_shorts",
+      "passed": true,
+      "expected_spoken_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+      "transcript": "Volkswagen schlägt Alarm, die Autoindustrie stecke in einer Megakrise, weitere Einschnitte bleiben offen, weil China Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind beschäftigte Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates, wir prüfen ihre konkreten Folgen für dich.",
+      "similarity": 0.9764,
+      "average_logprob": -0.0759,
+      "critical_terms": [
+        {
+          "source": "TAYVORIQ",
+          "spoken": "den Kanal",
+          "kind": "pronunciation_map"
+        }
+      ],
+      "missing_critical_terms": [],
+      "blockers": [],
+      "transcription_model": "whisper-large-v3",
+      "strict_number_audit": {
+        "required": false,
+        "visible_script": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+        "tts_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+        "number_replacements": {},
+        "transcription_prompt_used": false,
+        "version": "v2-unbiased-number-proof-compressed-audio"
+      },
+      "raw_similarity_before_safe_normalization": 0.9764,
+      "safe_orthographic_contract_normalization": true,
+      "normalized_expected_spoken_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+      "normalized_transcript": "Volkswagen schlägt Alarm, die Autoindustrie stecke in einer Megakrise, weitere Einschnitte bleiben offen, weil China Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind beschäftigte Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Abonniere den Kanal für verifizierte VW-Updates, wir prüfen ihre konkreten Folgen für dich.",
+      "minimum_transcript_similarity": 0.94,
+      "request_bound_voice_quality_contract": true
+    },
+    "tiktok": {
+      "platform": "tiktok",
+      "passed": true,
+      "expected_spoken_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+      "transcript": "Volkswagen schlägt Alarm, die Autoindustrie stecke in einer Megakrise, weitere Einschnitte bleiben offen. Weil China Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates. Wir prüfen ihre konkreten Folgen für dich.",
+      "similarity": 0.9764,
+      "average_logprob": -0.059,
+      "critical_terms": [
+        {
+          "source": "TAYVORIQ",
+          "spoken": "dem Kanal",
+          "kind": "pronunciation_map"
+        }
+      ],
+      "missing_critical_terms": [],
+      "blockers": [],
+      "transcription_model": "whisper-large-v3",
+      "strict_number_audit": {
+        "required": false,
+        "visible_script": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+        "tts_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+        "number_replacements": {},
+        "transcription_prompt_used": false,
+        "version": "v2-unbiased-number-proof-compressed-audio"
+      },
+      "raw_similarity_before_safe_normalization": 0.9764,
+      "safe_orthographic_contract_normalization": true,
+      "normalized_expected_spoken_text": "Volkswagen schlägt Alarm: Die Autoindustrie stecke in einer Mega-Krise; weitere Einschnitte bleiben offen. Weil China-Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+      "normalized_transcript": "Volkswagen schlägt Alarm, die Autoindustrie stecke in einer Megakrise, weitere Einschnitte bleiben offen. Weil China Druck, Zölle und Kosten den Umbau härter machen. Betroffen sind Beschäftigte, Werke, Zulieferer und ganze Industrieregionen. Für dich ist VW ein Frühwarnsignal für Deutschlands Wirtschaft. Prüfe jetzt echte Werkentscheidungen, Sparziele und den tatsächlichen Stellenabbau. Folge dem Kanal für verifizierte VW-Updates. Wir prüfen ihre konkreten Folgen für dich.",
+      "minimum_transcript_similarity": 0.94,
+      "request_bound_voice_quality_contract": true
+    }
+  },
+  "marketing_review": {
+    "factual_accuracy": {
+      "score": 100.0,
+      "blockers": [],
+      "findings": [
+        "Alle Tatsachenbehauptungen sind vollständig durch den bereitgestellten Quellenkontext (Tagesschau/NDR, Reuters, VW Group) gedeckt.",
+        "Die kritischen Leitplanken wurden exakt eingehalten: Keine Falschaussagen zu beschlossenen Werksschließungen oder der 50.000-Stellen-Zahl.",
+        "China-Druck, Zölle und Kosten werden korrekt als kombinierte Belastungsfaktoren dargestellt."
+      ]
+    },
+    "pronunciation_interpretation": {
+      "score": 98.0,
+      "blockers": [],
+      "findings": [
+        "Das Audio-Transkript stimmt inhaltlich hervorragend mit dem sichtbaren Skript überein (Whisper-Prüfung mit >97% Ähnlichkeit bestanden).",
+        "Die Abweichungen bei der CTA ('den Kanal' / 'dem Kanal' statt 'TAYVORIQ') sind als zulässige semantische Marken-Fallbacks zu werten und verfälschen den Sinn nicht."
+      ]
+    },
+    "marketing_effectiveness": {
+      "score": 95.0,
+      "blockers": [],
+      "findings": [
+        "Starker, direkter Hook in den ersten Sekunden ('Volkswagen schlägt Alarm...').",
+        "Hohe Relevanz und klarer Nutzen für den Zuschauer ('Frühwarnsignal für Deutschlands Wirtschaft').",
+        "Spannungsaufbau verzichtet komplett auf Clickbait und bleibt sachlich-informativ."
+      ]
+    },
+    "sales_effectiveness": {
+      "score": 95.0,
+      "blockers": [],
+      "findings": [
+        "Vertrauenswürdiger Conversion-Pfad ohne künstlichen oder manipulativen Druck.",
+        "Die CTA bietet einen echten Mehrwert an ('verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich')."
+      ]
+    },
+    "platform_fit": {
+      "score": 100.0,
+      "blockers": [],
+      "findings": [
+        "Hervorragende plattformspezifische Differenzierung: 'Abonniere' für YouTube Shorts und 'Folge' für TikTok.",
+        "Metadaten, Hashtags und Beschreibungen sind präzise auf die jeweiligen Plattformen abgestimmt."
+      ]
+    },
+    "overall_score": 97.0,
+    "approval_recommendation": "PASS",
+    "blockers": [],
+    "strengths": [
+      "Exzellente Einhaltung aller sachlichen Leitplanken und Quellenvorgaben.",
+      "Starke, plattformgerechte Hooks und CTAs mit echtem Mehrwert für die Zielgruppe.",
+      "Sehr hohe Übereinstimmung zwischen Audio-Transkript und Skript."
+    ],
+    "repair_instructions": [],
+    "score_scale_normalized": true,
+    "provider_model_fallback": {
+      "selected_model": "gemini-3.5-flash",
+      "attempted_models": [
+        "gemini-3.5-flash"
+      ],
+      "provider_failures_before_success": [],
+      "same_prompt": true,
+      "quality_gate_weakened": false
+    }
+  },
+  "visual_review": {
+    "score": "82",
+    "passed": true,
+    "blockers": [],
+    "findings": [
+      "Die gezeigten Stock-Videos sind sehr generisch und passen visuell nicht optimal zur Marke Volkswagen: Frame 1 zeigt eine asiatisch anmutende Fertigungshalle, Frame 3 zeigt eine freie Werkstatt mit einem älteren Jeep im Hintergrund statt eines VW-Modells.",
+      "Frame 2 zeigt eine traditionelle Drehbank/Feinmechanik, was den modernen, hochautomatisierten industriellen Maßstab eines Automobilgiganten wie VW nicht optimal widerspiegelt."
+    ],
+    "marketing_visual_strengths": [
+      "Hervorragende mobile Lesbarkeit durch kontraststarke Textboxen (weiße serifenlose Schrift auf dunklem, semitransparentem Hintergrund).",
+      "Vorbildliche plattformspezifische Anpassung der Call-to-Actions ('Abonniere' für YouTube Shorts, 'Folge' für TikTok).",
+      "Gute Aufteilung des vertikalen Bildraums, wodurch die Kernmotive trotz der Textüberlagerung gut erkennbar bleiben."
+    ],
+    "provider": "gemini:gemini-3.5-flash",
+    "reviewed_frames": [
+      "youtube_shorts-1.jpg",
+      "youtube_shorts-2.jpg",
+      "youtube_shorts-3.jpg",
+      "tiktok-1.jpg",
+      "tiktok-2.jpg",
+      "tiktok-3.jpg"
+    ],
+    "provider_model_fallback": {
+      "selected_model": "gemini-3.5-flash",
+      "attempted_models": [
+        "gemini-3.5-flash"
+      ],
+      "provider_failures_before_success": [],
+      "same_frames_and_prompt": true,
+      "quality_gate_weakened": false,
+      "fail_closed": true
+    }
+  },
+  "objective_conversion_review": {
+    "passed": true,
+    "score": 83,
+    "action_ok": true,
+    "platform_specific_actions_ok": true,
+    "youtube_action_ok": true,
+    "tiktok_action_ok": true,
+    "required_platforms_present": true,
+    "benefit_hits": [
+      "verifiziert",
+      "prüfen"
+    ],
+    "length_words": 12,
+    "length_ok": true,
+    "consistent_across_platforms": true,
+    "semantic_tail_consistent": true,
+    "platform_contracts_ok": true,
+    "manipulative_pressure": false,
+    "ctas": [
+      "Abonniere TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+      "Folge TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich."
+    ],
+    "ctas_by_platform": {
+      "youtube_shorts": "Abonniere TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich.",
+      "tiktok": "Folge TAYVORIQ für verifizierte VW-Updates: Wir prüfen ihre konkreten Folgen für dich."
+    },
+    "semantic_tails": [
+      "für verifizierte vw-updates: wir prüfen ihre konkreten folgen für dich.",
+      "für verifizierte vw-updates: wir prüfen ihre konkreten folgen für dich."
+    ],
+    "quality_gate_weakened": false
+  },
+  "blockers": [],
+  "strengths": [
+    "Exzellente Einhaltung aller sachlichen Leitplanken und Quellenvorgaben.",
+    "Starke, plattformgerechte Hooks und CTAs mit echtem Mehrwert für die Zielgruppe.",
+    "Sehr hohe Übereinstimmung zwischen Audio-Transkript und Skript."
+  ],
+  "repair_instructions": [],
+  "providers": {
+    "marketing": "gemini:gemini-3.5-flash",
+    "visual": "gemini:gemini-3.5-flash",
+    "audio": "groq:whisper-large-v3-objective-score",
+    "conversion": "deterministic-cta-benefit-gate-v1"
+  },
+  "human_review_allowed": true,
+  "quality_gates_weakened": false,
+  "score_calibration": {
+    "provider_scales": "0-1-or-0-10-or-0-100-to-percent",
+    "pronunciation": "objective-transcript-similarity-and-confidence",
+    "sales": "max-independent-judge-and-objective-cta-benefit-score",
+    "overall": "fixed-weight-evidence-score",
+    "marketing_provider_order": "gemini-retry-first-groq-fallback",
+    "visual_provider_order": "configured-gemini-then-3.6-flash-then-3.5-flash-lite"
+  }
+}
