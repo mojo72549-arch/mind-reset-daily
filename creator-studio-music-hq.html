@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#090b12" />
+  <title>Creator Studio Music HQ</title>
+  <style>
+    :root{--bg:#070910;--card:#10131d;--card2:#151927;--line:#252b3b;--text:#f7f8fc;--muted:#9ca5b8;--vio:#8b5cf6;--vio2:#6d28d9;--cyan:#22d3ee;--good:#34d399;--warn:#fbbf24;--bad:#fb7185;--r:20px}
+    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 90% -10%,#24104e 0,transparent 34%),radial-gradient(circle at -10% 20%,#082e38 0,transparent 28%),var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}
+    .wrap{width:min(980px,100%);margin:auto;padding:18px 14px 56px}.top{display:flex;align-items:center;gap:12px;margin:4px 0 18px}.logo{width:46px;height:46px;border-radius:15px;background:linear-gradient(135deg,var(--vio),var(--cyan));display:grid;place-items:center;font-size:24px;box-shadow:0 12px 35px #6d28d955}.title h1{font-size:21px;margin:0}.title p{margin:2px 0 0;color:var(--muted);font-size:12px}.badge{margin-left:auto;padding:7px 10px;border:1px solid #2f3648;border-radius:999px;color:#c7cedd;font-size:11px;background:#0d111a}
+    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}.card{background:linear-gradient(180deg,#111521dd,#0d1119ee);border:1px solid var(--line);border-radius:var(--r);padding:16px;box-shadow:0 18px 55px #0008}.card h2{font-size:16px;margin:0 0 13px}.field{margin:0 0 12px} label{display:block;font-size:12px;color:#c6ccda;margin:0 0 6px} textarea,input,select{width:100%;background:#0a0d14;color:var(--text);border:1px solid #2b3141;border-radius:13px;padding:12px;outline:none;font:inherit}textarea:focus,input:focus,select:focus{border-color:#7257d7;box-shadow:0 0 0 3px #7c3aed20}textarea{min-height:92px;resize:vertical}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    button,a.btn{border:0;border-radius:14px;padding:13px 15px;font-weight:760;font-size:14px;cursor:pointer;text-decoration:none;text-align:center;display:inline-flex;align-items:center;justify-content:center;gap:8px}.primary{width:100%;color:white;background:linear-gradient(135deg,var(--vio),var(--vio2));box-shadow:0 10px 28px #6d28d94a}.primary:disabled{opacity:.5;cursor:not-allowed}.secondary{color:#e9eaf2;background:#1a1f2d;border:1px solid #32394d}.ghost{color:#bdc5d7;background:transparent;border:1px solid #30374a}.actions{display:flex;gap:8px;flex-wrap:wrap}.actions>*{flex:1}
+    .status{display:flex;gap:11px;align-items:flex-start;padding:12px;border-radius:14px;background:#0a0d14;border:1px solid #292f3f;margin-bottom:12px}.dot{width:10px;height:10px;border-radius:50%;margin-top:5px;background:#64748b;box-shadow:0 0 0 4px #64748b18;flex:none}.status.good .dot{background:var(--good);box-shadow:0 0 0 4px #34d39918}.status.warn .dot{background:var(--warn)}.status.bad .dot{background:var(--bad)}.stMain{font-weight:700;font-size:13px}.stSub{color:var(--muted);font-size:12px;margin-top:2px}.meter{height:7px;background:#080a0f;border-radius:99px;overflow:hidden;margin:10px 0 4px}.meter span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--vio),var(--cyan));transition:width .3s}.meta{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0}.pill{font-size:11px;padding:6px 8px;border-radius:999px;background:#171b27;border:1px solid #2a3041;color:#cbd2df}
+    audio{width:100%;margin:10px 0}.lyrics{white-space:pre-wrap;background:#090c13;border:1px solid #292f3f;padding:12px;border-radius:14px;color:#dbe0ea;max-height:280px;overflow:auto;font-size:13px}.tiny{font-size:11px;color:var(--muted)}.hidden{display:none!important}.divider{height:1px;background:var(--line);margin:14px 0}.fallback{margin-top:14px}.frameWrap{height:680px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#080a0f}.frameWrap iframe{width:100%;height:100%;border:0;background:white}.footer{margin-top:16px;color:#717b90;font-size:11px;text-align:center}.quality{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}.q{padding:9px;border-radius:12px;background:#0b0e15;border:1px solid #272d3c}.q b{display:block;font-size:12px}.q small{color:var(--muted)}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}.row3{grid-template-columns:1fr 1fr}.badge{display:none}.frameWrap{height:620px}}
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <header class="top"><div class="logo">♫</div><div class="title"><h1>Creator Studio Music HQ</h1><p>Originale KI-Songs · ACE-Step 1.5 · ZeroGPU</p></div><div class="badge">0 € / Song · gemeinsame Free-GPU</div></header>
+
+  <section class="grid">
+    <div class="card">
+      <h2>1 · Song beschreiben</h2>
+      <div class="field"><label>5–10 Stichworte / Thema</label><textarea id="keywords" placeholder="z. B. Sommernacht, Stuttgart, Freiheit, Familie, Hoffnung, Autofahrt"></textarea></div>
+      <div class="row3">
+        <div class="field"><label>Sprache</label><select id="language"><option value="de">Deutsch</option><option value="tr">Türkisch</option><option value="en">Englisch</option></select></div>
+        <div class="field"><label>Stimme</label><select id="voice"><option value="male">Männlich</option><option value="female">Weiblich</option></select></div>
+        <div class="field"><label>Länge</label><select id="duration"><option value="60">1 Minute</option><option value="120">2 Minuten</option></select></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Genre</label><select id="genre"><option>Modern Pop</option><option>Pop R&B</option><option>Emotional Ballad</option><option>Deutschrap / Melodic Rap</option><option>Turkish Pop</option><option>Arabesque Pop</option><option>Dance / EDM</option><option>Afro Pop</option><option>Rock Pop</option><option>Cinematic</option></select></div>
+        <div class="field"><label>Stimmung</label><select id="mood"><option>emotional & catchy</option><option>energetic & uplifting</option><option>deep & melancholic</option><option>warm & romantic</option><option>dark & cinematic</option><option>confident & powerful</option></select></div>
+      </div>
+      <div class="field"><label>Optional: Sound genauer beschreiben</label><input id="extra" placeholder="z. B. tiefe warme Stimme, große Hook, Piano + moderne Drums" /></div>
+      <button id="generate" class="primary">♪ Studio-Song erzeugen</button>
+      <p class="tiny">Keine Künstlerkopie: Die Stimme wird nur über Eigenschaften beschrieben. ZeroGPU kann bei hoher Auslastung eine Warteschlange haben.</p>
+    </div>
+
+    <div class="card">
+      <h2>2 · Produktion</h2>
+      <div id="status" class="status"><span class="dot"></span><div><div class="stMain">Bereit</div><div class="stSub">Gib Stichworte ein und starte den Song.</div></div></div>
+      <div class="meter"><span id="bar"></span></div>
+      <div id="queue" class="tiny">Echter Provider-Status statt Fake-Prozent.</div>
+      <div id="result" class="hidden">
+        <div class="meta" id="meta"></div>
+        <audio id="audio" controls preload="metadata"></audio>
+        <div class="quality"><div class="q"><b id="qAudio">Audio —</b><small>geladen</small></div><div class="q"><b id="qDur">Länge —</b><small>Zielprüfung</small></div><div class="q"><b id="qModel">Modell —</b><small>ACE-Step</small></div></div>
+        <div class="actions"><a id="download" class="btn secondary" target="_blank" rel="noopener">MP3 öffnen</a><button id="another" class="ghost">Andere Version</button></div>
+        <div class="divider"></div><label>Vom Modell verwendete Beschreibung / Lyrics</label><div id="lyrics" class="lyrics">Wird nach der Generation angezeigt, sofern der öffentliche Dienst die Textdaten zurückgibt.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fallback" class="card fallback hidden">
+    <h2>Direktmodus gerade nicht erreichbar</h2>
+    <p class="tiny">Der freie ACE-Step-Dienst blockiert den direkten Browserzugriff oder ist ausgelastet. Das ist kein bezahlter Fehler: Unten bleibt die offizielle ZeroGPU-Studiooberfläche als Fallback verfügbar.</p>
+    <div class="actions"><button id="copyPrompt" class="secondary">Studio-Prompt kopieren</button><a class="btn ghost" href="https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5" target="_blank" rel="noopener">Offizielles Studio öffnen</a></div>
+    <div class="divider"></div><div id="promptPreview" class="lyrics"></div>
+    <div class="frameWrap"><iframe title="ACE-Step 1.5 Studio" src="https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5?embed=true&__theme=dark" allow="clipboard-read; clipboard-write; autoplay"></iframe></div>
+  </section>
+
+  <div class="footer">Creator Studio Music HQ · Vercel Frontend · ACE-Step 1.5 wird als öffentlicher ZeroGPU-Dienst genutzt. Keine dauerhafte Audiospeicherung durch diese Oberfläche.</div>
+</main>
+<script>
+(() => {
+  const HF = 'https://ace-step-ace-step-v1-5.hf.space';
+  const $ = id => document.getElementById(id);
+  let lastPayload = null, lastPrompt = '', polling = null;
+  const langHuman = {de:'German',tr:'Turkish',en:'English'};
+  const voiceText = {male:'male vocalist, warm natural adult male singing voice',female:'female vocalist, warm natural adult female singing voice'};
+
+  function setStatus(kind, main, sub, pct=0){
+    const s=$('status'); s.className='status '+(kind||''); s.querySelector('.stMain').textContent=main; s.querySelector('.stSub').textContent=sub||''; $('bar').style.width=Math.max(0,Math.min(100,pct))+'%';
+  }
+  function buildPrompt(){
+    const kw=$('keywords').value.trim().replace(/\s+/g,' '), l=$('language').value, v=$('voice').value, d=+$('duration').value, g=$('genre').value, m=$('mood').value, extra=$('extra').value.trim();
+    const structure = d <= 60 ? '[Intro], [Verse 1], [Pre-Chorus], [Chorus], [Verse 2], [Final Chorus], [Outro]' : '[Intro], [Verse 1], [Pre-Chorus], [Chorus], [Verse 2], [Chorus], [Bridge], [Final Chorus], [Outro]';
+    const prompt = `Create a polished, original ${langHuman[l]} ${g} song for a ${d}-second full track. Themes/keywords: ${kw}. Mood: ${m}. Vocal: ${voiceText[v]}. Write natural, idiomatic ${langHuman[l]} lyrics with a memorable hook and clear structure ${structure}. Keep phrasing singable, avoid awkward syllable overload and avoid spoken-word delivery. Production should sound modern and finished with coherent drums, bass, harmony, dynamics and a strong chorus. ${extra ? 'Additional production direction: '+extra+'.' : ''} Do not imitate or name any real singer or copyrighted song.`;
+    lastPrompt=prompt; $('promptPreview').textContent=prompt; return {prompt,l,d};
+  }
+  async function fetchJSON(url, opts={}, timeout=25000){
+    const ctl=new AbortController(); const t=setTimeout(()=>ctl.abort(),timeout);
+    try{ const r=await fetch(url,{...opts,signal:ctl.signal}); const text=await r.text(); let data={}; try{data=text?JSON.parse(text):{}}catch{data={raw:text}}; if(!r.ok) throw new Error(data?.detail||data?.error||('HTTP '+r.status)); return data; } finally{clearTimeout(t)}
+  }
+  function showFallback(reason){
+    $('fallback').classList.remove('hidden'); setStatus('warn','Fallback aktiv', reason||'Direkter ZeroGPU-Zugriff ist gerade nicht verfügbar.',15);
+    $('fallback').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  function deepFind(obj, keys){
+    if(!obj||typeof obj!=='object') return null;
+    for(const k of keys){if(typeof obj[k]==='string'&&obj[k].trim()) return obj[k];}
+    for(const v of Object.values(obj)){const f=deepFind(v,keys); if(f) return f;} return null;
+  }
+  function resolveAudio(path){ if(!path) return null; if(/^https?:\/\//i.test(path)) return path; return HF+(path.startsWith('/')?'':'/')+path; }
+  async function generate(reseed=false){
+    const kw=$('keywords').value.trim(); if(!kw){setStatus('bad','Stichworte fehlen','Bitte mindestens ein paar Stichworte eingeben.',0); return}
+    $('generate').disabled=true; $('result').classList.add('hidden'); $('fallback').classList.add('hidden');
+    const {prompt,l,d}=buildPrompt();
+    setStatus('warn','Provider wird geprüft','ACE-Step 1.5 ZeroGPU wird angesprochen …',8);
+    try{
+      await fetchJSON(HF+'/v1/models',{},18000);
+      const payload={sample_query:prompt,thinking:true,sample_mode:true,use_format:true,vocal_language:l,audio_duration:d,audio_format:'mp3',model:'acestep-v15-turbo',inference_steps:8,batch_size:1,use_random_seed:true,use_cot_caption:true,use_cot_language:true,constrained_decoding:true,lm_temperature:0.82,lm_cfg_scale:2.5};
+      if(reseed) payload.seed=Math.floor(Math.random()*2147483000);
+      lastPayload=payload;
+      setStatus('warn','Auftrag wird übergeben','Kein Fake-Fortschritt: gleich erscheint Queue oder Running.',12);
+      const start=await fetchJSON(HF+'/v1/music/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)},30000);
+      if(!start.job_id) throw new Error('Kein job_id vom Musikdienst erhalten');
+      await poll(start.job_id,d);
+    }catch(e){
+      console.error(e); showFallback(e.name==='AbortError'?'Der freie Musikdienst antwortet gerade zu langsam.':'Direkter API-Zugriff ist momentan nicht möglich: '+e.message);
+    }finally{$('generate').disabled=false}
+  }
+  async function poll(jobId,targetDuration){
+    const begun=Date.now(), maxMs=12*60*1000; clearInterval(polling);
+    while(Date.now()-begun<maxMs){
+      let j; try{j=await fetchJSON(HF+'/v1/jobs/'+encodeURIComponent(jobId),{},25000)}catch(e){setStatus('warn','Status wird erneut geprüft','Kurzzeitiger Provider-Fehler. Der Auftrag bleibt erhalten.',25); await new Promise(r=>setTimeout(r,5000)); continue}
+      const st=j.status||'queued', pos=j.queue_position, eta=j.eta_seconds;
+      if(st==='queued'){setStatus('warn','In ZeroGPU-Warteschlange',`Position ${pos ?? '—'}${eta!=null?' · ca. '+Math.ceil(eta)+' s laut Provider':''}`,22); $('queue').textContent='Status: queued · Auftrag '+jobId.slice(0,8)}
+      else if(st==='running'){setStatus('warn','Song wird produziert','ACE-Step arbeitet jetzt am Audio.',58); $('queue').textContent='Status: running · keine erfundene Prozentanzeige'}
+      else if(st==='failed'){throw new Error(typeof j.error==='string'?j.error:JSON.stringify(j.error||'Generation fehlgeschlagen'))}
+      else if(st==='succeeded'){setStatus('good','Song fertig','Audio wurde vom Provider erfolgreich erzeugt.',100); $('queue').textContent='Status: succeeded'; await renderResult(j.result||{},targetDuration); return}
+      await new Promise(r=>setTimeout(r,4000));
+    }
+    throw new Error('Zeitlimit für diese Sitzung erreicht. Bitte den Auftrag neu starten.');
+  }
+  async function renderResult(r,target){
+    const paths=Array.isArray(r.audio_paths)?r.audio_paths:[]; const raw=r.first_audio_path||paths[0]; const url=resolveAudio(raw); if(!url) throw new Error('Provider meldet Erfolg, aber liefert keine Audiodatei.');
+    const a=$('audio'); a.src=url; $('download').href=url; $('result').classList.remove('hidden');
+    const metas=r.metas||{}; $('meta').innerHTML='';
+    const add=(t)=>{if(t!==undefined&&t!==null&&t!==''){const x=document.createElement('span');x.className='pill';x.textContent=t;$('meta').appendChild(x)}};
+    add((r.bpm||metas.bpm)?(r.bpm||metas.bpm)+' BPM':null); add(r.keyscale||metas.keyscale); add(r.timesignature||metas.timesignature ? (r.timesignature||metas.timesignature)+'/4' : null); add(r.dit_model||'ACE-Step 1.5');
+    const text=deepFind(r,['lyrics','lyric','formatted_lyrics','lrc','caption'])||deepFind(metas,['lyrics','lyric','caption'])||lastPrompt; $('lyrics').textContent=text;
+    $('qAudio').textContent='Audio lädt …'; $('qModel').textContent=(r.dit_model||'ACE-Step 1.5').replace('acestep-',''); $('qDur').textContent='Länge prüft …';
+    a.onloadedmetadata=()=>{const sec=a.duration; $('qAudio').textContent=Number.isFinite(sec)?'Audio OK':'Audio ?'; if(Number.isFinite(sec)){const delta=Math.abs(sec-target)/target;$('qDur').textContent=delta<=.22?Math.round(sec)+' s · OK':Math.round(sec)+' s · prüfen';}}
+    a.onerror=()=>{$('qAudio').textContent='Audio-Load Fehler'; setStatus('warn','Song erzeugt, Playerproblem','MP3 über „MP3 öffnen“ testen.',100)};
+  }
+  $('generate').addEventListener('click',()=>generate(false)); $('another').addEventListener('click',()=>generate(true));
+  $('copyPrompt').addEventListener('click',async()=>{buildPrompt(); try{await navigator.clipboard.writeText(lastPrompt); $('copyPrompt').textContent='✓ Prompt kopiert'}catch{prompt('Prompt kopieren:',lastPrompt)}});
+  buildPrompt();
+})();
+</script>
+</body>
+</html>
