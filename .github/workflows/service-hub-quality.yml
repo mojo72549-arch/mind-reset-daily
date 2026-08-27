@@ -1,10 +1,9 @@
-name: Service Hub Quality V9
+name: Service Hub Quality V10
 
 on:
   push:
     branches:
       - main
-      - service-hub-live-surface-v9
     paths:
       - 'service-hub/**'
       - '.github/workflows/service-hub-quality.yml'
@@ -37,16 +36,24 @@ jobs:
           node --check ../ux-v6-admin-route.js
           node --check ../ux-v8-rapport.js
           node --check ../ux-v9-live-surface.js
+          node --check ../ux-v10-e2e.js
+          node --check ../ux-v10-business-rules.js
+          node --check ../ux-v10-undo-feedback.js
           node --check ../auth-v7.js
           node --check browser.spec.cjs
           node --check rapport-v8.spec.cjs
+          node --check e2e-v10.spec.cjs
+          node --check business-rules-v10.spec.cjs
+          node --check business-rules-extra-v10.spec.cjs
+          node --check review-positive.spec.cjs
+          node --check review-negative.spec.cjs
           node --check auth.spec.cjs
           node --check playwright.config.cjs
       - name: Unit tests
         run: node --test unit.test.cjs
 
   frontend:
-    name: Mobile and desktop frontend tests
+    name: Full UI, business rules and slow review videos
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -62,8 +69,33 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
-      - name: Run mobile and desktop frontend tests
+      - name: Run mobile, desktop, positive and negative E2E tests
         run: npx playwright test --config=playwright.config.cjs
+      - name: Convert slow acceptance reviews to MP4
+        run: |
+          mkdir -p e2e-videos
+          FFMPEG="$(command -v ffmpeg || true)"
+          if [ -z "$FFMPEG" ]; then
+            FFMPEG="$(find "$HOME/.cache/ms-playwright" -type f -name ffmpeg -perm -u+x -print -quit 2>/dev/null || true)"
+          fi
+          test -n "$FFMPEG"
+          convert_one(){
+            SRC="$(find "$1" -name video.webm -print -quit 2>/dev/null || true)"
+            test -n "$SRC"
+            "$FFMPEG" -y -i "$SRC" -c:v libx264 -pix_fmt yuv420p -movflags +faststart -an "e2e-videos/$2"
+            test -s "e2e-videos/$2"
+          }
+          convert_one test-results/review-positive-mobile service-hub-review-positive-mobile.mp4
+          convert_one test-results/review-negative-mobile service-hub-review-negative-mobile.mp4
+          convert_one test-results/review-positive-desktop service-hub-review-positive-desktop.mp4
+          convert_one test-results/review-negative-desktop service-hub-review-negative-desktop.mp4
+      - name: Upload slow E2E review videos
+        uses: actions/upload-artifact@v4
+        with:
+          name: service-hub-e2e-v10-review-videos
+          path: service-hub/tests/e2e-videos/*.mp4
+          if-no-files-found: error
+          retention-days: 30
       - name: Upload Playwright report on failure
         if: failure()
         uses: actions/upload-artifact@v4

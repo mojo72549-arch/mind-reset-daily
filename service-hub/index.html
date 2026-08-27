@@ -12,13 +12,13 @@
 <script>
 (async function(){
   try{
-    var version='20260821-v9';
+    var version='20260823-v10-review';
     var res=await fetch('./legacy.html?v='+version,{cache:'no-store'});
     if(!res.ok)throw new Error('HTTP '+res.status);
     var html=await res.text();
-    html=html.replace('var db=load();','var db=load();try{localStorage.setItem(STORE,JSON.stringify(db))}catch(e){}');
-    html=html.replace('</head>','<link rel="stylesheet" href="./ux-v5.css?v='+version+'"><link rel="stylesheet" href="./ux-v6.css?v='+version+'"><link rel="stylesheet" href="./ux-v6-context.css?v='+version+'"></head>');
-    var patch='<scr'+'ipt src="./core.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v5.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-context.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-admin-route.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./auth-v7.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v9-live-surface.js?v='+version+'"></scr'+'ipt>';
+    html=html.replace('var db=load();','var db=load();try{localStorage.setItem(STORE,JSON.stringify(db))}catch(e){};window.SHP_INTERNAL={getDb:function(){return db},setDb:function(next){db=next;save()},render:function(){render()},getSelectedCustomer:function(){return selectedCustomer},getSelectedOrder:function(){return selectedOrder},getSelectedInvoice:function(){return selectedInvoice},setSelectedCustomer:function(v){selectedCustomer=v},setSelectedInvoice:function(v){selectedInvoice=v},setSelectedOrder:function(v){selectedOrder=v},setTab:function(v){tab=v},getTab:function(){return tab}};');
+    html=html.replace('</head>','<link rel="stylesheet" href="./ux-v5.css?v='+version+'"><link rel="stylesheet" href="./ux-v6.css?v='+version+'"><link rel="stylesheet" href="./ux-v6-context.css?v='+version+'"><link rel="stylesheet" href="./ux-v10-e2e.css?v='+version+'"></head>');
+    var patch='<scr'+'ipt src="./core.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v5.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-context.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-admin-route.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./auth-v7.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v9-live-surface.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v10-e2e.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v10-business-rules.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v10-undo-feedback.js?v='+version+'"></scr'+'ipt>';
     html=html.replace('</body>',patch+'</body>');
     document.open();document.write(html);document.close();
   }catch(e){
