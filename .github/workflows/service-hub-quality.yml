@@ -1,10 +1,9 @@
-name: Service Hub Quality V9
+name: Service Hub Quality V9.1
 
 on:
   push:
     branches:
       - main
-      - service-hub-live-surface-v9
     paths:
       - 'service-hub/**'
       - '.github/workflows/service-hub-quality.yml'
@@ -40,6 +39,7 @@ jobs:
           node --check ../auth-v7.js
           node --check browser.spec.cjs
           node --check rapport-v8.spec.cjs
+          node --check order-live.spec.cjs
           node --check auth.spec.cjs
           node --check playwright.config.cjs
       - name: Unit tests
