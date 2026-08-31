@@ -36,6 +36,7 @@ jobs:
           node --check ../ux-v6-admin-route.js
           node --check ../ux-v8-rapport.js
           node --check ../ux-v9-live-surface.js
+          node --check ../ux-v11-quality-fixes.js
           node --check ../auth-v7.js
           node --check browser.spec.cjs
           node --check rapport-v8.spec.cjs
@@ -99,15 +100,10 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p video-mp4
-          FFMPEG="$(command -v ffmpeg || true)"
-          if [ -z "$FFMPEG" ]; then
-            FFMPEG="$(find "$HOME/.cache/ms-playwright" -type f \( -name 'ffmpeg-linux' -o -name 'ffmpeg' \) | head -n 1 || true)"
-          fi
-          if [ -z "$FFMPEG" ]; then
-            sudo apt-get update
-            sudo apt-get install -y ffmpeg
-            FFMPEG="$(command -v ffmpeg)"
-          fi
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          FFMPEG="$(command -v ffmpeg)"
+          "$FFMPEG" -version | head -n 1
           i=0
           while IFS= read -r -d '' f; do
             dir="$(basename "$(dirname "$f")")"
