@@ -1,4 +1,4 @@
-name: Service Hub Quality V9.1
+name: Service Hub Quality V11 Video40
 
 on:
   push:
@@ -41,7 +41,9 @@ jobs:
           node --check rapport-v8.spec.cjs
           node --check order-live.spec.cjs
           node --check auth.spec.cjs
+          node --check video-review-40.spec.cjs
           node --check playwright.config.cjs
+          node --check playwright.video.config.cjs
       - name: Unit tests
         run: node --test unit.test.cjs
 
@@ -71,3 +73,70 @@ jobs:
           name: service-hub-playwright-report
           path: service-hub/tests/playwright-report
           if-no-files-found: ignore
+
+  video_review:
+    name: 40 slow E2E video reviews
+    needs: [unit, frontend]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: service-hub/tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: service-hub/tests/package.json
+      - name: Install test dependencies
+        run: npm install --no-audit --no-fund
+      - name: Install Chromium and video runtime
+        run: npx playwright install --with-deps chromium
+      - name: Run 20 scenarios on mobile and desktop
+        run: npx playwright test --config=playwright.video.config.cjs
+      - name: Convert all review videos to MP4 and enforce count
+        if: always()
+        run: |
+          set -euo pipefail
+          mkdir -p video-mp4
+          FFMPEG="$(command -v ffmpeg || true)"
+          if [ -z "$FFMPEG" ]; then
+            FFMPEG="$(find "$HOME/.cache/ms-playwright" -type f \( -name 'ffmpeg-linux' -o -name 'ffmpeg' \) | head -n 1 || true)"
+          fi
+          if [ -z "$FFMPEG" ]; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+            FFMPEG="$(command -v ffmpeg)"
+          fi
+          i=0
+          while IFS= read -r -d '' f; do
+            dir="$(basename "$(dirname "$f")")"
+            out="video-mp4/${dir}.mp4"
+            "$FFMPEG" -y -loglevel error -i "$f" -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p -movflags +faststart "$out"
+            i=$((i+1))
+          done < <(find video-results -type f -name 'video.webm' -print0 | sort -z)
+          printf 'Service Hub Pro – Video Quality Review\n20 fachliche Szenarien × Mobile/Desktop = 40 Videos\nGitHub Run: %s\nErzeugte MP4-Dateien: %s\n' "$GITHUB_RUN_ID" "$i" > video-mp4/README.txt
+          echo "VIDEO_COUNT=$i" >> "$GITHUB_ENV"
+          if [ "$i" -ne 40 ]; then
+            echo "Expected exactly 40 MP4 review videos, got $i"
+            exit 1
+          fi
+      - name: Upload 40-video review package
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: service-hub-e2e-video-review-40
+          path: |
+            service-hub/tests/video-mp4
+            service-hub/tests/video-report
+          if-no-files-found: error
+          retention-days: 30
+      - name: Write video quality summary
+        if: always()
+        run: |
+          echo '## Service Hub Video Quality Review' >> "$GITHUB_STEP_SUMMARY"
+          echo '' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Fachliche Szenarien: **20**' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Zielgeräte: **Mobile + Desktop**' >> "$GITHUB_STEP_SUMMARY"
+          echo "- Erzeugte MP4-Videos: **${VIDEO_COUNT:-0}**" >> "$GITHUB_STEP_SUMMARY"
+          echo '- Release-Regel: **40/40 Videos + normale Quality-Gates müssen grün sein**' >> "$GITHUB_STEP_SUMMARY"
