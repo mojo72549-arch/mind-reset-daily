@@ -99,22 +99,31 @@ jobs:
         if: always()
         run: |
           set -euo pipefail
+          rm -rf video-mp4
           mkdir -p video-mp4
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
           FFMPEG="$(command -v ffmpeg)"
           "$FFMPEG" -version | head -n 1
+          mapfile -t videos < <(find video-results -type f -name 'video.webm' -print | LC_ALL=C sort)
           i=0
-          while IFS= read -r -d '' f; do
+          for f in "${videos[@]}"; do
+            if [ ! -f "$f" ]; then
+              echo "Missing recorded video: $f"
+              exit 1
+            fi
             dir="$(basename "$(dirname "$f")")"
             out="video-mp4/${dir}.mp4"
             "$FFMPEG" -y -loglevel error -i "$f" -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p -movflags +faststart "$out"
+            test -s "$out"
             i=$((i+1))
-          done < <(find video-results -type f -name 'video.webm' -print0 | sort -z)
-          printf 'Service Hub Pro – Video Quality Review\n20 fachliche Szenarien × Mobile/Desktop = 40 Videos\nGitHub Run: %s\nErzeugte MP4-Dateien: %s\n' "$GITHUB_RUN_ID" "$i" > video-mp4/README.txt
-          echo "VIDEO_COUNT=$i" >> "$GITHUB_ENV"
-          if [ "$i" -ne 40 ]; then
-            echo "Expected exactly 40 MP4 review videos, got $i"
+          done
+          actual="$(find video-mp4 -maxdepth 1 -type f -name '*.mp4' | wc -l | tr -d ' ')"
+          printf 'Service Hub Pro – Video Quality Review\n20 fachliche Szenarien × Mobile/Desktop = 40 Videos\nGitHub Run: %s\nErzeugte MP4-Dateien: %s\n' "$GITHUB_RUN_ID" "$actual" > video-mp4/README.txt
+          echo "VIDEO_COUNT=$actual" >> "$GITHUB_ENV"
+          echo "Converted recordings: $i; MP4 files on disk: $actual"
+          if [ "$i" -ne 40 ] || [ "$actual" -ne 40 ]; then
+            echo "Expected exactly 40 MP4 review videos, converted=$i actual=$actual"
             exit 1
           fi
       - name: Upload 40-video review package
