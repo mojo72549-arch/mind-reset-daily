@@ -1,0 +1,37 @@
+{
+  "session_id": "trend-20260831-telegram-now",
+  "status": "PENDING",
+  "created_at": "2026-08-31T06:15:00Z",
+  "candidates": [
+    {
+      "number": 1,
+      "topic": "98% · NASA startet Roman-Teleskop: Wie ehemalige US-Spionagetechnik jetzt Milliarden Galaxien kartieren soll",
+      "scope": "science_future"
+    },
+    {
+      "number": 2,
+      "topic": "96% · Deutschland vor Reaktion auf Leipzig-Drohne: Warum der mutmaßliche Angriff jetzt EU und NATO beschäftigt",
+      "scope": "world_society"
+    },
+    {
+      "number": 3,
+      "topic": "94% · OpenAI gegen Elon Musk: Warum Cursor nach der SpaceX-Übernahme seine OpenAI-Modelle verlieren könnte",
+      "scope": "technology_ai"
+    },
+    {
+      "number": 4,
+      "topic": "92% · Gletscher-Kollaps im Himalaya: Warum die Katastrophe an der Nepal-China-Grenze immer größere Ausmaße annimmt",
+      "scope": "science_future"
+    },
+    {
+      "number": 5,
+      "topic": "89% · 13.000-Einwohner-Wunder in der Bundesliga: Wie Elversberg beim Debüt Bayer Leverkusen schlägt",
+      "scope": "sports"
+    }
+  ],
+  "recommended_candidate": 1,
+  "language": "Deutsch",
+  "platform": "youtube_tiktok",
+  "target_duration": 40,
+  "llm_provider": "auto"
+}
