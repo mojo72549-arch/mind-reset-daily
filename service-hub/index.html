@@ -12,14 +12,14 @@
 <script>
 (async function(){
   try{
-    var version='20260830-v9-1';
+    var version='20260901-v12-160';
     var res=await fetch('./legacy.html?v='+version,{cache:'no-store'});
     if(!res.ok)throw new Error('HTTP '+res.status);
     var html=await res.text();
-    html=html.replace('var db=load();','var db=load();try{localStorage.setItem(STORE,JSON.stringify(db))}catch(e){}');
+    html=html.replace('var db=load();','var db=load();try{localStorage.setItem(STORE,JSON.stringify(db))}catch(e){}window.SHP_INTERNAL={getDb:function(){return db},setDb:function(next){db=next;save();return db},render:function(){return render()},getSelectedCustomer:function(){return selectedCustomer},setSelectedCustomer:function(v){selectedCustomer=v},getSelectedOrder:function(){return selectedOrder},setSelectedOrder:function(v){selectedOrder=v},getSelectedInvoice:function(){return selectedInvoice},setSelectedInvoice:function(v){selectedInvoice=v},getTab:function(){return tab},setTab:function(v){tab=v},getViewMode:function(){return viewMode},setViewMode:function(v){viewMode=v}};');
     html=html.replace("no:'A-2026-'+String(100+db.orders.length+1)","no:(function(){var max=100;db.orders.forEach(function(o){var m=String(o.no||'').match(/^A-\\d{4}-(\\d+)$/),n=m?parseInt(m[1],10):NaN;if(!isNaN(n)&&n>max)max=n});return 'A-'+new Date().getFullYear()+'-'+('0000'+(max+1)).slice(-4)})()");
-    html=html.replace('</head>','<link rel="stylesheet" href="./ux-v5.css?v='+version+'"><link rel="stylesheet" href="./ux-v6.css?v='+version+'"><link rel="stylesheet" href="./ux-v6-context.css?v='+version+'"><link rel="stylesheet" href="./ux-v11-quality-fixes.css?v='+version+'"></head>');
-    var patch='<scr'+'ipt src="./core.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v5.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-context.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-admin-route.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./auth-v7.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v9-live-surface.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v11-quality-fixes.js?v='+version+'"></scr'+'ipt>';
+    html=html.replace('</head>','<link rel="stylesheet" href="./ux-v5.css?v='+version+'"><link rel="stylesheet" href="./ux-v6.css?v='+version+'"><link rel="stylesheet" href="./ux-v6-context.css?v='+version+'"><link rel="stylesheet" href="./ux-v11-quality-fixes.css?v='+version+'"><style>.ux-v12-pending{margin-top:12px;padding:12px;border:1px solid #d7e1ea;border-radius:12px;background:#f7fafc;display:grid;gap:8px}.ux-v12-pending span{font-size:12px;color:#647787}.ux-v12-pending div{display:flex;gap:8px;flex-wrap:wrap}.ux-v12-release{margin-top:10px}.ux-v12-delivery-settings{border-color:#bfd3e6}</style></head>');
+    var patch='<scr'+'ipt src="./core.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v5.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-context.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-admin-route.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./auth-v7.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v9-live-surface.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v11-quality-fixes.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v12-quality-contract.js?v='+version+'"></scr'+'ipt>';
     html=html.replace('</body>',patch+'</body>');
     document.open();document.write(html);document.close();
   }catch(e){
