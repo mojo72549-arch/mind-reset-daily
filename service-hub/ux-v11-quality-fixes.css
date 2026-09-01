@@ -1,0 +1,5 @@
+.doc > .print-break{position:relative;z-index:1}
+.doc > .no-print{position:sticky;bottom:12px;z-index:60;display:flex;align-items:center;justify-content:flex-start;gap:8px;padding:12px;margin:18px -4px 0;background:rgba(255,255,255,.97);border:1px solid #dbe4ec;border-radius:12px;box-shadow:0 8px 24px rgba(11,31,51,.16);isolation:isolate}
+.doc > .no-print .btn{position:relative;z-index:61;min-height:44px;min-width:110px;touch-action:manipulation}
+@media(max-width:850px){.doc > .no-print{bottom:calc(72px + env(safe-area-inset-bottom));margin:18px 0 0;padding:10px}.doc > .no-print .btn{width:100%;min-height:48px}}
+@media print{.doc > .no-print{display:none!important}}
