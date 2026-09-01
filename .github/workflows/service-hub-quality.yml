@@ -1,4 +1,4 @@
-name: Service Hub Quality V11 Video40
+name: Service Hub Quality V12 160
 
 on:
   push:
@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   unit:
-    name: Unit and syntax tests
+    name: Unit, syntax and test-catalog checks
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -37,19 +37,22 @@ jobs:
           node --check ../ux-v8-rapport.js
           node --check ../ux-v9-live-surface.js
           node --check ../ux-v11-quality-fixes.js
+          node --check ../ux-v12-quality-contract.js
           node --check ../auth-v7.js
           node --check browser.spec.cjs
           node --check rapport-v8.spec.cjs
           node --check order-live.spec.cjs
           node --check auth.spec.cjs
           node --check video-review-40.spec.cjs
+          node --check e2e-148.spec.cjs
           node --check playwright.config.cjs
           node --check playwright.video.config.cjs
+          node --check playwright.160.config.cjs
       - name: Unit tests
         run: node --test unit.test.cjs
 
   frontend:
-    name: Mobile and desktop frontend tests
+    name: Existing mobile and desktop regression
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -65,19 +68,62 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
-      - name: Run mobile and desktop frontend tests
+      - name: Run existing mobile and desktop regression
         run: npx playwright test --config=playwright.config.cjs
       - name: Upload Playwright report on failure
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: service-hub-playwright-report
+          name: service-hub-playwright-regression-report
           path: service-hub/tests/playwright-report
+          if-no-files-found: ignore
+
+  functional_148:
+    name: 148 fachliche Frontend-Szenarien x Mobile/Desktop
+    needs: [unit]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: service-hub/tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: service-hub/tests/package.json
+      - name: Install test dependencies
+        run: npm install --no-audit --no-fund
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Enforce exactly 148 frontend scenarios x 2 devices
+        run: |
+          set -euo pipefail
+          npx playwright test --config=playwright.160.config.cjs --list | tee /tmp/service-hub-160-list.txt
+          grep -Eq 'Total: 296 tests' /tmp/service-hub-160-list.txt
+      - name: Run 296 frontend E2E executions
+        run: npx playwright test --config=playwright.160.config.cjs
+      - name: Write 160-test quality summary
+        if: always()
+        run: |
+          echo '## Service Hub Pro – 160er Fachtest-Gate' >> "$GITHUB_STEP_SUMMARY"
+          echo '' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Frontend-Fachszenarien: **148**' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Geräteausführung: **Mobile + Desktop**' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Frontend-E2E-Ausführungen: **296**' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Server-/Integrationsszenarien im privaten Produktionsrepo: **12**' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Fachlicher Gesamtkatalog: **160 unterschiedliche Szenarien**' >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload 160 Playwright report on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: service-hub-playwright-160-report
+          path: service-hub/tests/playwright-160-report
           if-no-files-found: ignore
 
   video_review:
     name: 40 slow E2E video reviews
-    needs: [unit, frontend]
+    needs: [unit, frontend, functional_148]
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -93,7 +139,7 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Install Chromium and video runtime
         run: npx playwright install --with-deps chromium
-      - name: Run 20 scenarios on mobile and desktop
+      - name: Run 20 review scenarios on mobile and desktop
         run: npx playwright test --config=playwright.video.config.cjs
       - name: Convert all review videos to MP4 and enforce count
         if: always()
@@ -141,7 +187,7 @@ jobs:
         run: |
           echo '## Service Hub Video Quality Review' >> "$GITHUB_STEP_SUMMARY"
           echo '' >> "$GITHUB_STEP_SUMMARY"
-          echo '- Fachliche Szenarien: **20**' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Fachliche Review-Szenarien: **20**' >> "$GITHUB_STEP_SUMMARY"
           echo '- Zielgeräte: **Mobile + Desktop**' >> "$GITHUB_STEP_SUMMARY"
           echo "- Erzeugte MP4-Videos: **${VIDEO_COUNT:-0}**" >> "$GITHUB_STEP_SUMMARY"
-          echo '- Release-Regel: **40/40 Videos + normale Quality-Gates müssen grün sein**' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Release-Regel: **160er-Gate + Regression + Video-Review müssen grün sein**' >> "$GITHUB_STEP_SUMMARY"
