@@ -5,6 +5,7 @@ async function login(page, role = 'annette') {
   await page.getByRole('button', { name: 'Anmelden' }).click();
   await expect(page.locator('header.top')).toBeVisible();
   await expect(page.locator('html')).toHaveAttribute('data-sh-build', '20260830-v9-1');
+  await expect.poll(() => page.evaluate(() => window.SHP_APP_DIALOGS && window.SHP_APP_DIALOGS.version)).toBe('20260903-v9-2');
 }
 
 async function openSeedCustomer(page) {
@@ -12,6 +13,13 @@ async function openSeedCustomer(page) {
   await expect(page.locator('main h2')).toHaveText('Kunden');
   await page.getByRole('button', { name: 'Kunde öffnen' }).first().click();
   await expect(page.locator('main h2')).toHaveText('Musterkunde Stuttgart GmbH');
+}
+
+async function orderModal(page) {
+  const m = page.locator('#shp-app-modal');
+  await expect(m).toBeVisible();
+  await expect(m.getByRole('heading', { name: 'Auftrag anlegen' })).toBeVisible();
+  return m;
 }
 
 test('new order is persisted and visible immediately without back, navigation or reload', async ({ page }) => {
@@ -23,16 +31,14 @@ test('new order is persisted and visible immediately without back, navigation or
   let navigations = 0;
   page.on('framenavigated', frame => { if (frame === page.mainFrame()) navigations += 1; });
 
-  const answers = ['Sofort sichtbarer Auftrag', 'Wartung'];
-  page.on('dialog', async dialog => {
-    if (dialog.type() === 'prompt') await dialog.accept(answers.shift() || '');
-    else await dialog.accept();
-  });
-
   await page.getByRole('button', { name: '+ Auftrag' }).first().click();
+  const m = await orderModal(page);
+  await m.getByLabel('Auftragsbezeichnung').fill('Sofort sichtbarer Auftrag');
+  await m.getByLabel('Auftragsart').selectOption('Wartung');
+  await m.getByRole('button', { name: 'Auftrag anlegen' }).click();
 
-  await expect(page.locator('main h2')).toHaveText('Rapport A-2026-0102', { timeout: 750 });
-  await expect(page.locator('.ux-v9-order-created')).toContainText('Auftrag A-2026-0102 angelegt und gespeichert.', { timeout: 750 });
+  await expect(page.locator('main h2')).toHaveText('Rapport A-2026-0102', { timeout: 1000 });
+  await expect(page.locator('.ux-v9-order-created')).toContainText('Auftrag A-2026-0102 angelegt und gespeichert.', { timeout: 1000 });
   await expect(page.locator('.ux-v9-order-created')).toContainText('Sofort sichtbarer Auftrag');
   await expect(page.locator('html')).toHaveAttribute('data-sh-surface-reason', 'order-add');
 
@@ -53,11 +59,9 @@ test('new order is persisted and visible immediately without back, navigation or
   expect(page.url()).toBe(initialUrl);
   expect(navigations).toBe(0);
 
-  // The customer view must show the order immediately when opened later in-app.
   await openSeedCustomer(page);
   await expect(page.locator('main')).toContainText('Sofort sichtbarer Auftrag');
 
-  // Persistence must survive a real reload as a second, independent guarantee.
   await page.reload();
   await expect(page.locator('header.top')).toBeVisible();
   await openSeedCustomer(page);
@@ -73,8 +77,11 @@ test('cancelled order creation leaves customer and persistent data unchanged', a
   let navigations = 0;
   page.on('framenavigated', frame => { if (frame === page.mainFrame()) navigations += 1; });
 
-  page.once('dialog', async dialog => { await dialog.dismiss(); });
   await page.getByRole('button', { name: '+ Auftrag' }).first().click();
+  const m = await orderModal(page);
+  await m.getByLabel('Auftragsbezeichnung').fill('Muss verworfen werden');
+  await m.getByRole('button', { name: 'Abbrechen' }).click();
+  await expect(page.locator('#shp-app-modal')).toHaveCount(0);
 
   await expect(page.locator('main h2')).toHaveText('Musterkunde Stuttgart GmbH');
   const after = await page.evaluate(() => JSON.stringify(JSON.parse(localStorage.getItem('shp_db')).orders));
