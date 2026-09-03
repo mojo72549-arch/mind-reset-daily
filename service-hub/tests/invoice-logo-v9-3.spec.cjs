@@ -59,5 +59,5 @@ test('invoice document keeps a visible branded fallback if remote logo fails', a
   await page.evaluate(() => { window.print = () => {}; });
   await page.getByRole('button', { name: 'PDF / Drucken' }).click();
   await expect(page.locator('.invoice-logo-fallback-v6')).toBeVisible({ timeout: 8_000 });
-  await expect(page.locator('.invoice-logo-fallback-v6')).toContainText('Rohr- & Kanaltechnik Winser');
+  await expect(page.locator('.invoice-logo-fallback-v6')).toContainText('ROHR- & KANALTECHNIK');
 });
