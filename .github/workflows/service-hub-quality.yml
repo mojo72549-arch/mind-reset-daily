@@ -1,4 +1,4 @@
-name: Service Hub Quality V9.2
+name: Service Hub Quality V9.3
 
 on:
   push:
@@ -37,11 +37,13 @@ jobs:
           node --check ../ux-v8-rapport.js
           node --check ../ux-v9-live-surface.js
           node --check ../ux-v9-dialogs.js
+          node --check ../ux-v9-invoice-logo.js
           node --check ../auth-v7.js
           node --check browser.spec.cjs
           node --check rapport-v8.spec.cjs
           node --check order-live.spec.cjs
           node --check dialogs-v9-2.spec.cjs
+          node --check invoice-logo-v9-3.spec.cjs
           node --check auth.spec.cjs
           node --check playwright.config.cjs
       - name: Unit tests
