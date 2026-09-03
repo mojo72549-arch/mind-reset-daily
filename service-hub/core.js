@@ -7,7 +7,7 @@
   var ROLE_RIGHTS={
     dome:{
       viewCustomers:true,viewOrders:true,viewReports:true,editReports:true,viewInvoices:true,
-      manageCustomers:false,manageOrders:false,manageInvoices:false,managePricing:false,manageAdmin:false
+      manageCustomers:false,manageOrders:true,manageInvoices:false,managePricing:false,manageAdmin:false
     },
     annette:{
       viewCustomers:true,viewOrders:true,viewReports:true,editReports:true,viewInvoices:true,
