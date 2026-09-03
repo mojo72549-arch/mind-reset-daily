@@ -1,7 +1,7 @@
 (function(){
   'use strict';
   var STORE='shp_db';
-  var BUILD='20260821-v9';
+  var BUILD='20260830-v9-1';
   var installed=false;
   var revision=0;
 
@@ -97,6 +97,42 @@
     if(!ok)showToast('Ansicht konnte nicht sicher synchronisiert werden.','error');
     return ok;
   }
+  function findCreatedOrder(beforeDb,afterDb){
+    var seen={};(beforeDb&&beforeDb.orders||[]).forEach(function(o){seen[String(o.id)]=true});
+    var created=(afterDb&&afterDb.orders||[]).filter(function(o){return !seen[String(o.id)]});
+    return created.length?created[created.length-1]:null;
+  }
+  function orderSurfaceMatches(order){
+    if(!order)return false;
+    var db=readDb(),stored=(db&&db.orders||[]).find(function(o){return String(o.id)===String(order.id)});
+    if(!stored)return false;
+    var h=document.querySelector('main h2'),text=(h&&h.textContent||'').trim();
+    return text==='Rapport '+String(order.no);
+  }
+  function showOrderCreatedBanner(order){
+    if(!order)return;
+    var main=document.querySelector('main.shell'),h=main&&main.querySelector('h2');if(!main||!h)return;
+    main.querySelectorAll('.ux-v9-order-created').forEach(function(x){x.remove()});
+    var box=document.createElement('div');box.className='ux-v9-order-created';box.setAttribute('role','status');box.setAttribute('aria-live','polite');
+    box.style.cssText='margin:10px 0 14px;padding:12px 14px;border:1px solid #96d4bf;border-radius:12px;background:#eaf8f2;color:#0a6249;font-weight:750';
+    box.innerHTML='<b>Auftrag '+String(order.no)+' angelegt und gespeichert.</b><div style="font-weight:500;margin-top:3px">'+String(order.title||'')+' · Der Rapport ist sofort geöffnet und kann direkt bearbeitet werden.</div>';
+    var row=h.closest('.row');(row||h).insertAdjacentElement('afterend',box);
+  }
+  function reconcileCreatedOrder(order){
+    if(!order||!window.SH||typeof window.SH.openReport!=='function')return false;
+    if(!orderSurfaceMatches(order))window.SH.openReport(order.id);
+    cleanReportUi();
+    markSurface('order-add');
+    if(!orderSurfaceMatches(order)){
+      window.SH.openReport(order.id);
+      cleanReportUi();
+      markSurface('order-add-retry');
+    }
+    var ok=orderSurfaceMatches(order);
+    if(ok){showOrderCreatedBanner(order);showToast('Auftrag '+order.no+' sofort angelegt und geöffnet')}
+    else showToast('Auftrag wurde gespeichert, aber die Ansicht konnte nicht synchronisiert werden.','error');
+    return ok;
+  }
   function highlightLines(){
     requestAnimationFrame(function(){
       var card=cardByHeading('Leistungen im Rapport');if(!card)return;
@@ -108,6 +144,13 @@
   }
   function wrapActions(){
     if(installed||!window.SH)return;installed=true;
+
+    var newOrder=window.SH.newOrder;
+    if(typeof newOrder==='function')window.SH.newOrder=function(){
+      var before=readDb(),result=newOrder.apply(window.SH,arguments),after=readDb(),created=findCreatedOrder(before,after);
+      if(created)reconcileCreatedOrder(created);
+      return result;
+    };
 
     var add=window.SH.addReportLine;
     if(typeof add==='function')window.SH.addReportLine=function(){
@@ -155,5 +198,5 @@
   var scheduled=false;function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;enhance()})}
   new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});
   enhance();
-  window.SHP_V9_LIVE_SURFACE={build:BUILD,reconcileCurrentReport:reconcileCurrentReport,verifySurface:verifySurface,enhance:enhance};
+  window.SHP_V9_LIVE_SURFACE={build:BUILD,reconcileCurrentReport:reconcileCurrentReport,verifySurface:verifySurface,reconcileCreatedOrder:reconcileCreatedOrder,orderSurfaceMatches:orderSurfaceMatches,enhance:enhance};
 })();
