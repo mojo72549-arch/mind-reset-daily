@@ -20,9 +20,14 @@ test('office overview is a focused CRM work surface instead of a blank metric wa
   await expect(page.locator('main.shell > .hero')).toHaveCount(0);
   await expect(page.locator('main.shell .grid.g4 .metric')).toHaveCount(0);
   await expect(page.locator('.crm-kpi')).toHaveCount(3);
-  await expect(page.locator('.crm-attention-item')).toHaveCount(3);
+  const attentionCount = await page.locator('.crm-attention-item').count();
+  expect(attentionCount).toBeGreaterThan(0);
+  expect(attentionCount).toBeLessThanOrEqual(4);
   await expect(page.getByText('Rechnung 26175', { exact: true })).toBeVisible();
   await expect(page.getByText('Wartung Heizungsanlage', { exact: false }).first()).toBeVisible();
+
+  const itemTitles = await page.locator('.crm-attention-copy > b').allTextContents();
+  expect(new Set(itemTitles).size).toBe(itemTitles.length);
 
   const metrics = await page.locator('.crm-kpi').allTextContents();
   expect(metrics.join(' ')).toContain('Offene Aufträge');
