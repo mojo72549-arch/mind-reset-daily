@@ -148,7 +148,7 @@ test('Dome can dictate an internal note when browser speech recognition is avail
   await login(page, 'dome');
   await openSeedReport(page);
   await page.getByRole('button', { name: '🎤 Reinsprechen' }).click();
-  await expect(page.locator('#shp-tech-note')).toContainText('Siphon gereinigt und Zugang für Folgetermin markiert');
+  await expect(page.locator('#shp-tech-note')).toHaveValue(/Siphon gereinigt und Zugang für Folgetermin markiert/);
   await expect(page.locator('#shp-tech-note-status')).toContainText(/übernommen|gespeichert/i);
   await expect.poll(() => page.evaluate(() => {
     const data = JSON.parse(localStorage.getItem('shp_tech_notes_v9_6') || '{"entries":[]}');
