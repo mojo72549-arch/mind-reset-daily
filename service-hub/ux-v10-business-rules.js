@@ -9,7 +9,7 @@
   function session(){try{return JSON.parse(sessionStorage.getItem('shp_session')||'null')}catch(e){return null}}
   function role(){var s=session();return window.SHP_CORE?window.SHP_CORE.normalizeRole(s&&s.user):String(s&&s.user||'')}
   function allowed(cap){return !window.SHP_CORE||window.SHP_CORE.can(role(),cap)}
-  function deny(){window.alert('Diese Funktion ist für Büro / Administration vorgesehen.');return false}
+  function deny(){window.alert('Für diese Funktion fehlen die erforderlichen Rechte.');return false}
   function trim(v){return String(v==null?'':v).trim()}
   function norm(v){return trim(v).toLocaleLowerCase('de-DE').replace(/\s+/g,' ')}
   function normPhone(v){return trim(v).replace(/[^0-9]/g,'')}
@@ -19,6 +19,15 @@
   function fail(message){window.alert(message);return false}
   function pushAudit(db,text){db.settings=db.settings||{};db.settings.audit=db.settings.audit||[];db.settings.audit.unshift({at:new Date().toLocaleString('de-DE'),by:(session()||{}).user||'System',text:text});if(db.settings.audit.length>100)db.settings.audit.length=100}
   function remember(before,label){try{var s=JSON.parse(sessionStorage.getItem(UNDO)||'[]');s.push({snapshot:before,label:label,at:Date.now()});sessionStorage.setItem(UNDO,JSON.stringify(s.slice(-10)))}catch(e){}}
+  function nextCustomerNo(db){
+    var max=0;(db&&db.customers||[]).forEach(function(c){var m=String(c.customerNo||'').match(/^K-(\d+)$/i),n=m?parseInt(m[1],10):0;if(n>max)max=n});
+    return 'K-'+String(max+1).padStart(5,'0');
+  }
+  function nextOrderNo(db){
+    var year=String(new Date().getFullYear()),max=100;
+    (db&&db.orders||[]).forEach(function(o){var m=String(o.no||'').match(/^A-(\d{4})-(\d+)$/);if(m&&m[1]===year){var n=parseInt(m[2],10);if(n>max)max=n}});
+    return 'A-'+year+'-'+String(max+1).padStart(4,'0');
+  }
   function validationCustomer(db,c,ignoreId){
     if(!trim(c.name))return'Kundenname ist ein Pflichtfeld.';
     if(!trim(c.address))return'Adresse ist ein Pflichtfeld.';
@@ -47,22 +56,23 @@
     var before=localStorage.getItem(STORE),input=promptCustomer({defaultRate:(db.settings||{}).defaultHourlyRate||70},false);if(input===null||input===false)return;
     var err=validationCustomer(db,input,null);if(err)return fail(err);
     var id=Date.now();while((db.customers||[]).some(function(c){return String(c.id)===String(id)}))id++;
-    db.customers.push({id:id,name:input.name,contact:input.contact,phone:input.phone,email:input.email,address:input.address,hourlyRate:input.hourlyRate,preferredChannel:input.preferredChannel,priceOverrides:{},serviceInterval:'',nextService:''});
-    pushAudit(db,'Kunde '+input.name+' angelegt');setDb(db);remember(before,'Kunde angelegt');
+    var number=nextCustomerNo(db);
+    db.customers.push({id:id,customerNo:number,name:input.name,contact:input.contact,phone:input.phone,email:input.email,address:input.address,hourlyRate:input.hourlyRate,preferredChannel:input.preferredChannel,priceOverrides:{},serviceInterval:'',nextService:''});
+    pushAudit(db,'Kunde '+number+' · '+input.name+' angelegt');setDb(db);remember(before,'Kunde angelegt');
     if(window.SHP_INTERNAL){if(window.SHP_INTERNAL.setSelectedCustomer)window.SHP_INTERNAL.setSelectedCustomer(id);window.SHP_INTERNAL.setTab('customer');render()}else location.reload();
   }
   function editCustomer(id){
     if(!allowed('manageCustomers'))return deny();var db=readDb(),c=(db.customers||[]).find(function(x){return String(x.id)===String(id)});if(!c)return fail('Kunde wurde nicht gefunden.');
     var before=localStorage.getItem(STORE),input=promptCustomer(c,true);if(input===null||input===false)return;
     var candidate=Object.assign({},c,input),err=validationCustomer(db,candidate,c.id);if(err)return fail(err);
-    Object.assign(c,input);pushAudit(db,'Stammdaten '+c.name+' geändert');setDb(db);remember(before,'Kundendaten geändert');render();
+    Object.assign(c,input);pushAudit(db,'Stammdaten '+(c.customerNo?c.customerNo+' · ':'')+c.name+' geändert');setDb(db);remember(before,'Kundendaten geändert');render();
   }
   function chooseCustomer(db,cid){
     if(cid!=null&&cid!=='')return (db.customers||[]).find(function(c){return String(c.id)===String(cid)})||null;
     if(!(db.customers||[]).length)return null;
-    var names=db.customers.map(function(c){return c.name}).join('\n');
-    var answer=prompt('Kunde für Auftrag auswählen (Kundenname):\n\n'+names,db.customers[0].name);if(answer===null)return false;
-    var n=norm(answer),matches=db.customers.filter(function(c){return norm(c.name)===n});return matches.length===1?matches[0]:null;
+    var names=db.customers.map(function(c){return (c.customerNo?c.customerNo+' · ':'')+c.name}).join('\n');
+    var answer=prompt('Kunde für Auftrag auswählen (Kundenname oder Kundennummer):\n\n'+names,(db.customers[0].customerNo||db.customers[0].name));if(answer===null)return false;
+    var n=norm(answer),matches=db.customers.filter(function(c){return norm(c.name)===n||norm(c.customerNo)===n});return matches.length===1?matches[0]:null;
   }
   function newOrder(cid){
     if(!allowed('manageOrders'))return deny();var db=readDb();if(!db)return;
@@ -71,9 +81,9 @@
     var title=prompt('Auftrag für '+c.name);if(title===null)return;title=trim(title);if(!title)return fail('Auftragsbezeichnung ist ein Pflichtfeld.');
     var type=prompt('Art','Wartung');if(type===null)return;type=trim(type);if(!type)return fail('Auftragsart ist ein Pflichtfeld.');
     var before=localStorage.getItem(STORE),id=Date.now();while((db.orders||[]).some(function(o){return String(o.id)===String(id)}))id++;
-    var number='A-'+new Date().getFullYear()+'-'+String(100+(db.orders||[]).length+1);
+    var number=nextOrderNo(db);
     db.orders.push({id:id,no:number,customerId:c.id,title:title,type:type,date:new Date().toLocaleDateString('de-DE'),status:'Zugewiesen',assignedTo:'Dome'});
-    pushAudit(db,'Auftrag '+title+' für '+c.name+' angelegt');setDb(db);remember(before,'Auftrag angelegt');
+    pushAudit(db,'Auftrag '+number+' · '+title+' für '+c.name+' angelegt');setDb(db);remember(before,'Auftrag angelegt');
     if(window.SHP_INTERNAL){window.SHP_INTERNAL.setSelectedOrder(id);window.SHP_INTERNAL.setTab('report');render()}else location.reload();
   }
   function wrapAdmin(){
@@ -132,5 +142,5 @@
   function enhance(){wrap();wrapAdmin();hardenReportFinish();hardenDelivery()}
   var scheduled=false;function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;enhance()})}
   new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});enhance();
-  window.SHP_BUSINESS_RULES={validateCustomer:validationCustomer,validEmail:validEmail,validPhone:validPhone,channel:channel,realInk:realInk,enhance:enhance};
+  window.SHP_BUSINESS_RULES={validateCustomer:validationCustomer,validEmail:validEmail,validPhone:validPhone,channel:channel,realInk:realInk,nextCustomerNo:nextCustomerNo,nextOrderNo:nextOrderNo,enhance:enhance};
 })();
