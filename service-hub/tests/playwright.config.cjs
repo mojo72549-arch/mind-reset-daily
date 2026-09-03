@@ -1,6 +1,6 @@
 const { defineConfig, devices } = require('@playwright/test');
 
-const regressionSpecs = ['browser.spec.cjs', 'rapport-v8.spec.cjs', 'auth.spec.cjs', 'e2e-v10.spec.cjs', 'business-rules-v10.spec.cjs', 'business-rules-extra-v10.spec.cjs'];
+const regressionSpecs = ['browser.spec.cjs', 'rapport-v8.spec.cjs', 'auth.spec.cjs', 'e2e-v10.spec.cjs', 'business-rules-v10.spec.cjs', 'business-rules-extra-v10.spec.cjs', 'crm-search-v10.spec.cjs'];
 
 module.exports = defineConfig({
   testDir: '.',
