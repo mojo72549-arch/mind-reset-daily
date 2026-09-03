@@ -36,7 +36,7 @@
     window.clearTimeout(showUndo.timer);showUndo.timer=window.setTimeout(function(){if(el.parentNode)el.remove()},6500);
   }
   function showNotice(){var n=sessionStorage.getItem(NOTICE);if(!n)return;sessionStorage.removeItem(NOTICE);setTimeout(function(){var el=document.createElement('div');el.className='ux-success-toast';el.textContent=n;document.body.appendChild(el);setTimeout(function(){if(el.parentNode)el.remove()},2800)},100)}
-  function escapeText(s){return String(s==null?'':s).replace(/[&<>"']/g,function(ch){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]});}
+  function escapeText(s){return String(s==null?'':s).replace(/[&<>"']/g,function(ch){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[ch]});}
   function guardFor(name){
     if(name==='newCustomer'||name==='editCustomer')return'manageCustomers';
     if(name==='newOrder')return'manageOrders';
@@ -52,6 +52,7 @@
       var original=window.SH[name];if(typeof original!=='function')return;
       window.SH[name]=function(){
         var cap=guardFor(name);if(cap&&!allowed(cap))return denyOffice();
+        if(name==='saveReportText'&&arguments[0]===true)return original.apply(window.SH,arguments);
         if(name==='removeReportLine'&&!window.confirm('Leistung wirklich aus dem Rapport entfernen?'))return;
         if(name==='removeMaterial'&&!window.confirm('Material wirklich entfernen?'))return;
         if(name==='removeMeasurement'&&!window.confirm('Messwert wirklich entfernen?'))return;
