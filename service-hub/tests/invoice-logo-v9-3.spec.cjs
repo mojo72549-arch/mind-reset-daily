@@ -93,7 +93,7 @@ test('V9.5 keeps a clean text fallback only when an explicitly configured custom
   const fallback = page.locator('.invoice-logo-fallback-v95');
   await expect(fallback).toBeVisible({ timeout: 8_000 });
   await expect(fallback).toHaveAttribute('aria-label', 'Firmenlogo nicht verfügbar – Rohr- & Kanaltechnik Winser');
-  await expect(fallback).toContainText('Rohr- & Kanaltechnik');
+  await expect(fallback).toContainText('Winser');
   await expect(page.locator('.invoice-logo-fallback-v6')).toHaveCount(0);
 });
 
