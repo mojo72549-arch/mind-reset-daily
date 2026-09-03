@@ -39,12 +39,14 @@ jobs:
           node --check ../ux-v10-e2e.js
           node --check ../ux-v10-business-rules.js
           node --check ../ux-v10-undo-feedback.js
+          node --check ../ux-v10-crm-search.js
           node --check ../auth-v7.js
           node --check browser.spec.cjs
           node --check rapport-v8.spec.cjs
           node --check e2e-v10.spec.cjs
           node --check business-rules-v10.spec.cjs
           node --check business-rules-extra-v10.spec.cjs
+          node --check crm-search-v10.spec.cjs
           node --check review-positive.spec.cjs
           node --check review-negative.spec.cjs
           node --check auth.spec.cjs
