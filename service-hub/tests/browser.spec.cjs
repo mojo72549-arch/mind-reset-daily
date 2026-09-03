@@ -106,7 +106,9 @@ test('Branded invoice uses logo and values from the admin configuration', async 
   await page.getByRole('button', { name: 'PDF / Drucken' }).click();
   await expect(page.locator('.invoice-doc-v6')).toBeVisible();
   await expect(page.locator('.invoice-brand-name')).toHaveText('Winser Test Branding');
-  await expect(page.locator('.invoice-brand-v6 img')).toHaveAttribute('src', /rokatech-winser\.de/);
+  const logo = page.locator('.invoice-brand-v6 img');
+  await expect(logo).toHaveAttribute('src', './assets/rokatech-winser-logo.webp');
+  await expect.poll(() => logo.evaluate(img => img.naturalWidth), { timeout: 8_000 }).toBeGreaterThan(200);
   await expect(page.locator('.invoice-payment-v6')).toContainText('Test-Zahlungshinweis aus Administration.');
   await expect(page.locator('.invoice-totals-v6')).toBeVisible();
 });
