@@ -16,13 +16,14 @@
     var dialogsVersion='20260903-v9-2';
     var documentsVersion='20260903-v9-5';
     var dashboardVersion='20260903-v9-4';
+    var crmSearchVersion='20260904-v10';
     var res=await fetch('./legacy.html?v='+version,{cache:'no-store'});
     if(!res.ok)throw new Error('HTTP '+res.status);
     var html=await res.text();
     html=html.replace('var db=load();','var db=load();try{localStorage.setItem(STORE,JSON.stringify(db))}catch(e){}');
     html=html.replace("no:'A-2026-'+String(100+db.orders.length+1)","no:(function(){var max=100;db.orders.forEach(function(o){var m=String(o.no||'').match(/^A-\\d{4}-(\\d+)$/),n=m?parseInt(m[1],10):NaN;if(!isNaN(n)&&n>max)max=n});return 'A-'+new Date().getFullYear()+'-'+('0000'+(max+1)).slice(-4)})()");
-    html=html.replace('</head>','<link rel="stylesheet" href="./ux-v5.css?v='+version+'"><link rel="stylesheet" href="./ux-v6.css?v='+documentsVersion+'"><link rel="stylesheet" href="./ux-v6-context.css?v='+version+'"><link rel="stylesheet" href="./ux-v9-dashboard.css?v='+dashboardVersion+'"></head>');
-    var patch='<scr'+'ipt src="./core.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v5.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6.js?v='+documentsVersion+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-context.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-admin-route.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./auth-v7.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v9-live-surface.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v9-dialogs.js?v='+dialogsVersion+'"></scr'+'ipt><scr'+'ipt src="./ux-v9-invoice-logo.js?v='+documentsVersion+'"></scr'+'ipt><scr'+'ipt src="./ux-v9-dashboard.js?v='+dashboardVersion+'"></scr'+'ipt>';
+    html=html.replace('</head>','<link rel="stylesheet" href="./ux-v5.css?v='+version+'"><link rel="stylesheet" href="./ux-v6.css?v='+documentsVersion+'"><link rel="stylesheet" href="./ux-v6-context.css?v='+version+'"><link rel="stylesheet" href="./ux-v9-dashboard.css?v='+dashboardVersion+'"><link rel="stylesheet" href="./ux-v10-customer-search.css?v='+crmSearchVersion+'"></head>');
+    var patch='<scr'+'ipt src="./core.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v5.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6.js?v='+documentsVersion+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-context.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v6-admin-route.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./auth-v7.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v9-live-surface.js?v='+version+'"></scr'+'ipt><scr'+'ipt src="./ux-v9-dialogs.js?v='+dialogsVersion+'"></scr'+'ipt><scr'+'ipt src="./ux-v9-invoice-logo.js?v='+documentsVersion+'"></scr'+'ipt><scr'+'ipt src="./ux-v9-dashboard.js?v='+dashboardVersion+'"></scr'+'ipt><scr'+'ipt src="./ux-v10-customer-search.js?v='+crmSearchVersion+'"></scr'+'ipt>';
     html=html.replace('</body>',patch+'</body>');
     document.open();document.write(html);document.close();
   }catch(e){
