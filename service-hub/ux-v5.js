@@ -101,7 +101,7 @@
   }
   function protectDomeViews(){
     if(!isDome())return;var main=document.querySelector('main');if(!main)return;var title=((main.querySelector('h2')||{}).textContent||'').trim();
-    main.querySelectorAll('button[onclick*="newCustomer"],button[onclick*="newOrder"],button[onclick*="editCustomer"],button[onclick*="goAdminCustomer"]').forEach(function(b){b.remove()});
+    main.querySelectorAll('button[onclick*="newCustomer"],button[onclick*="editCustomer"],button[onclick*="goAdminCustomer"]').forEach(function(b){b.remove()});
     [].slice.call(main.querySelectorAll('.card h3')).forEach(function(h){if((h.textContent||'').trim()==='Konditionen'){var card=h.closest('.card');if(card)card.innerHTML='<h3>Konditionen</h3><p class="muted">Preis- und Konditionspflege erfolgt durch Büro / Administration.</p>'}});
     if(title.indexOf('Rechnung ')===0){var status=main.querySelector('#ivstatus');if(status){status.disabled=true;var card=status.closest('.card');if(card&&!card.querySelector('.ux-readonly')){var n=document.createElement('div');n.className='ux-readonly';n.textContent='Nur Ansicht für Dome · Status und Versand werden im Büro bearbeitet.';card.insertBefore(n,card.firstChild)}}main.querySelectorAll('button[onclick*="saveInvoiceStatus"],button[onclick*="sendInvoice("],button[onclick*="sendInvoicePreferred"]').forEach(function(b){b.remove()})}
   }
