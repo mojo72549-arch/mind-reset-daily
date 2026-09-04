@@ -1,0 +1,12 @@
+@media(max-width:850px){
+  nav.mobile.shp-six-tab-nav{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:0!important;justify-content:stretch!important;padding:7px max(4px,env(safe-area-inset-right)) calc(7px + env(safe-area-inset-bottom)) max(4px,env(safe-area-inset-left))!important}
+  nav.mobile.shp-six-tab-nav button{min-width:0!important;width:100%!important;padding:5px 1px!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:2px!important;border-radius:9px!important;font-size:10px!important;line-height:1.05!important;font-weight:500!important;white-space:nowrap!important}
+  nav.mobile.shp-six-tab-nav button span{display:block!important;font-size:16px!important;line-height:1!important;min-height:17px!important}
+  nav.mobile.shp-six-tab-nav button b{display:block!important;max-width:100%!important;overflow:hidden!important;text-overflow:clip!important;font-size:10px!important;font-weight:500!important}
+  nav.mobile.shp-six-tab-nav button.ux-active{background:rgba(255,255,255,.11)!important;color:#fff!important}
+  nav.mobile.shp-six-tab-nav button.ux-active b{font-weight:800!important}
+}
+@media(max-width:380px){
+  nav.mobile.shp-six-tab-nav button,nav.mobile.shp-six-tab-nav button b{font-size:9px!important}
+  nav.mobile.shp-six-tab-nav button span{font-size:15px!important}
+}
