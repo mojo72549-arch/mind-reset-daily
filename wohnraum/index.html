@@ -24,7 +24,7 @@ button.alt{background:#e9edf1;color:#111}.hide{display:none}.err{color:#b00020;f
 
 <div id="app" class="hide">
 <section class="card"><h1>Wohnraumnachweis – Abdullah Bayram Tayar</h1>
-<p><b>Taläckerstr. 51, 70437 Stuttgart</b></p><p class="sub">Nur dieses Dokument ist in der App enthalten.</p></section>
+<p><b>Taläckerstr. 51, 70437 Stuttgart</b></p><p class="sub">4 Personen im Haushalt · mietfreies Wohnen bei den Eltern.</p></section>
 <section class="card"><h2>1. Ort und Datum</h2><div class="row"><div><label>Ort</label><input id="place" value="Stuttgart"></div><div><label>Datum</label><input id="date" type="date"></div></div></section>
 <section class="card"><h2>2. Unterschrift</h2><canvas id="sig"></canvas><div class="row"><button id="clear" class="alt">Unterschrift löschen</button><button id="refresh">Vorschau aktualisieren</button></div><p class="sub">Mit Finger oder Stift unterschreiben.</p></section>
 <section class="card"><h2>3. Vorschau</h2><canvas id="formCanvas" width="1240" height="1754"></canvas><button id="pdf">PDF erstellen</button></section>
@@ -56,9 +56,9 @@ text(ctx,'Zur weiteren Prüfung in einer ausländerrechtlichen Angelegenheit ben
 ctx.fillStyle='#eee';ctx.fillRect(100,465,1040,82);ctx.fillStyle='#111';text(ctx,'Bei der Berechnung der Wohnfläche werden Nebenräume wie z. B. Küche, Bad, WC und Flur',115,500,21);text(ctx,'mitberücksichtigt. Nicht berücksichtigt werden können Keller, Dachboden und Abstellräume.',115,530,21);
 text(ctx,'Bestätigung',100,620,27,true);text(ctx,'Eigentumswohnung',100,670,27,true);
 text(ctx,'PLZ, Ort',100,735,20);line(ctx,100,750,530,750);text(ctx,'70437 Stuttgart',120,790,28);text(ctx,'Straße',680,735,20);line(ctx,680,750,1120,750);text(ctx,'Taläckerstr. 51',700,790,28);
-text(ctx,'Anzahl der Wohnräume',100,835,20);line(ctx,100,850,530,850);text(ctx,'3',150,892,30);text(ctx,'Darlehen',680,835,20);line(ctx,680,850,870,850);text(ctx,'700',735,892,30);text(ctx,'Euro / Monat',890,892,24);
+text(ctx,'Anzahl der Wohnräume',100,835,20);line(ctx,100,850,530,850);text(ctx,'3',150,892,30);text(ctx,'Darlehen',680,835,20);line(ctx,680,850,870,850);text(ctx,'Euro / Monat',890,892,24);
 text(ctx,'Größe in m²',100,935,20);line(ctx,100,950,530,950);text(ctx,'60',145,992,30);text(ctx,'Hausgeld',680,935,20);line(ctx,680,950,870,950);text(ctx,'Euro / Monat',890,992,24);
-text(ctx,'Anzahl der Personen, die die Wohnung ständig',100,1035,20);text(ctx,'bewohnen',100,1062,20);line(ctx,100,1080,530,1080);text(ctx,'2',150,1122,30);text(ctx,'Nebenkosten',680,1035,20);line(ctx,680,1050,870,1050);text(ctx,'100',730,1092,30);text(ctx,'Euro / Monat',890,1092,24);
+text(ctx,'Anzahl der Personen, die die Wohnung ständig',100,1035,20);text(ctx,'bewohnen',100,1062,20);line(ctx,100,1080,530,1080);text(ctx,'4',150,1122,30);text(ctx,'Nebenkosten',680,1035,20);line(ctx,680,1050,870,1050);text(ctx,'100',730,1092,30);text(ctx,'Euro / Monat',890,1092,24);
 text(ctx,'Eigentümer',100,1180,28,true);text(ctx,'Name, Vorname',100,1240,20);line(ctx,100,1255,540,1255);text(ctx,'Tayar, Abdullah Bayram',115,1295,27);text(ctx,'Straße',100,1340,20);line(ctx,100,1355,540,1355);text(ctx,'Taläckerstr. 51',115,1395,27);text(ctx,'PLZ, Wohnort',100,1440,20);line(ctx,100,1455,540,1455);text(ctx,'70437 Stuttgart',115,1495,27);text(ctx,'Telefon',100,1540,20);line(ctx,100,1555,540,1555);
 text(ctx,'Ort, Datum',600,1240,20);line(ctx,600,1255,1120,1255);text(ctx,(place.value||'Stuttgart')+', '+fd(),620,1295,27);text(ctx,'Unterschrift',600,1340,20);line(ctx,600,1410,1120,1410);
 if(ink){const im=new Image();im.onload=()=>ctx.drawImage(im,620,1325,440,85);im.src=s.toDataURL('image/png')}
