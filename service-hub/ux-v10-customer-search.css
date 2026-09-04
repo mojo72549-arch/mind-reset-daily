@@ -164,7 +164,7 @@
   font-size:13px;
 }
 .crm-customer-search-empty b{color:var(--crm-search-ink)}
-.crm-customer-id-v10{display:inline-flex;align-items:center;gap:6px;margin-left:6px;vertical-align:middle}
+.crm-customer-id-v10{display:inline-flex;align-items:center;gap:6px;margin:4px 0 5px;vertical-align:middle}
 mark.crm-search-hit{padding:0 1px;border-radius:2px;background:#fff0a8;color:inherit}
 
 @media(max-width:700px){

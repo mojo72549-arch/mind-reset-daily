@@ -187,9 +187,9 @@
   function addCustomerNumberToDetail(main,db){
     var title=main.querySelector('h2');if(!title)return;
     var customer=(db.customers||[]).find(function(item){return String(item.name||'')===(title.textContent||'').trim()});
-    if(!customer||title.querySelector('.crm-customer-id-v10'))return;
+    if(!customer||main.querySelector('.crm-customer-id-v10'))return;
     var badge=document.createElement('span');badge.className='crm-customer-id-v10 crm-customer-number';badge.textContent=customer.customerNo;
-    title.appendChild(badge);
+    title.insertAdjacentElement('afterend',badge);
   }
 
   function removeObsoleteElements(main){
