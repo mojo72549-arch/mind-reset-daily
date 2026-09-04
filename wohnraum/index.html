@@ -4,28 +4,41 @@
 <meta name="robots" content="noindex,nofollow,noarchive">
 <title>Wohnraumnachweis – Abdullah Bayram Tayar</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#f2f4f7;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#111}main{max-width:880px;margin:auto;padding:10px}.card{background:#fff;border-radius:16px;padding:16px;margin:10px 0;box-shadow:0 6px 22px #0001}h1{font-size:21px;margin:0 0 8px}h2{font-size:18px;margin:0 0 10px}p{line-height:1.4}.sub{color:#667;font-size:14px}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}input,button{width:100%;padding:14px;font-size:17px;border-radius:11px;margin:5px 0}input{border:1px solid #c7ccd3}button{border:0;background:#111;color:#fff;font-weight:800}button.alt{background:#e9edf1;color:#111}#sig{width:100%;height:190px;border:2px dashed #9aa3ad;border-radius:12px;touch-action:none;background:#fff}#formCanvas{width:100%;height:auto;border:1px solid #d6dbe0;background:#fff}.ok{background:#eef8ef;border:1px solid #c6e6ca;padding:10px;border-radius:10px;font-size:14px}@media(max-width:620px){.row{grid-template-columns:1fr}main{padding:7px}}
+*{box-sizing:border-box}body{margin:0;background:#f2f4f7;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#111}main{max-width:880px;margin:auto;padding:10px}.card{background:#fff;border-radius:16px;padding:16px;margin:10px 0;box-shadow:0 6px 22px #0001}h1{font-size:21px;margin:0 0 8px}h2{font-size:18px;margin:0 0 10px}p{line-height:1.4}.sub{color:#667;font-size:14px}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}input,button{width:100%;padding:14px;font-size:17px;border-radius:11px;margin:5px 0}input{border:1px solid #c7ccd3}button{border:0;background:#111;color:#fff;font-weight:800}button.alt{background:#e9edf1;color:#111}#sig{width:100%;height:190px;border:2px dashed #9aa3ad;border-radius:12px;touch-action:none;background:#fff}.ok{background:#eef8ef;border:1px solid #c6e6ca;padding:10px;border-radius:10px;font-size:14px}.preview{position:relative;width:100%;overflow:hidden;border:1px solid #d6dbe0;background:#fff;container-type:inline-size}.preview>img.form{display:block;width:100%;height:auto}.entry{position:absolute;color:#173f87;font-family:"Segoe UI",Arial,sans-serif;line-height:1;white-space:nowrap;pointer-events:none}.signature{position:absolute;object-fit:contain;pointer-events:none}.hidden{display:none!important}@media(max-width:620px){.row{grid-template-columns:1fr}main{padding:7px}}
 </style></head><body><main>
-<section class="card"><h1>Wohnraumnachweis – Abdullah Bayram Tayar</h1><p><b>Taläckerstr. 51, 70437 Stuttgart</b></p><div class="ok">Das Formular der Stadt Stuttgart bleibt unverändert. Es werden nur Angaben in die freien Felder und die Unterschrift darübergelegt.</div></section>
+<section class="card"><h1>Wohnraumnachweis – Abdullah Bayram Tayar</h1><p><b>Taläckerstr. 51, 70437 Stuttgart</b></p><div class="ok">Das Originalformular der Stadt Stuttgart bleibt unverändert. Die Angaben und die Unterschrift werden nur in die freien Felder gelegt.</div></section>
 <section class="card"><h2>1. Ort und Datum</h2><div class="row"><div><label>Ort</label><input id="place" value="Stuttgart"></div><div><label>Datum</label><input id="date" type="date"></div></div></section>
 <section class="card"><h2>2. Unterschrift des Eigentümers</h2><canvas id="sig"></canvas><div class="row"><button id="clear" class="alt">Unterschrift löschen</button><button id="refresh">Vorschau aktualisieren</button></div><p class="sub">Mit Finger oder Stift unterschreiben.</p></section>
-<section class="card"><h2>3. Originalformular mit Einträgen</h2><canvas id="formCanvas" width="768" height="1024"></canvas><button id="pdf">PDF erstellen</button></section>
+<section class="card"><h2>3. Originalformular mit Einträgen</h2>
+<div class="preview" id="preview">
+  <img class="form" id="formImg" src="form.jpg?v=20260904-3" alt="Originalformular der Stadt Stuttgart">
+  <span class="entry" style="left:23.7%;top:51.6%;font-size:2.0cqw">70437 Stuttgart</span>
+  <span class="entry" style="left:53.6%;top:49.9%;font-size:2.0cqw">Taläckerstr. 51</span>
+  <span class="entry" style="left:24.5%;top:54.3%;font-size:2.1cqw">3</span>
+  <span class="entry" style="left:24.2%;top:59.4%;font-size:2.1cqw">60</span>
+  <span class="entry" style="left:24.4%;top:63.8%;font-size:2.1cqw">4</span>
+  <span class="entry" style="left:21.9%;top:69.8%;font-size:2.0cqw">Tayar, Seref</span>
+  <span class="entry" style="left:21.9%;top:73.4%;font-size:2.0cqw">Taläckerstr. 51</span>
+  <span class="entry" style="left:21.9%;top:77.0%;font-size:2.0cqw">70437 Stuttgart</span>
+  <span class="entry" id="eDate" style="left:21.9%;top:83.6%;font-size:1.85cqw"></span>
+  <img id="sigPreview" class="signature hidden" alt="Unterschrift" style="left:21.8%;top:84.1%;width:24%;height:4.8%">
+</div>
+<button id="pdf">PDF erstellen</button></section>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script>
-const s=document.getElementById('sig'),sx=s.getContext('2d'),canvas=document.getElementById('formCanvas'),ctx=canvas.getContext('2d');let down=false,ink=false,ready=false;
-const bg=new Image();bg.src='form.jpg';bg.onload=()=>{ready=true;drawForm()};
-date.value=new Date().toISOString().slice(0,10);
-function setupSig(){const r=s.getBoundingClientRect(),d=window.devicePixelRatio||1;s.width=r.width*d;s.height=r.height*d;sx.setTransform(d,0,0,d,0,0);sx.lineWidth=2.6;sx.lineCap='round';sx.lineJoin='round';sx.strokeStyle='#111'}setupSig();
-function pt(e){const r=s.getBoundingClientRect(),t=e.touches?e.touches[0]:e;return[t.clientX-r.left,t.clientY-r.top]}function start(e){e.preventDefault();down=true;const q=pt(e);sx.beginPath();sx.moveTo(q[0],q[1])}function move(e){if(!down)return;e.preventDefault();const q=pt(e);sx.lineTo(q[0],q[1]);sx.stroke();ink=true}function end(){down=false;drawForm()}
+const s=document.getElementById('sig'),sx=s.getContext('2d');let down=false,ink=false;
+const dateEl=document.getElementById('date'),placeEl=document.getElementById('place'),sigPreview=document.getElementById('sigPreview'),formImg=document.getElementById('formImg');
+dateEl.value=new Date().toISOString().slice(0,10);
+function setupSig(){const r=s.getBoundingClientRect(),d=window.devicePixelRatio||1;s.width=Math.max(1,Math.floor(r.width*d));s.height=Math.max(1,Math.floor(r.height*d));sx.setTransform(d,0,0,d,0,0);sx.lineWidth=2.6;sx.lineCap='round';sx.lineJoin='round';sx.strokeStyle='#111'}setupSig();
+function pt(e){const r=s.getBoundingClientRect(),t=e.touches?e.touches[0]:e;return[t.clientX-r.left,t.clientY-r.top]}
+function start(e){e.preventDefault();down=true;const q=pt(e);sx.beginPath();sx.moveTo(q[0],q[1])}
+function move(e){if(!down)return;e.preventDefault();const q=pt(e);sx.lineTo(q[0],q[1]);sx.stroke();ink=true}
+function end(){down=false;updatePreview()}
 ['mousedown','touchstart'].forEach(v=>s.addEventListener(v,start,{passive:false}));['mousemove','touchmove'].forEach(v=>s.addEventListener(v,move,{passive:false}));['mouseup','mouseleave','touchend','touchcancel'].forEach(v=>s.addEventListener(v,end,{passive:false}));
-clear.onclick=()=>{sx.clearRect(0,0,s.width,s.height);ink=false;drawForm()};refresh.onclick=drawForm;place.oninput=drawForm;date.onchange=drawForm;
-function fd(){if(!date.value)return'';const[y,m,d]=date.value.split('-');return d+'.'+m+'.'+y}
-function write(t,x,y,size=16){ctx.save();ctx.fillStyle='#173f87';ctx.font=size+'px "Segoe UI",Arial,sans-serif';ctx.fillText(t,x,y);ctx.restore()}
-function drawForm(){if(!ready)return;ctx.clearRect(0,0,768,1024);ctx.drawImage(bg,0,0,768,1024);
-  write('70437 Stuttgart',182,533,15);write('Taläckerstr. 51',412,516,15);write('3',188,559,16);write('60',186,611,16);write('4',187,656,16);
-  write('Tayar, Seref',168,718,15);write('Taläckerstr. 51',168,755,15);write('70437 Stuttgart',168,792,15);write((place.value||'Stuttgart')+', '+fd(),168,861,14);
-  if(ink){const im=new Image();im.onload=()=>{ctx.drawImage(im,168,862,180,38)};im.src=s.toDataURL('image/png')}
-}
-pdf.onclick=()=>{if(!ink)return alert('Bitte zuerst unterschreiben.');drawForm();setTimeout(()=>{const{jsPDF}=window.jspdf,p=new jsPDF({unit:'mm',format:'a4'});p.addImage(canvas.toDataURL('image/jpeg',.96),'JPEG',0,0,210,297);p.save('Wohnraumnachweis_Abdullah_Bayram_Tayar.pdf')},180)};
+function fd(){if(!dateEl.value)return'';const[y,m,d]=dateEl.value.split('-');return d+'.'+m+'.'+y}
+function updatePreview(){document.getElementById('eDate').textContent=(placeEl.value||'Stuttgart')+', '+fd();if(ink){sigPreview.src=s.toDataURL('image/png');sigPreview.classList.remove('hidden')}else{sigPreview.removeAttribute('src');sigPreview.classList.add('hidden')}}
+document.getElementById('clear').onclick=()=>{sx.clearRect(0,0,s.width,s.height);ink=false;updatePreview()};document.getElementById('refresh').onclick=updatePreview;placeEl.oninput=updatePreview;dateEl.onchange=updatePreview;updatePreview();
+function mmX(px){return px/768*210}function mmY(px){return px/1024*297}
+document.getElementById('pdf').onclick=async()=>{if(!ink)return alert('Bitte zuerst unterschreiben.');if(!formImg.complete)await formImg.decode();const{jsPDF}=window.jspdf,p=new jsPDF({unit:'mm',format:'a4'});p.addImage(formImg,'JPEG',0,0,210,297,undefined,'FAST');p.setTextColor(23,63,135);p.setFont('helvetica','normal');const T=(txt,x,y,fs)=>{p.setFontSize(fs);p.text(txt,mmX(x),mmY(y))};T('70437 Stuttgart',182,533,8.3);T('Taläckerstr. 51',412,516,8.3);T('3',188,559,8.8);T('60',186,611,8.8);T('4',187,656,8.8);T('Tayar, Seref',168,718,8.3);T('Taläckerstr. 51',168,755,8.3);T('70437 Stuttgart',168,792,8.3);T((placeEl.value||'Stuttgart')+', '+fd(),168,861,7.8);p.addImage(s.toDataURL('image/png'),'PNG',mmX(168),mmY(862),mmX(180),mmY(38),undefined,'FAST');p.save('Wohnraumnachweis_Abdullah_Bayram_Tayar.pdf')};
 </script></body></html>
