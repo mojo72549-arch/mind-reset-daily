@@ -29,6 +29,7 @@
     -webkit-backface-visibility:hidden;
     will-change:transform;
     contain:layout paint style;
+    overflow-anchor:none;
   }
 
   /* Rapport action bars must not create a second sticky layer. */
@@ -37,6 +38,17 @@
     position:relative!important;
     bottom:auto!important;
     box-shadow:none!important;
+  }
+
+  /* Admin save actions used sticky + backdrop blur, which can jump on Samsung/Chrome. */
+  main.shell .ux-admin-actions{
+    position:relative!important;
+    bottom:auto!important;
+    backdrop-filter:none!important;
+    -webkit-backdrop-filter:none!important;
+    box-shadow:none!important;
+    background:var(--ux-surface,#fff)!important;
+    overflow-anchor:none;
   }
 
   /* Large soft shadows are expensive while scrolling on mobile GPUs. */
