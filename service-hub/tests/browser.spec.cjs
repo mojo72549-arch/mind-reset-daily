@@ -73,16 +73,28 @@ test('Annette keeps office write rights without global administration', async ({
   await expect(page.getByRole('button', { name: 'Status speichern' })).toBeVisible();
 });
 
-test('Admin has the administration area', async ({ page }) => {
+test('Admin is settings-only and cannot enter operational modules', async ({ page }) => {
   await login(page, 'admin');
   await expect(page.locator('header.top')).toContainText('Administration');
-  await expect(page.locator('.nav.desktop button').filter({ hasText: 'Administration' })).toHaveCount(1);
-});
-
-test('Admin area is system configuration, not an operational customer or invoice screen', async ({ page }) => {
-  await login(page, 'admin');
-  await page.evaluate(() => SH.go('admin'));
   await expect(page.locator('.ux-admin-title h2')).toHaveText('Administration');
+
+  const desktop = page.locator('.nav.desktop button');
+  await expect(desktop).toHaveCount(2);
+  await expect(desktop.filter({ hasText: 'Einstellungen' })).toHaveCount(1);
+  await expect(desktop.filter({ hasText: 'Abmelden' })).toHaveCount(1);
+  await expect(desktop.filter({ hasText: /Start|Kunde|Auftrag|Rapport|Rechnung/ })).toHaveCount(0);
+
+  const mobile = page.locator('nav.mobile button');
+  await expect(mobile).toHaveCount(2);
+  await expect(mobile.filter({ hasText: 'Einstellungen' })).toHaveCount(1);
+  await expect(mobile.filter({ hasText: 'Logout' })).toHaveCount(1);
+  await expect(mobile.filter({ hasText: /Start|Kunde|Auftrag|Rapport|Rechnung/ })).toHaveCount(0);
+
+  for (const target of ['home','customers','orders','reports','invoices','customer','report','invoice']) {
+    await page.evaluate(tab => SH.go(tab), target);
+    await expect(page.locator('.ux-admin-title h2')).toHaveText('Administration');
+  }
+
   await expect(page.getByText('Hier werden ausschließlich globale Einstellungen des Service Hub verwaltet')).toBeVisible();
   await expect(page.locator('#adm-companyName')).toHaveValue('Rohr- & Kanaltechnik Winser');
   await expect(page.locator('#adm-iban')).toHaveValue('DE78 6009 0300 0424 6090 02');
@@ -92,15 +104,20 @@ test('Admin area is system configuration, not an operational customer or invoice
   await expect(page.getByText('Musterkunde Stuttgart GmbH')).toHaveCount(0);
 });
 
-test('Branded invoice uses logo and values from the admin configuration', async ({ page }) => {
+test('Admin configures branding, Annette verifies it in the invoice', async ({ page }) => {
   await login(page, 'admin');
-  await page.evaluate(() => SH.go('admin'));
   await expect(page.locator('#adm-companyName')).toBeVisible();
   await page.locator('#adm-companyName').fill('Winser Test Branding');
   await page.locator('#adm-paymentText').fill('Test-Zahlungshinweis aus Administration.');
   await page.getByRole('button', { name: 'Einstellungen speichern' }).click();
   await expect(page.locator('.ux-admin-saved')).toContainText('Einstellungen gespeichert');
-  await page.evaluate(() => SH.go('invoices'));
+
+  await page.evaluate(() => SH.logout());
+  await expect(page.locator('.loginbox')).toBeVisible();
+  await page.goto('/?role=annette');
+  await page.getByRole('button', { name: 'Anmelden' }).click();
+  await expect(page.locator('header.top')).toContainText('Annette · Büro');
+  await goModule(page, 'Rechnung', 'invoices');
   await page.getByRole('button', { name: '26175' }).first().click();
   await page.evaluate(() => { window.print = () => {}; });
   await page.getByRole('button', { name: 'PDF / Drucken' }).click();
