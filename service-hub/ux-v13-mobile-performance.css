@@ -1,0 +1,60 @@
+/* Mobile scroll performance: no document / invoice styling changes */
+@media screen and (max-width:850px){
+  html{
+    scroll-behavior:auto!important;
+    overflow-x:hidden!important;
+    overscroll-behavior-y:none;
+  }
+  body{
+    overflow-x:hidden!important;
+    overscroll-behavior-y:none;
+    -webkit-overflow-scrolling:touch;
+    touch-action:pan-y pinch-zoom;
+  }
+
+  /* Sticky header + shadow caused continuous repainting on Android. */
+  .top{
+    position:relative!important;
+    top:auto!important;
+    box-shadow:none!important;
+  }
+
+  /* Keep the main navigation fixed, but isolate it as one cheap compositor layer. */
+  nav.mobile,
+  nav.mobile.shp-six-tab-nav{
+    box-shadow:none!important;
+    transform:translate3d(0,0,0)!important;
+    -webkit-transform:translate3d(0,0,0)!important;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+    will-change:transform;
+    contain:layout paint style;
+  }
+
+  /* Rapport action bars must not create a second sticky layer. */
+  main.shell .sticky,
+  main.shell .sticky.ux-report-actions{
+    position:relative!important;
+    bottom:auto!important;
+    box-shadow:none!important;
+  }
+
+  /* Large soft shadows are expensive while scrolling on mobile GPUs. */
+  main.shell .card,
+  main.shell .crm-panel,
+  main.shell .crm-slim-list,
+  main.shell .ux-admin-card{
+    box-shadow:none!important;
+  }
+
+  /* Avoid animation/compositor work during normal touch interaction. */
+  .btn{
+    transition:none!important;
+  }
+  .btn:active{
+    transform:none!important;
+  }
+  .dome-order-memory-details summary:after{
+    transition:none!important;
+  }
+}
