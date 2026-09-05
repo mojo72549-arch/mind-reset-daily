@@ -1,51 +1,66 @@
 (function(){
   'use strict';
-  var BUILD='20260905-v12-admin-only1';
+  var BUILD='20260905-v12-admin-only2';
   var SESSION='shp_session';
-  var wired=false,redirecting=false,scheduled=false;
+  var wired=false,redirecting=false,scheduled=false,renderQueued=false;
 
   function current(){try{return JSON.parse(sessionStorage.getItem(SESSION)||'null')}catch(e){return null}}
   function isAdmin(){var s=current();return !!(s&&String(s.user||'').toLowerCase()==='admin')}
+  function main(){return document.querySelector('main.shell')}
+  function settingsVisible(){var m=main();return !!(m&&m.querySelector('.ux-admin-title'))}
 
-  function renderSettings(){
-    if(!isAdmin())return;
+  function navIsCorrect(nav,mobile){
+    if(!nav)return true;
+    var buttons=nav.querySelectorAll('button');
+    if(buttons.length!==2)return false;
+    var text=(nav.textContent||'').replace(/\s+/g,' ').trim();
+    if(text.indexOf('Einstellungen')<0)return false;
+    return mobile?text.indexOf('Logout')>=0:text.indexOf('Abmelden')>=0;
+  }
+
+  function lockNavigation(){
+    if(!isAdmin()||!window.SH)return;
+    var desktop=document.querySelector('.nav.desktop');
+    if(desktop&&!navIsCorrect(desktop,false)){
+      desktop.innerHTML='<button class="btn primary" type="button" onclick="SH.go(\'admin\')">⚙ Einstellungen</button><button class="btn" type="button" onclick="SH.logout()">Abmelden</button>';
+    }
+    if(desktop)desktop.dataset.adminOnly=BUILD;
+
+    var mobile=document.querySelector('nav.mobile');
+    if(mobile&&!navIsCorrect(mobile,true)){
+      mobile.innerHTML='<button type="button" onclick="SH.go(\'admin\')">⚙<br>Einstellungen</button><button type="button" onclick="SH.logout()">↪<br>Logout</button>';
+    }
+    if(mobile){
+      mobile.dataset.adminOnly=BUILD;
+      if(mobile.classList.contains('shp-six-tab-nav'))mobile.classList.remove('shp-six-tab-nav');
+    }
+    if(document.documentElement.dataset.shAdminAccess!==BUILD)document.documentElement.dataset.shAdminAccess=BUILD;
+  }
+
+  function renderSettingsIfNeeded(){
+    if(!isAdmin()||settingsVisible()||renderQueued)return;
+    renderQueued=true;
     window.setTimeout(function(){
-      if(window.SHP_V6&&typeof window.SHP_V6.renderAdminSettings==='function'){
+      renderQueued=false;
+      if(!isAdmin())return;
+      if(!settingsVisible()&&window.SHP_V6&&typeof window.SHP_V6.renderAdminSettings==='function'){
         window.SHP_V6.renderAdminSettings();
       }
       lockNavigation();
     },0);
   }
 
-  function lockNavigation(){
-    if(!isAdmin()||!window.SH)return;
-    var desktop=document.querySelector('.nav.desktop');
-    if(desktop){
-      desktop.innerHTML='<button class="btn primary" type="button" onclick="SH.go(\'admin\')">⚙ Einstellungen</button><button class="btn" type="button" onclick="SH.logout()">Abmelden</button>';
-      desktop.dataset.adminOnly=BUILD;
-    }
-    var mobile=document.querySelector('nav.mobile');
-    if(mobile){
-      mobile.innerHTML='<button type="button" onclick="SH.go(\'admin\')">⚙<br>Einstellungen</button><button type="button" onclick="SH.logout()">↪<br>Logout</button>';
-      mobile.dataset.adminOnly=BUILD;
-      mobile.classList.remove('shp-six-tab-nav');
-    }
-    document.documentElement.dataset.shAdminAccess=BUILD;
-  }
-
   function forceSettings(){
     if(!isAdmin()||!window.SH||redirecting)return;
-    var main=document.querySelector('main.shell');
-    var heading=main&&(main.querySelector('h2')||main.querySelector('h1'));
-    var title=(heading&&heading.textContent||'').trim();
-    var isSettings=title==='Administration'||main&&main.querySelector('.ux-admin-title');
-    if(!isSettings&&window.__SHP_ADMIN_ORIGINAL_GO){
+    if(settingsVisible()){
+      lockNavigation();
+      return;
+    }
+    if(window.__SHP_ADMIN_ORIGINAL_GO){
       redirecting=true;
       try{window.__SHP_ADMIN_ORIGINAL_GO.call(window.SH,'admin')}finally{redirecting=false}
-      renderSettings();
-    }else{
-      renderSettings();
     }
+    renderSettingsIfNeeded();
   }
 
   function blockOperationalApi(){
@@ -80,8 +95,12 @@
       window.SH.go=function(tab){
         if(isAdmin()){
           if(tab!=='admin')tab='admin';
+          if(settingsVisible()){
+            lockNavigation();
+            return false;
+          }
           var result=previousGo.call(window.SH,tab);
-          renderSettings();
+          renderSettingsIfNeeded();
           return result;
         }
         return previousGo.apply(window.SH,arguments);
@@ -94,9 +113,10 @@
   function schedule(){
     if(scheduled)return;
     scheduled=true;
-    requestAnimationFrame(function(){scheduled=false;wire();lockNavigation()});
+    requestAnimationFrame(function(){scheduled=false;wire();if(isAdmin())lockNavigation()});
   }
 
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',schedule);else schedule();
-  new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});
+  var target=document.getElementById('app')||document.body;
+  new MutationObserver(schedule).observe(target,{childList:true,subtree:true});
 })();
