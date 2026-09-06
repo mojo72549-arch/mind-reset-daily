@@ -18,7 +18,9 @@ async function expectReportDraft(page) {
   await expect(page.locator('#uxReportStart')).toHaveValue('08:15');
   await expect(page.locator('#uxReportEnd')).toHaveValue('09:45');
   await expect(page.locator('#rcname')).toHaveValue('Thomas Berger Test');
-  await expect(page.locator('#rpay')).toHaveValue('Rechnung wird verschickt');
+  await expect(page.locator('#rpay')).toHaveValue('Betrag bar erhalten');
+  await expect(page.locator('#rsvc')).toHaveValue('svc1');
+  await expect(page.locator('#rqty')).toHaveValue('1.5');
 }
 
 for (const role of ['dome', 'annette']) {
@@ -31,7 +33,7 @@ for (const role of ['dome', 'annette']) {
     await page.locator('#uxReportStart').fill('08:15');
     await page.locator('#uxReportEnd').fill('09:45');
     await page.locator('#rcname').fill('Thomas Berger Test');
-    await page.locator('#rpay').selectOption({ label: 'Rechnung wird verschickt' });
+    await page.locator('#rpay').selectOption({ label: 'Betrag bar erhalten' });
     await page.locator('#rsvc').selectOption('svc1');
     await page.locator('#rqty').fill('1.5');
 
