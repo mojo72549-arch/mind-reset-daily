@@ -43,6 +43,7 @@ jobs:
           node --check ../ux-v10-report-time.js
           node --check ../ux-v12-slim-start.js
           node --check ../ux-v14-state-safety.js
+          node --check ../ux-v15-payments.js
           node --check ../auth-v7.js
           node --check browser.spec.cjs
           node --check rapport-v8.spec.cjs
@@ -52,6 +53,7 @@ jobs:
           node --check dashboard-v9-4.spec.cjs
           node --check customer-search-v10.spec.cjs
           node --check persistence-v14.spec.cjs
+          node --check payments-v15.spec.cjs
           node --check auth.spec.cjs
           node --check playwright.config.cjs
       - name: Unit tests
