@@ -60,30 +60,30 @@
     var customers=customerMap(data);
     return(data.invoices||[]).filter(function(iv){return paymentState(iv).key==='overdue'}).sort(function(a,b){return daysLate(b)-daysLate(a)}).slice(0,limit||3).map(function(iv){var c=customers[iv.customerId]||{},st=stage(iv),late=daysLate(iv);return'<button type="button" class="crm-payment-row" onclick="SH.openInvoice('+Number(iv.id)+')"><span><b>Rechnung '+esc(iv.no)+'</b><small>'+esc(c.name||'Kunde')+' · fällig '+esc(iv.due||'–')+(late?' · '+late+' Tage':'')+'</small></span><span><b>'+money(iv.gross)+'</b><small>'+esc(st==='Keine'?'Noch keine Mahnstufe':st)+'</small></span><span class="crm-payment-chevron">›</span></button>'}).join('')
   }
-  function renderHome(data){
+  function renderHome(data,force){
     if(!isOffice())return;
     var root=document.querySelector('.crm-start-slim-v12');if(!root)return;
-    var old=root.querySelector('.crm-payment-monitor-v15');if(old)old.remove();
+    var old=root.querySelector('.crm-payment-monitor-v15');if(old&&!force)return;if(old)old.remove();
     var grid=root.querySelector('.crm-start-status-grid');if(!grid)return;
     var s=stats(data),rows=overdueRows(data,3);
     var box=document.createElement('section');box.className='crm-payment-monitor-v15';box.dataset.build=BUILD;
     box.innerHTML='<div class="crm-payment-head"><div><span>Zahlungsmonitor</span><h2>Zahlungen & Eskalation</h2></div><button type="button" onclick="SH.go(\'invoices\')">Alle Rechnungen</button></div><div class="crm-payment-metrics">'+metric('Bezahlt',s.paid,'erledigt','is-paid')+metric('Offen',s.open,money(s.openAmount),'is-open')+metric('Überfällig',s.overdue,money(s.overdueAmount),'is-overdue')+metric('Mahnung aktiv',s.reminders,'in Bearbeitung','is-reminder')+'</div>'+(rows?'<div class="crm-payment-list"><h3>Handlungsbedarf</h3>'+rows+'</div>':'<div class="crm-payment-empty">Keine überfälligen Rechnungen.</div>');
     grid.insertAdjacentElement('afterend',box);
   }
-  function renderInvoices(data){
+  function renderInvoices(data,force){
     if(!isOffice())return;
     var main=document.querySelector('main.shell'),h=main&&main.querySelector('h2');if(!main||!h||String(h.textContent||'').trim()!=='Rechnungen')return;
-    var old=main.querySelector('.crm-payment-summary-v15');if(old)old.remove();
+    var old=main.querySelector('.crm-payment-summary-v15');if(old&&!force)return;if(old)old.remove();
     var s=stats(data),table=main.querySelector('.table.card');if(!table)return;
     var box=document.createElement('section');box.className='crm-payment-summary-v15';box.dataset.build=BUILD;
     box.innerHTML='<div><span>Zahlungsübersicht</span><b>'+s.paid+' bezahlt</b></div><div><span>Offen</span><b>'+s.open+' · '+money(s.openAmount)+'</b></div><div class="is-overdue"><span>Überfällig</span><b>'+s.overdue+' · '+money(s.overdueAmount)+'</b></div><div><span>Mahnung aktiv</span><b>'+s.reminders+'</b></div>';
     table.insertAdjacentElement('beforebegin',box);
   }
-  function renderInvoice(data){
+  function renderInvoice(data,force){
     if(!isOffice())return;
     var main=document.querySelector('main.shell');if(!main)return;
     var iv=currentInvoice(data);if(!iv)return;
-    var old=main.querySelector('.crm-payment-escalation-v15');if(old)old.remove();
+    var old=main.querySelector('.crm-payment-escalation-v15');if(old&&!force)return;if(old)old.remove();
     var state=paymentState(iv),m=invoiceMeta(iv.id),st=stage(iv),late=daysLate(iv);
     var options=STAGES.map(function(x){return'<option'+(x===st?' selected':'')+'>'+esc(x)+'</option>'}).join('');
     var history=(m.history||[]).slice(-3).reverse().map(function(x){return'<div><b>'+esc(x.at)+'</b> · '+esc(x.by)+'<br>'+esc(x.text)+'</div>'}).join('');
@@ -94,7 +94,7 @@
   function enhance(force){
     if(!isOffice())return;
     var data=db();
-    renderHome(data);renderInvoices(data);renderInvoice(data);
+    renderHome(data,!!force);renderInvoices(data,!!force);renderInvoice(data,!!force);
     document.documentElement.dataset.shPaymentsBuild=BUILD;
   }
   function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;enhance(false)})}
