@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  var BUILD='20260906-v14-report-persistence1';
+  var BUILD='20260907-v14-report-persistence2';
   var STORE='shp_db',UI_DRAFT='shp_report_ui_draft';
   var scheduled=false,autosaveTimer=null;
 
@@ -58,32 +58,43 @@
     if(sigT!==undefined)out.sigT=sigT;
     return out;
   }
+  function readUiDrafts(){var all={};try{all=JSON.parse(sessionStorage.getItem(UI_DRAFT)||'{}')||{}}catch(e){}return all}
+  function writeUiDrafts(all){try{sessionStorage.setItem(UI_DRAFT,JSON.stringify(all||{}))}catch(e){}}
   function saveUiDraft(){
     var r=currentReport(),svc=document.getElementById('rsvc'),qty=document.getElementById('rqty');
     if(!r||(!svc&&!qty))return;
-    var all={};try{all=JSON.parse(sessionStorage.getItem(UI_DRAFT)||'{}')||{}}catch(e){}
+    var all=readUiDrafts();
     all[String(r.orderId)]={svc:svc?svc.value:'',qty:qty?qty.value:''};
-    try{sessionStorage.setItem(UI_DRAFT,JSON.stringify(all))}catch(e){}
+    writeUiDrafts(all);
+  }
+  function clearUiDraft(orderId){
+    var key=String(orderId==null?(currentReport()||{}).orderId:orderId||'');if(!key)return;
+    var all=readUiDrafts();delete all[key];writeUiDrafts(all);
   }
   function restoreUiDraft(){
     var r=currentReport();if(!r)return;
-    var all={};try{all=JSON.parse(sessionStorage.getItem(UI_DRAFT)||'{}')||{}}catch(e){}
-    var d=all[String(r.orderId)];if(!d)return;
+    var all=readUiDrafts(),d=all[String(r.orderId)];if(!d)return;
     var svc=document.getElementById('rsvc'),qty=document.getElementById('rqty');
-    if(svc&&d.svc&&[].slice.call(svc.options).some(function(o){return o.value===d.svc}))svc.value=d.svc;
-    if(qty&&d.qty!=='')qty.value=d.qty;
+    if(svc&&svc.dataset.reportUiDraftRestored!==BUILD){
+      svc.dataset.reportUiDraftRestored=BUILD;
+      if(d.svc&&[].slice.call(svc.options).some(function(o){return o.value===d.svc}))svc.value=d.svc;
+    }
+    if(qty&&qty.dataset.reportUiDraftRestored!==BUILD){
+      qty.dataset.reportUiDraftRestored=BUILD;
+      if(d.qty!=='')qty.value=d.qty;
+    }
   }
   function persistDraft(){
     if(!isReportView())return false;
     if(autosaveTimer){clearTimeout(autosaveTimer);autosaveTimer=null}
     var data=values(),b=bridge();
     if(b&&typeof b.saveDraft==='function'){
-      try{b.saveDraft(data);saveUiDraft();return true}catch(e){console.error(e)}
+      try{b.saveDraft(data);return true}catch(e){console.error(e)}
     }
     var db=readDb(),r=currentReportFallback(db);
     if(!db||!r)return false;
     Object.keys(data).forEach(function(k){r[k]=data[k]});
-    writeDb(db);saveUiDraft();return true;
+    writeDb(db);return true;
   }
   function queuePersist(){
     if(autosaveTimer)clearTimeout(autosaveTimer);
@@ -96,6 +107,13 @@
     el.addEventListener('change',persistDraft);
     el.addEventListener('blur',persistDraft);
   }
+  function bindUiDraft(el){
+    if(!el||el.dataset.reportUiDraft==='1')return;
+    el.dataset.reportUiDraft='1';
+    el.addEventListener('input',saveUiDraft);
+    el.addEventListener('change',saveUiDraft);
+    el.addEventListener('blur',saveUiDraft);
+  }
   function bindSignature(canvas){
     if(!canvas||canvas.dataset.reportSignatureSafe==='1')return;
     canvas.dataset.reportSignatureSafe='1';
@@ -107,17 +125,30 @@
   function wrapAction(name){
     var fn=window.SH&&window.SH[name];
     if(typeof fn!=='function'||fn.__reportDraftSafe)return;
-    var wrapped=function(){if(isReportView())persistDraft();return fn.apply(window.SH,arguments)};
+    var wrapped=function(){
+      var report=isReportView(),r=report?currentReport():null,svcValue=null,qtyValue=null;
+      if(report&&name==='addReportLine'){
+        var svc=document.getElementById('rsvc'),qty=document.getElementById('rqty');
+        svcValue=svc?svc.value:null;qtyValue=qty?qty.value:null;
+        saveUiDraft();persistDraft();
+        svc=document.getElementById('rsvc');qty=document.getElementById('rqty');
+        if(svc&&svcValue!=null)svc.value=svcValue;
+        if(qty&&qtyValue!=null)qty.value=qtyValue;
+      }else if(report){persistDraft()}
+      var out=fn.apply(window.SH,arguments);
+      if(report&&name==='addReportLine'&&r)clearUiDraft(r.orderId);
+      return out;
+    };
     wrapped.__reportDraftSafe=true;window.SH[name]=wrapped;
   }
   function wrapActions(){
     if(!window.SH)return;
     ['saveReportText','startReport','endReport','addReportLine','removeReportLine','addMaterial','removeMaterial','addMeasurement','removeMeasurement','finishReport','printReport','invoiceFromReport','sendReportPreferred'].forEach(wrapAction);
     if(typeof window.SH.go==='function'&&!window.SH.go.__reportDraftSafe){
-      var go=window.SH.go;var goWrapped=function(){if(isReportView())persistDraft();return go.apply(window.SH,arguments)};goWrapped.__reportDraftSafe=true;window.SH.go=goWrapped;
+      var go=window.SH.go;var goWrapped=function(){if(isReportView()){saveUiDraft();persistDraft()}return go.apply(window.SH,arguments)};goWrapped.__reportDraftSafe=true;window.SH.go=goWrapped;
     }
     if(typeof window.SH.logout==='function'&&!window.SH.logout.__reportDraftSafe){
-      var logout=window.SH.logout;var logoutWrapped=function(){if(isReportView())persistDraft();return logout.apply(window.SH,arguments)};logoutWrapped.__reportDraftSafe=true;window.SH.logout=logoutWrapped;
+      var logout=window.SH.logout;var logoutWrapped=function(){if(isReportView()){saveUiDraft();persistDraft()}return logout.apply(window.SH,arguments)};logoutWrapped.__reportDraftSafe=true;window.SH.logout=logoutWrapped;
     }
     if(typeof window.SH.clearSig==='function'&&!window.SH.clearSig.__reportDraftSafe){
       var clear=window.SH.clearSig;
@@ -148,7 +179,8 @@
   function escapeHtml(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')}
   function enhance(){
     wrapActions();if(!isReportView())return;
-    ['rw','rr','rpay','rcname','rsvc','rqty'].forEach(function(id){bindAutosave(document.getElementById(id))});
+    ['rw','rr','rpay','rcname'].forEach(function(id){bindAutosave(document.getElementById(id))});
+    ['rsvc','rqty'].forEach(function(id){bindUiDraft(document.getElementById(id))});
     bindSignature(document.getElementById('sigC'));bindSignature(document.getElementById('sigT'));
     buildTimeEditor();restoreUiDraft();document.documentElement.setAttribute('data-sh-report-time',BUILD);
   }
