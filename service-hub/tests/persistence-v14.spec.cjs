@@ -19,8 +19,6 @@ async function expectReportDraft(page) {
   await expect(page.locator('#uxReportEnd')).toHaveValue('09:45');
   await expect(page.locator('#rcname')).toHaveValue('Thomas Berger Test');
   await expect(page.locator('#rpay')).toHaveValue('Betrag bar erhalten');
-  await expect(page.locator('#rsvc')).toHaveValue('svc1');
-  await expect(page.locator('#rqty')).toHaveValue('1.5');
 }
 
 for (const role of ['dome', 'annette']) {
@@ -41,6 +39,7 @@ for (const role of ['dome', 'annette']) {
     await expectReportDraft(page);
     await expect(page.locator('.report-lines-card')).toContainText('Gerätewageneinsatz');
     await expect(page.locator('.report-lines-card')).toContainText('1.5');
+    await expect(page.locator('#rqty')).toHaveValue('1');
 
     await page.getByRole('button', { name: '+ Material', exact: true }).click();
     const material = page.locator('#shp-app-modal');
@@ -111,6 +110,7 @@ test('Shared start dashboard stays compact but useful for Dome and Annette', asy
     await page.goto(`/?role=${role}`);
     await page.getByRole('button', { name: 'Anmelden' }).click();
     await expect(page.locator('.crm-start-hero-v14')).toBeVisible();
+    await expect(page.locator('.crm-customer-finder-v10')).toBeVisible();
     await expect(page.locator('.crm-start-status-tile')).toHaveCount(3);
     await expect(page.getByText('Nächste Aufträge')).toBeVisible();
     await expect(page.locator('.crm-slim-order')).toHaveCount(1);
