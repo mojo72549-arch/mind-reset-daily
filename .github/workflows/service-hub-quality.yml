@@ -45,6 +45,7 @@ jobs:
           node --check ../ux-v14-state-safety.js
           node --check ../ux-v15-payments.js
           node --check ../ux-v17-report-document.js
+          node --check ../ux-v18-report-native-pdf.js
           node --check ../auth-v7.js
           node --check browser.spec.cjs
           node --check rapport-v8.spec.cjs
@@ -57,6 +58,7 @@ jobs:
           node --check payments-v15.spec.cjs
           node --check responsive-v16.spec.cjs
           node --check report-document-v17.spec.cjs
+          node --check report-native-pdf-v18.spec.cjs
           node --check auth.spec.cjs
           node --check playwright.config.cjs
       - name: Unit tests
