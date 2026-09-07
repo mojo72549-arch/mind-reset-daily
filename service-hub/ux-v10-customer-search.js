@@ -14,7 +14,7 @@
   function session(){return readJson(sessionStorage,SESSION,null)}
   function esc(value){
     return String(value==null?'':value).replace(/[&<>"']/g,function(ch){
-      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch];
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[ch];
     });
   }
   function normalize(value){
@@ -159,6 +159,7 @@
   }
 
   function surface(main){
+    if(main.querySelector('.crm-start-slim-v12'))return 'slim-home';
     if(main.querySelector('.crm-dashboard-v94'))return 'office-dashboard';
     var h2=main.querySelector('h2'),title=(h2&&h2.textContent||'').trim();
     if(title==='Dome Arbeitsbereich'||(session()&&session().user==='dome'&&main.querySelector('.ux-dome-modules')))return 'dome-home';
@@ -171,7 +172,10 @@
     var existing=main.querySelector('.crm-customer-finder-v10');
     if(existing){mountedFor=context;return}
     var finder=createFinder(context);
-    if(context==='office-dashboard'){
+    if(context==='slim-home'){
+      var slim=main.querySelector('.crm-start-slim-v12'),hero=slim&&slim.querySelector('.crm-start-hero-v14');
+      (hero||slim||main).insertAdjacentElement('afterend',finder);
+    }else if(context==='office-dashboard'){
       var dashboard=main.querySelector('.crm-dashboard-v94'),head=dashboard&&dashboard.querySelector('.crm-dash-head');
       if(head)head.insertAdjacentElement('afterend',finder);
     }else if(context==='dome-home'){
