@@ -18,7 +18,7 @@ async function openSeedReport(page) {
   const direct = page.getByRole('button', { name: 'Rapport öffnen' }).first();
   if (await direct.isVisible().catch(() => false)) await direct.click();
   else {
-    await goModule(page, 'Rapporte', 'reports');
+    await goModule(page, 'Rapport', 'reports');
     await page.getByRole('button', { name: 'Rapport öffnen' }).first().click();
   }
   await expect(page.locator('main h2')).toContainText('Rapport A-2026-0101');
@@ -42,12 +42,12 @@ test('Dome sees the central CRM but sensitive write areas stay protected', async
   await expect(page.locator('header.top')).toContainText('Dome · Techniker');
   const nav = page.locator('.mobile button');
   await expect(nav.filter({ hasText: 'Start' })).toHaveCount(1);
-  await expect(nav.filter({ hasText: 'Aufträge' })).toHaveCount(1);
-  await expect(nav.filter({ hasText: 'Kunden' })).toHaveCount(1);
-  await expect(nav.filter({ hasText: 'Rapporte' })).toHaveCount(1);
+  await expect(nav.filter({ hasText: 'Auftrag' })).toHaveCount(1);
+  await expect(nav.filter({ hasText: 'Kunde' })).toHaveCount(1);
+  await expect(nav.filter({ hasText: 'Rapport' })).toHaveCount(1);
   await expect(nav.filter({ hasText: 'Rechnung' })).toHaveCount(1);
   await expect(page.locator('.nav.desktop button').filter({ hasText: 'Administration' })).toHaveCount(0);
-  await goModule(page, 'Kunden', 'customers');
+  await goModule(page, 'Kunde', 'customers');
   await expect(page.locator('main h2')).toHaveText('Kunden');
   await expect(page.getByRole('button', { name: '+ Kunde' })).toHaveCount(0);
   await page.getByRole('button', { name: 'Kunde öffnen' }).first().click();
@@ -64,7 +64,7 @@ test('Dome sees the central CRM but sensitive write areas stay protected', async
 test('Annette keeps office write rights without global administration', async ({ page }) => {
   await login(page, 'annette');
   await expect(page.locator('header.top')).toContainText('Annette · Büro');
-  await goModule(page, 'Kunden', 'customers');
+  await goModule(page, 'Kunde', 'customers');
   await expect(page.getByRole('button', { name: '+ Kunde' })).toBeVisible();
   await expect(page.locator('.nav.desktop button').filter({ hasText: 'Administration' })).toHaveCount(0);
   await goModule(page, 'Rechnung', 'invoices');
@@ -166,7 +166,7 @@ test('Material can be removed with in-app confirmation', async ({ page }) => {
 
 test('A newly created customer can be reverted globally', async ({ page }) => {
   await login(page, 'annette');
-  await goModule(page, 'Kunden', 'customers');
+  await goModule(page, 'Kunde', 'customers');
   await page.getByRole('button', { name: '+ Kunde' }).click();
   const m = await modal(page, 'Kunde anlegen');
   await m.getByLabel('Kundenname').fill('Undo Testkunde GmbH');
@@ -181,6 +181,6 @@ test('A newly created customer can be reverted globally', async ({ page }) => {
   await expect(page.locator('.ux-undo-toast')).toContainText('Kunde angelegt');
   await page.locator('.ux-undo-toast button').click();
   await expect(page.locator('header.top')).toBeVisible();
-  await goModule(page, 'Kunden', 'customers');
+  await goModule(page, 'Kunde', 'customers');
   await expect(page.getByText('Undo Testkunde GmbH')).toHaveCount(0);
 });
