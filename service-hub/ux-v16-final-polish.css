@@ -1,0 +1,101 @@
+/* Service Hub Pro · final responsive UI/UX polish
+   Scope: application chrome, navigation and CRM dashboard/payment surfaces only.
+   Approved document/invoice selectors (.doc, .doc-*) are intentionally untouched. */
+
+:root{--shp-header:#0b1f33;--shp-accent:#1769cf;--shp-line:#dbe4ec;--shp-text:#13283a;--shp-muted:#657482}
+
+/* Use large displays without turning the app into an edge-to-edge wall of content. */
+@media(min-width:1100px){
+  main.shell{max-width:1600px;padding:24px clamp(28px,3vw,52px)}
+  .crm-start-slim-v12{width:100%;max-width:1480px}
+}
+@media(min-width:851px) and (max-width:1099px){
+  main.shell{max-width:none;padding:20px 22px}
+  .crm-start-slim-v12{width:100%;max-width:none}
+}
+
+/* Desktop header/navigation: proper application tabs instead of browser-default buttons. */
+@media(min-width:851px){
+  header.top{min-height:68px;padding:11px clamp(20px,2.4vw,38px);box-shadow:0 1px 0 rgba(255,255,255,.08),0 8px 26px rgba(5,18,32,.10)}
+  header.top .brand{font-size:19px;line-height:1.15;letter-spacing:-.01em}
+  header.top small{display:block;margin-top:3px;color:rgba(255,255,255,.70);font-size:11px;font-weight:650}
+  .nav.desktop[data-sh-nav-build]{display:flex;align-items:center;gap:3px;padding:4px;border:1px solid rgba(255,255,255,.12);border-radius:13px;background:rgba(255,255,255,.06)}
+  .nav.desktop[data-sh-nav-build] .navbtn{appearance:none;border:0;background:transparent;color:rgba(255,255,255,.78);min-height:38px;padding:8px 14px;border-radius:9px;font-size:13px;line-height:1;font-weight:750;white-space:nowrap;cursor:pointer;transition:background-color .16s ease,color .16s ease,box-shadow .16s ease,transform .16s ease}
+  .nav.desktop[data-sh-nav-build] .navbtn:hover{background:rgba(255,255,255,.10);color:#fff}
+  .nav.desktop[data-sh-nav-build] .navbtn:focus-visible{outline:2px solid #9ec9ff;outline-offset:2px}
+  .nav.desktop[data-sh-nav-build] .navbtn.ux-active{background:#fff;color:#0b2744;box-shadow:0 2px 9px rgba(2,17,31,.18)}
+  .nav.desktop[data-sh-nav-build] .navbtn.logout{margin-left:4px;padding-left:15px;border-left:1px solid rgba(255,255,255,.16);border-radius:0 9px 9px 0;color:rgba(255,255,255,.72)}
+  .nav.desktop[data-sh-nav-build] .navbtn.logout:hover{background:rgba(255,255,255,.10);color:#fff}
+}
+@media(min-width:851px) and (max-width:1040px){
+  header.top{padding-left:18px;padding-right:18px}
+  .nav.desktop[data-sh-nav-build] .navbtn{padding-left:9px;padding-right:9px;font-size:12px}
+}
+
+/* Dashboard breathes on desktop but remains compact and scannable. */
+@media(min-width:1100px){
+  .crm-start-hero-v14{padding:24px 28px;margin-bottom:16px}
+  .crm-start-hero-v14 h1{font-size:32px!important}
+  .crm-start-status-grid{gap:12px;margin-bottom:16px}
+  .crm-start-status-tile{padding:15px 16px}
+  .crm-start-status-icon{width:40px;height:40px}
+  .crm-payment-monitor-v15{padding:18px 20px;margin:16px 0 18px}
+  .crm-payment-metrics{gap:11px}
+  .crm-payment-metric{padding:13px 14px}
+  .crm-start-slim-v12 .crm-slim-list{padding:18px 20px}
+}
+
+/* Payment/escalation surfaces: clearer hierarchy, stronger click affordance. */
+.crm-payment-monitor-v15{box-shadow:0 8px 28px rgba(11,31,51,.065)}
+.crm-payment-metric{min-height:82px;display:flex;flex-direction:column;justify-content:center}
+.crm-payment-row{border-radius:10px;transition:background-color .15s ease}
+.crm-payment-row:hover{background:#f6f9fc}
+.crm-payment-row:focus-visible{outline:2px solid #8ebdf5;outline-offset:2px}
+.crm-payment-head button,.crm-start-text-link{min-height:40px;border-radius:9px;padding-left:9px;padding-right:9px}
+.crm-payment-head button:hover,.crm-start-text-link:hover{background:#eef5ff}
+
+/* Tablet: keep useful density instead of stacking everything too early. */
+@media(min-width:600px) and (max-width:850px){
+  main.shell{padding:16px 18px 92px}
+  .crm-start-slim-v12{max-width:none;width:100%}
+  .crm-start-status-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+  .crm-start-status-tile{grid-template-columns:auto minmax(0,1fr);padding:11px;gap:8px}
+  .crm-start-status-tile .crm-start-chevron{display:none}
+  .crm-start-status-icon{width:34px;height:34px}
+  .crm-start-status-tile b{font-size:20px}
+  .crm-payment-metrics,.crm-payment-summary-v15{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* Phone: comfortable touch targets, stable bottom navigation and no wasted width. */
+@media(max-width:599px){
+  main.shell{padding:12px 12px calc(88px + env(safe-area-inset-bottom))}
+  .crm-start-slim-v12{width:100%;max-width:none}
+  .crm-start-hero-v14{padding:17px 16px;margin-bottom:11px}
+  .crm-start-hero-v14 h1{font-size:25px!important}
+  .crm-start-status-grid{gap:8px;margin-bottom:11px}
+  .crm-start-status-tile{min-height:64px}
+  .crm-payment-monitor-v15{margin:11px 0 12px;padding:12px;border-radius:16px}
+  .crm-payment-head h2{font-size:19px}
+  .crm-payment-metrics{gap:7px;margin-top:11px}
+  .crm-payment-metric{min-height:76px;padding:10px}
+  .crm-payment-metric b{font-size:20px}
+  .crm-payment-row{padding:11px 3px}
+  .crm-start-slim-v12 .crm-slim-list{padding:13px;border-radius:16px}
+  .crm-start-slim-v12 .crm-slim-list-head h2{font-size:18px!important}
+
+  nav.mobile.shp-six-tab-nav{min-height:66px;border-top:1px solid rgba(255,255,255,.10);box-shadow:0 -10px 28px rgba(3,17,31,.16);background:rgba(11,31,51,.98)!important;backdrop-filter:blur(12px)}
+  nav.mobile.shp-six-tab-nav button{min-height:50px!important;border-radius:10px!important;color:rgba(255,255,255,.76)!important}
+  nav.mobile.shp-six-tab-nav button span{font-size:17px!important}
+  nav.mobile.shp-six-tab-nav button b{font-size:9.5px!important;letter-spacing:-.01em}
+  nav.mobile.shp-six-tab-nav button.ux-active{background:rgba(255,255,255,.12)!important;color:#fff!important}
+}
+
+@media(max-width:360px){
+  nav.mobile.shp-six-tab-nav{padding-left:2px!important;padding-right:2px!important}
+  nav.mobile.shp-six-tab-nav button b{font-size:9px!important}
+  nav.mobile.shp-six-tab-nav button span{font-size:16px!important}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .nav.desktop[data-sh-nav-build] .navbtn,.crm-payment-row{transition:none}
+}
