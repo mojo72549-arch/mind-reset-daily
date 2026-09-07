@@ -120,7 +120,8 @@ test('customer and order cancellation are atomic and never open browser prompts'
 test('material add and delete use app-owned modal and confirmation', async ({ page }) => {
   const nativeDialogs = trackNativeDialogs(page);
   await login(page, 'dome');
-  await page.getByRole('button', { name: 'Rapport öffnen' }).first().click();
+  await page.evaluate(() => SH.openReport(101));
+  await expect(page.locator('#rw')).toBeVisible();
   await page.getByRole('button', { name: '+ Material' }).click();
   let m = await modal(page, 'Material hinzufügen');
   await m.getByLabel('Material / Bezeichnung').fill('Dialog-Testmaterial');
