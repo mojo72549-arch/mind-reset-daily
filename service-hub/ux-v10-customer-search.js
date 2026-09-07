@@ -14,7 +14,7 @@
   function session(){return readJson(sessionStorage,SESSION,null)}
   function esc(value){
     return String(value==null?'':value).replace(/[&<>"']/g,function(ch){
-      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[ch];
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch];
     });
   }
   function normalize(value){
