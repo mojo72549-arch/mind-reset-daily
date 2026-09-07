@@ -8,6 +8,7 @@
 @media(min-width:1100px){
   main.shell{max-width:1600px;padding:24px clamp(28px,3vw,52px)}
   .crm-start-slim-v12{width:100%;max-width:1480px}
+  header.top{padding-left:max(clamp(20px,2.4vw,38px),calc((100vw - 1600px)/2 + 52px));padding-right:max(clamp(20px,2.4vw,38px),calc((100vw - 1600px)/2 + 52px))}
 }
 @media(min-width:851px) and (max-width:1099px){
   main.shell{max-width:none;padding:20px 22px}
@@ -16,7 +17,7 @@
 
 /* Desktop header/navigation: proper application tabs instead of browser-default buttons. */
 @media(min-width:851px){
-  header.top{min-height:68px;padding:11px clamp(20px,2.4vw,38px);box-shadow:0 1px 0 rgba(255,255,255,.08),0 8px 26px rgba(5,18,32,.10)}
+  header.top{min-height:68px;padding-top:11px;padding-bottom:11px;box-shadow:0 1px 0 rgba(255,255,255,.08),0 8px 26px rgba(5,18,32,.10)}
   header.top .brand{font-size:19px;line-height:1.15;letter-spacing:-.01em}
   header.top small{display:block;margin-top:3px;color:rgba(255,255,255,.70);font-size:11px;font-weight:650}
   .nav.desktop[data-sh-nav-build]{display:flex;align-items:center;gap:3px;padding:4px;border:1px solid rgba(255,255,255,.12);border-radius:13px;background:rgba(255,255,255,.06)}
@@ -43,6 +44,7 @@
   .crm-payment-metrics{gap:11px}
   .crm-payment-metric{padding:13px 14px}
   .crm-start-slim-v12 .crm-slim-list{padding:18px 20px}
+  .crm-start-slim-v12>.crm-customer-finder-v10{margin-bottom:16px}
 }
 
 /* Payment/escalation surfaces: clearer hierarchy, stronger click affordance. */
