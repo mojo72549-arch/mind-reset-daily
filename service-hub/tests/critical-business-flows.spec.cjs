@@ -10,6 +10,22 @@ function browserHealth(page) {
   return () => ({ pageErrors, consoleErrors });
 }
 
+async function expectDomToSettle(page, label) {
+  const childListMutations = await page.evaluate(async () => {
+    await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    let count = 0;
+    const observer = new MutationObserver(records => {
+      count += records.filter(record => record.type === 'childList').length;
+    });
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+    await new Promise(resolve => setTimeout(resolve, 900));
+    observer.disconnect();
+    return count;
+  });
+  expect(childListMutations, `${label}: DOM muss nach dem Rendern zur Ruhe kommen`).toBeLessThan(20);
+  await expect(page.locator('main')).toBeVisible();
+}
+
 async function login(page, role = 'annette') {
   await page.goto(`/?role=${role}`);
   await page.getByRole('button', { name: 'Anmelden' }).click();
@@ -69,6 +85,7 @@ test('Annette: Auftrag anlegen, Rapport weiterbearbeiten, navigieren und neu lad
   await page.evaluate(() => window.SHP_REPORT_TIME && window.SHP_REPORT_TIME.save());
 
   await addService(page, 'svc1', 1.5);
+  await expectDomToSettle(page, 'Annette Rapport mit erfasster Leistung');
   await expect.poll(async () => page.evaluate(id => {
     const db = JSON.parse(localStorage.getItem('shp_db'));
     const r = db.reports.find(x => String(x.orderId) === String(id));
@@ -83,6 +100,7 @@ test('Annette: Auftrag anlegen, Rapport weiterbearbeiten, navigieren und neu lad
   await modal.getByLabel('Einzelpreis €').fill('3.50');
   await modal.getByRole('button', { name: 'Material hinzufügen' }).click();
   await expect(modal).toHaveCount(0);
+  await expectDomToSettle(page, 'Annette Rapport mit Material');
 
   const saved = await page.evaluate(id => {
     const db = JSON.parse(localStorage.getItem('shp_db'));
@@ -116,8 +134,8 @@ test('Annette: Auftrag anlegen, Rapport weiterbearbeiten, navigieren und neu lad
   await page.evaluate(id => SH.openReport(id), order.id);
   await expect(page.locator('#rw')).toHaveValue(/Siphon demontiert/);
   await expect(page.locator('#rqty')).toBeVisible();
+  await expectDomToSettle(page, 'Annette Rapport nach Reload');
 
-  await page.waitForTimeout(500);
   const h = health();
   expect(h.pageErrors).toEqual([]);
   expect(h.consoleErrors).toEqual([]);
@@ -139,6 +157,7 @@ test('Annette: kundenspezifischer Preis fließt in Rapport und Rechnung', async 
   await setReportTimes(page, '09:00', '11:00');
   await page.locator('#rw').fill('Leistung vollständig durchgeführt.');
   await addService(page, 'svc1', 2);
+  await expectDomToSettle(page, 'Preisprüfung Rapport');
 
   const line = await page.evaluate(id => {
     const db = JSON.parse(localStorage.getItem('shp_db'));
@@ -177,11 +196,16 @@ test('Dome: Technikerrolle bleibt fachlich eingeschränkt und Rapport ist bearbe
   await expect(page.getByRole('button', { name: 'Rechnungen' })).toHaveCount(0);
   await expect(page.getByRole('button', { name: 'Administration' })).toHaveCount(0);
 
+  await openSeedCustomer(page);
+  await expectDomToSettle(page, 'Dome Kundensicht mit geschützten Konditionen');
+
   await page.evaluate(() => SH.openReport(101));
   await expect(page.locator('#rw')).toBeVisible();
   await expect(page.getByRole('button', { name: 'Rechnung erzeugen' })).toHaveCount(0);
   await setReportTimes(page, '07:45', '08:30');
   await page.locator('#rw').fill('Techniker-Test: Auftrag fachlich bearbeitet.');
+  await addService(page, 'svc9', 1);
+  await expectDomToSettle(page, 'Dome Rapport mit erfasster Leistung');
   await page.evaluate(() => window.SHP_REPORT_TIME && window.SHP_REPORT_TIME.save());
   const work = await page.evaluate(() => {
     const db = JSON.parse(localStorage.getItem('shp_db'));
