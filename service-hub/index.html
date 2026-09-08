@@ -12,7 +12,7 @@
 <script>
 (async function(){
   try{
-    var version='20260908-v20-core-safety1';
+    var version='20260908-v20-core-safety2';
     var dialogsVersion='20260903-v9-2';
     var documentsVersion='20260903-v9-5';
     var dashboardVersion='20260903-v9-4';
@@ -25,14 +25,14 @@
     var mobilePerformanceVersion='20260905-v13-mobile-scroll2';
     var stateSafetyVersion='20260906-v14-state-safety1';
     var paymentsVersion='20260906-v15-payments1';
-    var finalPolishVersion='20260907-v16-final-polish2';
+    var finalPolishVersion='20260908-v16-final-polish3';
     var reportDocumentVersion='20260907-v17-report-document1';
     var reportNativePdfVersion='20260907-v18-report-native-pdf1';
     var reportNativeActionsVersion='20260908-v19-report-native-actions2';
     var res=await fetch('./legacy.html?v='+version,{cache:'no-store'});
     if(!res.ok)throw new Error('HTTP '+res.status);
     var html=await res.text();
-    html=html.replace('var db=load();','var db=load();window.SHP_REPORT_BRIDGE={read:function(){if(selectedOrder==null)return null;return reportByOrder(selectedOrder)},saveDraft:function(d){if(selectedOrder==null)return false;var r=reportByOrder(selectedOrder);if(!r)return false;d=d||{};["work","result","payment","customerName","start","end","sigC","sigT"].forEach(function(k){if(Object.prototype.hasOwnProperty.call(d,k))r[k]=d[k]});save();return true}};try{localStorage.setItem(STORE,JSON.stringify(db))}catch(e){}');
+    html=html.replace('var db=load();','var db=load();try{if(db&&db.settings&&Array.isArray(db.settings.catalog)){db.settings.catalog=db.settings.catalog.filter(function(item){var id=String(item&&item.id||"");var name=String(item&&item.name||"").trim().toLowerCase();return id!=="svc10"&&name.indexOf("verbrauchsmaterial")!==0});(db.customers||[]).forEach(function(c){if(c&&c.priceOverrides)delete c.priceOverrides.svc10});try{localStorage.setItem(STORE,JSON.stringify(db))}catch(e){}}}catch(e){}window.SHP_REPORT_BRIDGE={read:function(){if(selectedOrder==null)return null;return reportByOrder(selectedOrder)},saveDraft:function(d){if(selectedOrder==null)return false;var r=reportByOrder(selectedOrder);if(!r)return false;d=d||{};["work","result","payment","customerName","start","end","sigC","sigT"].forEach(function(k){if(Object.prototype.hasOwnProperty.call(d,k))r[k]=d[k]});save();return true}};try{localStorage.setItem(STORE,JSON.stringify(db))}catch(e){}');
     html=html.replace("function reportByOrder(id){var i,r,o,c;for(i=0;i<db.reports.length;i++)if(db.reports[i].orderId==id)return db.reports[i];o=ord(id);c=cust(o.customerId);r={id:Date.now(),orderId:id,status:'Entwurf',start:'',end:'',work:'',result:'',lines:[],materials:[],measurements:[],photos:[],customerName:c.contact||c.name,sigC:'',sigT:'',payment:'Rechnung wird verschickt',sentHistory:[]};db.reports.push(r);save();return r}","function reportByOrder(id){var i,r,o,c;if(id==null)return null;for(i=0;i<db.reports.length;i++)if(db.reports[i].orderId==id)return db.reports[i];o=ord(id);if(!o)return null;c=cust(o.customerId);if(!c)return null;r={id:Date.now(),orderId:id,status:'Entwurf',start:'',end:'',work:'',result:'',lines:[],materials:[],measurements:[],photos:[],customerName:c.contact||c.name,sigC:'',sigT:'',payment:'Rechnung wird verschickt',sentHistory:[]};db.reports.push(r);save();return r}");
     html=html.replace("if(tab==='report')setTimeout(function(){var r=reportByOrder(selectedOrder);signaturePad('sigC',r.sigC);signaturePad('sigT',r.sigT)},60)","if(tab==='report'){var reportOrderId=selectedOrder;setTimeout(function(){if(tab!=='report'||selectedOrder!=reportOrderId)return;var r=reportByOrder(reportOrderId);if(!r)return;signaturePad('sigC',r.sigC);signaturePad('sigT',r.sigT)},60)}");
     html=html.replace("no:'A-2026-'+String(100+db.orders.length+1)","no:(function(){var max=100;db.orders.forEach(function(o){var m=String(o.no||'').match(/^A-\\d{4}-(\\d+)$/),n=m?parseInt(m[1],10):NaN;if(!isNaN(n)&&n>max)max=n});return 'A-'+new Date().getFullYear()+'-'+('0000'+(max+1)).slice(-4)})()");
