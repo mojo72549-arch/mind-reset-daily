@@ -17,11 +17,25 @@ async function openSeedReport(page) {
   await expect(page.locator('main h2')).toContainText('Rapport A-2026-0101');
 }
 
+function reportRows(page) {
+  return page.locator('.report-lines-card table tr').filter({ has: page.locator('button.ux-danger-confirm') });
+}
+
 async function addService(page, id, qty = '1') {
+  const before = await reportRows(page).count();
   await page.locator('#rsvc').selectOption(id);
   await page.locator('#rqty').fill(qty);
   await page.getByRole('button', { name: '+ Leistung' }).click();
-  await expect(page.locator('.ux-v9-toast')).toContainText('sofort gespeichert und angezeigt');
+  await expect(reportRows(page)).toHaveCount(before + 1);
+  const storedCount = await page.evaluate(() => {
+    const db = JSON.parse(localStorage.getItem('shp_db'));
+    const heading = document.querySelector('main h2');
+    const no = String(heading && heading.textContent || '').replace(/^Rapport\s+/, '').trim();
+    const order = db.orders.find(o => String(o.no) === no);
+    const report = order && db.reports.find(r => String(r.orderId) === String(order.id));
+    return report && Array.isArray(report.lines) ? report.lines.length : -1;
+  });
+  expect(storedCount).toBe(before + 1);
 }
 
 async function modal(page, title) {
@@ -46,10 +60,6 @@ async function addMaterial(page, name, qty, price) {
   await m.getByRole('button', { name: 'Material hinzufügen' }).click();
 }
 
-function reportRows(page) {
-  return page.locator('.report-lines-card table tr').filter({ has: page.locator('button.ux-danger-confirm') });
-}
-
 test('material is not offered as a service and measurement UI is removed', async ({ page }) => {
   await login(page, 'dome');
   await openSeedReport(page);
@@ -59,7 +69,7 @@ test('material is not offered as a service and measurement UI is removed', async
   await expect(page.getByRole('button', { name: '+ Messwert' })).toHaveCount(0);
 });
 
-test('adding a service gives immediate confirmation', async ({ page }) => {
+test('adding a service is immediately visible and persisted', async ({ page }) => {
   await login(page, 'dome');
   await openSeedReport(page);
   await addService(page, 'svc1', '1');
@@ -118,9 +128,15 @@ test('deleted service stays deleted after navigation and full reload', async ({ 
   await expect(anfahrtRow).toHaveCount(1);
   await anfahrtRow.getByRole('button', { name: 'Löschen' }).click();
   await confirmDelete(page, 'Leistung löschen');
-  await expect(page.locator('.ux-v9-toast')).toContainText('sofort entfernt');
   await expect(anfahrtRow).toHaveCount(0);
   await expect(reportRows(page)).toHaveCount(2);
+
+  const storedAfterDelete = await page.evaluate(() => {
+    const db = JSON.parse(localStorage.getItem('shp_db'));
+    const report = db.reports.find(r => String(r.orderId) === '101');
+    return report.lines.map(l => l.name);
+  });
+  expect(storedAfterDelete).not.toContain('Anfahrt');
 
   await page.evaluate(() => SH.go('customers'));
   await expect(page.locator('main h2')).toHaveText('Kunden');
