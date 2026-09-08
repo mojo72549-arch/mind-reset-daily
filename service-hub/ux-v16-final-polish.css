@@ -6,12 +6,12 @@
 
 /* Use large displays without turning the app into an edge-to-edge wall of content. */
 @media(min-width:1100px){
-  main.shell{width:100%;max-width:1600px;box-sizing:border-box;padding:24px clamp(28px,3vw,52px)}
+  main.shell{width:100%!important;max-width:1600px!important;box-sizing:border-box!important;padding:24px clamp(28px,3vw,52px)!important}
   .crm-start-slim-v12{width:100%;max-width:1480px}
   header.top{padding-left:max(clamp(20px,2.4vw,38px),calc((100vw - 1600px)/2 + 52px));padding-right:max(clamp(20px,2.4vw,38px),calc((100vw - 1600px)/2 + 52px))}
 }
 @media(min-width:851px) and (max-width:1099px){
-  main.shell{width:100%;max-width:none;box-sizing:border-box;padding:20px 22px}
+  main.shell{width:100%!important;max-width:none!important;box-sizing:border-box!important;padding:20px 22px!important}
   .crm-start-slim-v12{width:100%;max-width:none}
 }
 
