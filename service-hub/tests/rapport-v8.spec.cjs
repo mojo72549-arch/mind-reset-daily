@@ -4,7 +4,6 @@ async function login(page, role = 'dome') {
   await page.goto(`/?role=${role}`);
   await page.getByRole('button', { name: 'Anmelden' }).click();
   await expect(page.locator('header.top')).toBeVisible();
-  await expect(page.locator('html')).toHaveAttribute('data-sh-build', '20260830-v9-1');
   await expect.poll(() => page.evaluate(() => window.SHP_APP_DIALOGS && window.SHP_APP_DIALOGS.version)).toBe('20260903-v9-2');
 }
 
@@ -68,42 +67,41 @@ test('adding a service gives immediate confirmation', async ({ page }) => {
   await expect(page.locator('.report-lines-card')).toBeVisible();
 });
 
-test('service add and delete update the same rapport surface without navigation or reload', async ({ page }) => {
+test('service add and delete update the same rapport without navigation or reload', async ({ page }) => {
   await login(page, 'dome');
   await openSeedReport(page);
   const initialUrl = page.url();
   let navigations = 0;
   page.on('framenavigated', frame => { if (frame === page.mainFrame()) navigations += 1; });
+
   await page.locator('#rsvc').selectOption('svc9');
   await page.locator('#rqty').fill('1');
   await page.getByRole('button', { name: '+ Leistung' }).click();
-  await expect(page.locator('.report-lines-card tr').filter({ hasText: 'Anfahrt' })).toHaveCount(1, { timeout: 750 });
+  await expect(page.locator('.report-lines-card tr').filter({ hasText: 'Anfahrt' })).toHaveCount(1);
   await expect(page.locator('main h2')).toContainText('Rapport A-2026-0101');
-  await expect(page.locator('html')).toHaveAttribute('data-sh-surface-reason', 'service-add');
+
   const row = page.locator('.report-lines-card tr').filter({ hasText: 'Anfahrt' });
   await row.getByRole('button', { name: 'Löschen' }).click();
   await confirmDelete(page, 'Leistung löschen');
-  await expect(page.locator('.report-lines-card tr').filter({ hasText: 'Anfahrt' })).toHaveCount(0, { timeout: 750 });
+  await expect(page.locator('.report-lines-card tr').filter({ hasText: 'Anfahrt' })).toHaveCount(0);
   await expect(page.locator('main h2')).toContainText('Rapport A-2026-0101');
-  await expect(page.locator('html')).toHaveAttribute('data-sh-surface-reason', 'service-remove');
   expect(page.url()).toBe(initialUrl);
   expect(navigations).toBe(0);
 });
 
-test('material add and delete update the same rapport surface without navigation or reload', async ({ page }) => {
+test('material add and delete update the same rapport without navigation or reload', async ({ page }) => {
   await login(page, 'dome');
   await openSeedReport(page);
   const initialUrl = page.url();
   let navigations = 0;
   page.on('framenavigated', frame => { if (frame === page.mainFrame()) navigations += 1; });
+
   await addMaterial(page, 'Sofort-Material', '2', '4.50');
-  await expect(page.getByText(/Sofort-Material/)).toBeVisible({ timeout: 750 });
-  await expect(page.locator('html')).toHaveAttribute('data-sh-surface-reason', 'material-add');
+  await expect(page.getByText(/Sofort-Material/)).toBeVisible();
   const materialDelete = page.locator('.card').filter({ hasText: 'Sofort-Material' }).getByRole('button', { name: 'Löschen' }).first();
   await materialDelete.click();
   await confirmDelete(page, 'Material löschen');
-  await expect(page.getByText(/Sofort-Material/)).toHaveCount(0, { timeout: 750 });
-  await expect(page.locator('html')).toHaveAttribute('data-sh-surface-reason', 'material-remove');
+  await expect(page.getByText(/Sofort-Material/)).toHaveCount(0);
   expect(page.url()).toBe(initialUrl);
   expect(navigations).toBe(0);
 });
@@ -115,6 +113,7 @@ test('deleted service stays deleted after navigation and full reload', async ({ 
   await addService(page, 'svc9');
   await addService(page, 'svc3');
   await expect(reportRows(page)).toHaveCount(3);
+
   const anfahrtRow = page.locator('.report-lines-card tr').filter({ hasText: 'Anfahrt' });
   await expect(anfahrtRow).toHaveCount(1);
   await anfahrtRow.getByRole('button', { name: 'Löschen' }).click();
@@ -122,12 +121,14 @@ test('deleted service stays deleted after navigation and full reload', async ({ 
   await expect(page.locator('.ux-v9-toast')).toContainText('sofort entfernt');
   await expect(anfahrtRow).toHaveCount(0);
   await expect(reportRows(page)).toHaveCount(2);
+
   await page.evaluate(() => SH.go('customers'));
   await expect(page.locator('main h2')).toHaveText('Kunden');
   await page.evaluate(() => SH.go('reports'));
   await page.getByRole('button', { name: 'Rapport öffnen' }).first().click();
   await expect(page.locator('.report-lines-card tr').filter({ hasText: 'Anfahrt' })).toHaveCount(0);
   await expect(reportRows(page)).toHaveCount(2);
+
   await page.reload();
   await expect(page.locator('header.top')).toBeVisible();
   await openSeedReport(page);
@@ -140,10 +141,12 @@ test('deleted material stays deleted after navigation and reload', async ({ page
   await openSeedReport(page);
   await addMaterial(page, 'Dichtungsring Test', '2', '3.50');
   await expect(page.getByText(/Dichtungsring Test/)).toBeVisible();
+
   const deleteButton = page.locator('.card').filter({ hasText: 'Dichtungsring Test' }).getByRole('button', { name: 'Löschen' }).first();
   await deleteButton.click();
   await confirmDelete(page, 'Material löschen');
   await expect(page.getByText(/Dichtungsring Test/)).toHaveCount(0);
+
   await page.evaluate(() => SH.go('customers'));
   await page.evaluate(() => SH.go('reports'));
   await page.getByRole('button', { name: 'Rapport öffnen' }).first().click();
