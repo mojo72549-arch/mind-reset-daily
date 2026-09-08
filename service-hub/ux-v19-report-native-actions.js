@@ -1,11 +1,10 @@
 (function(){
   'use strict';
-  var BUILD='20260907-v19-report-native-actions1';
+  var BUILD='20260908-v19-report-native-actions2';
   var queued=false;
 
   function nativeApi(){return window.SHP_REPORT_NATIVE_PDF||null}
   function isReport(){var m=document.querySelector('main.shell');return !!(m&&m.querySelector('#rw')&&m.querySelector('#rr'))}
-  function sameTextButton(btn,text){return String(btn.textContent||'').trim()===text}
 
   function cleanOldNotices(){
     document.querySelectorAll('.report-share-notice-v17').forEach(function(n){
@@ -17,7 +16,7 @@
     var buttons=[].slice.call(document.querySelectorAll('button')).filter(function(b){
       var oc=b.getAttribute('onclick')||'';
       var tx=String(b.textContent||'').trim();
-      return /sendReportPreferred/.test(oc)||/PDF über WhatsApp teilen/i.test(tx)||b.hasAttribute('data-report-pdf-v17')||b.hasAttribute('data-report-native-v18');
+      return /sendReportPreferred/.test(oc)||/PDF über WhatsApp teilen/i.test(tx)||b.hasAttribute('data-report-pdf-v17')||b.hasAttribute('data-report-native-v18')||b.hasAttribute('data-report-native-v19');
     });
     if(!buttons.length)return;
     var keep=buttons[0];
@@ -25,12 +24,15 @@
     keep.removeAttribute('onclick');
     keep.removeAttribute('data-report-pdf-v17');
     keep.dataset.reportNativeV19='1';
-    keep.textContent='PDF über WhatsApp teilen';
-    keep.onclick=function(e){
-      e.preventDefault();
-      var api=nativeApi();
-      if(api&&typeof api.sharePdf==='function')api.sharePdf();
-    };
+    if(String(keep.textContent||'').trim()!=='PDF über WhatsApp teilen')keep.textContent='PDF über WhatsApp teilen';
+    if(!keep.__shpNativeShareV19){
+      keep.__shpNativeShareV19=true;
+      keep.onclick=function(e){
+        e.preventDefault();
+        var api=nativeApi();
+        if(api&&typeof api.sharePdf==='function')api.sharePdf();
+      };
+    }
   }
 
   function wirePrintButton(){
@@ -38,12 +40,15 @@
     if(!btn)return;
     btn.removeAttribute('onclick');
     btn.dataset.reportPrintV19='1';
-    btn.textContent='PDF erstellen / Drucken';
-    btn.onclick=function(e){
-      e.preventDefault();
-      var api=nativeApi();
-      if(api&&typeof api.downloadPdf==='function')api.downloadPdf();
-    };
+    if(String(btn.textContent||'').trim()!=='PDF erstellen / Drucken')btn.textContent='PDF erstellen / Drucken';
+    if(!btn.__shpNativePrintV19){
+      btn.__shpNativePrintV19=true;
+      btn.onclick=function(e){
+        e.preventDefault();
+        var api=nativeApi();
+        if(api&&typeof api.downloadPdf==='function')api.downloadPdf();
+      };
+    }
   }
 
   function enhance(){
