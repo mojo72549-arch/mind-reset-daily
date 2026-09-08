@@ -66,19 +66,26 @@
     ['sendInvoicePreferred','sendInvoice'].forEach(function(name){var original=window.SH[name];if(typeof original==='function')window.SH[name]=function(){if(!allowed('manageInvoices'))return denyOffice();return original.apply(window.SH,arguments)}});
     ['saveAdminGlobal','addCatalogItem','editCatalogItem','editCustomerPricing','goAdminCustomer'].forEach(function(name){var original=window.SH[name];if(typeof original==='function'&&!original.__uxGuard){var guarded=original;window.SH[name]=function(){if(!allowed('managePricing'))return denyOffice();return guarded.apply(window.SH,arguments)};window.SH[name].__uxGuard=true}});
   }
+  function markDeleteButton(btn,label,title){
+    if(!btn)return;
+    if((btn.textContent||'').trim()!=='Löschen')btn.textContent='Löschen';
+    btn.classList.add('ux-danger-confirm');
+    if(label&&btn.getAttribute('aria-label')!==label)btn.setAttribute('aria-label',label);
+    if(title&&btn.getAttribute('title')!==title)btn.setAttribute('title',title);
+  }
   function enhanceReportLines(){
     [].slice.call(document.querySelectorAll('.card h3')).forEach(function(h){
       if((h.textContent||'').trim()!=='Leistungen im Rapport')return;
       var card=h.closest('.card');if(!card)return;card.classList.add('report-lines-card');
       var rows=card.querySelectorAll('table tr'),dataRows=Math.max(0,rows.length-1);
-      card.querySelectorAll('button.red').forEach(function(btn){btn.textContent='Löschen';btn.classList.add('ux-danger-confirm');btn.setAttribute('aria-label','Leistung aus Rapport löschen');btn.setAttribute('title','Leistung löschen')});
+      card.querySelectorAll('button.red').forEach(function(btn){markDeleteButton(btn,'Leistung aus Rapport löschen','Leistung löschen')});
       var empty=card.querySelector('.ux-empty');
       if(dataRows===0&&!empty){empty=document.createElement('div');empty.className='ux-empty';empty.textContent='Noch keine Leistung hinzugefügt.';card.appendChild(empty)}
       else if(dataRows>0&&empty)empty.remove();
     });
     [].slice.call(document.querySelectorAll('.card')).forEach(function(card){
       var h=card.querySelector('h3');if(!h||(h.textContent||'').trim()!=='Leistung hinzufügen')return;
-      card.querySelectorAll('button.red').forEach(function(btn){btn.textContent='Löschen';btn.classList.add('ux-danger-confirm')});
+      card.querySelectorAll('button.red').forEach(function(btn){markDeleteButton(btn)});
     });
   }
   function enhanceActions(){document.querySelectorAll('.sticky').forEach(function(el){if(el.querySelector('button[onclick*="finishReport"]'))el.classList.add('ux-report-actions')})}
@@ -102,7 +109,14 @@
   function protectDomeViews(){
     if(!isDome())return;var main=document.querySelector('main');if(!main)return;var title=((main.querySelector('h2')||{}).textContent||'').trim();
     main.querySelectorAll('button[onclick*="newCustomer"],button[onclick*="editCustomer"],button[onclick*="goAdminCustomer"]').forEach(function(b){b.remove()});
-    [].slice.call(main.querySelectorAll('.card h3')).forEach(function(h){if((h.textContent||'').trim()==='Konditionen'){var card=h.closest('.card');if(card)card.innerHTML='<h3>Konditionen</h3><p class="muted">Preis- und Konditionspflege erfolgt durch Büro / Administration.</p>'}});
+    [].slice.call(main.querySelectorAll('.card h3')).forEach(function(h){
+      if((h.textContent||'').trim()!=='Konditionen')return;
+      var card=h.closest('.card');
+      if(card&&card.dataset.domePricingProtected!=='1'){
+        card.dataset.domePricingProtected='1';
+        card.innerHTML='<h3>Konditionen</h3><p class="muted">Preis- und Konditionspflege erfolgt durch Büro / Administration.</p>';
+      }
+    });
     if(title.indexOf('Rechnung ')===0){var status=main.querySelector('#ivstatus');if(status){status.disabled=true;var card=status.closest('.card');if(card&&!card.querySelector('.ux-readonly')){var n=document.createElement('div');n.className='ux-readonly';n.textContent='Nur Ansicht für Dome · Status und Versand werden im Büro bearbeitet.';card.insertBefore(n,card.firstChild)}}main.querySelectorAll('button[onclick*="saveInvoiceStatus"],button[onclick*="sendInvoice("],button[onclick*="sendInvoicePreferred"]').forEach(function(b){b.remove()})}
   }
   function activeNav(){
