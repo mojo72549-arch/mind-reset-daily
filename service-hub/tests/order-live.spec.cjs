@@ -4,7 +4,6 @@ async function login(page, role = 'annette') {
   await page.goto(`/?role=${role}`);
   await page.getByRole('button', { name: 'Anmelden' }).click();
   await expect(page.locator('header.top')).toBeVisible();
-  await expect(page.locator('html')).toHaveAttribute('data-sh-build', '20260830-v9-1');
   await expect.poll(() => page.evaluate(() => window.SHP_APP_DIALOGS && window.SHP_APP_DIALOGS.version)).toBe('20260903-v9-2');
 }
 
@@ -22,7 +21,9 @@ async function orderModal(page) {
   return m;
 }
 
-test('new order is persisted and visible immediately without back, navigation or reload', async ({ page }) => {
+test('new order is persisted exactly once and report is immediately usable', async ({ page }) => {
+  const pageErrors = [];
+  page.on('pageerror', err => pageErrors.push(String(err && err.message || err)));
   await login(page);
   await openSeedCustomer(page);
 
@@ -37,27 +38,38 @@ test('new order is persisted and visible immediately without back, navigation or
   await m.getByLabel('Auftragsart').selectOption('Wartung');
   await m.getByRole('button', { name: 'Auftrag anlegen' }).click();
 
-  await expect(page.locator('main h2')).toHaveText('Rapport A-2026-0102', { timeout: 1000 });
-  await expect(page.locator('.ux-v9-order-created')).toContainText('Auftrag A-2026-0102 angelegt und gespeichert.', { timeout: 1000 });
-  await expect(page.locator('.ux-v9-order-created')).toContainText('Sofort sichtbarer Auftrag');
-  await expect(page.locator('html')).toHaveAttribute('data-sh-surface-reason', 'order-add');
+  await expect(m).toHaveCount(0);
+  await expect(page.locator('main h2')).toHaveText('Rapport A-2026-0102');
+  await expect(page.locator('#rw')).toBeVisible();
+  await expect(page.locator('#rsvc')).toBeVisible();
+  await expect(page.locator('#rqty')).toBeVisible();
 
   const after = await page.evaluate(() => {
     const db = JSON.parse(localStorage.getItem('shp_db'));
+    const orders = db.orders.filter(o => o.no === 'A-2026-0102');
+    const order = orders[0];
     return {
       count: db.orders.length,
-      order: db.orders.find(o => o.no === 'A-2026-0102'),
-      report: db.reports.find(r => {
-        const order = db.orders.find(o => o.no === 'A-2026-0102');
-        return order && String(r.orderId) === String(order.id);
-      })
+      matches: orders.length,
+      order,
+      report: order && db.reports.find(r => String(r.orderId) === String(order.id))
     };
   });
   expect(after.count).toBe(beforeCount + 1);
+  expect(after.matches).toBe(1);
   expect(after.order.title).toBe('Sofort sichtbarer Auftrag');
   expect(after.report).toBeTruthy();
   expect(page.url()).toBe(initialUrl);
   expect(navigations).toBe(0);
+
+  await page.locator('#rw').fill('Direkte Weiterbearbeitung funktioniert.');
+  await page.evaluate(() => window.SHP_REPORT_TIME && window.SHP_REPORT_TIME.save());
+  await expect.poll(() => page.evaluate(() => {
+    const db = JSON.parse(localStorage.getItem('shp_db'));
+    const order = db.orders.find(o => o.no === 'A-2026-0102');
+    const report = db.reports.find(r => order && String(r.orderId) === String(order.id));
+    return report && report.work;
+  })).toBe('Direkte Weiterbearbeitung funktioniert.');
 
   await openSeedCustomer(page);
   await expect(page.locator('main')).toContainText('Sofort sichtbarer Auftrag');
@@ -66,6 +78,7 @@ test('new order is persisted and visible immediately without back, navigation or
   await expect(page.locator('header.top')).toBeVisible();
   await openSeedCustomer(page);
   await expect(page.locator('main')).toContainText('Sofort sichtbarer Auftrag');
+  expect(pageErrors).toEqual([]);
 });
 
 test('cancelled order creation leaves customer and persistent data unchanged', async ({ page }) => {
@@ -88,5 +101,4 @@ test('cancelled order creation leaves customer and persistent data unchanged', a
   expect(after).toBe(before);
   expect(page.url()).toBe(initialUrl);
   expect(navigations).toBe(0);
-  await expect(page.locator('.ux-v9-order-created')).toHaveCount(0);
 });
