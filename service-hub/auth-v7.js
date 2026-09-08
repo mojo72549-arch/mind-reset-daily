@@ -35,5 +35,5 @@
   }
 
   hardenLogin();
-  new MutationObserver(hardenLogin).observe(document.documentElement,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('auth-v7',hardenLogin,{initial:false});
 })();

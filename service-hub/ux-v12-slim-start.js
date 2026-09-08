@@ -58,6 +58,6 @@
     document.documentElement.dataset.shSlimStartBuild=BUILD;
   }
   function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;render()})}
-  new MutationObserver(schedule).observe(document.getElementById('app')||document.body,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v12-slim-start',render,{initial:false});
   window.SHP_SLIM_START={build:BUILD,render:render};schedule();
 })();

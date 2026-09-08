@@ -109,6 +109,6 @@
   function enhance(){wrapDeletes();enhanceReportLines();enhanceActions();simplifyLabels();domeNav();domeHome();protectDomeViews();activeNav()}
   var scheduled=false;
   function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;enhance()})}
-  new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v4',enhance,{initial:false});
   enhance();
 })();

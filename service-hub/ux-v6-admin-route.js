@@ -110,13 +110,14 @@
     if(isAdmin())forceSettings();
   }
 
+  function enhance(){wire();if(isAdmin())lockNavigation()}
+
   function schedule(){
     if(scheduled)return;
     scheduled=true;
-    requestAnimationFrame(function(){scheduled=false;wire();if(isAdmin())lockNavigation()});
+    requestAnimationFrame(function(){scheduled=false;enhance()});
   }
 
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',schedule);else schedule();
-  var target=document.getElementById('app')||document.body;
-  new MutationObserver(schedule).observe(target,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v6-admin-route',enhance,{initial:false});
 })();

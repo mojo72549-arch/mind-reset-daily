@@ -143,7 +143,6 @@
     newOrder:function(){if(window.SH)window.SH.newOrder()}
   };
   ['login','go','newCustomer','newOrder','saveInvoiceStatus'].forEach(wrap);
-  var observer=new MutationObserver(schedule);
-  observer.observe(document.getElementById('app')||document.body,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v9-dashboard',render,{initial:false});
   schedule();
 })();

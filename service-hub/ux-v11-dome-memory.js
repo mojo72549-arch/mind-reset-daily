@@ -104,6 +104,6 @@
 
   function enhance(){sharedDesktopNav();renderDomeDashboard();mountMemory();document.documentElement.dataset.shDomeMemoryBuild=BUILD}
   function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;enhance()})}
-  new MutationObserver(schedule).observe(document.getElementById('app')||document.body,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v11-dome-memory',enhance,{initial:false});
   window.SHP_DOME_MEMORY={build:BUILD,enhance:enhance,bullets:bullets};enhance();
 })();

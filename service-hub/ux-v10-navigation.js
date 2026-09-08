@@ -101,7 +101,7 @@
   }
 
   function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;renderNav()})}
-  new MutationObserver(schedule).observe(document.getElementById('app')||document.body,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v10-navigation',renderNav,{initial:false});
   window.SHP_MOBILE_NAV={build:BUILD,render:renderNav,isTech:isTech};
   renderNav();
 })();

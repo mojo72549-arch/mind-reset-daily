@@ -98,7 +98,7 @@
     document.documentElement.dataset.shPaymentsBuild=BUILD;
   }
   function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;enhance(false)})}
-  new MutationObserver(schedule).observe(document.getElementById('app')||document.body,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v15-payments',function(){enhance(false)},{initial:false});
   window.SHP_PAYMENTS={build:BUILD,saveStage:saveStage,paymentState:paymentState,stats:stats,enhance:enhance};
   schedule();
 })();

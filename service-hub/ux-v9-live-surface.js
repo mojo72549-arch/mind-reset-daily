@@ -196,7 +196,7 @@
   }
   function enhance(){sanitizeCatalog();wrapActions();cleanReportUi();if(!document.documentElement.dataset.shBuild)markSurface('boot');else document.documentElement.dataset.shBuild=BUILD}
   var scheduled=false;function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;enhance()})}
-  new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v9-live-surface',enhance,{initial:false});
   enhance();
   window.SHP_V9_LIVE_SURFACE={build:BUILD,reconcileCurrentReport:reconcileCurrentReport,verifySurface:verifySurface,reconcileCreatedOrder:reconcileCreatedOrder,orderSurfaceMatches:orderSurfaceMatches,enhance:enhance};
 })();

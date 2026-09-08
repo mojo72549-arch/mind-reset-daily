@@ -65,7 +65,7 @@
     requestAnimationFrame(function(){queued=false;enhance()});
   }
 
-  new MutationObserver(schedule).observe(document.getElementById('app')||document.body,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v19-report-native-actions',enhance,{initial:false});
   enhance();
   window.SHP_REPORT_NATIVE_ACTIONS={build:BUILD,enhance:enhance};
 })();

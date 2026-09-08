@@ -185,6 +185,6 @@
     buildTimeEditor();restoreUiDraft();document.documentElement.setAttribute('data-sh-report-time',BUILD);
   }
   function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;enhance()})}
-  new MutationObserver(schedule).observe(document.getElementById('app')||document.body,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v10-report-time',enhance,{initial:false});
   window.SHP_REPORT_TIME={build:BUILD,save:persistDraft,enhance:enhance};enhance();
 })();

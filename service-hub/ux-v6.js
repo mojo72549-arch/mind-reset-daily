@@ -126,7 +126,7 @@
 
   function enhance(){enhanceAdminNav();renderAdminSettings(false);enhanceInvoiceDocument()}
   var scheduled=false;function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;enhance()})}
-  new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v6',enhance,{initial:false});
   window.SHP_V6={saveAdminSettings:saveAdminSettings,resetDocumentDefaults:resetDocumentDefaults,renderAdminSettings:function(){renderAdminSettings(true)},companyDefaults:COMPANY_DEFAULTS};
   enhance();
 })();

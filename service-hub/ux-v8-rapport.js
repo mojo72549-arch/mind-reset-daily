@@ -102,7 +102,7 @@
   function buildMarker(){document.documentElement.dataset.shBuild=BUILD}
   function enhance(){sanitizeCatalog();wrapActions();cleanReportUi();buildMarker()}
   var scheduled=false;function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;enhance()})}
-  new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v8-rapport',enhance,{initial:false});
   enhance();
   window.SHP_V8_RAPPORT={sanitizeCatalog:sanitizeCatalog,enhance:enhance,build:BUILD};
 })();

@@ -1,8 +1,10 @@
 const { defineConfig, devices } = require('@playwright/test');
 
+const chromiumExecutable = process.env.SHP_CHROMIUM_PATH;
+
 module.exports = defineConfig({
   testDir: '.',
-  testMatch: ['browser.spec.cjs', 'rapport-v8.spec.cjs', 'order-live.spec.cjs', 'auth.spec.cjs', 'dialogs-v9-2.spec.cjs', 'invoice-logo-v9-3.spec.cjs', 'dashboard-v9-4.spec.cjs', 'customer-search-v10.spec.cjs', 'persistence-v14.spec.cjs', 'payments-v15.spec.cjs', 'responsive-v16.spec.cjs', 'report-document-v17.spec.cjs', 'report-native-pdf-v18.spec.cjs', 'critical-business-flows.spec.cjs'],
+  testMatch: ['browser.spec.cjs', 'rapport-v8.spec.cjs', 'order-live.spec.cjs', 'auth.spec.cjs', 'dialogs-v9-2.spec.cjs', 'invoice-logo-v9-3.spec.cjs', 'dashboard-v9-4.spec.cjs', 'customer-search-v10.spec.cjs', 'persistence-v14.spec.cjs', 'payments-v15.spec.cjs', 'responsive-v16.spec.cjs', 'report-document-v17.spec.cjs', 'report-native-pdf-v18.spec.cjs', 'critical-business-flows.spec.cjs', 'admin-scroll-stability.spec.cjs', 'stability-v20.spec.cjs'],
   timeout: 30_000,
   expect: { timeout: 8_000 },
   fullyParallel: false,
@@ -13,7 +15,11 @@ module.exports = defineConfig({
     colorScheme: 'dark',
     locale: 'de-DE',
     trace: 'retain-on-failure',
-    screenshot: 'only-on-failure'
+    screenshot: 'only-on-failure',
+    launchOptions: chromiumExecutable ? {
+      executablePath: chromiumExecutable,
+      args: ['--no-sandbox']
+    } : undefined
   },
   webServer: {
     command: 'python3 -m http.server 4173 --directory ..',

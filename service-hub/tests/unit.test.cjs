@@ -117,3 +117,54 @@ test('CRM migration assigns and persists a missing customer number', () => {
   assert.match(customer.customerNo, /^K-\d{4}-0001$/);
   assert.equal(JSON.parse(storage.getItem('shp_db')).customers[0].customerNo, customer.customerNo);
 });
+
+test('all DOM enhancement layers use the single guarded stability observer', () => {
+  const appRoot = path.join(__dirname, '..');
+  const runtimeFiles = fs.readdirSync(appRoot)
+    .filter(file => file.endsWith('.js') || file.endsWith('.html'))
+    .sort();
+  const nativeObservers = runtimeFiles.flatMap(file => {
+    const source = fs.readFileSync(path.join(appRoot, file), 'utf8');
+    const count = (source.match(/\bMutationObserver\b/g) || []).length;
+    return count ? [{ file, count }] : [];
+  });
+  assert.deepEqual(nativeObservers, [{ file: 'ux-v20-stability.js', count: 1 }]);
+
+  const observerLayers = [
+    'auth-v7.js',
+    'ux-v4.js',
+    'ux-v5.js',
+    'ux-v6.js',
+    'ux-v6-context.js',
+    'ux-v6-admin-route.js',
+    'ux-v8-rapport.js',
+    'ux-v9-invoice-logo.js',
+    'ux-v9-dashboard.js',
+    'ux-v9-live-surface.js',
+    'ux-v10-customer-search.js',
+    'ux-v10-navigation.js',
+    'ux-v10-report-time.js',
+    'ux-v11-dome-memory.js',
+    'ux-v11-dome-memory-order.js',
+    'ux-v12-slim-start.js',
+    'ux-v14-state-safety.js',
+    'ux-v15-payments.js',
+    'ux-v18-report-native-pdf.js',
+    'ux-v19-report-native-actions.js'
+  ];
+  for (const file of observerLayers) {
+    const source = fs.readFileSync(path.join(appRoot, file), 'utf8');
+    assert.match(source, /SHP_STABILITY\.register\(/, file);
+  }
+});
+
+test('the stability guard loads before every DOM enhancement layer', () => {
+  const source = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+  const coreAt = source.indexOf('./core.js?v=');
+  const stabilityAt = source.indexOf('./ux-v20-stability.js?v=');
+  const firstEnhancementAt = source.indexOf('./ux-v5.js?v=');
+  assert.ok(coreAt >= 0, 'core.js is loaded');
+  assert.ok(stabilityAt > coreAt, 'stability guard follows core.js');
+  assert.ok(firstEnhancementAt > stabilityAt, 'stability guard precedes enhancement layers');
+  assert.match(source, /20260908-v20-global-stability1/);
+});

@@ -22,5 +22,5 @@
   }
   function enhance(){wireCustomerPricing();relabelCustomerButtons();mobileAdminAccess()}
   var queued=false;function schedule(){if(queued)return;queued=true;requestAnimationFrame(function(){queued=false;enhance()})}
-  new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});enhance();
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v6-context',enhance,{initial:false});enhance();
 })();

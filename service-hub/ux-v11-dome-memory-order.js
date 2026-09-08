@@ -113,7 +113,7 @@
   }
 
   function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;mountOrderMemories()})}
-  new MutationObserver(schedule).observe(document.getElementById('app')||document.body,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v11-dome-memory-order',mountOrderMemories,{initial:false});
   window.SHP_DOME_ORDER_MEMORY={build:BUILD,mount:mountOrderMemories,bullets:bullets};
   mountOrderMemories();
 })();

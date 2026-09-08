@@ -222,7 +222,7 @@
     requestAnimationFrame(function(){scheduled=false;enhance()});
   }
 
-  new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});
+  if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v10-customer-search',enhance,{initial:false});
   enhance();
   window.SHP_CRM_SEARCH={
     build:BUILD,
