@@ -22,7 +22,7 @@ async function expectReportDraft(page) {
 }
 
 for (const role of ['dome', 'annette']) {
-  test(`${role}: report fields survive actions and new items appear immediately`, async ({ page }) => {
+  test(`${role}: report fields, services, material and signature survive actions and navigation`, async ({ page }) => {
     await login(page, role);
     await openSeedReport(page);
 
@@ -50,14 +50,7 @@ for (const role of ['dome', 'annette']) {
     await expect(page.getByText(/Dichtung Test/)).toBeVisible();
     await expectReportDraft(page);
 
-    await page.getByRole('button', { name: '+ Messwert', exact: true }).click();
-    const measurement = page.locator('#shp-app-modal');
-    await measurement.getByLabel('Messwert / Prüfpunkt').fill('Rohrdurchmesser');
-    await measurement.getByLabel('Wert').fill('100');
-    await measurement.getByLabel('Einheit').fill('mm');
-    await measurement.getByRole('button', { name: 'Messwert hinzufügen' }).click();
-    await expect(page.getByText(/Rohrdurchmesser/)).toBeVisible();
-    await expectReportDraft(page);
+    await expect(page.getByRole('button', { name: '+ Messwert', exact: true })).toHaveCount(0);
 
     await page.evaluate(() => {
       const c = document.getElementById('sigC');
@@ -73,7 +66,7 @@ for (const role of ['dome', 'annette']) {
     await expectReportDraft(page);
     await expect(page.locator('.report-lines-card')).toContainText('Gerätewageneinsatz');
     await expect(page.getByText(/Dichtung Test/)).toBeVisible();
-    await expect(page.getByText(/Rohrdurchmesser/)).toBeVisible();
+    await expect(page.getByRole('button', { name: '+ Messwert', exact: true })).toHaveCount(0);
 
     const storedSignature = await page.evaluate(() => {
       const db = JSON.parse(localStorage.getItem('shp_db'));
@@ -105,15 +98,29 @@ test('Admin unsaved settings draft survives an internal rerender', async ({ page
   await expect(page.locator('#adm-street')).toHaveValue('Entwurfstraße 99');
 });
 
-test('Shared start dashboard stays compact but useful for Dome and Annette', async ({ page }) => {
-  for (const role of ['dome','annette']) {
-    await page.goto(`/?role=${role}`);
-    await page.getByRole('button', { name: 'Anmelden' }).click();
-    await expect(page.locator('.crm-start-hero-v14')).toBeVisible();
-    await expect(page.locator('.crm-customer-finder-v10')).toBeVisible();
-    await expect(page.locator('.crm-start-status-tile')).toHaveCount(3);
-    await expect(page.getByText('Nächste Aufträge')).toBeVisible();
-    await expect(page.locator('.crm-slim-order')).toHaveCount(1);
-    await page.evaluate(() => SH.logout());
-  }
+test('Start dashboard is useful and role-correct for Dome and Annette', async ({ page }) => {
+  await page.goto('/?role=dome');
+  await page.getByRole('button', { name: 'Anmelden' }).click();
+  await expect(page.locator('.crm-start-hero-v14')).toBeVisible();
+  await expect(page.locator('.crm-customer-finder-v10')).toBeVisible();
+  await expect(page.locator('.crm-start-status-tile')).toHaveCount(2);
+  await expect(page.getByText('Offene Aufträge', { exact: true })).toBeVisible();
+  await expect(page.getByText('Offene Rapporte', { exact: true })).toBeVisible();
+  await expect(page.getByText('Offene Rechnungen', { exact: true })).toHaveCount(0);
+  await expect(page.locator('.crm-payment-monitor-v15')).toHaveCount(0);
+  await expect(page.getByText('Nächste Aufträge')).toBeVisible();
+  await expect(page.locator('.crm-slim-order')).toHaveCount(1);
+  await page.evaluate(() => SH.logout());
+
+  await page.goto('/?role=annette');
+  await page.getByRole('button', { name: 'Anmelden' }).click();
+  await expect(page.locator('.crm-start-hero-v14')).toBeVisible();
+  await expect(page.locator('.crm-customer-finder-v10')).toBeVisible();
+  await expect(page.locator('.crm-start-status-tile')).toHaveCount(3);
+  await expect(page.getByText('Offene Aufträge', { exact: true })).toBeVisible();
+  await expect(page.getByText('Offene Rapporte', { exact: true })).toBeVisible();
+  await expect(page.getByText('Offene Rechnungen', { exact: true })).toBeVisible();
+  await expect(page.locator('.crm-payment-monitor-v15')).toBeVisible();
+  await expect(page.getByText('Nächste Aufträge')).toBeVisible();
+  await expect(page.locator('.crm-slim-order')).toHaveCount(1);
 });

@@ -10,7 +10,8 @@ async function openSeedReport(page) {
   await page.evaluate(() => SH.go('reports'));
   await page.getByRole('button', { name: 'Rapport öffnen' }).first().click();
   await expect(page.locator('#rw')).toBeVisible();
-  await expect(page.locator('html')).toHaveAttribute('data-sh-report-native-actions', '20260907-v19-report-native-actions1');
+  await expect(page.locator('html')).toHaveAttribute('data-sh-report-native-actions', /v19-report-native-actions/);
+  await expect.poll(() => page.evaluate(() => Boolean(window.SHP_REPORT_NATIVE_PDF && window.SHP_REPORT_NATIVE_PDF.buildPdf))).toBe(true);
 }
 
 test('V19 exposes exactly one local rapport PDF action path and no legacy CDN generator', async ({ page }) => {

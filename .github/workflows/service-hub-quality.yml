@@ -1,4 +1,4 @@
-name: Service Hub Quality V9.5
+name: Service Hub Quality Gate
 
 on:
   push:
@@ -60,13 +60,14 @@ jobs:
           node --check responsive-v16.spec.cjs
           node --check report-document-v17.spec.cjs
           node --check report-native-pdf-v18.spec.cjs
+          node --check critical-business-flows.spec.cjs
           node --check auth.spec.cjs
           node --check playwright.config.cjs
       - name: Unit tests
         run: node --test unit.test.cjs
 
-  frontend:
-    name: Mobile and desktop frontend tests
+  critical-business-gate:
+    name: Critical Annette and Dome journeys
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -82,7 +83,37 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
-      - name: Run mobile and desktop frontend tests
+      - name: Run critical business journeys on mobile and desktop
+        run: npx playwright test critical-business-flows.spec.cjs --config=playwright.config.cjs
+      - name: Upload critical gate report on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: service-hub-critical-business-gate-report
+          path: service-hub/tests/playwright-report
+          if-no-files-found: ignore
+
+  frontend:
+    name: Full mobile and desktop regression suite
+    needs:
+      - unit
+      - critical-business-gate
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: service-hub/tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: service-hub/tests/package.json
+      - name: Install test dependencies
+        run: npm install --no-audit --no-fund
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Run complete regression suite
         run: npx playwright test --config=playwright.config.cjs
       - name: Upload Playwright report on failure
         if: failure()
