@@ -37,7 +37,7 @@ async function confirmModal(page, title, button) {
   await expect(page.locator('#shp-app-modal')).toHaveCount(0);
 }
 
-test('Dome sees the central CRM but sensitive write areas stay protected', async ({ page }) => {
+test('Dome sees operational CRM but finance and administration stay inaccessible', async ({ page }) => {
   await login(page, 'dome');
   await expect(page.locator('header.top')).toContainText('Dome · Techniker');
   const nav = page.locator('.mobile button');
@@ -45,20 +45,22 @@ test('Dome sees the central CRM but sensitive write areas stay protected', async
   await expect(nav.filter({ hasText: 'Auftrag' })).toHaveCount(1);
   await expect(nav.filter({ hasText: 'Kunde' })).toHaveCount(1);
   await expect(nav.filter({ hasText: 'Rapport' })).toHaveCount(1);
-  await expect(nav.filter({ hasText: 'Rechnung' })).toHaveCount(1);
+  await expect(nav.filter({ hasText: 'Rechnung' })).toHaveCount(0);
+  await expect(page.locator('.nav.desktop button').filter({ hasText: 'Rechnung' })).toHaveCount(0);
   await expect(page.locator('.nav.desktop button').filter({ hasText: 'Administration' })).toHaveCount(0);
+  await expect(page.getByText('Offene Rechnungen')).toHaveCount(0);
   await goModule(page, 'Kunde', 'customers');
   await expect(page.locator('main h2')).toHaveText('Kunden');
   await expect(page.getByRole('button', { name: '+ Kunde' })).toHaveCount(0);
   await page.getByRole('button', { name: 'Kunde öffnen' }).first().click();
   await expect(page.getByText('Preis- und Konditionspflege erfolgt durch Büro / Administration.')).toBeVisible();
   await expect(page.getByRole('button', { name: 'Stammdaten bearbeiten' })).toHaveCount(0);
-  await goModule(page, 'Rechnung', 'invoices');
-  await expect(page.locator('main h2')).toHaveText('Rechnungen');
-  await page.getByRole('button', { name: '26175' }).first().click();
-  await expect(page.locator('#ivstatus')).toBeDisabled();
-  await expect(page.getByText('Nur Ansicht für Dome · Status und Versand werden im Büro bearbeitet.')).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Status speichern' })).toHaveCount(0);
+  await page.evaluate(() => SH.go('invoices'));
+  await expect(page.locator('.crm-start-slim-v12')).toBeVisible();
+  await expect(page.locator('main h2').filter({ hasText: 'Rechnungen' })).toHaveCount(0);
+  await page.evaluate(() => SH.openInvoice(801));
+  await expect(page.locator('.crm-start-slim-v12')).toBeVisible();
+  await expect(page.locator('#ivstatus')).toHaveCount(0);
 });
 
 test('Annette keeps office write rights without global administration', async ({ page }) => {
