@@ -1,8 +1,8 @@
 (function(){
   'use strict';
 
-  var BUILD='20260909-v23-approval-signature-guard1';
-  var wrapped={};
+  var BUILD='20260909-v23-approval-signature-guard2';
+  var wrapped={},domObserver=null;
 
   function clone(v){try{return JSON.parse(JSON.stringify(v))}catch(e){return null}}
   function now(){return new Date().toLocaleString('de-DE')}
@@ -30,18 +30,24 @@
     return true;
   }
   function finishAsyncMutation(before,snapshot){
-    setTimeout(function(){
-      var r=currentReport();if(!r||!snapshot)return;
-      if(fingerprint(r)===before)return;
-      invalidate(r,snapshot);
-    },0);
+    requestAnimationFrame(function(){
+      setTimeout(function(){
+        var r=currentReport();if(!r||!snapshot)return;
+        if(fingerprint(r)===before)return;
+        invalidate(r,snapshot);
+      },0);
+    });
   }
   function watchModal(before,snapshot){
     var modal=document.getElementById('shp-app-modal');if(!modal||!snapshot)return false;
-    var form=modal.querySelector('form'),done=false;
-    function finalize(){if(done)return;done=true;finishAsyncMutation(before,snapshot)}
-    if(form)form.addEventListener('submit',finalize,{once:true});
-    modal.querySelectorAll('.shp-modal-cancel,.shp-modal-close').forEach(function(btn){btn.addEventListener('click',finalize,{once:true})});
+    var done=false,observer=null;
+    function finalize(){if(done)return;done=true;if(observer)observer.disconnect();finishAsyncMutation(before,snapshot)}
+    observer=new MutationObserver(function(){if(!modal.isConnected)finalize()});
+    observer.observe(document.documentElement,{childList:true,subtree:true});
+    var form=modal.querySelector('form');
+    if(form)form.addEventListener('submit',function(){setTimeout(function(){if(!modal.isConnected)finalize()},0)},{once:true});
+    modal.querySelectorAll('.shp-modal-cancel,.shp-modal-close').forEach(function(btn){btn.addEventListener('click',function(){setTimeout(function(){if(!modal.isConnected)finalize()},0)},{once:true})});
+    setTimeout(function(){if(done)return;if(!modal.isConnected)finalize()},2500);
     return true;
   }
   function wrapMutation(name){
@@ -62,12 +68,13 @@
   function wireSignatureCanvas(canvas){
     if(!canvas||canvas.__shpPointerSignatureV23)return;
     canvas.__shpPointerSignatureV23=true;
+    canvas.style.touchAction='none';
     var drawing=false,last=null,moved=0,pointerId=null;
     function point(e){var rect=canvas.getBoundingClientRect();return[e.clientX-rect.left,e.clientY-rect.top]}
     function down(e){
       if(e.button!=null&&e.button!==0)return;
       drawing=true;last=point(e);moved=0;pointerId=e.pointerId;
-      try{canvas.setPointerCapture&&canvas.setPointerCapture(pointerId)}catch(ignore){}
+      try{canvas.setPointerCapture&&pointerId!=null&&canvas.setPointerCapture(pointerId)}catch(ignore){}
       if(e.preventDefault)e.preventDefault();
     }
     function move(e){
@@ -91,9 +98,23 @@
     canvas.addEventListener('pointerleave',function(e){if(drawing&&e.buttons===0)up(e)},{passive:false});
   }
   function wireSignatures(){wireSignatureCanvas(document.getElementById('sigC'));wireSignatureCanvas(document.getElementById('sigT'))}
+  function installDomObserver(){
+    if(domObserver||!document.documentElement)return;
+    domObserver=new MutationObserver(function(records){
+      var needsWire=false;
+      for(var i=0;i<records.length&&!needsWire;i++){
+        for(var j=0;j<records[i].addedNodes.length;j++){
+          var n=records[i].addedNodes[j];
+          if(n&&n.nodeType===1&&((n.id==='sigC'||n.id==='sigT')||(n.querySelector&&n.querySelector('#sigC,#sigT')))){needsWire=true;break}
+        }
+      }
+      if(needsWire)requestAnimationFrame(wireSignatures);
+    });
+    domObserver.observe(document.documentElement,{childList:true,subtree:true});
+  }
   function enhance(){
     ['saveReportText','addReportLine','removeReportLine','addMaterial','removeMaterial','addMeasurement','removeMeasurement','endReport'].forEach(wrapMutation);
-    wireSignatures();
+    wireSignatures();installDomObserver();
     document.documentElement.dataset.shApprovalSignatureGuard=BUILD;
   }
 
