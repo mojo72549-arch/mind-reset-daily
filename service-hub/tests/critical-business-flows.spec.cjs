@@ -74,6 +74,25 @@ async function addService(page, catalogId, qty) {
   await page.getByRole('button', { name: '+ Leistung' }).click();
 }
 
+async function drawSignature(page, selector) {
+  const canvas = page.locator(selector);
+  await canvas.scrollIntoViewIfNeeded();
+  const box = await canvas.boundingBox();
+  expect(box, `${selector}: Unterschriftsfeld muss sichtbar sein`).toBeTruthy();
+  const x = box.x + Math.min(35, box.width * 0.15);
+  const y = box.y + Math.min(45, box.height * 0.35);
+  await page.mouse.move(x, y);
+  await page.mouse.down();
+  await page.mouse.move(x + Math.min(70, box.width * 0.35), y + 16, { steps: 6 });
+  await page.mouse.move(x + Math.min(125, box.width * 0.6), y - 8, { steps: 6 });
+  await page.mouse.up();
+}
+
+async function signReport(page) {
+  await drawSignature(page, '#sigC');
+  await drawSignature(page, '#sigT');
+}
+
 test('Annette: Auftrag anlegen, Rapport weiterbearbeiten, navigieren und neu laden ohne Fehler', async ({ page }) => {
   const health = browserHealth(page);
   await login(page, 'annette');
@@ -166,6 +185,7 @@ test('Annette: kundenspezifischer Preis fließt in Rapport und Rechnung', async 
   expect(line.price).toBe(111);
   expect(line.qty).toBe(2);
 
+  await signReport(page);
   await page.getByRole('button', { name: 'Rapport abschließen' }).click();
   await expect.poll(async () => page.evaluate(id => {
     const db = JSON.parse(localStorage.getItem('shp_db'));
