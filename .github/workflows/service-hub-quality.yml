@@ -47,6 +47,7 @@ jobs:
           node --check ../ux-v17-report-document.js
           node --check ../ux-v18-report-native-pdf.js
           node --check ../ux-v19-report-native-actions.js
+          node --check ../ux-v21-business-guards.js
           node --check ../auth-v7.js
           node --check browser.spec.cjs
           node --check rapport-v8.spec.cjs
@@ -62,9 +63,10 @@ jobs:
           node --check report-native-pdf-v18.spec.cjs
           node --check critical-business-flows.spec.cjs
           node --check auth.spec.cjs
+          node --check business-guards.test.cjs
           node --check playwright.config.cjs
       - name: Unit tests
-        run: node --test unit.test.cjs business-logic.test.cjs stability-guard.test.cjs
+        run: node --test unit.test.cjs business-logic.test.cjs business-guards.test.cjs stability-guard.test.cjs
 
   critical-business-gate:
     name: Critical Annette and Dome journeys
