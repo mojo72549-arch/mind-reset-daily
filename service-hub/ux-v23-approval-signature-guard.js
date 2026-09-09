@@ -1,8 +1,8 @@
 (function(){
   'use strict';
 
-  var BUILD='20260909-v23-approval-signature-guard3';
-  var wrapped={},pending=[];
+  var BUILD='20260909-v23-approval-signature-guard4';
+  var wrapped={},pending=[],activeNotice=null,noticeTimer=null;
 
   function clone(v){try{return JSON.parse(JSON.stringify(v))}catch(e){return null}}
   function now(){return new Date().toLocaleString('de-DE')}
@@ -64,6 +64,48 @@
     wrappedFn.__shpApprovalV23=true;wrappedFn.__shpApprovalOriginal=fn;window.SH[name]=wrappedFn;wrapped[name]=true;
   }
 
+  function canvasHasInk(canvas){
+    var guards=window.SHP_BUSINESS_GUARDS;
+    if(guards&&typeof guards.canvasHasInk==='function')try{return !!guards.canvasHasInk(canvas)}catch(e){}
+    if(!canvas||typeof canvas.getContext!=='function')return false;
+    try{
+      var data=canvas.getContext('2d').getImageData(0,0,canvas.width,canvas.height).data,ink=0;
+      for(var i=3;i<data.length;i+=4){if(data[i]>12){ink++;if(ink>8)return true}}
+    }catch(e){return !!(canvas.dataset&&canvas.dataset.hasInk==='1')}
+    return false;
+  }
+  function ensureNotice(){
+    if(!activeNotice||Date.now()>=activeNotice.expires){
+      activeNotice=null;
+      var stale=document.querySelector&&document.querySelector('.shp-business-guard-notice-v23');
+      if(stale&&stale.parentNode)stale.parentNode.removeChild(stale);
+      return;
+    }
+    var n=document.querySelector&&document.querySelector('.shp-business-guard-notice-v23');
+    if(!n){n=document.createElement('div');n.className='toast shp-business-guard-notice shp-business-guard-notice-v23';n.setAttribute('role','alert');n.setAttribute('aria-live','assertive');(document.body||document.documentElement).appendChild(n)}
+    if(n.textContent!==activeNotice.message)n.textContent=activeNotice.message;
+  }
+  function showNotice(message){
+    activeNotice={message:String(message||''),expires:Date.now()+4200};
+    ensureNotice();
+    if(noticeTimer)clearTimeout(noticeTimer);
+    noticeTimer=setTimeout(function(){activeNotice=null;ensureNotice();noticeTimer=null},4250);
+  }
+  function wrapFinishReport(){
+    if(!window.SH||typeof window.SH.finishReport!=='function')return;
+    var fn=window.SH.finishReport;if(fn.__shpApprovalFinishV23)return;
+    var wrappedFn=function(){
+      var customer=document.getElementById&&document.getElementById('sigC');
+      var technician=document.getElementById&&document.getElementById('sigT');
+      if(!canvasHasInk(customer)||!canvasHasInk(technician)){
+        showNotice('Rapport kann erst abgeschlossen werden, wenn Kunde und Techniker tatsächlich unterschrieben haben.');
+        return false;
+      }
+      return fn.apply(this,arguments);
+    };
+    wrappedFn.__shpApprovalFinishV23=true;wrappedFn.__shpApprovalOriginal=fn;window.SH.finishReport=wrappedFn;
+  }
+
   function wireSignatureCanvas(canvas){
     if(!canvas||canvas.__shpPointerSignatureV23)return;
     canvas.__shpPointerSignatureV23=true;
@@ -101,14 +143,14 @@
   }
   function wireSignatures(){wireSignatureCanvas(document.getElementById('sigC'));wireSignatureCanvas(document.getElementById('sigT'))}
   function enhance(){
-    flushPending();
+    flushPending();ensureNotice();
     ['saveReportText','addReportLine','removeReportLine','addMaterial','removeMaterial','addMeasurement','removeMeasurement','endReport'].forEach(wrapMutation);
-    wireSignatures();
+    wrapFinishReport();wireSignatures();
     document.documentElement.dataset.shApprovalSignatureGuard=BUILD;
   }
 
   enhance();
   setTimeout(wireSignatures,90);
   if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v23-approval-signature-guard',enhance,{initial:false});
-  window.SHP_APPROVAL_SIGNATURE_GUARD={build:BUILD,enhance:enhance,wireSignatures:wireSignatures,flushPending:flushPending};
+  window.SHP_APPROVAL_SIGNATURE_GUARD={build:BUILD,enhance:enhance,wireSignatures:wireSignatures,flushPending:flushPending,showNotice:showNotice};
 })();
