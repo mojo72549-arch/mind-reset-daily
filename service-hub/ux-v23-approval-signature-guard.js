@@ -1,8 +1,8 @@
 (function(){
   'use strict';
 
-  var BUILD='20260909-v23-approval-signature-guard2';
-  var wrapped={},domObserver=null;
+  var BUILD='20260909-v23-approval-signature-guard3';
+  var wrapped={},pending=[];
 
   function clone(v){try{return JSON.parse(JSON.stringify(v))}catch(e){return null}}
   function now(){return new Date().toLocaleString('de-DE')}
@@ -30,25 +30,24 @@
     return true;
   }
   function finishAsyncMutation(before,snapshot){
-    requestAnimationFrame(function(){
-      setTimeout(function(){
-        var r=currentReport();if(!r||!snapshot)return;
-        if(fingerprint(r)===before)return;
-        invalidate(r,snapshot);
-      },0);
-    });
+    var r=currentReport();if(!r||!snapshot)return;
+    if(fingerprint(r)===before)return;
+    invalidate(r,snapshot);
   }
-  function watchModal(before,snapshot){
+  function queueModal(before,snapshot){
     var modal=document.getElementById('shp-app-modal');if(!modal||!snapshot)return false;
-    var done=false,observer=null;
-    function finalize(){if(done)return;done=true;if(observer)observer.disconnect();finishAsyncMutation(before,snapshot)}
-    observer=new MutationObserver(function(){if(!modal.isConnected)finalize()});
-    observer.observe(document.documentElement,{childList:true,subtree:true});
-    var form=modal.querySelector('form');
-    if(form)form.addEventListener('submit',function(){setTimeout(function(){if(!modal.isConnected)finalize()},0)},{once:true});
-    modal.querySelectorAll('.shp-modal-cancel,.shp-modal-close').forEach(function(btn){btn.addEventListener('click',function(){setTimeout(function(){if(!modal.isConnected)finalize()},0)},{once:true})});
-    setTimeout(function(){if(done)return;if(!modal.isConnected)finalize()},2500);
+    pending.push({before:before,snapshot:snapshot,modal:modal,created:Date.now()});
+    if(pending.length>12)pending.splice(0,pending.length-12);
     return true;
+  }
+  function flushPending(){
+    if(!pending.length)return;
+    var keep=[];
+    pending.forEach(function(item){
+      if(item.modal&&item.modal.isConnected&&Date.now()-item.created<30000){keep.push(item);return}
+      finishAsyncMutation(item.before,item.snapshot);
+    });
+    pending=keep;
   }
   function wrapMutation(name){
     if(!window.SH||typeof window.SH[name]!=='function')return;
@@ -57,7 +56,7 @@
       var r=currentReport(),snapshot=capture(r,'Änderung nach Abschluss: '+name),before=r?fingerprint(r):'';
       var result=fn.apply(this,arguments);
       if(!snapshot)return result;
-      if(watchModal(before,snapshot))return result;
+      if(queueModal(before,snapshot))return result;
       var after=currentReport();
       if(after&&fingerprint(after)!==before&&approved(after))invalidate(after,snapshot);
       return result;
@@ -69,7 +68,7 @@
     if(!canvas||canvas.__shpPointerSignatureV23)return;
     canvas.__shpPointerSignatureV23=true;
     canvas.style.touchAction='none';
-    var drawing=false,last=null,moved=0,pointerId=null;
+    var drawing=false,last=null,moved=0,pointerId=null,lastPointerAt=0;
     function point(e){var rect=canvas.getBoundingClientRect();return[e.clientX-rect.left,e.clientY-rect.top]}
     function down(e){
       if(e.button!=null&&e.button!==0)return;
@@ -91,35 +90,25 @@
       try{canvas.releasePointerCapture&&pointerId!=null&&canvas.releasePointerCapture(pointerId)}catch(ignore){}
       pointerId=null;last=null;if(e&&e.preventDefault)e.preventDefault();
     }
-    canvas.addEventListener('pointerdown',down,{passive:false});
-    canvas.addEventListener('pointermove',move,{passive:false});
-    canvas.addEventListener('pointerup',up,{passive:false});
+    canvas.addEventListener('pointerdown',function(e){lastPointerAt=Date.now();down(e)},{passive:false});
+    canvas.addEventListener('pointermove',function(e){lastPointerAt=Date.now();move(e)},{passive:false});
+    canvas.addEventListener('pointerup',function(e){lastPointerAt=Date.now();up(e)},{passive:false});
     canvas.addEventListener('pointercancel',up,{passive:false});
     canvas.addEventListener('pointerleave',function(e){if(drawing&&e.buttons===0)up(e)},{passive:false});
+    canvas.addEventListener('mousedown',function(e){if(Date.now()-lastPointerAt>80)down(e)},{passive:false});
+    canvas.addEventListener('mousemove',function(e){if(Date.now()-lastPointerAt>80)move(e)},{passive:false});
+    canvas.addEventListener('mouseup',function(e){if(Date.now()-lastPointerAt>80)up(e)},{passive:false});
   }
   function wireSignatures(){wireSignatureCanvas(document.getElementById('sigC'));wireSignatureCanvas(document.getElementById('sigT'))}
-  function installDomObserver(){
-    if(domObserver||!document.documentElement)return;
-    domObserver=new MutationObserver(function(records){
-      var needsWire=false;
-      for(var i=0;i<records.length&&!needsWire;i++){
-        for(var j=0;j<records[i].addedNodes.length;j++){
-          var n=records[i].addedNodes[j];
-          if(n&&n.nodeType===1&&((n.id==='sigC'||n.id==='sigT')||(n.querySelector&&n.querySelector('#sigC,#sigT')))){needsWire=true;break}
-        }
-      }
-      if(needsWire)requestAnimationFrame(wireSignatures);
-    });
-    domObserver.observe(document.documentElement,{childList:true,subtree:true});
-  }
   function enhance(){
+    flushPending();
     ['saveReportText','addReportLine','removeReportLine','addMaterial','removeMaterial','addMeasurement','removeMeasurement','endReport'].forEach(wrapMutation);
-    wireSignatures();installDomObserver();
+    wireSignatures();
     document.documentElement.dataset.shApprovalSignatureGuard=BUILD;
   }
 
   enhance();
   setTimeout(wireSignatures,90);
   if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v23-approval-signature-guard',enhance,{initial:false});
-  window.SHP_APPROVAL_SIGNATURE_GUARD={build:BUILD,enhance:enhance,wireSignatures:wireSignatures};
+  window.SHP_APPROVAL_SIGNATURE_GUARD={build:BUILD,enhance:enhance,wireSignatures:wireSignatures,flushPending:flushPending};
 })();
