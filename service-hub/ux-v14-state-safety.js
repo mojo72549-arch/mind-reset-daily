@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  var BUILD='20260906-v14-state-safety1';
+  var BUILD='20260909-v14-state-scroll1';
   var ADMIN_DRAFT='shp_admin_form_draft';
   var MEMORY_DRAFT='shp_dome_memory_drafts';
   var scheduled=false,wrapped=false;
@@ -46,6 +46,28 @@
     });
   }
 
+  function modalVisible(){
+    var modal=document.getElementById('shp-app-modal');
+    if(!modal||!modal.isConnected)return false;
+    var style=window.getComputedStyle(modal);
+    return style.display!=='none'&&style.visibility!=='hidden'&&modal.getClientRects().length>0;
+  }
+  function recoverScrollLock(){
+    var html=document.documentElement,body=document.body;
+    if(!body||modalVisible())return;
+    if(html.classList.contains('shp-modal-open'))html.classList.remove('shp-modal-open');
+    [html,body].forEach(function(el){
+      if(el.style.overflow==='hidden')el.style.removeProperty('overflow');
+      if(el.style.overflowY==='hidden')el.style.removeProperty('overflow-y');
+    });
+    if(body.style.position==='fixed')body.style.removeProperty('position');
+    if(window.getComputedStyle(html).overflowY==='hidden')html.style.setProperty('overflow-y','auto','important');
+    if(window.getComputedStyle(body).overflowY==='hidden')body.style.setProperty('overflow-y','auto','important');
+    body.style.setProperty('touch-action','pan-y pinch-zoom');
+    body.style.setProperty('-webkit-overflow-scrolling','touch');
+    html.dataset.shScrollRecovery=BUILD;
+  }
+
   function wrapApi(){
     if(wrapped)return;
     if(window.SHP_V6){
@@ -70,12 +92,16 @@
   document.addEventListener('change',function(e){var t=e.target;if(t&&t.id&&t.id.indexOf('adm-')===0)captureAdmin()},true);
   document.addEventListener('click',function(e){
     var btn=e.target&&e.target.closest&&e.target.closest('.dome-order-memory-save');
-    if(!btn)return;
-    var root=btn.closest('.dome-order-memory-v12');setTimeout(function(){var input=root&&root.querySelector('.dome-order-memory-input');if(input&&!input.value)clearMemory(root)},0);
+    if(btn){
+      var root=btn.closest('.dome-order-memory-v12');setTimeout(function(){var input=root&&root.querySelector('.dome-order-memory-input');if(input&&!input.value)clearMemory(root)},0);
+    }
+    setTimeout(schedule,0);
   },true);
+  document.addEventListener('touchend',function(){setTimeout(schedule,0)},{passive:true,capture:true});
+  ['pageshow','resize','orientationchange','hashchange','popstate'].forEach(function(name){window.addEventListener(name,schedule,{passive:true})});
 
-  function enhance(){wrapApi();restoreAdmin();restoreMemory();document.documentElement.dataset.shStateSafety=BUILD}
+  function enhance(){recoverScrollLock();wrapApi();restoreAdmin();restoreMemory();document.documentElement.dataset.shStateSafety=BUILD}
   function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(function(){scheduled=false;enhance()})}
   if(window.SHP_STABILITY)window.SHP_STABILITY.register('ux-v14-state-safety',enhance,{initial:false});
-  window.SHP_STATE_SAFETY={build:BUILD,captureAdmin:captureAdmin,restoreAdmin:restoreAdmin};enhance();
+  window.SHP_STATE_SAFETY={build:BUILD,captureAdmin:captureAdmin,restoreAdmin:restoreAdmin,recoverScrollLock:recoverScrollLock};enhance();
 })();
