@@ -166,5 +166,5 @@ test('the stability guard loads before every DOM enhancement layer', () => {
   assert.ok(coreAt >= 0, 'core.js is loaded');
   assert.ok(stabilityAt > coreAt, 'stability guard follows core.js');
   assert.ok(firstEnhancementAt > stabilityAt, 'stability guard precedes enhancement layers');
-  assert.match(source, /20260908-v20-global-stability1/);
+  assert.match(source, /20260909-v21-annette-scroll1/);
 });
