@@ -160,7 +160,7 @@ test('Material can be removed with in-app confirmation', async ({ page }) => {
   await m.getByLabel('Einzelpreis €').fill('4.50');
   await m.getByRole('button', { name: 'Material hinzufügen' }).click();
   await expect(page.getByText(/Testmaterial/)).toBeVisible();
-  const materialDelete = page.locator('.card').filter({ hasText: 'Testmaterial' }).getByRole('button', { name: 'Löschen' }).first();
+  const materialDelete = page.locator('[data-report-material-row]').filter({ hasText: 'Testmaterial' }).getByRole('button', { name: 'Material aus Rapport löschen', exact: true });
   await materialDelete.click();
   await confirmModal(page, 'Material löschen', 'Löschen');
   await expect(page.getByText(/Testmaterial/)).toHaveCount(0);

@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-09",
+  "method": "F01–F05: isolierte Ausführung der Geschäftslogik mit Testdaten. F06: Quellcodebefund. Keine Browser- oder Zustellprüfung.",
+  "observations": [
+    {
+      "id": "F01",
+      "check": "Leere Unterschriftsflächen verhindern Abschluss",
+      "passed": false,
+      "observedStatus": "Abgeschlossen"
+    },
+    {
+      "id": "F02",
+      "check": "Änderung nach Abschluss erfordert erneute Bestätigung",
+      "passed": false,
+      "observedStatus": "Abgeschlossen",
+      "signaturesUnchanged": true
+    },
+    {
+      "id": "F03",
+      "check": "Fehlende E-Mail verhindert Versandübergabe und Versandhistorie",
+      "passed": false,
+      "historyEntries": 1,
+      "attemptedMailtoWithoutRecipient": true
+    },
+    {
+      "id": "F04",
+      "check": "Überfällige Teilzahlung erscheint im Handlungsbedarf",
+      "passed": false,
+      "overdue": 0,
+      "openAmount": 100
+    },
+    {
+      "id": "F05",
+      "check": "Bezahlte Rechnung kann nicht neu angemahnt werden",
+      "passed": false,
+      "stageStored": "1. Mahnung"
+    },
+    {
+      "id": "F06",
+      "check": "E-Mail-Übergabe enthält ein Dokument oder einen Dokumentlink",
+      "passed": false,
+      "observed": "mailto body enthält nur den Hinweis auf das Dokument/PDF, keinen Anhang oder Dokumentlink; kein Sender-Backend im CRM-Pfad"
+    }
+  ]
+}

@@ -130,11 +130,11 @@ test('material add and delete use app-owned modal and confirmation', async ({ pa
   await m.getByRole('button', { name: 'Material hinzufügen' }).click();
   await expect(page.getByText(/Dialog-Testmaterial/)).toBeVisible();
 
-  await page.locator('.card').filter({ hasText: 'Dialog-Testmaterial' }).getByRole('button', { name: 'Löschen' }).first().click();
+  await page.locator('[data-report-material-row]').filter({ hasText: 'Dialog-Testmaterial' }).getByRole('button', { name: 'Material aus Rapport löschen', exact: true }).click();
   m = await modal(page, 'Material löschen');
   await m.getByRole('button', { name: 'Abbrechen' }).click();
   await expect(page.getByText(/Dialog-Testmaterial/)).toBeVisible();
-  await page.locator('.card').filter({ hasText: 'Dialog-Testmaterial' }).getByRole('button', { name: 'Löschen' }).first().click();
+  await page.locator('[data-report-material-row]').filter({ hasText: 'Dialog-Testmaterial' }).getByRole('button', { name: 'Material aus Rapport löschen', exact: true }).click();
   m = await modal(page, 'Material löschen');
   await m.getByRole('button', { name: 'Löschen' }).click();
   await expect(page.getByText(/Dialog-Testmaterial/)).toHaveCount(0);

@@ -64,7 +64,7 @@ jobs:
           node --check auth.spec.cjs
           node --check playwright.config.cjs
       - name: Unit tests
-        run: node --test unit.test.cjs
+        run: node --test unit.test.cjs business-logic.test.cjs stability-guard.test.cjs
 
   critical-business-gate:
     name: Critical Annette and Dome journeys
@@ -122,3 +122,4 @@ jobs:
           name: service-hub-playwright-report
           path: service-hub/tests/playwright-report
           if-no-files-found: ignore
+

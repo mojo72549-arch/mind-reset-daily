@@ -22,7 +22,13 @@
     var stack=readUndo();stack.push({snapshot:before,label:label||'Änderung',at:Date.now()});writeUndo(stack);showUndo(label||'Änderung gespeichert');
   }
   function undoLast(){
-    var stack=readUndo(),item=stack.pop();if(!item)return;
+    var stack=readUndo(),item=stack[stack.length-1];if(!item)return;
+    var c=core();
+    if(c&&c.canRestoreSnapshot&&!c.canRestoreSnapshot(item.snapshot,localStorage.getItem(STORE))){
+      window.alert('Seit dieser Änderung wurde ein Dokument zum Versand übergeben. Rückgängig würde die Versandhistorie verändern und ist deshalb nicht möglich.');
+      return;
+    }
+    stack.pop();
     writeUndo(stack);
     if(item.snapshot==null)localStorage.removeItem(STORE);else localStorage.setItem(STORE,item.snapshot);
     sessionStorage.setItem(NOTICE,(item.label||'Änderung')+' wurde rückgängig gemacht.');
@@ -78,7 +84,7 @@
       if((h.textContent||'').trim()!=='Leistungen im Rapport')return;
       var card=h.closest('.card');if(!card)return;card.classList.add('report-lines-card');
       var rows=card.querySelectorAll('table tr'),dataRows=Math.max(0,rows.length-1);
-      card.querySelectorAll('button.red').forEach(function(btn){markDeleteButton(btn,'Leistung aus Rapport löschen','Leistung löschen')});
+      card.querySelectorAll('button.red').forEach(function(btn){var material=(btn.getAttribute('onclick')||'').indexOf('removeMaterial')>=0;markDeleteButton(btn,material?'Material aus Rapport löschen':'Leistung aus Rapport löschen',material?'Material löschen':'Leistung löschen')});
       var empty=card.querySelector('.ux-empty');
       if(dataRows===0&&!empty){empty=document.createElement('div');empty.className='ux-empty';empty.textContent='Noch keine Leistung hinzugefügt.';card.appendChild(empty)}
       else if(dataRows>0&&empty)empty.remove();
