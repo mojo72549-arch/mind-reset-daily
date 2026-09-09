@@ -64,6 +64,7 @@ jobs:
           node --check report-document-v17.spec.cjs
           node --check report-native-pdf-v18.spec.cjs
           node --check critical-business-flows.spec.cjs
+          node --check release-blockers.spec.cjs
           node --check auth.spec.cjs
           node --check business-guards.test.cjs
           node --check dispatch-post-safe.test.cjs
@@ -89,7 +90,7 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
       - name: Run critical business journeys on mobile and desktop
-        run: npx playwright test critical-business-flows.spec.cjs --config=playwright.config.cjs
+        run: npx playwright test critical-business-flows.spec.cjs release-blockers.spec.cjs --config=playwright.config.cjs
       - name: Upload critical gate report on failure
         if: failure()
         uses: actions/upload-artifact@v4
