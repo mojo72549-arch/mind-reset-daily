@@ -70,7 +70,7 @@ jobs:
           node --check dispatch-post-safe.test.cjs
           node --check playwright.config.cjs
       - name: Unit tests
-        run: node --test unit.test.cjs business-logic.test.cjs business-guards.test.cjs dispatch-post-safe.test.cjs stability-guard.test.cjs
+        run: node --test *.test.cjs
 
   critical-business-gate:
     name: Critical Annette and Dome journeys

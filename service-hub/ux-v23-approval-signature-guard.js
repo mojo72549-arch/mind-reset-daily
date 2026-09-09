@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  var BUILD='20260909-v23-approval-signature-guard4';
+  var BUILD='20260909-v23-approval-signature-guard5';
   var wrapped={},pending=[],activeNotice=null,noticeTimer=null;
 
   function clone(v){try{return JSON.parse(JSON.stringify(v))}catch(e){return null}}
@@ -16,21 +16,20 @@
   function approved(r){return !!(r&&(r.status==='Abgeschlossen'||r.sigC||r.sigT))}
   function capture(r,reason){
     if(!approved(r))return null;
-    return{at:now(),by:user(),reason:reason,status:r.status||'',sigC:r.sigC||'',sigT:r.sigT||'',state:editableState(r),sentHistory:clone(r.sentHistory||[])};
+    return{orderId:r.orderId,at:now(),by:user(),reason:reason,status:r.status||'',sigC:r.sigC||'',sigT:r.sigT||'',state:editableState(r),sentHistory:clone(r.sentHistory||[])};
   }
   function save(){var b=dataBridge();if(b&&typeof b.save==='function')try{return !!b.save()}catch(e){}return false}
   function invalidate(r,snapshot){
     if(!r||!snapshot||!approved(r))return false;
     if(!Array.isArray(r.revisions))r.revisions=[];
-    r.revisions.push(snapshot);if(r.revisions.length>20)r.revisions.splice(0,r.revisions.length-20);
+    r.revisions.push(snapshot);
     r.sigC='';r.sigT='';r.status='Entwurf';
-    var d=dataBridge(),o=d&&typeof d.currentOrder==='function'?d.currentOrder():null;if(o)o.status='In Bearbeitung';
-    var b=reportBridge();if(b&&typeof b.saveDraft==='function')try{b.saveDraft({sigC:'',sigT:''})}catch(e){}
+    var d=dataBridge(),db=d&&typeof d.readDb==='function'?d.readDb():null,o=db&&(db.orders||[]).find(function(item){return item.id==r.orderId});if(o)o.status='In Bearbeitung';
     save();
     return true;
   }
   function finishAsyncMutation(before,snapshot){
-    var r=currentReport();if(!r||!snapshot)return;
+    if(!snapshot)return;var d=dataBridge(),db=d&&typeof d.readDb==='function'?d.readDb():null,r=db&&(db.reports||[]).find(function(item){return item.orderId==snapshot.orderId});if(!r)return;
     if(fingerprint(r)===before)return;
     invalidate(r,snapshot);
   }
@@ -40,11 +39,11 @@
     if(pending.length>12)pending.splice(0,pending.length-12);
     return true;
   }
-  function flushPending(){
+  function flushPending(committed){
     if(!pending.length)return;
     var keep=[];
     pending.forEach(function(item){
-      if(item.modal&&item.modal.isConnected&&Date.now()-item.created<30000){keep.push(item);return}
+      if(!committed&&item.modal&&item.modal.isConnected&&Date.now()-item.created<30000){keep.push(item);return}
       finishAsyncMutation(item.before,item.snapshot);
     });
     pending=keep;

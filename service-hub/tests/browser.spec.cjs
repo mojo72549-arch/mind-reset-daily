@@ -15,6 +15,7 @@ async function goModule(page, label, tab) {
 }
 
 async function openSeedReport(page) {
+  await page.evaluate(() => SHP_STABILITY.whenIdle({ quietMs: 150, timeoutMs: 5000 }));
   const direct = page.getByRole('button', { name: 'Rapport öffnen' }).first();
   if (await direct.isVisible().catch(() => false)) await direct.click();
   else {

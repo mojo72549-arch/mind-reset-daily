@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "test:unit": "node --test unit.test.cjs business-logic.test.cjs stability-guard.test.cjs",
+    "test:unit": "node --test *.test.cjs",
     "test:e2e": "playwright test",
     "test": "npm run test:unit && npm run test:e2e"
   },
