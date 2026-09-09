@@ -30,6 +30,7 @@ jobs:
       - name: JavaScript syntax and document assets
         run: |
           test -s ../assets/rokatech-winser-logo.webp
+          node --check ../app.js
           node --check ../core.js
           node --check ../ux-v5.js
           node --check ../ux-v6.js
