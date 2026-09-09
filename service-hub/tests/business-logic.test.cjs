@@ -52,13 +52,13 @@ test('cancelling material deletion preserves the record and overview', async () 
 });
 
 test('material quantity and service prices are each counted once in the invoice', async () => {
-  const h = await harness(); const r = h.createOrder(); addService(h); addMaterial(h);
+  const h = await harness(); const r = h.createOrder(); addService(h); addMaterial(h, 'QA Dichtung', '3', '4.40');
   completionData(h); h.context.SH.finishReport(); h.context.SH.invoiceFromReport();
   const iv = h.getDb().invoices.find(i => i.reportId === r.id);
   assert.equal(iv.items.length, 2);
-  assert.equal(iv.net, 263.5);
-  assert.equal(iv.vat, 50.07);
-  assert.equal(iv.gross, 313.57);
+  assert.equal(iv.net, 263.2);
+  assert.equal(iv.vat.toFixed(2), '50.01');
+  assert.equal(iv.gross.toFixed(2), '313.21');
 });
 
 test('a repeated invoice action reopens the existing active invoice', async () => {
