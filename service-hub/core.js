@@ -43,11 +43,25 @@
   function safeJson(text,fallback){try{return JSON.parse(text)}catch(e){return fallback;}}
   function snapshot(storage,key){return storage&&typeof storage.getItem==='function'?storage.getItem(key):null;}
   function changed(before,after){return String(before==null?'':before)!==String(after==null?'':after);}
+  function canRestoreSnapshot(snapshot,current){
+    var before=safeJson(snapshot,null),after=safeJson(current,null);
+    if(!before||!after)return false;
+    return ['reports','invoices'].every(function(key){
+      var previous=Object.create(null);
+      (before[key]||[]).forEach(function(doc){previous[String(doc.id)]=doc});
+      return (after[key]||[]).every(function(doc){
+        if(!Array.isArray(doc.sentHistory)||!doc.sentHistory.length)return true;
+        var prior=previous[String(doc.id)];
+        return !!prior&&JSON.stringify(prior.sentHistory||[])===JSON.stringify(doc.sentHistory);
+      });
+    });
+  }
   return{
     ROLE_RIGHTS:ROLE_RIGHTS,
     SAFE_UNDO_ACTIONS:SAFE_UNDO_ACTIONS.slice(),
     EXTERNAL_SIDE_EFFECT_ACTIONS:EXTERNAL_SIDE_EFFECT_ACTIONS.slice(),
     normalizeRole:normalizeRole,rights:rights,can:can,isUndoableAction:isUndoableAction,
-    hasExternalSideEffect:hasExternalSideEffect,nextInvoiceNo:nextInvoiceNo,safeJson:safeJson,snapshot:snapshot,changed:changed
+    hasExternalSideEffect:hasExternalSideEffect,nextInvoiceNo:nextInvoiceNo,safeJson:safeJson,snapshot:snapshot,changed:changed,
+    canRestoreSnapshot:canRestoreSnapshot
   };
 });

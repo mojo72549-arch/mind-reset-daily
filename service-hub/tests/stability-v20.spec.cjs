@@ -16,7 +16,10 @@ const EXPECTED_LAYERS = [
   'ux-v14-state-safety',
   'ux-v15-payments',
   'ux-v18-report-native-pdf',
-  'ux-v19-report-native-actions'
+  'ux-v19-report-native-actions',
+  'ux-v21-business-guards',
+  'ux-v22-dispatch-post-safe',
+  'ux-v23-approval-signature-guard'
 ];
 
 function browserHealth(page) {

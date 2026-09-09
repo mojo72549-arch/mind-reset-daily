@@ -67,8 +67,12 @@
 
   function resetDocumentDefaults(){
     if(!isAdmin())return;
-    if(!window.confirm('Firmen- und Dokumenteinstellungen auf die Winser-Standardwerte zurücksetzen?'))return;
-    var db=readDb(),before=localStorage.getItem(STORE);if(!db)return;db.settings=db.settings||{};db.settings.company=Object.assign({},COMPANY_DEFAULTS);writeDb(db);remember(before,'Dokumenteinstellungen zurückgesetzt');showSaved();renderAdminSettings(true);
+    var dialogs=window.SHP_APP_DIALOGS;
+    if(!dialogs||typeof dialogs.openForm!=='function')return window.alert('Die Bestätigung wird noch geladen. Bitte gleich erneut versuchen.');
+    return dialogs.openForm({title:'Standardwerte wiederherstellen?',submitLabel:'Wiederherstellen',fields:[{type:'note',label:'Firmen- und Dokumenteinstellungen auf die Winser-Standardwerte zurücksetzen?'}],onSubmit:function(){
+      if(!isAdmin())return false;
+      var db=readDb(),before=localStorage.getItem(STORE);if(!db)return false;db.settings=db.settings||{};db.settings.company=Object.assign({},COMPANY_DEFAULTS);writeDb(db);remember(before,'Dokumenteinstellungen zurückgesetzt');showSaved();renderAdminSettings(true);return true;
+    }});
   }
 
   function catalogHtml(db){

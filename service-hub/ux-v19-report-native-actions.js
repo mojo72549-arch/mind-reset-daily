@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  var BUILD='20260908-v19-report-native-actions2';
+  var BUILD='20260909-v19-report-native-actions3';
   var queued=false;
 
   function nativeApi(){return window.SHP_REPORT_NATIVE_PDF||null}
@@ -16,7 +16,7 @@
     var buttons=[].slice.call(document.querySelectorAll('button')).filter(function(b){
       var oc=b.getAttribute('onclick')||'';
       var tx=String(b.textContent||'').trim();
-      return /sendReportPreferred/.test(oc)||/PDF über WhatsApp teilen/i.test(tx)||b.hasAttribute('data-report-pdf-v17')||b.hasAttribute('data-report-native-v18')||b.hasAttribute('data-report-native-v19');
+      return /sendReportPreferred/.test(oc)||/PDF über WhatsApp teilen/i.test(tx)||/Rapport-PDF senden/i.test(tx)||b.hasAttribute('data-report-pdf-v17')||b.hasAttribute('data-report-native-v18')||b.hasAttribute('data-report-native-v19');
     });
     if(!buttons.length)return;
     var keep=buttons[0];
@@ -24,7 +24,7 @@
     keep.removeAttribute('onclick');
     keep.removeAttribute('data-report-pdf-v17');
     keep.dataset.reportNativeV19='1';
-    if(String(keep.textContent||'').trim()!=='PDF über WhatsApp teilen')keep.textContent='PDF über WhatsApp teilen';
+    if(String(keep.textContent||'').trim()!=='Rapport-PDF senden')keep.textContent='Rapport-PDF senden';
     if(!keep.__shpNativeShareV19){
       keep.__shpNativeShareV19=true;
       keep.onclick=function(e){

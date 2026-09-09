@@ -108,7 +108,7 @@ test('material add and delete update the same rapport without navigation or relo
 
   await addMaterial(page, 'Sofort-Material', '2', '4.50');
   await expect(page.getByText(/Sofort-Material/)).toBeVisible();
-  const materialDelete = page.locator('.card').filter({ hasText: 'Sofort-Material' }).getByRole('button', { name: 'Löschen' }).first();
+  const materialDelete = page.locator('[data-report-material-row]').filter({ hasText: 'Sofort-Material' }).getByRole('button', { name: 'Material aus Rapport löschen', exact: true });
   await materialDelete.click();
   await confirmDelete(page, 'Material löschen');
   await expect(page.getByText(/Sofort-Material/)).toHaveCount(0);
@@ -158,7 +158,7 @@ test('deleted material stays deleted after navigation and reload', async ({ page
   await addMaterial(page, 'Dichtungsring Test', '2', '3.50');
   await expect(page.getByText(/Dichtungsring Test/)).toBeVisible();
 
-  const deleteButton = page.locator('.card').filter({ hasText: 'Dichtungsring Test' }).getByRole('button', { name: 'Löschen' }).first();
+  const deleteButton = page.locator('[data-report-material-row]').filter({ hasText: 'Dichtungsring Test' }).getByRole('button', { name: 'Material aus Rapport löschen', exact: true });
   await deleteButton.click();
   await confirmDelete(page, 'Material löschen');
   await expect(page.getByText(/Dichtungsring Test/)).toHaveCount(0);

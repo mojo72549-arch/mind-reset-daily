@@ -63,7 +63,7 @@
       e.preventDefault();error.classList.remove('show');error.textContent='';
       var vals=valuesFrom(form,opts.fields||[]),msg=opts.validate?opts.validate(vals):'';
       if(msg){showError(error,msg);return}
-      try{var ok=opts.onSubmit?opts.onSubmit(vals):true;if(ok===false)return;closeModal()}catch(err){console.error(err);showError(error,'Die Änderung konnte nicht gespeichert werden. Bitte erneut versuchen.')}
+      try{var ok=opts.onSubmit?opts.onSubmit(vals):true;if(ok===false)return;if(window.SHP_APPROVAL_SIGNATURE_GUARD)window.SHP_APPROVAL_SIGNATURE_GUARD.flushPending(true);closeModal()}catch(err){console.error(err);showError(error,'Die Änderung konnte nicht gespeichert werden. Bitte erneut versuchen.')}
     });
     requestAnimationFrame(function(){var first=overlay.querySelector('input:not([type="checkbox"]),select,textarea');if(first)first.focus()});
     return overlay;

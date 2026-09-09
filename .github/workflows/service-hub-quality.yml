@@ -30,6 +30,7 @@ jobs:
       - name: JavaScript syntax and document assets
         run: |
           test -s ../assets/rokatech-winser-logo.webp
+          node --check ../app.js
           node --check ../core.js
           node --check ../ux-v5.js
           node --check ../ux-v6.js
@@ -47,6 +48,8 @@ jobs:
           node --check ../ux-v17-report-document.js
           node --check ../ux-v18-report-native-pdf.js
           node --check ../ux-v19-report-native-actions.js
+          node --check ../ux-v21-business-guards.js
+          node --check ../ux-v22-dispatch-post-safe.js
           node --check ../auth-v7.js
           node --check browser.spec.cjs
           node --check rapport-v8.spec.cjs
@@ -61,10 +64,13 @@ jobs:
           node --check report-document-v17.spec.cjs
           node --check report-native-pdf-v18.spec.cjs
           node --check critical-business-flows.spec.cjs
+          node --check release-blockers.spec.cjs
           node --check auth.spec.cjs
+          node --check business-guards.test.cjs
+          node --check dispatch-post-safe.test.cjs
           node --check playwright.config.cjs
       - name: Unit tests
-        run: node --test unit.test.cjs
+        run: node --test *.test.cjs
 
   critical-business-gate:
     name: Critical Annette and Dome journeys
@@ -84,7 +90,7 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
       - name: Run critical business journeys on mobile and desktop
-        run: npx playwright test critical-business-flows.spec.cjs --config=playwright.config.cjs
+        run: npx playwright test critical-business-flows.spec.cjs release-blockers.spec.cjs --config=playwright.config.cjs
       - name: Upload critical gate report on failure
         if: failure()
         uses: actions/upload-artifact@v4

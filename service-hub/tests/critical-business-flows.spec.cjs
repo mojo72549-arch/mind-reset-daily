@@ -74,6 +74,83 @@ async function addService(page, catalogId, qty) {
   await page.getByRole('button', { name: '+ Leistung' }).click();
 }
 
+async function canvasHasInk(page, selector) {
+  return page.locator(selector).evaluate(canvas => {
+    if (window.SHP_BUSINESS_GUARDS && typeof window.SHP_BUSINESS_GUARDS.canvasHasInk === 'function') {
+      return window.SHP_BUSINESS_GUARDS.canvasHasInk(canvas);
+    }
+    const ctx = canvas.getContext('2d', { willReadFrequently: true });
+    if (!ctx) return false;
+    const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+    for (let i = 3; i < pixels.length; i += 4) if (pixels[i] > 8) return true;
+    return false;
+  });
+}
+
+async function dispatchSignatureStroke(page, selector) {
+  await page.locator(selector).evaluate(canvas => {
+    const rect = canvas.getBoundingClientRect();
+    const sx = rect.left + Math.min(32, Math.max(12, rect.width * 0.15));
+    const sy = rect.top + Math.min(42, Math.max(18, rect.height * 0.35));
+    const ex = rect.left + Math.min(rect.width - 12, Math.max(90, rect.width * 0.72));
+    const points = [
+      [sx, sy],
+      [sx + (ex - sx) * 0.25, sy + 12],
+      [sx + (ex - sx) * 0.5, sy - 5],
+      [sx + (ex - sx) * 0.75, sy + 10],
+      [ex, sy - 3]
+    ];
+    const fire = (type, p, buttons) => canvas.dispatchEvent(new PointerEvent(type, {
+      bubbles: true,
+      cancelable: true,
+      pointerId: 91,
+      pointerType: 'touch',
+      isPrimary: true,
+      clientX: p[0],
+      clientY: p[1],
+      button: type === 'pointerdown' ? 0 : -1,
+      buttons
+    }));
+    fire('pointerdown', points[0], 1);
+    for (let i = 1; i < points.length; i++) fire('pointermove', points[i], 1);
+    fire('pointerup', points[points.length - 1], 0);
+  });
+}
+
+async function drawSignature(page, selector) {
+  const canvas = page.locator(selector);
+  await canvas.scrollIntoViewIfNeeded();
+  await expect(canvas).toBeVisible();
+  const box = await canvas.boundingBox();
+  expect(box, `${selector}: Unterschriftsfeld muss sichtbar sein`).toBeTruthy();
+  const x = box.x + Math.min(35, box.width * 0.15);
+  const y = box.y + Math.min(45, box.height * 0.35);
+  await page.mouse.move(x, y);
+  await page.mouse.down();
+  await page.mouse.move(x + Math.min(70, box.width * 0.35), y + 16, { steps: 6 });
+  await page.mouse.move(x + Math.min(125, box.width * 0.6), y - 8, { steps: 6 });
+  await page.mouse.up();
+
+  if (!(await canvasHasInk(page, selector))) {
+    await dispatchSignatureStroke(page, selector);
+  }
+  expect(await canvasHasInk(page, selector), `${selector}: Unterschrift muss tatsächlich Canvas-Inhalt erzeugen`).toBe(true);
+}
+
+async function signReport(page) {
+  await drawSignature(page, '#sigC');
+  await drawSignature(page, '#sigT');
+
+  // Auf kleinen Viewports können UI-Nachläufe beim Scrollen ein Canvas neu einsetzen.
+  // Deshalb prüfen wir unmittelbar vor dem Abschluss beide Felder erneut und zeichnen
+  // ausschließlich über die echten Canvas-Handler nach, falls eines leer geworden ist.
+  for (const selector of ['#sigC', '#sigT']) {
+    if (!(await canvasHasInk(page, selector))) await drawSignature(page, selector);
+  }
+  expect(await canvasHasInk(page, '#sigC'), 'Kundenunterschrift muss vor Abschluss vorhanden sein').toBe(true);
+  expect(await canvasHasInk(page, '#sigT'), 'Technikerunterschrift muss vor Abschluss vorhanden sein').toBe(true);
+}
+
 test('Annette: Auftrag anlegen, Rapport weiterbearbeiten, navigieren und neu laden ohne Fehler', async ({ page }) => {
   const health = browserHealth(page);
   await login(page, 'annette');
@@ -166,6 +243,7 @@ test('Annette: kundenspezifischer Preis fließt in Rapport und Rechnung', async 
   expect(line.price).toBe(111);
   expect(line.qty).toBe(2);
 
+  await signReport(page);
   await page.getByRole('button', { name: 'Rapport abschließen' }).click();
   await expect.poll(async () => page.evaluate(id => {
     const db = JSON.parse(localStorage.getItem('shp_db'));

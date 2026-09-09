@@ -23,7 +23,7 @@ test('V19 exposes exactly one local rapport PDF action path and no legacy CDN ge
   await login(page, 'annette');
   await openSeedReport(page);
 
-  await expect(page.getByRole('button', { name: 'PDF über WhatsApp teilen', exact: true })).toHaveCount(1);
+  await expect(page.getByRole('button', { name: 'Rapport-PDF senden', exact: true })).toHaveCount(1);
   await expect(page.getByRole('button', { name: 'PDF erstellen / Drucken', exact: true })).toHaveCount(1);
 
   const loadedScripts = await page.locator('script[src]').evaluateAll(nodes => nodes.map(n => n.getAttribute('src') || ''));
@@ -69,7 +69,7 @@ test('V19 hands the locally generated PDF file to native sharing when supported'
     }});
   });
 
-  await page.getByRole('button', { name: 'PDF über WhatsApp teilen', exact: true }).click();
+  await page.getByRole('button', { name: 'Rapport-PDF senden', exact: true }).click();
   await expect.poll(() => page.evaluate(() => window.__sharedReport || null)).not.toBeNull();
   const shared = await page.evaluate(() => window.__sharedReport);
   expect(shared.name).toBe('Rapport-A-2026-0101.pdf');
