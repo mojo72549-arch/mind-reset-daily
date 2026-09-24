@@ -1,37 +1,110 @@
 {
-  "session_id": "trend-20260831-telegram-now",
+  "session_id": "trend-20260924-follow-v1",
   "status": "PENDING",
-  "created_at": "2026-08-31T06:15:00Z",
+  "created_at": "2026-09-24T21:42:00Z",
   "candidates": [
     {
       "number": 1,
-      "topic": "98% · NASA startet Roman-Teleskop: Wie ehemalige US-Spionagetechnik jetzt Milliarden Galaxien kartieren soll",
-      "scope": "science_future"
+      "topic": "97% · ESA + Mistral: Warum Europas Raumfahrt jetzt eine eigene KI-Offensive startet",
+      "scope": "technology_ai",
+      "series": "Europas KI-Offensive · Teil 1",
+      "follow_reason": "Wer Teil 1 versteht, will sehen, ob Europa bei KI und Raumfahrt wirklich unabhängiger von US-Anbietern werden kann.",
+      "cta_seed": "Teil 2 zeigt, wo Europas größter KI-Rückstand noch liegt – folge TAYVORIQ, damit du ihn nicht verpasst.",
+      "freshness": "24-72h",
+      "source_context": {
+        "sources": [
+          {
+            "publisher": "ESA",
+            "published_at": "2026-09-23",
+            "url": "https://www.esa.int/Newsroom/Press_Releases/ESA_and_Mistral_strengthen_cooperation_on_artificial_intelligence"
+          }
+        ]
+      }
     },
     {
       "number": 2,
-      "topic": "96% · Deutschland vor Reaktion auf Leipzig-Drohne: Warum der mutmaßliche Angriff jetzt EU und NATO beschäftigt",
-      "scope": "world_society"
+      "topic": "95% · KI kauft bald selbst ein: Warum Banken vor Shopping-Agenten, Betrug und Datenrisiken warnen",
+      "scope": "technology_ai",
+      "series": "Wenn KI für dich handelt · Teil 1",
+      "follow_reason": "Das Thema lässt sich direkt fortsetzen: Einkaufen, Bezahlen, Reisen und Verträge durch autonome KI-Agenten.",
+      "cta_seed": "Im nächsten Teil zeigen wir, was passiert, wenn ein KI-Agent selbst bezahlt – folge für Teil 2.",
+      "freshness": "24-72h",
+      "source_context": {
+        "sources": [
+          {
+            "publisher": "Reuters",
+            "published_at": "2026-09-22",
+            "url": "https://www.reuters.com/legal/litigation/banks-warn-ai-shopping-bots-raise-scam-fraud-data-privacy-risks-2026-09-22/"
+          }
+        ]
+      }
     },
     {
       "number": 3,
-      "topic": "94% · OpenAI gegen Elon Musk: Warum Cursor nach der SpaceX-Übernahme seine OpenAI-Modelle verlieren könnte",
-      "scope": "technology_ai"
+      "topic": "94% · Venus-Hölle: Wie NASA DAVINCI einen Abstieg durch extreme Hitze überleben soll",
+      "scope": "science_future",
+      "series": "Missionen, die fast unmöglich wirken · Teil 1",
+      "follow_reason": "Starker visueller Serienanker: extreme Missionen zu Venus, Mond, Mars und Asteroiden.",
+      "cta_seed": "Als Nächstes: Was die Sonde in der Venus-Atmosphäre überhaupt finden soll – folge für Teil 2.",
+      "freshness": "48-96h",
+      "source_context": {
+        "sources": [
+          {
+            "publisher": "NASA",
+            "published_at": "2026-09-24",
+            "url": "https://www.nasa.gov/news/recently-published/"
+          }
+        ]
+      }
     },
     {
       "number": 4,
-      "topic": "92% · Gletscher-Kollaps im Himalaya: Warum die Katastrophe an der Nepal-China-Grenze immer größere Ausmaße annimmt",
-      "scope": "science_future"
+      "topic": "92% · Leben trotz Rekordhitze: NASA-Forschung findet komplexen Organismus jenseits bisheriger Grenzen",
+      "scope": "science_future",
+      "series": "Grenzen des Lebens · Teil 1",
+      "follow_reason": "Ideal für eine wiederkehrende Serie über Extremleben, Tiefsee, Eis, Wüsten und mögliche außerirdische Lebensräume.",
+      "cta_seed": "Wenn Leben hier mehr aushält als gedacht: Was bedeutet das für Mars und Europa? Folge für Teil 2.",
+      "freshness": "48-96h",
+      "source_context": {
+        "sources": [
+          {
+            "publisher": "NASA Science",
+            "published_at": "2026-09-23",
+            "url": "https://science.nasa.gov/earth/recent-news/"
+          }
+        ]
+      }
     },
     {
       "number": 5,
-      "topic": "89% · 13.000-Einwohner-Wunder in der Bundesliga: Wie Elversberg beim Debüt Bayer Leverkusen schlägt",
-      "scope": "sports"
+      "topic": "90% · Klopp mit 44 Spielern: Warum Deutschland plötzlich mit zwei Nationalmannschafts-Kadern plant",
+      "scope": "sports",
+      "series": "Klopp baut Deutschland neu · Teil 1",
+      "follow_reason": "Fortsetzungspotenzial über Spieler-Auswahl, Belastungssteuerung, Taktik und die ersten Nations-League-Spiele.",
+      "cta_seed": "Teil 2 zeigt, welche Spieler durch Klopps Doppel-Kader plötzlich ihre Chance bekommen – folge TAYVORIQ.",
+      "freshness": "24-72h",
+      "source_context": {
+        "sources": [
+          {
+            "publisher": "Reuters",
+            "published_at": "2026-09-21",
+            "url": "https://www.reuters.com/sports/soccer/germany-coach-klopp-earns-praise-split-squad-idea-2026-09-21/"
+          },
+          {
+            "publisher": "Bundesliga",
+            "published_at": "2026-09-23",
+            "url": "https://www.bundesliga.com/en/bundesliga/news"
+          }
+        ]
+      }
     }
   ],
   "recommended_candidate": 1,
   "language": "Deutsch",
   "platform": "youtube_tiktok",
   "target_duration": 40,
-  "llm_provider": "auto"
+  "llm_provider": "auto",
+  "follow_conversion_gate_required": true,
+  "publication_requires_telegram_review": true,
+  "quality_gates_weakened": false
 }
