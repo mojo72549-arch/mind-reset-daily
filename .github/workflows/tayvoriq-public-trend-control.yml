@@ -21,8 +21,8 @@ permissions:
 
 env:
   PYTHONUTF8: "1"
-  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || vars.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN || vars.TELEGRAM_TOKEN }}
+  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || vars.TELEGRAM_CHAT_ID || secrets.TELEGRAM_CHAT_ID || vars.TELEGRAM_CHAT }}
 
 concurrency:
   group: tayvoriq-public-trend-control
