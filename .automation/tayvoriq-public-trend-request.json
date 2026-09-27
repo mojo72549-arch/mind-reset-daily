@@ -133,7 +133,7 @@
   "follow_conversion_gate_required": true,
   "publication_requires_telegram_review": true,
   "quality_gates_weakened": false,
-  "delivery_attempt": 1,
-  "delivery_reason": "public_evening_impact_selection_v2",
-  "updated_at": "2026-09-27T21:00:00+02:00"
+  "delivery_attempt": 2,
+  "delivery_reason": "explicit_user_workflow_delivery",
+  "updated_at": "2026-09-27T11:23:28.088Z"
 }
