@@ -23,17 +23,35 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          response="$(curl --fail-with-body --silent --show-error             "https://tayvoriq-control-center-mo61.vercel.app/api/health?telegram=send")"
+
+          relay_url="https://tayvoriq-control-center-mo61.vercel.app/api/health?telegram=send"
+
+          response="$(
+            curl               --location               --fail-with-body               --silent               --show-error               --connect-timeout 10               --max-time 45               --retry 2               --retry-all-errors               --retry-delay 2               --header "Accept: application/json"               "$relay_url"
+          )"
+
           echo "$response"
+
           python - <<'PY' "$response"
           import json
           import sys
 
-          payload = json.loads(sys.argv[1])
+          raw = sys.argv[1].strip()
+
+          try:
+              payload = json.loads(raw)
+          except json.JSONDecodeError as exc:
+              preview = raw[:500].replace("\n", " ")
+              raise SystemExit(
+                  f"Control Center relay returned non-JSON after redirects were followed: {preview!r}"
+              ) from exc
+
           if payload.get("ok") is not True:
               raise SystemExit(payload)
+
           if not payload.get("session_id"):
               raise SystemExit("Relay response is missing session_id")
+
           print({
               "telegram_selection_delivery": "confirmed",
               "session_id": payload["session_id"],
