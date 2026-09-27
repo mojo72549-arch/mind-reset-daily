@@ -6,9 +6,23 @@ on:
     paths:
       - .automation/tayvoriq-public-trend-request.json
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "send or poll"
+        required: true
+        default: "send"
+        type: choice
+        options: [send, poll]
+  schedule:
+    - cron: "*/5 * * * *"
 
 permissions:
-  contents: read
+  contents: write
+
+env:
+  PYTHONUTF8: "1"
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
 concurrency:
   group: tayvoriq-public-trend-control
@@ -16,46 +30,442 @@ concurrency:
 
 jobs:
   deliver-selection:
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'send')
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
-      - name: Deliver current public trend selection through Control Center relay
+      - name: Checkout public control repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Verify Telegram configuration
         shell: bash
         run: |
           set -euo pipefail
+          test -n "${TELEGRAM_BOT_TOKEN:-}" || { echo "::error::TELEGRAM_BOT_TOKEN missing"; exit 1; }
+          test -n "${TELEGRAM_CHAT_ID:-}" || { echo "::error::TELEGRAM_CHAT_ID missing"; exit 1; }
 
-          relay_url="https://tayvoriq-control-center-mo61.vercel.app/api/health?telegram=send"
-
-          response="$(
-            curl               --location               --fail-with-body               --silent               --show-error               --connect-timeout 10               --max-time 45               --retry 2               --retry-all-errors               --retry-delay 2               --header "Accept: application/json"               "$relay_url"
-          )"
-
-          echo "$response"
-
-          python - <<'PY' "$response"
+      - name: Send exactly one current trend selection
+        id: send
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
           import json
-          import sys
+          import os
+          import re
+          import urllib.request
+          from datetime import datetime, timezone
+          from pathlib import Path
 
-          raw = sys.argv[1].strip()
+          request_path = Path(".automation/tayvoriq-public-trend-request.json")
+          state_path = Path(".automation/tayvoriq-public-trend-state.json")
+          request = json.loads(request_path.read_text(encoding="utf-8"))
+          candidates = request.get("candidates")
+          if not isinstance(candidates, list) or len(candidates) != 5:
+              raise SystemExit("exactly_five_candidates_required")
 
-          try:
-              payload = json.loads(raw)
-          except json.JSONDecodeError as exc:
-              preview = raw[:500].replace("\n", " ")
-              raise SystemExit(
-                  f"Control Center relay returned non-JSON after redirects were followed: {preview!r}"
-              ) from exc
+          session = re.sub(r"[^A-Za-z0-9_-]", "", str(request.get("session_id") or ""))[:40]
+          if not session:
+              raise SystemExit("session_id_missing")
 
-          if payload.get("ok") is not True:
-              raise SystemExit(payload)
+          old = {}
+          if state_path.exists():
+              try:
+                  old = json.loads(state_path.read_text(encoding="utf-8"))
+              except Exception:
+                  old = {}
 
-          if not payload.get("session_id"):
-              raise SystemExit("Relay response is missing session_id")
+          if (
+              str(old.get("session_id") or "") == session
+              and int(old.get("message_id") or 0) > 0
+              and str(old.get("status") or "").upper() in {"PENDING", "APPROVED", "REJECTED"}
+          ):
+              print(json.dumps({
+                  "telegram_selection_delivery": "already_sent",
+                  "session_id": session,
+                  "message_id": int(old.get("message_id") or 0),
+                  "status": old.get("status"),
+              }, ensure_ascii=False))
+              raise SystemExit(0)
 
-          print({
+          token = os.environ["TELEGRAM_BOT_TOKEN"].strip()
+          chat_id = os.environ["TELEGRAM_CHAT_ID"].strip()
+
+          lines = ["🔥 TAYVORIQ · Trendauswahl", ""]
+          for index, candidate in enumerate(candidates, start=1):
+              lines.append(f"{index}️⃣ {str(candidate.get('topic') or '').strip()}")
+              lines.append("")
+          lines.extend([
+              "Wähle genau einen Trend aus.",
+              "Erst „✅ Trend freigeben“ bindet den Auftrag für die Produktion.",
+              "Bis dahin startet nichts.",
+          ])
+
+          keyboard = {
+              "inline_keyboard": [
+                  [
+                      {
+                          "text": str(number),
+                          "callback_data": f"tayvoriq-ptrend:select:{session}:{number}",
+                      }
+                      for number in range(1, 6)
+                  ],
+                  [
+                      {
+                          "text": "✅ Trend freigeben",
+                          "callback_data": f"tayvoriq-ptrend:approve:{session}",
+                      },
+                      {
+                          "text": "✏️ Auswahl ändern",
+                          "callback_data": f"tayvoriq-ptrend:reset:{session}",
+                      },
+                  ],
+                  [
+                      {
+                          "text": "❌ Auswahl ablehnen",
+                          "callback_data": f"tayvoriq-ptrend:reject:{session}",
+                      }
+                  ],
+              ]
+          }
+
+          payload = {
+              "chat_id": chat_id,
+              "text": "\n".join(lines),
+              "disable_web_page_preview": True,
+              "reply_markup": keyboard,
+          }
+          req = urllib.request.Request(
+              f"https://api.telegram.org/bot{token}/sendMessage",
+              data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+              headers={"Content-Type": "application/json"},
+              method="POST",
+          )
+          with urllib.request.urlopen(req, timeout=30) as response:
+              result = json.loads(response.read().decode("utf-8"))
+          if result.get("ok") is not True:
+              raise SystemExit(result)
+
+          message_id = int((result.get("result") or {}).get("message_id") or 0)
+          if message_id <= 0:
+              raise SystemExit("telegram_message_id_missing")
+
+          state = {
+              "session_id": session,
+              "status": "PENDING",
+              "selected": [],
+              "message_id": message_id,
+              "candidates": candidates,
+              "language": str(request.get("language") or "Deutsch"),
+              "platform": str(request.get("platform") or "youtube_tiktok"),
+              "target_duration": int(request.get("target_duration") or 40),
+              "llm_provider": str(request.get("llm_provider") or "auto"),
+              "follow_conversion_gate_required": request.get("follow_conversion_gate_required") is True,
+              "publication_requires_telegram_review": request.get("publication_requires_telegram_review") is not False,
+              "quality_gates_weakened": request.get("quality_gates_weakened") is True,
+              "next_update_id": int(old.get("next_update_id") or 0),
+              "notified_at": datetime.now(timezone.utc).isoformat(),
+              "source": "public_repo_direct_telegram",
+          }
+          state_path.parent.mkdir(parents=True, exist_ok=True)
+          state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          print(json.dumps({
               "telegram_selection_delivery": "confirmed",
-              "session_id": payload["session_id"],
-              "message_id": payload.get("message_id"),
-              "already_sent": bool(payload.get("already_sent")),
-          })
+              "session_id": session,
+              "message_id": message_id,
+          }, ensure_ascii=False))
           PY
+
+      - name: Persist Telegram selection state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .automation/tayvoriq-public-trend-state.json
+          if git diff --cached --quiet; then
+            echo "No state change to persist."
+            exit 0
+          fi
+          git commit -m "Record TAYVORIQ public trend delivery"
+          git pull --rebase origin main
+          git push origin main
+
+  poll-selection:
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'poll')
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout public control repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Verify Telegram configuration
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${TELEGRAM_BOT_TOKEN:-}" || { echo "::error::TELEGRAM_BOT_TOKEN missing"; exit 1; }
+          test -n "${TELEGRAM_CHAT_ID:-}" || { echo "::error::TELEGRAM_CHAT_ID missing"; exit 1; }
+
+      - name: Process public trend selection callbacks
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import os
+          import re
+          import urllib.request
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          token = os.environ["TELEGRAM_BOT_TOKEN"].strip()
+          configured_chat = os.environ["TELEGRAM_CHAT_ID"].strip()
+          state_path = Path(".automation/tayvoriq-public-trend-state.json")
+          production_path = Path(".automation/tayvoriq-public-production-request.json")
+
+          if not state_path.exists():
+              print("No public trend state yet.")
+              raise SystemExit(0)
+
+          state = json.loads(state_path.read_text(encoding="utf-8"))
+          session = str(state.get("session_id") or "").strip()
+          pattern = re.compile(
+              r"^tayvoriq-ptrend:(select|approve|reset|reject):([A-Za-z0-9_-]{1,40})(?::([1-5]))?$"
+          )
+
+          def call(method, payload):
+              req = urllib.request.Request(
+                  f"https://api.telegram.org/bot{token}/{method}",
+                  data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+                  headers={"Content-Type": "application/json"},
+                  method="POST",
+              )
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  result = json.loads(response.read().decode("utf-8"))
+              if result.get("ok") is not True:
+                  raise RuntimeError(result)
+              return result.get("result")
+
+          def render():
+              selected = set(int(x) for x in state.get("selected", []))
+              lines = ["🔥 TAYVORIQ · Trendauswahl", ""]
+              for index, candidate in enumerate(state.get("candidates", []), start=1):
+                  marker = "✅" if index in selected else f"{index}️⃣"
+                  lines.append(f"{marker} {str(candidate.get('topic') or '').strip()}")
+                  lines.append("")
+              lines.append("Ausgewählt: " + (", ".join(map(str, sorted(selected))) if selected else "noch nichts"))
+              lines.append("")
+              lines.append("Erst „✅ Trend freigeben“ bindet den Auftrag.")
+              return "\n".join(lines)
+
+          def keyboard():
+              selected = set(int(x) for x in state.get("selected", []))
+              return {
+                  "inline_keyboard": [
+                      [
+                          {
+                              "text": f"✅ {n}" if n in selected else str(n),
+                              "callback_data": f"tayvoriq-ptrend:select:{session}:{n}",
+                          }
+                          for n in range(1, 6)
+                      ],
+                      [
+                          {"text": "✅ Trend freigeben", "callback_data": f"tayvoriq-ptrend:approve:{session}"},
+                          {"text": "✏️ Auswahl ändern", "callback_data": f"tayvoriq-ptrend:reset:{session}"},
+                      ],
+                      [
+                          {"text": "❌ Auswahl ablehnen", "callback_data": f"tayvoriq-ptrend:reject:{session}"}
+                      ],
+                  ]
+              }
+
+          updates = call("getUpdates", {
+              "offset": int(state.get("next_update_id") or 0),
+              "limit": 100,
+              "timeout": 0,
+              "allowed_updates": ["callback_query"],
+          }) or []
+
+          changed = False
+          for update in updates:
+              state["next_update_id"] = max(
+                  int(state.get("next_update_id") or 0),
+                  int(update.get("update_id") or 0) + 1,
+              )
+              callback = update.get("callback_query") or {}
+              callback_id = str(callback.get("id") or "")
+              data = str(callback.get("data") or "")
+              match = pattern.fullmatch(data)
+              if not callback_id or not match:
+                  continue
+
+              action, incoming_session, raw_number = match.groups()
+              message = callback.get("message") or {}
+              chat_id = str((message.get("chat") or {}).get("id") or "")
+              message_id = int(message.get("message_id") or state.get("message_id") or 0)
+
+              if chat_id != configured_chat:
+                  call("answerCallbackQuery", {
+                      "callback_query_id": callback_id,
+                      "text": "Nicht autorisierter Chat.",
+                      "show_alert": True,
+                  })
+                  continue
+
+              if incoming_session != session:
+                  call("answerCallbackQuery", {
+                      "callback_query_id": callback_id,
+                      "text": "Diese Trendauswahl ist nicht mehr aktuell.",
+                      "show_alert": True,
+                  })
+                  continue
+
+              if str(state.get("status") or "").upper() != "PENDING":
+                  call("answerCallbackQuery", {
+                      "callback_query_id": callback_id,
+                      "text": "Diese Auswahl wurde bereits abgeschlossen.",
+                  })
+                  continue
+
+              if action == "select":
+                  number = int(raw_number or 0)
+                  state["selected"] = [number]
+                  state["updated_at"] = datetime.now(timezone.utc).isoformat()
+                  changed = True
+                  call("editMessageText", {
+                      "chat_id": configured_chat,
+                      "message_id": message_id,
+                      "text": render(),
+                      "disable_web_page_preview": True,
+                      "reply_markup": keyboard(),
+                  })
+                  call("answerCallbackQuery", {
+                      "callback_query_id": callback_id,
+                      "text": f"Trend {number} ausgewählt.",
+                  })
+                  continue
+
+              if action == "reset":
+                  state["selected"] = []
+                  state["updated_at"] = datetime.now(timezone.utc).isoformat()
+                  changed = True
+                  call("editMessageText", {
+                      "chat_id": configured_chat,
+                      "message_id": message_id,
+                      "text": render(),
+                      "disable_web_page_preview": True,
+                      "reply_markup": keyboard(),
+                  })
+                  call("answerCallbackQuery", {
+                      "callback_query_id": callback_id,
+                      "text": "Auswahl zurückgesetzt.",
+                  })
+                  continue
+
+              if action == "reject":
+                  state["status"] = "REJECTED"
+                  state["selected"] = []
+                  state["rejected_at"] = datetime.now(timezone.utc).isoformat()
+                  changed = True
+                  call("editMessageText", {
+                      "chat_id": configured_chat,
+                      "message_id": message_id,
+                      "text": "❌ TAYVORIQ · Auswahl abgelehnt\n\nEs wurde kein Produktionsauftrag erstellt.",
+                      "reply_markup": {"inline_keyboard": []},
+                  })
+                  call("answerCallbackQuery", {
+                      "callback_query_id": callback_id,
+                      "text": "Auswahl abgelehnt.",
+                  })
+                  continue
+
+              selected = [int(x) for x in state.get("selected", [])]
+              if len(selected) != 1:
+                  call("answerCallbackQuery", {
+                      "callback_query_id": callback_id,
+                      "text": "Bitte zuerst genau einen Trend auswählen.",
+                      "show_alert": True,
+                  })
+                  continue
+
+              number = selected[0]
+              candidates = state.get("candidates") or []
+              if number < 1 or number > len(candidates):
+                  raise RuntimeError("selected_candidate_missing")
+              candidate = candidates[number - 1]
+              approved_at = datetime.now(timezone.utc).isoformat()
+              request_id = f"{session}-approved-{number}"
+
+              production = {
+                  "request_id": request_id,
+                  "source_session_id": session,
+                  "status": "APPROVED",
+                  "approved_at": approved_at,
+                  "selected_number": number,
+                  "candidate": candidate,
+                  "topic": str(candidate.get("topic") or "").strip(),
+                  "trend_scope": str(candidate.get("scope") or "auto_scope"),
+                  "source_context": candidate.get("source_context") or {},
+                  "language": str(state.get("language") or "Deutsch"),
+                  "platform": str(state.get("platform") or "youtube_tiktok"),
+                  "target_duration": int(state.get("target_duration") or 40),
+                  "llm_provider": str(state.get("llm_provider") or "auto"),
+                  "publication_requires_telegram_review": state.get("publication_requires_telegram_review") is not False,
+                  "follow_conversion_gate_required": state.get("follow_conversion_gate_required") is True,
+                  "quality_gates_weakened": False,
+              }
+              production_path.write_text(
+                  json.dumps(production, ensure_ascii=False, indent=2) + "\n",
+                  encoding="utf-8",
+              )
+              state["status"] = "APPROVED"
+              state["approved_at"] = approved_at
+              state["production_request_id"] = request_id
+              changed = True
+
+              call("editMessageText", {
+                  "chat_id": configured_chat,
+                  "message_id": message_id,
+                  "text": render() + "\n\n✅ Trend freigegeben. Der öffentliche Produktionsauftrag wurde unveränderlich gebunden.",
+                  "reply_markup": {"inline_keyboard": []},
+              })
+              call("answerCallbackQuery", {
+                  "callback_query_id": callback_id,
+                  "text": "Trend freigegeben.",
+              })
+
+          if changed or updates:
+              state["last_checked_at"] = datetime.now(timezone.utc).isoformat()
+              state_path.write_text(
+                  json.dumps(state, ensure_ascii=False, indent=2) + "\n",
+                  encoding="utf-8",
+              )
+          print(json.dumps({
+              "session_id": session,
+              "status": state.get("status"),
+              "selected": state.get("selected"),
+              "updates_seen": len(updates),
+              "changed": changed,
+          }, ensure_ascii=False))
+          PY
+
+      - name: Persist public approval state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .automation/tayvoriq-public-trend-state.json .automation/tayvoriq-public-production-request.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No approval state change to persist."
+            exit 0
+          fi
+          git commit -m "Record TAYVORIQ public trend decision"
+          git pull --rebase origin main
+          git push origin main
