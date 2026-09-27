@@ -1,99 +1,126 @@
 {
-  "session_id": "trend-20260924-follow-v1",
+  "session_id": "trend-20260927-impact-v1",
   "status": "PENDING",
-  "created_at": "2026-09-24T21:42:00Z",
+  "created_at": "2026-09-27T10:36:00Z",
+  "selection_policy": {
+    "region": ["Stuttgart", "Baden-Württemberg", "Deutschland", "EU"],
+    "exclude_beyond_europe": true,
+    "impact_first": true,
+    "prefer_jobs_industry_consumer_sports": true,
+    "deprioritize_niche_research_without_mass_relevance": true
+  },
   "candidates": [
     {
       "number": 1,
-      "topic": "97% · ESA + Mistral: Warum Europas Raumfahrt jetzt eine eigene KI-Offensive startet",
-      "scope": "technology_ai",
-      "series": "Europas KI-Offensive · Teil 1",
-      "follow_reason": "Wer Teil 1 versteht, will sehen, ob Europa bei KI und Raumfahrt wirklich unabhängiger von US-Anbietern werden kann.",
-      "cta_seed": "Teil 2 zeigt, wo Europas größter KI-Rückstand noch liegt – folge TAYVORIQ, damit du ihn nicht verpasst.",
-      "freshness": "24-72h",
+      "topic": "98% · 175.000 Auto-Beschäftigte mobilisiert: Warum der Jobkonflikt jetzt ganz Deutschland trifft",
+      "scope": "jobs_economy_germany",
+      "series": "Deutschlands Auto-Jobkrise · Teil 1",
+      "follow_reason": "Sehr hohe persönliche Relevanz: Arbeitsplätze, Autoindustrie, Stuttgart und ein bundesweiter Konflikt mit klarer Fortsetzung in der Tarifrunde.",
+      "cta_seed": "Am 7. Oktober startet die Tarifrunde – folge TAYVORIQ, damit du siehst, ob aus dem Aktionstag der nächste große Arbeitskampf wird.",
+      "freshness": "6d",
       "source_context": {
         "sources": [
           {
-            "publisher": "ESA",
-            "published_at": "2026-09-23",
-            "url": "https://www.esa.int/Newsroom/Press_Releases/ESA_and_Mistral_strengthen_cooperation_on_artificial_intelligence"
+            "publisher": "Tagesschau / SWR",
+            "published_at": "2026-09-21",
+            "url": "https://www.tagesschau.de/inland/regional/badenwuerttemberg/swr-jobabbau-in-der-autoindustrie-beschaeftigte-in-bw-protestieren-100.html"
+          },
+          {
+            "publisher": "Reuters",
+            "published_at": "2026-09-21",
+            "url": "https://www.reuters.com/business/volkswagen-porsche-shares-extend-losses-following-profit-warning-2026-09-21/"
           }
         ]
       }
     },
     {
       "number": 2,
-      "topic": "95% · KI kauft bald selbst ein: Warum Banken vor Shopping-Agenten, Betrug und Datenrisiken warnen",
-      "scope": "technology_ai",
-      "series": "Wenn KI für dich handelt · Teil 1",
-      "follow_reason": "Das Thema lässt sich direkt fortsetzen: Einkaufen, Bezahlen, Reisen und Verträge durch autonome KI-Agenten.",
-      "cta_seed": "Im nächsten Teil zeigen wir, was passiert, wenn ein KI-Agent selbst bezahlt – folge für Teil 2.",
-      "freshness": "24-72h",
+      "topic": "97% · Mercedes warnt vor zwei Werkschließungen: Was hinter dem neuen Kostenstreit steckt",
+      "scope": "jobs_economy_bw",
+      "series": "Deutschlands Auto-Jobkrise · Teil 2",
+      "follow_reason": "Direkter Stuttgart-/Sindelfingen-Bezug, hohe Arbeitsplatzrelevanz und klarer Konflikt zwischen Management, Kosten und Betriebsrat.",
+      "cta_seed": "Welche Werke tatsächlich unter Druck geraten könnten und was die Tarifrunde verändert, zeigen wir im nächsten Update.",
+      "freshness": "5d",
       "source_context": {
         "sources": [
           {
+            "publisher": "Tagesschau / SWR",
+            "published_at": "2026-09-22",
+            "url": "https://www.tagesschau.de/inland/regional/badenwuerttemberg/swr-mercedes-vorstand-kuendigt-werkschliessungen-an-wenn-arbeitskosten-nicht-sinken-widerstand-vom-gesamtbetriebsrat-100.html"
+          },
+          {
             "publisher": "Reuters",
             "published_at": "2026-09-22",
-            "url": "https://www.reuters.com/legal/litigation/banks-warn-ai-shopping-bots-raise-scam-fraud-data-privacy-risks-2026-09-22/"
+            "url": "https://www.reuters.com/business/world-at-work/mercedes-says-german-production-not-competitive-two-plants-under-threat-2026-09-22/"
           }
         ]
       }
     },
     {
       "number": 3,
-      "topic": "94% · Venus-Hölle: Wie NASA DAVINCI einen Abstieg durch extreme Hitze überleben soll",
-      "scope": "science_future",
-      "series": "Missionen, die fast unmöglich wirken · Teil 1",
-      "follow_reason": "Starker visueller Serienanker: extreme Missionen zu Venus, Mond, Mars und Asteroiden.",
-      "cta_seed": "Als Nächstes: Was die Sonde in der Venus-Atmosphäre überhaupt finden soll – folge für Teil 2.",
-      "freshness": "48-96h",
+      "topic": "96% · Bosch hält am Abbau von 22.000 Stellen fest: Warum die Autozulieferer-Krise Baden-Württemberg besonders trifft",
+      "scope": "jobs_economy_bw",
+      "series": "Deutschlands Auto-Jobkrise · Teil 3",
+      "follow_reason": "Große konkrete Zahl, starker regionaler Bezug und unmittelbare Bedeutung für Beschäftigte und Zulieferstandorte rund um Stuttgart.",
+      "cta_seed": "Als Nächstes zeigen wir, welche Bosch-Standorte und Bereiche vom Umbau besonders betroffen sind.",
+      "freshness": "4d",
       "source_context": {
         "sources": [
           {
-            "publisher": "NASA",
-            "published_at": "2026-09-24",
-            "url": "https://www.nasa.gov/news/recently-published/"
+            "publisher": "Tagesschau / SWR",
+            "published_at": "2026-09-23",
+            "url": "https://www.tagesschau.de/inland/regional/badenwuerttemberg/swr-bosch-waechst-leicht-und-setzt-sparkurs-mit-abbau-von-22-000-stellen-fort-100.html"
+          },
+          {
+            "publisher": "Tagesschau",
+            "published_at": "2026-01-30",
+            "url": "https://www.tagesschau.de/wirtschaft/unternehmen/bosch-gewinneinbruch-bilanz-100.html"
           }
         ]
       }
     },
     {
       "number": 4,
-      "topic": "92% · Leben trotz Rekordhitze: NASA-Forschung findet komplexen Organismus jenseits bisheriger Grenzen",
-      "scope": "science_future",
-      "series": "Grenzen des Lebens · Teil 1",
-      "follow_reason": "Ideal für eine wiederkehrende Serie über Extremleben, Tiefsee, Eis, Wüsten und mögliche außerirdische Lebensräume.",
-      "cta_seed": "Wenn Leben hier mehr aushält als gedacht: Was bedeutet das für Mars und Europa? Folge für Teil 2.",
-      "freshness": "48-96h",
+      "topic": "94% · Ab heute gelten neue EU-Regeln gegen Greenwashing: Diese Umwelt-Werbung dürfen Firmen nicht mehr einfach behaupten",
+      "scope": "consumer_eu",
+      "series": "Was sich für Verbraucher ändert · Teil 1",
+      "follow_reason": "Tritt genau heute in Anwendung und betrifft praktisch jeden Käufer in Deutschland und der EU.",
+      "cta_seed": "Im nächsten Teil zeigen wir konkrete Begriffe und Labels, bei denen Unternehmen jetzt vorsichtiger sein müssen.",
+      "freshness": "today",
       "source_context": {
         "sources": [
           {
-            "publisher": "NASA Science",
-            "published_at": "2026-09-23",
-            "url": "https://science.nasa.gov/earth/recent-news/"
+            "publisher": "Bundesregierung",
+            "published_at": "2026-08-28",
+            "url": "https://www.bundesregierung.de/breg-de/suche/gesetzliche-neuregelungen-september-2026-2450158"
+          },
+          {
+            "publisher": "Europäische Kommission",
+            "published_at": "2026-09-22",
+            "url": "https://commission.europa.eu/topics/consumers/consumer-rights-and-complaints/sustainable-consumption_en"
           }
         ]
       }
     },
     {
       "number": 5,
-      "topic": "90% · Klopp mit 44 Spielern: Warum Deutschland plötzlich mit zwei Nationalmannschafts-Kadern plant",
-      "scope": "sports",
-      "series": "Klopp baut Deutschland neu · Teil 1",
-      "follow_reason": "Fortsetzungspotenzial über Spieler-Auswahl, Belastungssteuerung, Taktik und die ersten Nations-League-Spiele.",
-      "cta_seed": "Teil 2 zeigt, welche Spieler durch Klopps Doppel-Kader plötzlich ihre Chance bekommen – folge TAYVORIQ.",
-      "freshness": "24-72h",
+      "topic": "93% · München ist Deutschlands Olympia-Bewerber: Jetzt geht es um die Spiele 2036, 2040 oder 2044",
+      "scope": "sports_germany",
+      "series": "Deutschlands Olympia-Comeback · Teil 1",
+      "follow_reason": "Sehr frische nationale Entscheidung mit breiter Sport- und Standortrelevanz und jahrelangem Fortsetzungspotenzial.",
+      "cta_seed": "Wie der Weg zur tatsächlichen Olympia-Vergabe jetzt weitergeht, zeigen wir im nächsten Teil.",
+      "freshness": "24h",
       "source_context": {
         "sources": [
           {
-            "publisher": "Reuters",
-            "published_at": "2026-09-21",
-            "url": "https://www.reuters.com/sports/soccer/germany-coach-klopp-earns-praise-split-squad-idea-2026-09-21/"
+            "publisher": "Tagesschau",
+            "published_at": "2026-09-26",
+            "url": "https://www.tagesschau.de/eilmeldung/eilmeldung-muenchen-olympia-100.html"
           },
           {
-            "publisher": "Bundesliga",
-            "published_at": "2026-09-23",
-            "url": "https://www.bundesliga.com/en/bundesliga/news"
+            "publisher": "Sportschau",
+            "published_at": "2026-09-26",
+            "url": "https://www.sportschau.de/olympia/deutschland-geht-mit-muenchen-ins-olympia-rennen%2Colympia-bewerbung-entscheidung-100.html"
           }
         ]
       }
