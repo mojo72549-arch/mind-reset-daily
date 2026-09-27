@@ -139,7 +139,7 @@
   "follow_conversion_gate_required": true,
   "publication_requires_telegram_review": true,
   "quality_gates_weakened": false,
-  "delivery_attempt": 2,
-  "delivery_retry_reason": "relay_redirect_follow_fix",
-  "updated_at": "2026-09-27T10:41:00Z"
+  "delivery_attempt": 3,
+  "delivery_retry_reason": "public_repo_direct_telegram",
+  "updated_at": "2026-09-27T10:49:00Z"
 }
