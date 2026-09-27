@@ -1,15 +1,14 @@
 {
-  "session_id": "trend-20260927-impact-v1",
+  "session_id": "trend-20260927-evening-impact-v2",
   "status": "PENDING",
-  "created_at": "2026-09-27T10:36:00Z",
+  "created_at": "2026-09-27T21:00:00+02:00",
   "selection_policy": {
     "region": [
       "Stuttgart",
       "Baden-Württemberg",
-      "Deutschland",
-      "EU"
+      "Deutschland"
     ],
-    "exclude_beyond_europe": true,
+    "europe_as_primary_topic": false,
     "impact_first": true,
     "prefer_jobs_industry_consumer_sports": true,
     "deprioritize_niche_research_without_mass_relevance": true
@@ -17,35 +16,33 @@
   "candidates": [
     {
       "number": 1,
-      "topic": "98% · 175.000 Auto-Beschäftigte mobilisiert: Warum der Jobkonflikt jetzt ganz Deutschland trifft",
-      "scope": "jobs_economy_germany",
-      "series": "Deutschlands Auto-Jobkrise · Teil 1",
-      "follow_reason": "Sehr hohe persönliche Relevanz: Arbeitsplätze, Autoindustrie, Stuttgart und ein bundesweiter Konflikt mit klarer Fortsetzung in der Tarifrunde.",
-      "cta_seed": "Am 7. Oktober startet die Tarifrunde – folge TAYVORIQ, damit du siehst, ob aus dem Aktionstag der nächste große Arbeitskampf wird.",
-      "freshness": "6d",
+      "topic": "98% · IG Metall fordert 5 % mehr Geld: Was die neue Tarifrunde für Beschäftigte in Baden-Württemberg bedeuten könnte",
+      "scope": "business_economy",
+      "series": "Lohn & Industrie · Tarifrunde 2026",
+      "follow_reason": "Direkte Geld- und Arbeitsplatzrelevanz; am 7. Oktober startet die erste Verhandlung in Baden-Württemberg.",
+      "cta_seed": "Folge TAYVORIQ – wir zeigen dir nach der ersten Verhandlung, was aus der 5-Prozent-Forderung tatsächlich wird.",
       "source_context": {
         "sources": [
           {
-            "publisher": "Tagesschau / SWR",
-            "published_at": "2026-09-21",
-            "url": "https://www.tagesschau.de/inland/regional/badenwuerttemberg/swr-jobabbau-in-der-autoindustrie-beschaeftigte-in-bw-protestieren-100.html"
+            "publisher": "IG Metall Baden-Württemberg",
+            "published_at": "2026-09-22",
+            "url": "https://baden-wuerttemberg.igmetall.de/2026/2026-09-18-pressemitteilung-32-2028"
           },
           {
-            "publisher": "Reuters",
-            "published_at": "2026-09-21",
-            "url": "https://www.reuters.com/business/volkswagen-porsche-shares-extend-losses-following-profit-warning-2026-09-21/"
+            "publisher": "DIE ZEIT / dpa",
+            "published_at": "2026-09-23",
+            "url": "https://www.zeit.de/news/2026-09/23/metall-tarifrunde-ig-metall-fordert-fuenf-prozent-mehr-geld"
           }
         ]
       }
     },
     {
       "number": 2,
-      "topic": "97% · Mercedes warnt vor zwei Werkschließungen: Was hinter dem neuen Kostenstreit steckt",
-      "scope": "jobs_economy_bw",
-      "series": "Deutschlands Auto-Jobkrise · Teil 2",
-      "follow_reason": "Direkter Stuttgart-/Sindelfingen-Bezug, hohe Arbeitsplatzrelevanz und klarer Konflikt zwischen Management, Kosten und Betriebsrat.",
-      "cta_seed": "Welche Werke tatsächlich unter Druck geraten könnten und was die Tarifrunde verändert, zeigen wir im nächsten Update.",
-      "freshness": "5d",
+      "topic": "97% · Mercedes warnt vor zwei möglichen Werksschließungen: Warum der Kostenstreit jetzt eskaliert",
+      "scope": "business_economy",
+      "series": "Deutschlands Auto-Jobkrise · Mercedes",
+      "follow_reason": "Starker Stuttgart-/Sindelfingen-Bezug, bekannte Marke und unmittelbare Arbeitsplatzrelevanz.",
+      "cta_seed": "Folge TAYVORIQ – wir zeigen dir, welche Standorte und Entscheidungen als Nächstes entscheidend werden.",
       "source_context": {
         "sources": [
           {
@@ -63,12 +60,11 @@
     },
     {
       "number": 3,
-      "topic": "96% · Bosch hält am Abbau von 22.000 Stellen fest: Warum die Autozulieferer-Krise Baden-Württemberg besonders trifft",
-      "scope": "jobs_economy_bw",
-      "series": "Deutschlands Auto-Jobkrise · Teil 3",
-      "follow_reason": "Große konkrete Zahl, starker regionaler Bezug und unmittelbare Bedeutung für Beschäftigte und Zulieferstandorte rund um Stuttgart.",
-      "cta_seed": "Als Nächstes zeigen wir, welche Bosch-Standorte und Bereiche vom Umbau besonders betroffen sind.",
-      "freshness": "4d",
+      "topic": "96% · Bosch hält am Abbau von 22.000 Stellen fest: Warum Baden-Württemberg besonders betroffen ist",
+      "scope": "business_economy",
+      "series": "Deutschlands Auto-Jobkrise · Bosch",
+      "follow_reason": "Große konkrete Zahl, hohe regionale Nähe und starke persönliche Relevanz für Beschäftigte und Zulieferstandorte.",
+      "cta_seed": "Folge TAYVORIQ – wir verfolgen, welche Standorte und Bereiche vom Umbau besonders betroffen sind.",
       "source_context": {
         "sources": [
           {
@@ -86,12 +82,11 @@
     },
     {
       "number": 4,
-      "topic": "94% · Ab heute gelten neue EU-Regeln gegen Greenwashing: Diese Umwelt-Werbung dürfen Firmen nicht mehr einfach behaupten",
-      "scope": "consumer_eu",
-      "series": "Was sich für Verbraucher ändert · Teil 1",
-      "follow_reason": "Tritt genau heute in Anwendung und betrifft praktisch jeden Käufer in Deutschland und der EU.",
-      "cta_seed": "Im nächsten Teil zeigen wir konkrete Begriffe und Labels, bei denen Unternehmen jetzt vorsichtiger sein müssen.",
-      "freshness": "today",
+      "topic": "95% · Seit heute gelten strengere Regeln gegen Greenwashing: Was sich für Käufer in Deutschland ändert",
+      "scope": "world_society",
+      "series": "Was sich für Verbraucher ändert",
+      "follow_reason": "Tagesaktuell, leicht verständlich und direkt beim Einkauf relevant; Deutschland steht im Mittelpunkt.",
+      "cta_seed": "Folge TAYVORIQ – wir zeigen dir, welche Umweltbegriffe und Labels Unternehmen jetzt nicht mehr einfach verwenden dürfen.",
       "source_context": {
         "sources": [
           {
@@ -109,12 +104,11 @@
     },
     {
       "number": 5,
-      "topic": "93% · München ist Deutschlands Olympia-Bewerber: Jetzt geht es um die Spiele 2036, 2040 oder 2044",
-      "scope": "sports_germany",
-      "series": "Deutschlands Olympia-Comeback · Teil 1",
-      "follow_reason": "Sehr frische nationale Entscheidung mit breiter Sport- und Standortrelevanz und jahrelangem Fortsetzungspotenzial.",
-      "cta_seed": "Wie der Weg zur tatsächlichen Olympia-Vergabe jetzt weitergeht, zeigen wir im nächsten Teil.",
-      "freshness": "24h",
+      "topic": "94% · München ist Deutschlands Olympia-Bewerber: Jetzt geht es um 2036, 2040 oder 2044",
+      "scope": "sports",
+      "series": "Deutschlands Olympia-Comeback",
+      "follow_reason": "Sehr frische nationale Sportentscheidung mit bekannten Bezugspunkten und langfristigem Fortsetzungspotenzial.",
+      "cta_seed": "Folge TAYVORIQ – wir erklären dir den nächsten Schritt auf dem Weg zu einer möglichen Olympia-Vergabe.",
       "source_context": {
         "sources": [
           {
@@ -139,7 +133,7 @@
   "follow_conversion_gate_required": true,
   "publication_requires_telegram_review": true,
   "quality_gates_weakened": false,
-  "delivery_attempt": 3,
-  "delivery_retry_reason": "public_repo_direct_telegram",
-  "updated_at": "2026-09-27T10:49:00Z"
+  "delivery_attempt": 1,
+  "delivery_reason": "public_evening_impact_selection_v2",
+  "updated_at": "2026-09-27T21:00:00+02:00"
 }
