@@ -1,0 +1,9 @@
+{
+  "name": "Kellner Transformation Radar V2",
+  "short_name": "Kellner Radar",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f6fb",
+  "theme_color": "#12233f",
+  "icons": []
+}
