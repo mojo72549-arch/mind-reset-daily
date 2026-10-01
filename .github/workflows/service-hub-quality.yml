@@ -47,6 +47,7 @@ jobs:
           node --check ../ux-v17-report-document.js
           node --check ../ux-v18-report-native-pdf.js
           node --check ../ux-v19-report-native-actions.js
+          node --check ../ux-v21-global-scroll.js
           node --check ../auth-v7.js
           node --check browser.spec.cjs
           node --check rapport-v8.spec.cjs
@@ -58,6 +59,7 @@ jobs:
           node --check persistence-v14.spec.cjs
           node --check payments-v15.spec.cjs
           node --check responsive-v16.spec.cjs
+          node --check global-scroll-v21.spec.cjs
           node --check report-document-v17.spec.cjs
           node --check report-native-pdf-v18.spec.cjs
           node --check critical-business-flows.spec.cjs
@@ -83,8 +85,8 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
-      - name: Run critical business journeys on mobile and desktop
-        run: npx playwright test critical-business-flows.spec.cjs --config=playwright.config.cjs
+      - name: Run critical business and scroll journeys on mobile and desktop
+        run: npx playwright test critical-business-flows.spec.cjs global-scroll-v21.spec.cjs --config=playwright.config.cjs
       - name: Upload critical gate report on failure
         if: failure()
         uses: actions/upload-artifact@v4
