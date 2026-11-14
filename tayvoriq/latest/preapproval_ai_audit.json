@@ -3,13 +3,13 @@
   "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
   "passed": true,
   "scores": {
-    "factual_accuracy": 100,
-    "pronunciation": 95,
-    "marketing": 96,
-    "sales": 95,
-    "platform_fit": 98,
-    "visual": 88,
-    "overall": 96
+    "factual_accuracy": 98,
+    "pronunciation": 98,
+    "marketing": 92,
+    "sales": 90,
+    "platform_fit": 94,
+    "visual": 95,
+    "overall": 95
   },
   "thresholds": {
     "factual_accuracy": 90,
@@ -24,275 +24,139 @@
     "youtube_shorts": {
       "platform": "youtube_shorts",
       "passed": true,
-      "expected_spoken_text": "Mercedes fordert achtunddreißig statt fünfunddreißig Wochenstunden ohne mehr Geld. Weil Mercedes achthundert Millionen Euro Arbeitskosten in Deutschland sparen will. Betroffen wären Mercedes-Tarifbeschäftigte und mehrere deutsche Werke. Für dich: acht Komma sechs Prozent mehr Arbeit; gleicher Monatslohn, rechnerisch knapp acht Prozent weniger Stundenlohn. Beobachte: Zwei Werksschließungen sind möglich, aber nicht beschlossen. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "Mercedes fordert 38 statt 35 Wochenstunden ohne mehr Geld. Weil Mercedes 800 Millionen Euro Arbeitskosten in Deutschland sparen will. Betroffen wären Mercedes-Tarifbeschäftigte und mehrere deutsche Werke. Für dich 8,6% mehr Arbeit, gleicher Monatslohn, rechnerisch knapp 8% weniger Stundenlohn. Beobachte zwei Werkschließungen sind möglich, aber nicht beschlossen. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "similarity": 0.9661,
-      "average_logprob": -0.0676,
-      "critical_terms": [
-        {
-          "source": "38",
-          "spoken": "achtunddreißig",
-          "kind": "number"
-        },
-        {
-          "source": "35",
-          "spoken": "fünfunddreißig",
-          "kind": "number"
-        },
-        {
-          "source": "800",
-          "spoken": "achthundert",
-          "kind": "number"
-        },
-        {
-          "source": "8,6",
-          "spoken": "acht Komma sechs",
-          "kind": "number"
-        },
-        {
-          "source": "8",
-          "spoken": "acht",
-          "kind": "number"
-        }
-      ],
+      "expected_spoken_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9752,
+      "average_logprob": -0.0689,
+      "critical_terms": [],
       "missing_critical_terms": [],
       "blockers": [],
       "transcription_model": "whisper-large-v3",
       "orthographic_pronunciation_alias_proofs": [],
-      "number_orthographic_alias_proofs": [
-        {
-          "source": "38",
-          "canonical_spoken_form_de": "achtunddreißig",
-          "tts_contract_proved": true,
-          "independent_asr_orthography": "38",
-          "quality_gates_weakened": false
-        },
-        {
-          "source": "35",
-          "canonical_spoken_form_de": "fünfunddreißig",
-          "tts_contract_proved": true,
-          "independent_asr_orthography": "35",
-          "quality_gates_weakened": false
-        },
-        {
-          "source": "800",
-          "canonical_spoken_form_de": "achthundert",
-          "tts_contract_proved": true,
-          "independent_asr_orthography": "800",
-          "quality_gates_weakened": false
-        },
-        {
-          "source": "8,6",
-          "canonical_spoken_form_de": "acht Komma sechs",
-          "tts_contract_proved": true,
-          "independent_asr_orthography": "8,6",
-          "quality_gates_weakened": false
-        },
-        {
-          "source": "8",
-          "canonical_spoken_form_de": "acht",
-          "tts_contract_proved": true,
-          "independent_asr_orthography": "8",
-          "quality_gates_weakened": false
-        }
-      ],
+      "number_orthographic_alias_proofs": [],
       "pronunciation_contract_version": "de-acronym-letter-names-v2",
       "strict_number_audit": {
-        "required": true,
-        "visible_script": "Mercedes fordert 38 statt 35 Wochenstunden ohne mehr Geld. Weil Mercedes 800 Millionen Euro Arbeitskosten in Deutschland sparen will. Betroffen wären Mercedes-Tarifbeschäftigte und mehrere deutsche Werke. Für dich: 8,6 Prozent mehr Arbeit; gleicher Monatslohn, rechnerisch knapp 8 Prozent weniger Stundenlohn. Beobachte: Zwei Werksschließungen sind möglich, aber nicht beschlossen. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "Mercedes fordert achtunddreißig statt fünfunddreißig Wochenstunden ohne mehr Geld. Weil Mercedes achthundert Millionen Euro Arbeitskosten in Deutschland sparen will. Betroffen wären Mercedes-Tarifbeschäftigte und mehrere deutsche Werke. Für dich: acht Komma sechs Prozent mehr Arbeit; gleicher Monatslohn, rechnerisch knapp acht Prozent weniger Stundenlohn. Beobachte: Zwei Werksschließungen sind möglich, aber nicht beschlossen. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "number_replacements": {
-          "38": "achtunddreißig",
-          "35": "fünfunddreißig",
-          "800": "achthundert",
-          "8,6": "acht Komma sechs",
-          "8": "acht"
-        },
+        "required": false,
+        "visible_script": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {},
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9661,
+      "raw_similarity_before_safe_normalization": 0.9735,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "Mercedes fordert achtunddreißig statt fünfunddreißig Wochenstunden ohne mehr Geld. Weil Mercedes achthundert Millionen Euro Arbeitskosten in Deutschland sparen will. Betroffen wären Mercedes-Tarifbeschäftigte und mehrere deutsche Werke. Für dich: acht Komma sechs Prozent mehr Arbeit; gleicher Monatslohn, rechnerisch knapp acht Prozent weniger Stundenlohn. Beobachte: Zwei Werksschließungen sind möglich, aber nicht beschlossen. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "Mercedes fordert 38 statt 35 Wochenstunden ohne mehr Geld. Weil Mercedes 800 Millionen Euro Arbeitskosten in Deutschland sparen will. Betroffen wären Mercedes-Tarifbeschäftigte und mehrere deutsche Werke. Für dich 8,6% mehr Arbeit, gleicher Monatslohn, rechnerisch knapp 8% weniger Stundenlohn. Beobachte zwei Werkschließungen sind möglich, aber nicht beschlossen. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_expected_spoken_text": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
       "minimum_transcript_similarity": 0.82,
       "request_bound_voice_quality_contract": false
     },
     "tiktok": {
       "platform": "tiktok",
       "passed": true,
-      "expected_spoken_text": "Mercedes fordert achtunddreißig statt fünfunddreißig Wochenstunden ohne mehr Geld. Weil Mercedes achthundert Millionen Euro Arbeitskosten in Deutschland sparen will. Betroffen wären Mercedes-Tarifbeschäftigte und mehrere deutsche Werke. Für dich: acht Komma sechs Prozent mehr Arbeit; gleicher Monatslohn, rechnerisch knapp acht Prozent weniger Stundenlohn. Beobachte: Zwei Werksschließungen sind möglich, aber nicht beschlossen. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "Mercedes fordert 38 statt 35 Wochenstunden ohne mehr Geld, weil Mercedes 800 Millionen Euro Arbeitskosten in Deutschland sparen will. Betroffen wären Mercedes-Tarifbeschäftigte und mehrere deutsche Werke. Für dich 8,6% mehr Arbeit, gleicher Monatslohn, rechnerisch knapp 8% weniger Stundenlohn. Beobachte, zwei Werkschließungen sind möglich, aber nicht beschlossen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "similarity": 0.9492,
+      "expected_spoken_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9587,
       "average_logprob": -0.0615,
-      "critical_terms": [
-        {
-          "source": "38",
-          "spoken": "achtunddreißig",
-          "kind": "number"
-        },
-        {
-          "source": "35",
-          "spoken": "fünfunddreißig",
-          "kind": "number"
-        },
-        {
-          "source": "800",
-          "spoken": "achthundert",
-          "kind": "number"
-        },
-        {
-          "source": "8,6",
-          "spoken": "acht Komma sechs",
-          "kind": "number"
-        },
-        {
-          "source": "8",
-          "spoken": "acht",
-          "kind": "number"
-        }
-      ],
+      "critical_terms": [],
       "missing_critical_terms": [],
       "blockers": [],
       "transcription_model": "whisper-large-v3",
       "orthographic_pronunciation_alias_proofs": [],
-      "number_orthographic_alias_proofs": [
-        {
-          "source": "38",
-          "canonical_spoken_form_de": "achtunddreißig",
-          "tts_contract_proved": true,
-          "independent_asr_orthography": "38",
-          "quality_gates_weakened": false
-        },
-        {
-          "source": "35",
-          "canonical_spoken_form_de": "fünfunddreißig",
-          "tts_contract_proved": true,
-          "independent_asr_orthography": "35",
-          "quality_gates_weakened": false
-        },
-        {
-          "source": "800",
-          "canonical_spoken_form_de": "achthundert",
-          "tts_contract_proved": true,
-          "independent_asr_orthography": "800",
-          "quality_gates_weakened": false
-        },
-        {
-          "source": "8,6",
-          "canonical_spoken_form_de": "acht Komma sechs",
-          "tts_contract_proved": true,
-          "independent_asr_orthography": "8,6",
-          "quality_gates_weakened": false
-        },
-        {
-          "source": "8",
-          "canonical_spoken_form_de": "acht",
-          "tts_contract_proved": true,
-          "independent_asr_orthography": "8",
-          "quality_gates_weakened": false
-        }
-      ],
+      "number_orthographic_alias_proofs": [],
       "pronunciation_contract_version": "de-acronym-letter-names-v2",
       "strict_number_audit": {
-        "required": true,
-        "visible_script": "Mercedes fordert 38 statt 35 Wochenstunden ohne mehr Geld. Weil Mercedes 800 Millionen Euro Arbeitskosten in Deutschland sparen will. Betroffen wären Mercedes-Tarifbeschäftigte und mehrere deutsche Werke. Für dich: 8,6 Prozent mehr Arbeit; gleicher Monatslohn, rechnerisch knapp 8 Prozent weniger Stundenlohn. Beobachte: Zwei Werksschließungen sind möglich, aber nicht beschlossen. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "Mercedes fordert achtunddreißig statt fünfunddreißig Wochenstunden ohne mehr Geld. Weil Mercedes achthundert Millionen Euro Arbeitskosten in Deutschland sparen will. Betroffen wären Mercedes-Tarifbeschäftigte und mehrere deutsche Werke. Für dich: acht Komma sechs Prozent mehr Arbeit; gleicher Monatslohn, rechnerisch knapp acht Prozent weniger Stundenlohn. Beobachte: Zwei Werksschließungen sind möglich, aber nicht beschlossen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "number_replacements": {
-          "38": "achtunddreißig",
-          "35": "fünfunddreißig",
-          "800": "achthundert",
-          "8,6": "acht Komma sechs",
-          "8": "acht"
-        },
+        "required": false,
+        "visible_script": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {},
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9492,
+      "raw_similarity_before_safe_normalization": 0.9558,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "Mercedes fordert achtunddreißig statt fünfunddreißig Wochenstunden ohne mehr Geld. Weil Mercedes achthundert Millionen Euro Arbeitskosten in Deutschland sparen will. Betroffen wären Mercedes-Tarifbeschäftigte und mehrere deutsche Werke. Für dich: acht Komma sechs Prozent mehr Arbeit; gleicher Monatslohn, rechnerisch knapp acht Prozent weniger Stundenlohn. Beobachte: Zwei Werksschließungen sind möglich, aber nicht beschlossen. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "Mercedes fordert 38 statt 35 Wochenstunden ohne mehr Geld, weil Mercedes 800 Millionen Euro Arbeitskosten in Deutschland sparen will. Betroffen wären Mercedes-Tarifbeschäftigte und mehrere deutsche Werke. Für dich 8,6% mehr Arbeit, gleicher Monatslohn, rechnerisch knapp 8% weniger Stundenlohn. Beobachte, zwei Werkschließungen sind möglich, aber nicht beschlossen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_expected_spoken_text": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
       "minimum_transcript_similarity": 0.82,
       "request_bound_voice_quality_contract": false
     }
   },
   "marketing_review": {
     "factual_accuracy": {
-      "score": 100.0,
+      "score": 98.0,
       "blockers": [],
       "findings": [
-        "Alle inhaltlichen Vorgaben (Must-Includes) wurden exakt umgesetzt.",
-        "Die harten Verbote (Must-Not-Claims) wurden strikt eingehalten.",
-        "Die Unterscheidung zwischen Forderung und Beschluss sowie die rechnerischen Herleitungen sind absolut präzise und transparent dargestellt."
+        "Alle getroffenen Aussagen über DHL-Preiserhöhungen, Lohn- und Energiekosten sowie Online-Frankierungen sind durch die gelieferten Quellen (DHL Group, rbb24, Tagesschau) exakt gedeckt."
       ]
     },
     "pronunciation_interpretation": {
-      "score": 98.0,
-      "blockers": [],
-      "findings": [
-        "Die Audio-Transkripte stimmen hervorragend mit den Skripten überein (Ähnlichkeit > 94%).",
-        "Die Abweichung im TikTok-Audio ('Folge dem Kanal' statt 'Folge diesem Kanal') ist grammatikalisch vollkommen korrekt und führt zu keinem Punktabzug."
-      ]
-    },
-    "marketing_effectiveness": {
       "score": 96.0,
       "blockers": [],
       "findings": [
-        "Starker, direkter Hook in den ersten Sekunden, der sofort Relevanz erzeugt.",
-        "Hervorragende Aufbereitung komplexer Zahlen (8,6% mehr Arbeit vs. knapp 8% weniger Stundenlohn) sorgt für hohen Nutzwert und Merkfähigkeit."
+        "Das Audio-Transkript stimmt inhaltlich mit dem sichtbaren Skript überein. Die geringfügigen Abweichungen ('Online-Preis' statt 'Onlinepreis' bei YouTube bzw. 'Folge dem Kanal' statt 'Folge diesem Kanal' bei TikTok) sind grammatikalisch korrekt und stellen keinen Sinnverlust oder Fehler dar."
+      ]
+    },
+    "marketing_effectiveness": {
+      "score": 92.0,
+      "blockers": [],
+      "findings": [
+        "Der Einstieg (Hook) lenkt die Aufmerksamkeit direkt auf das relevante Thema der DHL-Portoänderungen.",
+        "Der Nutzen für den Zuschauer wird durch den Hinweis auf den Preisunterschied zwischen Filial- und Online-Frankierung klar und ohne Clickbait vermittelt."
       ]
     },
     "sales_effectiveness": {
-      "score": 95.0,
+      "score": 90.0,
       "blockers": [],
       "findings": [
-        "Sehr seriöser und vertrauenswürdiger Conversion-Pfad.",
-        "Die CTA bietet einen echten Mehrwert ('verifizierte Einordnung') statt leerem Druck."
+        "Die Handlungsaufforderung (CTA) ist plattformgerecht (YouTube: Abo, TikTok: Follow) und bietet einen echten Mehrwert durch verifizierte Einordnung und konkrete Alltagstipps, ohne künstlichen Druck aufzubauen."
       ]
     },
     "platform_fit": {
-      "score": 98.0,
+      "score": 94.0,
       "blockers": [],
       "findings": [
-        "Perfekte Trennung der plattformspezifischen CTAs ('Abonniere' für YouTube, 'Folge' für TikTok).",
-        "Metadaten und Beschreibungen sind plattformgerecht und ansprechend formuliert."
+        "Die Formate für YouTube Shorts und TikTok sind sauber getrennt, nutzen passende Captions, Titel und Hashtags und entsprechen den gängigen Plattformstandards."
       ]
     },
-    "overall_score": 97.0,
+    "overall_score": 94.0,
     "approval_recommendation": "PASS",
     "blockers": [],
     "strengths": [
-      "Exzellente Einhaltung aller redaktionellen und faktischen Leitplanken.",
-      "Hohe sprachliche Präzision bei der Darstellung komplexer wirtschaftlicher Zusammenhänge.",
-      "Starke, plattformgerechte Call-to-Actions ohne künstlichen Druck."
+      "Hervorragende Faktenstreue basierend auf verifizierten Unternehmens- und Nachrichtenquellen.",
+      "Klare Nutzenkommunikation für Verbraucher mit direktem Alltagsbezug.",
+      "Saubere plattformspezifische Ausrichtung für YouTube und TikTok."
     ],
     "repair_instructions": [],
     "score_scale_normalized": true,
     "provider_model_fallback": {
-      "selected_model": "gemini-3.5-flash",
+      "selected_model": "gemini-3.5-flash-lite",
       "attempted_models": [
-        "gemini-3.5-flash"
+        "gemini-3.5-flash",
+        "gemini-3.6-flash",
+        "gemini-3.5-flash-lite"
       ],
-      "provider_failures_before_success": [],
+      "provider_failures_before_success": [
+        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } }",
+        "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 16h4m58.3861692s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"typ"
+      ],
       "same_prompt": true,
       "quality_gate_weakened": false
     }
   },
   "visual_review": {
-    "score": "88",
+    "score": "95",
     "passed": true,
     "blockers": [],
     "findings": [
-      "Sehr gute mobile Lesbarkeit auf allen Plattformen durch kontrastreiche Textboxen im unteren Bilddrittel.",
-      "Unterschiedliche B-Roll-Strategien zwischen YouTube Shorts (Fahrzeugbezug + Analysten) und TikTok (Börsendaten + Studio), beide visuell passend zum Thema Kostenreduktion und Unternehmenszahlen.",
-      "Keine technischen Renderfehler, Bildüberschneidungen oder abgeschnittenen Textzeilen erkennbar."
+      "Visuelle Qualität der Videosequenzen ist hoch und professionell gerendert.",
+      "Die Untertitel sind klar lesbar und gut im mobilen Format positioniert.",
+      "Thematischer Bezug zu DHL-Päckchen und Portoänderungen ist durchgängig durch Requisiten wie Kartons und Logistik-Szenen gegeben."
     ],
     "marketing_visual_strengths": [
-      "Direkter Marken-Hook in YouTube Shorts Szene 1 durch das abgebildete Mercedes-Fahrzeug.",
-      "Seriöse, datenorientierte Bildsprache stärkt die visuelle Glaubwürdigkeit bei Finanz- und Wirtschaftsthemen.",
-      "Klar strukturierte, leicht verständliche Text-Häppchen maximieren die Retention-Wirkung bei mobilen Zuschauern."
+      "Starke vertrauensbasierte Bildsprache durch authentische Logistik- und Verpackungsszenen",
+      "Hervorragende Lesbarkeit der Textoverlays auf allen Plattformen (YouTube Shorts & TikTok)",
+      "Klare visuelle Hierarchie, die den Zuschauer durch die verschiedenen Aspekte der Portoänderung führt"
     ],
-    "provider": "gemini:gemini-3.6-flash",
+    "provider": "gemini:gemini-3.5-flash-lite",
     "reviewed_frames": [
       "youtube_shorts-1.jpg",
       "youtube_shorts-2.jpg",
@@ -302,13 +166,15 @@
       "tiktok-3.jpg"
     ],
     "provider_model_fallback": {
-      "selected_model": "gemini-3.6-flash",
+      "selected_model": "gemini-3.5-flash-lite",
       "attempted_models": [
         "gemini-3.5-flash",
-        "gemini-3.6-flash"
+        "gemini-3.6-flash",
+        "gemini-3.5-flash-lite"
       ],
       "provider_failures_before_success": [
-        "gemini-3.5-flash:TRANSIENT_PROVIDER_FAILURE:provider-failed: Gemini Visual-Audit HTTP 503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } }"
+        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See",
+        "gemini-3.6-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See"
       ],
       "same_frames_and_prompt": true,
       "quality_gate_weakened": false,
@@ -349,14 +215,14 @@
   },
   "blockers": [],
   "strengths": [
-    "Exzellente Einhaltung aller redaktionellen und faktischen Leitplanken.",
-    "Hohe sprachliche Präzision bei der Darstellung komplexer wirtschaftlicher Zusammenhänge.",
-    "Starke, plattformgerechte Call-to-Actions ohne künstlichen Druck."
+    "Hervorragende Faktenstreue basierend auf verifizierten Unternehmens- und Nachrichtenquellen.",
+    "Klare Nutzenkommunikation für Verbraucher mit direktem Alltagsbezug.",
+    "Saubere plattformspezifische Ausrichtung für YouTube und TikTok."
   ],
   "repair_instructions": [],
   "providers": {
-    "marketing": "gemini:gemini-3.5-flash",
-    "visual": "gemini:gemini-3.6-flash",
+    "marketing": "gemini:gemini-3.5-flash-lite",
+    "visual": "gemini:gemini-3.5-flash-lite",
     "audio": "groq:whisper-large-v3-objective-score",
     "conversion": "deterministic-cta-benefit-gate-v1"
   },

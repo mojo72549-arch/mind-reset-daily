@@ -1,0 +1,3378 @@
+{
+  "job_id": "20261114_142725_dhl-paeckchen-was-sich-beim-porto-ab-januar-aendert",
+  "mode": "tayvoriq_context_first_dual_platform_v2",
+  "created_at": "2026-11-14T14:42:25+00:00",
+  "github_run_id": "43604676977",
+  "topic": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+  "language": "Deutsch",
+  "requested_platform": "youtube_tiktok",
+  "target_duration": 35,
+  "approval_status": "PENDING_HUMAN_REVIEW",
+  "render_status": "DONE",
+  "upload_status": "NOT_STARTED_PENDING_HUMAN_APPROVAL",
+  "llm_report": {
+    "source": {
+      "provider": "template:fallback",
+      "fallback": true,
+      "errors": [
+        {
+          "provider": "gemini",
+          "error": "Gemini lieferte kein valides JSON"
+        },
+        {
+          "provider": "groq",
+          "error": "404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions"
+        },
+        {
+          "provider": "huggingface",
+          "error": "400 Client Error: Bad Request for url: https://router.huggingface.co/v1/chat/completions"
+        }
+      ]
+    },
+    "rewrite": {
+      "youtube_shorts": {
+        "attempts": [
+          {
+            "provider": "local:source-grounded-context-template",
+            "fallback": true,
+            "errors": [
+              {
+                "provider": "huggingface",
+                "error": "400 Client Error: Bad Request for url: https://router.huggingface.co/v1/chat/completions"
+              }
+            ],
+            "router_version": "v10",
+            "attempt": 1
+          }
+        ],
+        "provider_editorial_attempts": 1,
+        "provider_repair_attempted": false,
+        "provider_repair_issues_before": [],
+        "provider_repair_issues_after": [],
+        "selected_provider_issues": [],
+        "selected_payload_issues": [],
+        "initial_issues": [],
+        "final_issues": [],
+        "source_gate_issues": [],
+        "local_fallback_generated": false,
+        "local_editorial_repair_used": false,
+        "repair_strategy": "provider",
+        "repaired_fields": [],
+        "rewrite_version": "v27-topic-safe-cta-runtime",
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "spoken_brand_removed": false,
+        "spoken_brand_normalized": "TAYVORIQ=>Tai wo rik",
+        "care_cost_grounding_guard": "standard",
+        "brand_pronunciation": "Tayvorik",
+        "topic_specificity_repaired": false,
+        "topic_specificity_issues_before_repair": [],
+        "topic_specificity_issues_after_repair": [],
+        "topic_specificity_verified_locally": false,
+        "editorial_depth_gate": {
+          "passed": true,
+          "applicable": true,
+          "contract_version": "v1-verified-request-five-answer-recovery",
+          "contract_derived_from_sources": true,
+          "minimum_details_in_script": 3,
+          "available_source_bound_details": 4,
+          "consumed_source_bound_details": 4,
+          "planned_detail_available": false,
+          "planned_detail_consumed": false,
+          "rumor_or_unconfirmed_count": 0,
+          "consumed": [
+            {
+              "group": "confirmed_details",
+              "text": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+              "anchors": [],
+              "matched": [
+                "DHL"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+              "anchors": [],
+              "matched": [
+                "DHL"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+              "anchors": [],
+              "matched": [
+                "betroffen",
+                "kleine",
+                "packchen",
+                "privatkunden",
+                "verschicken"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+              "anchors": [],
+              "matched": [
+                "einen",
+                "frankierung",
+                "kleinsten",
+                "macht",
+                "online",
+                "packchen",
+                "preisunterschied"
+              ]
+            }
+          ],
+          "missing": [],
+          "blockers": [],
+          "quality_gates_weakened": false
+        },
+        "generic_script_allowed_when_specific_evidence_exists": false,
+        "quality_gates_weakened": false,
+        "universal_platform_cta": "Folge und abonniere TAYVORIQ für verifizierte Tech-Trends, klare Einordnungen und konkrete Schritte.",
+        "platform_gate_validation": {
+          "youtube_shorts": {
+            "passed": true,
+            "required_action": "subscribe"
+          },
+          "tiktok": {
+            "passed": true,
+            "required_action": "follow",
+            "distribution": "manual_after_user_approval"
+          }
+        },
+        "generic_contract_repair": {
+          "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+          "script_words": 53,
+          "repair_target_words": 53,
+          "source_bound_minimum_only": true,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "human_story_contract_applied": false,
+          "source_bound_editorial_preserved": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "platform_cta_contract": {
+          "version": "v4-platform-specific-editorial-storytelling",
+          "platform": "youtube_shorts",
+          "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "source_bound_viewer_value": false,
+          "viewer_value": "",
+          "next_video_bridge": "",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "voice_and_captions_share_editorial_source": true,
+          "visible_script_audio_overlay_same_source": true,
+          "overlay_repeats_full_voiceover": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_visual_standard": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "topic": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+          "domain": "society",
+          "treatment_id": "PLACE_AND_SCALE",
+          "visual_signature": "9d596de3f91ca6dd",
+          "platform": "youtube_shorts",
+          "platform_specific_master_required": true,
+          "same_master_reuse_forbidden": true,
+          "full_voiceover_as_overlay_forbidden": true,
+          "supporting_callouts_only": true,
+          "random_decorative_visuals_forbidden": true,
+          "filler_scenes_forbidden": true,
+          "explanatory_graphics_enabled": true,
+          "music_arc": "restrained opening -> explanatory space -> measured tension -> resolve",
+          "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+          "voice_priority": true,
+          "quality_gates_weakened": false
+        },
+        "editorial_quality_gate": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "passed": true,
+          "issues": [],
+          "checklist": {
+            "interesting": true,
+            "beginner_clear": true,
+            "voice_pacing": true,
+            "visual_explanatory": true,
+            "visually_distinct": true,
+            "no_filler": true,
+            "watch_to_end": true
+          },
+          "metrics": {
+            "scene_count": 7,
+            "unique_visual_queries": 7,
+            "unique_visual_types": 7,
+            "callout_count": 3,
+            "script_words": 55,
+            "estimated_wpm": 95.8,
+            "duration_spread_seconds": 1.7,
+            "generated_explainer_scenes": 0
+          }
+        },
+        "platform_story_profile": {
+          "platform": "youtube_shorts",
+          "beats": [
+            "hook",
+            "context",
+            "explanation",
+            "evidence",
+            "development_problem",
+            "key_insight",
+            "consequence_outlook"
+          ],
+          "scene_count": 7,
+          "narrative_priority": "context, evidence and explanatory depth",
+          "estimated_wpm": 95.8,
+          "preferred_wpm": [
+            108,
+            138
+          ],
+          "hard_max_wpm": 160,
+          "caption_policy": "readable full captions plus sparse semantic callouts",
+          "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+        }
+      },
+      "tiktok": {
+        "attempts": [
+          {
+            "provider": "local:source-grounded-context-template",
+            "fallback": true,
+            "errors": [],
+            "router_version": "v10",
+            "attempt": 1
+          }
+        ],
+        "provider_editorial_attempts": 1,
+        "provider_repair_attempted": false,
+        "provider_repair_issues_before": [],
+        "provider_repair_issues_after": [],
+        "selected_provider_issues": [],
+        "selected_payload_issues": [],
+        "initial_issues": [],
+        "final_issues": [],
+        "source_gate_issues": [],
+        "local_fallback_generated": false,
+        "local_editorial_repair_used": false,
+        "repair_strategy": "provider",
+        "repaired_fields": [],
+        "rewrite_version": "v27-topic-safe-cta-runtime",
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "spoken_brand_removed": false,
+        "spoken_brand_normalized": "TAYVORIQ=>Tai wo rik",
+        "care_cost_grounding_guard": "standard",
+        "brand_pronunciation": "Tayvorik",
+        "topic_specificity_repaired": false,
+        "topic_specificity_issues_before_repair": [],
+        "topic_specificity_issues_after_repair": [],
+        "topic_specificity_verified_locally": false,
+        "editorial_depth_gate": {
+          "passed": true,
+          "applicable": true,
+          "contract_version": "v1-verified-request-five-answer-recovery",
+          "contract_derived_from_sources": true,
+          "minimum_details_in_script": 3,
+          "available_source_bound_details": 4,
+          "consumed_source_bound_details": 4,
+          "planned_detail_available": false,
+          "planned_detail_consumed": false,
+          "rumor_or_unconfirmed_count": 0,
+          "consumed": [
+            {
+              "group": "confirmed_details",
+              "text": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+              "anchors": [],
+              "matched": [
+                "DHL"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+              "anchors": [],
+              "matched": [
+                "DHL"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+              "anchors": [],
+              "matched": [
+                "betroffen",
+                "kleine",
+                "packchen",
+                "privatkunden",
+                "verschicken"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+              "anchors": [],
+              "matched": [
+                "einen",
+                "frankierung",
+                "kleinsten",
+                "macht",
+                "online",
+                "packchen",
+                "preisunterschied"
+              ]
+            }
+          ],
+          "missing": [],
+          "blockers": [],
+          "quality_gates_weakened": false
+        },
+        "generic_script_allowed_when_specific_evidence_exists": false,
+        "quality_gates_weakened": false,
+        "universal_platform_cta": "Folge und abonniere TAYVORIQ für verifizierte Tech-Trends, klare Einordnungen und konkrete Schritte.",
+        "platform_gate_validation": {
+          "youtube_shorts": {
+            "passed": true,
+            "required_action": "subscribe"
+          },
+          "tiktok": {
+            "passed": true,
+            "required_action": "follow",
+            "distribution": "manual_after_user_approval"
+          }
+        },
+        "generic_contract_repair": {
+          "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+          "script_words": 53,
+          "repair_target_words": 53,
+          "source_bound_minimum_only": true,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "human_story_contract_applied": false,
+          "source_bound_editorial_preserved": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "platform_cta_contract": {
+          "version": "v4-platform-specific-editorial-storytelling",
+          "platform": "tiktok",
+          "cta": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "source_bound_viewer_value": false,
+          "viewer_value": "",
+          "next_video_bridge": "",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "voice_and_captions_share_editorial_source": true,
+          "visible_script_audio_overlay_same_source": true,
+          "overlay_repeats_full_voiceover": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_visual_standard": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "topic": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+          "domain": "society",
+          "treatment_id": "EVIDENCE_CHAIN",
+          "visual_signature": "5abe6430b2118609",
+          "platform": "tiktok",
+          "platform_specific_master_required": true,
+          "same_master_reuse_forbidden": true,
+          "full_voiceover_as_overlay_forbidden": true,
+          "supporting_callouts_only": true,
+          "random_decorative_visuals_forbidden": true,
+          "filler_scenes_forbidden": true,
+          "explanatory_graphics_enabled": true,
+          "music_arc": "immediate restrained pulse -> explanatory space -> short resolve",
+          "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+          "voice_priority": true,
+          "quality_gates_weakened": false
+        },
+        "editorial_quality_gate": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "passed": true,
+          "issues": [],
+          "checklist": {
+            "interesting": true,
+            "beginner_clear": true,
+            "voice_pacing": true,
+            "visual_explanatory": true,
+            "visually_distinct": true,
+            "no_filler": true,
+            "watch_to_end": true
+          },
+          "metrics": {
+            "scene_count": 6,
+            "unique_visual_queries": 6,
+            "unique_visual_types": 6,
+            "callout_count": 3,
+            "script_words": 55,
+            "estimated_wpm": 95.8,
+            "duration_spread_seconds": 1.99,
+            "generated_explainer_scenes": 0
+          }
+        },
+        "platform_story_profile": {
+          "platform": "tiktok",
+          "beats": [
+            "hook",
+            "why_it_matters",
+            "context",
+            "explanation",
+            "key_insight",
+            "consequence_outlook"
+          ],
+          "scene_count": 6,
+          "narrative_priority": "immediate relevance and vertical guidance",
+          "estimated_wpm": 95.8,
+          "preferred_wpm": [
+            118,
+            145
+          ],
+          "hard_max_wpm": 165,
+          "caption_policy": "readable full captions plus sparse semantic callouts",
+          "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+        }
+      }
+    }
+  },
+  "quality_report": {
+    "passed": true,
+    "reason": "VOICE_REVISION_REAUDIT_REQUIRED",
+    "deterministic_passed": true,
+    "preapproval_ai_audit": {
+      "passed": true,
+      "scores": {
+        "factual_accuracy": 98,
+        "pronunciation": 98,
+        "marketing": 92,
+        "sales": 90,
+        "platform_fit": 94,
+        "visual": 95,
+        "overall": 95
+      },
+      "blockers": []
+    },
+    "audit_persistence_version": "v2-repeatable-existing-render"
+  },
+  "text_package": {
+    "title": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+    "category": "world_society",
+    "trend_angle": "Welche konkrete Veränderung hinter DHL-Päckchen: Was sich beim Porto ab Januar ändert wirklich steckt.",
+    "trend_signal": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+    "named_entities": [],
+    "why_now": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+    "affected_groups": [
+      "Betroffen sind Privatkunden, die kleine Päckchen verschicken."
+    ],
+    "viewer_test": "Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig.",
+    "series_next": "",
+    "hook": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+    "script": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+    "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+    "scenes": [
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "DHL-Päckchen: Was sich beim Porto ab Januar ändert news documentary vertical video place people or public setting establishing footage vertical 9:16 premium documentary footage natural composition",
+        "overlay_text": "",
+        "spoken_chunk": "DHL plant ab Januar höhere Filialpreise für Päckchen."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "DHL-Päckchen: Was sich beim Porto ab Januar ändert real location vertical video location map document or everyday context vertical 9:16 premium documentary footage natural composition",
+        "overlay_text": "",
+        "spoken_chunk": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "DHL-Päckchen: Was sich beim Porto ab Januar ändert investigation documentary vertical video real process institution or community mechanism vertical 9:16 premium documentary footage natural composition",
+        "overlay_text": "",
+        "spoken_chunk": "Betroffen sind Privatkunden, die kleine Päckchen verschicken."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "DHL-Päckchen: Was sich beim Porto ab Januar ändert relevant people workplace vertical video evidence detail showing what changed vertical 9:16 premium documentary footage natural composition",
+        "overlay_text": "",
+        "spoken_chunk": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "DHL-Päckchen: Was sich beim Porto ab Januar ändert German news context vertical video daily-life human impact footage vertical 9:16 premium documentary footage natural composition",
+        "overlay_text": "",
+        "spoken_chunk": "Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "DHL-Päckchen: Was sich beim Porto ab Januar ändert close up evidence context vertical video key number place or object detail vertical 9:16 premium documentary footage natural composition",
+        "overlay_text": "",
+        "spoken_chunk": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte."
+      }
+    ],
+    "youtube_metadata": {
+      "title": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+      "description": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+      "hashtags": [
+        "#TAYVORIQ",
+        "#Trendjagd",
+        "#Gesellschaft"
+      ],
+      "tags": [
+        "world_society",
+        "TAYVORIQ",
+        "Trendjagd",
+        "Shorts"
+      ]
+    },
+    "fallback_used": true,
+    "language": "Deutsch",
+    "platform": "youtube_shorts",
+    "target_duration": 35,
+    "llm_provider": "template:fallback",
+    "viewer_questions": {
+      "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf DHL-Päckchen: Was sich beim Porto ab Januar ändert.",
+      "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
+      "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
+      "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
+      "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
+      "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
+    },
+    "editorial_answers": {
+      "what_happened": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+      "why_happening": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+      "who_is_affected": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+      "personal_impact": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+      "action_now": "Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig."
+    },
+    "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+    "source_context": {
+      "verified_at": "2026-11-14T09:25:49.030403+00:00",
+      "independent_news_count": 3,
+      "sources": [
+        {
+          "publisher": "DHL Group",
+          "url": "https://group.dhl.com/de/presse/pressemitteilungen/2026/deutsche-post-ag-passt-paketpreise-fuer-privatkunden-zum-1-januar-2027-moderat-an.html",
+          "published_at": "2026-11-13T10:00:00+01:00",
+          "reporting_origin": "Originäre Mitteilung des Unternehmens",
+          "supports": "DHL kündigt neue Privatkundentarife zum 1. Januar 2027 an. Gründe sind gestiegene Lohnkosten und Energiekosten. Kleine Päckchen sollen ab 4,49 Euro online mit Sendungsverfolgung und Haftung bis 20 Euro angeboten werden. Die neuen Preise benötigen die Zustimmung der Bundesnetzagentur."
+        },
+        {
+          "publisher": "rbb24 Inforadio",
+          "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/11/dhl-erhoeht-paketpreise-2027.html",
+          "published_at": "2026-11-13T11:00:00+01:00",
+          "reporting_origin": "rbb24 Inforadio, Beitrag von Jens Lehmann",
+          "supports": "Die Redaktion nennt für das Päckchen S beim geplanten Tarif in Deutschland 5,19 Euro in der Filiale und 4,49 Euro online. Die Bundesnetzagentur muss die neuen Tarife noch genehmigen."
+        },
+        {
+          "publisher": "Tagesschau",
+          "url": "https://www.tagesschau.de/wirtschaft/verbraucher/post-hebt-paketpreise-privatkunden-an-2027-100.html",
+          "published_at": "2026-11-13T13:20:00+01:00",
+          "reporting_origin": "ARD-aktuell Verbrauchernachrichten",
+          "supports": "Die Tagesschau bestätigt für Januar den geplanten Filialpreis von 5,19 Euro für Päckchen S sowie die neue Sendungsverfolgung und Haftung bis 20 Euro."
+        }
+      ],
+      "fallback_editorial_answers": {
+        "what_happened": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+        "why_happening": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+        "who_is_affected": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+        "personal_impact": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+        "action_now": "Vergleiche vor dem Versand Filialpreis und Onlinepreis."
+      },
+      "retention_v5": {
+        "viral_potential": 85,
+        "tayvoriq_fit": 94,
+        "novelty_score": 88,
+        "series_fit_score": 79,
+        "return_viewer_score": 86,
+        "follow_conversion_potential": 84,
+        "open_loop_potential": 74,
+        "proposed_series_id": "",
+        "proposed_series_name": "",
+        "next_episode_candidate": "",
+        "recommended_cta_type": "EXPERTISE",
+        "primary_hook": "Dasselbe DHL-Päckchen kann in der Filiale künftig siebzig Cent mehr kosten als online.",
+        "viewer_question": "Warum kostet dieselbe Sendung je nach Frankierung unterschiedlich viel?",
+        "explanation_core": "DHL nennt gestiegene Lohn- und Energiekosten als Treiber. Der Konzern will die Filialpreise und die Preise bei Online-Frankierung stärker unterscheiden.",
+        "surprise_or_reframe": "Das kleine Päckchen soll online 4,49 Euro kosten und in der Filiale 5,19 Euro. Neu sind Sendungsverfolgung und Haftung bis zwanzig Euro.",
+        "practical_relevance": "Wer gelegentlich kleine Waren verschickt, kann künftig vorab den Onlinepreis und die Konditionen in der Filiale vergleichen.",
+        "follow_reason": "TAYVORIQ rechnet Preisänderungen an konkreten Beispielen aus dem deutschen Alltag durch.",
+        "open_loop": "",
+        "open_loop_status": "NONE",
+        "cta_type": "EXPERTISE",
+        "cta_text": "Für konkrete Preisvergleiche im Alltag folg TAYVORIQ.",
+        "trend_selection_score": 87
+      },
+      "growth_v2": {
+        "growth_score": 88,
+        "binding_score": 92,
+        "priority_score": 89,
+        "tier": "primary",
+        "series_candidate": false,
+        "targets": "10k/20k/50k/100k are optimization targets, never guarantees"
+      },
+      "claim_coherence": {
+        "passed": true,
+        "reasons": []
+      },
+      "audience_growth_v3": {
+        "subscriber_conversion_score": 83,
+        "returning_viewer_score": 87,
+        "continuation_score": 74,
+        "hook_strength_score": 55,
+        "standalone_payoff_score": 94,
+        "selection_priority_score": 87,
+        "promotion_test_candidate": true,
+        "promotion_requires_observed_performance": true,
+        "paid_boost_auto_enabled": false,
+        "optimization_goal": "turn qualified viewers into returning viewers and followers without weakening quality gates"
+      },
+      "evidence_status": "verified_editorial_sources",
+      "event_at": "2026-11-13T10:00:00+01:00",
+      "published_at": "2026-11-13T10:00:00+01:00",
+      "retrieved_at": "2026-11-14T09:25:49.030403+00:00",
+      "last_substantive_update_at": "2026-11-13T13:20:00+01:00",
+      "valid_until": "2026-11-16T18:00:00+01:00",
+      "confirmed_facts": "DHL nennt für das Päckchen S 4,49 Euro bei Online-Frankierung und 5,19 Euro in der Filiale. Sendungsverfolgung und Haftung bis 20 Euro sollen hinzukommen.",
+      "uncertainties": "Die Bundesnetzagentur muss die beantragten Tarifänderungen abschließend genehmigen.",
+      "why_now": "DHL hat am 13. November die geplanten Privatkundenpreise ab Januar angekündigt.",
+      "visual_plan": [
+        "Päckchen auf einer digitalen Waage",
+        "Filialschalter und Online-Frankierung im geteilten Bild",
+        "Preisvergleich mit separaten Preisfeldern",
+        "Sendungsverfolgung und Haftung als zwei schlichte Symbole"
+      ],
+      "score_breakdown": {
+        "persoenliche_folgen": 19,
+        "zielgruppennaehe": 22,
+        "einstieg": 14,
+        "neuer_anlass": 15,
+        "erklaerwert": 10,
+        "aufloesung": 9,
+        "serienanschluss": 4
+      },
+      "total_score": 93,
+      "duplicate_status": "NEW",
+      "history_candidates_checked": 54,
+      "reach_gate": {
+        "why_now": "DHL hat am 13. November die geplanten Privatkundenpreise ab Januar angekündigt.",
+        "cross_platform_signal_count": 0,
+        "policy": "REGIONAL_GERMANY_CHANNEL_EVIDENCE_V2",
+        "scope": "germany",
+        "local_only_rejected": false,
+        "reach_score": 113
+      }
+    },
+    "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt.",
+    "script_body": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig.",
+    "pronunciation_map": {
+      "TAYVORIQ": "Tayvorik"
+    },
+    "context_metrics": {
+      "cta_start_ratio": 0.868,
+      "body_words": 46,
+      "cta_words": 7,
+      "editorial_body_words": 46,
+      "script_words": 53,
+      "minimum_script_words": 51,
+      "maximum_script_words": 63,
+      "validator_minimum_words": 51,
+      "semantic_pre_render_gate": true,
+      "retention_contract_v5_locked": true,
+      "follow_conversion_gate": "PASS",
+      "return_viewer_gate": "PASS",
+      "audible_cta_budget_compaction": []
+    },
+    "trend_origin": "manual-or-provider-only",
+    "fallback_policy": "cloud-primary-local-last-resort",
+    "visual_topic_guard": "strict-topic-bound-v23",
+    "editorial_depth_gate": {
+      "passed": true,
+      "applicable": true,
+      "contract_version": "v1-verified-request-five-answer-recovery",
+      "contract_derived_from_sources": true,
+      "minimum_details_in_script": 3,
+      "available_source_bound_details": 4,
+      "consumed_source_bound_details": 4,
+      "planned_detail_available": false,
+      "planned_detail_consumed": false,
+      "rumor_or_unconfirmed_count": 0,
+      "consumed": [
+        {
+          "group": "confirmed_details",
+          "text": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+          "anchors": [],
+          "matched": [
+            "DHL"
+          ]
+        },
+        {
+          "group": "confirmed_details",
+          "text": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+          "anchors": [],
+          "matched": [
+            "DHL"
+          ]
+        },
+        {
+          "group": "confirmed_details",
+          "text": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+          "anchors": [],
+          "matched": [
+            "betroffen",
+            "kleine",
+            "packchen",
+            "privatkunden",
+            "verschicken"
+          ]
+        },
+        {
+          "group": "confirmed_details",
+          "text": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+          "anchors": [],
+          "matched": [
+            "einen",
+            "frankierung",
+            "kleinsten",
+            "macht",
+            "online",
+            "packchen",
+            "preisunterschied"
+          ]
+        }
+      ],
+      "missing": [],
+      "blockers": [],
+      "quality_gates_weakened": false
+    },
+    "what_happened": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+    "why_happening": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+    "who_is_affected": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+    "personal_impact": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+    "action_now": "Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig.",
+    "universal_platform_cta": true,
+    "shared_master_render_requested": true,
+    "approval_status": "PENDING_REVIEW",
+    "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+    "instagram_status": "NOT_CONFIGURED_EXCLUDED",
+    "content_editor_version": "v27-topic-safe-cta-runtime",
+    "final_package_contract": {
+      "version": "v27-topic-safe-cta-runtime",
+      "word_count": 58,
+      "minimum_words": 51,
+      "maximum_words": 63,
+      "quality_gates_weakened": false
+    },
+    "platform_gate_validation": {
+      "youtube_shorts": {
+        "passed": true,
+        "required_action": "subscribe"
+      },
+      "tiktok": {
+        "passed": true,
+        "required_action": "follow",
+        "distribution": "manual_after_user_approval"
+      },
+      "platform_action": {
+        "passed": true,
+        "platform": "youtube_shorts",
+        "expected_prefix": "abonniere diesen kanal"
+      }
+    },
+    "source_bound_editorial_compiler": "verified-request-canonical-v2",
+    "authoritative_editorial_prevalidation_lock": {
+      "version": "v2-single-source-bound-prevalidation",
+      "body_words": 42,
+      "source_context_changed": false,
+      "quality_gates_weakened": false
+    },
+    "series_id": null,
+    "series_name": null,
+    "episode_id": null,
+    "episode_number": null,
+    "continuity_hook": null,
+    "next_episode_candidate": null,
+    "primary_hook": "Dasselbe DHL-Päckchen kann in der Filiale künftig siebzig Cent mehr kosten als online.",
+    "viewer_question": "Warum kostet dieselbe Sendung je nach Frankierung unterschiedlich viel?",
+    "explanation_core": "DHL nennt gestiegene Lohn- und Energiekosten als Treiber. Der Konzern will die Filialpreise und die Preise bei Online-Frankierung stärker unterscheiden.",
+    "surprise_or_reframe": "Das kleine Päckchen soll online 4,49 Euro kosten und in der Filiale 5,19 Euro. Neu sind Sendungsverfolgung und Haftung bis zwanzig Euro.",
+    "practical_relevance": "Wer gelegentlich kleine Waren verschickt, kann künftig vorab den Onlinepreis und die Konditionen in der Filiale vergleichen.",
+    "follow_reason": "TAYVORIQ rechnet Preisänderungen an konkreten Beispielen aus dem deutschen Alltag durch.",
+    "open_loop": "",
+    "open_loop_status": "NONE",
+    "cta_type": "EXPERTISE",
+    "cta_text": "Für konkrete Preisvergleiche im Alltag folg TAYVORIQ.",
+    "audible_cta_compacted": false,
+    "audible_cta_word_count": 7,
+    "retention_contract_v5": {
+      "schema_version": "tayvoriq-retention-v5",
+      "contract_mode": "native_v5",
+      "request_id": "telegram-3577-trend-1",
+      "topic": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+      "trend_scope": "business_economy",
+      "content_angle": "Anhand eines kleinen Päckchens erklären, warum künftig der gewählte Versandweg den Preis beeinflusst und was die zusätzlichen Leistungen bringen.",
+      "source_context_sha256": "67c14e8e593cf41d0e7b2e725ca621526b61193d3a40da5967f7bfa9e5b03df8",
+      "series_id": null,
+      "series_name": null,
+      "episode_id": null,
+      "episode_number": null,
+      "continuity_hook": null,
+      "next_episode_candidate": null,
+      "primary_hook": "Dasselbe DHL-Päckchen kann in der Filiale künftig siebzig Cent mehr kosten als online.",
+      "viewer_question": "Warum kostet dieselbe Sendung je nach Frankierung unterschiedlich viel?",
+      "explanation_core": "DHL nennt gestiegene Lohn- und Energiekosten als Treiber. Der Konzern will die Filialpreise und die Preise bei Online-Frankierung stärker unterscheiden.",
+      "surprise_or_reframe": "Das kleine Päckchen soll online 4,49 Euro kosten und in der Filiale 5,19 Euro. Neu sind Sendungsverfolgung und Haftung bis zwanzig Euro.",
+      "practical_relevance": "Wer gelegentlich kleine Waren verschickt, kann künftig vorab den Onlinepreis und die Konditionen in der Filiale vergleichen.",
+      "follow_reason": "TAYVORIQ rechnet Preisänderungen an konkreten Beispielen aus dem deutschen Alltag durch.",
+      "open_loop": "",
+      "open_loop_status": "NONE",
+      "cta_type": "EXPERTISE",
+      "cta_text": "Für konkrete Preisvergleiche im Alltag folg TAYVORIQ.",
+      "next_episode_queue_status": null,
+      "sensitive_story": false,
+      "approved_story_body": null,
+      "editorial_story_contract_version": 0,
+      "quality_gates_weakened": false,
+      "lifecycle_state": "RETENTION_CONTRACT_LOCKED",
+      "follow_conversion_gate": {
+        "result": "PASS",
+        "repair": null,
+        "issues": []
+      },
+      "story_depth_gate": {
+        "result": "PASS",
+        "repair": null,
+        "issues": []
+      },
+      "contract_sha256": "cf70e90dd9afb0f44490a9f205b1bcbcf577c16bbe213826784a6ecc0b59e7b4"
+    },
+    "follow_conversion_gate": {
+      "result": "PASS",
+      "repair": null,
+      "issues": []
+    },
+    "return_viewer_gate": {
+      "result": "PASS",
+      "issues": []
+    },
+    "story_depth_gate": {
+      "result": "PASS",
+      "repair": null,
+      "issues": []
+    },
+    "approved_story_body": null,
+    "editorial_story_contract_version": 0,
+    "retention_contract_locked": true,
+    "source_bound_minimum_padding": {
+      "version": "v34-source-bound-minimum-only",
+      "padding_words": 4,
+      "original_body_words": 42,
+      "final_body_words": 46,
+      "source_context_changed": false,
+      "quality_gates_weakened": false
+    },
+    "generic_contract_repair": {
+      "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+      "script_words": 53,
+      "repair_target_words": 53,
+      "source_bound_minimum_only": true,
+      "repair_target_met": true,
+      "validator_minimum_words": 51,
+      "quality_gates_weakened": false,
+      "semantic_pre_render_gate": true,
+      "legacy_validator_passed": true,
+      "human_story_contract_applied": false,
+      "source_bound_editorial_preserved": true,
+      "placeholder_language_blocked": true,
+      "boundary": "captured-v25-to-v20-render-call"
+    },
+    "authoritative_editorial_lock": {
+      "version": "v2-v11-source-bound-pre-and-postcondition",
+      "body_words": 46,
+      "source_context_preserved": true,
+      "approved_source_restored": false,
+      "bounded_shortfall_drift_accepted": true,
+      "quality_gates_weakened": false
+    },
+    "golden_quality_floor": {
+      "version": "v1",
+      "passed": true,
+      "accepted_quality_may_not_regress": true,
+      "operator_rejections_are_negative_fixtures": true,
+      "quality_gates_weakened": false
+    },
+    "pronunciation_contract": {
+      "version": "v4-human-natural-explanatory-narrator",
+      "visible_script_preserved": true,
+      "terms": {},
+      "voice_router": "chatterbox-v3-human-narrator-v28",
+      "artificial_compound_splitting": false,
+      "narrator_pitch_shift_applied": false,
+      "calm_explanatory_pacing_required": true,
+      "max_atempo": 1.2,
+      "audio_end_padding_seconds": 0.55,
+      "quality_gates_weakened": false
+    },
+    "platform_cta_contract": {
+      "version": "v4-platform-specific-editorial-storytelling",
+      "platform": "youtube_shorts",
+      "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "source_bound_viewer_value": false,
+      "viewer_value": "",
+      "next_video_bridge": "",
+      "youtube_uses_subscribe_only": true,
+      "tiktok_uses_follow_only": true,
+      "llm_action_allowed": false,
+      "voice_and_captions_share_editorial_source": true,
+      "visible_script_audio_overlay_same_source": true,
+      "overlay_repeats_full_voiceover": false,
+      "quality_gates_weakened": false
+    },
+    "editorial_visual_standard": {
+      "version": "tayvoriq-editorial-visual-standard-v1",
+      "topic": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+      "domain": "society",
+      "treatment_id": "PLACE_AND_SCALE",
+      "visual_signature": "9d596de3f91ca6dd",
+      "platform": "youtube_shorts",
+      "platform_specific_master_required": true,
+      "same_master_reuse_forbidden": true,
+      "full_voiceover_as_overlay_forbidden": true,
+      "supporting_callouts_only": true,
+      "random_decorative_visuals_forbidden": true,
+      "filler_scenes_forbidden": true,
+      "explanatory_graphics_enabled": true,
+      "music_arc": "restrained opening -> explanatory space -> measured tension -> resolve",
+      "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+      "voice_priority": true,
+      "quality_gates_weakened": false
+    },
+    "platform_story_profile": {
+      "platform": "youtube_shorts",
+      "beats": [
+        "hook",
+        "context",
+        "explanation",
+        "evidence",
+        "development_problem",
+        "key_insight",
+        "consequence_outlook"
+      ],
+      "scene_count": 7,
+      "narrative_priority": "context, evidence and explanatory depth",
+      "estimated_wpm": 95.8,
+      "preferred_wpm": [
+        108,
+        138
+      ],
+      "hard_max_wpm": 160,
+      "caption_policy": "readable full captions plus sparse semantic callouts",
+      "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+    },
+    "editorial_quality_gate": {
+      "version": "tayvoriq-editorial-visual-standard-v1",
+      "passed": true,
+      "issues": [],
+      "checklist": {
+        "interesting": true,
+        "beginner_clear": true,
+        "voice_pacing": true,
+        "visual_explanatory": true,
+        "visually_distinct": true,
+        "no_filler": true,
+        "watch_to_end": true
+      },
+      "metrics": {
+        "scene_count": 7,
+        "unique_visual_queries": 7,
+        "unique_visual_types": 7,
+        "callout_count": 3,
+        "script_words": 55,
+        "estimated_wpm": 95.8,
+        "duration_spread_seconds": 1.7,
+        "generated_explainer_scenes": 0
+      }
+    },
+    "tiktok_metadata": {
+      "title": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+      "caption": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+      "hashtags": [
+        "#TAYVORIQ",
+        "#Trendjagd",
+        "#Gesellschaft"
+      ],
+      "privacy_default": "PUBLIC_TO_EVERYONE",
+      "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+    },
+    "speech_preflight": {
+      "passed": true,
+      "visible_script_preserved": true,
+      "tts_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "number_replacements": {},
+      "brand_spoken": false,
+      "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+      "version": "v24-visible-to-tts-number-and-brand-proof",
+      "brand_replacements": {
+        "TAYVORIQ": "Tayvorik"
+      },
+      "brand_normalization_version": "final-v20-tayvorik-v1"
+    }
+  },
+  "variants": {
+    "youtube_shorts": {
+      "text_package": {
+        "title": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+        "category": "world_society",
+        "trend_angle": "Welche konkrete Veränderung hinter DHL-Päckchen: Was sich beim Porto ab Januar ändert wirklich steckt.",
+        "trend_signal": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+        "named_entities": [],
+        "why_now": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+        "affected_groups": [
+          "Betroffen sind Privatkunden, die kleine Päckchen verschicken."
+        ],
+        "viewer_test": "Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig.",
+        "series_next": "",
+        "hook": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+        "script": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "scenes": [
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "courier handing cardboard parcel to customer",
+            "overlay_text": "",
+            "spoken_chunk": "DHL plant ab Januar höhere Filialpreise für Päckchen."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "worker packing cardboard parcel",
+            "overlay_text": "",
+            "spoken_chunk": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "cardboard parcel sorting conveyor",
+            "overlay_text": "",
+            "spoken_chunk": "Betroffen sind Privatkunden, die kleine Päckchen verschicken."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "shipping label on cardboard box",
+            "overlay_text": "",
+            "spoken_chunk": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "worker packing boxes for shipment",
+            "overlay_text": "",
+            "spoken_chunk": "Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "courier delivering cardboard package",
+            "overlay_text": "",
+            "spoken_chunk": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte."
+          }
+        ],
+        "youtube_metadata": {
+          "title": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+          "description": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "tags": [
+            "world_society",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "fallback_used": true,
+        "language": "Deutsch",
+        "platform": "youtube_shorts",
+        "target_duration": 35,
+        "llm_provider": "template:fallback",
+        "viewer_questions": {
+          "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf DHL-Päckchen: Was sich beim Porto ab Januar ändert.",
+          "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
+          "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
+          "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
+          "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
+          "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
+        },
+        "editorial_answers": {
+          "what_happened": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+          "why_happening": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+          "who_is_affected": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+          "personal_impact": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+          "action_now": "Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig."
+        },
+        "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+        "source_context": {
+          "verified_at": "2026-11-14T09:25:49.030403+00:00",
+          "independent_news_count": 3,
+          "sources": [
+            {
+              "publisher": "DHL Group",
+              "url": "https://group.dhl.com/de/presse/pressemitteilungen/2026/deutsche-post-ag-passt-paketpreise-fuer-privatkunden-zum-1-januar-2027-moderat-an.html",
+              "published_at": "2026-11-13T10:00:00+01:00",
+              "reporting_origin": "Originäre Mitteilung des Unternehmens",
+              "supports": "DHL kündigt neue Privatkundentarife zum 1. Januar 2027 an. Gründe sind gestiegene Lohnkosten und Energiekosten. Kleine Päckchen sollen ab 4,49 Euro online mit Sendungsverfolgung und Haftung bis 20 Euro angeboten werden. Die neuen Preise benötigen die Zustimmung der Bundesnetzagentur."
+            },
+            {
+              "publisher": "rbb24 Inforadio",
+              "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/11/dhl-erhoeht-paketpreise-2027.html",
+              "published_at": "2026-11-13T11:00:00+01:00",
+              "reporting_origin": "rbb24 Inforadio, Beitrag von Jens Lehmann",
+              "supports": "Die Redaktion nennt für das Päckchen S beim geplanten Tarif in Deutschland 5,19 Euro in der Filiale und 4,49 Euro online. Die Bundesnetzagentur muss die neuen Tarife noch genehmigen."
+            },
+            {
+              "publisher": "Tagesschau",
+              "url": "https://www.tagesschau.de/wirtschaft/verbraucher/post-hebt-paketpreise-privatkunden-an-2027-100.html",
+              "published_at": "2026-11-13T13:20:00+01:00",
+              "reporting_origin": "ARD-aktuell Verbrauchernachrichten",
+              "supports": "Die Tagesschau bestätigt für Januar den geplanten Filialpreis von 5,19 Euro für Päckchen S sowie die neue Sendungsverfolgung und Haftung bis 20 Euro."
+            }
+          ],
+          "fallback_editorial_answers": {
+            "what_happened": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+            "why_happening": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+            "who_is_affected": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+            "personal_impact": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+            "action_now": "Vergleiche vor dem Versand Filialpreis und Onlinepreis."
+          },
+          "retention_v5": {
+            "viral_potential": 85,
+            "tayvoriq_fit": 94,
+            "novelty_score": 88,
+            "series_fit_score": 79,
+            "return_viewer_score": 86,
+            "follow_conversion_potential": 84,
+            "open_loop_potential": 74,
+            "proposed_series_id": "",
+            "proposed_series_name": "",
+            "next_episode_candidate": "",
+            "recommended_cta_type": "EXPERTISE",
+            "primary_hook": "Dasselbe DHL-Päckchen kann in der Filiale künftig siebzig Cent mehr kosten als online.",
+            "viewer_question": "Warum kostet dieselbe Sendung je nach Frankierung unterschiedlich viel?",
+            "explanation_core": "DHL nennt gestiegene Lohn- und Energiekosten als Treiber. Der Konzern will die Filialpreise und die Preise bei Online-Frankierung stärker unterscheiden.",
+            "surprise_or_reframe": "Das kleine Päckchen soll online 4,49 Euro kosten und in der Filiale 5,19 Euro. Neu sind Sendungsverfolgung und Haftung bis zwanzig Euro.",
+            "practical_relevance": "Wer gelegentlich kleine Waren verschickt, kann künftig vorab den Onlinepreis und die Konditionen in der Filiale vergleichen.",
+            "follow_reason": "TAYVORIQ rechnet Preisänderungen an konkreten Beispielen aus dem deutschen Alltag durch.",
+            "open_loop": "",
+            "open_loop_status": "NONE",
+            "cta_type": "EXPERTISE",
+            "cta_text": "Für konkrete Preisvergleiche im Alltag folg TAYVORIQ.",
+            "trend_selection_score": 87
+          },
+          "growth_v2": {
+            "growth_score": 88,
+            "binding_score": 92,
+            "priority_score": 89,
+            "tier": "primary",
+            "series_candidate": false,
+            "targets": "10k/20k/50k/100k are optimization targets, never guarantees"
+          },
+          "claim_coherence": {
+            "passed": true,
+            "reasons": []
+          },
+          "audience_growth_v3": {
+            "subscriber_conversion_score": 83,
+            "returning_viewer_score": 87,
+            "continuation_score": 74,
+            "hook_strength_score": 55,
+            "standalone_payoff_score": 94,
+            "selection_priority_score": 87,
+            "promotion_test_candidate": true,
+            "promotion_requires_observed_performance": true,
+            "paid_boost_auto_enabled": false,
+            "optimization_goal": "turn qualified viewers into returning viewers and followers without weakening quality gates"
+          },
+          "evidence_status": "verified_editorial_sources",
+          "event_at": "2026-11-13T10:00:00+01:00",
+          "published_at": "2026-11-13T10:00:00+01:00",
+          "retrieved_at": "2026-11-14T09:25:49.030403+00:00",
+          "last_substantive_update_at": "2026-11-13T13:20:00+01:00",
+          "valid_until": "2026-11-16T18:00:00+01:00",
+          "confirmed_facts": "DHL nennt für das Päckchen S 4,49 Euro bei Online-Frankierung und 5,19 Euro in der Filiale. Sendungsverfolgung und Haftung bis 20 Euro sollen hinzukommen.",
+          "uncertainties": "Die Bundesnetzagentur muss die beantragten Tarifänderungen abschließend genehmigen.",
+          "why_now": "DHL hat am 13. November die geplanten Privatkundenpreise ab Januar angekündigt.",
+          "visual_plan": [
+            "Päckchen auf einer digitalen Waage",
+            "Filialschalter und Online-Frankierung im geteilten Bild",
+            "Preisvergleich mit separaten Preisfeldern",
+            "Sendungsverfolgung und Haftung als zwei schlichte Symbole"
+          ],
+          "score_breakdown": {
+            "persoenliche_folgen": 19,
+            "zielgruppennaehe": 22,
+            "einstieg": 14,
+            "neuer_anlass": 15,
+            "erklaerwert": 10,
+            "aufloesung": 9,
+            "serienanschluss": 4
+          },
+          "total_score": 93,
+          "duplicate_status": "NEW",
+          "history_candidates_checked": 54,
+          "reach_gate": {
+            "why_now": "DHL hat am 13. November die geplanten Privatkundenpreise ab Januar angekündigt.",
+            "cross_platform_signal_count": 0,
+            "policy": "REGIONAL_GERMANY_CHANNEL_EVIDENCE_V2",
+            "scope": "germany",
+            "local_only_rejected": false,
+            "reach_score": 113
+          }
+        },
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt.",
+        "script_body": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig.",
+        "pronunciation_map": {
+          "TAYVORIQ": "Tayvorik"
+        },
+        "context_metrics": {
+          "cta_start_ratio": 0.868,
+          "body_words": 46,
+          "cta_words": 7,
+          "editorial_body_words": 46,
+          "script_words": 53,
+          "minimum_script_words": 51,
+          "maximum_script_words": 63,
+          "validator_minimum_words": 51,
+          "semantic_pre_render_gate": true,
+          "retention_contract_v5_locked": true,
+          "follow_conversion_gate": "PASS",
+          "return_viewer_gate": "PASS",
+          "audible_cta_budget_compaction": []
+        },
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "editorial_depth_gate": {
+          "passed": true,
+          "applicable": true,
+          "contract_version": "v1-verified-request-five-answer-recovery",
+          "contract_derived_from_sources": true,
+          "minimum_details_in_script": 3,
+          "available_source_bound_details": 4,
+          "consumed_source_bound_details": 4,
+          "planned_detail_available": false,
+          "planned_detail_consumed": false,
+          "rumor_or_unconfirmed_count": 0,
+          "consumed": [
+            {
+              "group": "confirmed_details",
+              "text": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+              "anchors": [],
+              "matched": [
+                "DHL"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+              "anchors": [],
+              "matched": [
+                "DHL"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+              "anchors": [],
+              "matched": [
+                "betroffen",
+                "kleine",
+                "packchen",
+                "privatkunden",
+                "verschicken"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+              "anchors": [],
+              "matched": [
+                "einen",
+                "frankierung",
+                "kleinsten",
+                "macht",
+                "online",
+                "packchen",
+                "preisunterschied"
+              ]
+            }
+          ],
+          "missing": [],
+          "blockers": [],
+          "quality_gates_weakened": false
+        },
+        "what_happened": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+        "why_happening": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+        "who_is_affected": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+        "personal_impact": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+        "action_now": "Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig.",
+        "universal_platform_cta": true,
+        "shared_master_render_requested": true,
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "instagram_status": "NOT_CONFIGURED_EXCLUDED",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "final_package_contract": {
+          "version": "v27-topic-safe-cta-runtime",
+          "word_count": 58,
+          "minimum_words": 51,
+          "maximum_words": 63,
+          "quality_gates_weakened": false
+        },
+        "platform_gate_validation": {
+          "platform_action": {
+            "passed": false,
+            "platform": "youtube_shorts",
+            "expected_prefix": "abonniere tayvoriq"
+          },
+          "verified_benefit": {
+            "passed": true,
+            "required": [
+              "verifiziert",
+              "konkrete schritte"
+            ],
+            "accepted_viewer_value_markers": [
+              "konkret",
+              "warnlag",
+              "reisehinweis",
+              "prüf"
+            ],
+            "matched_viewer_value_markers": [
+              "konkret"
+            ],
+            "source_bound_alternatives_allowed": true
+          },
+          "ethical_length": {
+            "passed": true,
+            "word_count": 9,
+            "manipulative_pressure": false
+          }
+        },
+        "source_bound_editorial_compiler": "verified-request-canonical-v2",
+        "authoritative_editorial_prevalidation_lock": {
+          "version": "v2-single-source-bound-prevalidation",
+          "body_words": 42,
+          "source_context_changed": false,
+          "quality_gates_weakened": false
+        },
+        "series_id": null,
+        "series_name": null,
+        "episode_id": null,
+        "episode_number": null,
+        "continuity_hook": null,
+        "next_episode_candidate": null,
+        "primary_hook": "Dasselbe DHL-Päckchen kann in der Filiale künftig siebzig Cent mehr kosten als online.",
+        "viewer_question": "Warum kostet dieselbe Sendung je nach Frankierung unterschiedlich viel?",
+        "explanation_core": "DHL nennt gestiegene Lohn- und Energiekosten als Treiber. Der Konzern will die Filialpreise und die Preise bei Online-Frankierung stärker unterscheiden.",
+        "surprise_or_reframe": "Das kleine Päckchen soll online 4,49 Euro kosten und in der Filiale 5,19 Euro. Neu sind Sendungsverfolgung und Haftung bis zwanzig Euro.",
+        "practical_relevance": "Wer gelegentlich kleine Waren verschickt, kann künftig vorab den Onlinepreis und die Konditionen in der Filiale vergleichen.",
+        "follow_reason": "TAYVORIQ rechnet Preisänderungen an konkreten Beispielen aus dem deutschen Alltag durch.",
+        "open_loop": "",
+        "open_loop_status": "NONE",
+        "cta_type": "EXPERTISE",
+        "cta_text": "Für konkrete Preisvergleiche im Alltag folg TAYVORIQ.",
+        "audible_cta_compacted": false,
+        "audible_cta_word_count": 7,
+        "retention_contract_v5": {
+          "schema_version": "tayvoriq-retention-v5",
+          "contract_mode": "native_v5",
+          "request_id": "telegram-3577-trend-1",
+          "topic": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+          "trend_scope": "business_economy",
+          "content_angle": "Anhand eines kleinen Päckchens erklären, warum künftig der gewählte Versandweg den Preis beeinflusst und was die zusätzlichen Leistungen bringen.",
+          "source_context_sha256": "67c14e8e593cf41d0e7b2e725ca621526b61193d3a40da5967f7bfa9e5b03df8",
+          "series_id": null,
+          "series_name": null,
+          "episode_id": null,
+          "episode_number": null,
+          "continuity_hook": null,
+          "next_episode_candidate": null,
+          "primary_hook": "Dasselbe DHL-Päckchen kann in der Filiale künftig siebzig Cent mehr kosten als online.",
+          "viewer_question": "Warum kostet dieselbe Sendung je nach Frankierung unterschiedlich viel?",
+          "explanation_core": "DHL nennt gestiegene Lohn- und Energiekosten als Treiber. Der Konzern will die Filialpreise und die Preise bei Online-Frankierung stärker unterscheiden.",
+          "surprise_or_reframe": "Das kleine Päckchen soll online 4,49 Euro kosten und in der Filiale 5,19 Euro. Neu sind Sendungsverfolgung und Haftung bis zwanzig Euro.",
+          "practical_relevance": "Wer gelegentlich kleine Waren verschickt, kann künftig vorab den Onlinepreis und die Konditionen in der Filiale vergleichen.",
+          "follow_reason": "TAYVORIQ rechnet Preisänderungen an konkreten Beispielen aus dem deutschen Alltag durch.",
+          "open_loop": "",
+          "open_loop_status": "NONE",
+          "cta_type": "EXPERTISE",
+          "cta_text": "Für konkrete Preisvergleiche im Alltag folg TAYVORIQ.",
+          "next_episode_queue_status": null,
+          "sensitive_story": false,
+          "approved_story_body": null,
+          "editorial_story_contract_version": 0,
+          "quality_gates_weakened": false,
+          "lifecycle_state": "RETENTION_CONTRACT_LOCKED",
+          "follow_conversion_gate": {
+            "result": "PASS",
+            "repair": null,
+            "issues": []
+          },
+          "story_depth_gate": {
+            "result": "PASS",
+            "repair": null,
+            "issues": []
+          },
+          "contract_sha256": "cf70e90dd9afb0f44490a9f205b1bcbcf577c16bbe213826784a6ecc0b59e7b4"
+        },
+        "follow_conversion_gate": {
+          "result": "PASS",
+          "repair": null,
+          "issues": []
+        },
+        "return_viewer_gate": {
+          "result": "PASS",
+          "issues": []
+        },
+        "story_depth_gate": {
+          "result": "PASS",
+          "repair": null,
+          "issues": []
+        },
+        "approved_story_body": null,
+        "editorial_story_contract_version": 0,
+        "retention_contract_locked": true,
+        "source_bound_minimum_padding": {
+          "version": "v34-source-bound-minimum-only",
+          "padding_words": 4,
+          "original_body_words": 42,
+          "final_body_words": 46,
+          "source_context_changed": false,
+          "quality_gates_weakened": false
+        },
+        "generic_contract_repair": {
+          "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+          "script_words": 53,
+          "repair_target_words": 53,
+          "source_bound_minimum_only": true,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "human_story_contract_applied": false,
+          "source_bound_editorial_preserved": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "authoritative_editorial_lock": {
+          "version": "v2-v11-source-bound-pre-and-postcondition",
+          "body_words": 46,
+          "source_context_preserved": true,
+          "approved_source_restored": false,
+          "bounded_shortfall_drift_accepted": true,
+          "quality_gates_weakened": false
+        },
+        "golden_quality_floor": {
+          "version": "v1",
+          "passed": true,
+          "accepted_quality_may_not_regress": true,
+          "operator_rejections_are_negative_fixtures": true,
+          "quality_gates_weakened": false
+        },
+        "pronunciation_contract": {
+          "version": "v4-human-natural-explanatory-narrator",
+          "visible_script_preserved": true,
+          "terms": {},
+          "voice_router": "chatterbox-v3-human-narrator-v28",
+          "artificial_compound_splitting": false,
+          "narrator_pitch_shift_applied": false,
+          "calm_explanatory_pacing_required": true,
+          "max_atempo": 1.2,
+          "audio_end_padding_seconds": 0.55,
+          "quality_gates_weakened": false
+        },
+        "platform_cta_contract": {
+          "version": "v4-platform-specific-editorial-storytelling",
+          "platform": "youtube_shorts",
+          "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "source_bound_viewer_value": false,
+          "viewer_value": "",
+          "next_video_bridge": "",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "voice_and_captions_share_editorial_source": true,
+          "visible_script_audio_overlay_same_source": true,
+          "overlay_repeats_full_voiceover": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_visual_standard": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "topic": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+          "domain": "society",
+          "treatment_id": "PLACE_AND_SCALE",
+          "visual_signature": "9d596de3f91ca6dd",
+          "platform": "youtube_shorts",
+          "platform_specific_master_required": true,
+          "same_master_reuse_forbidden": true,
+          "full_voiceover_as_overlay_forbidden": true,
+          "supporting_callouts_only": true,
+          "random_decorative_visuals_forbidden": true,
+          "filler_scenes_forbidden": true,
+          "explanatory_graphics_enabled": true,
+          "music_arc": "restrained opening -> explanatory space -> measured tension -> resolve",
+          "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+          "voice_priority": true,
+          "quality_gates_weakened": false
+        },
+        "platform_story_profile": {
+          "platform": "youtube_shorts",
+          "beats": [
+            "hook",
+            "context",
+            "explanation",
+            "evidence",
+            "development_problem",
+            "key_insight",
+            "consequence_outlook"
+          ],
+          "scene_count": 7,
+          "narrative_priority": "context, evidence and explanatory depth",
+          "estimated_wpm": 95.8,
+          "preferred_wpm": [
+            108,
+            138
+          ],
+          "hard_max_wpm": 160,
+          "caption_policy": "readable full captions plus sparse semantic callouts",
+          "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+        },
+        "editorial_quality_gate": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "passed": true,
+          "issues": [],
+          "checklist": {
+            "interesting": true,
+            "beginner_clear": true,
+            "voice_pacing": true,
+            "visual_explanatory": true,
+            "visually_distinct": true,
+            "no_filler": true,
+            "watch_to_end": true
+          },
+          "metrics": {
+            "scene_count": 7,
+            "unique_visual_queries": 7,
+            "unique_visual_types": 7,
+            "callout_count": 3,
+            "script_words": 55,
+            "estimated_wpm": 95.8,
+            "duration_spread_seconds": 1.7,
+            "generated_explainer_scenes": 0
+          }
+        },
+        "tiktok_metadata": {
+          "title": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+          "caption": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "privacy_default": "PUBLIC_TO_EVERYONE",
+          "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+        },
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {},
+          "brand_spoken": false,
+          "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          },
+          "brand_normalization_version": "final-v20-tayvorik-v1"
+        }
+      },
+      "quality_report": {
+        "passed": true,
+        "issues": [],
+        "word_count": 51,
+        "body_words": 46,
+        "cta_words": 5,
+        "cta_start_ratio": 0.902,
+        "self_contained": true,
+        "native_language_voice_configured": true,
+        "quality_version": "v20.1-provider-aware-german-narration",
+        "checked_at": "2026-11-14T14:27:57+00:00",
+        "editorial_five_answers": {
+          "passed": true,
+          "answers": {
+            "what_happened": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+            "why_happening": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+            "who_is_affected": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+            "personal_impact": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+            "action_now": "Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig."
+          }
+        },
+        "v11_quality_cycle_guard": {
+          "passed": true,
+          "cycle_removed": true,
+          "base_quality": "v5-captured-by-v11",
+          "human_story_forced_prefix_suppressed": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "factual_cause_guard": "standard",
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {},
+          "brand_spoken": false,
+          "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          },
+          "brand_normalization_version": "final-v20-tayvorik-v1"
+        },
+        "tts_preview": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "policy_grounding_guard": "standard",
+        "authoritative_length_contract": {
+          "reconciled": false,
+          "reason": "no-legacy-shortfall",
+          "quality_gates_weakened": false
+        },
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "audio": {
+        "voice_path": "voice.mp3",
+        "voice_duration_seconds": 26.79,
+        "provider": "chatterbox_multilingual_v3",
+        "voice_provider_requested": "chatterbox_multilingual_v3",
+        "voice_provider_used": "chatterbox_multilingual_v3",
+        "model_id": "v3",
+        "voice_settings": {
+          "language_id": "de",
+          "exaggeration": 0.5,
+          "cfg_weight": 0.47,
+          "reference_audio_used": true,
+          "chunk_count": 1,
+          "loudness_target_lufs": -16,
+          "narrator_pitch_factor": 1.0,
+          "narrator_pitch_shift_applied": false,
+          "narrator_articulation_preserved": true,
+          "narrator_loudness_target_lufs": -16,
+          "narrator_mastering_profile": "neutral-native-v2",
+          "deep_voice_gate": {
+            "passed": true,
+            "repair_applied": false,
+            "repair_factor": 1.0,
+            "repair_factors": [],
+            "repair_passes": [],
+            "maximum_repair_passes": 0,
+            "minimum_cumulative_feedback_factor": 1.0,
+            "feedback_measurement_required": true,
+            "before": {
+              "median_f0_hz": 137.93,
+              "p10_f0_hz": 101.27,
+              "p90_f0_hz": 192.77,
+              "pitch_span_hz": 91.51,
+              "silence_ratio": 0.083
+            },
+            "after": {
+              "median_f0_hz": 137.93,
+              "p10_f0_hz": 101.27,
+              "p90_f0_hz": 192.77,
+              "pitch_span_hz": 91.51,
+              "silence_ratio": 0.083
+            },
+            "allowed_f0_hz": [
+              65.0,
+              230.0
+            ],
+            "bounded_repair_window_hz": [
+              65.0,
+              230.0
+            ],
+            "repair_window_basis": "final-gate-divided-by-bounded-pitch-factor",
+            "provider_required": "chatterbox_multilingual_v3",
+            "fallback_allowed": false,
+            "quality_gates_weakened": false,
+            "contract_version": "golden-path-deep-voice-self-heal-v3"
+          },
+          "quality_gates_weakened": false
+        },
+        "target_voice_duration_seconds": 26.817999999999998,
+        "raw_voice_duration_seconds": 21.64,
+        "duration_delta_seconds": -0.028,
+        "generation_elapsed_seconds": 151.212,
+        "fallback": false,
+        "quality_profile": "tayvoriq-native-natural-narrator-chatterbox-v38",
+        "worker_report": {
+          "provider": "chatterbox_multilingual",
+          "requested_model_version": "v3",
+          "model_version": "v3",
+          "installed_package_version": "0.1.7",
+          "language_id": "de",
+          "device": "cpu",
+          "hf_auth_mode": "token",
+          "passed": true,
+          "compatibility_mode": "native-version-selection",
+          "model_version_fallback": false,
+          "sample_rate": 24000,
+          "duration_seconds": 21.64,
+          "chunks": [
+            "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte."
+          ],
+          "chunk_count": 1,
+          "model_load_seconds": 29.232,
+          "generation_seconds": [
+            116.288
+          ],
+          "total_seconds": 149.033,
+          "reference_audio_used": true,
+          "exaggeration": 0.5,
+          "cfg_weight": 0.47,
+          "output": "out/tayvoriq-youtube-tiktok/candidate-01/20261114_142725_dhl-paeckchen-was-sich-beim-porto-ab-januar-aendert/youtube_shorts/voice_chatterbox_raw.wav",
+          "output_bytes": 1038764,
+          "audio_container": "wav-pcm16-standard-library"
+        },
+        "natural_voice_target_seconds": 26.818,
+        "natural_voice_wpm": 132.0,
+        "full_short_target_seconds": 35.0,
+        "coherent_chunk_limit": 1,
+        "configured_max_chars": 520,
+        "premium_voice_timeout_budget_seconds": 240,
+        "pronunciation_prepared": true,
+        "pronunciation_profile": "de-critical-terms-v1",
+        "narrator_tone_applied": false,
+        "narrator_pitch_shift_applied": false,
+        "human_narrator_quality_profile": true,
+        "natural_pacing_contract_passed": true,
+        "premium_voice_required": true,
+        "premium_voice_contract_passed": true,
+        "continuous_narrator_take": true,
+        "artificial_compound_splitting": false,
+        "internal_hyphen_preserved": true,
+        "human_pronunciation_profile": "de-critical-san-disk-ka-i-v1",
+        "targeted_acronym_pronunciation_aid": true,
+        "sandisk_spoken_form": "San Disk",
+        "critical_term_pronunciation_aid": true,
+        "critical_term_pronunciation_terms": [
+          "DHL"
+        ],
+        "critical_term_speech_surface_only": true,
+        "pronunciation_contract_version": "de-acronym-letter-names-v2",
+        "all_visible_acronyms_normalized": true,
+        "pronunciation_replacements": {
+          "TAYVORIQ": "Tayvorik"
+        },
+        "spoken_contract_text": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tayvoriq_spoken_replacement": "",
+        "brand_spoken_fallback_used": false,
+        "brand_spoken_fallback_semantic_only": false,
+        "visible_script_unchanged": true,
+        "canonical_review_contract_unchanged": true,
+        "exact_chatterbox_model_required": "v3",
+        "exact_chatterbox_model_passed": true,
+        "golden_human_reference_required": true,
+        "golden_human_reference_used": true,
+        "golden_human_reference_commit": "08e2dada47d4e823ae139d1151a07fea1ff5d92c",
+        "quality_gates_weakened": false,
+        "deep_voice_gate": {
+          "passed": true,
+          "repair_applied": false,
+          "repair_factor": 1.0,
+          "repair_factors": [],
+          "repair_passes": [],
+          "maximum_repair_passes": 0,
+          "minimum_cumulative_feedback_factor": 1.0,
+          "feedback_measurement_required": true,
+          "before": {
+            "median_f0_hz": 137.93,
+            "p10_f0_hz": 101.27,
+            "p90_f0_hz": 192.77,
+            "pitch_span_hz": 91.51,
+            "silence_ratio": 0.083
+          },
+          "after": {
+            "median_f0_hz": 137.93,
+            "p10_f0_hz": 101.27,
+            "p90_f0_hz": 192.77,
+            "pitch_span_hz": 91.51,
+            "silence_ratio": 0.083
+          },
+          "allowed_f0_hz": [
+            65.0,
+            230.0
+          ],
+          "bounded_repair_window_hz": [
+            65.0,
+            230.0
+          ],
+          "repair_window_basis": "final-gate-divided-by-bounded-pitch-factor",
+          "provider_required": "chatterbox_multilingual_v3",
+          "fallback_allowed": false,
+          "quality_gates_weakened": false,
+          "contract_version": "golden-path-deep-voice-self-heal-v3"
+        },
+        "golden_voice_floor": {
+          "version": "v1",
+          "passed": true,
+          "artificial_pitch_shift_forbidden": true,
+          "narrator_pitch_factor": 1.0,
+          "human_rejected_profiles_forbidden": true,
+          "quality_gates_weakened": false
+        },
+        "pre_render_transcript_validation": {
+          "passed": true,
+          "similarity": 1.0,
+          "missing_critical_terms": [],
+          "expected_tokens": 60,
+          "actual_tokens": 60,
+          "excessive_extra_words": false,
+          "forbidden_tail": false,
+          "transcript": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_expected": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_actual": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "role": "final",
+          "raw_transcript": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_transcript": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_contract_expected": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "asr_orthographic_equivalence_applied": true,
+          "hallucinated_tail": false,
+          "terminal_token_match": true,
+          "segment_min_similarity": 0.95,
+          "similarity_gate_passed": true,
+          "transcription_attempt": 1,
+          "postmux_min_similarity": 0.95,
+          "base_gate_passed": true,
+          "attempts": [
+            {
+              "passed": true,
+              "similarity": 1.0,
+              "missing_critical_terms": [],
+              "expected_tokens": 60,
+              "actual_tokens": 60,
+              "excessive_extra_words": false,
+              "forbidden_tail": false,
+              "transcript": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_expected": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_actual": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "role": "final",
+              "raw_transcript": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_transcript": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_contract_expected": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "asr_orthographic_equivalence_applied": true,
+              "hallucinated_tail": false,
+              "terminal_token_match": true,
+              "segment_min_similarity": 0.95,
+              "similarity_gate_passed": true,
+              "transcription_attempt": 1,
+              "postmux_min_similarity": 0.95,
+              "base_gate_passed": true
+            }
+          ],
+          "attempt": 1,
+          "required": true,
+          "min_similarity": 0.95,
+          "quality_gates_weakened": false
+        },
+        "pre_render_voice_attempt": 1,
+        "post_audio_quality_gate": {
+          "passed": true,
+          "provider": "chatterbox_multilingual_v3",
+          "duration_seconds": 26.79,
+          "target_duration_seconds": 35,
+          "fallback": false,
+          "fallback_from": null,
+          "pre_render_transcript_passed": true,
+          "pre_render_transcript_similarity": 1.0,
+          "pre_render_cta_morphology_passed": true,
+          "required_spoken_cta": "",
+          "quality_gates_weakened": false
+        },
+        "number_pronunciation_replacements": {},
+        "tts_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "spoken_number_normalization_required": false,
+        "spoken_number_normalization_passed": true,
+        "speech_preflight_version": "v20-german-number-verbalization",
+        "native_language_voice_configured": true,
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "render": {
+        "video_path": "short.mp4",
+        "asset_report": [
+          {
+            "scene": 1,
+            "source": "pexels_video",
+            "query": "courier handing cardboard parcel to customer",
+            "requested_query": "courier handing cardboard parcel to customer",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 3.897,
+            "subtitle_present": true,
+            "asset": "scene_01.mp4",
+            "pexels_source_sha256": "cd7b7b26f25179d1f1093c8a19ad8666309a03c62e3ac802fa2e7914cbbe9035"
+          },
+          {
+            "scene": 2,
+            "source": "pexels_video",
+            "query": "worker packing cardboard parcel",
+            "requested_query": "worker packing cardboard parcel",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.871,
+            "subtitle_present": true,
+            "asset": "scene_02.mp4",
+            "pexels_source_sha256": "092be02ee831dc54b36cc2437041b98b73bdc0fa8ed6eb0babd19e0f008a67db"
+          },
+          {
+            "scene": 3,
+            "source": "pexels_video",
+            "query": "cardboard parcel sorting conveyor",
+            "requested_query": "cardboard parcel sorting conveyor",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 3.41,
+            "subtitle_present": true,
+            "asset": "scene_03.mp4",
+            "pexels_source_sha256": "3ebd6397d0fb0cb722b8e47d284ed9d6ab0e57bb5fadcd9615e24494bb2bce0c"
+          },
+          {
+            "scene": 4,
+            "source": "pexels_video",
+            "query": "shipping label on cardboard box",
+            "requested_query": "shipping label on cardboard box",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.871,
+            "subtitle_present": true,
+            "asset": "scene_04.mp4",
+            "pexels_source_sha256": "e17d1386b6b12dcdc0d60952b64b66dc05f2f7fe660525bbafe454b3bc37e59e"
+          },
+          {
+            "scene": 5,
+            "source": "pexels_video",
+            "query": "worker packing boxes for shipment",
+            "requested_query": "worker packing boxes for shipment",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 5.358,
+            "subtitle_present": true,
+            "asset": "scene_05.mp4",
+            "pexels_source_sha256": "be8a66a3d6cf34409b28165b26352c38d0e1424550a55cb11caf7a4dd1cbd511"
+          },
+          {
+            "scene": 6,
+            "source": "pexels_video",
+            "query": "courier delivering cardboard package",
+            "requested_query": "courier delivering cardboard package",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 5.634,
+            "subtitle_present": true,
+            "asset": "scene_06.mp4",
+            "pexels_source_sha256": "6f7e17ebfb9814c0cde825dc25f880c1041d8e797ad02a35210a5a450a65e726"
+          }
+        ],
+        "render_size": "1080x1920",
+        "bytes": 19393056,
+        "voice_duration_seconds": 26.79,
+        "final_duration_seconds": 28.04,
+        "end_padding_seconds": 1.25,
+        "requested_duration_seconds": 35.0,
+        "duration_delta_seconds": -6.96,
+        "duration_status": "REVIEW"
+      },
+      "video_path": "short_youtube.mp4",
+      "upload_status": "PENDING_APPROVAL",
+      "visual_checkpoint_repair": {
+        "profile": "v3-topic-preserving-moving-assets",
+        "queries": [
+          "courier handing cardboard parcel to customer",
+          "worker packing cardboard parcel",
+          "cardboard parcel sorting conveyor",
+          "shipping label on cardboard box",
+          "worker packing boxes for shipment",
+          "courier delivering cardboard package"
+        ],
+        "moving_assets_required": 4,
+        "visual_diversity_required": 3,
+        "actual_frame_semantics_prevalidated": false,
+        "script_changed": false,
+        "voice_changed": false,
+        "sources_changed": false,
+        "quality_gates_weakened": false
+      }
+    },
+    "tiktok": {
+      "text_package": {
+        "title": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+        "category": "world_society",
+        "trend_angle": "Welche konkrete Veränderung hinter DHL-Päckchen: Was sich beim Porto ab Januar ändert wirklich steckt.",
+        "trend_signal": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+        "named_entities": [],
+        "why_now": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+        "affected_groups": [
+          "Betroffen sind Privatkunden, die kleine Päckchen verschicken."
+        ],
+        "viewer_test": "Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig.",
+        "series_next": "",
+        "hook": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+        "script": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "cta": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "scenes": [
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "courier handing cardboard parcel to customer",
+            "overlay_text": "",
+            "spoken_chunk": "DHL plant ab Januar höhere Filialpreise für Päckchen."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "worker packing cardboard parcel",
+            "overlay_text": "",
+            "spoken_chunk": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "cardboard parcel sorting conveyor",
+            "overlay_text": "",
+            "spoken_chunk": "Betroffen sind Privatkunden, die kleine Päckchen verschicken."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "shipping label on cardboard box",
+            "overlay_text": "",
+            "spoken_chunk": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "worker packing boxes for shipment",
+            "overlay_text": "",
+            "spoken_chunk": "Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "courier delivering cardboard package",
+            "overlay_text": "",
+            "spoken_chunk": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+          }
+        ],
+        "youtube_metadata": {
+          "title": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+          "description": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "tags": [
+            "world_society",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "fallback_used": true,
+        "language": "Deutsch",
+        "platform": "tiktok",
+        "target_duration": 35,
+        "llm_provider": "template:fallback",
+        "viewer_questions": {
+          "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf DHL-Päckchen: Was sich beim Porto ab Januar ändert.",
+          "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
+          "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
+          "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
+          "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
+          "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
+        },
+        "editorial_answers": {
+          "what_happened": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+          "why_happening": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+          "who_is_affected": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+          "personal_impact": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+          "action_now": "Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig."
+        },
+        "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+        "source_context": {
+          "verified_at": "2026-11-14T09:25:49.030403+00:00",
+          "independent_news_count": 3,
+          "sources": [
+            {
+              "publisher": "DHL Group",
+              "url": "https://group.dhl.com/de/presse/pressemitteilungen/2026/deutsche-post-ag-passt-paketpreise-fuer-privatkunden-zum-1-januar-2027-moderat-an.html",
+              "published_at": "2026-11-13T10:00:00+01:00",
+              "reporting_origin": "Originäre Mitteilung des Unternehmens",
+              "supports": "DHL kündigt neue Privatkundentarife zum 1. Januar 2027 an. Gründe sind gestiegene Lohnkosten und Energiekosten. Kleine Päckchen sollen ab 4,49 Euro online mit Sendungsverfolgung und Haftung bis 20 Euro angeboten werden. Die neuen Preise benötigen die Zustimmung der Bundesnetzagentur."
+            },
+            {
+              "publisher": "rbb24 Inforadio",
+              "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/11/dhl-erhoeht-paketpreise-2027.html",
+              "published_at": "2026-11-13T11:00:00+01:00",
+              "reporting_origin": "rbb24 Inforadio, Beitrag von Jens Lehmann",
+              "supports": "Die Redaktion nennt für das Päckchen S beim geplanten Tarif in Deutschland 5,19 Euro in der Filiale und 4,49 Euro online. Die Bundesnetzagentur muss die neuen Tarife noch genehmigen."
+            },
+            {
+              "publisher": "Tagesschau",
+              "url": "https://www.tagesschau.de/wirtschaft/verbraucher/post-hebt-paketpreise-privatkunden-an-2027-100.html",
+              "published_at": "2026-11-13T13:20:00+01:00",
+              "reporting_origin": "ARD-aktuell Verbrauchernachrichten",
+              "supports": "Die Tagesschau bestätigt für Januar den geplanten Filialpreis von 5,19 Euro für Päckchen S sowie die neue Sendungsverfolgung und Haftung bis 20 Euro."
+            }
+          ],
+          "fallback_editorial_answers": {
+            "what_happened": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+            "why_happening": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+            "who_is_affected": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+            "personal_impact": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+            "action_now": "Vergleiche vor dem Versand Filialpreis und Onlinepreis."
+          },
+          "retention_v5": {
+            "viral_potential": 85,
+            "tayvoriq_fit": 94,
+            "novelty_score": 88,
+            "series_fit_score": 79,
+            "return_viewer_score": 86,
+            "follow_conversion_potential": 84,
+            "open_loop_potential": 74,
+            "proposed_series_id": "",
+            "proposed_series_name": "",
+            "next_episode_candidate": "",
+            "recommended_cta_type": "EXPERTISE",
+            "primary_hook": "Dasselbe DHL-Päckchen kann in der Filiale künftig siebzig Cent mehr kosten als online.",
+            "viewer_question": "Warum kostet dieselbe Sendung je nach Frankierung unterschiedlich viel?",
+            "explanation_core": "DHL nennt gestiegene Lohn- und Energiekosten als Treiber. Der Konzern will die Filialpreise und die Preise bei Online-Frankierung stärker unterscheiden.",
+            "surprise_or_reframe": "Das kleine Päckchen soll online 4,49 Euro kosten und in der Filiale 5,19 Euro. Neu sind Sendungsverfolgung und Haftung bis zwanzig Euro.",
+            "practical_relevance": "Wer gelegentlich kleine Waren verschickt, kann künftig vorab den Onlinepreis und die Konditionen in der Filiale vergleichen.",
+            "follow_reason": "TAYVORIQ rechnet Preisänderungen an konkreten Beispielen aus dem deutschen Alltag durch.",
+            "open_loop": "",
+            "open_loop_status": "NONE",
+            "cta_type": "EXPERTISE",
+            "cta_text": "Für konkrete Preisvergleiche im Alltag folg TAYVORIQ.",
+            "trend_selection_score": 87
+          },
+          "growth_v2": {
+            "growth_score": 88,
+            "binding_score": 92,
+            "priority_score": 89,
+            "tier": "primary",
+            "series_candidate": false,
+            "targets": "10k/20k/50k/100k are optimization targets, never guarantees"
+          },
+          "claim_coherence": {
+            "passed": true,
+            "reasons": []
+          },
+          "audience_growth_v3": {
+            "subscriber_conversion_score": 83,
+            "returning_viewer_score": 87,
+            "continuation_score": 74,
+            "hook_strength_score": 55,
+            "standalone_payoff_score": 94,
+            "selection_priority_score": 87,
+            "promotion_test_candidate": true,
+            "promotion_requires_observed_performance": true,
+            "paid_boost_auto_enabled": false,
+            "optimization_goal": "turn qualified viewers into returning viewers and followers without weakening quality gates"
+          },
+          "evidence_status": "verified_editorial_sources",
+          "event_at": "2026-11-13T10:00:00+01:00",
+          "published_at": "2026-11-13T10:00:00+01:00",
+          "retrieved_at": "2026-11-14T09:25:49.030403+00:00",
+          "last_substantive_update_at": "2026-11-13T13:20:00+01:00",
+          "valid_until": "2026-11-16T18:00:00+01:00",
+          "confirmed_facts": "DHL nennt für das Päckchen S 4,49 Euro bei Online-Frankierung und 5,19 Euro in der Filiale. Sendungsverfolgung und Haftung bis 20 Euro sollen hinzukommen.",
+          "uncertainties": "Die Bundesnetzagentur muss die beantragten Tarifänderungen abschließend genehmigen.",
+          "why_now": "DHL hat am 13. November die geplanten Privatkundenpreise ab Januar angekündigt.",
+          "visual_plan": [
+            "Päckchen auf einer digitalen Waage",
+            "Filialschalter und Online-Frankierung im geteilten Bild",
+            "Preisvergleich mit separaten Preisfeldern",
+            "Sendungsverfolgung und Haftung als zwei schlichte Symbole"
+          ],
+          "score_breakdown": {
+            "persoenliche_folgen": 19,
+            "zielgruppennaehe": 22,
+            "einstieg": 14,
+            "neuer_anlass": 15,
+            "erklaerwert": 10,
+            "aufloesung": 9,
+            "serienanschluss": 4
+          },
+          "total_score": 93,
+          "duplicate_status": "NEW",
+          "history_candidates_checked": 54,
+          "reach_gate": {
+            "why_now": "DHL hat am 13. November die geplanten Privatkundenpreise ab Januar angekündigt.",
+            "cross_platform_signal_count": 0,
+            "policy": "REGIONAL_GERMANY_CHANNEL_EVIDENCE_V2",
+            "scope": "germany",
+            "local_only_rejected": false,
+            "reach_score": 113
+          }
+        },
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt.",
+        "script_body": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig.",
+        "pronunciation_map": {
+          "TAYVORIQ": "Tayvorik"
+        },
+        "context_metrics": {
+          "cta_start_ratio": 0.868,
+          "body_words": 46,
+          "cta_words": 7,
+          "editorial_body_words": 46,
+          "script_words": 53,
+          "minimum_script_words": 51,
+          "maximum_script_words": 63,
+          "validator_minimum_words": 51,
+          "semantic_pre_render_gate": true,
+          "retention_contract_v5_locked": true,
+          "follow_conversion_gate": "PASS",
+          "return_viewer_gate": "PASS",
+          "audible_cta_budget_compaction": []
+        },
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "editorial_depth_gate": {
+          "passed": true,
+          "applicable": true,
+          "contract_version": "v1-verified-request-five-answer-recovery",
+          "contract_derived_from_sources": true,
+          "minimum_details_in_script": 3,
+          "available_source_bound_details": 4,
+          "consumed_source_bound_details": 4,
+          "planned_detail_available": false,
+          "planned_detail_consumed": false,
+          "rumor_or_unconfirmed_count": 0,
+          "consumed": [
+            {
+              "group": "confirmed_details",
+              "text": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+              "anchors": [],
+              "matched": [
+                "DHL"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+              "anchors": [],
+              "matched": [
+                "DHL"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+              "anchors": [],
+              "matched": [
+                "betroffen",
+                "kleine",
+                "packchen",
+                "privatkunden",
+                "verschicken"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+              "anchors": [],
+              "matched": [
+                "einen",
+                "frankierung",
+                "kleinsten",
+                "macht",
+                "online",
+                "packchen",
+                "preisunterschied"
+              ]
+            }
+          ],
+          "missing": [],
+          "blockers": [],
+          "quality_gates_weakened": false
+        },
+        "what_happened": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+        "why_happening": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+        "who_is_affected": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+        "personal_impact": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+        "action_now": "Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig.",
+        "universal_platform_cta": true,
+        "shared_master_render_requested": true,
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "instagram_status": "NOT_CONFIGURED_EXCLUDED",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "final_package_contract": {
+          "version": "v27-topic-safe-cta-runtime",
+          "word_count": 58,
+          "minimum_words": 51,
+          "maximum_words": 63,
+          "quality_gates_weakened": false
+        },
+        "platform_gate_validation": {
+          "platform_action": {
+            "passed": false,
+            "platform": "tiktok",
+            "expected_prefix": "folge tayvoriq"
+          },
+          "verified_benefit": {
+            "passed": true,
+            "required": [
+              "verifiziert",
+              "konkrete schritte"
+            ],
+            "accepted_viewer_value_markers": [
+              "konkret",
+              "warnlag",
+              "reisehinweis",
+              "prüf"
+            ],
+            "matched_viewer_value_markers": [
+              "konkret"
+            ],
+            "source_bound_alternatives_allowed": true
+          },
+          "ethical_length": {
+            "passed": true,
+            "word_count": 9,
+            "manipulative_pressure": false
+          }
+        },
+        "source_bound_editorial_compiler": "verified-request-canonical-v2",
+        "authoritative_editorial_prevalidation_lock": {
+          "version": "v2-single-source-bound-prevalidation",
+          "body_words": 42,
+          "source_context_changed": false,
+          "quality_gates_weakened": false
+        },
+        "series_id": null,
+        "series_name": null,
+        "episode_id": null,
+        "episode_number": null,
+        "continuity_hook": null,
+        "next_episode_candidate": null,
+        "primary_hook": "Dasselbe DHL-Päckchen kann in der Filiale künftig siebzig Cent mehr kosten als online.",
+        "viewer_question": "Warum kostet dieselbe Sendung je nach Frankierung unterschiedlich viel?",
+        "explanation_core": "DHL nennt gestiegene Lohn- und Energiekosten als Treiber. Der Konzern will die Filialpreise und die Preise bei Online-Frankierung stärker unterscheiden.",
+        "surprise_or_reframe": "Das kleine Päckchen soll online 4,49 Euro kosten und in der Filiale 5,19 Euro. Neu sind Sendungsverfolgung und Haftung bis zwanzig Euro.",
+        "practical_relevance": "Wer gelegentlich kleine Waren verschickt, kann künftig vorab den Onlinepreis und die Konditionen in der Filiale vergleichen.",
+        "follow_reason": "TAYVORIQ rechnet Preisänderungen an konkreten Beispielen aus dem deutschen Alltag durch.",
+        "open_loop": "",
+        "open_loop_status": "NONE",
+        "cta_type": "EXPERTISE",
+        "cta_text": "Für konkrete Preisvergleiche im Alltag folg TAYVORIQ.",
+        "audible_cta_compacted": false,
+        "audible_cta_word_count": 7,
+        "retention_contract_v5": {
+          "schema_version": "tayvoriq-retention-v5",
+          "contract_mode": "native_v5",
+          "request_id": "telegram-3577-trend-1",
+          "topic": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+          "trend_scope": "business_economy",
+          "content_angle": "Anhand eines kleinen Päckchens erklären, warum künftig der gewählte Versandweg den Preis beeinflusst und was die zusätzlichen Leistungen bringen.",
+          "source_context_sha256": "67c14e8e593cf41d0e7b2e725ca621526b61193d3a40da5967f7bfa9e5b03df8",
+          "series_id": null,
+          "series_name": null,
+          "episode_id": null,
+          "episode_number": null,
+          "continuity_hook": null,
+          "next_episode_candidate": null,
+          "primary_hook": "Dasselbe DHL-Päckchen kann in der Filiale künftig siebzig Cent mehr kosten als online.",
+          "viewer_question": "Warum kostet dieselbe Sendung je nach Frankierung unterschiedlich viel?",
+          "explanation_core": "DHL nennt gestiegene Lohn- und Energiekosten als Treiber. Der Konzern will die Filialpreise und die Preise bei Online-Frankierung stärker unterscheiden.",
+          "surprise_or_reframe": "Das kleine Päckchen soll online 4,49 Euro kosten und in der Filiale 5,19 Euro. Neu sind Sendungsverfolgung und Haftung bis zwanzig Euro.",
+          "practical_relevance": "Wer gelegentlich kleine Waren verschickt, kann künftig vorab den Onlinepreis und die Konditionen in der Filiale vergleichen.",
+          "follow_reason": "TAYVORIQ rechnet Preisänderungen an konkreten Beispielen aus dem deutschen Alltag durch.",
+          "open_loop": "",
+          "open_loop_status": "NONE",
+          "cta_type": "EXPERTISE",
+          "cta_text": "Für konkrete Preisvergleiche im Alltag folg TAYVORIQ.",
+          "next_episode_queue_status": null,
+          "sensitive_story": false,
+          "approved_story_body": null,
+          "editorial_story_contract_version": 0,
+          "quality_gates_weakened": false,
+          "lifecycle_state": "RETENTION_CONTRACT_LOCKED",
+          "follow_conversion_gate": {
+            "result": "PASS",
+            "repair": null,
+            "issues": []
+          },
+          "story_depth_gate": {
+            "result": "PASS",
+            "repair": null,
+            "issues": []
+          },
+          "contract_sha256": "cf70e90dd9afb0f44490a9f205b1bcbcf577c16bbe213826784a6ecc0b59e7b4"
+        },
+        "follow_conversion_gate": {
+          "result": "PASS",
+          "repair": null,
+          "issues": []
+        },
+        "return_viewer_gate": {
+          "result": "PASS",
+          "issues": []
+        },
+        "story_depth_gate": {
+          "result": "PASS",
+          "repair": null,
+          "issues": []
+        },
+        "approved_story_body": null,
+        "editorial_story_contract_version": 0,
+        "retention_contract_locked": true,
+        "source_bound_minimum_padding": {
+          "version": "v34-source-bound-minimum-only",
+          "padding_words": 4,
+          "original_body_words": 42,
+          "final_body_words": 46,
+          "source_context_changed": false,
+          "quality_gates_weakened": false
+        },
+        "generic_contract_repair": {
+          "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+          "script_words": 53,
+          "repair_target_words": 53,
+          "source_bound_minimum_only": true,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "human_story_contract_applied": false,
+          "source_bound_editorial_preserved": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "authoritative_editorial_lock": {
+          "version": "v2-v11-source-bound-pre-and-postcondition",
+          "body_words": 46,
+          "source_context_preserved": true,
+          "approved_source_restored": false,
+          "bounded_shortfall_drift_accepted": true,
+          "quality_gates_weakened": false
+        },
+        "golden_quality_floor": {
+          "version": "v1",
+          "passed": true,
+          "accepted_quality_may_not_regress": true,
+          "operator_rejections_are_negative_fixtures": true,
+          "quality_gates_weakened": false
+        },
+        "pronunciation_contract": {
+          "version": "v4-human-natural-explanatory-narrator",
+          "visible_script_preserved": true,
+          "terms": {},
+          "voice_router": "chatterbox-v3-human-narrator-v28",
+          "artificial_compound_splitting": false,
+          "narrator_pitch_shift_applied": false,
+          "calm_explanatory_pacing_required": true,
+          "max_atempo": 1.2,
+          "audio_end_padding_seconds": 0.55,
+          "quality_gates_weakened": false
+        },
+        "platform_cta_contract": {
+          "version": "v4-platform-specific-editorial-storytelling",
+          "platform": "tiktok",
+          "cta": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "source_bound_viewer_value": false,
+          "viewer_value": "",
+          "next_video_bridge": "",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "voice_and_captions_share_editorial_source": true,
+          "visible_script_audio_overlay_same_source": true,
+          "overlay_repeats_full_voiceover": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_visual_standard": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "topic": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+          "domain": "society",
+          "treatment_id": "EVIDENCE_CHAIN",
+          "visual_signature": "5abe6430b2118609",
+          "platform": "tiktok",
+          "platform_specific_master_required": true,
+          "same_master_reuse_forbidden": true,
+          "full_voiceover_as_overlay_forbidden": true,
+          "supporting_callouts_only": true,
+          "random_decorative_visuals_forbidden": true,
+          "filler_scenes_forbidden": true,
+          "explanatory_graphics_enabled": true,
+          "music_arc": "immediate restrained pulse -> explanatory space -> short resolve",
+          "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+          "voice_priority": true,
+          "quality_gates_weakened": false
+        },
+        "platform_story_profile": {
+          "platform": "tiktok",
+          "beats": [
+            "hook",
+            "why_it_matters",
+            "context",
+            "explanation",
+            "key_insight",
+            "consequence_outlook"
+          ],
+          "scene_count": 6,
+          "narrative_priority": "immediate relevance and vertical guidance",
+          "estimated_wpm": 95.8,
+          "preferred_wpm": [
+            118,
+            145
+          ],
+          "hard_max_wpm": 165,
+          "caption_policy": "readable full captions plus sparse semantic callouts",
+          "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+        },
+        "editorial_quality_gate": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "passed": true,
+          "issues": [],
+          "checklist": {
+            "interesting": true,
+            "beginner_clear": true,
+            "voice_pacing": true,
+            "visual_explanatory": true,
+            "visually_distinct": true,
+            "no_filler": true,
+            "watch_to_end": true
+          },
+          "metrics": {
+            "scene_count": 6,
+            "unique_visual_queries": 6,
+            "unique_visual_types": 6,
+            "callout_count": 3,
+            "script_words": 55,
+            "estimated_wpm": 95.8,
+            "duration_spread_seconds": 1.99,
+            "generated_explainer_scenes": 0
+          }
+        },
+        "tiktok_metadata": {
+          "title": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+          "caption": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "privacy_default": "PUBLIC_TO_EVERYONE",
+          "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+        },
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {},
+          "brand_spoken": false,
+          "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          },
+          "brand_normalization_version": "final-v20-tayvorik-v1"
+        }
+      },
+      "quality_report": {
+        "passed": true,
+        "issues": [],
+        "word_count": 51,
+        "body_words": 46,
+        "cta_words": 5,
+        "cta_start_ratio": 0.902,
+        "self_contained": true,
+        "native_language_voice_configured": true,
+        "quality_version": "v20.1-provider-aware-german-narration",
+        "checked_at": "2026-11-14T14:34:46+00:00",
+        "editorial_five_answers": {
+          "passed": true,
+          "answers": {
+            "what_happened": "DHL plant ab Januar höhere Filialpreise für Päckchen.",
+            "why_happening": "DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind.",
+            "who_is_affected": "Betroffen sind Privatkunden, die kleine Päckchen verschicken.",
+            "personal_impact": "Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied.",
+            "action_now": "Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig."
+          }
+        },
+        "v11_quality_cycle_guard": {
+          "passed": true,
+          "cycle_removed": true,
+          "base_quality": "v5-captured-by-v11",
+          "human_story_forced_prefix_suppressed": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "factual_cause_guard": "standard",
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {},
+          "brand_spoken": false,
+          "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          },
+          "brand_normalization_version": "final-v20-tayvorik-v1"
+        },
+        "tts_preview": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "policy_grounding_guard": "standard",
+        "authoritative_length_contract": {
+          "reconciled": false,
+          "reason": "no-legacy-shortfall",
+          "quality_gates_weakened": false
+        },
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "audio": {
+        "voice_path": "voice.mp3",
+        "voice_duration_seconds": 26.79,
+        "provider": "chatterbox_multilingual_v3",
+        "voice_provider_requested": "chatterbox_multilingual_v3",
+        "voice_provider_used": "chatterbox_multilingual_v3",
+        "model_id": "v3",
+        "voice_settings": {
+          "language_id": "de",
+          "exaggeration": 0.5,
+          "cfg_weight": 0.47,
+          "reference_audio_used": true,
+          "chunk_count": 1,
+          "loudness_target_lufs": -16,
+          "narrator_pitch_factor": 1.0,
+          "narrator_pitch_shift_applied": false,
+          "narrator_articulation_preserved": true,
+          "narrator_loudness_target_lufs": -16,
+          "narrator_mastering_profile": "neutral-native-v2",
+          "deep_voice_gate": {
+            "passed": true,
+            "repair_applied": false,
+            "repair_factor": 1.0,
+            "repair_factors": [],
+            "repair_passes": [],
+            "maximum_repair_passes": 0,
+            "minimum_cumulative_feedback_factor": 1.0,
+            "feedback_measurement_required": true,
+            "before": {
+              "median_f0_hz": 133.33,
+              "p10_f0_hz": 101.91,
+              "p90_f0_hz": 190.48,
+              "pitch_span_hz": 88.57,
+              "silence_ratio": 0.043
+            },
+            "after": {
+              "median_f0_hz": 133.33,
+              "p10_f0_hz": 101.91,
+              "p90_f0_hz": 190.48,
+              "pitch_span_hz": 88.57,
+              "silence_ratio": 0.043
+            },
+            "allowed_f0_hz": [
+              65.0,
+              230.0
+            ],
+            "bounded_repair_window_hz": [
+              65.0,
+              230.0
+            ],
+            "repair_window_basis": "final-gate-divided-by-bounded-pitch-factor",
+            "provider_required": "chatterbox_multilingual_v3",
+            "fallback_allowed": false,
+            "quality_gates_weakened": false,
+            "contract_version": "golden-path-deep-voice-self-heal-v3"
+          },
+          "quality_gates_weakened": false
+        },
+        "target_voice_duration_seconds": 26.817999999999998,
+        "raw_voice_duration_seconds": 21.84,
+        "duration_delta_seconds": -0.028,
+        "generation_elapsed_seconds": 120.246,
+        "fallback": false,
+        "quality_profile": "tayvoriq-native-natural-narrator-chatterbox-v38",
+        "worker_report": {
+          "provider": "chatterbox_multilingual",
+          "requested_model_version": "v3",
+          "model_version": "v3",
+          "installed_package_version": "0.1.7",
+          "language_id": "de",
+          "device": "cpu",
+          "hf_auth_mode": "token",
+          "passed": true,
+          "compatibility_mode": "native-version-selection",
+          "model_version_fallback": false,
+          "sample_rate": 24000,
+          "duration_seconds": 21.84,
+          "chunks": [
+            "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte."
+          ],
+          "chunk_count": 1,
+          "model_load_seconds": 8.492,
+          "generation_seconds": [
+            106.323
+          ],
+          "total_seconds": 118.306,
+          "reference_audio_used": true,
+          "exaggeration": 0.5,
+          "cfg_weight": 0.47,
+          "output": "out/tayvoriq-youtube-tiktok/candidate-01/20261114_142725_dhl-paeckchen-was-sich-beim-porto-ab-januar-aendert/tiktok/voice_chatterbox_raw.wav",
+          "output_bytes": 1048364,
+          "audio_container": "wav-pcm16-standard-library"
+        },
+        "natural_voice_target_seconds": 26.818,
+        "natural_voice_wpm": 132.0,
+        "full_short_target_seconds": 35.0,
+        "coherent_chunk_limit": 1,
+        "configured_max_chars": 520,
+        "premium_voice_timeout_budget_seconds": 240,
+        "pronunciation_prepared": true,
+        "pronunciation_profile": "de-critical-terms-v1",
+        "narrator_tone_applied": false,
+        "narrator_pitch_shift_applied": false,
+        "human_narrator_quality_profile": true,
+        "natural_pacing_contract_passed": true,
+        "premium_voice_required": true,
+        "premium_voice_contract_passed": true,
+        "continuous_narrator_take": true,
+        "artificial_compound_splitting": false,
+        "internal_hyphen_preserved": true,
+        "human_pronunciation_profile": "de-critical-san-disk-ka-i-v1",
+        "targeted_acronym_pronunciation_aid": true,
+        "sandisk_spoken_form": "San Disk",
+        "critical_term_pronunciation_aid": true,
+        "critical_term_pronunciation_terms": [
+          "DHL"
+        ],
+        "critical_term_speech_surface_only": true,
+        "pronunciation_contract_version": "de-acronym-letter-names-v2",
+        "all_visible_acronyms_normalized": true,
+        "pronunciation_replacements": {
+          "TAYVORIQ": "Tayvorik"
+        },
+        "spoken_contract_text": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tayvoriq_spoken_replacement": "",
+        "brand_spoken_fallback_used": false,
+        "brand_spoken_fallback_semantic_only": false,
+        "visible_script_unchanged": true,
+        "canonical_review_contract_unchanged": true,
+        "exact_chatterbox_model_required": "v3",
+        "exact_chatterbox_model_passed": true,
+        "golden_human_reference_required": true,
+        "golden_human_reference_used": true,
+        "golden_human_reference_commit": "08e2dada47d4e823ae139d1151a07fea1ff5d92c",
+        "quality_gates_weakened": false,
+        "deep_voice_gate": {
+          "passed": true,
+          "repair_applied": false,
+          "repair_factor": 1.0,
+          "repair_factors": [],
+          "repair_passes": [],
+          "maximum_repair_passes": 0,
+          "minimum_cumulative_feedback_factor": 1.0,
+          "feedback_measurement_required": true,
+          "before": {
+            "median_f0_hz": 133.33,
+            "p10_f0_hz": 101.91,
+            "p90_f0_hz": 190.48,
+            "pitch_span_hz": 88.57,
+            "silence_ratio": 0.043
+          },
+          "after": {
+            "median_f0_hz": 133.33,
+            "p10_f0_hz": 101.91,
+            "p90_f0_hz": 190.48,
+            "pitch_span_hz": 88.57,
+            "silence_ratio": 0.043
+          },
+          "allowed_f0_hz": [
+            65.0,
+            230.0
+          ],
+          "bounded_repair_window_hz": [
+            65.0,
+            230.0
+          ],
+          "repair_window_basis": "final-gate-divided-by-bounded-pitch-factor",
+          "provider_required": "chatterbox_multilingual_v3",
+          "fallback_allowed": false,
+          "quality_gates_weakened": false,
+          "contract_version": "golden-path-deep-voice-self-heal-v3"
+        },
+        "golden_voice_floor": {
+          "version": "v1",
+          "passed": true,
+          "artificial_pitch_shift_forbidden": true,
+          "narrator_pitch_factor": 1.0,
+          "human_rejected_profiles_forbidden": true,
+          "quality_gates_weakened": false
+        },
+        "pre_render_transcript_validation": {
+          "passed": true,
+          "similarity": 1.0,
+          "missing_critical_terms": [],
+          "expected_tokens": 60,
+          "actual_tokens": 60,
+          "excessive_extra_words": false,
+          "forbidden_tail": false,
+          "transcript": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_expected": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_actual": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "role": "final",
+          "raw_transcript": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_transcript": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_contract_expected": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "asr_orthographic_equivalence_applied": true,
+          "hallucinated_tail": false,
+          "terminal_token_match": true,
+          "segment_min_similarity": 0.95,
+          "similarity_gate_passed": true,
+          "transcription_attempt": 1,
+          "postmux_min_similarity": 0.95,
+          "base_gate_passed": true,
+          "attempts": [
+            {
+              "passed": true,
+              "similarity": 1.0,
+              "missing_critical_terms": [],
+              "expected_tokens": 60,
+              "actual_tokens": 60,
+              "excessive_extra_words": false,
+              "forbidden_tail": false,
+              "transcript": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_expected": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_actual": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "role": "final",
+              "raw_transcript": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_transcript": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_contract_expected": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "asr_orthographic_equivalence_applied": true,
+              "hallucinated_tail": false,
+              "terminal_token_match": true,
+              "segment_min_similarity": 0.95,
+              "similarity_gate_passed": true,
+              "transcription_attempt": 1,
+              "postmux_min_similarity": 0.95,
+              "base_gate_passed": true
+            }
+          ],
+          "attempt": 2,
+          "required": true,
+          "min_similarity": 0.95,
+          "quality_gates_weakened": false
+        },
+        "pre_render_voice_attempt": 2,
+        "post_audio_quality_gate": {
+          "passed": true,
+          "provider": "chatterbox_multilingual_v3",
+          "duration_seconds": 26.79,
+          "target_duration_seconds": 35,
+          "fallback": false,
+          "fallback_from": null,
+          "pre_render_transcript_passed": true,
+          "pre_render_transcript_similarity": 1.0,
+          "pre_render_cta_morphology_passed": true,
+          "required_spoken_cta": "folge dem kanal",
+          "quality_gates_weakened": false
+        },
+        "number_pronunciation_replacements": {},
+        "tts_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "spoken_number_normalization_required": false,
+        "spoken_number_normalization_passed": true,
+        "speech_preflight_version": "v20-german-number-verbalization",
+        "native_language_voice_configured": true,
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "render": {
+        "video_path": "short.mp4",
+        "asset_report": [
+          {
+            "scene": 1,
+            "source": "pexels_video",
+            "query": "courier handing cardboard parcel to customer",
+            "requested_query": "courier handing cardboard parcel to customer",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 3.897,
+            "subtitle_present": true,
+            "asset": "scene_01.mp4",
+            "pexels_source_sha256": "9492698ab52d14031ff932e84553018ef11e0a7158897ff7f3202deac278c39a"
+          },
+          {
+            "scene": 2,
+            "source": "pexels_video",
+            "query": "worker packing cardboard parcel",
+            "requested_query": "worker packing cardboard parcel",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.871,
+            "subtitle_present": true,
+            "asset": "scene_02.mp4",
+            "pexels_source_sha256": "84619128af7097b2b6dd6fe87adfecb713c56d4c616d49b175ed25ec85f3ea73"
+          },
+          {
+            "scene": 3,
+            "source": "pexels_video",
+            "query": "cardboard parcel sorting conveyor",
+            "requested_query": "cardboard parcel sorting conveyor",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 3.41,
+            "subtitle_present": true,
+            "asset": "scene_03.mp4",
+            "pexels_source_sha256": "af3c57f058d611fba4a0711c59091f648b9d63752724bafd74d4fb01479b3849"
+          },
+          {
+            "scene": 4,
+            "source": "pexels_video",
+            "query": "shipping label on cardboard box",
+            "requested_query": "shipping label on cardboard box",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.871,
+            "subtitle_present": true,
+            "asset": "scene_04.mp4",
+            "pexels_source_sha256": "c91202626e3c90aaa60a0ef6845d60aec1b25657bfa48dc132c813f830d8e05b"
+          },
+          {
+            "scene": 5,
+            "source": "pexels_video",
+            "query": "worker packing boxes for shipment",
+            "requested_query": "worker packing boxes for shipment",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 5.358,
+            "subtitle_present": true,
+            "asset": "scene_05.mp4",
+            "pexels_source_sha256": "0dc5112d32c85171f805bd4d4e40311ace2594ac89de67f324ae86f0c9a336dd"
+          },
+          {
+            "scene": 6,
+            "source": "pexels_video",
+            "query": "courier delivering cardboard package",
+            "requested_query": "courier delivering cardboard package",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 5.634,
+            "subtitle_present": true,
+            "asset": "scene_06.mp4",
+            "pexels_source_sha256": "f264cedb92cec4bb332f838306422b9ada499c90d009838d40be8559139e284f"
+          }
+        ],
+        "render_size": "1080x1920",
+        "bytes": 20897005,
+        "voice_duration_seconds": 26.79,
+        "final_duration_seconds": 28.04,
+        "end_padding_seconds": 1.25,
+        "requested_duration_seconds": 35.0,
+        "duration_delta_seconds": -6.96,
+        "duration_status": "REVIEW"
+      },
+      "video_path": "short_tiktok.mp4",
+      "upload_status": "PENDING_APPROVAL",
+      "visual_checkpoint_repair": {
+        "profile": "v3-topic-preserving-moving-assets",
+        "queries": [
+          "courier handing cardboard parcel to customer",
+          "worker packing cardboard parcel",
+          "cardboard parcel sorting conveyor",
+          "shipping label on cardboard box",
+          "worker packing boxes for shipment",
+          "courier delivering cardboard package"
+        ],
+        "moving_assets_required": 4,
+        "visual_diversity_required": 3,
+        "actual_frame_semantics_prevalidated": false,
+        "script_changed": false,
+        "voice_changed": false,
+        "sources_changed": false,
+        "quality_gates_weakened": false
+      }
+    }
+  },
+  "platform_package": {
+    "requested_platform": "youtube_tiktok",
+    "targets": [
+      "youtube_shorts",
+      "tiktok"
+    ],
+    "packages": [
+      {
+        "platform": "youtube_shorts",
+        "status": "PENDING_APPROVAL",
+        "video_file": "short_youtube.mp4",
+        "metadata": {
+          "title": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+          "description": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "tags": [
+            "world_society",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt."
+      },
+      {
+        "platform": "tiktok",
+        "status": "PENDING_APPROVAL",
+        "video_file": "short_tiktok.mp4",
+        "metadata": {
+          "title": "DHL-Päckchen: Was sich beim Porto ab Januar ändert",
+          "caption": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "privacy_default": "PUBLIC_TO_EVERYONE",
+          "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+        },
+        "cta": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt."
+      }
+    ]
+  },
+  "preapproval_ai_audit": {
+    "schema_version": 3,
+    "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
+    "passed": true,
+    "scores": {
+      "factual_accuracy": 98,
+      "pronunciation": 98,
+      "marketing": 92,
+      "sales": 90,
+      "platform_fit": 94,
+      "visual": 95,
+      "overall": 95
+    },
+    "thresholds": {
+      "factual_accuracy": 90,
+      "pronunciation": 95,
+      "marketing": 80,
+      "sales": 75,
+      "platform_fit": 80,
+      "visual": 78,
+      "overall": 85
+    },
+    "audio_reports": {
+      "youtube_shorts": {
+        "platform": "youtube_shorts",
+        "passed": true,
+        "expected_spoken_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "transcript": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "similarity": 0.9752,
+        "average_logprob": -0.0689,
+        "critical_terms": [],
+        "missing_critical_terms": [],
+        "blockers": [],
+        "transcription_model": "whisper-large-v3",
+        "orthographic_pronunciation_alias_proofs": [],
+        "number_orthographic_alias_proofs": [],
+        "pronunciation_contract_version": "de-acronym-letter-names-v2",
+        "strict_number_audit": {
+          "required": false,
+          "visible_script": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "tts_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {},
+          "transcription_prompt_used": false,
+          "version": "v2-unbiased-number-proof-compressed-audio"
+        },
+        "raw_similarity_before_safe_normalization": 0.9735,
+        "safe_orthographic_contract_normalization": true,
+        "normalized_expected_spoken_text": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "normalized_transcript": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "minimum_transcript_similarity": 0.82,
+        "request_bound_voice_quality_contract": false
+      },
+      "tiktok": {
+        "platform": "tiktok",
+        "passed": true,
+        "expected_spoken_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "transcript": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "similarity": 0.9587,
+        "average_logprob": -0.0615,
+        "critical_terms": [],
+        "missing_critical_terms": [],
+        "blockers": [],
+        "transcription_model": "whisper-large-v3",
+        "orthographic_pronunciation_alias_proofs": [],
+        "number_orthographic_alias_proofs": [],
+        "pronunciation_contract_version": "de-acronym-letter-names-v2",
+        "strict_number_audit": {
+          "required": false,
+          "visible_script": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "tts_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {},
+          "transcription_prompt_used": false,
+          "version": "v2-unbiased-number-proof-compressed-audio"
+        },
+        "raw_similarity_before_safe_normalization": 0.9558,
+        "safe_orthographic_contract_normalization": true,
+        "normalized_expected_spoken_text": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "normalized_transcript": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "minimum_transcript_similarity": 0.82,
+        "request_bound_voice_quality_contract": false
+      }
+    },
+    "marketing_review": {
+      "factual_accuracy": {
+        "score": 98.0,
+        "blockers": [],
+        "findings": [
+          "Alle getroffenen Aussagen über DHL-Preiserhöhungen, Lohn- und Energiekosten sowie Online-Frankierungen sind durch die gelieferten Quellen (DHL Group, rbb24, Tagesschau) exakt gedeckt."
+        ]
+      },
+      "pronunciation_interpretation": {
+        "score": 96.0,
+        "blockers": [],
+        "findings": [
+          "Das Audio-Transkript stimmt inhaltlich mit dem sichtbaren Skript überein. Die geringfügigen Abweichungen ('Online-Preis' statt 'Onlinepreis' bei YouTube bzw. 'Folge dem Kanal' statt 'Folge diesem Kanal' bei TikTok) sind grammatikalisch korrekt und stellen keinen Sinnverlust oder Fehler dar."
+        ]
+      },
+      "marketing_effectiveness": {
+        "score": 92.0,
+        "blockers": [],
+        "findings": [
+          "Der Einstieg (Hook) lenkt die Aufmerksamkeit direkt auf das relevante Thema der DHL-Portoänderungen.",
+          "Der Nutzen für den Zuschauer wird durch den Hinweis auf den Preisunterschied zwischen Filial- und Online-Frankierung klar und ohne Clickbait vermittelt."
+        ]
+      },
+      "sales_effectiveness": {
+        "score": 90.0,
+        "blockers": [],
+        "findings": [
+          "Die Handlungsaufforderung (CTA) ist plattformgerecht (YouTube: Abo, TikTok: Follow) und bietet einen echten Mehrwert durch verifizierte Einordnung und konkrete Alltagstipps, ohne künstlichen Druck aufzubauen."
+        ]
+      },
+      "platform_fit": {
+        "score": 94.0,
+        "blockers": [],
+        "findings": [
+          "Die Formate für YouTube Shorts und TikTok sind sauber getrennt, nutzen passende Captions, Titel und Hashtags und entsprechen den gängigen Plattformstandards."
+        ]
+      },
+      "overall_score": 94.0,
+      "approval_recommendation": "PASS",
+      "blockers": [],
+      "strengths": [
+        "Hervorragende Faktenstreue basierend auf verifizierten Unternehmens- und Nachrichtenquellen.",
+        "Klare Nutzenkommunikation für Verbraucher mit direktem Alltagsbezug.",
+        "Saubere plattformspezifische Ausrichtung für YouTube und TikTok."
+      ],
+      "repair_instructions": [],
+      "score_scale_normalized": true,
+      "provider_model_fallback": {
+        "selected_model": "gemini-3.5-flash-lite",
+        "attempted_models": [
+          "gemini-3.5-flash",
+          "gemini-3.6-flash",
+          "gemini-3.5-flash-lite"
+        ],
+        "provider_failures_before_success": [
+          "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } }",
+          "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 16h4m58.3861692s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"typ"
+        ],
+        "same_prompt": true,
+        "quality_gate_weakened": false
+      }
+    },
+    "visual_review": {
+      "score": "95",
+      "passed": true,
+      "blockers": [],
+      "findings": [
+        "Visuelle Qualität der Videosequenzen ist hoch und professionell gerendert.",
+        "Die Untertitel sind klar lesbar und gut im mobilen Format positioniert.",
+        "Thematischer Bezug zu DHL-Päckchen und Portoänderungen ist durchgängig durch Requisiten wie Kartons und Logistik-Szenen gegeben."
+      ],
+      "marketing_visual_strengths": [
+        "Starke vertrauensbasierte Bildsprache durch authentische Logistik- und Verpackungsszenen",
+        "Hervorragende Lesbarkeit der Textoverlays auf allen Plattformen (YouTube Shorts & TikTok)",
+        "Klare visuelle Hierarchie, die den Zuschauer durch die verschiedenen Aspekte der Portoänderung führt"
+      ],
+      "provider": "gemini:gemini-3.5-flash-lite",
+      "reviewed_frames": [
+        "youtube_shorts-1.jpg",
+        "youtube_shorts-2.jpg",
+        "youtube_shorts-3.jpg",
+        "tiktok-1.jpg",
+        "tiktok-2.jpg",
+        "tiktok-3.jpg"
+      ],
+      "provider_model_fallback": {
+        "selected_model": "gemini-3.5-flash-lite",
+        "attempted_models": [
+          "gemini-3.5-flash",
+          "gemini-3.6-flash",
+          "gemini-3.5-flash-lite"
+        ],
+        "provider_failures_before_success": [
+          "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See",
+          "gemini-3.6-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See"
+        ],
+        "same_frames_and_prompt": true,
+        "quality_gate_weakened": false,
+        "fail_closed": true
+      }
+    },
+    "objective_conversion_review": {
+      "passed": true,
+      "score": 83,
+      "action_ok": true,
+      "platform_specific_actions_ok": true,
+      "youtube_action_ok": true,
+      "tiktok_action_ok": true,
+      "required_platforms_present": true,
+      "benefit_hits": [
+        "verifiziert",
+        "konkrete schritte"
+      ],
+      "length_words": 9,
+      "length_ok": true,
+      "consistent_across_platforms": true,
+      "semantic_tail_consistent": true,
+      "platform_contracts_ok": true,
+      "manipulative_pressure": false,
+      "ctas": [
+        "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+      ],
+      "ctas_by_platform": {
+        "youtube_shorts": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tiktok": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+      },
+      "semantic_tails": [
+        "für verifizierte einordnung und konkrete schritte.",
+        "für verifizierte einordnung und konkrete schritte."
+      ],
+      "quality_gate_weakened": false
+    },
+    "blockers": [],
+    "strengths": [
+      "Hervorragende Faktenstreue basierend auf verifizierten Unternehmens- und Nachrichtenquellen.",
+      "Klare Nutzenkommunikation für Verbraucher mit direktem Alltagsbezug.",
+      "Saubere plattformspezifische Ausrichtung für YouTube und TikTok."
+    ],
+    "repair_instructions": [],
+    "providers": {
+      "marketing": "gemini:gemini-3.5-flash-lite",
+      "visual": "gemini:gemini-3.5-flash-lite",
+      "audio": "groq:whisper-large-v3-objective-score",
+      "conversion": "deterministic-cta-benefit-gate-v1"
+    },
+    "human_review_allowed": true,
+    "quality_gates_weakened": false,
+    "score_calibration": {
+      "provider_scales": "0-1-or-0-10-or-0-100-to-percent",
+      "pronunciation": "objective-transcript-similarity-and-confidence",
+      "sales": "max-independent-judge-and-objective-cta-benefit-score",
+      "overall": "fixed-weight-evidence-score",
+      "marketing_provider_order": "gemini-retry-first-groq-fallback",
+      "visual_provider_order": "configured-gemini-then-3.6-flash-then-3.5-flash-lite"
+    }
+  },
+  "checkpoint_migration": {
+    "from_implementation_sha": "4553af612a3d0d5842ad05692c1d23429a0ea120",
+    "to_implementation_sha": "5e4fee6bbcf3986aa808cfc1093ccce344173939",
+    "changed_paths": [
+      ".automation/tayvoriq-quality-status.json",
+      "tests/test_tayvoriq_editorial_visual_standard_v1.py",
+      "tools/tayvoriq_cloud_render_safe.py",
+      "tools/tayvoriq_editorial_visual_standard_v1.py",
+      "tools/tayvoriq_recovery_checkpoint_v1.py",
+      "tools/tayvoriq_resume_existing_render_v2.py",
+      "tools/tayvoriq_visual_only_repair_v1_legacy.py"
+    ],
+    "scope": "localized-quality-repair-input-only",
+    "repair_targets": [
+      "VISUALS"
+    ],
+    "full_reaudit_required": true,
+    "old_quality_proof_reused": false,
+    "old_master_approval_reused": false,
+    "quality_gates_weakened": false
+  },
+  "visual_checkpoint_repair": {
+    "profile": "v3-topic-preserving-moving-assets",
+    "queries": [
+      "courier handing cardboard parcel to customer",
+      "worker packing cardboard parcel",
+      "cardboard parcel sorting conveyor",
+      "shipping label on cardboard box",
+      "worker packing boxes for shipment",
+      "courier delivering cardboard package"
+    ],
+    "full_pipeline_restarted": false,
+    "script_changed": false,
+    "voice_changed": false,
+    "sources_changed": false,
+    "actual_frame_semantics_prevalidated": false,
+    "quality_gates_weakened": false
+  }
+}

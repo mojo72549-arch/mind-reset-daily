@@ -1,0 +1,239 @@
+{
+  "schema_version": 3,
+  "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
+  "passed": true,
+  "scores": {
+    "factual_accuracy": 98,
+    "pronunciation": 98,
+    "marketing": 92,
+    "sales": 90,
+    "platform_fit": 94,
+    "visual": 95,
+    "overall": 95
+  },
+  "thresholds": {
+    "factual_accuracy": 90,
+    "pronunciation": 95,
+    "marketing": 80,
+    "sales": 75,
+    "platform_fit": 80,
+    "visual": 78,
+    "overall": 85
+  },
+  "audio_reports": {
+    "youtube_shorts": {
+      "platform": "youtube_shorts",
+      "passed": true,
+      "expected_spoken_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9752,
+      "average_logprob": -0.0689,
+      "critical_terms": [],
+      "missing_critical_terms": [],
+      "blockers": [],
+      "transcription_model": "whisper-large-v3",
+      "orthographic_pronunciation_alias_proofs": [],
+      "number_orthographic_alias_proofs": [],
+      "pronunciation_contract_version": "de-acronym-letter-names-v2",
+      "strict_number_audit": {
+        "required": false,
+        "visible_script": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {},
+        "transcription_prompt_used": false,
+        "version": "v2-unbiased-number-proof-compressed-audio"
+      },
+      "raw_similarity_before_safe_normalization": 0.9735,
+      "safe_orthographic_contract_normalization": true,
+      "normalized_expected_spoken_text": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "minimum_transcript_similarity": 0.82,
+      "request_bound_voice_quality_contract": false
+    },
+    "tiktok": {
+      "platform": "tiktok",
+      "passed": true,
+      "expected_spoken_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9587,
+      "average_logprob": -0.0615,
+      "critical_terms": [],
+      "missing_critical_terms": [],
+      "blockers": [],
+      "transcription_model": "whisper-large-v3",
+      "orthographic_pronunciation_alias_proofs": [],
+      "number_orthographic_alias_proofs": [],
+      "pronunciation_contract_version": "de-acronym-letter-names-v2",
+      "strict_number_audit": {
+        "required": false,
+        "visible_script": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "DHL plant ab Januar höhere Filialpreise für Päckchen. DHL passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {},
+        "transcription_prompt_used": false,
+        "version": "v2-unbiased-number-proof-compressed-audio"
+      },
+      "raw_similarity_before_safe_normalization": 0.9558,
+      "safe_orthographic_contract_normalization": true,
+      "normalized_expected_spoken_text": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Onlinepreis regelmäßig und besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Deh Hah Ell plant ab Januar höhere Filialpreise für Päckchen. Deh Hah Ell passt Preise an, weil Lohnkosten und Energiekosten gestiegen sind. Betroffen sind Privatkunden, die kleine Päckchen verschicken. Für dich macht die Online-Frankierung beim kleinsten Päckchen einen Preisunterschied. Vergleiche vor dem Versand Filialpreis und Online-Preis regelmäßig und besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "minimum_transcript_similarity": 0.82,
+      "request_bound_voice_quality_contract": false
+    }
+  },
+  "marketing_review": {
+    "factual_accuracy": {
+      "score": 98.0,
+      "blockers": [],
+      "findings": [
+        "Alle getroffenen Aussagen über DHL-Preiserhöhungen, Lohn- und Energiekosten sowie Online-Frankierungen sind durch die gelieferten Quellen (DHL Group, rbb24, Tagesschau) exakt gedeckt."
+      ]
+    },
+    "pronunciation_interpretation": {
+      "score": 96.0,
+      "blockers": [],
+      "findings": [
+        "Das Audio-Transkript stimmt inhaltlich mit dem sichtbaren Skript überein. Die geringfügigen Abweichungen ('Online-Preis' statt 'Onlinepreis' bei YouTube bzw. 'Folge dem Kanal' statt 'Folge diesem Kanal' bei TikTok) sind grammatikalisch korrekt und stellen keinen Sinnverlust oder Fehler dar."
+      ]
+    },
+    "marketing_effectiveness": {
+      "score": 92.0,
+      "blockers": [],
+      "findings": [
+        "Der Einstieg (Hook) lenkt die Aufmerksamkeit direkt auf das relevante Thema der DHL-Portoänderungen.",
+        "Der Nutzen für den Zuschauer wird durch den Hinweis auf den Preisunterschied zwischen Filial- und Online-Frankierung klar und ohne Clickbait vermittelt."
+      ]
+    },
+    "sales_effectiveness": {
+      "score": 90.0,
+      "blockers": [],
+      "findings": [
+        "Die Handlungsaufforderung (CTA) ist plattformgerecht (YouTube: Abo, TikTok: Follow) und bietet einen echten Mehrwert durch verifizierte Einordnung und konkrete Alltagstipps, ohne künstlichen Druck aufzubauen."
+      ]
+    },
+    "platform_fit": {
+      "score": 94.0,
+      "blockers": [],
+      "findings": [
+        "Die Formate für YouTube Shorts und TikTok sind sauber getrennt, nutzen passende Captions, Titel und Hashtags und entsprechen den gängigen Plattformstandards."
+      ]
+    },
+    "overall_score": 94.0,
+    "approval_recommendation": "PASS",
+    "blockers": [],
+    "strengths": [
+      "Hervorragende Faktenstreue basierend auf verifizierten Unternehmens- und Nachrichtenquellen.",
+      "Klare Nutzenkommunikation für Verbraucher mit direktem Alltagsbezug.",
+      "Saubere plattformspezifische Ausrichtung für YouTube und TikTok."
+    ],
+    "repair_instructions": [],
+    "score_scale_normalized": true,
+    "provider_model_fallback": {
+      "selected_model": "gemini-3.5-flash-lite",
+      "attempted_models": [
+        "gemini-3.5-flash",
+        "gemini-3.6-flash",
+        "gemini-3.5-flash-lite"
+      ],
+      "provider_failures_before_success": [
+        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } }",
+        "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 16h4m58.3861692s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"typ"
+      ],
+      "same_prompt": true,
+      "quality_gate_weakened": false
+    }
+  },
+  "visual_review": {
+    "score": "95",
+    "passed": true,
+    "blockers": [],
+    "findings": [
+      "Visuelle Qualität der Videosequenzen ist hoch und professionell gerendert.",
+      "Die Untertitel sind klar lesbar und gut im mobilen Format positioniert.",
+      "Thematischer Bezug zu DHL-Päckchen und Portoänderungen ist durchgängig durch Requisiten wie Kartons und Logistik-Szenen gegeben."
+    ],
+    "marketing_visual_strengths": [
+      "Starke vertrauensbasierte Bildsprache durch authentische Logistik- und Verpackungsszenen",
+      "Hervorragende Lesbarkeit der Textoverlays auf allen Plattformen (YouTube Shorts & TikTok)",
+      "Klare visuelle Hierarchie, die den Zuschauer durch die verschiedenen Aspekte der Portoänderung führt"
+    ],
+    "provider": "gemini:gemini-3.5-flash-lite",
+    "reviewed_frames": [
+      "youtube_shorts-1.jpg",
+      "youtube_shorts-2.jpg",
+      "youtube_shorts-3.jpg",
+      "tiktok-1.jpg",
+      "tiktok-2.jpg",
+      "tiktok-3.jpg"
+    ],
+    "provider_model_fallback": {
+      "selected_model": "gemini-3.5-flash-lite",
+      "attempted_models": [
+        "gemini-3.5-flash",
+        "gemini-3.6-flash",
+        "gemini-3.5-flash-lite"
+      ],
+      "provider_failures_before_success": [
+        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See",
+        "gemini-3.6-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See"
+      ],
+      "same_frames_and_prompt": true,
+      "quality_gate_weakened": false,
+      "fail_closed": true
+    }
+  },
+  "objective_conversion_review": {
+    "passed": true,
+    "score": 83,
+    "action_ok": true,
+    "platform_specific_actions_ok": true,
+    "youtube_action_ok": true,
+    "tiktok_action_ok": true,
+    "required_platforms_present": true,
+    "benefit_hits": [
+      "verifiziert",
+      "konkrete schritte"
+    ],
+    "length_words": 9,
+    "length_ok": true,
+    "consistent_across_platforms": true,
+    "semantic_tail_consistent": true,
+    "platform_contracts_ok": true,
+    "manipulative_pressure": false,
+    "ctas": [
+      "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+    ],
+    "ctas_by_platform": {
+      "youtube_shorts": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "tiktok": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+    },
+    "semantic_tails": [
+      "für verifizierte einordnung und konkrete schritte.",
+      "für verifizierte einordnung und konkrete schritte."
+    ],
+    "quality_gate_weakened": false
+  },
+  "blockers": [],
+  "strengths": [
+    "Hervorragende Faktenstreue basierend auf verifizierten Unternehmens- und Nachrichtenquellen.",
+    "Klare Nutzenkommunikation für Verbraucher mit direktem Alltagsbezug.",
+    "Saubere plattformspezifische Ausrichtung für YouTube und TikTok."
+  ],
+  "repair_instructions": [],
+  "providers": {
+    "marketing": "gemini:gemini-3.5-flash-lite",
+    "visual": "gemini:gemini-3.5-flash-lite",
+    "audio": "groq:whisper-large-v3-objective-score",
+    "conversion": "deterministic-cta-benefit-gate-v1"
+  },
+  "human_review_allowed": true,
+  "quality_gates_weakened": false,
+  "score_calibration": {
+    "provider_scales": "0-1-or-0-10-or-0-100-to-percent",
+    "pronunciation": "objective-transcript-similarity-and-confidence",
+    "sales": "max-independent-judge-and-objective-cta-benefit-score",
+    "overall": "fixed-weight-evidence-score",
+    "marketing_provider_order": "gemini-retry-first-groq-fallback",
+    "visual_provider_order": "configured-gemini-then-3.6-flash-then-3.5-flash-lite"
+  }
+}
