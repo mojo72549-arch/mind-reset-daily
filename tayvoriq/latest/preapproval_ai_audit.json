@@ -4,12 +4,12 @@
   "passed": true,
   "scores": {
     "factual_accuracy": 100,
-    "pronunciation": 98,
-    "marketing": 92,
-    "sales": 90,
+    "pronunciation": 100,
+    "marketing": 95,
+    "sales": 95,
     "platform_fit": 95,
-    "visual": 92,
-    "overall": 95
+    "visual": 85,
+    "overall": 96
   },
   "thresholds": {
     "factual_accuracy": 90,
@@ -24,10 +24,10 @@
     "youtube_shorts": {
       "platform": "youtube_shorts",
       "passed": true,
-      "expected_spoken_text": "Mercedes stoppt neue Investitionen und prüft mögliche deutsche Werksschließungen. Weil Verhandlungen über Arbeitskosten derzeit keine Einigung bringen. Betroffen sein könnten Beschäftigte deutscher Produktionsstandorte und Zulieferer. Für dich gilt: Noch wurde keine konkrete Schließung beschlossen. Prüfe künftige Vereinbarungen zwischen Vorstand und Betriebsrat regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "Mercedes stoppt neue Investitionen und prüft mögliche deutsche Werkschließungen, weil Verhandlungen über Arbeitskosten derzeit keine Einigung bringen. Betroffen sein könnten beschäftigte deutscher Produktionsstandorte und Zulieferer. Für dich gilt, noch wurde keine konkrete Schließung beschlossen. Prüfe künftige Vereinbarungen zwischen Vorstand und Betriebsrat regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "expected_spoken_text": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "Stuttgarts Hauptbahnhof hat die große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbinden sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund 80 Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
       "similarity": 0.9818,
-      "average_logprob": -0.0669,
+      "average_logprob": -0.086,
       "critical_terms": [],
       "missing_critical_terms": [],
       "blockers": [],
@@ -37,26 +37,26 @@
       "pronunciation_contract_version": "de-acronym-letter-names-v2",
       "strict_number_audit": {
         "required": false,
-        "visible_script": "Mercedes stoppt neue Investitionen und prüft mögliche deutsche Werksschließungen. Weil Verhandlungen über Arbeitskosten derzeit keine Einigung bringen. Betroffen sein könnten Beschäftigte deutscher Produktionsstandorte und Zulieferer. Für dich gilt: Noch wurde keine konkrete Schließung beschlossen. Prüfe künftige Vereinbarungen zwischen Vorstand und Betriebsrat regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "Mercedes stoppt neue Investitionen und prüft mögliche deutsche Werksschließungen. Weil Verhandlungen über Arbeitskosten derzeit keine Einigung bringen. Betroffen sein könnten Beschäftigte deutscher Produktionsstandorte und Zulieferer. Für dich gilt: Noch wurde keine konkrete Schließung beschlossen. Prüfe künftige Vereinbarungen zwischen Vorstand und Betriebsrat regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "visible_script": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
         "number_replacements": {},
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
       "raw_similarity_before_safe_normalization": 0.9818,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "Mercedes stoppt neue Investitionen und prüft mögliche deutsche Werksschließungen. Weil Verhandlungen über Arbeitskosten derzeit keine Einigung bringen. Betroffen sein könnten Beschäftigte deutscher Produktionsstandorte und Zulieferer. Für dich gilt: Noch wurde keine konkrete Schließung beschlossen. Prüfe künftige Vereinbarungen zwischen Vorstand und Betriebsrat regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "Mercedes stoppt neue Investitionen und prüft mögliche deutsche Werkschließungen, weil Verhandlungen über Arbeitskosten derzeit keine Einigung bringen. Betroffen sein könnten beschäftigte deutscher Produktionsstandorte und Zulieferer. Für dich gilt, noch wurde keine konkrete Schließung beschlossen. Prüfe künftige Vereinbarungen zwischen Vorstand und Betriebsrat regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_expected_spoken_text": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Stuttgarts Hauptbahnhof hat die große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbinden sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund 80 Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
       "minimum_transcript_similarity": 0.82,
       "request_bound_voice_quality_contract": false
     },
     "tiktok": {
       "platform": "tiktok",
       "passed": true,
-      "expected_spoken_text": "Mercedes stoppt neue Investitionen und prüft mögliche deutsche Werksschließungen. Weil Verhandlungen über Arbeitskosten derzeit keine Einigung bringen. Betroffen sein könnten Beschäftigte deutscher Produktionsstandorte und Zulieferer. Für dich gilt: Noch wurde keine konkrete Schließung beschlossen. Prüfe künftige Vereinbarungen zwischen Vorstand und Betriebsrat regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "Mercedes stoppt neue Investitionen und prüft mögliche deutsche Werkschließungen. Weil Verhandlungen über Arbeitskosten derzeit keine Einigung bringen, betroffen sein könnten beschäftigte deutscher Produktionsstandorte und Zulieferer. Für dich gilt, noch wurde keine konkrete Schließung beschlossen. Prüfe künftige Vereinbarungen zwischen Vorstand und Betriebsrat regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "similarity": 0.9636,
-      "average_logprob": -0.0682,
+      "expected_spoken_text": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "Stuttgarts Hauptbahnhof hat die große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund 80 Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9818,
+      "average_logprob": -0.0802,
       "critical_terms": [],
       "missing_critical_terms": [],
       "blockers": [],
@@ -66,16 +66,16 @@
       "pronunciation_contract_version": "de-acronym-letter-names-v2",
       "strict_number_audit": {
         "required": false,
-        "visible_script": "Mercedes stoppt neue Investitionen und prüft mögliche deutsche Werksschließungen. Weil Verhandlungen über Arbeitskosten derzeit keine Einigung bringen. Betroffen sein könnten Beschäftigte deutscher Produktionsstandorte und Zulieferer. Für dich gilt: Noch wurde keine konkrete Schließung beschlossen. Prüfe künftige Vereinbarungen zwischen Vorstand und Betriebsrat regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "Mercedes stoppt neue Investitionen und prüft mögliche deutsche Werksschließungen. Weil Verhandlungen über Arbeitskosten derzeit keine Einigung bringen. Betroffen sein könnten Beschäftigte deutscher Produktionsstandorte und Zulieferer. Für dich gilt: Noch wurde keine konkrete Schließung beschlossen. Prüfe künftige Vereinbarungen zwischen Vorstand und Betriebsrat regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "visible_script": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
         "number_replacements": {},
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9636,
+      "raw_similarity_before_safe_normalization": 0.9818,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "Mercedes stoppt neue Investitionen und prüft mögliche deutsche Werksschließungen. Weil Verhandlungen über Arbeitskosten derzeit keine Einigung bringen. Betroffen sein könnten Beschäftigte deutscher Produktionsstandorte und Zulieferer. Für dich gilt: Noch wurde keine konkrete Schließung beschlossen. Prüfe künftige Vereinbarungen zwischen Vorstand und Betriebsrat regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "Mercedes stoppt neue Investitionen und prüft mögliche deutsche Werkschließungen. Weil Verhandlungen über Arbeitskosten derzeit keine Einigung bringen, betroffen sein könnten beschäftigte deutscher Produktionsstandorte und Zulieferer. Für dich gilt, noch wurde keine konkrete Schließung beschlossen. Prüfe künftige Vereinbarungen zwischen Vorstand und Betriebsrat regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_expected_spoken_text": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Stuttgarts Hauptbahnhof hat die große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund 80 Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
       "minimum_transcript_similarity": 0.82,
       "request_bound_voice_quality_contract": false
     }
@@ -85,76 +85,80 @@
       "score": 100.0,
       "blockers": [],
       "findings": [
-        "Alle Kernbehauptungen zum Investitionsstopp und der Prüfung von Werksschließungen durch Mercedes-Benz sind vollständig und exakt durch die gelieferten Quellen (SWR Aktuell, IG Metall) belegt.",
-        "Die saubere Differenzierung zwischen feststehendem Investitionsstopp und der noch unbeschlossenen Werksschließung ist im Skript korrekt wiedergegeben."
+        "Alle getätigten Tatsachenbehauptungen (Wiederöffnung der Großen Schalterhalle im Stuttgarter Hauptbahnhof, Sanierung, Verbindung beider Ebenen, Einsparung von rund 80 Metern für Umsteiger) sind durch die offiziellen Quellen und den bereitgestellten Quellkontext vollständig belegt."
       ]
     },
     "pronunciation_interpretation": {
-      "score": 96.0,
+      "score": 98.0,
       "blockers": [],
       "findings": [
-        "Beide Sprachaufnahmen wurden durch die automatische Whisper-Prüfung als bestanden (YouTube: 98,18 %, TikTok: 96,36 % Ähnlichkeit) gewertet.",
-        "Der gesprochene Text entspricht inhaltlich und grammatikalisch dem geschriebenen Skript."
+        "Das Audio-Transkript stimmt inhaltlich exakt mit dem sichtbaren Skript überein.",
+        "Zahlen wie '80 Meter' beziehungsweise 'achtzig Meter' wurden sinngemäß korrekt und verständlich übertragen.",
+        "Die Audioprüfung durch Whisper bestätigt eine sehr hohe Übereinstimmung (Similarity: 0.9818)."
       ]
     },
     "marketing_effectiveness": {
-      "score": 92.0,
+      "score": 95.0,
       "blockers": [],
       "findings": [
-        "Direkter, relevanter Aufhänger in den ersten Sekunden ohne reißerischen Clickbait.",
-        "Hoher Informationswert und verständlicher Mehrwert für die Zielgruppe (Beschäftigte, Zulieferer und wirtschaftlich Interessierte)."
+        "Der Hook liefert sofort eine relevante, lokale Alltagsinformation für Pendler in Stuttgart.",
+        "Der Zuschauer-Nutzen (konkreter Zeit- und Weggewinn von rund 80 Metern) wird ohne Clickbait klar und verständlich kommuniziert."
       ]
     },
     "sales_effectiveness": {
-      "score": 90.0,
+      "score": 95.0,
       "blockers": [],
       "findings": [
-        "Seriöser, auf Expertise basierender Umwandlungspfad.",
-        "Klare Call-to-Action, die den Abonnenten/Follower-Gewinn über verifizierte Einordnung und konkrete Handlungsschritte nachvollziehbar begründet."
+        "Der Conversion-Pfad ist durch einen klaren redaktionellen Informationsnutzen begründet.",
+        "Die plattformgerechte Aufforderung (YouTube: 'Abonniere...', TikTok: 'Folge...') ist grammatikalisch korrekt, setzt keinen manipulativen Druck und bietet einen echten Grund zum Folgen (verifizierte Einordnung und konkrete Schritte im Pendleralltag)."
       ]
     },
     "platform_fit": {
       "score": 95.0,
       "blockers": [],
       "findings": [
-        "Plattformgerechte CTAs wurden eingehalten: 'Abonniere' für YouTube Shorts und 'Folge' für TikTok.",
-        "Metadaten, Hashtags und Captions entsprechen den Anforderungen der jeweiligen Videoplattformen."
+        "Die Formate für YouTube Shorts und TikTok sind plattformgerecht umgesetzt.",
+        "Titel und Captions sind nicht generisch, sondern präzise auf das regionale Ereignis und die Zielgruppe ausgerichtet."
       ]
     },
-    "overall_score": 95.0,
+    "overall_score": 96.0,
     "approval_recommendation": "PASS",
     "blockers": [],
     "strengths": [
-      "Vollständige faktische Korrektheit und präzise Einhaltung der Quellenvorgaben.",
-      "Plattformspezifische Anpassung der Handlungsaufforderungen (Abonniere vs. Folge).",
-      "Hohe Seriosität und Transparenz bei einem hochsensiblen Wirtschaftsthema."
+      "Hervorragende faktenbasierte Aufbereitung eines lokalen Infrastrukturthemas mit direktem Nutzwert.",
+      "Saubere Übereinstimmung zwischen Skript, Audio-Transkript und verifizierten Quellen.",
+      "Plattformgerechte CTA-Differenzierung ('Abonniere' für YouTube, 'Folge diesem Kanal' für TikTok)."
     ],
     "repair_instructions": [],
     "score_scale_normalized": true,
     "provider_model_fallback": {
-      "selected_model": "gemini-3.5-flash",
+      "selected_model": "gemini-3.5-flash-lite",
       "attempted_models": [
-        "gemini-3.5-flash"
+        "gemini-3.5-flash",
+        "gemini-3.6-flash",
+        "gemini-3.5-flash-lite"
       ],
-      "provider_failures_before_success": [],
+      "provider_failures_before_success": [
+        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 7h51m14.003615376s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"t",
+        "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 7h51m13.898059327s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"t"
+      ],
       "same_prompt": true,
       "quality_gate_weakened": false
     }
   },
   "visual_review": {
-    "score": "92",
+    "score": 85,
     "passed": true,
     "blockers": [],
     "findings": [
-      "Das Material ist visuell sauber und zeigt keine erkennbaren Render- oder Artefaktfehler.",
-      "Die Bildsprache passt gut zum Thema Wirtschaft und Nachrichten.",
-      "Die Textplazierung ist auf mobilen Geräten gut lesbar.",
-      "Der Wechsel der Szenen unterstützt die Retention-Wirkung durch visuelle Dynamik."
+      "Textüberschneidung bei 'MITTELABGANG' und 'S-BAHN / STADTBAHN GESPERRT' in der schematischen Wegskizze macht diesen Bereich schwer lesbar.",
+      "Klarer und konsistenter Aufbau der Frames über verschiedene Plattformen hinweg (YouTube Shorts und TikTok).",
+      "Gute mobile Lesbarkeit durch kontrastreiche Farbgestaltung und klare Typografie in den Untertiteln."
     ],
     "marketing_visual_strengths": [
-      "Professionelle und vertrauenswürdige Bildauswahl, die Autorität ausstrahlt.",
-      "Klare und kontrastreiche Untertitel, die den Lesefluss bei stummem Abspielen erleichtern.",
-      "Gute visuelle Kohärenz zwischen den verschiedenen Videovarianten."
+      "Prägnante und informative Headlines, die das Thema sofort auf den Punkt bringen.",
+      "Vertrauensbildende Elemente wie Quellenangaben ('Quellen: Deutsche Bahn / VVS | 11/2026') am unteren Bildrand.",
+      "Gezielte Call-to-Actions (Abonnieren/Folgen) am Ende des Videos zur Erhöhung der Retention- und Conversion-Wirkung."
     ],
     "provider": "gemini:gemini-3.5-flash-lite",
     "reviewed_frames": [
@@ -215,13 +219,13 @@
   },
   "blockers": [],
   "strengths": [
-    "Vollständige faktische Korrektheit und präzise Einhaltung der Quellenvorgaben.",
-    "Plattformspezifische Anpassung der Handlungsaufforderungen (Abonniere vs. Folge).",
-    "Hohe Seriosität und Transparenz bei einem hochsensiblen Wirtschaftsthema."
+    "Hervorragende faktenbasierte Aufbereitung eines lokalen Infrastrukturthemas mit direktem Nutzwert.",
+    "Saubere Übereinstimmung zwischen Skript, Audio-Transkript und verifizierten Quellen.",
+    "Plattformgerechte CTA-Differenzierung ('Abonniere' für YouTube, 'Folge diesem Kanal' für TikTok)."
   ],
   "repair_instructions": [],
   "providers": {
-    "marketing": "gemini:gemini-3.5-flash",
+    "marketing": "gemini:gemini-3.5-flash-lite",
     "visual": "gemini:gemini-3.5-flash-lite",
     "audio": "groq:whisper-large-v3-objective-score",
     "conversion": "deterministic-cta-benefit-gate-v1"
