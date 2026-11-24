@@ -1,0 +1,3568 @@
+{
+  "job_id": "20261124_123845_altersteilzeit-reform-koennte-fiskus-milliarden-bringen",
+  "mode": "tayvoriq_context_first_dual_platform_v2",
+  "created_at": "2026-11-24T12:54:32+00:00",
+  "github_run_id": "45394864913",
+  "topic": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+  "language": "Deutsch",
+  "requested_platform": "youtube_tiktok",
+  "target_duration": 35,
+  "approval_status": "PENDING_HUMAN_REVIEW",
+  "render_status": "DONE",
+  "upload_status": "NOT_STARTED_PENDING_HUMAN_APPROVAL",
+  "llm_report": {
+    "source": {
+      "provider": "template:fallback",
+      "fallback": true,
+      "errors": [
+        {
+          "provider": "gemini",
+          "error": "Gemini lieferte kein valides JSON"
+        },
+        {
+          "provider": "groq",
+          "error": "404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions"
+        },
+        {
+          "provider": "huggingface",
+          "error": "400 Client Error: Bad Request for url: https://router.huggingface.co/v1/chat/completions"
+        }
+      ]
+    },
+    "rewrite": {
+      "youtube_shorts": {
+        "attempts": [
+          {
+            "provider": "local:source-grounded-context-template",
+            "fallback": true,
+            "errors": [
+              {
+                "provider": "huggingface",
+                "error": "400 Client Error: Bad Request for url: https://router.huggingface.co/v1/chat/completions"
+              }
+            ],
+            "router_version": "v10",
+            "attempt": 1
+          }
+        ],
+        "provider_editorial_attempts": 1,
+        "provider_repair_attempted": false,
+        "provider_repair_issues_before": [],
+        "provider_repair_issues_after": [],
+        "selected_provider_issues": [],
+        "selected_payload_issues": [],
+        "initial_issues": [],
+        "final_issues": [],
+        "source_gate_issues": [],
+        "local_fallback_generated": false,
+        "local_editorial_repair_used": false,
+        "repair_strategy": "provider",
+        "repaired_fields": [],
+        "rewrite_version": "v27-topic-safe-cta-runtime",
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "spoken_brand_removed": false,
+        "spoken_brand_normalized": "TAYVORIQ=>Tai wo rik",
+        "care_cost_grounding_guard": "standard",
+        "brand_pronunciation": "Tayvorik",
+        "topic_specificity_repaired": false,
+        "topic_specificity_issues_before_repair": [],
+        "topic_specificity_issues_after_repair": [],
+        "topic_specificity_verified_locally": false,
+        "editorial_depth_gate": {
+          "passed": true,
+          "applicable": true,
+          "contract_version": "v1-verified-request-five-answer-recovery",
+          "contract_derived_from_sources": true,
+          "minimum_details_in_script": 3,
+          "available_source_bound_details": 4,
+          "consumed_source_bound_details": 4,
+          "planned_detail_available": false,
+          "planned_detail_consumed": false,
+          "rumor_or_unconfirmed_count": 0,
+          "consumed": [
+            {
+              "group": "confirmed_details",
+              "text": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+              "anchors": [],
+              "matched": [
+                "altersteilzeit",
+                "empfiehlt",
+                "jahren",
+                "rentenkommission",
+                "spatere",
+                "statt"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+              "anchors": [],
+              "matched": [
+                "Wegen Sparbedarf"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+              "anchors": [],
+              "matched": [
+                "Alle Arbeitnehmer"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+              "anchors": [],
+              "matched": [
+                "arbeitszeit",
+                "bedeutet",
+                "fruhe",
+                "langere",
+                "rente",
+                "weniger"
+              ]
+            }
+          ],
+          "missing": [],
+          "blockers": [],
+          "quality_gates_weakened": false
+        },
+        "generic_script_allowed_when_specific_evidence_exists": false,
+        "quality_gates_weakened": false,
+        "universal_platform_cta": "Folge und abonniere TAYVORIQ für verifizierte Tech-Trends, klare Einordnungen und konkrete Schritte.",
+        "platform_gate_validation": {
+          "youtube_shorts": {
+            "passed": true,
+            "required_action": "subscribe"
+          },
+          "tiktok": {
+            "passed": true,
+            "required_action": "follow",
+            "distribution": "manual_after_user_approval"
+          }
+        },
+        "generic_contract_repair": {
+          "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+          "script_words": 53,
+          "repair_target_words": 53,
+          "source_bound_minimum_only": true,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "human_story_contract_applied": false,
+          "source_bound_editorial_preserved": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "platform_cta_contract": {
+          "version": "v4-platform-specific-editorial-storytelling",
+          "platform": "youtube_shorts",
+          "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "source_bound_viewer_value": false,
+          "viewer_value": "",
+          "next_video_bridge": "",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "voice_and_captions_share_editorial_source": true,
+          "visible_script_audio_overlay_same_source": true,
+          "overlay_repeats_full_voiceover": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_visual_standard": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "topic": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+          "domain": "society",
+          "treatment_id": "HUMAN_IMPACT",
+          "visual_signature": "71ecc1114afee01c",
+          "platform": "youtube_shorts",
+          "platform_specific_master_required": true,
+          "same_master_reuse_forbidden": true,
+          "full_voiceover_as_overlay_forbidden": true,
+          "supporting_callouts_only": true,
+          "random_decorative_visuals_forbidden": true,
+          "filler_scenes_forbidden": true,
+          "explanatory_graphics_enabled": true,
+          "music_arc": "restrained opening -> explanatory space -> measured tension -> resolve",
+          "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+          "voice_priority": true,
+          "quality_gates_weakened": false
+        },
+        "editorial_quality_gate": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "passed": true,
+          "issues": [],
+          "checklist": {
+            "interesting": true,
+            "beginner_clear": true,
+            "voice_pacing": true,
+            "visual_explanatory": true,
+            "visually_distinct": true,
+            "no_filler": true,
+            "watch_to_end": true
+          },
+          "metrics": {
+            "scene_count": 7,
+            "unique_visual_queries": 7,
+            "unique_visual_types": 7,
+            "callout_count": 3,
+            "script_words": 55,
+            "estimated_wpm": 95.8,
+            "duration_spread_seconds": 1.7,
+            "generated_explainer_scenes": 0
+          }
+        },
+        "platform_story_profile": {
+          "platform": "youtube_shorts",
+          "beats": [
+            "hook",
+            "context",
+            "explanation",
+            "evidence",
+            "development_problem",
+            "key_insight",
+            "consequence_outlook"
+          ],
+          "scene_count": 7,
+          "narrative_priority": "context, evidence and explanatory depth",
+          "estimated_wpm": 95.8,
+          "preferred_wpm": [
+            108,
+            138
+          ],
+          "hard_max_wpm": 160,
+          "caption_policy": "readable full captions plus sparse semantic callouts",
+          "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+        }
+      },
+      "tiktok": {
+        "attempts": [
+          {
+            "provider": "local:source-grounded-context-template",
+            "fallback": true,
+            "errors": [],
+            "router_version": "v10",
+            "attempt": 1
+          }
+        ],
+        "provider_editorial_attempts": 1,
+        "provider_repair_attempted": false,
+        "provider_repair_issues_before": [],
+        "provider_repair_issues_after": [],
+        "selected_provider_issues": [],
+        "selected_payload_issues": [],
+        "initial_issues": [],
+        "final_issues": [],
+        "source_gate_issues": [],
+        "local_fallback_generated": false,
+        "local_editorial_repair_used": false,
+        "repair_strategy": "provider",
+        "repaired_fields": [],
+        "rewrite_version": "v27-topic-safe-cta-runtime",
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "spoken_brand_removed": false,
+        "spoken_brand_normalized": "TAYVORIQ=>Tai wo rik",
+        "care_cost_grounding_guard": "standard",
+        "brand_pronunciation": "Tayvorik",
+        "topic_specificity_repaired": false,
+        "topic_specificity_issues_before_repair": [],
+        "topic_specificity_issues_after_repair": [],
+        "topic_specificity_verified_locally": false,
+        "editorial_depth_gate": {
+          "passed": true,
+          "applicable": true,
+          "contract_version": "v1-verified-request-five-answer-recovery",
+          "contract_derived_from_sources": true,
+          "minimum_details_in_script": 3,
+          "available_source_bound_details": 4,
+          "consumed_source_bound_details": 4,
+          "planned_detail_available": false,
+          "planned_detail_consumed": false,
+          "rumor_or_unconfirmed_count": 0,
+          "consumed": [
+            {
+              "group": "confirmed_details",
+              "text": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+              "anchors": [],
+              "matched": [
+                "altersteilzeit",
+                "empfiehlt",
+                "jahren",
+                "rentenkommission",
+                "spatere",
+                "statt"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+              "anchors": [],
+              "matched": [
+                "Wegen Sparbedarf"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+              "anchors": [],
+              "matched": [
+                "Alle Arbeitnehmer"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+              "anchors": [],
+              "matched": [
+                "arbeitszeit",
+                "bedeutet",
+                "fruhe",
+                "langere",
+                "rente",
+                "weniger"
+              ]
+            }
+          ],
+          "missing": [],
+          "blockers": [],
+          "quality_gates_weakened": false
+        },
+        "generic_script_allowed_when_specific_evidence_exists": false,
+        "quality_gates_weakened": false,
+        "universal_platform_cta": "Folge und abonniere TAYVORIQ für verifizierte Tech-Trends, klare Einordnungen und konkrete Schritte.",
+        "platform_gate_validation": {
+          "youtube_shorts": {
+            "passed": true,
+            "required_action": "subscribe"
+          },
+          "tiktok": {
+            "passed": true,
+            "required_action": "follow",
+            "distribution": "manual_after_user_approval"
+          }
+        },
+        "generic_contract_repair": {
+          "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+          "script_words": 53,
+          "repair_target_words": 53,
+          "source_bound_minimum_only": true,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "human_story_contract_applied": false,
+          "source_bound_editorial_preserved": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "platform_cta_contract": {
+          "version": "v4-platform-specific-editorial-storytelling",
+          "platform": "tiktok",
+          "cta": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "source_bound_viewer_value": false,
+          "viewer_value": "",
+          "next_video_bridge": "",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "voice_and_captions_share_editorial_source": true,
+          "visible_script_audio_overlay_same_source": true,
+          "overlay_repeats_full_voiceover": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_visual_standard": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "topic": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+          "domain": "society",
+          "treatment_id": "DAILY_LIFE",
+          "visual_signature": "a90ad9e74f219d14",
+          "platform": "tiktok",
+          "platform_specific_master_required": true,
+          "same_master_reuse_forbidden": true,
+          "full_voiceover_as_overlay_forbidden": true,
+          "supporting_callouts_only": true,
+          "random_decorative_visuals_forbidden": true,
+          "filler_scenes_forbidden": true,
+          "explanatory_graphics_enabled": true,
+          "music_arc": "immediate restrained pulse -> explanatory space -> short resolve",
+          "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+          "voice_priority": true,
+          "quality_gates_weakened": false
+        },
+        "editorial_quality_gate": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "passed": true,
+          "issues": [],
+          "checklist": {
+            "interesting": true,
+            "beginner_clear": true,
+            "voice_pacing": true,
+            "visual_explanatory": true,
+            "visually_distinct": true,
+            "no_filler": true,
+            "watch_to_end": true
+          },
+          "metrics": {
+            "scene_count": 6,
+            "unique_visual_queries": 6,
+            "unique_visual_types": 6,
+            "callout_count": 3,
+            "script_words": 55,
+            "estimated_wpm": 95.8,
+            "duration_spread_seconds": 1.99,
+            "generated_explainer_scenes": 0
+          }
+        },
+        "platform_story_profile": {
+          "platform": "tiktok",
+          "beats": [
+            "hook",
+            "why_it_matters",
+            "context",
+            "explanation",
+            "key_insight",
+            "consequence_outlook"
+          ],
+          "scene_count": 6,
+          "narrative_priority": "immediate relevance and vertical guidance",
+          "estimated_wpm": 95.8,
+          "preferred_wpm": [
+            118,
+            145
+          ],
+          "hard_max_wpm": 165,
+          "caption_policy": "readable full captions plus sparse semantic callouts",
+          "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+        }
+      }
+    }
+  },
+  "quality_report": {
+    "passed": true,
+    "variants": {
+      "youtube_shorts": {
+        "passed": true,
+        "issues": [],
+        "word_count": 51,
+        "body_words": 46,
+        "cta_words": 5,
+        "cta_start_ratio": 0.902,
+        "self_contained": true,
+        "native_language_voice_configured": true,
+        "quality_version": "v20.1-provider-aware-german-narration",
+        "checked_at": "2026-11-24T12:39:51+00:00",
+        "editorial_five_answers": {
+          "passed": true,
+          "answers": {
+            "what_happened": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+            "why_happening": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+            "who_is_affected": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+            "personal_impact": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+            "action_now": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig."
+          }
+        },
+        "v11_quality_cycle_guard": {
+          "passed": true,
+          "cycle_removed": true,
+          "base_quality": "v5-captured-by-v11",
+          "human_story_forced_prefix_suppressed": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "factual_cause_guard": "standard",
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "58": "achtundfünfzig",
+            "55": "fünfundfünfzig"
+          },
+          "brand_spoken": false,
+          "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          },
+          "brand_normalization_version": "final-v20-tayvorik-v1"
+        },
+        "tts_preview": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "policy_grounding_guard": "standard",
+        "authoritative_length_contract": {
+          "reconciled": false,
+          "reason": "no-legacy-shortfall",
+          "quality_gates_weakened": false
+        },
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "tiktok": {
+        "passed": true,
+        "issues": [],
+        "word_count": 51,
+        "body_words": 46,
+        "cta_words": 5,
+        "cta_start_ratio": 0.902,
+        "self_contained": true,
+        "native_language_voice_configured": true,
+        "quality_version": "v20.1-provider-aware-german-narration",
+        "checked_at": "2026-11-24T12:47:37+00:00",
+        "editorial_five_answers": {
+          "passed": true,
+          "answers": {
+            "what_happened": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+            "why_happening": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+            "who_is_affected": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+            "personal_impact": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+            "action_now": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig."
+          }
+        },
+        "v11_quality_cycle_guard": {
+          "passed": true,
+          "cycle_removed": true,
+          "base_quality": "v5-captured-by-v11",
+          "human_story_forced_prefix_suppressed": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "factual_cause_guard": "standard",
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "58": "achtundfünfzig",
+            "55": "fünfundfünfzig"
+          },
+          "brand_spoken": false,
+          "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          },
+          "brand_normalization_version": "final-v20-tayvorik-v1"
+        },
+        "tts_preview": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "policy_grounding_guard": "standard",
+        "authoritative_length_contract": {
+          "reconciled": false,
+          "reason": "no-legacy-shortfall",
+          "quality_gates_weakened": false
+        },
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      }
+    },
+    "deterministic_passed": true,
+    "preapproval_ai_audit": {
+      "passed": true,
+      "scores": {
+        "factual_accuracy": 95,
+        "pronunciation": 98,
+        "marketing": 90,
+        "sales": 90,
+        "platform_fit": 92,
+        "visual": 85,
+        "overall": 92
+      },
+      "blockers": []
+    },
+    "audit_persistence_version": "v2-repeatable-existing-render"
+  },
+  "text_package": {
+    "title": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+    "category": "world_society",
+    "trend_angle": "Welche konkrete Veränderung hinter Altersteilzeit-Reform könnte Fiskus Milliarden bringen wirklich steckt.",
+    "trend_signal": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+    "named_entities": [],
+    "why_now": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+    "affected_groups": [
+      "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen."
+    ],
+    "viewer_test": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig.",
+    "series_next": "",
+    "hook": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+    "script": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+    "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+    "scenes": [
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen news documentary vertical video place people or public setting establishing footage vertical 9:16 premium documentary footage natural composition",
+        "overlay_text": "",
+        "spoken_chunk": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen real location vertical video location map document or everyday context vertical 9:16 premium documentary footage natural composition",
+        "overlay_text": "",
+        "spoken_chunk": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen investigation documentary vertical video real process institution or community mechanism vertical 9:16 premium documentary footage natural composition",
+        "overlay_text": "",
+        "spoken_chunk": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen relevant people workplace vertical video evidence detail showing what changed vertical 9:16 premium documentary footage natural composition",
+        "overlay_text": "",
+        "spoken_chunk": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen German news context vertical video daily-life human impact footage vertical 9:16 premium documentary footage natural composition",
+        "overlay_text": "",
+        "spoken_chunk": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen close up evidence context vertical video key number place or object detail vertical 9:16 premium documentary footage natural composition",
+        "overlay_text": "",
+        "spoken_chunk": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte."
+      }
+    ],
+    "youtube_metadata": {
+      "title": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+      "description": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+      "hashtags": [
+        "#TAYVORIQ",
+        "#Trendjagd",
+        "#Gesellschaft"
+      ],
+      "tags": [
+        "world_society",
+        "TAYVORIQ",
+        "Trendjagd",
+        "Shorts"
+      ]
+    },
+    "fallback_used": true,
+    "language": "Deutsch",
+    "platform": "youtube_shorts",
+    "target_duration": 35,
+    "llm_provider": "template:fallback",
+    "viewer_questions": {
+      "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf Altersteilzeit-Reform könnte Fiskus Milliarden bringen.",
+      "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
+      "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
+      "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
+      "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
+      "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
+    },
+    "editorial_answers": {
+      "what_happened": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+      "why_happening": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+      "who_is_affected": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+      "personal_impact": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+      "action_now": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig."
+    },
+    "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+    "source_context": {
+      "verified_at": "2026-11-24T05:35:58.724381Z",
+      "independent_news_count": 2,
+      "sources": [
+        {
+          "publisher": "sueddeutsche.de",
+          "url": "https://www.sueddeutsche.de/wirtschaft/altersteilzeit-reform-milliarden-staat-bertelsmann-stiftung-diw-li.3584749",
+          "supports": "Rente: Studie: Altersteilzeit-Reform könnte Fiskus Milliarden bringen Bisher dürfen Arbeitnehmer vom 55. Lebensjahr an Altersteilzeit in Anspruch nehmen. Würde die Grenze auf 58 Jahre angehoben, würden bis zu 110 000 Vollzeitstellen erhalten.",
+          "publisher_headline": "Rente: Studie: Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+          "source_date": "Mon, 23 Nov 2026 12:15:09 GMT",
+          "source_record_sha256": "324658a22ad44659915c309709ecf18386c4c63d01170b56996b0e79b4ab2a7a",
+          "support_origin": "retrieved_source_title_and_context"
+        },
+        {
+          "publisher": "n-tv.de",
+          "url": "https://www.n-tv.de/wirtschaft/Strengere-Altersteilzeit-Regeln-koennten-Staat-Milliarden-bringen-id31565128.html",
+          "supports": "Erst mit 58 statt 55 Jahren?: Strengere Altersteilzeit-Regeln könnten Staat Milliarden bringen Die Rentenkommission empfiehlt eine spätere Altersgrenze für die Altersteilzeit und ein Ende des Blockmodells, mit dem der Rentenstart de facto vorgezogen wird. Die Einschnitte für die Beschäftigten hätten laut einer Studie zwei entscheidende Vorteile für den Staat.",
+          "publisher_headline": "Erst mit 58 statt 55 Jahren?: Strengere Altersteilzeit-Regeln könnten Staat Milliarden bringen",
+          "source_date": "Mon, 23 Nov 2026 08:06:50 +0100",
+          "source_record_sha256": "de395f827973979116352c0177faecf62f1957a3c3eed70f3d13c37aed9c4c73",
+          "support_origin": "retrieved_source_title_and_context"
+        }
+      ],
+      "fallback_editorial_answers": {
+        "what_happened": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+        "why_happening": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+        "who_is_affected": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+        "personal_impact": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+        "action_now": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen."
+      },
+      "retention_v5": {
+        "viral_potential": 80,
+        "tayvoriq_fit": 85,
+        "novelty_score": 85,
+        "series_fit_score": 75,
+        "return_viewer_score": 70,
+        "follow_conversion_potential": 75,
+        "open_loop_potential": 60,
+        "proposed_series_id": "",
+        "proposed_series_name": "",
+        "next_episode_candidate": "",
+        "recommended_cta_type": "DISCUSSION",
+        "primary_hook": "Rentenkommission will Altersteilzeit erst ab 58 statt 55 Jahren erlauben",
+        "viewer_question": "Was bedeutet die neue Altersgrenze für deinen Job?",
+        "explanation_core": "Die Rentenkommission empfiehlt, die Altersteilzeit erst ab 58 zu erlauben und das Blockmodell zu beenden, was dem Staat Milliarden sparen soll.",
+        "surprise_or_reframe": "Statt früherer Rente droht längere Arbeitszeit, was bis zu 110.000 Vollzeitstellen im deutschen Arbeitsmarkt erhalten könnte.",
+        "practical_relevance": "Betroffene Arbeitnehmer müssen ihre Karriereplanung anpassen, da die frühere Teilzeitrente entfällt.",
+        "follow_reason": "TAYVORIQ erklärt komplexe Rentenreformen einfach und zeigt, was für dein Einkommen wichtig ist.",
+        "open_loop": "",
+        "open_loop_status": "NONE",
+        "cta_type": "DISCUSSION",
+        "cta_text": "Schreib in die Kommentare, ob du die Altersteilzeit-Änderung für fair hältst, und folge TAYVORIQ für mehr.",
+        "trend_selection_score": 79
+      },
+      "growth_v2": {
+        "growth_score": 81,
+        "binding_score": 90,
+        "priority_score": 83,
+        "tier": "reserve",
+        "series_candidate": false,
+        "targets": "10k/20k/50k/100k are optimization targets, never guarantees"
+      },
+      "claim_coherence": {
+        "passed": true,
+        "reasons": []
+      },
+      "audience_growth_v3": {
+        "subscriber_conversion_score": 77,
+        "returning_viewer_score": 81,
+        "continuation_score": 62,
+        "hook_strength_score": 55,
+        "standalone_payoff_score": 94,
+        "selection_priority_score": 81,
+        "promotion_test_candidate": false,
+        "promotion_requires_observed_performance": true,
+        "paid_boost_auto_enabled": false,
+        "optimization_goal": "turn qualified viewers into returning viewers and followers without weakening quality gates"
+      },
+      "regional_assessment": {
+        "policy": "DE_LOCAL_RELEVANCE_V2",
+        "passed": true,
+        "issues": [],
+        "scores": {
+          "youtube": 85,
+          "tiktok": 83
+        },
+        "ratings": {
+          "consequence": [
+            4,
+            4,
+            "Direkte Auswirkung auf Arbeitszeit und Einkommen vieler Beschäftigter"
+          ],
+          "proximity": [
+            5,
+            5,
+            "Betrifft alle Arbeitnehmer in Deutschland und Baden-Württemberg"
+          ],
+          "recognition": [
+            4,
+            4,
+            "Rentenkommission und Altersteilzeit sind bekannte deutsche Begriffe"
+          ],
+          "timeliness": [
+            5,
+            5,
+            "Neue Empfehlung der Kommission aus den letzten 24 Stunden"
+          ],
+          "explanation": [
+            4,
+            3,
+            "Erklärt den Mechanismus der Milliarden-Einsparung für den Fiskus"
+          ],
+          "resolution": [
+            3,
+            3,
+            "Noch keine finale Gesetzesänderung, aber klare Empfehlung"
+          ],
+          "continuity": [
+            4,
+            4,
+            "Teil einer größeren Debatte über die Rente und Arbeit"
+          ]
+        },
+        "platform_fit": {
+          "youtube": "Tiefe Erklärung der Rentenkommission-Empfehlung und ihrer finanziellen Folgen",
+          "tiktok": "Kurzer Hinweis auf die Altersgrenze 58 und deren Auswirkung"
+        },
+        "evidence": {
+          "https://www.sueddeutsche.de/wirtschaft/altersteilzeit-reform-milliarden-staat-bertelsmann-stiftung-diw-li.3584749": "Rente: Studie: Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+          "https://www.n-tv.de/wirtschaft/Strengere-Altersteilzeit-Regeln-koennten-Staat-Milliarden-bringen-id31565128.html": "Erst mit 58 statt 55 Jahren?: Strengere Altersteilzeit-Regeln könnten Staat Milliarden bringen"
+        }
+      },
+      "duplicate_check": {
+        "state": "PASSED",
+        "content_fingerprint_sha256": "a614e098a6a186365e29bab9edeae0f4f7cb5687a08513ebdfe6465a1e2b252f",
+        "history_candidates_checked": 57
+      },
+      "editorial_model": "groq/qwen/qwen3.8-27b+multi-publisher-rss",
+      "reach_gate": {
+        "policy": "REGIONAL_GERMANY_CHANNEL_EVIDENCE_V2",
+        "scope": "germany",
+        "local_only_rejected": false,
+        "reach_score": 105
+      }
+    },
+    "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt.",
+    "script_body": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig.",
+    "pronunciation_map": {
+      "TAYVORIQ": "Tayvorik"
+    },
+    "context_metrics": {
+      "cta_start_ratio": 0.868,
+      "body_words": 46,
+      "cta_words": 7,
+      "editorial_body_words": 46,
+      "script_words": 53,
+      "minimum_script_words": 51,
+      "maximum_script_words": 63,
+      "validator_minimum_words": 51,
+      "semantic_pre_render_gate": true,
+      "retention_contract_v5_locked": true,
+      "follow_conversion_gate": "PASS",
+      "return_viewer_gate": "PASS",
+      "audible_cta_budget_compaction": []
+    },
+    "trend_origin": "manual-or-provider-only",
+    "fallback_policy": "cloud-primary-local-last-resort",
+    "visual_topic_guard": "strict-topic-bound-v23",
+    "editorial_depth_gate": {
+      "passed": true,
+      "applicable": true,
+      "contract_version": "v1-verified-request-five-answer-recovery",
+      "contract_derived_from_sources": true,
+      "minimum_details_in_script": 3,
+      "available_source_bound_details": 4,
+      "consumed_source_bound_details": 4,
+      "planned_detail_available": false,
+      "planned_detail_consumed": false,
+      "rumor_or_unconfirmed_count": 0,
+      "consumed": [
+        {
+          "group": "confirmed_details",
+          "text": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+          "anchors": [],
+          "matched": [
+            "altersteilzeit",
+            "empfiehlt",
+            "jahren",
+            "rentenkommission",
+            "spatere",
+            "statt"
+          ]
+        },
+        {
+          "group": "confirmed_details",
+          "text": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+          "anchors": [],
+          "matched": [
+            "Wegen Sparbedarf"
+          ]
+        },
+        {
+          "group": "confirmed_details",
+          "text": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+          "anchors": [],
+          "matched": [
+            "Alle Arbeitnehmer"
+          ]
+        },
+        {
+          "group": "confirmed_details",
+          "text": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+          "anchors": [],
+          "matched": [
+            "arbeitszeit",
+            "bedeutet",
+            "fruhe",
+            "langere",
+            "rente",
+            "weniger"
+          ]
+        }
+      ],
+      "missing": [],
+      "blockers": [],
+      "quality_gates_weakened": false
+    },
+    "what_happened": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+    "why_happening": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+    "who_is_affected": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+    "personal_impact": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+    "action_now": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig.",
+    "universal_platform_cta": true,
+    "shared_master_render_requested": true,
+    "approval_status": "PENDING_REVIEW",
+    "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+    "instagram_status": "NOT_CONFIGURED_EXCLUDED",
+    "content_editor_version": "v27-topic-safe-cta-runtime",
+    "final_package_contract": {
+      "version": "v27-topic-safe-cta-runtime",
+      "word_count": 58,
+      "minimum_words": 51,
+      "maximum_words": 63,
+      "quality_gates_weakened": false
+    },
+    "platform_gate_validation": {
+      "youtube_shorts": {
+        "passed": true,
+        "required_action": "subscribe"
+      },
+      "tiktok": {
+        "passed": true,
+        "required_action": "follow",
+        "distribution": "manual_after_user_approval"
+      },
+      "platform_action": {
+        "passed": true,
+        "platform": "youtube_shorts",
+        "expected_prefix": "abonniere diesen kanal"
+      }
+    },
+    "source_bound_editorial_compiler": "verified-request-canonical-v2",
+    "authoritative_editorial_prevalidation_lock": {
+      "version": "v2-single-source-bound-prevalidation",
+      "body_words": 41,
+      "source_context_changed": false,
+      "quality_gates_weakened": false
+    },
+    "series_id": null,
+    "series_name": null,
+    "episode_id": null,
+    "episode_number": null,
+    "continuity_hook": null,
+    "next_episode_candidate": null,
+    "primary_hook": "Rentenkommission will Altersteilzeit erst ab 58 statt 55 Jahren erlauben",
+    "viewer_question": "Was bedeutet die neue Altersgrenze für deinen Job?",
+    "explanation_core": "Die Rentenkommission empfiehlt, die Altersteilzeit erst ab 58 zu erlauben und das Blockmodell zu beenden, was dem Staat Milliarden sparen soll.",
+    "surprise_or_reframe": "Statt früherer Rente droht längere Arbeitszeit, was bis zu 110.000 Vollzeitstellen im deutschen Arbeitsmarkt erhalten könnte.",
+    "practical_relevance": "Betroffene Arbeitnehmer müssen ihre Karriereplanung anpassen, da die frühere Teilzeitrente entfällt.",
+    "follow_reason": "TAYVORIQ erklärt komplexe Rentenreformen einfach und zeigt, was für dein Einkommen wichtig ist.",
+    "open_loop": "",
+    "open_loop_status": "NONE",
+    "cta_type": "DISCUSSION",
+    "cta_text": "Schreib in die Kommentare, ob du die Altersteilzeit-Änderung für fair hältst, und abonnier TAYVORIQ für mehr.",
+    "audible_cta_compacted": true,
+    "audible_cta_word_count": 8,
+    "retention_contract_v5": {
+      "schema_version": "tayvoriq-retention-v5",
+      "contract_mode": "native_v5",
+      "request_id": "telegram-3676-trend-1",
+      "topic": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+      "trend_scope": "business_economy",
+      "content_angle": "Wie die Rentenkommission die Arbeitszeit für Ältere neu regeln will",
+      "source_context_sha256": "b6d8daf02795371f6684cc160f9823e283cde61d887937204e55b6353dc4559a",
+      "series_id": null,
+      "series_name": null,
+      "episode_id": null,
+      "episode_number": null,
+      "continuity_hook": null,
+      "next_episode_candidate": null,
+      "primary_hook": "Rentenkommission will Altersteilzeit erst ab 58 statt 55 Jahren erlauben",
+      "viewer_question": "Was bedeutet die neue Altersgrenze für deinen Job?",
+      "explanation_core": "Die Rentenkommission empfiehlt, die Altersteilzeit erst ab 58 zu erlauben und das Blockmodell zu beenden, was dem Staat Milliarden sparen soll.",
+      "surprise_or_reframe": "Statt früherer Rente droht längere Arbeitszeit, was bis zu 110.000 Vollzeitstellen im deutschen Arbeitsmarkt erhalten könnte.",
+      "practical_relevance": "Betroffene Arbeitnehmer müssen ihre Karriereplanung anpassen, da die frühere Teilzeitrente entfällt.",
+      "follow_reason": "TAYVORIQ erklärt komplexe Rentenreformen einfach und zeigt, was für dein Einkommen wichtig ist.",
+      "open_loop": "",
+      "open_loop_status": "NONE",
+      "cta_type": "DISCUSSION",
+      "cta_text": "Schreib in die Kommentare, ob du die Altersteilzeit-Änderung für fair hältst, und folge TAYVORIQ für mehr.",
+      "next_episode_queue_status": null,
+      "sensitive_story": false,
+      "approved_story_body": null,
+      "editorial_story_contract_version": 0,
+      "quality_gates_weakened": false,
+      "lifecycle_state": "RETENTION_CONTRACT_LOCKED",
+      "follow_conversion_gate": {
+        "result": "PASS",
+        "repair": null,
+        "issues": []
+      },
+      "story_depth_gate": {
+        "result": "PASS",
+        "repair": null,
+        "issues": []
+      },
+      "contract_sha256": "eca53ef4699db2a13aeb74d0b30999b4a0e725d1db899ee1c7575fad8ee127da"
+    },
+    "follow_conversion_gate": {
+      "result": "PASS",
+      "repair": null,
+      "issues": []
+    },
+    "return_viewer_gate": {
+      "result": "PASS",
+      "issues": []
+    },
+    "story_depth_gate": {
+      "result": "PASS",
+      "repair": null,
+      "issues": []
+    },
+    "approved_story_body": null,
+    "editorial_story_contract_version": 0,
+    "retention_contract_locked": true,
+    "source_bound_minimum_padding": {
+      "version": "v34-source-bound-minimum-only",
+      "padding_words": 5,
+      "original_body_words": 41,
+      "final_body_words": 46,
+      "source_context_changed": false,
+      "quality_gates_weakened": false
+    },
+    "generic_contract_repair": {
+      "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+      "script_words": 53,
+      "repair_target_words": 53,
+      "source_bound_minimum_only": true,
+      "repair_target_met": true,
+      "validator_minimum_words": 51,
+      "quality_gates_weakened": false,
+      "semantic_pre_render_gate": true,
+      "legacy_validator_passed": true,
+      "human_story_contract_applied": false,
+      "source_bound_editorial_preserved": true,
+      "placeholder_language_blocked": true,
+      "boundary": "captured-v25-to-v20-render-call"
+    },
+    "authoritative_editorial_lock": {
+      "version": "v2-v11-source-bound-pre-and-postcondition",
+      "body_words": 46,
+      "source_context_preserved": true,
+      "approved_source_restored": false,
+      "bounded_shortfall_drift_accepted": true,
+      "quality_gates_weakened": false
+    },
+    "golden_quality_floor": {
+      "version": "v1",
+      "passed": true,
+      "accepted_quality_may_not_regress": true,
+      "operator_rejections_are_negative_fixtures": true,
+      "quality_gates_weakened": false
+    },
+    "pronunciation_contract": {
+      "version": "v4-human-natural-explanatory-narrator",
+      "visible_script_preserved": true,
+      "terms": {},
+      "voice_router": "chatterbox-v3-human-narrator-v28",
+      "artificial_compound_splitting": false,
+      "narrator_pitch_shift_applied": false,
+      "calm_explanatory_pacing_required": true,
+      "max_atempo": 1.2,
+      "audio_end_padding_seconds": 0.55,
+      "quality_gates_weakened": false
+    },
+    "platform_cta_contract": {
+      "version": "v4-platform-specific-editorial-storytelling",
+      "platform": "youtube_shorts",
+      "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "source_bound_viewer_value": false,
+      "viewer_value": "",
+      "next_video_bridge": "",
+      "youtube_uses_subscribe_only": true,
+      "tiktok_uses_follow_only": true,
+      "llm_action_allowed": false,
+      "voice_and_captions_share_editorial_source": true,
+      "visible_script_audio_overlay_same_source": true,
+      "overlay_repeats_full_voiceover": false,
+      "quality_gates_weakened": false
+    },
+    "editorial_visual_standard": {
+      "version": "tayvoriq-editorial-visual-standard-v1",
+      "topic": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+      "domain": "society",
+      "treatment_id": "HUMAN_IMPACT",
+      "visual_signature": "71ecc1114afee01c",
+      "platform": "youtube_shorts",
+      "platform_specific_master_required": true,
+      "same_master_reuse_forbidden": true,
+      "full_voiceover_as_overlay_forbidden": true,
+      "supporting_callouts_only": true,
+      "random_decorative_visuals_forbidden": true,
+      "filler_scenes_forbidden": true,
+      "explanatory_graphics_enabled": true,
+      "music_arc": "restrained opening -> explanatory space -> measured tension -> resolve",
+      "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+      "voice_priority": true,
+      "quality_gates_weakened": false
+    },
+    "platform_story_profile": {
+      "platform": "youtube_shorts",
+      "beats": [
+        "hook",
+        "context",
+        "explanation",
+        "evidence",
+        "development_problem",
+        "key_insight",
+        "consequence_outlook"
+      ],
+      "scene_count": 7,
+      "narrative_priority": "context, evidence and explanatory depth",
+      "estimated_wpm": 95.8,
+      "preferred_wpm": [
+        108,
+        138
+      ],
+      "hard_max_wpm": 160,
+      "caption_policy": "readable full captions plus sparse semantic callouts",
+      "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+    },
+    "editorial_quality_gate": {
+      "version": "tayvoriq-editorial-visual-standard-v1",
+      "passed": true,
+      "issues": [],
+      "checklist": {
+        "interesting": true,
+        "beginner_clear": true,
+        "voice_pacing": true,
+        "visual_explanatory": true,
+        "visually_distinct": true,
+        "no_filler": true,
+        "watch_to_end": true
+      },
+      "metrics": {
+        "scene_count": 7,
+        "unique_visual_queries": 7,
+        "unique_visual_types": 7,
+        "callout_count": 3,
+        "script_words": 55,
+        "estimated_wpm": 95.8,
+        "duration_spread_seconds": 1.7,
+        "generated_explainer_scenes": 0
+      }
+    },
+    "tiktok_metadata": {
+      "title": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+      "caption": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+      "hashtags": [
+        "#TAYVORIQ",
+        "#Trendjagd",
+        "#Gesellschaft"
+      ],
+      "privacy_default": "PUBLIC_TO_EVERYONE",
+      "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+    },
+    "speech_preflight": {
+      "passed": true,
+      "visible_script_preserved": true,
+      "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "number_replacements": {
+        "58": "achtundfünfzig",
+        "55": "fünfundfünfzig"
+      },
+      "brand_spoken": false,
+      "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+      "version": "v24-visible-to-tts-number-and-brand-proof",
+      "brand_replacements": {
+        "TAYVORIQ": "Tayvorik"
+      },
+      "brand_normalization_version": "final-v20-tayvorik-v1"
+    }
+  },
+  "variants": {
+    "youtube_shorts": {
+      "text_package": {
+        "title": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+        "category": "world_society",
+        "trend_angle": "Welche konkrete Veränderung hinter Altersteilzeit-Reform könnte Fiskus Milliarden bringen wirklich steckt.",
+        "trend_signal": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+        "named_entities": [],
+        "why_now": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+        "affected_groups": [
+          "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen."
+        ],
+        "viewer_test": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig.",
+        "series_next": "",
+        "hook": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+        "script": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "scenes": [
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen news documentary vertical video place people or public setting establishing footage vertical 9:16 premium documentary footage natural composition",
+            "overlay_text": "",
+            "spoken_chunk": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen real location vertical video location map document or everyday context vertical 9:16 premium documentary footage natural composition",
+            "overlay_text": "",
+            "spoken_chunk": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen investigation documentary vertical video real process institution or community mechanism vertical 9:16 premium documentary footage natural composition",
+            "overlay_text": "",
+            "spoken_chunk": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen relevant people workplace vertical video evidence detail showing what changed vertical 9:16 premium documentary footage natural composition",
+            "overlay_text": "",
+            "spoken_chunk": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen German news context vertical video daily-life human impact footage vertical 9:16 premium documentary footage natural composition",
+            "overlay_text": "",
+            "spoken_chunk": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen close up evidence context vertical video key number place or object detail vertical 9:16 premium documentary footage natural composition",
+            "overlay_text": "",
+            "spoken_chunk": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte."
+          }
+        ],
+        "youtube_metadata": {
+          "title": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+          "description": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "tags": [
+            "world_society",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "fallback_used": true,
+        "language": "Deutsch",
+        "platform": "youtube_shorts",
+        "target_duration": 35,
+        "llm_provider": "template:fallback",
+        "viewer_questions": {
+          "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf Altersteilzeit-Reform könnte Fiskus Milliarden bringen.",
+          "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
+          "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
+          "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
+          "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
+          "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
+        },
+        "editorial_answers": {
+          "what_happened": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+          "why_happening": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+          "who_is_affected": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+          "personal_impact": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+          "action_now": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig."
+        },
+        "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+        "source_context": {
+          "verified_at": "2026-11-24T05:35:58.724381Z",
+          "independent_news_count": 2,
+          "sources": [
+            {
+              "publisher": "sueddeutsche.de",
+              "url": "https://www.sueddeutsche.de/wirtschaft/altersteilzeit-reform-milliarden-staat-bertelsmann-stiftung-diw-li.3584749",
+              "supports": "Rente: Studie: Altersteilzeit-Reform könnte Fiskus Milliarden bringen Bisher dürfen Arbeitnehmer vom 55. Lebensjahr an Altersteilzeit in Anspruch nehmen. Würde die Grenze auf 58 Jahre angehoben, würden bis zu 110 000 Vollzeitstellen erhalten.",
+              "publisher_headline": "Rente: Studie: Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+              "source_date": "Mon, 23 Nov 2026 12:15:09 GMT",
+              "source_record_sha256": "324658a22ad44659915c309709ecf18386c4c63d01170b56996b0e79b4ab2a7a",
+              "support_origin": "retrieved_source_title_and_context"
+            },
+            {
+              "publisher": "n-tv.de",
+              "url": "https://www.n-tv.de/wirtschaft/Strengere-Altersteilzeit-Regeln-koennten-Staat-Milliarden-bringen-id31565128.html",
+              "supports": "Erst mit 58 statt 55 Jahren?: Strengere Altersteilzeit-Regeln könnten Staat Milliarden bringen Die Rentenkommission empfiehlt eine spätere Altersgrenze für die Altersteilzeit und ein Ende des Blockmodells, mit dem der Rentenstart de facto vorgezogen wird. Die Einschnitte für die Beschäftigten hätten laut einer Studie zwei entscheidende Vorteile für den Staat.",
+              "publisher_headline": "Erst mit 58 statt 55 Jahren?: Strengere Altersteilzeit-Regeln könnten Staat Milliarden bringen",
+              "source_date": "Mon, 23 Nov 2026 08:06:50 +0100",
+              "source_record_sha256": "de395f827973979116352c0177faecf62f1957a3c3eed70f3d13c37aed9c4c73",
+              "support_origin": "retrieved_source_title_and_context"
+            }
+          ],
+          "fallback_editorial_answers": {
+            "what_happened": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+            "why_happening": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+            "who_is_affected": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+            "personal_impact": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+            "action_now": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen."
+          },
+          "retention_v5": {
+            "viral_potential": 80,
+            "tayvoriq_fit": 85,
+            "novelty_score": 85,
+            "series_fit_score": 75,
+            "return_viewer_score": 70,
+            "follow_conversion_potential": 75,
+            "open_loop_potential": 60,
+            "proposed_series_id": "",
+            "proposed_series_name": "",
+            "next_episode_candidate": "",
+            "recommended_cta_type": "DISCUSSION",
+            "primary_hook": "Rentenkommission will Altersteilzeit erst ab 58 statt 55 Jahren erlauben",
+            "viewer_question": "Was bedeutet die neue Altersgrenze für deinen Job?",
+            "explanation_core": "Die Rentenkommission empfiehlt, die Altersteilzeit erst ab 58 zu erlauben und das Blockmodell zu beenden, was dem Staat Milliarden sparen soll.",
+            "surprise_or_reframe": "Statt früherer Rente droht längere Arbeitszeit, was bis zu 110.000 Vollzeitstellen im deutschen Arbeitsmarkt erhalten könnte.",
+            "practical_relevance": "Betroffene Arbeitnehmer müssen ihre Karriereplanung anpassen, da die frühere Teilzeitrente entfällt.",
+            "follow_reason": "TAYVORIQ erklärt komplexe Rentenreformen einfach und zeigt, was für dein Einkommen wichtig ist.",
+            "open_loop": "",
+            "open_loop_status": "NONE",
+            "cta_type": "DISCUSSION",
+            "cta_text": "Schreib in die Kommentare, ob du die Altersteilzeit-Änderung für fair hältst, und folge TAYVORIQ für mehr.",
+            "trend_selection_score": 79
+          },
+          "growth_v2": {
+            "growth_score": 81,
+            "binding_score": 90,
+            "priority_score": 83,
+            "tier": "reserve",
+            "series_candidate": false,
+            "targets": "10k/20k/50k/100k are optimization targets, never guarantees"
+          },
+          "claim_coherence": {
+            "passed": true,
+            "reasons": []
+          },
+          "audience_growth_v3": {
+            "subscriber_conversion_score": 77,
+            "returning_viewer_score": 81,
+            "continuation_score": 62,
+            "hook_strength_score": 55,
+            "standalone_payoff_score": 94,
+            "selection_priority_score": 81,
+            "promotion_test_candidate": false,
+            "promotion_requires_observed_performance": true,
+            "paid_boost_auto_enabled": false,
+            "optimization_goal": "turn qualified viewers into returning viewers and followers without weakening quality gates"
+          },
+          "regional_assessment": {
+            "policy": "DE_LOCAL_RELEVANCE_V2",
+            "passed": true,
+            "issues": [],
+            "scores": {
+              "youtube": 85,
+              "tiktok": 83
+            },
+            "ratings": {
+              "consequence": [
+                4,
+                4,
+                "Direkte Auswirkung auf Arbeitszeit und Einkommen vieler Beschäftigter"
+              ],
+              "proximity": [
+                5,
+                5,
+                "Betrifft alle Arbeitnehmer in Deutschland und Baden-Württemberg"
+              ],
+              "recognition": [
+                4,
+                4,
+                "Rentenkommission und Altersteilzeit sind bekannte deutsche Begriffe"
+              ],
+              "timeliness": [
+                5,
+                5,
+                "Neue Empfehlung der Kommission aus den letzten 24 Stunden"
+              ],
+              "explanation": [
+                4,
+                3,
+                "Erklärt den Mechanismus der Milliarden-Einsparung für den Fiskus"
+              ],
+              "resolution": [
+                3,
+                3,
+                "Noch keine finale Gesetzesänderung, aber klare Empfehlung"
+              ],
+              "continuity": [
+                4,
+                4,
+                "Teil einer größeren Debatte über die Rente und Arbeit"
+              ]
+            },
+            "platform_fit": {
+              "youtube": "Tiefe Erklärung der Rentenkommission-Empfehlung und ihrer finanziellen Folgen",
+              "tiktok": "Kurzer Hinweis auf die Altersgrenze 58 und deren Auswirkung"
+            },
+            "evidence": {
+              "https://www.sueddeutsche.de/wirtschaft/altersteilzeit-reform-milliarden-staat-bertelsmann-stiftung-diw-li.3584749": "Rente: Studie: Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+              "https://www.n-tv.de/wirtschaft/Strengere-Altersteilzeit-Regeln-koennten-Staat-Milliarden-bringen-id31565128.html": "Erst mit 58 statt 55 Jahren?: Strengere Altersteilzeit-Regeln könnten Staat Milliarden bringen"
+            }
+          },
+          "duplicate_check": {
+            "state": "PASSED",
+            "content_fingerprint_sha256": "a614e098a6a186365e29bab9edeae0f4f7cb5687a08513ebdfe6465a1e2b252f",
+            "history_candidates_checked": 57
+          },
+          "editorial_model": "groq/qwen/qwen3.8-27b+multi-publisher-rss",
+          "reach_gate": {
+            "policy": "REGIONAL_GERMANY_CHANNEL_EVIDENCE_V2",
+            "scope": "germany",
+            "local_only_rejected": false,
+            "reach_score": 105
+          }
+        },
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt.",
+        "script_body": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig.",
+        "pronunciation_map": {
+          "TAYVORIQ": "Tayvorik"
+        },
+        "context_metrics": {
+          "cta_start_ratio": 0.868,
+          "body_words": 46,
+          "cta_words": 7,
+          "editorial_body_words": 46,
+          "script_words": 53,
+          "minimum_script_words": 51,
+          "maximum_script_words": 63,
+          "validator_minimum_words": 51,
+          "semantic_pre_render_gate": true,
+          "retention_contract_v5_locked": true,
+          "follow_conversion_gate": "PASS",
+          "return_viewer_gate": "PASS",
+          "audible_cta_budget_compaction": []
+        },
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "editorial_depth_gate": {
+          "passed": true,
+          "applicable": true,
+          "contract_version": "v1-verified-request-five-answer-recovery",
+          "contract_derived_from_sources": true,
+          "minimum_details_in_script": 3,
+          "available_source_bound_details": 4,
+          "consumed_source_bound_details": 4,
+          "planned_detail_available": false,
+          "planned_detail_consumed": false,
+          "rumor_or_unconfirmed_count": 0,
+          "consumed": [
+            {
+              "group": "confirmed_details",
+              "text": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+              "anchors": [],
+              "matched": [
+                "altersteilzeit",
+                "empfiehlt",
+                "jahren",
+                "rentenkommission",
+                "spatere",
+                "statt"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+              "anchors": [],
+              "matched": [
+                "Wegen Sparbedarf"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+              "anchors": [],
+              "matched": [
+                "Alle Arbeitnehmer"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+              "anchors": [],
+              "matched": [
+                "arbeitszeit",
+                "bedeutet",
+                "fruhe",
+                "langere",
+                "rente",
+                "weniger"
+              ]
+            }
+          ],
+          "missing": [],
+          "blockers": [],
+          "quality_gates_weakened": false
+        },
+        "what_happened": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+        "why_happening": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+        "who_is_affected": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+        "personal_impact": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+        "action_now": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig.",
+        "universal_platform_cta": true,
+        "shared_master_render_requested": true,
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "instagram_status": "NOT_CONFIGURED_EXCLUDED",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "final_package_contract": {
+          "version": "v27-topic-safe-cta-runtime",
+          "word_count": 58,
+          "minimum_words": 51,
+          "maximum_words": 63,
+          "quality_gates_weakened": false
+        },
+        "platform_gate_validation": {
+          "youtube_shorts": {
+            "passed": true,
+            "required_action": "subscribe"
+          },
+          "tiktok": {
+            "passed": true,
+            "required_action": "follow",
+            "distribution": "manual_after_user_approval"
+          },
+          "platform_action": {
+            "passed": true,
+            "platform": "youtube_shorts",
+            "expected_prefix": "abonniere diesen kanal"
+          }
+        },
+        "source_bound_editorial_compiler": "verified-request-canonical-v2",
+        "authoritative_editorial_prevalidation_lock": {
+          "version": "v2-single-source-bound-prevalidation",
+          "body_words": 41,
+          "source_context_changed": false,
+          "quality_gates_weakened": false
+        },
+        "series_id": null,
+        "series_name": null,
+        "episode_id": null,
+        "episode_number": null,
+        "continuity_hook": null,
+        "next_episode_candidate": null,
+        "primary_hook": "Rentenkommission will Altersteilzeit erst ab 58 statt 55 Jahren erlauben",
+        "viewer_question": "Was bedeutet die neue Altersgrenze für deinen Job?",
+        "explanation_core": "Die Rentenkommission empfiehlt, die Altersteilzeit erst ab 58 zu erlauben und das Blockmodell zu beenden, was dem Staat Milliarden sparen soll.",
+        "surprise_or_reframe": "Statt früherer Rente droht längere Arbeitszeit, was bis zu 110.000 Vollzeitstellen im deutschen Arbeitsmarkt erhalten könnte.",
+        "practical_relevance": "Betroffene Arbeitnehmer müssen ihre Karriereplanung anpassen, da die frühere Teilzeitrente entfällt.",
+        "follow_reason": "TAYVORIQ erklärt komplexe Rentenreformen einfach und zeigt, was für dein Einkommen wichtig ist.",
+        "open_loop": "",
+        "open_loop_status": "NONE",
+        "cta_type": "DISCUSSION",
+        "cta_text": "Schreib in die Kommentare, ob du die Altersteilzeit-Änderung für fair hältst, und abonnier TAYVORIQ für mehr.",
+        "audible_cta_compacted": true,
+        "audible_cta_word_count": 8,
+        "retention_contract_v5": {
+          "schema_version": "tayvoriq-retention-v5",
+          "contract_mode": "native_v5",
+          "request_id": "telegram-3676-trend-1",
+          "topic": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+          "trend_scope": "business_economy",
+          "content_angle": "Wie die Rentenkommission die Arbeitszeit für Ältere neu regeln will",
+          "source_context_sha256": "b6d8daf02795371f6684cc160f9823e283cde61d887937204e55b6353dc4559a",
+          "series_id": null,
+          "series_name": null,
+          "episode_id": null,
+          "episode_number": null,
+          "continuity_hook": null,
+          "next_episode_candidate": null,
+          "primary_hook": "Rentenkommission will Altersteilzeit erst ab 58 statt 55 Jahren erlauben",
+          "viewer_question": "Was bedeutet die neue Altersgrenze für deinen Job?",
+          "explanation_core": "Die Rentenkommission empfiehlt, die Altersteilzeit erst ab 58 zu erlauben und das Blockmodell zu beenden, was dem Staat Milliarden sparen soll.",
+          "surprise_or_reframe": "Statt früherer Rente droht längere Arbeitszeit, was bis zu 110.000 Vollzeitstellen im deutschen Arbeitsmarkt erhalten könnte.",
+          "practical_relevance": "Betroffene Arbeitnehmer müssen ihre Karriereplanung anpassen, da die frühere Teilzeitrente entfällt.",
+          "follow_reason": "TAYVORIQ erklärt komplexe Rentenreformen einfach und zeigt, was für dein Einkommen wichtig ist.",
+          "open_loop": "",
+          "open_loop_status": "NONE",
+          "cta_type": "DISCUSSION",
+          "cta_text": "Schreib in die Kommentare, ob du die Altersteilzeit-Änderung für fair hältst, und folge TAYVORIQ für mehr.",
+          "next_episode_queue_status": null,
+          "sensitive_story": false,
+          "approved_story_body": null,
+          "editorial_story_contract_version": 0,
+          "quality_gates_weakened": false,
+          "lifecycle_state": "RETENTION_CONTRACT_LOCKED",
+          "follow_conversion_gate": {
+            "result": "PASS",
+            "repair": null,
+            "issues": []
+          },
+          "story_depth_gate": {
+            "result": "PASS",
+            "repair": null,
+            "issues": []
+          },
+          "contract_sha256": "eca53ef4699db2a13aeb74d0b30999b4a0e725d1db899ee1c7575fad8ee127da"
+        },
+        "follow_conversion_gate": {
+          "result": "PASS",
+          "repair": null,
+          "issues": []
+        },
+        "return_viewer_gate": {
+          "result": "PASS",
+          "issues": []
+        },
+        "story_depth_gate": {
+          "result": "PASS",
+          "repair": null,
+          "issues": []
+        },
+        "approved_story_body": null,
+        "editorial_story_contract_version": 0,
+        "retention_contract_locked": true,
+        "source_bound_minimum_padding": {
+          "version": "v34-source-bound-minimum-only",
+          "padding_words": 5,
+          "original_body_words": 41,
+          "final_body_words": 46,
+          "source_context_changed": false,
+          "quality_gates_weakened": false
+        },
+        "generic_contract_repair": {
+          "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+          "script_words": 53,
+          "repair_target_words": 53,
+          "source_bound_minimum_only": true,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "human_story_contract_applied": false,
+          "source_bound_editorial_preserved": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "authoritative_editorial_lock": {
+          "version": "v2-v11-source-bound-pre-and-postcondition",
+          "body_words": 46,
+          "source_context_preserved": true,
+          "approved_source_restored": false,
+          "bounded_shortfall_drift_accepted": true,
+          "quality_gates_weakened": false
+        },
+        "golden_quality_floor": {
+          "version": "v1",
+          "passed": true,
+          "accepted_quality_may_not_regress": true,
+          "operator_rejections_are_negative_fixtures": true,
+          "quality_gates_weakened": false
+        },
+        "pronunciation_contract": {
+          "version": "v4-human-natural-explanatory-narrator",
+          "visible_script_preserved": true,
+          "terms": {},
+          "voice_router": "chatterbox-v3-human-narrator-v28",
+          "artificial_compound_splitting": false,
+          "narrator_pitch_shift_applied": false,
+          "calm_explanatory_pacing_required": true,
+          "max_atempo": 1.2,
+          "audio_end_padding_seconds": 0.55,
+          "quality_gates_weakened": false
+        },
+        "platform_cta_contract": {
+          "version": "v4-platform-specific-editorial-storytelling",
+          "platform": "youtube_shorts",
+          "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "source_bound_viewer_value": false,
+          "viewer_value": "",
+          "next_video_bridge": "",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "voice_and_captions_share_editorial_source": true,
+          "visible_script_audio_overlay_same_source": true,
+          "overlay_repeats_full_voiceover": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_visual_standard": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "topic": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+          "domain": "society",
+          "treatment_id": "HUMAN_IMPACT",
+          "visual_signature": "71ecc1114afee01c",
+          "platform": "youtube_shorts",
+          "platform_specific_master_required": true,
+          "same_master_reuse_forbidden": true,
+          "full_voiceover_as_overlay_forbidden": true,
+          "supporting_callouts_only": true,
+          "random_decorative_visuals_forbidden": true,
+          "filler_scenes_forbidden": true,
+          "explanatory_graphics_enabled": true,
+          "music_arc": "restrained opening -> explanatory space -> measured tension -> resolve",
+          "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+          "voice_priority": true,
+          "quality_gates_weakened": false
+        },
+        "platform_story_profile": {
+          "platform": "youtube_shorts",
+          "beats": [
+            "hook",
+            "context",
+            "explanation",
+            "evidence",
+            "development_problem",
+            "key_insight",
+            "consequence_outlook"
+          ],
+          "scene_count": 7,
+          "narrative_priority": "context, evidence and explanatory depth",
+          "estimated_wpm": 95.8,
+          "preferred_wpm": [
+            108,
+            138
+          ],
+          "hard_max_wpm": 160,
+          "caption_policy": "readable full captions plus sparse semantic callouts",
+          "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+        },
+        "editorial_quality_gate": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "passed": true,
+          "issues": [],
+          "checklist": {
+            "interesting": true,
+            "beginner_clear": true,
+            "voice_pacing": true,
+            "visual_explanatory": true,
+            "visually_distinct": true,
+            "no_filler": true,
+            "watch_to_end": true
+          },
+          "metrics": {
+            "scene_count": 7,
+            "unique_visual_queries": 7,
+            "unique_visual_types": 7,
+            "callout_count": 3,
+            "script_words": 55,
+            "estimated_wpm": 95.8,
+            "duration_spread_seconds": 1.7,
+            "generated_explainer_scenes": 0
+          }
+        },
+        "tiktok_metadata": {
+          "title": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+          "caption": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "privacy_default": "PUBLIC_TO_EVERYONE",
+          "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+        },
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "58": "achtundfünfzig",
+            "55": "fünfundfünfzig"
+          },
+          "brand_spoken": false,
+          "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          },
+          "brand_normalization_version": "final-v20-tayvorik-v1"
+        }
+      },
+      "quality_report": {
+        "passed": true,
+        "issues": [],
+        "word_count": 51,
+        "body_words": 46,
+        "cta_words": 5,
+        "cta_start_ratio": 0.902,
+        "self_contained": true,
+        "native_language_voice_configured": true,
+        "quality_version": "v20.1-provider-aware-german-narration",
+        "checked_at": "2026-11-24T12:39:51+00:00",
+        "editorial_five_answers": {
+          "passed": true,
+          "answers": {
+            "what_happened": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+            "why_happening": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+            "who_is_affected": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+            "personal_impact": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+            "action_now": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig."
+          }
+        },
+        "v11_quality_cycle_guard": {
+          "passed": true,
+          "cycle_removed": true,
+          "base_quality": "v5-captured-by-v11",
+          "human_story_forced_prefix_suppressed": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "factual_cause_guard": "standard",
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "58": "achtundfünfzig",
+            "55": "fünfundfünfzig"
+          },
+          "brand_spoken": false,
+          "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          },
+          "brand_normalization_version": "final-v20-tayvorik-v1"
+        },
+        "tts_preview": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "policy_grounding_guard": "standard",
+        "authoritative_length_contract": {
+          "reconciled": false,
+          "reason": "no-legacy-shortfall",
+          "quality_gates_weakened": false
+        },
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "audio": {
+        "voice_path": "voice.mp3",
+        "voice_duration_seconds": 24.98,
+        "provider": "chatterbox_multilingual_v3",
+        "voice_provider_requested": "chatterbox_multilingual_v3",
+        "voice_provider_used": "chatterbox_multilingual_v3",
+        "model_id": "v3",
+        "voice_settings": {
+          "language_id": "de",
+          "exaggeration": 0.5,
+          "cfg_weight": 0.47,
+          "reference_audio_used": true,
+          "chunk_count": 1,
+          "loudness_target_lufs": -16,
+          "narrator_pitch_factor": 1.0,
+          "narrator_pitch_shift_applied": false,
+          "narrator_articulation_preserved": true,
+          "narrator_loudness_target_lufs": -16,
+          "narrator_mastering_profile": "neutral-native-v2",
+          "deep_voice_gate": {
+            "passed": true,
+            "repair_applied": false,
+            "repair_factor": 1.0,
+            "repair_factors": [],
+            "repair_passes": [],
+            "maximum_repair_passes": 0,
+            "minimum_cumulative_feedback_factor": 1.0,
+            "feedback_measurement_required": true,
+            "before": {
+              "median_f0_hz": 141.59,
+              "p10_f0_hz": 104.58,
+              "p90_f0_hz": 195.12,
+              "pitch_span_hz": 90.55,
+              "silence_ratio": 0.052
+            },
+            "after": {
+              "median_f0_hz": 141.59,
+              "p10_f0_hz": 104.58,
+              "p90_f0_hz": 195.12,
+              "pitch_span_hz": 90.55,
+              "silence_ratio": 0.052
+            },
+            "allowed_f0_hz": [
+              65.0,
+              230.0
+            ],
+            "bounded_repair_window_hz": [
+              65.0,
+              230.0
+            ],
+            "repair_window_basis": "final-gate-divided-by-bounded-pitch-factor",
+            "provider_required": "chatterbox_multilingual_v3",
+            "fallback_allowed": false,
+            "quality_gates_weakened": false,
+            "contract_version": "golden-path-deep-voice-self-heal-v3"
+          },
+          "quality_gates_weakened": false
+        },
+        "target_voice_duration_seconds": 25.0,
+        "raw_voice_duration_seconds": 23.16,
+        "duration_delta_seconds": -0.02,
+        "generation_elapsed_seconds": 154.576,
+        "fallback": false,
+        "quality_profile": "tayvoriq-native-natural-narrator-chatterbox-v38",
+        "worker_report": {
+          "provider": "chatterbox_multilingual",
+          "requested_model_version": "v3",
+          "model_version": "v3",
+          "installed_package_version": "0.1.7",
+          "language_id": "de",
+          "device": "cpu",
+          "hf_auth_mode": "token",
+          "passed": true,
+          "compatibility_mode": "native-version-selection",
+          "model_version_fallback": false,
+          "sample_rate": 24000,
+          "duration_seconds": 23.16,
+          "chunks": [
+            "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte."
+          ],
+          "chunk_count": 1,
+          "model_load_seconds": 10.382,
+          "generation_seconds": [
+            137.601
+          ],
+          "total_seconds": 152.045,
+          "reference_audio_used": true,
+          "exaggeration": 0.5,
+          "cfg_weight": 0.47,
+          "output": "out/tayvoriq-youtube-tiktok/candidate-01/20261124_123845_altersteilzeit-reform-koennte-fiskus-milliarden-bringen/youtube_shorts/voice_chatterbox_raw.wav",
+          "output_bytes": 1111724,
+          "audio_container": "wav-pcm16-standard-library"
+        },
+        "natural_voice_target_seconds": 25.0,
+        "natural_voice_wpm": 132.0,
+        "full_short_target_seconds": 35.0,
+        "coherent_chunk_limit": 1,
+        "configured_max_chars": 520,
+        "premium_voice_timeout_budget_seconds": 240,
+        "pronunciation_prepared": false,
+        "pronunciation_profile": "de-critical-terms-v1",
+        "narrator_tone_applied": false,
+        "narrator_pitch_shift_applied": false,
+        "human_narrator_quality_profile": true,
+        "natural_pacing_contract_passed": true,
+        "premium_voice_required": true,
+        "premium_voice_contract_passed": true,
+        "continuous_narrator_take": true,
+        "artificial_compound_splitting": false,
+        "internal_hyphen_preserved": true,
+        "human_pronunciation_profile": "de-critical-san-disk-ka-i-v1",
+        "targeted_acronym_pronunciation_aid": false,
+        "sandisk_spoken_form": "San Disk",
+        "critical_term_pronunciation_aid": false,
+        "critical_term_pronunciation_terms": [],
+        "critical_term_speech_surface_only": false,
+        "pronunciation_contract_version": "de-acronym-letter-names-v2",
+        "all_visible_acronyms_normalized": true,
+        "pronunciation_replacements": {
+          "58": "achtundfünfzig",
+          "55": "fünfundfünfzig",
+          "TAYVORIQ": "Tayvorik"
+        },
+        "spoken_contract_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tayvoriq_spoken_replacement": "",
+        "brand_spoken_fallback_used": false,
+        "brand_spoken_fallback_semantic_only": false,
+        "visible_script_unchanged": true,
+        "canonical_review_contract_unchanged": true,
+        "exact_chatterbox_model_required": "v3",
+        "exact_chatterbox_model_passed": true,
+        "golden_human_reference_required": true,
+        "golden_human_reference_used": true,
+        "golden_human_reference_commit": "08e2dada47d4e823ae139d1151a07fea1ff5d92c",
+        "quality_gates_weakened": false,
+        "deep_voice_gate": {
+          "passed": true,
+          "repair_applied": false,
+          "repair_factor": 1.0,
+          "repair_factors": [],
+          "repair_passes": [],
+          "maximum_repair_passes": 0,
+          "minimum_cumulative_feedback_factor": 1.0,
+          "feedback_measurement_required": true,
+          "before": {
+            "median_f0_hz": 141.59,
+            "p10_f0_hz": 104.58,
+            "p90_f0_hz": 195.12,
+            "pitch_span_hz": 90.55,
+            "silence_ratio": 0.052
+          },
+          "after": {
+            "median_f0_hz": 141.59,
+            "p10_f0_hz": 104.58,
+            "p90_f0_hz": 195.12,
+            "pitch_span_hz": 90.55,
+            "silence_ratio": 0.052
+          },
+          "allowed_f0_hz": [
+            65.0,
+            230.0
+          ],
+          "bounded_repair_window_hz": [
+            65.0,
+            230.0
+          ],
+          "repair_window_basis": "final-gate-divided-by-bounded-pitch-factor",
+          "provider_required": "chatterbox_multilingual_v3",
+          "fallback_allowed": false,
+          "quality_gates_weakened": false,
+          "contract_version": "golden-path-deep-voice-self-heal-v3"
+        },
+        "golden_voice_floor": {
+          "version": "v1",
+          "passed": true,
+          "artificial_pitch_shift_forbidden": true,
+          "narrator_pitch_factor": 1.0,
+          "human_rejected_profiles_forbidden": true,
+          "quality_gates_weakened": false
+        },
+        "pre_render_transcript_validation": {
+          "passed": true,
+          "similarity": 0.9643,
+          "missing_critical_terms": [],
+          "expected_tokens": 56,
+          "actual_tokens": 56,
+          "excessive_extra_words": false,
+          "forbidden_tail": false,
+          "transcript": "Die Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_expected": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_actual": "Die Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "role": "final",
+          "raw_transcript": "Die Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_transcript": "Die Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_contract_expected": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "asr_orthographic_equivalence_applied": false,
+          "hallucinated_tail": false,
+          "terminal_token_match": true,
+          "segment_min_similarity": 0.95,
+          "similarity_gate_passed": true,
+          "transcription_attempt": 1,
+          "postmux_min_similarity": 0.95,
+          "base_gate_passed": true,
+          "attempts": [
+            {
+              "passed": true,
+              "similarity": 0.9643,
+              "missing_critical_terms": [],
+              "expected_tokens": 56,
+              "actual_tokens": 56,
+              "excessive_extra_words": false,
+              "forbidden_tail": false,
+              "transcript": "Die Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_expected": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_actual": "Die Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "role": "final",
+              "raw_transcript": "Die Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_transcript": "Die Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_contract_expected": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "asr_orthographic_equivalence_applied": false,
+              "hallucinated_tail": false,
+              "terminal_token_match": true,
+              "segment_min_similarity": 0.95,
+              "similarity_gate_passed": true,
+              "transcription_attempt": 1,
+              "postmux_min_similarity": 0.95,
+              "base_gate_passed": true
+            }
+          ],
+          "attempt": 1,
+          "required": true,
+          "min_similarity": 0.95,
+          "quality_gates_weakened": false
+        },
+        "pre_render_voice_attempt": 1,
+        "post_audio_quality_gate": {
+          "passed": true,
+          "provider": "chatterbox_multilingual_v3",
+          "duration_seconds": 24.98,
+          "target_duration_seconds": 35,
+          "fallback": false,
+          "fallback_from": null,
+          "pre_render_transcript_passed": true,
+          "pre_render_transcript_similarity": 0.9643,
+          "pre_render_cta_morphology_passed": true,
+          "required_spoken_cta": "",
+          "quality_gates_weakened": false
+        },
+        "number_pronunciation_replacements": {
+          "58": "achtundfünfzig",
+          "55": "fünfundfünfzig"
+        },
+        "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "spoken_number_normalization_required": true,
+        "spoken_number_normalization_passed": true,
+        "speech_preflight_version": "v20-german-number-verbalization",
+        "native_language_voice_configured": true,
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "render": {
+        "video_path": "short.mp4",
+        "asset_report": [
+          {
+            "scene": 1,
+            "source": "pexels_video",
+            "query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen news documentary vertical video place people or public setting establishing footage vertical 9:16 premium documentary footage natural composition",
+            "requested_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen news documentary vertical video place people or public setting establishing footage vertical 9:16 premium documentary footage natural composition",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.088,
+            "subtitle_present": true,
+            "asset": "scene_01.mp4",
+            "pexels_source_sha256": "df33c4a7492c67177489eed35f51ecc5636c4e53178e4ed6e8493d35504dfac0"
+          },
+          {
+            "scene": 2,
+            "source": "pexels_video",
+            "query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen real location vertical video location map document or everyday context vertical 9:16 premium documentary footage natural composition",
+            "requested_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen real location vertical video location map document or everyday context vertical 9:16 premium documentary footage natural composition",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 3.633,
+            "subtitle_present": true,
+            "asset": "scene_02.mp4",
+            "pexels_source_sha256": "5bbe0c85762c407bc9eb39081a6f180da42ded70408c873d2d4e2056bcce9f8c"
+          },
+          {
+            "scene": 3,
+            "source": "pexels_video",
+            "query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen investigation documentary vertical video real process institution or community mechanism vertical 9:16 premium documentary footage natural composition",
+            "requested_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen investigation documentary vertical video real process institution or community mechanism vertical 9:16 premium documentary footage natural composition",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 3.633,
+            "subtitle_present": true,
+            "asset": "scene_03.mp4",
+            "pexels_source_sha256": "6207b1beb722c5efda3121be6d230c4937c14a250e7ad3a0ed9b9b9f3022a04b"
+          },
+          {
+            "scene": 4,
+            "source": "pexels_video",
+            "query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen relevant people workplace vertical video evidence detail showing what changed vertical 9:16 premium documentary footage natural composition",
+            "requested_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen relevant people workplace vertical video evidence detail showing what changed vertical 9:16 premium documentary footage natural composition",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.542,
+            "subtitle_present": true,
+            "asset": "scene_04.mp4",
+            "pexels_source_sha256": "81b96b937a8ef9dc3d3195946287f1e0623e735a25eb00a779a04b82e05f3847"
+          },
+          {
+            "scene": 5,
+            "source": "pexels_video",
+            "query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen German news context vertical video daily-life human impact footage vertical 9:16 premium documentary footage natural composition",
+            "requested_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen German news context vertical video daily-life human impact footage vertical 9:16 premium documentary footage natural composition",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.996,
+            "subtitle_present": true,
+            "asset": "scene_05.mp4",
+            "pexels_source_sha256": "5819e0c39dd3229cb023d4190dab3d5f05cad67a79674b79b42376a8d30b9f64"
+          },
+          {
+            "scene": 6,
+            "source": "pexels_video",
+            "query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen close up evidence context vertical video key number place or object detail vertical 9:16 premium documentary footage natural composition",
+            "requested_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen close up evidence context vertical video key number place or object detail vertical 9:16 premium documentary footage natural composition",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.638,
+            "subtitle_present": true,
+            "asset": "scene_06.mp4",
+            "pexels_source_sha256": "af79d1b083118644ee1287671300ef9cb9d7adf79cc8cb124496993942dc5666"
+          }
+        ],
+        "render_size": "1080x1920",
+        "bytes": 17993175,
+        "voice_duration_seconds": 24.98,
+        "final_duration_seconds": 25.53,
+        "end_padding_seconds": 0.55,
+        "requested_duration_seconds": 35.0,
+        "duration_delta_seconds": -9.47,
+        "duration_status": "REVIEW"
+      },
+      "video_path": "short_youtube.mp4",
+      "upload_status": "PENDING_APPROVAL"
+    },
+    "tiktok": {
+      "text_package": {
+        "title": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+        "category": "world_society",
+        "trend_angle": "Welche konkrete Veränderung hinter Altersteilzeit-Reform könnte Fiskus Milliarden bringen wirklich steckt.",
+        "trend_signal": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+        "named_entities": [],
+        "why_now": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+        "affected_groups": [
+          "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen."
+        ],
+        "viewer_test": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig.",
+        "series_next": "",
+        "hook": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+        "script": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "cta": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "scenes": [
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen news documentary vertical video place people or public setting establishing footage vertical 9:16 authentic documentary footage close detail",
+            "overlay_text": "",
+            "spoken_chunk": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen real location vertical video location map document or everyday context vertical 9:16 authentic documentary footage close detail",
+            "overlay_text": "",
+            "spoken_chunk": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen investigation documentary vertical video real process institution or community mechanism vertical 9:16 authentic documentary footage close detail",
+            "overlay_text": "",
+            "spoken_chunk": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen relevant people workplace vertical video evidence detail showing what changed vertical 9:16 authentic documentary footage close detail",
+            "overlay_text": "",
+            "spoken_chunk": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen German news context vertical video daily-life human impact footage vertical 9:16 authentic documentary footage close detail",
+            "overlay_text": "",
+            "spoken_chunk": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen close up evidence context vertical video key number place or object detail vertical 9:16 authentic documentary footage close detail",
+            "overlay_text": "",
+            "spoken_chunk": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+          }
+        ],
+        "youtube_metadata": {
+          "title": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+          "description": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "tags": [
+            "world_society",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "fallback_used": true,
+        "language": "Deutsch",
+        "platform": "tiktok",
+        "target_duration": 35,
+        "llm_provider": "template:fallback",
+        "viewer_questions": {
+          "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf Altersteilzeit-Reform könnte Fiskus Milliarden bringen.",
+          "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
+          "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
+          "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
+          "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
+          "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
+        },
+        "editorial_answers": {
+          "what_happened": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+          "why_happening": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+          "who_is_affected": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+          "personal_impact": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+          "action_now": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig."
+        },
+        "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+        "source_context": {
+          "verified_at": "2026-11-24T05:35:58.724381Z",
+          "independent_news_count": 2,
+          "sources": [
+            {
+              "publisher": "sueddeutsche.de",
+              "url": "https://www.sueddeutsche.de/wirtschaft/altersteilzeit-reform-milliarden-staat-bertelsmann-stiftung-diw-li.3584749",
+              "supports": "Rente: Studie: Altersteilzeit-Reform könnte Fiskus Milliarden bringen Bisher dürfen Arbeitnehmer vom 55. Lebensjahr an Altersteilzeit in Anspruch nehmen. Würde die Grenze auf 58 Jahre angehoben, würden bis zu 110 000 Vollzeitstellen erhalten.",
+              "publisher_headline": "Rente: Studie: Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+              "source_date": "Mon, 23 Nov 2026 12:15:09 GMT",
+              "source_record_sha256": "324658a22ad44659915c309709ecf18386c4c63d01170b56996b0e79b4ab2a7a",
+              "support_origin": "retrieved_source_title_and_context"
+            },
+            {
+              "publisher": "n-tv.de",
+              "url": "https://www.n-tv.de/wirtschaft/Strengere-Altersteilzeit-Regeln-koennten-Staat-Milliarden-bringen-id31565128.html",
+              "supports": "Erst mit 58 statt 55 Jahren?: Strengere Altersteilzeit-Regeln könnten Staat Milliarden bringen Die Rentenkommission empfiehlt eine spätere Altersgrenze für die Altersteilzeit und ein Ende des Blockmodells, mit dem der Rentenstart de facto vorgezogen wird. Die Einschnitte für die Beschäftigten hätten laut einer Studie zwei entscheidende Vorteile für den Staat.",
+              "publisher_headline": "Erst mit 58 statt 55 Jahren?: Strengere Altersteilzeit-Regeln könnten Staat Milliarden bringen",
+              "source_date": "Mon, 23 Nov 2026 08:06:50 +0100",
+              "source_record_sha256": "de395f827973979116352c0177faecf62f1957a3c3eed70f3d13c37aed9c4c73",
+              "support_origin": "retrieved_source_title_and_context"
+            }
+          ],
+          "fallback_editorial_answers": {
+            "what_happened": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+            "why_happening": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+            "who_is_affected": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+            "personal_impact": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+            "action_now": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen."
+          },
+          "retention_v5": {
+            "viral_potential": 80,
+            "tayvoriq_fit": 85,
+            "novelty_score": 85,
+            "series_fit_score": 75,
+            "return_viewer_score": 70,
+            "follow_conversion_potential": 75,
+            "open_loop_potential": 60,
+            "proposed_series_id": "",
+            "proposed_series_name": "",
+            "next_episode_candidate": "",
+            "recommended_cta_type": "DISCUSSION",
+            "primary_hook": "Rentenkommission will Altersteilzeit erst ab 58 statt 55 Jahren erlauben",
+            "viewer_question": "Was bedeutet die neue Altersgrenze für deinen Job?",
+            "explanation_core": "Die Rentenkommission empfiehlt, die Altersteilzeit erst ab 58 zu erlauben und das Blockmodell zu beenden, was dem Staat Milliarden sparen soll.",
+            "surprise_or_reframe": "Statt früherer Rente droht längere Arbeitszeit, was bis zu 110.000 Vollzeitstellen im deutschen Arbeitsmarkt erhalten könnte.",
+            "practical_relevance": "Betroffene Arbeitnehmer müssen ihre Karriereplanung anpassen, da die frühere Teilzeitrente entfällt.",
+            "follow_reason": "TAYVORIQ erklärt komplexe Rentenreformen einfach und zeigt, was für dein Einkommen wichtig ist.",
+            "open_loop": "",
+            "open_loop_status": "NONE",
+            "cta_type": "DISCUSSION",
+            "cta_text": "Schreib in die Kommentare, ob du die Altersteilzeit-Änderung für fair hältst, und folge TAYVORIQ für mehr.",
+            "trend_selection_score": 79
+          },
+          "growth_v2": {
+            "growth_score": 81,
+            "binding_score": 90,
+            "priority_score": 83,
+            "tier": "reserve",
+            "series_candidate": false,
+            "targets": "10k/20k/50k/100k are optimization targets, never guarantees"
+          },
+          "claim_coherence": {
+            "passed": true,
+            "reasons": []
+          },
+          "audience_growth_v3": {
+            "subscriber_conversion_score": 77,
+            "returning_viewer_score": 81,
+            "continuation_score": 62,
+            "hook_strength_score": 55,
+            "standalone_payoff_score": 94,
+            "selection_priority_score": 81,
+            "promotion_test_candidate": false,
+            "promotion_requires_observed_performance": true,
+            "paid_boost_auto_enabled": false,
+            "optimization_goal": "turn qualified viewers into returning viewers and followers without weakening quality gates"
+          },
+          "regional_assessment": {
+            "policy": "DE_LOCAL_RELEVANCE_V2",
+            "passed": true,
+            "issues": [],
+            "scores": {
+              "youtube": 85,
+              "tiktok": 83
+            },
+            "ratings": {
+              "consequence": [
+                4,
+                4,
+                "Direkte Auswirkung auf Arbeitszeit und Einkommen vieler Beschäftigter"
+              ],
+              "proximity": [
+                5,
+                5,
+                "Betrifft alle Arbeitnehmer in Deutschland und Baden-Württemberg"
+              ],
+              "recognition": [
+                4,
+                4,
+                "Rentenkommission und Altersteilzeit sind bekannte deutsche Begriffe"
+              ],
+              "timeliness": [
+                5,
+                5,
+                "Neue Empfehlung der Kommission aus den letzten 24 Stunden"
+              ],
+              "explanation": [
+                4,
+                3,
+                "Erklärt den Mechanismus der Milliarden-Einsparung für den Fiskus"
+              ],
+              "resolution": [
+                3,
+                3,
+                "Noch keine finale Gesetzesänderung, aber klare Empfehlung"
+              ],
+              "continuity": [
+                4,
+                4,
+                "Teil einer größeren Debatte über die Rente und Arbeit"
+              ]
+            },
+            "platform_fit": {
+              "youtube": "Tiefe Erklärung der Rentenkommission-Empfehlung und ihrer finanziellen Folgen",
+              "tiktok": "Kurzer Hinweis auf die Altersgrenze 58 und deren Auswirkung"
+            },
+            "evidence": {
+              "https://www.sueddeutsche.de/wirtschaft/altersteilzeit-reform-milliarden-staat-bertelsmann-stiftung-diw-li.3584749": "Rente: Studie: Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+              "https://www.n-tv.de/wirtschaft/Strengere-Altersteilzeit-Regeln-koennten-Staat-Milliarden-bringen-id31565128.html": "Erst mit 58 statt 55 Jahren?: Strengere Altersteilzeit-Regeln könnten Staat Milliarden bringen"
+            }
+          },
+          "duplicate_check": {
+            "state": "PASSED",
+            "content_fingerprint_sha256": "a614e098a6a186365e29bab9edeae0f4f7cb5687a08513ebdfe6465a1e2b252f",
+            "history_candidates_checked": 57
+          },
+          "editorial_model": "groq/qwen/qwen3.8-27b+multi-publisher-rss",
+          "reach_gate": {
+            "policy": "REGIONAL_GERMANY_CHANNEL_EVIDENCE_V2",
+            "scope": "germany",
+            "local_only_rejected": false,
+            "reach_score": 105
+          }
+        },
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt.",
+        "script_body": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig.",
+        "pronunciation_map": {
+          "TAYVORIQ": "Tayvorik"
+        },
+        "context_metrics": {
+          "cta_start_ratio": 0.868,
+          "body_words": 46,
+          "cta_words": 7,
+          "editorial_body_words": 46,
+          "script_words": 53,
+          "minimum_script_words": 51,
+          "maximum_script_words": 63,
+          "validator_minimum_words": 51,
+          "semantic_pre_render_gate": true,
+          "retention_contract_v5_locked": true,
+          "follow_conversion_gate": "PASS",
+          "return_viewer_gate": "PASS",
+          "audible_cta_budget_compaction": []
+        },
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "editorial_depth_gate": {
+          "passed": true,
+          "applicable": true,
+          "contract_version": "v1-verified-request-five-answer-recovery",
+          "contract_derived_from_sources": true,
+          "minimum_details_in_script": 3,
+          "available_source_bound_details": 4,
+          "consumed_source_bound_details": 4,
+          "planned_detail_available": false,
+          "planned_detail_consumed": false,
+          "rumor_or_unconfirmed_count": 0,
+          "consumed": [
+            {
+              "group": "confirmed_details",
+              "text": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+              "anchors": [],
+              "matched": [
+                "altersteilzeit",
+                "empfiehlt",
+                "jahren",
+                "rentenkommission",
+                "spatere",
+                "statt"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+              "anchors": [],
+              "matched": [
+                "Wegen Sparbedarf"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+              "anchors": [],
+              "matched": [
+                "Alle Arbeitnehmer"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+              "anchors": [],
+              "matched": [
+                "arbeitszeit",
+                "bedeutet",
+                "fruhe",
+                "langere",
+                "rente",
+                "weniger"
+              ]
+            }
+          ],
+          "missing": [],
+          "blockers": [],
+          "quality_gates_weakened": false
+        },
+        "what_happened": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+        "why_happening": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+        "who_is_affected": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+        "personal_impact": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+        "action_now": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig.",
+        "universal_platform_cta": true,
+        "shared_master_render_requested": true,
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "instagram_status": "NOT_CONFIGURED_EXCLUDED",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "final_package_contract": {
+          "version": "v27-topic-safe-cta-runtime",
+          "word_count": 58,
+          "minimum_words": 51,
+          "maximum_words": 63,
+          "quality_gates_weakened": false
+        },
+        "platform_gate_validation": {
+          "youtube_shorts": {
+            "passed": true,
+            "required_action": "subscribe"
+          },
+          "tiktok": {
+            "passed": true,
+            "required_action": "follow",
+            "distribution": "manual_after_user_approval"
+          },
+          "platform_action": {
+            "passed": true,
+            "platform": "tiktok",
+            "expected_prefix": "folge diesem kanal"
+          }
+        },
+        "source_bound_editorial_compiler": "verified-request-canonical-v2",
+        "authoritative_editorial_prevalidation_lock": {
+          "version": "v2-single-source-bound-prevalidation",
+          "body_words": 41,
+          "source_context_changed": false,
+          "quality_gates_weakened": false
+        },
+        "series_id": null,
+        "series_name": null,
+        "episode_id": null,
+        "episode_number": null,
+        "continuity_hook": null,
+        "next_episode_candidate": null,
+        "primary_hook": "Rentenkommission will Altersteilzeit erst ab 58 statt 55 Jahren erlauben",
+        "viewer_question": "Was bedeutet die neue Altersgrenze für deinen Job?",
+        "explanation_core": "Die Rentenkommission empfiehlt, die Altersteilzeit erst ab 58 zu erlauben und das Blockmodell zu beenden, was dem Staat Milliarden sparen soll.",
+        "surprise_or_reframe": "Statt früherer Rente droht längere Arbeitszeit, was bis zu 110.000 Vollzeitstellen im deutschen Arbeitsmarkt erhalten könnte.",
+        "practical_relevance": "Betroffene Arbeitnehmer müssen ihre Karriereplanung anpassen, da die frühere Teilzeitrente entfällt.",
+        "follow_reason": "TAYVORIQ erklärt komplexe Rentenreformen einfach und zeigt, was für dein Einkommen wichtig ist.",
+        "open_loop": "",
+        "open_loop_status": "NONE",
+        "cta_type": "DISCUSSION",
+        "cta_text": "Schreib in die Kommentare, ob du die Altersteilzeit-Änderung für fair hältst, und folge TAYVORIQ für mehr.",
+        "audible_cta_compacted": true,
+        "audible_cta_word_count": 8,
+        "retention_contract_v5": {
+          "schema_version": "tayvoriq-retention-v5",
+          "contract_mode": "native_v5",
+          "request_id": "telegram-3676-trend-1",
+          "topic": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+          "trend_scope": "business_economy",
+          "content_angle": "Wie die Rentenkommission die Arbeitszeit für Ältere neu regeln will",
+          "source_context_sha256": "b6d8daf02795371f6684cc160f9823e283cde61d887937204e55b6353dc4559a",
+          "series_id": null,
+          "series_name": null,
+          "episode_id": null,
+          "episode_number": null,
+          "continuity_hook": null,
+          "next_episode_candidate": null,
+          "primary_hook": "Rentenkommission will Altersteilzeit erst ab 58 statt 55 Jahren erlauben",
+          "viewer_question": "Was bedeutet die neue Altersgrenze für deinen Job?",
+          "explanation_core": "Die Rentenkommission empfiehlt, die Altersteilzeit erst ab 58 zu erlauben und das Blockmodell zu beenden, was dem Staat Milliarden sparen soll.",
+          "surprise_or_reframe": "Statt früherer Rente droht längere Arbeitszeit, was bis zu 110.000 Vollzeitstellen im deutschen Arbeitsmarkt erhalten könnte.",
+          "practical_relevance": "Betroffene Arbeitnehmer müssen ihre Karriereplanung anpassen, da die frühere Teilzeitrente entfällt.",
+          "follow_reason": "TAYVORIQ erklärt komplexe Rentenreformen einfach und zeigt, was für dein Einkommen wichtig ist.",
+          "open_loop": "",
+          "open_loop_status": "NONE",
+          "cta_type": "DISCUSSION",
+          "cta_text": "Schreib in die Kommentare, ob du die Altersteilzeit-Änderung für fair hältst, und folge TAYVORIQ für mehr.",
+          "next_episode_queue_status": null,
+          "sensitive_story": false,
+          "approved_story_body": null,
+          "editorial_story_contract_version": 0,
+          "quality_gates_weakened": false,
+          "lifecycle_state": "RETENTION_CONTRACT_LOCKED",
+          "follow_conversion_gate": {
+            "result": "PASS",
+            "repair": null,
+            "issues": []
+          },
+          "story_depth_gate": {
+            "result": "PASS",
+            "repair": null,
+            "issues": []
+          },
+          "contract_sha256": "eca53ef4699db2a13aeb74d0b30999b4a0e725d1db899ee1c7575fad8ee127da"
+        },
+        "follow_conversion_gate": {
+          "result": "PASS",
+          "repair": null,
+          "issues": []
+        },
+        "return_viewer_gate": {
+          "result": "PASS",
+          "issues": []
+        },
+        "story_depth_gate": {
+          "result": "PASS",
+          "repair": null,
+          "issues": []
+        },
+        "approved_story_body": null,
+        "editorial_story_contract_version": 0,
+        "retention_contract_locked": true,
+        "source_bound_minimum_padding": {
+          "version": "v34-source-bound-minimum-only",
+          "padding_words": 5,
+          "original_body_words": 41,
+          "final_body_words": 46,
+          "source_context_changed": false,
+          "quality_gates_weakened": false
+        },
+        "generic_contract_repair": {
+          "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+          "script_words": 53,
+          "repair_target_words": 53,
+          "source_bound_minimum_only": true,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "human_story_contract_applied": false,
+          "source_bound_editorial_preserved": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "authoritative_editorial_lock": {
+          "version": "v2-v11-source-bound-pre-and-postcondition",
+          "body_words": 46,
+          "source_context_preserved": true,
+          "approved_source_restored": false,
+          "bounded_shortfall_drift_accepted": true,
+          "quality_gates_weakened": false
+        },
+        "golden_quality_floor": {
+          "version": "v1",
+          "passed": true,
+          "accepted_quality_may_not_regress": true,
+          "operator_rejections_are_negative_fixtures": true,
+          "quality_gates_weakened": false
+        },
+        "pronunciation_contract": {
+          "version": "v4-human-natural-explanatory-narrator",
+          "visible_script_preserved": true,
+          "terms": {},
+          "voice_router": "chatterbox-v3-human-narrator-v28",
+          "artificial_compound_splitting": false,
+          "narrator_pitch_shift_applied": false,
+          "calm_explanatory_pacing_required": true,
+          "max_atempo": 1.2,
+          "audio_end_padding_seconds": 0.55,
+          "quality_gates_weakened": false
+        },
+        "platform_cta_contract": {
+          "version": "v4-platform-specific-editorial-storytelling",
+          "platform": "tiktok",
+          "cta": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "source_bound_viewer_value": false,
+          "viewer_value": "",
+          "next_video_bridge": "",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "voice_and_captions_share_editorial_source": true,
+          "visible_script_audio_overlay_same_source": true,
+          "overlay_repeats_full_voiceover": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_visual_standard": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "topic": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+          "domain": "society",
+          "treatment_id": "DAILY_LIFE",
+          "visual_signature": "a90ad9e74f219d14",
+          "platform": "tiktok",
+          "platform_specific_master_required": true,
+          "same_master_reuse_forbidden": true,
+          "full_voiceover_as_overlay_forbidden": true,
+          "supporting_callouts_only": true,
+          "random_decorative_visuals_forbidden": true,
+          "filler_scenes_forbidden": true,
+          "explanatory_graphics_enabled": true,
+          "music_arc": "immediate restrained pulse -> explanatory space -> short resolve",
+          "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+          "voice_priority": true,
+          "quality_gates_weakened": false
+        },
+        "platform_story_profile": {
+          "platform": "tiktok",
+          "beats": [
+            "hook",
+            "why_it_matters",
+            "context",
+            "explanation",
+            "key_insight",
+            "consequence_outlook"
+          ],
+          "scene_count": 6,
+          "narrative_priority": "immediate relevance and vertical guidance",
+          "estimated_wpm": 95.8,
+          "preferred_wpm": [
+            118,
+            145
+          ],
+          "hard_max_wpm": 165,
+          "caption_policy": "readable full captions plus sparse semantic callouts",
+          "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+        },
+        "editorial_quality_gate": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "passed": true,
+          "issues": [],
+          "checklist": {
+            "interesting": true,
+            "beginner_clear": true,
+            "voice_pacing": true,
+            "visual_explanatory": true,
+            "visually_distinct": true,
+            "no_filler": true,
+            "watch_to_end": true
+          },
+          "metrics": {
+            "scene_count": 6,
+            "unique_visual_queries": 6,
+            "unique_visual_types": 6,
+            "callout_count": 3,
+            "script_words": 55,
+            "estimated_wpm": 95.8,
+            "duration_spread_seconds": 1.99,
+            "generated_explainer_scenes": 0
+          }
+        },
+        "tiktok_metadata": {
+          "title": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+          "caption": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "privacy_default": "PUBLIC_TO_EVERYONE",
+          "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+        },
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "58": "achtundfünfzig",
+            "55": "fünfundfünfzig"
+          },
+          "brand_spoken": false,
+          "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          },
+          "brand_normalization_version": "final-v20-tayvorik-v1"
+        }
+      },
+      "quality_report": {
+        "passed": true,
+        "issues": [],
+        "word_count": 51,
+        "body_words": 46,
+        "cta_words": 5,
+        "cta_start_ratio": 0.902,
+        "self_contained": true,
+        "native_language_voice_configured": true,
+        "quality_version": "v20.1-provider-aware-german-narration",
+        "checked_at": "2026-11-24T12:47:37+00:00",
+        "editorial_five_answers": {
+          "passed": true,
+          "answers": {
+            "what_happened": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren.",
+            "why_happening": "Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission.",
+            "who_is_affected": "Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen.",
+            "personal_impact": "Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente.",
+            "action_now": "Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig."
+          }
+        },
+        "v11_quality_cycle_guard": {
+          "passed": true,
+          "cycle_removed": true,
+          "base_quality": "v5-captured-by-v11",
+          "human_story_forced_prefix_suppressed": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "factual_cause_guard": "standard",
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "58": "achtundfünfzig",
+            "55": "fünfundfünfzig"
+          },
+          "brand_spoken": false,
+          "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          },
+          "brand_normalization_version": "final-v20-tayvorik-v1"
+        },
+        "tts_preview": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "policy_grounding_guard": "standard",
+        "authoritative_length_contract": {
+          "reconciled": false,
+          "reason": "no-legacy-shortfall",
+          "quality_gates_weakened": false
+        },
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "audio": {
+        "voice_path": "voice.mp3",
+        "voice_duration_seconds": 24.98,
+        "provider": "chatterbox_multilingual_v3",
+        "voice_provider_requested": "chatterbox_multilingual_v3",
+        "voice_provider_used": "chatterbox_multilingual_v3",
+        "model_id": "v3",
+        "voice_settings": {
+          "language_id": "de",
+          "exaggeration": 0.5,
+          "cfg_weight": 0.47,
+          "reference_audio_used": true,
+          "chunk_count": 1,
+          "loudness_target_lufs": -16,
+          "narrator_pitch_factor": 1.0,
+          "narrator_pitch_shift_applied": false,
+          "narrator_articulation_preserved": true,
+          "narrator_loudness_target_lufs": -16,
+          "narrator_mastering_profile": "neutral-native-v2",
+          "deep_voice_gate": {
+            "passed": true,
+            "repair_applied": false,
+            "repair_factor": 1.0,
+            "repair_factors": [],
+            "repair_passes": [],
+            "maximum_repair_passes": 0,
+            "minimum_cumulative_feedback_factor": 1.0,
+            "feedback_measurement_required": true,
+            "before": {
+              "median_f0_hz": 140.35,
+              "p10_f0_hz": 105.26,
+              "p90_f0_hz": 195.12,
+              "pitch_span_hz": 89.86,
+              "silence_ratio": 0.041
+            },
+            "after": {
+              "median_f0_hz": 140.35,
+              "p10_f0_hz": 105.26,
+              "p90_f0_hz": 195.12,
+              "pitch_span_hz": 89.86,
+              "silence_ratio": 0.041
+            },
+            "allowed_f0_hz": [
+              65.0,
+              230.0
+            ],
+            "bounded_repair_window_hz": [
+              65.0,
+              230.0
+            ],
+            "repair_window_basis": "final-gate-divided-by-bounded-pitch-factor",
+            "provider_required": "chatterbox_multilingual_v3",
+            "fallback_allowed": false,
+            "quality_gates_weakened": false,
+            "contract_version": "golden-path-deep-voice-self-heal-v3"
+          },
+          "quality_gates_weakened": false
+        },
+        "target_voice_duration_seconds": 25.0,
+        "raw_voice_duration_seconds": 23.0,
+        "duration_delta_seconds": -0.02,
+        "generation_elapsed_seconds": 142.486,
+        "fallback": false,
+        "quality_profile": "tayvoriq-native-natural-narrator-chatterbox-v38",
+        "worker_report": {
+          "provider": "chatterbox_multilingual",
+          "requested_model_version": "v3",
+          "model_version": "v3",
+          "installed_package_version": "0.1.7",
+          "language_id": "de",
+          "device": "cpu",
+          "hf_auth_mode": "token",
+          "passed": true,
+          "compatibility_mode": "native-version-selection",
+          "model_version_fallback": false,
+          "sample_rate": 24000,
+          "duration_seconds": 23.0,
+          "chunks": [
+            "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte."
+          ],
+          "chunk_count": 1,
+          "model_load_seconds": 9.588,
+          "generation_seconds": [
+            126.458
+          ],
+          "total_seconds": 140.199,
+          "reference_audio_used": true,
+          "exaggeration": 0.5,
+          "cfg_weight": 0.47,
+          "output": "out/tayvoriq-youtube-tiktok/candidate-01/20261124_123845_altersteilzeit-reform-koennte-fiskus-milliarden-bringen/tiktok/voice_chatterbox_raw.wav",
+          "output_bytes": 1104044,
+          "audio_container": "wav-pcm16-standard-library"
+        },
+        "natural_voice_target_seconds": 25.0,
+        "natural_voice_wpm": 132.0,
+        "full_short_target_seconds": 35.0,
+        "coherent_chunk_limit": 1,
+        "configured_max_chars": 520,
+        "premium_voice_timeout_budget_seconds": 240,
+        "pronunciation_prepared": true,
+        "pronunciation_profile": "de-critical-terms-v1",
+        "narrator_tone_applied": false,
+        "narrator_pitch_shift_applied": false,
+        "human_narrator_quality_profile": true,
+        "natural_pacing_contract_passed": true,
+        "premium_voice_required": true,
+        "premium_voice_contract_passed": true,
+        "continuous_narrator_take": true,
+        "artificial_compound_splitting": false,
+        "internal_hyphen_preserved": true,
+        "human_pronunciation_profile": "de-critical-san-disk-ka-i-v1",
+        "targeted_acronym_pronunciation_aid": false,
+        "sandisk_spoken_form": "San Disk",
+        "critical_term_pronunciation_aid": false,
+        "critical_term_pronunciation_terms": [],
+        "critical_term_speech_surface_only": false,
+        "pronunciation_contract_version": "de-acronym-letter-names-v2",
+        "all_visible_acronyms_normalized": true,
+        "pronunciation_replacements": {
+          "58": "achtundfünfzig",
+          "55": "fünfundfünfzig",
+          "TAYVORIQ": "Tayvorik"
+        },
+        "spoken_contract_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tayvoriq_spoken_replacement": "",
+        "brand_spoken_fallback_used": false,
+        "brand_spoken_fallback_semantic_only": false,
+        "visible_script_unchanged": true,
+        "canonical_review_contract_unchanged": true,
+        "exact_chatterbox_model_required": "v3",
+        "exact_chatterbox_model_passed": true,
+        "golden_human_reference_required": true,
+        "golden_human_reference_used": true,
+        "golden_human_reference_commit": "08e2dada47d4e823ae139d1151a07fea1ff5d92c",
+        "quality_gates_weakened": false,
+        "deep_voice_gate": {
+          "passed": true,
+          "repair_applied": false,
+          "repair_factor": 1.0,
+          "repair_factors": [],
+          "repair_passes": [],
+          "maximum_repair_passes": 0,
+          "minimum_cumulative_feedback_factor": 1.0,
+          "feedback_measurement_required": true,
+          "before": {
+            "median_f0_hz": 140.35,
+            "p10_f0_hz": 105.26,
+            "p90_f0_hz": 195.12,
+            "pitch_span_hz": 89.86,
+            "silence_ratio": 0.041
+          },
+          "after": {
+            "median_f0_hz": 140.35,
+            "p10_f0_hz": 105.26,
+            "p90_f0_hz": 195.12,
+            "pitch_span_hz": 89.86,
+            "silence_ratio": 0.041
+          },
+          "allowed_f0_hz": [
+            65.0,
+            230.0
+          ],
+          "bounded_repair_window_hz": [
+            65.0,
+            230.0
+          ],
+          "repair_window_basis": "final-gate-divided-by-bounded-pitch-factor",
+          "provider_required": "chatterbox_multilingual_v3",
+          "fallback_allowed": false,
+          "quality_gates_weakened": false,
+          "contract_version": "golden-path-deep-voice-self-heal-v3"
+        },
+        "golden_voice_floor": {
+          "version": "v1",
+          "passed": true,
+          "artificial_pitch_shift_forbidden": true,
+          "narrator_pitch_factor": 1.0,
+          "human_rejected_profiles_forbidden": true,
+          "quality_gates_weakened": false
+        },
+        "pre_render_transcript_validation": {
+          "passed": true,
+          "similarity": 0.973,
+          "missing_critical_terms": [],
+          "expected_tokens": 56,
+          "actual_tokens": 55,
+          "excessive_extra_words": false,
+          "forbidden_tail": false,
+          "transcript": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren, wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen, für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_expected": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_actual": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren, wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen, für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "role": "final",
+          "raw_transcript": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren, wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen, für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_transcript": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren, wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen, für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_contract_expected": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "asr_orthographic_equivalence_applied": false,
+          "hallucinated_tail": false,
+          "terminal_token_match": true,
+          "segment_min_similarity": 0.95,
+          "similarity_gate_passed": true,
+          "transcription_attempt": 1,
+          "postmux_min_similarity": 0.95,
+          "base_gate_passed": true,
+          "attempts": [
+            {
+              "passed": true,
+              "similarity": 0.973,
+              "missing_critical_terms": [],
+              "expected_tokens": 56,
+              "actual_tokens": 55,
+              "excessive_extra_words": false,
+              "forbidden_tail": false,
+              "transcript": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren, wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen, für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_expected": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_actual": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren, wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen, für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "role": "final",
+              "raw_transcript": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren, wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen, für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_transcript": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren, wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen, für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_contract_expected": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "asr_orthographic_equivalence_applied": false,
+              "hallucinated_tail": false,
+              "terminal_token_match": true,
+              "segment_min_similarity": 0.95,
+              "similarity_gate_passed": true,
+              "transcription_attempt": 1,
+              "postmux_min_similarity": 0.95,
+              "base_gate_passed": true
+            }
+          ],
+          "attempt": 1,
+          "required": true,
+          "min_similarity": 0.95,
+          "quality_gates_weakened": false
+        },
+        "pre_render_voice_attempt": 1,
+        "post_audio_quality_gate": {
+          "passed": true,
+          "provider": "chatterbox_multilingual_v3",
+          "duration_seconds": 24.98,
+          "target_duration_seconds": 35,
+          "fallback": false,
+          "fallback_from": null,
+          "pre_render_transcript_passed": true,
+          "pre_render_transcript_similarity": 0.973,
+          "pre_render_cta_morphology_passed": true,
+          "required_spoken_cta": "folge dem kanal",
+          "quality_gates_weakened": false
+        },
+        "number_pronunciation_replacements": {
+          "58": "achtundfünfzig",
+          "55": "fünfundfünfzig"
+        },
+        "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "spoken_number_normalization_required": true,
+        "spoken_number_normalization_passed": true,
+        "speech_preflight_version": "v20-german-number-verbalization",
+        "native_language_voice_configured": true,
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "render": {
+        "video_path": "short.mp4",
+        "asset_report": [
+          {
+            "scene": 1,
+            "source": "pexels_video",
+            "query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen news documentary vertical video place people or public setting establishing footage vertical 9:16 authentic documentary footage close detail",
+            "requested_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen news documentary vertical video place people or public setting establishing footage vertical 9:16 authentic documentary footage close detail",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.088,
+            "subtitle_present": true,
+            "asset": "scene_01.mp4",
+            "pexels_source_sha256": "484d5a73ce20d2a6fe851400dcd826319c013004c828a23266170c308b4dd678"
+          },
+          {
+            "scene": 2,
+            "source": "pexels_video",
+            "query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen real location vertical video location map document or everyday context vertical 9:16 authentic documentary footage close detail",
+            "requested_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen real location vertical video location map document or everyday context vertical 9:16 authentic documentary footage close detail",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 3.633,
+            "subtitle_present": true,
+            "asset": "scene_02.mp4",
+            "pexels_source_sha256": "1c283c903a3929f28e033da9e77f2bc53f44f0eca08e6a3d8e5345ddb9f299d0"
+          },
+          {
+            "scene": 3,
+            "source": "pexels_video",
+            "query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen investigation documentary vertical video real process institution or community mechanism vertical 9:16 authentic documentary footage close detail",
+            "requested_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen investigation documentary vertical video real process institution or community mechanism vertical 9:16 authentic documentary footage close detail",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 3.633,
+            "subtitle_present": true,
+            "asset": "scene_03.mp4",
+            "pexels_source_sha256": "0f0765f01dae112f27bff6294ab0e78ad87c7b2b18aa80535c002f626fcb448e"
+          },
+          {
+            "scene": 4,
+            "source": "pexels_video",
+            "query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen relevant people workplace vertical video evidence detail showing what changed vertical 9:16 authentic documentary footage close detail",
+            "requested_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen relevant people workplace vertical video evidence detail showing what changed vertical 9:16 authentic documentary footage close detail",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.542,
+            "subtitle_present": true,
+            "asset": "scene_04.mp4",
+            "pexels_source_sha256": "1a948893311edf0214cc053d38f3a00969bfab916d80c4c9e230dd38608e19e6"
+          },
+          {
+            "scene": 5,
+            "source": "pexels_video",
+            "query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen German news context vertical video daily-life human impact footage vertical 9:16 authentic documentary footage close detail",
+            "requested_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen German news context vertical video daily-life human impact footage vertical 9:16 authentic documentary footage close detail",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.996,
+            "subtitle_present": true,
+            "asset": "scene_05.mp4",
+            "pexels_source_sha256": "b5eafbfd61414199e8adcc5f9f8d99f6b38d69a02b37038cead72e6129d0dbcc"
+          },
+          {
+            "scene": 6,
+            "source": "pexels_video",
+            "query": "older worker reviewing paperwork at desk",
+            "requested_query": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen close up evidence context vertical video key number place or object detail vertical 9:16 authentic documentary footage close detail",
+            "visual_query_repaired": true,
+            "real_video_provider_attempts": 1,
+            "duration": 4.638,
+            "subtitle_present": true,
+            "asset": "scene_06.mp4",
+            "pexels_source_sha256": "02c8933bcb37b819117faa0e73fd367cbc3dee13db5a551ab54c9a3adb229ee0"
+          }
+        ],
+        "render_size": "1080x1920",
+        "bytes": 17514541,
+        "voice_duration_seconds": 24.98,
+        "final_duration_seconds": 25.53,
+        "end_padding_seconds": 0.55,
+        "requested_duration_seconds": 35.0,
+        "duration_delta_seconds": -9.47,
+        "duration_status": "REVIEW"
+      },
+      "video_path": "short_tiktok.mp4",
+      "upload_status": "PENDING_APPROVAL"
+    }
+  },
+  "platform_package": {
+    "requested_platform": "youtube_tiktok",
+    "targets": [
+      "youtube_shorts",
+      "tiktok"
+    ],
+    "packages": [
+      {
+        "platform": "youtube_shorts",
+        "status": "PENDING_APPROVAL",
+        "video_file": "short_youtube.mp4",
+        "metadata": {
+          "title": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+          "description": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "tags": [
+            "world_society",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt."
+      },
+      {
+        "platform": "tiktok",
+        "status": "PENDING_APPROVAL",
+        "video_file": "short_tiktok.mp4",
+        "metadata": {
+          "title": "Altersteilzeit-Reform könnte Fiskus Milliarden bringen",
+          "caption": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "privacy_default": "PUBLIC_TO_EVERYONE",
+          "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+        },
+        "cta": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt."
+      }
+    ]
+  },
+  "preapproval_ai_audit": {
+    "schema_version": 3,
+    "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
+    "passed": true,
+    "scores": {
+      "factual_accuracy": 95,
+      "pronunciation": 98,
+      "marketing": 90,
+      "sales": 90,
+      "platform_fit": 92,
+      "visual": 85,
+      "overall": 92
+    },
+    "thresholds": {
+      "factual_accuracy": 90,
+      "pronunciation": 95,
+      "marketing": 80,
+      "sales": 75,
+      "platform_fit": 80,
+      "visual": 78,
+      "overall": 85
+    },
+    "audio_reports": {
+      "youtube_shorts": {
+        "platform": "youtube_shorts",
+        "passed": true,
+        "expected_spoken_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "transcript": "Die Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "similarity": 0.9643,
+        "average_logprob": -0.0598,
+        "critical_terms": [
+          {
+            "source": "58",
+            "spoken": "achtundfünfzig",
+            "kind": "number"
+          },
+          {
+            "source": "55",
+            "spoken": "fünfundfünfzig",
+            "kind": "number"
+          }
+        ],
+        "missing_critical_terms": [],
+        "blockers": [],
+        "transcription_model": "whisper-large-v3",
+        "orthographic_pronunciation_alias_proofs": [],
+        "number_orthographic_alias_proofs": [
+          {
+            "source": "58",
+            "canonical_spoken_form_de": "achtundfünfzig",
+            "tts_contract_proved": true,
+            "independent_asr_orthography": "58",
+            "quality_gates_weakened": false
+          },
+          {
+            "source": "55",
+            "canonical_spoken_form_de": "fünfundfünfzig",
+            "tts_contract_proved": true,
+            "independent_asr_orthography": "55",
+            "quality_gates_weakened": false
+          }
+        ],
+        "pronunciation_contract_version": "de-acronym-letter-names-v2",
+        "strict_number_audit": {
+          "required": true,
+          "visible_script": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "58": "achtundfünfzig",
+            "55": "fünfundfünfzig"
+          },
+          "transcription_prompt_used": false,
+          "version": "v2-unbiased-number-proof-compressed-audio"
+        },
+        "raw_similarity_before_safe_normalization": 0.9643,
+        "safe_orthographic_contract_normalization": true,
+        "normalized_expected_spoken_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "normalized_transcript": "Die Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "minimum_transcript_similarity": 0.82,
+        "request_bound_voice_quality_contract": false
+      },
+      "tiktok": {
+        "platform": "tiktok",
+        "passed": true,
+        "expected_spoken_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "transcript": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen, für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "similarity": 0.955,
+        "average_logprob": -0.0698,
+        "critical_terms": [
+          {
+            "source": "58",
+            "spoken": "achtundfünfzig",
+            "kind": "number"
+          },
+          {
+            "source": "55",
+            "spoken": "fünfundfünfzig",
+            "kind": "number"
+          }
+        ],
+        "missing_critical_terms": [],
+        "blockers": [],
+        "transcription_model": "whisper-large-v3",
+        "orthographic_pronunciation_alias_proofs": [],
+        "number_orthographic_alias_proofs": [
+          {
+            "source": "58",
+            "canonical_spoken_form_de": "achtundfünfzig",
+            "tts_contract_proved": true,
+            "independent_asr_orthography": "58",
+            "quality_gates_weakened": false
+          },
+          {
+            "source": "55",
+            "canonical_spoken_form_de": "fünfundfünfzig",
+            "tts_contract_proved": true,
+            "independent_asr_orthography": "55",
+            "quality_gates_weakened": false
+          }
+        ],
+        "pronunciation_contract_version": "de-acronym-letter-names-v2",
+        "strict_number_audit": {
+          "required": true,
+          "visible_script": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {
+            "58": "achtundfünfzig",
+            "55": "fünfundfünfzig"
+          },
+          "transcription_prompt_used": false,
+          "version": "v2-unbiased-number-proof-compressed-audio"
+        },
+        "raw_similarity_before_safe_normalization": 0.955,
+        "safe_orthographic_contract_normalization": true,
+        "normalized_expected_spoken_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "normalized_transcript": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen, für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "minimum_transcript_similarity": 0.82,
+        "request_bound_voice_quality_contract": false
+      }
+    },
+    "marketing_review": {
+      "factual_accuracy": {
+        "score": 95.0,
+        "blockers": [],
+        "findings": [
+          "Alle getroffenen Aussagen zur Altersteilzeit ab 58 statt 55 Jahren sowie zum Sparbedarf des Staates sind direkt durch die verifizierten Quellen (Süddeutsche Zeitung, n-tv) und den bereitgestellten Quellenkontext gestützt."
+        ]
+      },
+      "pronunciation_interpretation": {
+        "score": 96.0,
+        "blockers": [],
+        "findings": [
+          "Die Audio-Transkripte für YouTube Shorts und TikTok stimmen mit den visuellen Skripten überein, und die Whisper-Ähnlichkeitswerte (0.9643 und 0.955) bestätigen eine hohe auditive Präzision."
+        ]
+      },
+      "marketing_effectiveness": {
+        "score": 90.0,
+        "blockers": [],
+        "findings": [
+          "Der Hook benennt das zentrale Thema in den ersten Sekunden direkt und klar. Der Zuschauer-Nutzen (Einordnung und Karriereplanung) wird verständlich vermittelt."
+        ]
+      },
+      "sales_effectiveness": {
+        "score": 90.0,
+        "blockers": [],
+        "findings": [
+          "Die Handlungsaufforderungen (CTA) sind plattformgerecht (YouTube: Abo, TikTok: Folge) und begründen den Mehrwert durch verifizierte Einordnung und konkrete Schritte nachvollziehbar ohne künstlichen Druck."
+        ]
+      },
+      "platform_fit": {
+        "score": 92.0,
+        "blockers": [],
+        "findings": [
+          "Die Formate sind exakt auf YouTube Shorts und TikTok zugeschnitten, die Metadaten, Hashtags und Captions sind zweckmäßig und plattformkonform ausgearbeitet."
+        ]
+      },
+      "overall_score": 93.0,
+      "approval_recommendation": "PASS",
+      "blockers": [],
+      "strengths": [
+        "Hervorragende Faktenbasis durch zwei unabhängige Top-Quellen (Süddeutsche Zeitung, n-tv).",
+        "Saubere und präzise Audiotranskripte mit hoher Übereinstimmung.",
+        "Klare zielgruppengerechte Ausrichtung mit direktem Nutzwert für Arbeitnehmer."
+      ],
+      "repair_instructions": [],
+      "score_scale_normalized": true,
+      "provider_model_fallback": {
+        "selected_model": "gemini-3.5-flash-lite",
+        "attempted_models": [
+          "gemini-3.5-flash",
+          "gemini-3.6-flash",
+          "gemini-3.5-flash-lite"
+        ],
+        "provider_failures_before_success": [
+          "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } }",
+          "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } }"
+        ],
+        "same_prompt": true,
+        "quality_gate_weakened": false
+      }
+    },
+    "visual_review": {
+      "score": 85,
+      "passed": true,
+      "blockers": [],
+      "findings": [
+        "In Szene 1 von YouTube Shorts wird eine Weltkarte mit Fokus auf den Nahen Osten (Saudi-Arabien) als Hintergrund genutzt, was bezüglich der deutschen Altersteilzeit-Reform kontextuell unpassend wirkt.",
+        "Die Börsen- und Finanzdaten-Visuals in TikTok Szene 1 & 2 sowie YouTube Shorts Szene 2 & 3 vermitteln einen klaren Bezug zu Zahlen und Fiskus.",
+        "TikTok Szene 3 zeigt eine professionelle Beraterin/Experten-Szene mit Akten, was Vertrauen und Glaubwürdigkeit für ein B2C-Finanzthema stärkt."
+      ],
+      "marketing_visual_strengths": [
+        "Hervorragende mobile Lesbarkeit dank prägnantem Weiß-auf-Schwarz-Text-Container.",
+        "Gutes Framing und konsistente Textplatzierung am unteren Bildrand, frei von Interaktions-Buttons der Plattformen.",
+        "Klarer, vertrauensbildender Call-to-Action ('verifizierte Einordnung und konkrete Schritte') zur Steigerung der Retention."
+      ],
+      "provider": "gemini:gemini-3.5-flash",
+      "reviewed_frames": [
+        "youtube_shorts-1.jpg",
+        "youtube_shorts-2.jpg",
+        "youtube_shorts-3.jpg",
+        "tiktok-1.jpg",
+        "tiktok-2.jpg",
+        "tiktok-3.jpg"
+      ],
+      "provider_model_fallback": {
+        "selected_model": "gemini-3.5-flash",
+        "attempted_models": [
+          "gemini-3.5-flash"
+        ],
+        "provider_failures_before_success": [],
+        "same_frames_and_prompt": true,
+        "quality_gate_weakened": false,
+        "fail_closed": true
+      }
+    },
+    "objective_conversion_review": {
+      "passed": true,
+      "score": 83,
+      "action_ok": true,
+      "platform_specific_actions_ok": true,
+      "youtube_action_ok": true,
+      "tiktok_action_ok": true,
+      "required_platforms_present": true,
+      "benefit_hits": [
+        "verifiziert",
+        "konkrete schritte"
+      ],
+      "length_words": 9,
+      "length_ok": true,
+      "consistent_across_platforms": true,
+      "semantic_tail_consistent": true,
+      "platform_contracts_ok": true,
+      "manipulative_pressure": false,
+      "ctas": [
+        "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+      ],
+      "ctas_by_platform": {
+        "youtube_shorts": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tiktok": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+      },
+      "semantic_tails": [
+        "für verifizierte einordnung und konkrete schritte.",
+        "für verifizierte einordnung und konkrete schritte."
+      ],
+      "quality_gate_weakened": false
+    },
+    "blockers": [],
+    "strengths": [
+      "Hervorragende Faktenbasis durch zwei unabhängige Top-Quellen (Süddeutsche Zeitung, n-tv).",
+      "Saubere und präzise Audiotranskripte mit hoher Übereinstimmung.",
+      "Klare zielgruppengerechte Ausrichtung mit direktem Nutzwert für Arbeitnehmer."
+    ],
+    "repair_instructions": [],
+    "providers": {
+      "marketing": "gemini:gemini-3.5-flash-lite",
+      "visual": "gemini:gemini-3.5-flash",
+      "audio": "groq:whisper-large-v3-objective-score",
+      "conversion": "deterministic-cta-benefit-gate-v1"
+    },
+    "human_review_allowed": true,
+    "quality_gates_weakened": false,
+    "score_calibration": {
+      "provider_scales": "0-1-or-0-10-or-0-100-to-percent",
+      "pronunciation": "objective-transcript-similarity-and-confidence",
+      "sales": "max-independent-judge-and-objective-cta-benefit-score",
+      "overall": "fixed-weight-evidence-score",
+      "marketing_provider_order": "gemini-retry-first-groq-fallback",
+      "visual_provider_order": "configured-gemini-then-3.6-flash-then-3.5-flash-lite"
+    }
+  }
+}

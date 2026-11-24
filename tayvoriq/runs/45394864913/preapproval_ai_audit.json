@@ -1,0 +1,291 @@
+{
+  "schema_version": 3,
+  "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
+  "passed": true,
+  "scores": {
+    "factual_accuracy": 95,
+    "pronunciation": 98,
+    "marketing": 90,
+    "sales": 90,
+    "platform_fit": 92,
+    "visual": 85,
+    "overall": 92
+  },
+  "thresholds": {
+    "factual_accuracy": 90,
+    "pronunciation": 95,
+    "marketing": 80,
+    "sales": 75,
+    "platform_fit": 80,
+    "visual": 78,
+    "overall": 85
+  },
+  "audio_reports": {
+    "youtube_shorts": {
+      "platform": "youtube_shorts",
+      "passed": true,
+      "expected_spoken_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "Die Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9643,
+      "average_logprob": -0.0598,
+      "critical_terms": [
+        {
+          "source": "58",
+          "spoken": "achtundfünfzig",
+          "kind": "number"
+        },
+        {
+          "source": "55",
+          "spoken": "fünfundfünfzig",
+          "kind": "number"
+        }
+      ],
+      "missing_critical_terms": [],
+      "blockers": [],
+      "transcription_model": "whisper-large-v3",
+      "orthographic_pronunciation_alias_proofs": [],
+      "number_orthographic_alias_proofs": [
+        {
+          "source": "58",
+          "canonical_spoken_form_de": "achtundfünfzig",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "58",
+          "quality_gates_weakened": false
+        },
+        {
+          "source": "55",
+          "canonical_spoken_form_de": "fünfundfünfzig",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "55",
+          "quality_gates_weakened": false
+        }
+      ],
+      "pronunciation_contract_version": "de-acronym-letter-names-v2",
+      "strict_number_audit": {
+        "required": true,
+        "visible_script": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {
+          "58": "achtundfünfzig",
+          "55": "fünfundfünfzig"
+        },
+        "transcription_prompt_used": false,
+        "version": "v2-unbiased-number-proof-compressed-audio"
+      },
+      "raw_similarity_before_safe_normalization": 0.9643,
+      "safe_orthographic_contract_normalization": true,
+      "normalized_expected_spoken_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Die Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "minimum_transcript_similarity": 0.82,
+      "request_bound_voice_quality_contract": false
+    },
+    "tiktok": {
+      "platform": "tiktok",
+      "passed": true,
+      "expected_spoken_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen, für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.955,
+      "average_logprob": -0.0698,
+      "critical_terms": [
+        {
+          "source": "58",
+          "spoken": "achtundfünfzig",
+          "kind": "number"
+        },
+        {
+          "source": "55",
+          "spoken": "fünfundfünfzig",
+          "kind": "number"
+        }
+      ],
+      "missing_critical_terms": [],
+      "blockers": [],
+      "transcription_model": "whisper-large-v3",
+      "orthographic_pronunciation_alias_proofs": [],
+      "number_orthographic_alias_proofs": [
+        {
+          "source": "58",
+          "canonical_spoken_form_de": "achtundfünfzig",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "58",
+          "quality_gates_weakened": false
+        },
+        {
+          "source": "55",
+          "canonical_spoken_form_de": "fünfundfünfzig",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "55",
+          "quality_gates_weakened": false
+        }
+      ],
+      "pronunciation_contract_version": "de-acronym-letter-names-v2",
+      "strict_number_audit": {
+        "required": true,
+        "visible_script": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {
+          "58": "achtundfünfzig",
+          "55": "fünfundfünfzig"
+        },
+        "transcription_prompt_used": false,
+        "version": "v2-unbiased-number-proof-compressed-audio"
+      },
+      "raw_similarity_before_safe_normalization": 0.955,
+      "safe_orthographic_contract_normalization": true,
+      "normalized_expected_spoken_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen, für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "minimum_transcript_similarity": 0.82,
+      "request_bound_voice_quality_contract": false
+    }
+  },
+  "marketing_review": {
+    "factual_accuracy": {
+      "score": 95.0,
+      "blockers": [],
+      "findings": [
+        "Alle getroffenen Aussagen zur Altersteilzeit ab 58 statt 55 Jahren sowie zum Sparbedarf des Staates sind direkt durch die verifizierten Quellen (Süddeutsche Zeitung, n-tv) und den bereitgestellten Quellenkontext gestützt."
+      ]
+    },
+    "pronunciation_interpretation": {
+      "score": 96.0,
+      "blockers": [],
+      "findings": [
+        "Die Audio-Transkripte für YouTube Shorts und TikTok stimmen mit den visuellen Skripten überein, und die Whisper-Ähnlichkeitswerte (0.9643 und 0.955) bestätigen eine hohe auditive Präzision."
+      ]
+    },
+    "marketing_effectiveness": {
+      "score": 90.0,
+      "blockers": [],
+      "findings": [
+        "Der Hook benennt das zentrale Thema in den ersten Sekunden direkt und klar. Der Zuschauer-Nutzen (Einordnung und Karriereplanung) wird verständlich vermittelt."
+      ]
+    },
+    "sales_effectiveness": {
+      "score": 90.0,
+      "blockers": [],
+      "findings": [
+        "Die Handlungsaufforderungen (CTA) sind plattformgerecht (YouTube: Abo, TikTok: Folge) und begründen den Mehrwert durch verifizierte Einordnung und konkrete Schritte nachvollziehbar ohne künstlichen Druck."
+      ]
+    },
+    "platform_fit": {
+      "score": 92.0,
+      "blockers": [],
+      "findings": [
+        "Die Formate sind exakt auf YouTube Shorts und TikTok zugeschnitten, die Metadaten, Hashtags und Captions sind zweckmäßig und plattformkonform ausgearbeitet."
+      ]
+    },
+    "overall_score": 93.0,
+    "approval_recommendation": "PASS",
+    "blockers": [],
+    "strengths": [
+      "Hervorragende Faktenbasis durch zwei unabhängige Top-Quellen (Süddeutsche Zeitung, n-tv).",
+      "Saubere und präzise Audiotranskripte mit hoher Übereinstimmung.",
+      "Klare zielgruppengerechte Ausrichtung mit direktem Nutzwert für Arbeitnehmer."
+    ],
+    "repair_instructions": [],
+    "score_scale_normalized": true,
+    "provider_model_fallback": {
+      "selected_model": "gemini-3.5-flash-lite",
+      "attempted_models": [
+        "gemini-3.5-flash",
+        "gemini-3.6-flash",
+        "gemini-3.5-flash-lite"
+      ],
+      "provider_failures_before_success": [
+        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } }",
+        "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } }"
+      ],
+      "same_prompt": true,
+      "quality_gate_weakened": false
+    }
+  },
+  "visual_review": {
+    "score": 85,
+    "passed": true,
+    "blockers": [],
+    "findings": [
+      "In Szene 1 von YouTube Shorts wird eine Weltkarte mit Fokus auf den Nahen Osten (Saudi-Arabien) als Hintergrund genutzt, was bezüglich der deutschen Altersteilzeit-Reform kontextuell unpassend wirkt.",
+      "Die Börsen- und Finanzdaten-Visuals in TikTok Szene 1 & 2 sowie YouTube Shorts Szene 2 & 3 vermitteln einen klaren Bezug zu Zahlen und Fiskus.",
+      "TikTok Szene 3 zeigt eine professionelle Beraterin/Experten-Szene mit Akten, was Vertrauen und Glaubwürdigkeit für ein B2C-Finanzthema stärkt."
+    ],
+    "marketing_visual_strengths": [
+      "Hervorragende mobile Lesbarkeit dank prägnantem Weiß-auf-Schwarz-Text-Container.",
+      "Gutes Framing und konsistente Textplatzierung am unteren Bildrand, frei von Interaktions-Buttons der Plattformen.",
+      "Klarer, vertrauensbildender Call-to-Action ('verifizierte Einordnung und konkrete Schritte') zur Steigerung der Retention."
+    ],
+    "provider": "gemini:gemini-3.5-flash",
+    "reviewed_frames": [
+      "youtube_shorts-1.jpg",
+      "youtube_shorts-2.jpg",
+      "youtube_shorts-3.jpg",
+      "tiktok-1.jpg",
+      "tiktok-2.jpg",
+      "tiktok-3.jpg"
+    ],
+    "provider_model_fallback": {
+      "selected_model": "gemini-3.5-flash",
+      "attempted_models": [
+        "gemini-3.5-flash"
+      ],
+      "provider_failures_before_success": [],
+      "same_frames_and_prompt": true,
+      "quality_gate_weakened": false,
+      "fail_closed": true
+    }
+  },
+  "objective_conversion_review": {
+    "passed": true,
+    "score": 83,
+    "action_ok": true,
+    "platform_specific_actions_ok": true,
+    "youtube_action_ok": true,
+    "tiktok_action_ok": true,
+    "required_platforms_present": true,
+    "benefit_hits": [
+      "verifiziert",
+      "konkrete schritte"
+    ],
+    "length_words": 9,
+    "length_ok": true,
+    "consistent_across_platforms": true,
+    "semantic_tail_consistent": true,
+    "platform_contracts_ok": true,
+    "manipulative_pressure": false,
+    "ctas": [
+      "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+    ],
+    "ctas_by_platform": {
+      "youtube_shorts": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "tiktok": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+    },
+    "semantic_tails": [
+      "für verifizierte einordnung und konkrete schritte.",
+      "für verifizierte einordnung und konkrete schritte."
+    ],
+    "quality_gate_weakened": false
+  },
+  "blockers": [],
+  "strengths": [
+    "Hervorragende Faktenbasis durch zwei unabhängige Top-Quellen (Süddeutsche Zeitung, n-tv).",
+    "Saubere und präzise Audiotranskripte mit hoher Übereinstimmung.",
+    "Klare zielgruppengerechte Ausrichtung mit direktem Nutzwert für Arbeitnehmer."
+  ],
+  "repair_instructions": [],
+  "providers": {
+    "marketing": "gemini:gemini-3.5-flash-lite",
+    "visual": "gemini:gemini-3.5-flash",
+    "audio": "groq:whisper-large-v3-objective-score",
+    "conversion": "deterministic-cta-benefit-gate-v1"
+  },
+  "human_review_allowed": true,
+  "quality_gates_weakened": false,
+  "score_calibration": {
+    "provider_scales": "0-1-or-0-10-or-0-100-to-percent",
+    "pronunciation": "objective-transcript-similarity-and-confidence",
+    "sales": "max-independent-judge-and-objective-cta-benefit-score",
+    "overall": "fixed-weight-evidence-score",
+    "marketing_provider_order": "gemini-retry-first-groq-fallback",
+    "visual_provider_order": "configured-gemini-then-3.6-flash-then-3.5-flash-lite"
+  }
+}

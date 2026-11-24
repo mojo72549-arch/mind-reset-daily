@@ -3,13 +3,13 @@
   "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
   "passed": true,
   "scores": {
-    "factual_accuracy": 100,
-    "pronunciation": 100,
-    "marketing": 95,
-    "sales": 95,
-    "platform_fit": 95,
+    "factual_accuracy": 95,
+    "pronunciation": 98,
+    "marketing": 90,
+    "sales": 90,
+    "platform_fit": 92,
     "visual": 85,
-    "overall": 96
+    "overall": 92
   },
   "thresholds": {
     "factual_accuracy": 90,
@@ -24,110 +24,163 @@
     "youtube_shorts": {
       "platform": "youtube_shorts",
       "passed": true,
-      "expected_spoken_text": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "Stuttgarts Hauptbahnhof hat die große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbinden sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund 80 Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "similarity": 0.9818,
-      "average_logprob": -0.086,
-      "critical_terms": [],
+      "expected_spoken_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "Die Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9643,
+      "average_logprob": -0.0598,
+      "critical_terms": [
+        {
+          "source": "58",
+          "spoken": "achtundfünfzig",
+          "kind": "number"
+        },
+        {
+          "source": "55",
+          "spoken": "fünfundfünfzig",
+          "kind": "number"
+        }
+      ],
       "missing_critical_terms": [],
       "blockers": [],
       "transcription_model": "whisper-large-v3",
       "orthographic_pronunciation_alias_proofs": [],
-      "number_orthographic_alias_proofs": [],
+      "number_orthographic_alias_proofs": [
+        {
+          "source": "58",
+          "canonical_spoken_form_de": "achtundfünfzig",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "58",
+          "quality_gates_weakened": false
+        },
+        {
+          "source": "55",
+          "canonical_spoken_form_de": "fünfundfünfzig",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "55",
+          "quality_gates_weakened": false
+        }
+      ],
       "pronunciation_contract_version": "de-acronym-letter-names-v2",
       "strict_number_audit": {
-        "required": false,
-        "visible_script": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "number_replacements": {},
+        "required": true,
+        "visible_script": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {
+          "58": "achtundfünfzig",
+          "55": "fünfundfünfzig"
+        },
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9818,
+      "raw_similarity_before_safe_normalization": 0.9643,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "Stuttgarts Hauptbahnhof hat die große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbinden sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund 80 Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_expected_spoken_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Die Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
       "minimum_transcript_similarity": 0.82,
       "request_bound_voice_quality_contract": false
     },
     "tiktok": {
       "platform": "tiktok",
       "passed": true,
-      "expected_spoken_text": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "Stuttgarts Hauptbahnhof hat die große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund 80 Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "similarity": 0.9818,
-      "average_logprob": -0.0802,
-      "critical_terms": [],
+      "expected_spoken_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen, für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.955,
+      "average_logprob": -0.0698,
+      "critical_terms": [
+        {
+          "source": "58",
+          "spoken": "achtundfünfzig",
+          "kind": "number"
+        },
+        {
+          "source": "55",
+          "spoken": "fünfundfünfzig",
+          "kind": "number"
+        }
+      ],
       "missing_critical_terms": [],
       "blockers": [],
       "transcription_model": "whisper-large-v3",
       "orthographic_pronunciation_alias_proofs": [],
-      "number_orthographic_alias_proofs": [],
+      "number_orthographic_alias_proofs": [
+        {
+          "source": "58",
+          "canonical_spoken_form_de": "achtundfünfzig",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "58",
+          "quality_gates_weakened": false
+        },
+        {
+          "source": "55",
+          "canonical_spoken_form_de": "fünfundfünfzig",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "55",
+          "quality_gates_weakened": false
+        }
+      ],
       "pronunciation_contract_version": "de-acronym-letter-names-v2",
       "strict_number_audit": {
-        "required": false,
-        "visible_script": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "number_replacements": {},
+        "required": true,
+        "visible_script": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {
+          "58": "achtundfünfzig",
+          "55": "fünfundfünfzig"
+        },
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9818,
+      "raw_similarity_before_safe_normalization": 0.955,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "Stuttgarts Hauptbahnhof hat die Große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund achtzig Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "Stuttgarts Hauptbahnhof hat die große Schalterhalle wieder geöffnet. Weil die Halle weitgehend saniert ist, verbindet sie wieder beide Ebenen. Das betrifft Umsteiger zwischen Fernzügen, Stadtbahn und S-Bahn. Für dich spart der Weg über die Halle rund 80 Meter. Nutze die ausgeschilderte Treppe durch die Schalterhalle. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_expected_spoken_text": "Rentenkommission empfiehlt spätere Altersteilzeit ab achtundfünfzig statt fünfundfünfzig Jahren. Wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen. Für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeit-Optionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Rentenkommission empfiehlt spätere Altersteilzeit ab 58 statt 55 Jahren wegen Sparbedarf des Staates und Empfehlung der Rentenkommission. Alle Arbeitnehmer, die Altersteilzeit in Anspruch nehmen wollen, für dich bedeutet das längere Arbeitszeit und weniger frühe Rente. Prüfe deine eigene Karriereplanung und Altersteilzeitoptionen regelmäßig vor Entscheidungen besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
       "minimum_transcript_similarity": 0.82,
       "request_bound_voice_quality_contract": false
     }
   },
   "marketing_review": {
     "factual_accuracy": {
-      "score": 100.0,
+      "score": 95.0,
       "blockers": [],
       "findings": [
-        "Alle getätigten Tatsachenbehauptungen (Wiederöffnung der Großen Schalterhalle im Stuttgarter Hauptbahnhof, Sanierung, Verbindung beider Ebenen, Einsparung von rund 80 Metern für Umsteiger) sind durch die offiziellen Quellen und den bereitgestellten Quellkontext vollständig belegt."
+        "Alle getroffenen Aussagen zur Altersteilzeit ab 58 statt 55 Jahren sowie zum Sparbedarf des Staates sind direkt durch die verifizierten Quellen (Süddeutsche Zeitung, n-tv) und den bereitgestellten Quellenkontext gestützt."
       ]
     },
     "pronunciation_interpretation": {
-      "score": 98.0,
+      "score": 96.0,
       "blockers": [],
       "findings": [
-        "Das Audio-Transkript stimmt inhaltlich exakt mit dem sichtbaren Skript überein.",
-        "Zahlen wie '80 Meter' beziehungsweise 'achtzig Meter' wurden sinngemäß korrekt und verständlich übertragen.",
-        "Die Audioprüfung durch Whisper bestätigt eine sehr hohe Übereinstimmung (Similarity: 0.9818)."
+        "Die Audio-Transkripte für YouTube Shorts und TikTok stimmen mit den visuellen Skripten überein, und die Whisper-Ähnlichkeitswerte (0.9643 und 0.955) bestätigen eine hohe auditive Präzision."
       ]
     },
     "marketing_effectiveness": {
-      "score": 95.0,
+      "score": 90.0,
       "blockers": [],
       "findings": [
-        "Der Hook liefert sofort eine relevante, lokale Alltagsinformation für Pendler in Stuttgart.",
-        "Der Zuschauer-Nutzen (konkreter Zeit- und Weggewinn von rund 80 Metern) wird ohne Clickbait klar und verständlich kommuniziert."
+        "Der Hook benennt das zentrale Thema in den ersten Sekunden direkt und klar. Der Zuschauer-Nutzen (Einordnung und Karriereplanung) wird verständlich vermittelt."
       ]
     },
     "sales_effectiveness": {
-      "score": 95.0,
+      "score": 90.0,
       "blockers": [],
       "findings": [
-        "Der Conversion-Pfad ist durch einen klaren redaktionellen Informationsnutzen begründet.",
-        "Die plattformgerechte Aufforderung (YouTube: 'Abonniere...', TikTok: 'Folge...') ist grammatikalisch korrekt, setzt keinen manipulativen Druck und bietet einen echten Grund zum Folgen (verifizierte Einordnung und konkrete Schritte im Pendleralltag)."
+        "Die Handlungsaufforderungen (CTA) sind plattformgerecht (YouTube: Abo, TikTok: Folge) und begründen den Mehrwert durch verifizierte Einordnung und konkrete Schritte nachvollziehbar ohne künstlichen Druck."
       ]
     },
     "platform_fit": {
-      "score": 95.0,
+      "score": 92.0,
       "blockers": [],
       "findings": [
-        "Die Formate für YouTube Shorts und TikTok sind plattformgerecht umgesetzt.",
-        "Titel und Captions sind nicht generisch, sondern präzise auf das regionale Ereignis und die Zielgruppe ausgerichtet."
+        "Die Formate sind exakt auf YouTube Shorts und TikTok zugeschnitten, die Metadaten, Hashtags und Captions sind zweckmäßig und plattformkonform ausgearbeitet."
       ]
     },
-    "overall_score": 96.0,
+    "overall_score": 93.0,
     "approval_recommendation": "PASS",
     "blockers": [],
     "strengths": [
-      "Hervorragende faktenbasierte Aufbereitung eines lokalen Infrastrukturthemas mit direktem Nutzwert.",
-      "Saubere Übereinstimmung zwischen Skript, Audio-Transkript und verifizierten Quellen.",
-      "Plattformgerechte CTA-Differenzierung ('Abonniere' für YouTube, 'Folge diesem Kanal' für TikTok)."
+      "Hervorragende Faktenbasis durch zwei unabhängige Top-Quellen (Süddeutsche Zeitung, n-tv).",
+      "Saubere und präzise Audiotranskripte mit hoher Übereinstimmung.",
+      "Klare zielgruppengerechte Ausrichtung mit direktem Nutzwert für Arbeitnehmer."
     ],
     "repair_instructions": [],
     "score_scale_normalized": true,
@@ -139,8 +192,8 @@
         "gemini-3.5-flash-lite"
       ],
       "provider_failures_before_success": [
-        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 7h51m14.003615376s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"t",
-        "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 7h51m13.898059327s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"t"
+        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } }",
+        "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 503 { \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", \"status\": \"UNAVAILABLE\" } }"
       ],
       "same_prompt": true,
       "quality_gate_weakened": false
@@ -151,16 +204,16 @@
     "passed": true,
     "blockers": [],
     "findings": [
-      "Textüberschneidung bei 'MITTELABGANG' und 'S-BAHN / STADTBAHN GESPERRT' in der schematischen Wegskizze macht diesen Bereich schwer lesbar.",
-      "Klarer und konsistenter Aufbau der Frames über verschiedene Plattformen hinweg (YouTube Shorts und TikTok).",
-      "Gute mobile Lesbarkeit durch kontrastreiche Farbgestaltung und klare Typografie in den Untertiteln."
+      "In Szene 1 von YouTube Shorts wird eine Weltkarte mit Fokus auf den Nahen Osten (Saudi-Arabien) als Hintergrund genutzt, was bezüglich der deutschen Altersteilzeit-Reform kontextuell unpassend wirkt.",
+      "Die Börsen- und Finanzdaten-Visuals in TikTok Szene 1 & 2 sowie YouTube Shorts Szene 2 & 3 vermitteln einen klaren Bezug zu Zahlen und Fiskus.",
+      "TikTok Szene 3 zeigt eine professionelle Beraterin/Experten-Szene mit Akten, was Vertrauen und Glaubwürdigkeit für ein B2C-Finanzthema stärkt."
     ],
     "marketing_visual_strengths": [
-      "Prägnante und informative Headlines, die das Thema sofort auf den Punkt bringen.",
-      "Vertrauensbildende Elemente wie Quellenangaben ('Quellen: Deutsche Bahn / VVS | 11/2026') am unteren Bildrand.",
-      "Gezielte Call-to-Actions (Abonnieren/Folgen) am Ende des Videos zur Erhöhung der Retention- und Conversion-Wirkung."
+      "Hervorragende mobile Lesbarkeit dank prägnantem Weiß-auf-Schwarz-Text-Container.",
+      "Gutes Framing und konsistente Textplatzierung am unteren Bildrand, frei von Interaktions-Buttons der Plattformen.",
+      "Klarer, vertrauensbildender Call-to-Action ('verifizierte Einordnung und konkrete Schritte') zur Steigerung der Retention."
     ],
-    "provider": "gemini:gemini-3.5-flash-lite",
+    "provider": "gemini:gemini-3.5-flash",
     "reviewed_frames": [
       "youtube_shorts-1.jpg",
       "youtube_shorts-2.jpg",
@@ -170,16 +223,11 @@
       "tiktok-3.jpg"
     ],
     "provider_model_fallback": {
-      "selected_model": "gemini-3.5-flash-lite",
+      "selected_model": "gemini-3.5-flash",
       "attempted_models": [
-        "gemini-3.5-flash",
-        "gemini-3.6-flash",
-        "gemini-3.5-flash-lite"
+        "gemini-3.5-flash"
       ],
-      "provider_failures_before_success": [
-        "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See",
-        "gemini-3.6-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See"
-      ],
+      "provider_failures_before_success": [],
       "same_frames_and_prompt": true,
       "quality_gate_weakened": false,
       "fail_closed": true
@@ -219,14 +267,14 @@
   },
   "blockers": [],
   "strengths": [
-    "Hervorragende faktenbasierte Aufbereitung eines lokalen Infrastrukturthemas mit direktem Nutzwert.",
-    "Saubere Übereinstimmung zwischen Skript, Audio-Transkript und verifizierten Quellen.",
-    "Plattformgerechte CTA-Differenzierung ('Abonniere' für YouTube, 'Folge diesem Kanal' für TikTok)."
+    "Hervorragende Faktenbasis durch zwei unabhängige Top-Quellen (Süddeutsche Zeitung, n-tv).",
+    "Saubere und präzise Audiotranskripte mit hoher Übereinstimmung.",
+    "Klare zielgruppengerechte Ausrichtung mit direktem Nutzwert für Arbeitnehmer."
   ],
   "repair_instructions": [],
   "providers": {
     "marketing": "gemini:gemini-3.5-flash-lite",
-    "visual": "gemini:gemini-3.5-flash-lite",
+    "visual": "gemini:gemini-3.5-flash",
     "audio": "groq:whisper-large-v3-objective-score",
     "conversion": "deterministic-cta-benefit-gate-v1"
   },
