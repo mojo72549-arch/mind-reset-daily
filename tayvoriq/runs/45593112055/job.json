@@ -1,0 +1,3549 @@
+{
+  "job_id": "20261124_214141_erste-tarifrunde-bei-volkswagen-endet-ohne-einigung",
+  "mode": "tayvoriq_context_first_dual_platform_v2",
+  "created_at": "2026-11-24T21:59:07+00:00",
+  "github_run_id": "45493135731",
+  "topic": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+  "language": "Deutsch",
+  "requested_platform": "youtube_tiktok",
+  "target_duration": 35,
+  "approval_status": "PENDING_HUMAN_REVIEW",
+  "render_status": "DONE",
+  "upload_status": "NOT_STARTED_PENDING_HUMAN_APPROVAL",
+  "llm_report": {
+    "source": {
+      "provider": "template:fallback",
+      "fallback": true,
+      "errors": [
+        {
+          "provider": "gemini",
+          "error": "Gemini lieferte kein valides JSON"
+        },
+        {
+          "provider": "groq",
+          "error": "404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions"
+        },
+        {
+          "provider": "huggingface",
+          "error": "400 Client Error: Bad Request for url: https://router.huggingface.co/v1/chat/completions"
+        }
+      ]
+    },
+    "rewrite": {
+      "youtube_shorts": {
+        "attempts": [
+          {
+            "provider": "local:source-grounded-context-template",
+            "fallback": true,
+            "errors": [
+              {
+                "provider": "huggingface",
+                "error": "400 Client Error: Bad Request for url: https://router.huggingface.co/v1/chat/completions"
+              }
+            ],
+            "router_version": "v10",
+            "attempt": 1
+          }
+        ],
+        "provider_editorial_attempts": 1,
+        "provider_repair_attempted": false,
+        "provider_repair_issues_before": [],
+        "provider_repair_issues_after": [],
+        "selected_provider_issues": [],
+        "selected_payload_issues": [],
+        "initial_issues": [],
+        "final_issues": [],
+        "source_gate_issues": [],
+        "local_fallback_generated": false,
+        "local_editorial_repair_used": false,
+        "repair_strategy": "provider",
+        "repaired_fields": [],
+        "rewrite_version": "v27-topic-safe-cta-runtime",
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "spoken_brand_removed": false,
+        "spoken_brand_normalized": "TAYVORIQ=>Tai wo rik",
+        "care_cost_grounding_guard": "standard",
+        "brand_pronunciation": "Tayvorik",
+        "topic_specificity_repaired": false,
+        "topic_specificity_issues_before_repair": [],
+        "topic_specificity_issues_after_repair": [],
+        "topic_specificity_verified_locally": false,
+        "editorial_depth_gate": {
+          "passed": true,
+          "applicable": true,
+          "contract_version": "v1-verified-request-five-answer-recovery",
+          "contract_derived_from_sources": true,
+          "minimum_details_in_script": 3,
+          "available_source_bound_details": 4,
+          "consumed_source_bound_details": 4,
+          "planned_detail_available": false,
+          "planned_detail_consumed": false,
+          "rumor_or_unconfirmed_count": 0,
+          "consumed": [
+            {
+              "group": "confirmed_details",
+              "text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+              "anchors": [],
+              "matched": [
+                "emden",
+                "endete",
+                "ergebnis",
+                "erste",
+                "tarifrunde"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+              "anchors": [],
+              "matched": [
+                "Weil VW",
+                "Konzern Nullrunden"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+              "anchors": [],
+              "matched": [
+                "Volkswagen AG"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+              "anchors": [],
+              "matched": [
+                "arbeitszeit",
+                "debatte",
+                "stehen",
+                "zulagen"
+              ]
+            }
+          ],
+          "missing": [],
+          "blockers": [],
+          "quality_gates_weakened": false
+        },
+        "generic_script_allowed_when_specific_evidence_exists": false,
+        "quality_gates_weakened": false,
+        "universal_platform_cta": "Folge und abonniere TAYVORIQ für verifizierte Tech-Trends, klare Einordnungen und konkrete Schritte.",
+        "platform_gate_validation": {
+          "youtube_shorts": {
+            "passed": true,
+            "required_action": "subscribe"
+          },
+          "tiktok": {
+            "passed": true,
+            "required_action": "follow",
+            "distribution": "manual_after_user_approval"
+          }
+        },
+        "generic_contract_repair": {
+          "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+          "script_words": 55,
+          "repair_target_words": 53,
+          "source_bound_minimum_only": true,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "human_story_contract_applied": false,
+          "source_bound_editorial_preserved": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "platform_cta_contract": {
+          "version": "v4-platform-specific-editorial-storytelling",
+          "platform": "youtube_shorts",
+          "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "source_bound_viewer_value": false,
+          "viewer_value": "",
+          "next_video_bridge": "",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "voice_and_captions_share_editorial_source": true,
+          "visible_script_audio_overlay_same_source": true,
+          "overlay_repeats_full_voiceover": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_visual_standard": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "topic": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+          "domain": "society",
+          "treatment_id": "DOCUMENTARY_CONTEXT",
+          "visual_signature": "322cb801b49be147",
+          "platform": "youtube_shorts",
+          "platform_specific_master_required": true,
+          "same_master_reuse_forbidden": true,
+          "full_voiceover_as_overlay_forbidden": true,
+          "supporting_callouts_only": true,
+          "random_decorative_visuals_forbidden": true,
+          "filler_scenes_forbidden": true,
+          "explanatory_graphics_enabled": true,
+          "music_arc": "restrained opening -> explanatory space -> measured tension -> resolve",
+          "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+          "voice_priority": true,
+          "quality_gates_weakened": false
+        },
+        "editorial_quality_gate": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "passed": true,
+          "issues": [],
+          "checklist": {
+            "interesting": true,
+            "beginner_clear": true,
+            "voice_pacing": true,
+            "visual_explanatory": true,
+            "visually_distinct": true,
+            "no_filler": true,
+            "watch_to_end": true
+          },
+          "metrics": {
+            "scene_count": 7,
+            "unique_visual_queries": 7,
+            "unique_visual_types": 7,
+            "callout_count": 2,
+            "script_words": 51,
+            "estimated_wpm": 88.8,
+            "duration_spread_seconds": 1.7,
+            "generated_explainer_scenes": 1
+          }
+        },
+        "platform_story_profile": {
+          "platform": "youtube_shorts",
+          "beats": [
+            "hook",
+            "context",
+            "explanation",
+            "evidence",
+            "development_problem",
+            "key_insight",
+            "consequence_outlook"
+          ],
+          "scene_count": 7,
+          "narrative_priority": "context, evidence and explanatory depth",
+          "estimated_wpm": 88.8,
+          "preferred_wpm": [
+            108,
+            138
+          ],
+          "hard_max_wpm": 160,
+          "caption_policy": "readable full captions plus sparse semantic callouts",
+          "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+        }
+      },
+      "tiktok": {
+        "attempts": [
+          {
+            "provider": "local:source-grounded-context-template",
+            "fallback": true,
+            "errors": [],
+            "router_version": "v10",
+            "attempt": 1
+          }
+        ],
+        "provider_editorial_attempts": 1,
+        "provider_repair_attempted": false,
+        "provider_repair_issues_before": [],
+        "provider_repair_issues_after": [],
+        "selected_provider_issues": [],
+        "selected_payload_issues": [],
+        "initial_issues": [],
+        "final_issues": [],
+        "source_gate_issues": [],
+        "local_fallback_generated": false,
+        "local_editorial_repair_used": false,
+        "repair_strategy": "provider",
+        "repaired_fields": [],
+        "rewrite_version": "v27-topic-safe-cta-runtime",
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "spoken_brand_removed": false,
+        "spoken_brand_normalized": "TAYVORIQ=>Tai wo rik",
+        "care_cost_grounding_guard": "standard",
+        "brand_pronunciation": "Tayvorik",
+        "topic_specificity_repaired": false,
+        "topic_specificity_issues_before_repair": [],
+        "topic_specificity_issues_after_repair": [],
+        "topic_specificity_verified_locally": false,
+        "editorial_depth_gate": {
+          "passed": true,
+          "applicable": true,
+          "contract_version": "v1-verified-request-five-answer-recovery",
+          "contract_derived_from_sources": true,
+          "minimum_details_in_script": 3,
+          "available_source_bound_details": 4,
+          "consumed_source_bound_details": 4,
+          "planned_detail_available": false,
+          "planned_detail_consumed": false,
+          "rumor_or_unconfirmed_count": 0,
+          "consumed": [
+            {
+              "group": "confirmed_details",
+              "text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+              "anchors": [],
+              "matched": [
+                "emden",
+                "endete",
+                "ergebnis",
+                "erste",
+                "tarifrunde"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+              "anchors": [],
+              "matched": [
+                "Weil VW",
+                "Konzern Nullrunden"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+              "anchors": [],
+              "matched": [
+                "Volkswagen AG"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+              "anchors": [],
+              "matched": [
+                "arbeitszeit",
+                "debatte",
+                "stehen",
+                "zulagen"
+              ]
+            }
+          ],
+          "missing": [],
+          "blockers": [],
+          "quality_gates_weakened": false
+        },
+        "generic_script_allowed_when_specific_evidence_exists": false,
+        "quality_gates_weakened": false,
+        "universal_platform_cta": "Folge und abonniere TAYVORIQ für verifizierte Tech-Trends, klare Einordnungen und konkrete Schritte.",
+        "platform_gate_validation": {
+          "youtube_shorts": {
+            "passed": true,
+            "required_action": "subscribe"
+          },
+          "tiktok": {
+            "passed": true,
+            "required_action": "follow",
+            "distribution": "manual_after_user_approval"
+          }
+        },
+        "generic_contract_repair": {
+          "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+          "script_words": 55,
+          "repair_target_words": 53,
+          "source_bound_minimum_only": true,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "human_story_contract_applied": false,
+          "source_bound_editorial_preserved": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "platform_cta_contract": {
+          "version": "v4-platform-specific-editorial-storytelling",
+          "platform": "tiktok",
+          "cta": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "source_bound_viewer_value": false,
+          "viewer_value": "",
+          "next_video_bridge": "",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "voice_and_captions_share_editorial_source": true,
+          "visible_script_audio_overlay_same_source": true,
+          "overlay_repeats_full_voiceover": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_visual_standard": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "topic": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+          "domain": "society",
+          "treatment_id": "PLACE_AND_SCALE",
+          "visual_signature": "c32339f90a34cf09",
+          "platform": "tiktok",
+          "platform_specific_master_required": true,
+          "same_master_reuse_forbidden": true,
+          "full_voiceover_as_overlay_forbidden": true,
+          "supporting_callouts_only": true,
+          "random_decorative_visuals_forbidden": true,
+          "filler_scenes_forbidden": true,
+          "explanatory_graphics_enabled": true,
+          "music_arc": "immediate restrained pulse -> explanatory space -> short resolve",
+          "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+          "voice_priority": true,
+          "quality_gates_weakened": false
+        },
+        "editorial_quality_gate": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "passed": true,
+          "issues": [],
+          "checklist": {
+            "interesting": true,
+            "beginner_clear": true,
+            "voice_pacing": true,
+            "visual_explanatory": true,
+            "visually_distinct": true,
+            "no_filler": true,
+            "watch_to_end": true
+          },
+          "metrics": {
+            "scene_count": 6,
+            "unique_visual_queries": 6,
+            "unique_visual_types": 6,
+            "callout_count": 2,
+            "script_words": 51,
+            "estimated_wpm": 88.8,
+            "duration_spread_seconds": 1.99,
+            "generated_explainer_scenes": 1
+          }
+        },
+        "platform_story_profile": {
+          "platform": "tiktok",
+          "beats": [
+            "hook",
+            "why_it_matters",
+            "context",
+            "explanation",
+            "key_insight",
+            "consequence_outlook"
+          ],
+          "scene_count": 6,
+          "narrative_priority": "immediate relevance and vertical guidance",
+          "estimated_wpm": 88.8,
+          "preferred_wpm": [
+            118,
+            145
+          ],
+          "hard_max_wpm": 165,
+          "caption_policy": "readable full captions plus sparse semantic callouts",
+          "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+        }
+      }
+    }
+  },
+  "quality_report": {
+    "passed": true,
+    "reason": "VISUAL_REVISION_REAUDIT_REQUIRED",
+    "deterministic_passed": true,
+    "preapproval_ai_audit": {
+      "passed": true,
+      "scores": {
+        "factual_accuracy": 100,
+        "pronunciation": 100,
+        "marketing": 90,
+        "sales": 92,
+        "platform_fit": 95,
+        "visual": 92,
+        "overall": 95
+      },
+      "blockers": []
+    },
+    "audit_persistence_version": "v2-repeatable-existing-render"
+  },
+  "text_package": {
+    "title": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+    "category": "world_society",
+    "trend_angle": "Welche konkrete Veränderung hinter Erste Tarifrunde bei Volkswagen endet ohne Einigung wirklich steckt.",
+    "trend_signal": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+    "named_entities": [],
+    "why_now": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+    "affected_groups": [
+      "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG."
+    ],
+    "viewer_test": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde.",
+    "series_next": "",
+    "hook": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+    "script": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+    "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+    "scenes": [
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "modern automotive assembly line workers factory indoors vertical video",
+        "overlay_text": "",
+        "spoken_chunk": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "car manufacturing production line workers factory indoors vertical video",
+        "overlay_text": "",
+        "spoken_chunk": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "industrial robots vehicle assembly modern factory vertical video",
+        "overlay_text": "",
+        "spoken_chunk": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "automotive factory workers inspecting production line vertical video",
+        "overlay_text": "",
+        "spoken_chunk": "Für dich stehen Zulagen und Arbeitszeit zur Debatte."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "automotive parts manufacturing workers modern factory indoors vertical video",
+        "overlay_text": "",
+        "spoken_chunk": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde."
+      },
+      {
+        "duration_seconds": 5.0,
+        "visual_query": "vehicle assembly plant employees production floor vertical video",
+        "overlay_text": "",
+        "spoken_chunk": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte."
+      }
+    ],
+    "youtube_metadata": {
+      "title": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+      "description": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. #TAYVORIQ #Trendjagd #Gesellschaft",
+      "hashtags": [
+        "#TAYVORIQ",
+        "#Trendjagd",
+        "#Gesellschaft"
+      ],
+      "tags": [
+        "world_society",
+        "TAYVORIQ",
+        "Trendjagd",
+        "Shorts"
+      ]
+    },
+    "fallback_used": true,
+    "language": "Deutsch",
+    "platform": "youtube_shorts",
+    "target_duration": 35,
+    "llm_provider": "template:fallback",
+    "viewer_questions": {
+      "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf Erste Tarifrunde bei Volkswagen endet ohne Einigung.",
+      "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
+      "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
+      "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
+      "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
+      "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
+    },
+    "editorial_answers": {
+      "what_happened": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+      "why_happening": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+      "who_is_affected": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+      "personal_impact": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+      "action_now": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde."
+    },
+    "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+    "source_context": {
+      "verified_at": "2026-11-24T21:37:31.591583Z",
+      "independent_news_count": 2,
+      "sources": [
+        {
+          "publisher": "NDR",
+          "url": "https://www.tagesschau.de/inland/regional/niedersachsen/tarifstreit-vw-spitze-will-verhandlungen-bis-jahresende-abschliessen,vw-1734.html",
+          "supports": "Die erste VW-Tarifrunde endete in Emden ohne Ergebnis. VW will Arbeitskosten senken und fordert einen Verzicht auf Lohnerhöhungen, flexiblere Arbeitszeiten und den Wegfall von Zulagen. Die IG Metall fordert fünf Prozent mehr Lohn. Die nächste Runde ist für Mitte Dezember in Zwickau geplant. Betroffen sind Beschäftigte an deutschen VW-Standorten.",
+          "published_at": "2026-11-24T18:36:00+01:00",
+          "reporting_origin": "NDR, Bericht von Torben Hildebrandt aus Emden"
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/erste-vw-tarifverhandlungsrunde-nach-kurzer-zeit-beendet-100.html",
+          "supports": "Volkswagen und IG Metall gingen nach der ersten Tarifrunde in Emden ohne Annäherung auseinander. Volkswagen fordert für 2027 und 2028 Nullrunden, flexiblere Arbeitszeiten und den Wegfall von Zusatzvergütungen. Die IG Metall fordert fünf Prozent mehr Lohn. Die Unternehmensführung begründet die Forderung mit dem Kostendruck.",
+          "published_at": "2026-11-24T00:00:00+01:00",
+          "reporting_origin": "Deutschlandfunk, redaktionelle Nachrichtenmeldung"
+        }
+      ],
+      "fallback_editorial_answers": {
+        "what_happened": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+        "why_happening": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+        "who_is_affected": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+        "personal_impact": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+        "action_now": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde."
+      },
+      "retention_v5": {
+        "viral_potential": 89,
+        "tayvoriq_fit": 95,
+        "novelty_score": 88,
+        "series_fit_score": 82,
+        "return_viewer_score": 86,
+        "follow_conversion_potential": 85,
+        "open_loop_potential": 65,
+        "proposed_series_id": "",
+        "proposed_series_name": "",
+        "next_episode_candidate": "",
+        "recommended_cta_type": "EXPERTISE",
+        "primary_hook": "Die erste VW-Tarifrunde ist vorbei. Beim Lohn liegen die Forderungen der beiden Seiten weit auseinander.",
+        "viewer_question": "Was verlangt Volkswagen beim Haustarif und was fordert die Gewerkschaft für Beschäftigte?",
+        "explanation_core": "Volkswagen und IG Metall gingen in Emden ohne konkretes Ergebnis auseinander. Der Konzern will die Arbeitskosten senken und fordert Nullrunden, flexiblere Arbeitszeiten und den Wegfall von Sonderzahlungen.",
+        "surprise_or_reframe": "Die IG Metall tritt mit der Forderung nach fünf Prozent mehr Lohn an. Die nächste Verhandlungsrunde ist Mitte Dezember vorgesehen.",
+        "practical_relevance": "Für Beschäftigte ist entscheidend, welche Zulagen zur Debatte stehen und welche Forderungen später tatsächlich vereinbart werden.",
+        "follow_reason": "TAYVORIQ ordnet ein, wie sich Tarifentscheidungen bei großen Arbeitgebern auf Schichtarbeit und Einkommen auswirken.",
+        "open_loop": "",
+        "open_loop_status": "NONE",
+        "cta_type": "EXPERTISE",
+        "cta_text": "Folge TAYVORIQ für die nächste Einordnung, sobald sich beim VW-Haustarif etwas Konkretes ändert.",
+        "trend_selection_score": 89
+      },
+      "growth_v2": {
+        "growth_score": 89,
+        "binding_score": 92,
+        "priority_score": 90,
+        "tier": "primary",
+        "series_candidate": false,
+        "targets": "10k/20k/50k/100k are optimization targets, never guarantees"
+      },
+      "claim_coherence": {
+        "passed": true,
+        "reasons": []
+      },
+      "audience_growth_v3": {
+        "subscriber_conversion_score": 81,
+        "returning_viewer_score": 84,
+        "continuation_score": 62,
+        "hook_strength_score": 55,
+        "standalone_payoff_score": 94,
+        "selection_priority_score": 87,
+        "promotion_test_candidate": true,
+        "promotion_requires_observed_performance": true,
+        "paid_boost_auto_enabled": false,
+        "optimization_goal": "turn qualified viewers into returning viewers and followers without weakening quality gates"
+      },
+      "duplicate_check": {
+        "state": "PASSED",
+        "content_fingerprint_sha256": "360db5d35f8c97a239452ac4a34d9d00003e862453c34c4bc3dbaa4fb88fffb6",
+        "history_candidates_checked": 58
+      },
+      "reach_gate": {
+        "policy": "REGIONAL_GERMANY_CHANNEL_EVIDENCE_V2",
+        "scope": "germany",
+        "local_only_rejected": false,
+        "reach_score": 111
+      }
+    },
+    "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt.",
+    "script_body": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde.",
+    "pronunciation_map": {
+      "TAYVORIQ": "Tayvorik"
+    },
+    "context_metrics": {
+      "cta_start_ratio": 0.764,
+      "body_words": 42,
+      "cta_words": 13,
+      "editorial_body_words": 42,
+      "script_words": 55,
+      "minimum_script_words": 51,
+      "maximum_script_words": 63,
+      "validator_minimum_words": 51,
+      "semantic_pre_render_gate": true,
+      "retention_contract_v5_locked": true,
+      "follow_conversion_gate": "PASS",
+      "return_viewer_gate": "PASS",
+      "audible_cta_budget_compaction": []
+    },
+    "trend_origin": "manual-or-provider-only",
+    "fallback_policy": "cloud-primary-local-last-resort",
+    "visual_topic_guard": "strict-topic-bound-v23",
+    "editorial_depth_gate": {
+      "passed": true,
+      "applicable": true,
+      "contract_version": "v1-verified-request-five-answer-recovery",
+      "contract_derived_from_sources": true,
+      "minimum_details_in_script": 3,
+      "available_source_bound_details": 4,
+      "consumed_source_bound_details": 4,
+      "planned_detail_available": false,
+      "planned_detail_consumed": false,
+      "rumor_or_unconfirmed_count": 0,
+      "consumed": [
+        {
+          "group": "confirmed_details",
+          "text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+          "anchors": [],
+          "matched": [
+            "emden",
+            "endete",
+            "ergebnis",
+            "erste",
+            "tarifrunde"
+          ]
+        },
+        {
+          "group": "confirmed_details",
+          "text": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+          "anchors": [],
+          "matched": [
+            "Weil VW",
+            "Konzern Nullrunden"
+          ]
+        },
+        {
+          "group": "confirmed_details",
+          "text": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+          "anchors": [],
+          "matched": [
+            "Volkswagen AG"
+          ]
+        },
+        {
+          "group": "confirmed_details",
+          "text": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+          "anchors": [],
+          "matched": [
+            "arbeitszeit",
+            "debatte",
+            "stehen",
+            "zulagen"
+          ]
+        }
+      ],
+      "missing": [],
+      "blockers": [],
+      "quality_gates_weakened": false
+    },
+    "what_happened": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+    "why_happening": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+    "who_is_affected": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+    "personal_impact": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+    "action_now": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde.",
+    "universal_platform_cta": true,
+    "shared_master_render_requested": true,
+    "approval_status": "PENDING_REVIEW",
+    "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+    "instagram_status": "NOT_CONFIGURED_EXCLUDED",
+    "content_editor_version": "v27-topic-safe-cta-runtime",
+    "final_package_contract": {
+      "version": "v27-topic-safe-cta-runtime",
+      "word_count": 58,
+      "minimum_words": 51,
+      "maximum_words": 63,
+      "quality_gates_weakened": false
+    },
+    "platform_gate_validation": {
+      "youtube_shorts": {
+        "passed": true,
+        "required_action": "subscribe"
+      },
+      "tiktok": {
+        "passed": true,
+        "required_action": "follow",
+        "distribution": "manual_after_user_approval"
+      },
+      "platform_action": {
+        "passed": true,
+        "platform": "youtube_shorts",
+        "expected_prefix": "abonniere diesen kanal"
+      }
+    },
+    "source_bound_editorial_compiler": "verified-request-canonical-v2",
+    "authoritative_editorial_prevalidation_lock": {
+      "version": "v2-single-source-bound-prevalidation",
+      "body_words": 42,
+      "source_context_changed": false,
+      "quality_gates_weakened": false
+    },
+    "series_id": null,
+    "series_name": null,
+    "episode_id": null,
+    "episode_number": null,
+    "continuity_hook": null,
+    "next_episode_candidate": null,
+    "primary_hook": "Die erste VW-Tarifrunde ist vorbei. Beim Lohn liegen die Forderungen der beiden Seiten weit auseinander.",
+    "viewer_question": "Was verlangt Volkswagen beim Haustarif und was fordert die Gewerkschaft für Beschäftigte?",
+    "explanation_core": "Volkswagen und IG Metall gingen in Emden ohne konkretes Ergebnis auseinander. Der Konzern will die Arbeitskosten senken und fordert Nullrunden, flexiblere Arbeitszeiten und den Wegfall von Sonderzahlungen.",
+    "surprise_or_reframe": "Die IG Metall tritt mit der Forderung nach fünf Prozent mehr Lohn an. Die nächste Verhandlungsrunde ist Mitte Dezember vorgesehen.",
+    "practical_relevance": "Für Beschäftigte ist entscheidend, welche Zulagen zur Debatte stehen und welche Forderungen später tatsächlich vereinbart werden.",
+    "follow_reason": "TAYVORIQ ordnet ein, wie sich Tarifentscheidungen bei großen Arbeitgebern auf Schichtarbeit und Einkommen auswirken.",
+    "open_loop": "",
+    "open_loop_status": "NONE",
+    "cta_type": "EXPERTISE",
+    "cta_text": "abonnier TAYVORIQ für die nächste Einordnung, sobald sich beim VW-Haustarif etwas Konkretes ändert.",
+    "audible_cta_compacted": false,
+    "audible_cta_word_count": 13,
+    "retention_contract_v5": {
+      "schema_version": "tayvoriq-retention-v5",
+      "contract_mode": "native_v5",
+      "request_id": "telegram-3696-trend-1",
+      "topic": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+      "trend_scope": "business_economy",
+      "content_angle": "Was VW bei Lohn, Arbeitszeit und Zulagen fordert und warum nach der ersten Runde weiterverhandelt wird.",
+      "source_context_sha256": "91d55e03500a804d6a08f56215d5ee3e3ad2c3606c648e0f8d18cf74c6367cd2",
+      "series_id": null,
+      "series_name": null,
+      "episode_id": null,
+      "episode_number": null,
+      "continuity_hook": null,
+      "next_episode_candidate": null,
+      "primary_hook": "Die erste VW-Tarifrunde ist vorbei. Beim Lohn liegen die Forderungen der beiden Seiten weit auseinander.",
+      "viewer_question": "Was verlangt Volkswagen beim Haustarif und was fordert die Gewerkschaft für Beschäftigte?",
+      "explanation_core": "Volkswagen und IG Metall gingen in Emden ohne konkretes Ergebnis auseinander. Der Konzern will die Arbeitskosten senken und fordert Nullrunden, flexiblere Arbeitszeiten und den Wegfall von Sonderzahlungen.",
+      "surprise_or_reframe": "Die IG Metall tritt mit der Forderung nach fünf Prozent mehr Lohn an. Die nächste Verhandlungsrunde ist Mitte Dezember vorgesehen.",
+      "practical_relevance": "Für Beschäftigte ist entscheidend, welche Zulagen zur Debatte stehen und welche Forderungen später tatsächlich vereinbart werden.",
+      "follow_reason": "TAYVORIQ ordnet ein, wie sich Tarifentscheidungen bei großen Arbeitgebern auf Schichtarbeit und Einkommen auswirken.",
+      "open_loop": "",
+      "open_loop_status": "NONE",
+      "cta_type": "EXPERTISE",
+      "cta_text": "Folge TAYVORIQ für die nächste Einordnung, sobald sich beim VW-Haustarif etwas Konkretes ändert.",
+      "next_episode_queue_status": null,
+      "sensitive_story": false,
+      "approved_story_body": null,
+      "editorial_story_contract_version": 0,
+      "quality_gates_weakened": false,
+      "lifecycle_state": "RETENTION_CONTRACT_LOCKED",
+      "follow_conversion_gate": {
+        "result": "PASS",
+        "repair": null,
+        "issues": []
+      },
+      "story_depth_gate": {
+        "result": "PASS",
+        "repair": null,
+        "issues": []
+      },
+      "contract_sha256": "800b7906d7c31f2b19d642551d6ce40899de5da96b875b1d1bf9505984a8ce05"
+    },
+    "follow_conversion_gate": {
+      "result": "PASS",
+      "repair": null,
+      "issues": []
+    },
+    "return_viewer_gate": {
+      "result": "PASS",
+      "issues": []
+    },
+    "story_depth_gate": {
+      "result": "PASS",
+      "repair": null,
+      "issues": []
+    },
+    "approved_story_body": null,
+    "editorial_story_contract_version": 0,
+    "retention_contract_locked": true,
+    "generic_contract_repair": {
+      "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+      "script_words": 55,
+      "repair_target_words": 53,
+      "source_bound_minimum_only": true,
+      "repair_target_met": true,
+      "validator_minimum_words": 51,
+      "quality_gates_weakened": false,
+      "semantic_pre_render_gate": true,
+      "legacy_validator_passed": true,
+      "human_story_contract_applied": false,
+      "source_bound_editorial_preserved": true,
+      "placeholder_language_blocked": true,
+      "boundary": "captured-v25-to-v20-render-call"
+    },
+    "authoritative_editorial_lock": {
+      "version": "v2-v11-source-bound-pre-and-postcondition",
+      "body_words": 42,
+      "source_context_preserved": true,
+      "approved_source_restored": false,
+      "bounded_shortfall_drift_accepted": false,
+      "quality_gates_weakened": false
+    },
+    "golden_quality_floor": {
+      "version": "v1",
+      "passed": true,
+      "accepted_quality_may_not_regress": true,
+      "operator_rejections_are_negative_fixtures": true,
+      "quality_gates_weakened": false
+    },
+    "pronunciation_contract": {
+      "version": "v4-human-natural-explanatory-narrator",
+      "visible_script_preserved": true,
+      "terms": {},
+      "voice_router": "chatterbox-v3-human-narrator-v28",
+      "artificial_compound_splitting": false,
+      "narrator_pitch_shift_applied": false,
+      "calm_explanatory_pacing_required": true,
+      "max_atempo": 1.2,
+      "audio_end_padding_seconds": 0.55,
+      "quality_gates_weakened": false
+    },
+    "platform_cta_contract": {
+      "version": "v4-platform-specific-editorial-storytelling",
+      "platform": "youtube_shorts",
+      "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "source_bound_viewer_value": false,
+      "viewer_value": "",
+      "next_video_bridge": "",
+      "youtube_uses_subscribe_only": true,
+      "tiktok_uses_follow_only": true,
+      "llm_action_allowed": false,
+      "voice_and_captions_share_editorial_source": true,
+      "visible_script_audio_overlay_same_source": true,
+      "overlay_repeats_full_voiceover": false,
+      "quality_gates_weakened": false
+    },
+    "editorial_visual_standard": {
+      "version": "tayvoriq-editorial-visual-standard-v1",
+      "topic": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+      "domain": "society",
+      "treatment_id": "DOCUMENTARY_CONTEXT",
+      "visual_signature": "322cb801b49be147",
+      "platform": "youtube_shorts",
+      "platform_specific_master_required": true,
+      "same_master_reuse_forbidden": true,
+      "full_voiceover_as_overlay_forbidden": true,
+      "supporting_callouts_only": true,
+      "random_decorative_visuals_forbidden": true,
+      "filler_scenes_forbidden": true,
+      "explanatory_graphics_enabled": true,
+      "music_arc": "restrained opening -> explanatory space -> measured tension -> resolve",
+      "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+      "voice_priority": true,
+      "quality_gates_weakened": false
+    },
+    "platform_story_profile": {
+      "platform": "youtube_shorts",
+      "beats": [
+        "hook",
+        "context",
+        "explanation",
+        "evidence",
+        "development_problem",
+        "key_insight",
+        "consequence_outlook"
+      ],
+      "scene_count": 7,
+      "narrative_priority": "context, evidence and explanatory depth",
+      "estimated_wpm": 88.8,
+      "preferred_wpm": [
+        108,
+        138
+      ],
+      "hard_max_wpm": 160,
+      "caption_policy": "readable full captions plus sparse semantic callouts",
+      "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+    },
+    "editorial_quality_gate": {
+      "version": "tayvoriq-editorial-visual-standard-v1",
+      "passed": true,
+      "issues": [],
+      "checklist": {
+        "interesting": true,
+        "beginner_clear": true,
+        "voice_pacing": true,
+        "visual_explanatory": true,
+        "visually_distinct": true,
+        "no_filler": true,
+        "watch_to_end": true
+      },
+      "metrics": {
+        "scene_count": 7,
+        "unique_visual_queries": 7,
+        "unique_visual_types": 7,
+        "callout_count": 2,
+        "script_words": 51,
+        "estimated_wpm": 88.8,
+        "duration_spread_seconds": 1.7,
+        "generated_explainer_scenes": 1
+      }
+    },
+    "tiktok_metadata": {
+      "title": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+      "caption": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. #TAYVORIQ #Trendjagd #Gesellschaft",
+      "hashtags": [
+        "#TAYVORIQ",
+        "#Trendjagd",
+        "#Gesellschaft"
+      ],
+      "privacy_default": "PUBLIC_TO_EVERYONE",
+      "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+    },
+    "speech_preflight": {
+      "passed": true,
+      "visible_script_preserved": true,
+      "tts_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "number_replacements": {},
+      "brand_spoken": false,
+      "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+      "version": "v24-visible-to-tts-number-and-brand-proof",
+      "brand_replacements": {
+        "TAYVORIQ": "Tayvorik"
+      },
+      "brand_normalization_version": "final-v20-tayvorik-v1"
+    },
+    "vw_crisis_visual_contract": true,
+    "vw_crisis_visual_profile": "v1-vw-crisis-automotive-factory-moving-assets"
+  },
+  "variants": {
+    "youtube_shorts": {
+      "text_package": {
+        "title": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+        "category": "world_society",
+        "trend_angle": "Welche konkrete Veränderung hinter Erste Tarifrunde bei Volkswagen endet ohne Einigung wirklich steckt.",
+        "trend_signal": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+        "named_entities": [],
+        "why_now": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+        "affected_groups": [
+          "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG."
+        ],
+        "viewer_test": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde.",
+        "series_next": "",
+        "hook": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+        "script": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "scenes": [
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "modern automotive assembly line workers factory indoors vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "car manufacturing production line workers factory indoors vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "industrial robots vehicle assembly modern factory vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "automotive factory workers inspecting production line vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Für dich stehen Zulagen und Arbeitszeit zur Debatte."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "automotive parts manufacturing workers modern factory indoors vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "vehicle assembly plant employees production floor vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte."
+          }
+        ],
+        "youtube_metadata": {
+          "title": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+          "description": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "tags": [
+            "world_society",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "fallback_used": true,
+        "language": "Deutsch",
+        "platform": "youtube_shorts",
+        "target_duration": 35,
+        "llm_provider": "template:fallback",
+        "viewer_questions": {
+          "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf Erste Tarifrunde bei Volkswagen endet ohne Einigung.",
+          "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
+          "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
+          "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
+          "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
+          "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
+        },
+        "editorial_answers": {
+          "what_happened": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+          "why_happening": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+          "who_is_affected": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+          "personal_impact": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+          "action_now": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde."
+        },
+        "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+        "source_context": {
+          "verified_at": "2026-11-24T21:37:31.591583Z",
+          "independent_news_count": 2,
+          "sources": [
+            {
+              "publisher": "NDR",
+              "url": "https://www.tagesschau.de/inland/regional/niedersachsen/tarifstreit-vw-spitze-will-verhandlungen-bis-jahresende-abschliessen,vw-1734.html",
+              "supports": "Die erste VW-Tarifrunde endete in Emden ohne Ergebnis. VW will Arbeitskosten senken und fordert einen Verzicht auf Lohnerhöhungen, flexiblere Arbeitszeiten und den Wegfall von Zulagen. Die IG Metall fordert fünf Prozent mehr Lohn. Die nächste Runde ist für Mitte Dezember in Zwickau geplant. Betroffen sind Beschäftigte an deutschen VW-Standorten.",
+              "published_at": "2026-11-24T18:36:00+01:00",
+              "reporting_origin": "NDR, Bericht von Torben Hildebrandt aus Emden"
+            },
+            {
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/erste-vw-tarifverhandlungsrunde-nach-kurzer-zeit-beendet-100.html",
+              "supports": "Volkswagen und IG Metall gingen nach der ersten Tarifrunde in Emden ohne Annäherung auseinander. Volkswagen fordert für 2027 und 2028 Nullrunden, flexiblere Arbeitszeiten und den Wegfall von Zusatzvergütungen. Die IG Metall fordert fünf Prozent mehr Lohn. Die Unternehmensführung begründet die Forderung mit dem Kostendruck.",
+              "published_at": "2026-11-24T00:00:00+01:00",
+              "reporting_origin": "Deutschlandfunk, redaktionelle Nachrichtenmeldung"
+            }
+          ],
+          "fallback_editorial_answers": {
+            "what_happened": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+            "why_happening": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+            "who_is_affected": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+            "personal_impact": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+            "action_now": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde."
+          },
+          "retention_v5": {
+            "viral_potential": 89,
+            "tayvoriq_fit": 95,
+            "novelty_score": 88,
+            "series_fit_score": 82,
+            "return_viewer_score": 86,
+            "follow_conversion_potential": 85,
+            "open_loop_potential": 65,
+            "proposed_series_id": "",
+            "proposed_series_name": "",
+            "next_episode_candidate": "",
+            "recommended_cta_type": "EXPERTISE",
+            "primary_hook": "Die erste VW-Tarifrunde ist vorbei. Beim Lohn liegen die Forderungen der beiden Seiten weit auseinander.",
+            "viewer_question": "Was verlangt Volkswagen beim Haustarif und was fordert die Gewerkschaft für Beschäftigte?",
+            "explanation_core": "Volkswagen und IG Metall gingen in Emden ohne konkretes Ergebnis auseinander. Der Konzern will die Arbeitskosten senken und fordert Nullrunden, flexiblere Arbeitszeiten und den Wegfall von Sonderzahlungen.",
+            "surprise_or_reframe": "Die IG Metall tritt mit der Forderung nach fünf Prozent mehr Lohn an. Die nächste Verhandlungsrunde ist Mitte Dezember vorgesehen.",
+            "practical_relevance": "Für Beschäftigte ist entscheidend, welche Zulagen zur Debatte stehen und welche Forderungen später tatsächlich vereinbart werden.",
+            "follow_reason": "TAYVORIQ ordnet ein, wie sich Tarifentscheidungen bei großen Arbeitgebern auf Schichtarbeit und Einkommen auswirken.",
+            "open_loop": "",
+            "open_loop_status": "NONE",
+            "cta_type": "EXPERTISE",
+            "cta_text": "Folge TAYVORIQ für die nächste Einordnung, sobald sich beim VW-Haustarif etwas Konkretes ändert.",
+            "trend_selection_score": 89
+          },
+          "growth_v2": {
+            "growth_score": 89,
+            "binding_score": 92,
+            "priority_score": 90,
+            "tier": "primary",
+            "series_candidate": false,
+            "targets": "10k/20k/50k/100k are optimization targets, never guarantees"
+          },
+          "claim_coherence": {
+            "passed": true,
+            "reasons": []
+          },
+          "audience_growth_v3": {
+            "subscriber_conversion_score": 81,
+            "returning_viewer_score": 84,
+            "continuation_score": 62,
+            "hook_strength_score": 55,
+            "standalone_payoff_score": 94,
+            "selection_priority_score": 87,
+            "promotion_test_candidate": true,
+            "promotion_requires_observed_performance": true,
+            "paid_boost_auto_enabled": false,
+            "optimization_goal": "turn qualified viewers into returning viewers and followers without weakening quality gates"
+          },
+          "duplicate_check": {
+            "state": "PASSED",
+            "content_fingerprint_sha256": "360db5d35f8c97a239452ac4a34d9d00003e862453c34c4bc3dbaa4fb88fffb6",
+            "history_candidates_checked": 58
+          },
+          "reach_gate": {
+            "policy": "REGIONAL_GERMANY_CHANNEL_EVIDENCE_V2",
+            "scope": "germany",
+            "local_only_rejected": false,
+            "reach_score": 111
+          }
+        },
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt.",
+        "script_body": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde.",
+        "pronunciation_map": {
+          "TAYVORIQ": "Tayvorik"
+        },
+        "context_metrics": {
+          "cta_start_ratio": 0.764,
+          "body_words": 42,
+          "cta_words": 13,
+          "editorial_body_words": 42,
+          "script_words": 55,
+          "minimum_script_words": 51,
+          "maximum_script_words": 63,
+          "validator_minimum_words": 51,
+          "semantic_pre_render_gate": true,
+          "retention_contract_v5_locked": true,
+          "follow_conversion_gate": "PASS",
+          "return_viewer_gate": "PASS",
+          "audible_cta_budget_compaction": []
+        },
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "editorial_depth_gate": {
+          "passed": true,
+          "applicable": true,
+          "contract_version": "v1-verified-request-five-answer-recovery",
+          "contract_derived_from_sources": true,
+          "minimum_details_in_script": 3,
+          "available_source_bound_details": 4,
+          "consumed_source_bound_details": 4,
+          "planned_detail_available": false,
+          "planned_detail_consumed": false,
+          "rumor_or_unconfirmed_count": 0,
+          "consumed": [
+            {
+              "group": "confirmed_details",
+              "text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+              "anchors": [],
+              "matched": [
+                "emden",
+                "endete",
+                "ergebnis",
+                "erste",
+                "tarifrunde"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+              "anchors": [],
+              "matched": [
+                "Weil VW",
+                "Konzern Nullrunden"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+              "anchors": [],
+              "matched": [
+                "Volkswagen AG"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+              "anchors": [],
+              "matched": [
+                "arbeitszeit",
+                "debatte",
+                "stehen",
+                "zulagen"
+              ]
+            }
+          ],
+          "missing": [],
+          "blockers": [],
+          "quality_gates_weakened": false
+        },
+        "what_happened": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+        "why_happening": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+        "who_is_affected": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+        "personal_impact": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+        "action_now": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde.",
+        "universal_platform_cta": true,
+        "shared_master_render_requested": true,
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "instagram_status": "NOT_CONFIGURED_EXCLUDED",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "final_package_contract": {
+          "version": "v27-topic-safe-cta-runtime",
+          "word_count": 58,
+          "minimum_words": 51,
+          "maximum_words": 63,
+          "quality_gates_weakened": false
+        },
+        "platform_gate_validation": {
+          "platform_action": {
+            "passed": false,
+            "platform": "youtube_shorts",
+            "expected_prefix": "abonniere tayvoriq"
+          },
+          "verified_benefit": {
+            "passed": true,
+            "required": [
+              "verifiziert",
+              "konkrete schritte"
+            ],
+            "accepted_viewer_value_markers": [
+              "konkret",
+              "warnlag",
+              "reisehinweis",
+              "prüf"
+            ],
+            "matched_viewer_value_markers": [
+              "konkret"
+            ],
+            "source_bound_alternatives_allowed": true
+          },
+          "ethical_length": {
+            "passed": true,
+            "word_count": 9,
+            "manipulative_pressure": false
+          }
+        },
+        "source_bound_editorial_compiler": "verified-request-canonical-v2",
+        "authoritative_editorial_prevalidation_lock": {
+          "version": "v2-single-source-bound-prevalidation",
+          "body_words": 42,
+          "source_context_changed": false,
+          "quality_gates_weakened": false
+        },
+        "series_id": null,
+        "series_name": null,
+        "episode_id": null,
+        "episode_number": null,
+        "continuity_hook": null,
+        "next_episode_candidate": null,
+        "primary_hook": "Die erste VW-Tarifrunde ist vorbei. Beim Lohn liegen die Forderungen der beiden Seiten weit auseinander.",
+        "viewer_question": "Was verlangt Volkswagen beim Haustarif und was fordert die Gewerkschaft für Beschäftigte?",
+        "explanation_core": "Volkswagen und IG Metall gingen in Emden ohne konkretes Ergebnis auseinander. Der Konzern will die Arbeitskosten senken und fordert Nullrunden, flexiblere Arbeitszeiten und den Wegfall von Sonderzahlungen.",
+        "surprise_or_reframe": "Die IG Metall tritt mit der Forderung nach fünf Prozent mehr Lohn an. Die nächste Verhandlungsrunde ist Mitte Dezember vorgesehen.",
+        "practical_relevance": "Für Beschäftigte ist entscheidend, welche Zulagen zur Debatte stehen und welche Forderungen später tatsächlich vereinbart werden.",
+        "follow_reason": "TAYVORIQ ordnet ein, wie sich Tarifentscheidungen bei großen Arbeitgebern auf Schichtarbeit und Einkommen auswirken.",
+        "open_loop": "",
+        "open_loop_status": "NONE",
+        "cta_type": "EXPERTISE",
+        "cta_text": "abonnier TAYVORIQ für die nächste Einordnung, sobald sich beim VW-Haustarif etwas Konkretes ändert.",
+        "audible_cta_compacted": false,
+        "audible_cta_word_count": 13,
+        "retention_contract_v5": {
+          "schema_version": "tayvoriq-retention-v5",
+          "contract_mode": "native_v5",
+          "request_id": "telegram-3696-trend-1",
+          "topic": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+          "trend_scope": "business_economy",
+          "content_angle": "Was VW bei Lohn, Arbeitszeit und Zulagen fordert und warum nach der ersten Runde weiterverhandelt wird.",
+          "source_context_sha256": "91d55e03500a804d6a08f56215d5ee3e3ad2c3606c648e0f8d18cf74c6367cd2",
+          "series_id": null,
+          "series_name": null,
+          "episode_id": null,
+          "episode_number": null,
+          "continuity_hook": null,
+          "next_episode_candidate": null,
+          "primary_hook": "Die erste VW-Tarifrunde ist vorbei. Beim Lohn liegen die Forderungen der beiden Seiten weit auseinander.",
+          "viewer_question": "Was verlangt Volkswagen beim Haustarif und was fordert die Gewerkschaft für Beschäftigte?",
+          "explanation_core": "Volkswagen und IG Metall gingen in Emden ohne konkretes Ergebnis auseinander. Der Konzern will die Arbeitskosten senken und fordert Nullrunden, flexiblere Arbeitszeiten und den Wegfall von Sonderzahlungen.",
+          "surprise_or_reframe": "Die IG Metall tritt mit der Forderung nach fünf Prozent mehr Lohn an. Die nächste Verhandlungsrunde ist Mitte Dezember vorgesehen.",
+          "practical_relevance": "Für Beschäftigte ist entscheidend, welche Zulagen zur Debatte stehen und welche Forderungen später tatsächlich vereinbart werden.",
+          "follow_reason": "TAYVORIQ ordnet ein, wie sich Tarifentscheidungen bei großen Arbeitgebern auf Schichtarbeit und Einkommen auswirken.",
+          "open_loop": "",
+          "open_loop_status": "NONE",
+          "cta_type": "EXPERTISE",
+          "cta_text": "Folge TAYVORIQ für die nächste Einordnung, sobald sich beim VW-Haustarif etwas Konkretes ändert.",
+          "next_episode_queue_status": null,
+          "sensitive_story": false,
+          "approved_story_body": null,
+          "editorial_story_contract_version": 0,
+          "quality_gates_weakened": false,
+          "lifecycle_state": "RETENTION_CONTRACT_LOCKED",
+          "follow_conversion_gate": {
+            "result": "PASS",
+            "repair": null,
+            "issues": []
+          },
+          "story_depth_gate": {
+            "result": "PASS",
+            "repair": null,
+            "issues": []
+          },
+          "contract_sha256": "800b7906d7c31f2b19d642551d6ce40899de5da96b875b1d1bf9505984a8ce05"
+        },
+        "follow_conversion_gate": {
+          "result": "PASS",
+          "repair": null,
+          "issues": []
+        },
+        "return_viewer_gate": {
+          "result": "PASS",
+          "issues": []
+        },
+        "story_depth_gate": {
+          "result": "PASS",
+          "repair": null,
+          "issues": []
+        },
+        "approved_story_body": null,
+        "editorial_story_contract_version": 0,
+        "retention_contract_locked": true,
+        "generic_contract_repair": {
+          "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+          "script_words": 55,
+          "repair_target_words": 53,
+          "source_bound_minimum_only": true,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "human_story_contract_applied": false,
+          "source_bound_editorial_preserved": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "authoritative_editorial_lock": {
+          "version": "v2-v11-source-bound-pre-and-postcondition",
+          "body_words": 42,
+          "source_context_preserved": true,
+          "approved_source_restored": false,
+          "bounded_shortfall_drift_accepted": false,
+          "quality_gates_weakened": false
+        },
+        "golden_quality_floor": {
+          "version": "v1",
+          "passed": true,
+          "accepted_quality_may_not_regress": true,
+          "operator_rejections_are_negative_fixtures": true,
+          "quality_gates_weakened": false
+        },
+        "pronunciation_contract": {
+          "version": "v4-human-natural-explanatory-narrator",
+          "visible_script_preserved": true,
+          "terms": {},
+          "voice_router": "chatterbox-v3-human-narrator-v28",
+          "artificial_compound_splitting": false,
+          "narrator_pitch_shift_applied": false,
+          "calm_explanatory_pacing_required": true,
+          "max_atempo": 1.2,
+          "audio_end_padding_seconds": 0.55,
+          "quality_gates_weakened": false
+        },
+        "platform_cta_contract": {
+          "version": "v4-platform-specific-editorial-storytelling",
+          "platform": "youtube_shorts",
+          "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "source_bound_viewer_value": false,
+          "viewer_value": "",
+          "next_video_bridge": "",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "voice_and_captions_share_editorial_source": true,
+          "visible_script_audio_overlay_same_source": true,
+          "overlay_repeats_full_voiceover": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_visual_standard": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "topic": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+          "domain": "society",
+          "treatment_id": "DOCUMENTARY_CONTEXT",
+          "visual_signature": "322cb801b49be147",
+          "platform": "youtube_shorts",
+          "platform_specific_master_required": true,
+          "same_master_reuse_forbidden": true,
+          "full_voiceover_as_overlay_forbidden": true,
+          "supporting_callouts_only": true,
+          "random_decorative_visuals_forbidden": true,
+          "filler_scenes_forbidden": true,
+          "explanatory_graphics_enabled": true,
+          "music_arc": "restrained opening -> explanatory space -> measured tension -> resolve",
+          "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+          "voice_priority": true,
+          "quality_gates_weakened": false
+        },
+        "platform_story_profile": {
+          "platform": "youtube_shorts",
+          "beats": [
+            "hook",
+            "context",
+            "explanation",
+            "evidence",
+            "development_problem",
+            "key_insight",
+            "consequence_outlook"
+          ],
+          "scene_count": 7,
+          "narrative_priority": "context, evidence and explanatory depth",
+          "estimated_wpm": 88.8,
+          "preferred_wpm": [
+            108,
+            138
+          ],
+          "hard_max_wpm": 160,
+          "caption_policy": "readable full captions plus sparse semantic callouts",
+          "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+        },
+        "editorial_quality_gate": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "passed": true,
+          "issues": [],
+          "checklist": {
+            "interesting": true,
+            "beginner_clear": true,
+            "voice_pacing": true,
+            "visual_explanatory": true,
+            "visually_distinct": true,
+            "no_filler": true,
+            "watch_to_end": true
+          },
+          "metrics": {
+            "scene_count": 7,
+            "unique_visual_queries": 7,
+            "unique_visual_types": 7,
+            "callout_count": 2,
+            "script_words": 51,
+            "estimated_wpm": 88.8,
+            "duration_spread_seconds": 1.7,
+            "generated_explainer_scenes": 1
+          }
+        },
+        "tiktok_metadata": {
+          "title": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+          "caption": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "privacy_default": "PUBLIC_TO_EVERYONE",
+          "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+        },
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {},
+          "brand_spoken": false,
+          "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          },
+          "brand_normalization_version": "final-v20-tayvorik-v1"
+        },
+        "vw_crisis_visual_contract": true,
+        "vw_crisis_visual_profile": "v1-vw-crisis-automotive-factory-moving-assets"
+      },
+      "quality_report": {
+        "passed": true,
+        "issues": [],
+        "word_count": 51,
+        "body_words": 42,
+        "cta_words": 5,
+        "cta_start_ratio": 0.894,
+        "self_contained": true,
+        "native_language_voice_configured": true,
+        "quality_version": "v20.1-provider-aware-german-narration",
+        "checked_at": "2026-11-24T21:41:52+00:00",
+        "editorial_five_answers": {
+          "passed": true,
+          "answers": {
+            "what_happened": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+            "why_happening": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+            "who_is_affected": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+            "personal_impact": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+            "action_now": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde."
+          }
+        },
+        "v11_quality_cycle_guard": {
+          "passed": true,
+          "cycle_removed": true,
+          "base_quality": "v5-captured-by-v11",
+          "human_story_forced_prefix_suppressed": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "factual_cause_guard": "standard",
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {},
+          "brand_spoken": false,
+          "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          },
+          "brand_normalization_version": "final-v20-tayvorik-v1"
+        },
+        "tts_preview": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "policy_grounding_guard": "standard",
+        "actual_narration_word_count": 51,
+        "target_word_range": [
+          51,
+          65
+        ],
+        "authoritative_length_contract": {
+          "reconciled": true,
+          "legacy_issues_reconciled": [
+            "script_too_short:47:min=51"
+          ],
+          "visible_words": 51,
+          "spoken_words": 51,
+          "target_range": [
+            51,
+            65
+          ],
+          "cta_contract_proven": true,
+          "evidence": [
+            {
+              "issue": "script_too_short:47:min=51",
+              "legacy_words": 47,
+              "legacy_minimum": 51,
+              "visible_words": 51,
+              "spoken_words": 51,
+              "target_range": [
+                51,
+                65
+              ],
+              "cta_contract_proven": true,
+              "reconciled": true
+            }
+          ],
+          "authority": "exact-visible-script-and-final-tts-narration",
+          "thresholds_changed": false,
+          "quality_gates_weakened": false
+        },
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "audio": {
+        "voice_path": "voice.mp3",
+        "voice_duration_seconds": 24.97,
+        "provider": "chatterbox_multilingual_v3",
+        "voice_provider_requested": "chatterbox_multilingual_v3",
+        "voice_provider_used": "chatterbox_multilingual_v3",
+        "model_id": "v3",
+        "voice_settings": {
+          "language_id": "de",
+          "exaggeration": 0.5,
+          "cfg_weight": 0.47,
+          "reference_audio_used": true,
+          "chunk_count": 1,
+          "loudness_target_lufs": -16,
+          "narrator_pitch_factor": 1.0,
+          "narrator_pitch_shift_applied": false,
+          "narrator_articulation_preserved": true,
+          "narrator_loudness_target_lufs": -16,
+          "narrator_mastering_profile": "neutral-native-v2",
+          "deep_voice_gate": {
+            "passed": true,
+            "repair_applied": false,
+            "repair_factor": 1.0,
+            "repair_factors": [],
+            "repair_passes": [],
+            "maximum_repair_passes": 0,
+            "minimum_cumulative_feedback_factor": 1.0,
+            "feedback_measurement_required": true,
+            "before": {
+              "median_f0_hz": 133.33,
+              "p10_f0_hz": 98.77,
+              "p90_f0_hz": 195.12,
+              "pitch_span_hz": 96.36,
+              "silence_ratio": 0.058
+            },
+            "after": {
+              "median_f0_hz": 133.33,
+              "p10_f0_hz": 98.77,
+              "p90_f0_hz": 195.12,
+              "pitch_span_hz": 96.36,
+              "silence_ratio": 0.058
+            },
+            "allowed_f0_hz": [
+              65.0,
+              230.0
+            ],
+            "bounded_repair_window_hz": [
+              65.0,
+              230.0
+            ],
+            "repair_window_basis": "final-gate-divided-by-bounded-pitch-factor",
+            "provider_required": "chatterbox_multilingual_v3",
+            "fallback_allowed": false,
+            "quality_gates_weakened": false,
+            "contract_version": "golden-path-deep-voice-self-heal-v3"
+          },
+          "quality_gates_weakened": false
+        },
+        "target_voice_duration_seconds": 25.0,
+        "raw_voice_duration_seconds": 19.48,
+        "duration_delta_seconds": -0.03,
+        "generation_elapsed_seconds": 232.696,
+        "fallback": false,
+        "quality_profile": "tayvoriq-native-natural-narrator-chatterbox-v38",
+        "worker_report": {
+          "provider": "chatterbox_multilingual",
+          "requested_model_version": "v3",
+          "model_version": "v3",
+          "installed_package_version": "0.1.7",
+          "language_id": "de",
+          "device": "cpu",
+          "hf_auth_mode": "token",
+          "passed": true,
+          "compatibility_mode": "native-version-selection",
+          "model_version_fallback": false,
+          "sample_rate": 24000,
+          "duration_seconds": 19.48,
+          "chunks": [
+            "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte."
+          ],
+          "chunk_count": 1,
+          "model_load_seconds": 12.072,
+          "generation_seconds": [
+            212.638
+          ],
+          "total_seconds": 229.558,
+          "reference_audio_used": true,
+          "exaggeration": 0.5,
+          "cfg_weight": 0.47,
+          "output": "out/tayvoriq-youtube-tiktok/candidate-01/20261124_214141_erste-tarifrunde-bei-volkswagen-endet-ohne-einigung/youtube_shorts/voice_chatterbox_raw.wav",
+          "output_bytes": 935084,
+          "audio_container": "wav-pcm16-standard-library"
+        },
+        "natural_voice_target_seconds": 25.0,
+        "natural_voice_wpm": 132.0,
+        "full_short_target_seconds": 35.0,
+        "coherent_chunk_limit": 1,
+        "configured_max_chars": 520,
+        "premium_voice_timeout_budget_seconds": 240,
+        "pronunciation_prepared": true,
+        "pronunciation_profile": "de-critical-terms-v1",
+        "narrator_tone_applied": false,
+        "narrator_pitch_shift_applied": false,
+        "human_narrator_quality_profile": true,
+        "natural_pacing_contract_passed": true,
+        "premium_voice_required": true,
+        "premium_voice_contract_passed": true,
+        "continuous_narrator_take": true,
+        "artificial_compound_splitting": false,
+        "internal_hyphen_preserved": true,
+        "human_pronunciation_profile": "de-critical-san-disk-ka-i-v1",
+        "targeted_acronym_pronunciation_aid": true,
+        "sandisk_spoken_form": "San Disk",
+        "critical_term_pronunciation_aid": true,
+        "critical_term_pronunciation_terms": [
+          "VW",
+          "AG"
+        ],
+        "critical_term_speech_surface_only": true,
+        "pronunciation_contract_version": "de-acronym-letter-names-v2",
+        "all_visible_acronyms_normalized": true,
+        "pronunciation_replacements": {
+          "TAYVORIQ": "Tayvorik"
+        },
+        "spoken_contract_text": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tayvoriq_spoken_replacement": "",
+        "brand_spoken_fallback_used": false,
+        "brand_spoken_fallback_semantic_only": false,
+        "visible_script_unchanged": true,
+        "canonical_review_contract_unchanged": true,
+        "exact_chatterbox_model_required": "v3",
+        "exact_chatterbox_model_passed": true,
+        "golden_human_reference_required": true,
+        "golden_human_reference_used": true,
+        "golden_human_reference_commit": "08e2dada47d4e823ae139d1151a07fea1ff5d92c",
+        "quality_gates_weakened": false,
+        "deep_voice_gate": {
+          "passed": true,
+          "repair_applied": false,
+          "repair_factor": 1.0,
+          "repair_factors": [],
+          "repair_passes": [],
+          "maximum_repair_passes": 0,
+          "minimum_cumulative_feedback_factor": 1.0,
+          "feedback_measurement_required": true,
+          "before": {
+            "median_f0_hz": 133.33,
+            "p10_f0_hz": 98.77,
+            "p90_f0_hz": 195.12,
+            "pitch_span_hz": 96.36,
+            "silence_ratio": 0.058
+          },
+          "after": {
+            "median_f0_hz": 133.33,
+            "p10_f0_hz": 98.77,
+            "p90_f0_hz": 195.12,
+            "pitch_span_hz": 96.36,
+            "silence_ratio": 0.058
+          },
+          "allowed_f0_hz": [
+            65.0,
+            230.0
+          ],
+          "bounded_repair_window_hz": [
+            65.0,
+            230.0
+          ],
+          "repair_window_basis": "final-gate-divided-by-bounded-pitch-factor",
+          "provider_required": "chatterbox_multilingual_v3",
+          "fallback_allowed": false,
+          "quality_gates_weakened": false,
+          "contract_version": "golden-path-deep-voice-self-heal-v3"
+        },
+        "golden_voice_floor": {
+          "version": "v1",
+          "passed": true,
+          "artificial_pitch_shift_forbidden": true,
+          "narrator_pitch_factor": 1.0,
+          "human_rejected_profiles_forbidden": true,
+          "quality_gates_weakened": false
+        },
+        "pre_render_transcript_validation": {
+          "passed": true,
+          "similarity": 1.0,
+          "missing_critical_terms": [],
+          "expected_tokens": 55,
+          "actual_tokens": 55,
+          "excessive_extra_words": false,
+          "forbidden_tail": false,
+          "transcript": "Die erste Fau Weh-Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_expected": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_actual": "Die erste Fau Weh-Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "role": "final",
+          "raw_transcript": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_transcript": "Die erste Fau Weh-Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_contract_expected": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "asr_orthographic_equivalence_applied": true,
+          "hallucinated_tail": false,
+          "terminal_token_match": true,
+          "segment_min_similarity": 0.95,
+          "similarity_gate_passed": true,
+          "transcription_attempt": 1,
+          "postmux_min_similarity": 0.95,
+          "base_gate_passed": true,
+          "attempts": [
+            {
+              "passed": true,
+              "similarity": 1.0,
+              "missing_critical_terms": [],
+              "expected_tokens": 55,
+              "actual_tokens": 55,
+              "excessive_extra_words": false,
+              "forbidden_tail": false,
+              "transcript": "Die erste Fau Weh-Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_expected": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_actual": "Die erste Fau Weh-Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "role": "final",
+              "raw_transcript": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_transcript": "Die erste Fau Weh-Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_contract_expected": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "asr_orthographic_equivalence_applied": true,
+              "hallucinated_tail": false,
+              "terminal_token_match": true,
+              "segment_min_similarity": 0.95,
+              "similarity_gate_passed": true,
+              "transcription_attempt": 1,
+              "postmux_min_similarity": 0.95,
+              "base_gate_passed": true
+            }
+          ],
+          "attempt": 1,
+          "required": true,
+          "min_similarity": 0.95,
+          "quality_gates_weakened": false
+        },
+        "pre_render_voice_attempt": 1,
+        "post_audio_quality_gate": {
+          "passed": true,
+          "provider": "chatterbox_multilingual_v3",
+          "duration_seconds": 24.97,
+          "target_duration_seconds": 35,
+          "fallback": false,
+          "fallback_from": null,
+          "pre_render_transcript_passed": true,
+          "pre_render_transcript_similarity": 1.0,
+          "pre_render_cta_morphology_passed": true,
+          "required_spoken_cta": "",
+          "quality_gates_weakened": false
+        },
+        "number_pronunciation_replacements": {},
+        "tts_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "spoken_number_normalization_required": false,
+        "spoken_number_normalization_passed": true,
+        "speech_preflight_version": "v20-german-number-verbalization",
+        "native_language_voice_configured": true,
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "render": {
+        "video_path": "short.mp4",
+        "asset_report": [
+          {
+            "scene": 1,
+            "source": "pexels_video",
+            "query": "employees negotiating around conference table",
+            "requested_query": "employees negotiating around conference table",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 3.917,
+            "subtitle_present": true,
+            "asset": "scene_01.mp4",
+            "pexels_source_sha256": "321485b2356fee237ad5c4e09712901c521be0d4dd11e671988724679ff921ea",
+            "source_clip_sha256": "4e74a4d9c23e04515bb6780a337d26e6c64776c7456cfcb64fb13bd0c780f54f",
+            "source_media_url": "https://videos.pexels.com/video-files/5520073/5520073-uhd_2160_3840_30fps.mp4"
+          },
+          {
+            "scene": 2,
+            "source": "pexels_video",
+            "query": "employee reading payslip at desk",
+            "requested_query": "employee reading payslip at desk",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.896,
+            "subtitle_present": true,
+            "asset": "scene_02.mp4",
+            "pexels_source_sha256": "9d0ebdd9eaa31fd404637a64c2018fd27c80fff647336f07ce102c6525b00f12",
+            "source_clip_sha256": "713104d0450838695085b33e1b06ca6667a861d0560b5757b8995ab0283bfe2d",
+            "source_media_url": "https://videos.pexels.com/video-files/7413774/7413774-hd_1080_1920_24fps.mp4"
+          },
+          {
+            "scene": 3,
+            "source": "pexels_video",
+            "query": "car factory assembly line workers",
+            "requested_query": "car factory assembly line workers",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.406,
+            "subtitle_present": true,
+            "asset": "scene_03.mp4",
+            "pexels_source_sha256": "3e39aee31ae64731a431ee2bdc6923b367ae39da49e68582dc85653a42d7c4e9",
+            "source_clip_sha256": "adea82baf3a0a580af4e33ed99164a332b4a49830bae7ab766e9d02295c4c77b",
+            "source_media_url": "https://videos.pexels.com/video-files/34948760/14804682_1080_1920_24fps.mp4"
+          },
+          {
+            "scene": 4,
+            "source": "pexels_video",
+            "query": "employee checking work shift schedule",
+            "requested_query": "employee checking work shift schedule",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 3.917,
+            "subtitle_present": true,
+            "asset": "scene_04.mp4",
+            "pexels_source_sha256": "faac51cfd2882f3c324c82c1c1ee18c062e7520566eda3952b29f55c3c41e244",
+            "source_clip_sha256": "f1c6f64a751f2714ddd87e62a738678e0b67d2cfab46873358d43d315337f85b",
+            "source_media_url": "https://videos.pexels.com/video-files/33194181/14146651_2160_3840_25fps.mp4"
+          },
+          {
+            "scene": 5,
+            "source": "pexels_video",
+            "query": "meeting planner marking date on calendar",
+            "requested_query": "meeting planner marking date on calendar",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 3.427,
+            "subtitle_present": true,
+            "asset": "scene_05.mp4",
+            "pexels_source_sha256": "1ac5b2aa258fb5a2a65c9e32e6fedd618e1f137f5bbcca9dbbf75cbf2258f8c2",
+            "source_clip_sha256": "e1ac361efee3727f661c7619f712d62d0a13292f79c2f9a50bb6496196fb0115",
+            "source_media_url": "https://videos.pexels.com/video-files/35332817/14970418_2160_3840_30fps.mp4"
+          },
+          {
+            "scene": 6,
+            "source": "pexels_video",
+            "query": "car factory exterior industrial building",
+            "requested_query": "car factory exterior industrial building",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.969,
+            "subtitle_present": true,
+            "asset": "scene_06.mp4",
+            "pexels_source_sha256": "e6953b17877e24a367835fd403eb92aecd4c74c8974b14de668fa895d43a57d9",
+            "source_clip_sha256": "79c18d50e4a91a25ae894c228dd363a0dde04374d22e9ccb29cda69bed4adfe4",
+            "source_media_url": "https://videos.pexels.com/video-files/33636879/14294210_2160_3838_24fps.mp4"
+          }
+        ],
+        "render_size": "1080x1920",
+        "bytes": 7014270,
+        "voice_duration_seconds": 24.97,
+        "final_duration_seconds": 25.533,
+        "end_padding_seconds": 0.563,
+        "requested_duration_seconds": 35.0,
+        "duration_delta_seconds": -9.467,
+        "duration_status": "REVIEW"
+      },
+      "video_path": "short_youtube.mp4",
+      "upload_status": "PENDING_APPROVAL",
+      "visual_checkpoint_repair": {
+        "profile": "vw-verified-sister-platform-scene-revision-v1",
+        "target_platform": "youtube_shorts",
+        "donor_platform": "tiktok",
+        "replacement_clips": {
+          "5": {
+            "provider": "pexels_video",
+            "old_source_clip_sha256": "33623a8a936d387d45d710c608e416bc6a7f048d398eb2e35e7abbee64d394c4",
+            "new_source_clip_sha256": "e1ac361efee3727f661c7619f712d62d0a13292f79c2f9a50bb6496196fb0115"
+          },
+          "6": {
+            "provider": "pexels_video",
+            "old_source_clip_sha256": "8f9f032da6f3c4a281c8bb05899a2e8f489e18c99b800e6090bf0ccb3fcc0fc6",
+            "new_source_clip_sha256": "79c18d50e4a91a25ae894c228dd363a0dde04374d22e9ccb29cda69bed4adfe4"
+          }
+        },
+        "repair_wall_seconds": 17.268874600000004,
+        "donor_export_sha256": "9efe8467217fcc29bedcb29def3d24af27bcba70ae59512d854509a660eddd75",
+        "revised_export_sha256": "fed270c4f512fd0bacaf31af640ced2614d200f58257aeff2bd14d39e1bff1c1",
+        "actual_frame_semantics_prevalidated": false,
+        "visual_motion_package_prevalidated": true,
+        "quality_gates_weakened": false,
+        "full_pipeline_restarted": false,
+        "script_changed": false,
+        "voice_changed": false,
+        "sources_changed": false,
+        "reused_visuals": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "scene_ranges": {
+          "5": {
+            "frames": [
+              515,
+              617
+            ],
+            "seconds": [
+              17.166666666666668,
+              20.566666666666666
+            ],
+            "rendered_scene_sha256": "29db815578e8466c1226ae30729d5281cbbafd503867d3c14223e970830f794f"
+          },
+          "6": {
+            "frames": [
+              617,
+              787
+            ],
+            "seconds": [
+              20.566666666666666,
+              26.233333333333334
+            ],
+            "rendered_scene_sha256": "2a48ee30556bc266fe9e37f3b269f6404d25de1dfa263caee69683ff1fea75a0"
+          }
+        },
+        "audio_sha256": {
+          "copy": "77ca2837774d329f0c8139aa2aab246bd08c4065230839f6fb25c6c626748766",
+          "pcm_s16le": "bccff748d6e1cb6d3570a0b9505d9789167a947377a26748b6dc6698aeaedbed"
+        },
+        "stage_and_prime_seconds": 3.466051757999935,
+        "revision_seconds": 11.511879308000061,
+        "total_seconds": 14.977931065999996
+      }
+    },
+    "tiktok": {
+      "text_package": {
+        "title": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+        "category": "world_society",
+        "trend_angle": "Welche konkrete Veränderung hinter Erste Tarifrunde bei Volkswagen endet ohne Einigung wirklich steckt.",
+        "trend_signal": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+        "named_entities": [],
+        "why_now": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+        "affected_groups": [
+          "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG."
+        ],
+        "viewer_test": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde.",
+        "series_next": "",
+        "hook": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+        "script": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "cta": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "scenes": [
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "modern automotive assembly line workers factory indoors vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "car manufacturing production line workers factory indoors vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "industrial robots vehicle assembly modern factory vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "automotive factory workers inspecting production line vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Für dich stehen Zulagen und Arbeitszeit zur Debatte."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "automotive parts manufacturing workers modern factory indoors vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde."
+          },
+          {
+            "duration_seconds": 5.0,
+            "visual_query": "vehicle assembly plant employees production floor vertical video",
+            "overlay_text": "",
+            "spoken_chunk": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+          }
+        ],
+        "youtube_metadata": {
+          "title": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+          "description": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "tags": [
+            "world_society",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "fallback_used": true,
+        "language": "Deutsch",
+        "platform": "tiktok",
+        "target_duration": 35,
+        "llm_provider": "template:fallback",
+        "viewer_questions": {
+          "what_happened": "Aktuelle Meldungen richten Aufmerksamkeit auf Erste Tarifrunde bei Volkswagen endet ohne Einigung.",
+          "why_should_i_care": "Aus einer Ankündigung kann gerade eine praktisch relevante Veränderung werden.",
+          "what_changes_for_me": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge.",
+          "what_is_certain": "Sicher ist nur der nachvollziehbar bestätigte Kern der Meldung.",
+          "what_is_uncertain": "Offen bleibt, wie stark und wie schnell sich die Entwicklung tatsächlich auswirkt.",
+          "what_should_i_watch": "Achte auf bestätigte Funktionen, Termin und konkrete Alltagsfolge."
+        },
+        "editorial_answers": {
+          "what_happened": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+          "why_happening": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+          "who_is_affected": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+          "personal_impact": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+          "action_now": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde."
+        },
+        "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+        "source_context": {
+          "verified_at": "2026-11-24T21:37:31.591583Z",
+          "independent_news_count": 2,
+          "sources": [
+            {
+              "publisher": "NDR",
+              "url": "https://www.tagesschau.de/inland/regional/niedersachsen/tarifstreit-vw-spitze-will-verhandlungen-bis-jahresende-abschliessen,vw-1734.html",
+              "supports": "Die erste VW-Tarifrunde endete in Emden ohne Ergebnis. VW will Arbeitskosten senken und fordert einen Verzicht auf Lohnerhöhungen, flexiblere Arbeitszeiten und den Wegfall von Zulagen. Die IG Metall fordert fünf Prozent mehr Lohn. Die nächste Runde ist für Mitte Dezember in Zwickau geplant. Betroffen sind Beschäftigte an deutschen VW-Standorten.",
+              "published_at": "2026-11-24T18:36:00+01:00",
+              "reporting_origin": "NDR, Bericht von Torben Hildebrandt aus Emden"
+            },
+            {
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/erste-vw-tarifverhandlungsrunde-nach-kurzer-zeit-beendet-100.html",
+              "supports": "Volkswagen und IG Metall gingen nach der ersten Tarifrunde in Emden ohne Annäherung auseinander. Volkswagen fordert für 2027 und 2028 Nullrunden, flexiblere Arbeitszeiten und den Wegfall von Zusatzvergütungen. Die IG Metall fordert fünf Prozent mehr Lohn. Die Unternehmensführung begründet die Forderung mit dem Kostendruck.",
+              "published_at": "2026-11-24T00:00:00+01:00",
+              "reporting_origin": "Deutschlandfunk, redaktionelle Nachrichtenmeldung"
+            }
+          ],
+          "fallback_editorial_answers": {
+            "what_happened": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+            "why_happening": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+            "who_is_affected": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+            "personal_impact": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+            "action_now": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde."
+          },
+          "retention_v5": {
+            "viral_potential": 89,
+            "tayvoriq_fit": 95,
+            "novelty_score": 88,
+            "series_fit_score": 82,
+            "return_viewer_score": 86,
+            "follow_conversion_potential": 85,
+            "open_loop_potential": 65,
+            "proposed_series_id": "",
+            "proposed_series_name": "",
+            "next_episode_candidate": "",
+            "recommended_cta_type": "EXPERTISE",
+            "primary_hook": "Die erste VW-Tarifrunde ist vorbei. Beim Lohn liegen die Forderungen der beiden Seiten weit auseinander.",
+            "viewer_question": "Was verlangt Volkswagen beim Haustarif und was fordert die Gewerkschaft für Beschäftigte?",
+            "explanation_core": "Volkswagen und IG Metall gingen in Emden ohne konkretes Ergebnis auseinander. Der Konzern will die Arbeitskosten senken und fordert Nullrunden, flexiblere Arbeitszeiten und den Wegfall von Sonderzahlungen.",
+            "surprise_or_reframe": "Die IG Metall tritt mit der Forderung nach fünf Prozent mehr Lohn an. Die nächste Verhandlungsrunde ist Mitte Dezember vorgesehen.",
+            "practical_relevance": "Für Beschäftigte ist entscheidend, welche Zulagen zur Debatte stehen und welche Forderungen später tatsächlich vereinbart werden.",
+            "follow_reason": "TAYVORIQ ordnet ein, wie sich Tarifentscheidungen bei großen Arbeitgebern auf Schichtarbeit und Einkommen auswirken.",
+            "open_loop": "",
+            "open_loop_status": "NONE",
+            "cta_type": "EXPERTISE",
+            "cta_text": "Folge TAYVORIQ für die nächste Einordnung, sobald sich beim VW-Haustarif etwas Konkretes ändert.",
+            "trend_selection_score": 89
+          },
+          "growth_v2": {
+            "growth_score": 89,
+            "binding_score": 92,
+            "priority_score": 90,
+            "tier": "primary",
+            "series_candidate": false,
+            "targets": "10k/20k/50k/100k are optimization targets, never guarantees"
+          },
+          "claim_coherence": {
+            "passed": true,
+            "reasons": []
+          },
+          "audience_growth_v3": {
+            "subscriber_conversion_score": 81,
+            "returning_viewer_score": 84,
+            "continuation_score": 62,
+            "hook_strength_score": 55,
+            "standalone_payoff_score": 94,
+            "selection_priority_score": 87,
+            "promotion_test_candidate": true,
+            "promotion_requires_observed_performance": true,
+            "paid_boost_auto_enabled": false,
+            "optimization_goal": "turn qualified viewers into returning viewers and followers without weakening quality gates"
+          },
+          "duplicate_check": {
+            "state": "PASSED",
+            "content_fingerprint_sha256": "360db5d35f8c97a239452ac4a34d9d00003e862453c34c4bc3dbaa4fb88fffb6",
+            "history_candidates_checked": 58
+          },
+          "reach_gate": {
+            "policy": "REGIONAL_GERMANY_CHANNEL_EVIDENCE_V2",
+            "scope": "germany",
+            "local_only_rejected": false,
+            "reach_score": 111
+          }
+        },
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt.",
+        "script_body": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde.",
+        "pronunciation_map": {
+          "TAYVORIQ": "Tayvorik"
+        },
+        "context_metrics": {
+          "cta_start_ratio": 0.764,
+          "body_words": 42,
+          "cta_words": 13,
+          "editorial_body_words": 42,
+          "script_words": 55,
+          "minimum_script_words": 51,
+          "maximum_script_words": 63,
+          "validator_minimum_words": 51,
+          "semantic_pre_render_gate": true,
+          "retention_contract_v5_locked": true,
+          "follow_conversion_gate": "PASS",
+          "return_viewer_gate": "PASS",
+          "audible_cta_budget_compaction": []
+        },
+        "trend_origin": "manual-or-provider-only",
+        "fallback_policy": "cloud-primary-local-last-resort",
+        "visual_topic_guard": "strict-topic-bound-v23",
+        "editorial_depth_gate": {
+          "passed": true,
+          "applicable": true,
+          "contract_version": "v1-verified-request-five-answer-recovery",
+          "contract_derived_from_sources": true,
+          "minimum_details_in_script": 3,
+          "available_source_bound_details": 4,
+          "consumed_source_bound_details": 4,
+          "planned_detail_available": false,
+          "planned_detail_consumed": false,
+          "rumor_or_unconfirmed_count": 0,
+          "consumed": [
+            {
+              "group": "confirmed_details",
+              "text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+              "anchors": [],
+              "matched": [
+                "emden",
+                "endete",
+                "ergebnis",
+                "erste",
+                "tarifrunde"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+              "anchors": [],
+              "matched": [
+                "Weil VW",
+                "Konzern Nullrunden"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+              "anchors": [],
+              "matched": [
+                "Volkswagen AG"
+              ]
+            },
+            {
+              "group": "confirmed_details",
+              "text": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+              "anchors": [],
+              "matched": [
+                "arbeitszeit",
+                "debatte",
+                "stehen",
+                "zulagen"
+              ]
+            }
+          ],
+          "missing": [],
+          "blockers": [],
+          "quality_gates_weakened": false
+        },
+        "what_happened": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+        "why_happening": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+        "who_is_affected": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+        "personal_impact": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+        "action_now": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde.",
+        "universal_platform_cta": true,
+        "shared_master_render_requested": true,
+        "approval_status": "PENDING_REVIEW",
+        "upload_status": "NOT_STARTED_PENDING_APPROVAL",
+        "instagram_status": "NOT_CONFIGURED_EXCLUDED",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "final_package_contract": {
+          "version": "v27-topic-safe-cta-runtime",
+          "word_count": 58,
+          "minimum_words": 51,
+          "maximum_words": 63,
+          "quality_gates_weakened": false
+        },
+        "platform_gate_validation": {
+          "platform_action": {
+            "passed": false,
+            "platform": "tiktok",
+            "expected_prefix": "folge tayvoriq"
+          },
+          "verified_benefit": {
+            "passed": true,
+            "required": [
+              "verifiziert",
+              "konkrete schritte"
+            ],
+            "accepted_viewer_value_markers": [
+              "konkret",
+              "warnlag",
+              "reisehinweis",
+              "prüf"
+            ],
+            "matched_viewer_value_markers": [
+              "konkret"
+            ],
+            "source_bound_alternatives_allowed": true
+          },
+          "ethical_length": {
+            "passed": true,
+            "word_count": 9,
+            "manipulative_pressure": false
+          }
+        },
+        "source_bound_editorial_compiler": "verified-request-canonical-v2",
+        "authoritative_editorial_prevalidation_lock": {
+          "version": "v2-single-source-bound-prevalidation",
+          "body_words": 42,
+          "source_context_changed": false,
+          "quality_gates_weakened": false
+        },
+        "series_id": null,
+        "series_name": null,
+        "episode_id": null,
+        "episode_number": null,
+        "continuity_hook": null,
+        "next_episode_candidate": null,
+        "primary_hook": "Die erste VW-Tarifrunde ist vorbei. Beim Lohn liegen die Forderungen der beiden Seiten weit auseinander.",
+        "viewer_question": "Was verlangt Volkswagen beim Haustarif und was fordert die Gewerkschaft für Beschäftigte?",
+        "explanation_core": "Volkswagen und IG Metall gingen in Emden ohne konkretes Ergebnis auseinander. Der Konzern will die Arbeitskosten senken und fordert Nullrunden, flexiblere Arbeitszeiten und den Wegfall von Sonderzahlungen.",
+        "surprise_or_reframe": "Die IG Metall tritt mit der Forderung nach fünf Prozent mehr Lohn an. Die nächste Verhandlungsrunde ist Mitte Dezember vorgesehen.",
+        "practical_relevance": "Für Beschäftigte ist entscheidend, welche Zulagen zur Debatte stehen und welche Forderungen später tatsächlich vereinbart werden.",
+        "follow_reason": "TAYVORIQ ordnet ein, wie sich Tarifentscheidungen bei großen Arbeitgebern auf Schichtarbeit und Einkommen auswirken.",
+        "open_loop": "",
+        "open_loop_status": "NONE",
+        "cta_type": "EXPERTISE",
+        "cta_text": "Folge TAYVORIQ für die nächste Einordnung, sobald sich beim VW-Haustarif etwas Konkretes ändert.",
+        "audible_cta_compacted": false,
+        "audible_cta_word_count": 13,
+        "retention_contract_v5": {
+          "schema_version": "tayvoriq-retention-v5",
+          "contract_mode": "native_v5",
+          "request_id": "telegram-3696-trend-1",
+          "topic": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+          "trend_scope": "business_economy",
+          "content_angle": "Was VW bei Lohn, Arbeitszeit und Zulagen fordert und warum nach der ersten Runde weiterverhandelt wird.",
+          "source_context_sha256": "91d55e03500a804d6a08f56215d5ee3e3ad2c3606c648e0f8d18cf74c6367cd2",
+          "series_id": null,
+          "series_name": null,
+          "episode_id": null,
+          "episode_number": null,
+          "continuity_hook": null,
+          "next_episode_candidate": null,
+          "primary_hook": "Die erste VW-Tarifrunde ist vorbei. Beim Lohn liegen die Forderungen der beiden Seiten weit auseinander.",
+          "viewer_question": "Was verlangt Volkswagen beim Haustarif und was fordert die Gewerkschaft für Beschäftigte?",
+          "explanation_core": "Volkswagen und IG Metall gingen in Emden ohne konkretes Ergebnis auseinander. Der Konzern will die Arbeitskosten senken und fordert Nullrunden, flexiblere Arbeitszeiten und den Wegfall von Sonderzahlungen.",
+          "surprise_or_reframe": "Die IG Metall tritt mit der Forderung nach fünf Prozent mehr Lohn an. Die nächste Verhandlungsrunde ist Mitte Dezember vorgesehen.",
+          "practical_relevance": "Für Beschäftigte ist entscheidend, welche Zulagen zur Debatte stehen und welche Forderungen später tatsächlich vereinbart werden.",
+          "follow_reason": "TAYVORIQ ordnet ein, wie sich Tarifentscheidungen bei großen Arbeitgebern auf Schichtarbeit und Einkommen auswirken.",
+          "open_loop": "",
+          "open_loop_status": "NONE",
+          "cta_type": "EXPERTISE",
+          "cta_text": "Folge TAYVORIQ für die nächste Einordnung, sobald sich beim VW-Haustarif etwas Konkretes ändert.",
+          "next_episode_queue_status": null,
+          "sensitive_story": false,
+          "approved_story_body": null,
+          "editorial_story_contract_version": 0,
+          "quality_gates_weakened": false,
+          "lifecycle_state": "RETENTION_CONTRACT_LOCKED",
+          "follow_conversion_gate": {
+            "result": "PASS",
+            "repair": null,
+            "issues": []
+          },
+          "story_depth_gate": {
+            "result": "PASS",
+            "repair": null,
+            "issues": []
+          },
+          "contract_sha256": "800b7906d7c31f2b19d642551d6ce40899de5da96b875b1d1bf9505984a8ce05"
+        },
+        "follow_conversion_gate": {
+          "result": "PASS",
+          "repair": null,
+          "issues": []
+        },
+        "return_viewer_gate": {
+          "result": "PASS",
+          "issues": []
+        },
+        "story_depth_gate": {
+          "result": "PASS",
+          "repair": null,
+          "issues": []
+        },
+        "approved_story_body": null,
+        "editorial_story_contract_version": 0,
+        "retention_contract_locked": true,
+        "generic_contract_repair": {
+          "version": "v40-human-story-contract-aware-source-field-repair-before-render",
+          "script_words": 55,
+          "repair_target_words": 53,
+          "source_bound_minimum_only": true,
+          "repair_target_met": true,
+          "validator_minimum_words": 51,
+          "quality_gates_weakened": false,
+          "semantic_pre_render_gate": true,
+          "legacy_validator_passed": true,
+          "human_story_contract_applied": false,
+          "source_bound_editorial_preserved": true,
+          "placeholder_language_blocked": true,
+          "boundary": "captured-v25-to-v20-render-call"
+        },
+        "authoritative_editorial_lock": {
+          "version": "v2-v11-source-bound-pre-and-postcondition",
+          "body_words": 42,
+          "source_context_preserved": true,
+          "approved_source_restored": false,
+          "bounded_shortfall_drift_accepted": false,
+          "quality_gates_weakened": false
+        },
+        "golden_quality_floor": {
+          "version": "v1",
+          "passed": true,
+          "accepted_quality_may_not_regress": true,
+          "operator_rejections_are_negative_fixtures": true,
+          "quality_gates_weakened": false
+        },
+        "pronunciation_contract": {
+          "version": "v4-human-natural-explanatory-narrator",
+          "visible_script_preserved": true,
+          "terms": {},
+          "voice_router": "chatterbox-v3-human-narrator-v28",
+          "artificial_compound_splitting": false,
+          "narrator_pitch_shift_applied": false,
+          "calm_explanatory_pacing_required": true,
+          "max_atempo": 1.2,
+          "audio_end_padding_seconds": 0.55,
+          "quality_gates_weakened": false
+        },
+        "platform_cta_contract": {
+          "version": "v4-platform-specific-editorial-storytelling",
+          "platform": "tiktok",
+          "cta": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "source_bound_viewer_value": false,
+          "viewer_value": "",
+          "next_video_bridge": "",
+          "youtube_uses_subscribe_only": true,
+          "tiktok_uses_follow_only": true,
+          "llm_action_allowed": false,
+          "voice_and_captions_share_editorial_source": true,
+          "visible_script_audio_overlay_same_source": true,
+          "overlay_repeats_full_voiceover": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_visual_standard": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "topic": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+          "domain": "society",
+          "treatment_id": "PLACE_AND_SCALE",
+          "visual_signature": "c32339f90a34cf09",
+          "platform": "tiktok",
+          "platform_specific_master_required": true,
+          "same_master_reuse_forbidden": true,
+          "full_voiceover_as_overlay_forbidden": true,
+          "supporting_callouts_only": true,
+          "random_decorative_visuals_forbidden": true,
+          "filler_scenes_forbidden": true,
+          "explanatory_graphics_enabled": true,
+          "music_arc": "immediate restrained pulse -> explanatory space -> short resolve",
+          "music_policy": "No generic continuous loop. Use silence plus sparse accents unless a topic-appropriate licensed bed is explicitly configured.",
+          "voice_priority": true,
+          "quality_gates_weakened": false
+        },
+        "platform_story_profile": {
+          "platform": "tiktok",
+          "beats": [
+            "hook",
+            "why_it_matters",
+            "context",
+            "explanation",
+            "key_insight",
+            "consequence_outlook"
+          ],
+          "scene_count": 6,
+          "narrative_priority": "immediate relevance and vertical guidance",
+          "estimated_wpm": 88.8,
+          "preferred_wpm": [
+            118,
+            145
+          ],
+          "hard_max_wpm": 165,
+          "caption_policy": "readable full captions plus sparse semantic callouts",
+          "cutting_policy": "idea-driven cuts; important explanatory shots may hold longer"
+        },
+        "editorial_quality_gate": {
+          "version": "tayvoriq-editorial-visual-standard-v1",
+          "passed": true,
+          "issues": [],
+          "checklist": {
+            "interesting": true,
+            "beginner_clear": true,
+            "voice_pacing": true,
+            "visual_explanatory": true,
+            "visually_distinct": true,
+            "no_filler": true,
+            "watch_to_end": true
+          },
+          "metrics": {
+            "scene_count": 6,
+            "unique_visual_queries": 6,
+            "unique_visual_types": 6,
+            "callout_count": 2,
+            "script_words": 51,
+            "estimated_wpm": 88.8,
+            "duration_spread_seconds": 1.99,
+            "generated_explainer_scenes": 1
+          }
+        },
+        "tiktok_metadata": {
+          "title": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+          "caption": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "privacy_default": "PUBLIC_TO_EVERYONE",
+          "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+        },
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {},
+          "brand_spoken": false,
+          "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          },
+          "brand_normalization_version": "final-v20-tayvorik-v1"
+        },
+        "vw_crisis_visual_contract": true,
+        "vw_crisis_visual_profile": "v1-vw-crisis-automotive-factory-moving-assets"
+      },
+      "quality_report": {
+        "passed": true,
+        "issues": [],
+        "word_count": 51,
+        "body_words": 42,
+        "cta_words": 5,
+        "cta_start_ratio": 0.894,
+        "self_contained": true,
+        "native_language_voice_configured": true,
+        "quality_version": "v20.1-provider-aware-german-narration",
+        "checked_at": "2026-11-24T21:51:32+00:00",
+        "editorial_five_answers": {
+          "passed": true,
+          "answers": {
+            "what_happened": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis.",
+            "why_happening": "Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden.",
+            "who_is_affected": "Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG.",
+            "personal_impact": "Für dich stehen Zulagen und Arbeitszeit zur Debatte.",
+            "action_now": "Achte auf die Ergebnisse der nächsten Verhandlungsrunde."
+          }
+        },
+        "v11_quality_cycle_guard": {
+          "passed": true,
+          "cycle_removed": true,
+          "base_quality": "v5-captured-by-v11",
+          "human_story_forced_prefix_suppressed": false,
+          "quality_gates_weakened": false
+        },
+        "editorial_repair_strategy": "verified-request-canonical-no-reexpand",
+        "content_editor_version": "v27-topic-safe-cta-runtime",
+        "factual_cause_guard": "standard",
+        "speech_preflight": {
+          "passed": true,
+          "visible_script_preserved": true,
+          "tts_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {},
+          "brand_spoken": false,
+          "brand_pronunciation": "TAYVORIQ=>Tayvorik",
+          "version": "v24-visible-to-tts-number-and-brand-proof",
+          "brand_replacements": {
+            "TAYVORIQ": "Tayvorik"
+          },
+          "brand_normalization_version": "final-v20-tayvorik-v1"
+        },
+        "tts_preview": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "policy_grounding_guard": "standard",
+        "actual_narration_word_count": 51,
+        "target_word_range": [
+          51,
+          65
+        ],
+        "authoritative_length_contract": {
+          "reconciled": true,
+          "legacy_issues_reconciled": [
+            "script_too_short:47:min=51"
+          ],
+          "visible_words": 51,
+          "spoken_words": 51,
+          "target_range": [
+            51,
+            65
+          ],
+          "cta_contract_proven": true,
+          "evidence": [
+            {
+              "issue": "script_too_short:47:min=51",
+              "legacy_words": 47,
+              "legacy_minimum": 51,
+              "visible_words": 51,
+              "spoken_words": 51,
+              "target_range": [
+                51,
+                65
+              ],
+              "cta_contract_proven": true,
+              "reconciled": true
+            }
+          ],
+          "authority": "exact-visible-script-and-final-tts-narration",
+          "thresholds_changed": false,
+          "quality_gates_weakened": false
+        },
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "audio": {
+        "voice_path": "voice.mp3",
+        "voice_duration_seconds": 24.97,
+        "provider": "chatterbox_multilingual_v3",
+        "voice_provider_requested": "chatterbox_multilingual_v3",
+        "voice_provider_used": "chatterbox_multilingual_v3",
+        "model_id": "v3",
+        "voice_settings": {
+          "language_id": "de",
+          "exaggeration": 0.5,
+          "cfg_weight": 0.47,
+          "reference_audio_used": true,
+          "chunk_count": 1,
+          "loudness_target_lufs": -16,
+          "narrator_pitch_factor": 1.0,
+          "narrator_pitch_shift_applied": false,
+          "narrator_articulation_preserved": true,
+          "narrator_loudness_target_lufs": -16,
+          "narrator_mastering_profile": "neutral-native-v2",
+          "deep_voice_gate": {
+            "passed": true,
+            "repair_applied": false,
+            "repair_factor": 1.0,
+            "repair_factors": [],
+            "repair_passes": [],
+            "maximum_repair_passes": 0,
+            "minimum_cumulative_feedback_factor": 1.0,
+            "feedback_measurement_required": true,
+            "before": {
+              "median_f0_hz": 129.03,
+              "p10_f0_hz": 100.63,
+              "p90_f0_hz": 189.8,
+              "pitch_span_hz": 89.17,
+              "silence_ratio": 0.116
+            },
+            "after": {
+              "median_f0_hz": 129.03,
+              "p10_f0_hz": 100.63,
+              "p90_f0_hz": 189.8,
+              "pitch_span_hz": 89.17,
+              "silence_ratio": 0.116
+            },
+            "allowed_f0_hz": [
+              65.0,
+              230.0
+            ],
+            "bounded_repair_window_hz": [
+              65.0,
+              230.0
+            ],
+            "repair_window_basis": "final-gate-divided-by-bounded-pitch-factor",
+            "provider_required": "chatterbox_multilingual_v3",
+            "fallback_allowed": false,
+            "quality_gates_weakened": false,
+            "contract_version": "golden-path-deep-voice-self-heal-v3"
+          },
+          "quality_gates_weakened": false
+        },
+        "target_voice_duration_seconds": 25.0,
+        "raw_voice_duration_seconds": 21.16,
+        "duration_delta_seconds": -0.03,
+        "generation_elapsed_seconds": 222.545,
+        "fallback": false,
+        "quality_profile": "tayvoriq-native-natural-narrator-chatterbox-v38",
+        "worker_report": {
+          "provider": "chatterbox_multilingual",
+          "requested_model_version": "v3",
+          "model_version": "v3",
+          "installed_package_version": "0.1.7",
+          "language_id": "de",
+          "device": "cpu",
+          "hf_auth_mode": "token",
+          "passed": true,
+          "compatibility_mode": "native-version-selection",
+          "model_version_fallback": false,
+          "sample_rate": 24000,
+          "duration_seconds": 21.16,
+          "chunks": [
+            "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte."
+          ],
+          "chunk_count": 1,
+          "model_load_seconds": 12.052,
+          "generation_seconds": [
+            202.098
+          ],
+          "total_seconds": 219.429,
+          "reference_audio_used": true,
+          "exaggeration": 0.5,
+          "cfg_weight": 0.47,
+          "output": "out/tayvoriq-youtube-tiktok/candidate-01/20261124_214141_erste-tarifrunde-bei-volkswagen-endet-ohne-einigung/tiktok/voice_chatterbox_raw.wav",
+          "output_bytes": 1015724,
+          "audio_container": "wav-pcm16-standard-library"
+        },
+        "natural_voice_target_seconds": 25.0,
+        "natural_voice_wpm": 132.0,
+        "full_short_target_seconds": 35.0,
+        "coherent_chunk_limit": 1,
+        "configured_max_chars": 520,
+        "premium_voice_timeout_budget_seconds": 240,
+        "pronunciation_prepared": true,
+        "pronunciation_profile": "de-critical-terms-v1",
+        "narrator_tone_applied": false,
+        "narrator_pitch_shift_applied": false,
+        "human_narrator_quality_profile": true,
+        "natural_pacing_contract_passed": true,
+        "premium_voice_required": true,
+        "premium_voice_contract_passed": true,
+        "continuous_narrator_take": true,
+        "artificial_compound_splitting": false,
+        "internal_hyphen_preserved": true,
+        "human_pronunciation_profile": "de-critical-san-disk-ka-i-v1",
+        "targeted_acronym_pronunciation_aid": true,
+        "sandisk_spoken_form": "San Disk",
+        "critical_term_pronunciation_aid": true,
+        "critical_term_pronunciation_terms": [
+          "VW",
+          "AG"
+        ],
+        "critical_term_speech_surface_only": true,
+        "pronunciation_contract_version": "de-acronym-letter-names-v2",
+        "all_visible_acronyms_normalized": true,
+        "pronunciation_replacements": {
+          "TAYVORIQ": "Tayvorik"
+        },
+        "spoken_contract_text": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tayvoriq_spoken_replacement": "",
+        "brand_spoken_fallback_used": false,
+        "brand_spoken_fallback_semantic_only": false,
+        "visible_script_unchanged": true,
+        "canonical_review_contract_unchanged": true,
+        "exact_chatterbox_model_required": "v3",
+        "exact_chatterbox_model_passed": true,
+        "golden_human_reference_required": true,
+        "golden_human_reference_used": true,
+        "golden_human_reference_commit": "08e2dada47d4e823ae139d1151a07fea1ff5d92c",
+        "quality_gates_weakened": false,
+        "deep_voice_gate": {
+          "passed": true,
+          "repair_applied": false,
+          "repair_factor": 1.0,
+          "repair_factors": [],
+          "repair_passes": [],
+          "maximum_repair_passes": 0,
+          "minimum_cumulative_feedback_factor": 1.0,
+          "feedback_measurement_required": true,
+          "before": {
+            "median_f0_hz": 129.03,
+            "p10_f0_hz": 100.63,
+            "p90_f0_hz": 189.8,
+            "pitch_span_hz": 89.17,
+            "silence_ratio": 0.116
+          },
+          "after": {
+            "median_f0_hz": 129.03,
+            "p10_f0_hz": 100.63,
+            "p90_f0_hz": 189.8,
+            "pitch_span_hz": 89.17,
+            "silence_ratio": 0.116
+          },
+          "allowed_f0_hz": [
+            65.0,
+            230.0
+          ],
+          "bounded_repair_window_hz": [
+            65.0,
+            230.0
+          ],
+          "repair_window_basis": "final-gate-divided-by-bounded-pitch-factor",
+          "provider_required": "chatterbox_multilingual_v3",
+          "fallback_allowed": false,
+          "quality_gates_weakened": false,
+          "contract_version": "golden-path-deep-voice-self-heal-v3"
+        },
+        "golden_voice_floor": {
+          "version": "v1",
+          "passed": true,
+          "artificial_pitch_shift_forbidden": true,
+          "narrator_pitch_factor": 1.0,
+          "human_rejected_profiles_forbidden": true,
+          "quality_gates_weakened": false
+        },
+        "pre_render_transcript_validation": {
+          "passed": true,
+          "similarity": 1.0,
+          "missing_critical_terms": [],
+          "expected_tokens": 55,
+          "actual_tokens": 55,
+          "excessive_extra_words": false,
+          "forbidden_tail": false,
+          "transcript": "Die erste Fau Weh-Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_expected": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "contract_actual": "Die erste Fau Weh-Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "role": "final",
+          "raw_transcript": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_transcript": "Die erste Fau Weh-Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "normalized_contract_expected": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "asr_orthographic_equivalence_applied": true,
+          "hallucinated_tail": false,
+          "terminal_token_match": true,
+          "segment_min_similarity": 0.95,
+          "similarity_gate_passed": true,
+          "transcription_attempt": 1,
+          "postmux_min_similarity": 0.95,
+          "base_gate_passed": true,
+          "attempts": [
+            {
+              "passed": true,
+              "similarity": 1.0,
+              "missing_critical_terms": [],
+              "expected_tokens": 55,
+              "actual_tokens": 55,
+              "excessive_extra_words": false,
+              "forbidden_tail": false,
+              "transcript": "Die erste Fau Weh-Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_expected": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "contract_actual": "Die erste Fau Weh-Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "role": "final",
+              "raw_transcript": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_transcript": "Die erste Fau Weh-Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "normalized_contract_expected": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+              "asr_orthographic_equivalence_applied": true,
+              "hallucinated_tail": false,
+              "terminal_token_match": true,
+              "segment_min_similarity": 0.95,
+              "similarity_gate_passed": true,
+              "transcription_attempt": 1,
+              "postmux_min_similarity": 0.95,
+              "base_gate_passed": true
+            }
+          ],
+          "attempt": 1,
+          "required": true,
+          "min_similarity": 0.95,
+          "quality_gates_weakened": false
+        },
+        "pre_render_voice_attempt": 1,
+        "post_audio_quality_gate": {
+          "passed": true,
+          "provider": "chatterbox_multilingual_v3",
+          "duration_seconds": 24.97,
+          "target_duration_seconds": 35,
+          "fallback": false,
+          "fallback_from": null,
+          "pre_render_transcript_passed": true,
+          "pre_render_transcript_similarity": 1.0,
+          "pre_render_cta_morphology_passed": true,
+          "required_spoken_cta": "folge dem kanal",
+          "quality_gates_weakened": false
+        },
+        "number_pronunciation_replacements": {},
+        "tts_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "spoken_number_normalization_required": false,
+        "spoken_number_normalization_passed": true,
+        "speech_preflight_version": "v20-german-number-verbalization",
+        "native_language_voice_configured": true,
+        "native_language_voice": {
+          "configured": true,
+          "language_is_german": true,
+          "provider_requested": "chatterbox_v3",
+          "provider_id": "chatterbox-multilingual-v3:de",
+          "elevenlabs_german_voice_present": false,
+          "chatterbox_enabled": true,
+          "chatterbox_language": "de",
+          "edge_voice": "de-DE-ConradNeural",
+          "version": "v20.1-provider-aware-native-german-voice-gate"
+        }
+      },
+      "render": {
+        "video_path": "short.mp4",
+        "asset_report": [
+          {
+            "scene": 1,
+            "source": "pexels_video",
+            "query": "employees negotiating around conference table",
+            "requested_query": "employees negotiating around conference table",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 3.917,
+            "subtitle_present": true,
+            "asset": "scene_01.mp4",
+            "pexels_source_sha256": "e7926187c65c8ff13ea7b3a9271418842cb4604f38bf5ea57ef2741a1c735c91",
+            "source_clip_sha256": "2679343c73e729c4db6343fbf7d421804883513ff0f5ee9382310f11c10bcee9",
+            "source_media_url": "https://videos.pexels.com/video-files/7812445/7812445-hd_1080_1920_25fps.mp4"
+          },
+          {
+            "scene": 2,
+            "source": "pexels_video",
+            "query": "employee reading payslip at desk",
+            "requested_query": "employee reading payslip at desk",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.896,
+            "subtitle_present": true,
+            "asset": "scene_02.mp4",
+            "pexels_source_sha256": "7bb525c2b826bd143a06fa4138d36364c09879ba76855fcbd308b38ad172f587",
+            "source_clip_sha256": "7682cb91677a1982d6c78082a63c1d72998b6c3cb062d41319ef45c8447898f1",
+            "source_media_url": "https://videos.pexels.com/video-files/7691587/7691587-hd_1080_1920_25fps.mp4"
+          },
+          {
+            "scene": 3,
+            "source": "pexels_video",
+            "query": "car factory assembly line workers",
+            "requested_query": "car factory assembly line workers",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.406,
+            "subtitle_present": true,
+            "asset": "scene_03.mp4",
+            "pexels_source_sha256": "2d54e5dc6e0902010f04ce979403388dfb2c378d3b3b364ccfbbb6f5c42f24d9",
+            "source_clip_sha256": "f1eb164f916ffa11a45c5d669bc050a7d7b66da18446166b3963d1b2d6cbccef",
+            "source_media_url": "https://videos.pexels.com/video-files/34948763/14804690_1080_1920_24fps.mp4"
+          },
+          {
+            "scene": 4,
+            "source": "pexels_video",
+            "query": "employee checking work shift schedule",
+            "requested_query": "employee checking work shift schedule",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 3.917,
+            "subtitle_present": true,
+            "asset": "scene_04.mp4",
+            "pexels_source_sha256": "ca17ccbc2271c054598d7033ad8066705bd4fc171a4ebc63a08a15be3a75236d",
+            "source_clip_sha256": "a30493881d21744054c6444d0465118b45a568172a499c3fea0e4284ba94016d",
+            "source_media_url": "https://videos.pexels.com/video-files/38455504/16330495_1080_1920_25fps.mp4"
+          },
+          {
+            "scene": 5,
+            "source": "pexels_video",
+            "query": "meeting planner marking date on calendar",
+            "requested_query": "meeting planner marking date on calendar",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 3.427,
+            "subtitle_present": true,
+            "asset": "scene_05.mp4",
+            "pexels_source_sha256": "1ac5b2aa258fb5a2a65c9e32e6fedd618e1f137f5bbcca9dbbf75cbf2258f8c2",
+            "source_clip_sha256": "e1ac361efee3727f661c7619f712d62d0a13292f79c2f9a50bb6496196fb0115",
+            "source_media_url": "https://videos.pexels.com/video-files/35332817/14970418_2160_3840_30fps.mp4"
+          },
+          {
+            "scene": 6,
+            "source": "pexels_video",
+            "query": "car factory exterior industrial building",
+            "requested_query": "car factory exterior industrial building",
+            "visual_query_repaired": false,
+            "real_video_provider_attempts": 1,
+            "duration": 4.969,
+            "subtitle_present": true,
+            "asset": "scene_06.mp4",
+            "pexels_source_sha256": "e6953b17877e24a367835fd403eb92aecd4c74c8974b14de668fa895d43a57d9",
+            "source_clip_sha256": "79c18d50e4a91a25ae894c228dd363a0dde04374d22e9ccb29cda69bed4adfe4",
+            "source_media_url": "https://videos.pexels.com/video-files/33636879/14294210_2160_3838_24fps.mp4"
+          }
+        ],
+        "render_size": "1080x1920",
+        "bytes": 18124341,
+        "voice_duration_seconds": 24.97,
+        "final_duration_seconds": 25.533,
+        "end_padding_seconds": 0.563,
+        "requested_duration_seconds": 35.0,
+        "duration_delta_seconds": -9.467,
+        "duration_status": "REVIEW"
+      },
+      "video_path": "short_tiktok.mp4",
+      "upload_status": "PENDING_APPROVAL",
+      "visual_checkpoint_repair": {
+        "profile": "v1-vw-crisis-automotive-factory-moving-assets",
+        "queries": [
+          "modern automotive assembly line workers factory indoors vertical video",
+          "car manufacturing production line workers factory indoors vertical video",
+          "industrial robots vehicle assembly modern factory vertical video",
+          "automotive factory workers inspecting production line vertical video",
+          "automotive parts manufacturing workers modern factory indoors vertical video",
+          "vehicle assembly plant employees production floor vertical video"
+        ],
+        "moving_assets_required": 4,
+        "visual_diversity_required": 3,
+        "actual_frame_semantics_prevalidated": false,
+        "script_changed": false,
+        "voice_changed": false,
+        "sources_changed": false,
+        "quality_gates_weakened": false
+      }
+    }
+  },
+  "platform_package": {
+    "requested_platform": "youtube_tiktok",
+    "targets": [
+      "youtube_shorts",
+      "tiktok"
+    ],
+    "packages": [
+      {
+        "platform": "youtube_shorts",
+        "status": "PENDING_APPROVAL",
+        "video_file": "short_youtube.mp4",
+        "metadata": {
+          "title": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+          "description": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "tags": [
+            "world_society",
+            "TAYVORIQ",
+            "Trendjagd",
+            "Shorts"
+          ]
+        },
+        "cta": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt."
+      },
+      {
+        "platform": "tiktok",
+        "status": "PENDING_APPROVAL",
+        "video_file": "short_tiktok.mp4",
+        "metadata": {
+          "title": "Erste Tarifrunde bei Volkswagen endet ohne Einigung",
+          "caption": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. #TAYVORIQ #Trendjagd #Gesellschaft",
+          "hashtags": [
+            "#TAYVORIQ",
+            "#Trendjagd",
+            "#Gesellschaft"
+          ],
+          "privacy_default": "PUBLIC_TO_EVERYONE",
+          "review_visibility": "PUBLIC_REVIEW_AFTER_APPROVAL"
+        },
+        "cta": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "viewer_payoff": "Du erhältst verifizierte Einordnung und den nächsten konkreten Schritt."
+      }
+    ]
+  },
+  "visual_checkpoint_repair": {
+    "profile": "vw-verified-sister-platform-scene-revision-v1",
+    "target_platform": "youtube_shorts",
+    "donor_platform": "tiktok",
+    "replacement_clips": {
+      "5": {
+        "provider": "pexels_video",
+        "old_source_clip_sha256": "33623a8a936d387d45d710c608e416bc6a7f048d398eb2e35e7abbee64d394c4",
+        "new_source_clip_sha256": "e1ac361efee3727f661c7619f712d62d0a13292f79c2f9a50bb6496196fb0115"
+      },
+      "6": {
+        "provider": "pexels_video",
+        "old_source_clip_sha256": "8f9f032da6f3c4a281c8bb05899a2e8f489e18c99b800e6090bf0ccb3fcc0fc6",
+        "new_source_clip_sha256": "79c18d50e4a91a25ae894c228dd363a0dde04374d22e9ccb29cda69bed4adfe4"
+      }
+    },
+    "repair_wall_seconds": 17.268874600000004,
+    "donor_export_sha256": "9efe8467217fcc29bedcb29def3d24af27bcba70ae59512d854509a660eddd75",
+    "revised_export_sha256": "fed270c4f512fd0bacaf31af640ced2614d200f58257aeff2bd14d39e1bff1c1",
+    "actual_frame_semantics_prevalidated": false,
+    "visual_motion_package_prevalidated": true,
+    "quality_gates_weakened": false,
+    "full_pipeline_restarted": false,
+    "script_changed": false,
+    "voice_changed": false,
+    "sources_changed": false,
+    "reused_visuals": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scene_ranges": {
+      "5": {
+        "frames": [
+          515,
+          617
+        ],
+        "seconds": [
+          17.166666666666668,
+          20.566666666666666
+        ],
+        "rendered_scene_sha256": "29db815578e8466c1226ae30729d5281cbbafd503867d3c14223e970830f794f"
+      },
+      "6": {
+        "frames": [
+          617,
+          787
+        ],
+        "seconds": [
+          20.566666666666666,
+          26.233333333333334
+        ],
+        "rendered_scene_sha256": "2a48ee30556bc266fe9e37f3b269f6404d25de1dfa263caee69683ff1fea75a0"
+      }
+    },
+    "audio_sha256": {
+      "copy": "77ca2837774d329f0c8139aa2aab246bd08c4065230839f6fb25c6c626748766",
+      "pcm_s16le": "bccff748d6e1cb6d3570a0b9505d9789167a947377a26748b6dc6698aeaedbed"
+    },
+    "stage_and_prime_seconds": 3.466051757999935,
+    "revision_seconds": 11.511879308000061,
+    "total_seconds": 14.977931065999996
+  },
+  "checkpoint_migration": {
+    "from_implementation_sha": "5f9baa36075467dbea868a3066870645e2e4835a",
+    "to_implementation_sha": "80578d1f2d555909e90b35a3687a3421d0db3fa9",
+    "changed_paths": [
+      ".automation/tayvoriq-quality-status.json",
+      ".github/workflows/tayvoriq-quality-ci.yml",
+      "tests/fixtures/vw-45510042088-visual-checkpoint.json",
+      "tests/fixtures/vw-45556248821-shot-previews.json",
+      "tests/test_tayvoriq_vw_bargaining_checkpoint.py",
+      "tests/test_tayvoriq_vw_visual_repair.py",
+      "tools/tayvoriq_checkpoint_visual_progress.py",
+      "tools/tayvoriq_cloud_render_safe.py",
+      "tools/tayvoriq_commons_video_v1.py",
+      "tools/tayvoriq_preapproval_ai_audit.py",
+      "tools/tayvoriq_recovery_checkpoint_v1.py",
+      "tools/tayvoriq_resume_existing_render_v2.py",
+      "tools/tayvoriq_scene_revision_v1.py",
+      "tools/tayvoriq_silent_tail_repair_v1.py",
+      "tools/tayvoriq_visual_only_repair_v1.py",
+      "tools/tayvoriq_visual_similarity_v1.py",
+      "tools/tayvoriq_vw_visual_contract_v1.py"
+    ],
+    "scope": "localized-quality-repair-input-only",
+    "repair_targets": [
+      "VISUALS"
+    ],
+    "full_reaudit_required": true,
+    "old_quality_proof_reused": false,
+    "old_master_approval_reused": false,
+    "quality_gates_weakened": false
+  },
+  "preapproval_ai_audit": {
+    "schema_version": 3,
+    "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
+    "passed": true,
+    "scores": {
+      "factual_accuracy": 100,
+      "pronunciation": 100,
+      "marketing": 90,
+      "sales": 92,
+      "platform_fit": 95,
+      "visual": 92,
+      "overall": 95
+    },
+    "thresholds": {
+      "factual_accuracy": 90,
+      "pronunciation": 95,
+      "marketing": 80,
+      "sales": 75,
+      "platform_fit": 80,
+      "visual": 78,
+      "overall": 85
+    },
+    "audio_reports": {
+      "youtube_shorts": {
+        "platform": "youtube_shorts",
+        "passed": true,
+        "expected_spoken_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "transcript": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "similarity": 1.0,
+        "average_logprob": -0.0856,
+        "critical_terms": [],
+        "missing_critical_terms": [],
+        "blockers": [],
+        "transcription_model": "whisper-large-v3",
+        "orthographic_pronunciation_alias_proofs": [],
+        "number_orthographic_alias_proofs": [],
+        "pronunciation_contract_version": "de-acronym-letter-names-v2",
+        "strict_number_audit": {
+          "required": false,
+          "visible_script": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "tts_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {},
+          "transcription_prompt_used": false,
+          "version": "v2-unbiased-number-proof-compressed-audio"
+        },
+        "raw_similarity_before_safe_normalization": 1.0,
+        "safe_orthographic_contract_normalization": true,
+        "normalized_expected_spoken_text": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "normalized_transcript": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "minimum_transcript_similarity": 0.82,
+        "request_bound_voice_quality_contract": false
+      },
+      "tiktok": {
+        "platform": "tiktok",
+        "passed": true,
+        "expected_spoken_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "transcript": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "similarity": 0.9818,
+        "average_logprob": -0.074,
+        "critical_terms": [],
+        "missing_critical_terms": [],
+        "blockers": [],
+        "transcription_model": "whisper-large-v3",
+        "orthographic_pronunciation_alias_proofs": [],
+        "number_orthographic_alias_proofs": [],
+        "pronunciation_contract_version": "de-acronym-letter-names-v2",
+        "strict_number_audit": {
+          "required": false,
+          "visible_script": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "tts_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+          "number_replacements": {},
+          "transcription_prompt_used": false,
+          "version": "v2-unbiased-number-proof-compressed-audio"
+        },
+        "raw_similarity_before_safe_normalization": 0.9808,
+        "safe_orthographic_contract_normalization": true,
+        "normalized_expected_spoken_text": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "normalized_transcript": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "minimum_transcript_similarity": 0.82,
+        "request_bound_voice_quality_contract": false
+      }
+    },
+    "marketing_review": {
+      "factual_accuracy": {
+        "score": 100.0,
+        "blockers": [],
+        "findings": [
+          "Alle getätigten Tatsachenbehauptungen (Scheitern der ersten Tarifrunde in Emden, Ziel der Senkung von Arbeitskosten, Forderung nach Nullrunden, Betroffenheit deutscher Standorte sowie Debatte um Zulagen und Arbeitszeiten) sind direkt durch die gelieferten Quellen (NDR, Deutschlandfunk) und den Quellenkontext gestützt."
+        ]
+      },
+      "pronunciation_interpretation": {
+        "score": 98.0,
+        "blockers": [],
+        "findings": [
+          "Die Audio-Transkripte stimmen inhaltlich exakt mit dem sichtbaren Skript überein. Die geringfügige Abweichung bei TikTok ('Folge dem Kanal' statt 'Folge diesem Kanal') ist grammatikalisch korrekt und stellt keinen sinnentstellenden Fehler dar."
+        ]
+      },
+      "marketing_effectiveness": {
+        "score": 90.0,
+        "blockers": [],
+        "findings": [
+          "Starker Hook, der das Kernereignis sofort auf den Punkt bringt.",
+          "Klarer Zuschauer-Nutzen durch Einordnung der personellen und finanziellen Auswirkungen auf die Beschäftigten.",
+          "Die zentrale Frage wird im Video beantwortet."
+        ]
+      },
+      "sales_effectiveness": {
+        "score": 92.0,
+        "blockers": [],
+        "findings": [
+          "Plattformgerechte Handlungsaufforderungen ('Abonniere diesen Kanal' auf YouTube, 'Folge diesem Kanal' auf TikTok).",
+          "Klares Wertversprechen (verifizierte Einordnung und konkrete nächste Schritte) als natürlicher Follow-Grund ohne manipulativen Druck."
+        ]
+      },
+      "platform_fit": {
+        "score": 95.0,
+        "blockers": [],
+        "findings": [
+          "Spezifische, plattformgerechte Titel, Captions und Hashtags vorhanden.",
+          "Die Formatierung entspricht den Anforderungen von YouTube Shorts und TikTok."
+        ]
+      },
+      "overall_score": 95.0,
+      "approval_recommendation": "PASS",
+      "blockers": [],
+      "strengths": [
+        "Hervorragende faktenbasierte Übereinstimmung mit den gelieferten Quellen",
+        "Prägnanter Einstieg und klarer Informationsnutzen für betroffene Beschäftigte",
+        "Saubere Trennung der plattformspezifischen CTAs"
+      ],
+      "repair_instructions": [],
+      "score_scale_normalized": true,
+      "provider_model_fallback": {
+        "selected_model": "gemini-3.5-flash-lite",
+        "attempted_models": [
+          "gemini-3.5-flash",
+          "gemini-3.6-flash",
+          "gemini-3.5-flash-lite"
+        ],
+        "provider_failures_before_success": [
+          "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h36m0.346496093s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"t",
+          "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h36m0.233515239s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"t"
+        ],
+        "same_prompt": true,
+        "quality_gate_weakened": false
+      }
+    },
+    "visual_review": {
+      "score": 92,
+      "passed": true,
+      "blockers": [],
+      "findings": [
+        "Alle Szenen zeigen klare, hochauflösende Bildqualität ohne erkennbare Renderfehler.",
+        "Die visuellen Motive passen durchgehend zum Tarif- und Arbeitskontext sowie zum gesprochenen Inhalt.",
+        "Die Textoverlays sind auf mobilen Endgeräten gut lesbar platziert und überdecken keine zentralen Bildinhalte.",
+        "Die Sequenzen wirken glaubwürdig und unterstützen die Vertrauensbildung im Short-Form-Format."
+      ],
+      "marketing_visual_strengths": [
+        "Starke Kombination aus Büro- und Fabrikaufnahmen, die den Kontext der VW-Tarifrunde visuell untermauern.",
+        "Gezielte Verwendung von Symbolbildern (wie Notizbuch und Kalender) zur Unterstützung von Handlungsaufforderungen.",
+        "Hohe visuelle Konsistenz zwischen den Plattformen YouTube Shorts und TikTok."
+      ],
+      "scene_checks": [
+        {
+          "platform": "youtube_shorts",
+          "scene": 1,
+          "visible_subject": "Gruppe von Business-Personen in einem modernen Besprechungsraum mit Dokumenten",
+          "relevant": true,
+          "distinct": true
+        },
+        {
+          "platform": "youtube_shorts",
+          "scene": 2,
+          "visible_subject": "Jüngerer Mann in Lederjacke beim Lesen von Dokumenten am Tisch",
+          "relevant": true,
+          "distinct": true
+        },
+        {
+          "platform": "youtube_shorts",
+          "scene": 3,
+          "visible_subject": "Arbeiter an einer Produktionsstraße in einer Fabrikhalle",
+          "relevant": true,
+          "distinct": true
+        },
+        {
+          "platform": "youtube_shorts",
+          "scene": 4,
+          "visible_subject": "Nahaufnahme einer Hand beim Schreiben in ein Notizbuch neben einer Tastatur",
+          "relevant": true,
+          "distinct": true
+        },
+        {
+          "platform": "youtube_shorts",
+          "scene": 5,
+          "visible_subject": "Nahaufnahme eines Tischkalenders, der umgeblättert wird",
+          "relevant": true,
+          "distinct": true
+        },
+        {
+          "platform": "youtube_shorts",
+          "scene": 6,
+          "visible_subject": "Außenaufnahme eines Werksgeländes mit rauchendem Schornstein und Autoteil",
+          "relevant": true,
+          "distinct": true
+        },
+        {
+          "platform": "tiktok",
+          "scene": 1,
+          "visible_subject": "Zwei Männer in einem Besprechungsraum im aktiven Gespräch",
+          "relevant": true,
+          "distinct": true
+        },
+        {
+          "platform": "tiktok",
+          "scene": 2,
+          "visible_subject": "Frau mit Brille und Blazer beim Prüfen von Unterlagen im Büro",
+          "relevant": true,
+          "distinct": true
+        },
+        {
+          "platform": "tiktok",
+          "scene": 3,
+          "visible_subject": "Arbeiter in einer Werks- oder Produktionshalle an Maschinen",
+          "relevant": true,
+          "distinct": true
+        },
+        {
+          "platform": "tiktok",
+          "scene": 4,
+          "visible_subject": "Hand mit Füllfederhalter beim Ausfüllen einer Checkliste",
+          "relevant": true,
+          "distinct": true
+        },
+        {
+          "platform": "tiktok",
+          "scene": 5,
+          "visible_subject": "Tischkalender mit Fokus auf ein Datum",
+          "relevant": true,
+          "distinct": true
+        },
+        {
+          "platform": "tiktok",
+          "scene": 6,
+          "visible_subject": "Industriegelände mit Schornstein und Industriegebäude unter blauem Himmel",
+          "relevant": true,
+          "distinct": true
+        }
+      ],
+      "cinematic_export_evidence": {},
+      "scene_export_sha256": {
+        "youtube_shorts": "58d94c5f0ced521f1765da91bdbdc9f017a2184526e379392c2473c7b606cf0b",
+        "tiktok": "ac7ce297d75b075d50ecfbfb138aaaec2ebbeff822e1cec1fff49d0cb349c9a4"
+      },
+      "provider": "gemini:gemini-3.5-flash-lite",
+      "reviewed_frames": [
+        "youtube_shorts-scene-01.jpg",
+        "youtube_shorts-scene-02.jpg",
+        "youtube_shorts-scene-03.jpg",
+        "youtube_shorts-scene-04.jpg",
+        "youtube_shorts-scene-05.jpg",
+        "youtube_shorts-scene-06.jpg",
+        "tiktok-scene-01.jpg",
+        "tiktok-scene-02.jpg",
+        "tiktok-scene-03.jpg",
+        "tiktok-scene-04.jpg",
+        "tiktok-scene-05.jpg",
+        "tiktok-scene-06.jpg"
+      ],
+      "provider_model_fallback": {
+        "selected_model": "gemini-3.5-flash-lite",
+        "attempted_models": [
+          "gemini-3.5-flash",
+          "gemini-3.6-flash",
+          "gemini-3.5-flash-lite"
+        ],
+        "provider_failures_before_success": [
+          "gemini-3.5-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See",
+          "gemini-3.6-flash:RATE_LIMITED:provider-failed: Gemini Visual-Audit HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See"
+        ],
+        "same_frames_and_prompt": true,
+        "quality_gate_weakened": false,
+        "fail_closed": true
+      }
+    },
+    "objective_conversion_review": {
+      "passed": true,
+      "score": 83,
+      "action_ok": true,
+      "platform_specific_actions_ok": true,
+      "youtube_action_ok": true,
+      "tiktok_action_ok": true,
+      "required_platforms_present": true,
+      "benefit_hits": [
+        "verifiziert",
+        "konkrete schritte"
+      ],
+      "length_words": 9,
+      "length_ok": true,
+      "consistent_across_platforms": true,
+      "semantic_tail_consistent": true,
+      "platform_contracts_ok": true,
+      "manipulative_pressure": false,
+      "ctas": [
+        "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+      ],
+      "ctas_by_platform": {
+        "youtube_shorts": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tiktok": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+      },
+      "semantic_tails": [
+        "für verifizierte einordnung und konkrete schritte.",
+        "für verifizierte einordnung und konkrete schritte."
+      ],
+      "quality_gate_weakened": false
+    },
+    "blockers": [],
+    "strengths": [
+      "Hervorragende faktenbasierte Übereinstimmung mit den gelieferten Quellen",
+      "Prägnanter Einstieg und klarer Informationsnutzen für betroffene Beschäftigte",
+      "Saubere Trennung der plattformspezifischen CTAs"
+    ],
+    "repair_instructions": [],
+    "providers": {
+      "marketing": "gemini:gemini-3.5-flash-lite",
+      "visual": "gemini:gemini-3.5-flash-lite",
+      "audio": "groq:whisper-large-v3-objective-score",
+      "conversion": "deterministic-cta-benefit-gate-v1"
+    },
+    "human_review_allowed": true,
+    "quality_gates_weakened": false,
+    "score_calibration": {
+      "provider_scales": "0-1-or-0-10-or-0-100-to-percent",
+      "pronunciation": "objective-transcript-similarity-and-confidence",
+      "sales": "max-independent-judge-and-objective-cta-benefit-score",
+      "overall": "fixed-weight-evidence-score",
+      "marketing_provider_order": "gemini-retry-first-groq-fallback",
+      "visual_provider_order": "configured-gemini-then-3.6-flash-then-3.5-flash-lite"
+    }
+  }
+}
