@@ -5,11 +5,11 @@
   "scores": {
     "factual_accuracy": 100,
     "pronunciation": 100,
-    "marketing": 90,
-    "sales": 92,
+    "marketing": 92,
+    "sales": 90,
     "platform_fit": 95,
-    "visual": 92,
-    "overall": 95
+    "visual": 100,
+    "overall": 96
   },
   "thresholds": {
     "factual_accuracy": 90,
@@ -24,10 +24,10 @@
     "youtube_shorts": {
       "platform": "youtube_shorts",
       "passed": true,
-      "expected_spoken_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "expected_spoken_text": "Flixtrain-Tickets werden im Dezember auch im DB Navigator buchbar. Durch die Vertriebsvereinbarung entfällt der zusätzliche Wechsel zur Flixtrain-Webseite. Betroffen sind Reisende, die Fernzüge mehrerer Unternehmen kombinieren. Für dich bleiben dabei zwei getrennte Beförderungsverträge bestehen. Prüfe vor der Buchung die Bedingungen für deinen Anschluss zusätzlich besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "FlixTrain-Tickets werden im Dezember auch im DB Navigator buchbar. Durch die Vertriebsvereinbarung entfällt der zusätzliche Wechsel zur FlixTrain-Webseite. Betroffen sind Reisende, die Fernzüge mehrerer Unternehmen kombinieren. Für dich bleiben dabei zwei getrennte Beförderungsverträge bestehen. Prüfe vor der Buchung die Bedingungen für deinen Anschluss zusätzlich besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
       "similarity": 1.0,
-      "average_logprob": -0.0856,
+      "average_logprob": -0.0521,
       "critical_terms": [],
       "missing_critical_terms": [],
       "blockers": [],
@@ -37,26 +37,26 @@
       "pronunciation_contract_version": "de-acronym-letter-names-v2",
       "strict_number_audit": {
         "required": false,
-        "visible_script": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "visible_script": "Flixtrain-Tickets werden im Dezember auch im DB Navigator buchbar. Durch die Vertriebsvereinbarung entfällt der zusätzliche Wechsel zur Flixtrain-Webseite. Betroffen sind Reisende, die Fernzüge mehrerer Unternehmen kombinieren. Für dich bleiben dabei zwei getrennte Beförderungsverträge bestehen. Prüfe vor der Buchung die Bedingungen für deinen Anschluss zusätzlich besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Flixtrain-Tickets werden im Dezember auch im DB Navigator buchbar. Durch die Vertriebsvereinbarung entfällt der zusätzliche Wechsel zur Flixtrain-Webseite. Betroffen sind Reisende, die Fernzüge mehrerer Unternehmen kombinieren. Für dich bleiben dabei zwei getrennte Beförderungsverträge bestehen. Prüfe vor der Buchung die Bedingungen für deinen Anschluss zusätzlich besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
         "number_replacements": {},
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
       "raw_similarity_before_safe_normalization": 1.0,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_expected_spoken_text": "Flixtrain-Tickets werden im Dezember auch im Deh Beh Navigator buchbar. Durch die Vertriebsvereinbarung entfällt der zusätzliche Wechsel zur Flixtrain-Webseite. Betroffen sind Reisende, die Fernzüge mehrerer Unternehmen kombinieren. Für dich bleiben dabei zwei getrennte Beförderungsverträge bestehen. Prüfe vor der Buchung die Bedingungen für deinen Anschluss zusätzlich besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "FlixTrain-Tickets werden im Dezember auch im Deh Beh Navigator buchbar. Durch die Vertriebsvereinbarung entfällt der zusätzliche Wechsel zur FlixTrain-Webseite. Betroffen sind Reisende, die Fernzüge mehrerer Unternehmen kombinieren. Für dich bleiben dabei zwei getrennte Beförderungsverträge bestehen. Prüfe vor der Buchung die Bedingungen für deinen Anschluss zusätzlich besonders sorgfältig. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
       "minimum_transcript_similarity": 0.82,
       "request_bound_voice_quality_contract": false
     },
     "tiktok": {
       "platform": "tiktok",
       "passed": true,
-      "expected_spoken_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "transcript": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "similarity": 0.9818,
-      "average_logprob": -0.074,
+      "expected_spoken_text": "Flixtrain-Tickets werden im Dezember auch im DB Navigator buchbar. Durch die Vertriebsvereinbarung entfällt der zusätzliche Wechsel zur Flixtrain-Webseite. Betroffen sind Reisende, die Fernzüge mehrerer Unternehmen kombinieren. Für dich bleiben dabei zwei getrennte Beförderungsverträge bestehen. Prüfe vor der Buchung die Bedingungen für deinen Anschluss zusätzlich besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "FlixTrain-Tickets werden im Dezember auch im DB Navigator buchbar. Durch die Vertriebsvereinbarung entfällt der zusätzliche Wechsel zur FlixTrain-Webseite. Betroffen sind Reisende, die Fernzüge mehrerer Unternehmen kombinieren. Für dich bleiben dabei zwei getrennte Beförderungsverträge bestehen. Prüfe vor der Buchung die Bedingungen für deinen Anschluss zusätzlich besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 0.9828,
+      "average_logprob": -0.0606,
       "critical_terms": [],
       "missing_critical_terms": [],
       "blockers": [],
@@ -66,16 +66,16 @@
       "pronunciation_contract_version": "de-acronym-letter-names-v2",
       "strict_number_audit": {
         "required": false,
-        "visible_script": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
-        "tts_text": "Die erste VW-Tarifrunde in Emden endete ohne Ergebnis. Weil VW seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen AG. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "visible_script": "Flixtrain-Tickets werden im Dezember auch im DB Navigator buchbar. Durch die Vertriebsvereinbarung entfällt der zusätzliche Wechsel zur Flixtrain-Webseite. Betroffen sind Reisende, die Fernzüge mehrerer Unternehmen kombinieren. Für dich bleiben dabei zwei getrennte Beförderungsverträge bestehen. Prüfe vor der Buchung die Bedingungen für deinen Anschluss zusätzlich besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Flixtrain-Tickets werden im Dezember auch im DB Navigator buchbar. Durch die Vertriebsvereinbarung entfällt der zusätzliche Wechsel zur Flixtrain-Webseite. Betroffen sind Reisende, die Fernzüge mehrerer Unternehmen kombinieren. Für dich bleiben dabei zwei getrennte Beförderungsverträge bestehen. Prüfe vor der Buchung die Bedingungen für deinen Anschluss zusätzlich besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
         "number_replacements": {},
         "transcription_prompt_used": false,
         "version": "v2-unbiased-number-proof-compressed-audio"
       },
-      "raw_similarity_before_safe_normalization": 0.9808,
+      "raw_similarity_before_safe_normalization": 0.9825,
       "safe_orthographic_contract_normalization": true,
-      "normalized_expected_spoken_text": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
-      "normalized_transcript": "Die erste Fau Weh Tarifrunde in Emden endete ohne Ergebnis. Weil Fau Weh seine Arbeitskosten senken will, fordert der Konzern Nullrunden. Betroffen sind Beschäftigte an deutschen Standorten der Volkswagen Ah Geh. Für dich stehen Zulagen und Arbeitszeit zur Debatte. Achte auf die Ergebnisse der nächsten Verhandlungsrunde. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_expected_spoken_text": "Flixtrain-Tickets werden im Dezember auch im Deh Beh Navigator buchbar. Durch die Vertriebsvereinbarung entfällt der zusätzliche Wechsel zur Flixtrain-Webseite. Betroffen sind Reisende, die Fernzüge mehrerer Unternehmen kombinieren. Für dich bleiben dabei zwei getrennte Beförderungsverträge bestehen. Prüfe vor der Buchung die Bedingungen für deinen Anschluss zusätzlich besonders sorgfältig. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "FlixTrain-Tickets werden im Dezember auch im Deh Beh Navigator buchbar. Durch die Vertriebsvereinbarung entfällt der zusätzliche Wechsel zur FlixTrain-Webseite. Betroffen sind Reisende, die Fernzüge mehrerer Unternehmen kombinieren. Für dich bleiben dabei zwei getrennte Beförderungsverträge bestehen. Prüfe vor der Buchung die Bedingungen für deinen Anschluss zusätzlich besonders sorgfältig. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
       "minimum_transcript_similarity": 0.82,
       "request_bound_voice_quality_contract": false
     }
@@ -85,48 +85,50 @@
       "score": 100.0,
       "blockers": [],
       "findings": [
-        "Alle getätigten Tatsachenbehauptungen (Scheitern der ersten Tarifrunde in Emden, Ziel der Senkung von Arbeitskosten, Forderung nach Nullrunden, Betroffenheit deutscher Standorte sowie Debatte um Zulagen und Arbeitszeiten) sind direkt durch die gelieferten Quellen (NDR, Deutschlandfunk) und den Quellenkontext gestützt."
+        "Alle Tatsachenbehauptungen im Skript und Audio-Transkript werden vollständig durch die gelieferten Quellen (Tagesschau, PRO BAHN) und den Quellenkontext gestützt."
       ]
     },
     "pronunciation_interpretation": {
       "score": 98.0,
       "blockers": [],
       "findings": [
-        "Die Audio-Transkripte stimmen inhaltlich exakt mit dem sichtbaren Skript überein. Die geringfügige Abweichung bei TikTok ('Folge dem Kanal' statt 'Folge diesem Kanal') ist grammatikalisch korrekt und stellt keinen sinnentstellenden Fehler dar."
+        "Das Audio-Transkript stimmt inhaltlich exakt mit dem sichtbaren Skript überein.",
+        "Die geringfügige Groß- und Kleinschreibungsschreibung bei 'FlixTrain' bzw. 'Folge dem Kanal' (TikTok) beeinträchtigt die Verständlichkeit in keiner Weise und enthält keine Grammatikfehler."
       ]
     },
     "marketing_effectiveness": {
-      "score": 90.0,
-      "blockers": [],
-      "findings": [
-        "Starker Hook, der das Kernereignis sofort auf den Punkt bringt.",
-        "Klarer Zuschauer-Nutzen durch Einordnung der personellen und finanziellen Auswirkungen auf die Beschäftigten.",
-        "Die zentrale Frage wird im Video beantwortet."
-      ]
-    },
-    "sales_effectiveness": {
       "score": 92.0,
       "blockers": [],
       "findings": [
-        "Plattformgerechte Handlungsaufforderungen ('Abonniere diesen Kanal' auf YouTube, 'Folge diesem Kanal' auf TikTok).",
-        "Klares Wertversprechen (verifizierte Einordnung und konkrete nächste Schritte) als natürlicher Follow-Grund ohne manipulativen Druck."
+        "Der Hook greift das Kernereignis (Flixtrain im DB Navigator) präzise in den ersten Sekunden auf.",
+        "Der Zuschauer-Nutzen (Verständnis über getrennte Verträge und notwendige Anschlussprüfung) wird klar und ohne Clickbait vermittelt.",
+        "Die zentrale Frage des Cinematic Briefs / der Retention-Vorgaben wird im Video vollständig aufgelöst."
+      ]
+    },
+    "sales_effectiveness": {
+      "score": 90.0,
+      "blockers": [],
+      "findings": [
+        "Die Call-to-Action ist plattformgerecht (YouTube: 'Abonniere diesen Kanal', TikTok: 'Folge diesem Kanal').",
+        "Der Grund für das Abonnement ist logisch an den Informationsnutzen und die verifizierte Einordnung geknüpft.",
+        "Es wird kein künstlicher oder manipulativer Druck aufgebaut."
       ]
     },
     "platform_fit": {
       "score": 95.0,
       "blockers": [],
       "findings": [
-        "Spezifische, plattformgerechte Titel, Captions und Hashtags vorhanden.",
-        "Die Formatierung entspricht den Anforderungen von YouTube Shorts und TikTok."
+        "Die Formate für YouTube Shorts und TikTok sind sauber getrennt und plattformgerecht formuliert.",
+        "Titel, Captions und Hashtags sind sinnvoll und entsprechen den Vorgaben für Reichweite und Einordnung."
       ]
     },
     "overall_score": 95.0,
     "approval_recommendation": "PASS",
     "blockers": [],
     "strengths": [
-      "Hervorragende faktenbasierte Übereinstimmung mit den gelieferten Quellen",
-      "Prägnanter Einstieg und klarer Informationsnutzen für betroffene Beschäftigte",
-      "Saubere Trennung der plattformspezifischen CTAs"
+      "Hervorragende Faktenstreue basierend auf echten redaktionellen Quellen.",
+      "Saubere Ansprache des Nutzers mit klarem Mehrwert und transparenter Einordnung komplexer Beförderungsverträge.",
+      "Plattformgerechte CTAs für YouTube und TikTok ohne künstlichen Druck."
     ],
     "repair_instructions": [],
     "score_scale_normalized": true,
@@ -138,118 +140,117 @@
         "gemini-3.5-flash-lite"
       ],
       "provider_failures_before_success": [
-        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h36m0.346496093s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"t",
-        "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 21h36m0.233515239s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"t"
+        "gemini-3.5-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.5-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 13h20m31.411013048s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"",
+        "gemini-3.6-flash:RuntimeError:provider-failed: Gemini Marketing-Audit gemini-3.6-flash HTTP 429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 13h20m31.09184017s.\", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"t"
       ],
       "same_prompt": true,
       "quality_gate_weakened": false
     }
   },
   "visual_review": {
-    "score": 92,
+    "score": 100,
     "passed": true,
     "blockers": [],
     "findings": [
-      "Alle Szenen zeigen klare, hochauflösende Bildqualität ohne erkennbare Renderfehler.",
-      "Die visuellen Motive passen durchgehend zum Tarif- und Arbeitskontext sowie zum gesprochenen Inhalt.",
-      "Die Textoverlays sind auf mobilen Endgeräten gut lesbar platziert und überdecken keine zentralen Bildinhalte.",
-      "Die Sequenzen wirken glaubwürdig und unterstützen die Vertrauensbildung im Short-Form-Format."
+      "Alle Szenen zeigen klare, hochauflösende Aufnahmen mit gut lesbaren Texten im unteren Drittel.",
+      "Die visuellen Elemente unterstützen den gesprochenen Inhalt präzise und thematisch passend.",
+      "Keine technischen Renderfehler oder irreführende Symbole erkennbar."
     ],
     "marketing_visual_strengths": [
-      "Starke Kombination aus Büro- und Fabrikaufnahmen, die den Kontext der VW-Tarifrunde visuell untermauern.",
-      "Gezielte Verwendung von Symbolbildern (wie Notizbuch und Kalender) zur Unterstützung von Handlungsaufforderungen.",
-      "Hohe visuelle Konsistenz zwischen den Plattformen YouTube Shorts und TikTok."
+      "Hohe visuelle Glaubwürdigkeit durch authentische Bahnhofs- und Zug-Szenen.",
+      "Klare Lesbarkeit der Untertitel auf allen Plattformen.",
+      "Starke Markenkonsistenz und saubere Übergänge zwischen den Szenen."
     ],
     "scene_checks": [
       {
         "platform": "youtube_shorts",
-        "scene": 1,
-        "visible_subject": "Gruppe von Business-Personen in einem modernen Besprechungsraum mit Dokumenten",
+        "scene": "1",
+        "visible_subject": "Gleisbett und Bahnsteig bei Nacht von oben",
         "relevant": true,
         "distinct": true
       },
       {
         "platform": "youtube_shorts",
-        "scene": 2,
-        "visible_subject": "Jüngerer Mann in Lederjacke beim Lesen von Dokumenten am Tisch",
+        "scene": "2",
+        "visible_subject": "Personen auf dem Bahnsteig vor einem Zug",
         "relevant": true,
         "distinct": true
       },
       {
         "platform": "youtube_shorts",
-        "scene": 3,
-        "visible_subject": "Arbeiter an einer Produktionsstraße in einer Fabrikhalle",
+        "scene": "3",
+        "visible_subject": "Gedränge in einem Zug oder am Bahnhof mit Person, die ein Smartphone bedient",
         "relevant": true,
         "distinct": true
       },
       {
         "platform": "youtube_shorts",
-        "scene": 4,
-        "visible_subject": "Nahaufnahme einer Hand beim Schreiben in ein Notizbuch neben einer Tastatur",
+        "scene": "4",
+        "visible_subject": "Zugtüren von außen mit Spiegelung",
         "relevant": true,
         "distinct": true
       },
       {
         "platform": "youtube_shorts",
-        "scene": 5,
-        "visible_subject": "Nahaufnahme eines Tischkalenders, der umgeblättert wird",
+        "scene": "5",
+        "visible_subject": "Bahnsteigdach mit Hinweisschild 'B' und Zug im Hintergrund",
         "relevant": true,
         "distinct": true
       },
       {
         "platform": "youtube_shorts",
-        "scene": 6,
-        "visible_subject": "Außenaufnahme eines Werksgeländes mit rauchendem Schornstein und Autoteil",
+        "scene": "6",
+        "visible_subject": "Bahnhofshalle mit Reisenden im Vordergrund von hinten",
         "relevant": true,
         "distinct": true
       },
       {
         "platform": "tiktok",
-        "scene": 1,
-        "visible_subject": "Zwei Männer in einem Besprechungsraum im aktiven Gespräch",
+        "scene": "1",
+        "visible_subject": "Gleisbett und Bahnsteig bei Nacht von oben",
         "relevant": true,
         "distinct": true
       },
       {
         "platform": "tiktok",
-        "scene": 2,
-        "visible_subject": "Frau mit Brille und Blazer beim Prüfen von Unterlagen im Büro",
+        "scene": "2",
+        "visible_subject": "Personen auf dem Bahnsteig vor einem Zug",
         "relevant": true,
         "distinct": true
       },
       {
         "platform": "tiktok",
-        "scene": 3,
-        "visible_subject": "Arbeiter in einer Werks- oder Produktionshalle an Maschinen",
+        "scene": "3",
+        "visible_subject": "Gedränge in einem Zug oder am Bahnhof mit Person, die ein Smartphone bedient",
         "relevant": true,
         "distinct": true
       },
       {
         "platform": "tiktok",
-        "scene": 4,
-        "visible_subject": "Hand mit Füllfederhalter beim Ausfüllen einer Checkliste",
+        "scene": "4",
+        "visible_subject": "Zugtüren von außen mit Spiegelung",
         "relevant": true,
         "distinct": true
       },
       {
         "platform": "tiktok",
-        "scene": 5,
-        "visible_subject": "Tischkalender mit Fokus auf ein Datum",
+        "scene": "5",
+        "visible_subject": "Bahnsteigdach mit Hinweisschild 'B' und Zug im Hintergrund",
         "relevant": true,
         "distinct": true
       },
       {
         "platform": "tiktok",
-        "scene": 6,
-        "visible_subject": "Industriegelände mit Schornstein und Industriegebäude unter blauem Himmel",
+        "scene": "6",
+        "visible_subject": "Bahnhofshalle mit Reisenden im Vordergrund von hinten",
         "relevant": true,
         "distinct": true
       }
     ],
     "cinematic_export_evidence": {},
     "scene_export_sha256": {
-      "youtube_shorts": "58d94c5f0ced521f1765da91bdbdc9f017a2184526e379392c2473c7b606cf0b",
-      "tiktok": "ac7ce297d75b075d50ecfbfb138aaaec2ebbeff822e1cec1fff49d0cb349c9a4"
+      "youtube_shorts": "25de7da6895432d536eec0245947724cdbefb9d3629cd2d3da79563a045e4719",
+      "tiktok": "fb2677d4a546e4cc401920d982e224825ac21213844aed79e71c576f35d59da0"
     },
     "provider": "gemini:gemini-3.5-flash-lite",
     "reviewed_frames": [
@@ -316,9 +317,9 @@
   },
   "blockers": [],
   "strengths": [
-    "Hervorragende faktenbasierte Übereinstimmung mit den gelieferten Quellen",
-    "Prägnanter Einstieg und klarer Informationsnutzen für betroffene Beschäftigte",
-    "Saubere Trennung der plattformspezifischen CTAs"
+    "Hervorragende Faktenstreue basierend auf echten redaktionellen Quellen.",
+    "Saubere Ansprache des Nutzers mit klarem Mehrwert und transparenter Einordnung komplexer Beförderungsverträge.",
+    "Plattformgerechte CTAs für YouTube und TikTok ohne künstlichen Druck."
   ],
   "repair_instructions": [],
   "providers": {
