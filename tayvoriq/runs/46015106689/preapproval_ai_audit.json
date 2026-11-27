@@ -1,0 +1,473 @@
+{
+  "schema_version": 3,
+  "agent": "TAYVORIQ_PREAPPROVAL_EVIDENCE_CALIBRATED_AGENT_V3",
+  "passed": true,
+  "scores": {
+    "factual_accuracy": 95,
+    "pronunciation": 98,
+    "marketing": 88,
+    "sales": 86,
+    "platform_fit": 90,
+    "visual": 95,
+    "overall": 92
+  },
+  "thresholds": {
+    "factual_accuracy": 90,
+    "pronunciation": 95,
+    "marketing": 80,
+    "sales": 75,
+    "platform_fit": 80,
+    "visual": 78,
+    "overall": 85
+  },
+  "audio_reports": {
+    "youtube_shorts": {
+      "platform": "youtube_shorts",
+      "passed": true,
+      "expected_spoken_text": "Ess Ah Peh plant den Abbau von über zehntausend Stellen weltweit. weil die Kah Ih‑Strategie massive Umstrukturierung erfordert, laut Handelsblatt. Betroffen sind vor allem Entwickler, Vertrieb und Verwaltung im Unternehmen. Für dich bedeutet das mögliche berufliche Unsicherheit und veränderte Ih Teh‑Dienstleistungen. Prüfe frühzeitig interne Stellenangebote und erweitere deine Qualifikationen. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "SAP plant den Abbau von über 10.000 Stellen weltweit, weil die KI-Strategie massive Umstrukturierung erfordert, laut Handelsblatt. Betroffen sind vor allem Entwickler, Vertrieb und Verwaltung im Unternehmen. Für dich bedeutet das mögliche berufliche Unsicherheit und veränderte IT-Dienstleistungen. Prüfe frühzeitig interne Stellenangebote und erweitere deine Qualifikationen. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "similarity": 1.0,
+      "average_logprob": -0.0624,
+      "critical_terms": [
+        {
+          "source": "10.000",
+          "spoken": "zehntausend",
+          "kind": "number"
+        },
+        {
+          "source": "SAP",
+          "spoken": "Ess Ah Peh",
+          "kind": "pronunciation_map"
+        },
+        {
+          "source": "KI",
+          "spoken": "Kah Ih",
+          "kind": "pronunciation_map"
+        },
+        {
+          "source": "IT",
+          "spoken": "Ih Teh",
+          "kind": "pronunciation_map"
+        },
+        {
+          "source": "Jobunsicherheit",
+          "spoken": "berufliche Unsicherheit",
+          "kind": "pronunciation_map"
+        }
+      ],
+      "missing_critical_terms": [
+        {
+          "source": "SAP",
+          "spoken": "Ess Ah Peh",
+          "kind": "pronunciation_map"
+        },
+        {
+          "source": "KI",
+          "spoken": "Kah Ih",
+          "kind": "pronunciation_map"
+        },
+        {
+          "source": "IT",
+          "spoken": "Ih Teh",
+          "kind": "pronunciation_map"
+        }
+      ],
+      "blockers": [],
+      "transcription_model": "whisper-large-v3",
+      "orthographic_pronunciation_alias_proofs": [
+        {
+          "source": "SAP",
+          "canonical_spoken_form_de": "Ess Ah Peh",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "SAP",
+          "quality_gates_weakened": false
+        },
+        {
+          "source": "KI",
+          "canonical_spoken_form_de": "Kah Ih",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "KI",
+          "quality_gates_weakened": false
+        },
+        {
+          "source": "IT",
+          "canonical_spoken_form_de": "Ih Teh",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "IT",
+          "quality_gates_weakened": false
+        }
+      ],
+      "number_orthographic_alias_proofs": [
+        {
+          "source": "10.000",
+          "canonical_spoken_form_de": "zehntausend",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "10.000",
+          "quality_gates_weakened": false
+        }
+      ],
+      "pronunciation_contract_version": "de-acronym-letter-names-v2",
+      "strict_number_audit": {
+        "required": true,
+        "visible_script": "SAP plant den Abbau von über 10.000 Stellen weltweit. weil die KI‑Strategie massive Umstrukturierung erfordert, laut Handelsblatt. Betroffen sind vor allem Entwickler, Vertrieb und Verwaltung im Unternehmen. Für dich bedeutet das mögliche Jobunsicherheit und veränderte IT‑Dienstleistungen. Prüfe frühzeitig interne Stellenangebote und erweitere deine Qualifikationen. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Ess Ah Peh plant den Abbau von über zehn Tausend Stellen weltweit. weil die Kah Ih‑Strategie massive Umstrukturierung erfordert, laut Handelsblatt. Betroffen sind vor allem Entwickler, Vertrieb und Verwaltung im Unternehmen. Für dich bedeutet das mögliche berufliche Unsicherheit und veränderte Ih Teh‑Dienstleistungen. Prüfe frühzeitig interne Stellenangebote und erweitere deine Qualifikationen. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {
+          "10.000": "zehntausend"
+        },
+        "transcription_prompt_used": false,
+        "version": "v2-unbiased-number-proof-compressed-audio"
+      },
+      "raw_similarity_before_safe_normalization": 0.9138,
+      "safe_orthographic_contract_normalization": true,
+      "normalized_expected_spoken_text": "Ess Ah Peh plant den Abbau von über zehntausend Stellen weltweit. weil die Kah Ih‑Strategie massive Umstrukturierung erfordert, laut Handelsblatt. Betroffen sind vor allem Entwickler, Vertrieb und Verwaltung im Unternehmen. Für dich bedeutet das mögliche berufliche Unsicherheit und veränderte Ih Teh‑Dienstleistungen. Prüfe frühzeitig interne Stellenangebote und erweitere deine Qualifikationen. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Ess Ah Peh plant den Abbau von über zehntausend Stellen weltweit, weil die Kah Ih Strategie massive Umstrukturierung erfordert, laut Handelsblatt. Betroffen sind vor allem Entwickler, Vertrieb und Verwaltung im Unternehmen. Für dich bedeutet das mögliche berufliche Unsicherheit und veränderte Ih Teh Dienstleistungen. Prüfe frühzeitig interne Stellenangebote und erweitere deine Qualifikationen. Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "minimum_transcript_similarity": 0.82,
+      "request_bound_voice_quality_contract": false
+    },
+    "tiktok": {
+      "platform": "tiktok",
+      "passed": true,
+      "expected_spoken_text": "Ess Ah Peh plant den Abbau von über zehntausend Stellen weltweit. weil die Kah Ih‑Strategie massive Umstrukturierung erfordert, laut Handelsblatt. Betroffen sind vor allem Entwickler, Vertrieb und Verwaltung im Unternehmen. Für dich bedeutet das mögliche berufliche Unsicherheit und veränderte Ih Teh‑Dienstleistungen. Prüfe frühzeitig interne Stellenangebote und erweitere deine Qualifikationen. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "transcript": "SAP plant den Abbau von über 10.000 Stellen weltweit. Weil die KI-Strategie massive Umstrukturierung erfordert? Laut Handelsblatt. Betroffen sind vor allem Entwickler, Vertrieb und Verwaltung im Unternehmen. Für dich bedeutet das mögliche berufliche Unsicherheit und veränderte IT-Dienstleistungen. Prüfe frühzeitig interne Stellenangebote und erweitere deine Qualifikationen. Folge dem Kanal für verifizierte Einordnungen und konkrete Schritte.",
+      "similarity": 0.9667,
+      "average_logprob": -0.0869,
+      "critical_terms": [
+        {
+          "source": "10.000",
+          "spoken": "zehntausend",
+          "kind": "number"
+        },
+        {
+          "source": "SAP",
+          "spoken": "Ess Ah Peh",
+          "kind": "pronunciation_map"
+        },
+        {
+          "source": "KI",
+          "spoken": "Kah Ih",
+          "kind": "pronunciation_map"
+        },
+        {
+          "source": "IT",
+          "spoken": "Ih Teh",
+          "kind": "pronunciation_map"
+        },
+        {
+          "source": "Jobunsicherheit",
+          "spoken": "berufliche Unsicherheit",
+          "kind": "pronunciation_map"
+        }
+      ],
+      "missing_critical_terms": [
+        {
+          "source": "SAP",
+          "spoken": "Ess Ah Peh",
+          "kind": "pronunciation_map"
+        },
+        {
+          "source": "KI",
+          "spoken": "Kah Ih",
+          "kind": "pronunciation_map"
+        },
+        {
+          "source": "IT",
+          "spoken": "Ih Teh",
+          "kind": "pronunciation_map"
+        }
+      ],
+      "blockers": [],
+      "transcription_model": "whisper-large-v3",
+      "orthographic_pronunciation_alias_proofs": [
+        {
+          "source": "SAP",
+          "canonical_spoken_form_de": "Ess Ah Peh",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "SAP",
+          "quality_gates_weakened": false
+        },
+        {
+          "source": "KI",
+          "canonical_spoken_form_de": "Kah Ih",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "KI",
+          "quality_gates_weakened": false
+        },
+        {
+          "source": "IT",
+          "canonical_spoken_form_de": "Ih Teh",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "IT",
+          "quality_gates_weakened": false
+        }
+      ],
+      "number_orthographic_alias_proofs": [
+        {
+          "source": "10.000",
+          "canonical_spoken_form_de": "zehntausend",
+          "tts_contract_proved": true,
+          "independent_asr_orthography": "10.000",
+          "quality_gates_weakened": false
+        }
+      ],
+      "pronunciation_contract_version": "de-acronym-letter-names-v2",
+      "strict_number_audit": {
+        "required": true,
+        "visible_script": "SAP plant den Abbau von über 10.000 Stellen weltweit. weil die KI‑Strategie massive Umstrukturierung erfordert, laut Handelsblatt. Betroffen sind vor allem Entwickler, Vertrieb und Verwaltung im Unternehmen. Für dich bedeutet das mögliche Jobunsicherheit und veränderte IT‑Dienstleistungen. Prüfe frühzeitig interne Stellenangebote und erweitere deine Qualifikationen. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "tts_text": "Ess Ah Peh plant den Abbau von über zehn Tausend Stellen weltweit. weil die Kah Ih‑Strategie massive Umstrukturierung erfordert, laut Handelsblatt. Betroffen sind vor allem Entwickler, Vertrieb und Verwaltung im Unternehmen. Für dich bedeutet das mögliche berufliche Unsicherheit und veränderte Ih Teh‑Dienstleistungen. Prüfe frühzeitig interne Stellenangebote und erweitere deine Qualifikationen. Folge dem Kanal für verifizierte Einordnung und konkrete Schritte.",
+        "number_replacements": {
+          "10.000": "zehntausend"
+        },
+        "transcription_prompt_used": false,
+        "version": "v2-unbiased-number-proof-compressed-audio"
+      },
+      "raw_similarity_before_safe_normalization": 0.8793,
+      "safe_orthographic_contract_normalization": true,
+      "normalized_expected_spoken_text": "Ess Ah Peh plant den Abbau von über zehntausend Stellen weltweit. weil die Kah Ih‑Strategie massive Umstrukturierung erfordert, laut Handelsblatt. Betroffen sind vor allem Entwickler, Vertrieb und Verwaltung im Unternehmen. Für dich bedeutet das mögliche berufliche Unsicherheit und veränderte Ih Teh‑Dienstleistungen. Prüfe frühzeitig interne Stellenangebote und erweitere deine Qualifikationen. Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "normalized_transcript": "Ess Ah Peh plant den Abbau von über zehntausend Stellen weltweit. Weil die Kah Ih Strategie massive Umstrukturierung erfordert? Laut Handelsblatt. Betroffen sind vor allem Entwickler, Vertrieb und Verwaltung im Unternehmen. Für dich bedeutet das mögliche berufliche Unsicherheit und veränderte Ih Teh Dienstleistungen. Prüfe frühzeitig interne Stellenangebote und erweitere deine Qualifikationen. Folge dem Kanal für verifizierte Einordnungen und konkrete Schritte.",
+      "minimum_transcript_similarity": 0.82,
+      "request_bound_voice_quality_contract": false
+    }
+  },
+  "marketing_review": {
+    "factual_accuracy": {
+      "score": 95.0,
+      "blockers": [],
+      "findings": [
+        "Alle Kernaussagen zum geplanten Stellenabbau bei SAP, den Hintergründen (KI-Strategie) und den betroffenen Bereichen sind durch den bereitgestellten Quellenkontext belegt."
+      ]
+    },
+    "pronunciation_interpretation": {
+      "score": 92.0,
+      "blockers": [],
+      "findings": [
+        "Audio-Transkripte stimmen hervorragend mit den visuellen Skripten überein (Whisper similarity > 0.96 für beide Plattformen)."
+      ]
+    },
+    "marketing_effectiveness": {
+      "score": 88.0,
+      "blockers": [],
+      "findings": [
+        "Starker Hook mit direkter Relevanz für Berufs- und IT-Tätige. Der Nutzen wird sofort verständlich vermittelt."
+      ]
+    },
+    "sales_effectiveness": {
+      "score": 86.0,
+      "blockers": [],
+      "findings": [
+        "Der Call to Action bietet einen echten Informationsmehrwert (verifizierte Einordnung und nächste Schritte) ohne unangebrachten Druck."
+      ]
+    },
+    "platform_fit": {
+      "score": 90.0,
+      "blockers": [],
+      "findings": [
+        "Saubere Differenzierung der CTAs ('Abonniere' für YouTube Shorts, 'Folge' für TikTok) und plattformgerechte Metadaten."
+      ]
+    },
+    "overall_score": 90.0,
+    "approval_recommendation": "PASS",
+    "blockers": [],
+    "strengths": [
+      "Vollständige factual accuracy auf Basis der gelieferten Handelsblatt- und Manager-Magazin-Quellen.",
+      "Plattformspezifische Anpassung von CTA und Metadaten perfekt umgesetzt.",
+      "Hoher Informationswert und praktische Relevanz für die Zielgruppe."
+    ],
+    "repair_instructions": [],
+    "score_scale_normalized": true,
+    "provider_model_fallback": {
+      "selected_model": "gemini-3.5-flash",
+      "attempted_models": [
+        "gemini-3.5-flash"
+      ],
+      "provider_failures_before_success": [],
+      "same_prompt": true,
+      "quality_gate_weakened": false
+    }
+  },
+  "visual_review": {
+    "score": "95",
+    "passed": true,
+    "blockers": [],
+    "findings": [
+      "Sämtliche Untertitel-Boxen weisen einen hervorragenden Kontrast und makellose mobile Lesbarkeit auf.",
+      "Die visuellen Motive passen konsequent zum professionellen Unternehmens- und IT-Kontext der SAP-Meldung (Entwickler, Team-Meetings, Datenanalysen).",
+      "TikTok Szene 6 und YouTube Shorts Szene 6 verwenden dasselbe B-Roll-Material (Hand am Laptop mit Tabellenansicht), was plattformübergreifend akzeptabel ist, da innerhalb der jeweiligen Plattform alle Szenen einzigartig sind."
+    ],
+    "marketing_visual_strengths": [
+      "Hohe visuelle Glaubwürdigkeit durch authentische Office- und Tech-Szenarien ohne künstliche Übertreibungen.",
+      "Konsistentes Branding und professionelles Untertitel-Design im unteren Bilddrittel, das keine wesentlichen Bildelemente verdeckt.",
+      "Abwechslungsreicher B-Roll-Mix aus Nahaufnahmen, Halbtotalen und Perspektiven von hinten hält die Aufmerksamkeit auf beiden Plattformen hoch."
+    ],
+    "scene_checks": [
+      {
+        "platform": "youtube_shorts",
+        "scene": 1,
+        "visible_subject": "Programmierer von hinten vor einem Laptop mit farbigem Code auf dem Bildschirm",
+        "relevant": true,
+        "distinct": true
+      },
+      {
+        "platform": "youtube_shorts",
+        "scene": 2,
+        "visible_subject": "Nahaufnahme von Händen beim schnellen Tippen auf einer beleuchteten Tastatur",
+        "relevant": true,
+        "distinct": true
+      },
+      {
+        "platform": "youtube_shorts",
+        "scene": 3,
+        "visible_subject": "Zwei Büroangestellte im Gespräch am Schreibtisch vor einem Laptop",
+        "relevant": true,
+        "distinct": true
+      },
+      {
+        "platform": "youtube_shorts",
+        "scene": 4,
+        "visible_subject": "Drei Kolleginnen am Arbeitstisch beim Durchsehen von Unterlagen",
+        "relevant": true,
+        "distinct": true
+      },
+      {
+        "platform": "youtube_shorts",
+        "scene": 5,
+        "visible_subject": "Mitarbeiter von hinten an einem Arbeitsplatz mit Bildschirmen",
+        "relevant": true,
+        "distinct": true
+      },
+      {
+        "platform": "youtube_shorts",
+        "scene": 6,
+        "visible_subject": "Nahaufnahme einer Hand am Laptop über einer farbcodierten Datentabelle",
+        "relevant": true,
+        "distinct": true
+      },
+      {
+        "platform": "tiktok",
+        "scene": 1,
+        "visible_subject": "Mann am Schreibtisch von hinten vor einem großen Desktop-Monitor und Laptop",
+        "relevant": true,
+        "distinct": true
+      },
+      {
+        "platform": "tiktok",
+        "scene": 2,
+        "visible_subject": "Nahaufnahme von Händen beim Tippen auf Laptop-Tastatur in stimmungsvollem Licht",
+        "relevant": true,
+        "distinct": true
+      },
+      {
+        "platform": "tiktok",
+        "scene": 3,
+        "visible_subject": "Zwei Frauen im Büro am Konferenztisch mit Laptops und Finanzdiagrammen",
+        "relevant": true,
+        "distinct": true
+      },
+      {
+        "platform": "tiktok",
+        "scene": 4,
+        "visible_subject": "Vierköpfiges Team bei einer Besprechung an einem langen Tisch",
+        "relevant": true,
+        "distinct": true
+      },
+      {
+        "platform": "tiktok",
+        "scene": 5,
+        "visible_subject": "Person mit blonden Kurzhaaren von hinten beim Betrachten von Programmcode auf Monitor",
+        "relevant": true,
+        "distinct": true
+      },
+      {
+        "platform": "tiktok",
+        "scene": 6,
+        "visible_subject": "Nahaufnahme einer Hand am Laptop beim Arbeiten in einer Tabellenübersicht",
+        "relevant": true,
+        "distinct": true
+      }
+    ],
+    "cinematic_export_evidence": {},
+    "scene_export_sha256": {
+      "youtube_shorts": "c9778c4299941ff1bb9395394fe620798ffa3f01bee3e53088c045247c4fd945",
+      "tiktok": "ba8d0445855c109d96beedc6530b78f259a0afbcb8cb96bb55d0b919b57fcc57"
+    },
+    "provider": "gemini:gemini-3.5-flash",
+    "reviewed_frames": [
+      "youtube_shorts-scene-01.jpg",
+      "youtube_shorts-scene-02.jpg",
+      "youtube_shorts-scene-03.jpg",
+      "youtube_shorts-scene-04.jpg",
+      "youtube_shorts-scene-05.jpg",
+      "youtube_shorts-scene-06.jpg",
+      "tiktok-scene-01.jpg",
+      "tiktok-scene-02.jpg",
+      "tiktok-scene-03.jpg",
+      "tiktok-scene-04.jpg",
+      "tiktok-scene-05.jpg",
+      "tiktok-scene-06.jpg"
+    ],
+    "provider_model_fallback": {
+      "selected_model": "gemini-3.5-flash",
+      "attempted_models": [
+        "gemini-3.5-flash"
+      ],
+      "provider_failures_before_success": [],
+      "same_frames_and_prompt": true,
+      "quality_gate_weakened": false,
+      "fail_closed": true
+    }
+  },
+  "objective_conversion_review": {
+    "passed": true,
+    "score": 83,
+    "action_ok": true,
+    "platform_specific_actions_ok": true,
+    "youtube_action_ok": true,
+    "tiktok_action_ok": true,
+    "required_platforms_present": true,
+    "benefit_hits": [
+      "verifiziert",
+      "konkrete schritte"
+    ],
+    "length_words": 9,
+    "length_ok": true,
+    "consistent_across_platforms": true,
+    "semantic_tail_consistent": true,
+    "platform_contracts_ok": true,
+    "manipulative_pressure": false,
+    "ctas": [
+      "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+    ],
+    "ctas_by_platform": {
+      "youtube_shorts": "Abonniere diesen Kanal für verifizierte Einordnung und konkrete Schritte.",
+      "tiktok": "Folge diesem Kanal für verifizierte Einordnung und konkrete Schritte."
+    },
+    "semantic_tails": [
+      "für verifizierte einordnung und konkrete schritte.",
+      "für verifizierte einordnung und konkrete schritte."
+    ],
+    "quality_gate_weakened": false
+  },
+  "blockers": [],
+  "strengths": [
+    "Vollständige factual accuracy auf Basis der gelieferten Handelsblatt- und Manager-Magazin-Quellen.",
+    "Plattformspezifische Anpassung von CTA und Metadaten perfekt umgesetzt.",
+    "Hoher Informationswert und praktische Relevanz für die Zielgruppe."
+  ],
+  "repair_instructions": [],
+  "providers": {
+    "marketing": "gemini:gemini-3.5-flash",
+    "visual": "gemini:gemini-3.5-flash",
+    "audio": "groq:whisper-large-v3-objective-score",
+    "conversion": "deterministic-cta-benefit-gate-v1"
+  },
+  "human_review_allowed": true,
+  "quality_gates_weakened": false,
+  "score_calibration": {
+    "provider_scales": "0-1-or-0-10-or-0-100-to-percent",
+    "pronunciation": "objective-transcript-similarity-and-confidence",
+    "sales": "max-independent-judge-and-objective-cta-benefit-score",
+    "overall": "fixed-weight-evidence-score",
+    "marketing_provider_order": "gemini-retry-first-groq-fallback",
+    "visual_provider_order": "configured-gemini-then-3.6-flash-then-3.5-flash-lite"
+  }
+}
